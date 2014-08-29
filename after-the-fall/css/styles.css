@@ -1,0 +1,250 @@
+/*
+	After the fall
+	progress as of Dec. 5 3 pm
+*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* if you need narrow center column */
+section {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.top-section {
+	margin-top: 85px;
+	padding-bottom: 56px;
+}
+
+/* if you need big video or big image, add this to a div */
+.large-container {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.large-container img {
+	width: 100%;
+	height: 100%;
+}
+
+.large-container figcaption {
+	padding: 0.5em 5% 0 5%;
+	
+}
+
+.normal-sized-photo {
+	margin: 50px auto;
+}
+
+.space-on-bottom {
+	margin-bottom: 50px;
+}
+
+#gallery-1, #gallery-2 {
+	margin: 50px auto;
+}
+
+/*
+	navigation
+*/
+
+.navbar-brand img {
+	width: 50px;
+}
+
+main a {
+	color: black;
+	font-weight: bold;
+}
+
+main a:hover {
+	color: #006633;
+  	background-color: transparent;
+  	text-decoration: none;
+  	border-bottom:2px;
+
+}
+
+main a:visited {
+	color: #006633;
+  	background-color: transparent;
+  	text-decoration: none;
+}
+
+
+/*
+	typography
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+main p, main td, main li {
+	font-family: Georgia, 'Times New Roman', serif;	
+	font-size: 16px;
+	line-height: 20px;
+}
+
+h4, .subhead, q, figcaption, li {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 1.2em;
+	/* space beneath */
+	padding-bottom: 0.5em;
+}
+
+h4 {
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	font-weight: normal;
+	padding: 6px 10px;
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+
+/* 
+	#intro
+*/
+
+.intro {
+	padding-top: 250px;
+}
+
+.byline {
+	margin: 0;	
+}
+
+
+
+/* 
+	articles
+*/
+
+.first-graf {
+	font-size: 1.5em;
+	line-height: 1.2em;
+	padding-bottom: 1.0em;
+	text-indent: 0;
+}
+
+blockquote {
+	font-size: 22px;
+	font-style: italic;
+	color: #006633;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	top: 0;
+	left: 0;
+}	
+
+blockquote.quote-1 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+img.ids-page {
+	width: 250px;
+	position: relative;
+	top: 0;
+	left: -10px;
+}
+
+.stars {
+	text-align: center;
+}
+
+/*
+	photos
+*/
+
+figure {
+	margin-bottom: 1.0em;
+}
+
+figcaption {
+	padding-top: 0.5em;
+}
+
+/*
+	footer
+*/
+
+footer {
+	text-indent: 0;
+	padding: 16px 0;
+	background-color: black;
+	color: white;
+}
+
+.follow {
+	font-style: italic;
+	text-indent: 0px;
+}
+
+footer a {
+	color: white;
+	font-weight: normal;
+}
+
+footer a:hover {
+	color: white;
+  	text-decoration: none;
+}
+
+footer a:visited {
+	color: white;
+  	text-decoration: none;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	
+	section {
+		width: 62%;
+	}
+	
+	h1 {
+		font-size: 82px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.first-graf {
+		font-size: 2.0em;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	
+	blockquote {
+		top: 50px;
+	}
+
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
