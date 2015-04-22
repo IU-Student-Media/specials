@@ -1,0 +1,512 @@
+/*#stock {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#stock img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}*/
+
+/*#stock {
+	position: fixed;
+ 	min-width: 50%;
+  	min-height: 50%;
+  	margin-top: 0;
+  }*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* FONTS */
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p, i, caption {
+  font-family: 'Merriweather', serif;
+}
+
+.fa-twitter {
+  color: white;
+  padding-top: .4em;
+  padding-right: .2em;
+  font-size: 25px;
+}
+
+.fa-facebook {
+  color: white;
+  padding-right: .15em;
+  font-size: 25px;
+}
+
+.navbar {
+ position: fixed;
+ top:0;
+ right: 0;
+ left: 0;
+ z-index: 1030;
+}
+
+.navbar-inverse {
+  margin-bottom: 0 !important;
+  
+}
+
+ .navbar-brand {
+  font-size: 24px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  padding-left: 1em;
+
+}
+
+
+
+header { 
+  background: url('../images/illo.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+}
+
+#headline h1 {
+  color: white;
+  text-align: center;
+  font-size: 55px;
+  padding-top: 5.2em;
+  padding-left: .1em;
+  padding-right: .1em;
+  margin-top: 0;
+  opacity: 0;
+}
+
+#byline h4 {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+ h3 {
+  margin-bottom: 1em;
+  margin-top: 2em;
+ }
+
+.col-md-8 {
+ padding-right: 3em; 
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 1.3em;
+}
+
+ .dropcap {
+   float: left;
+  font-size: 60px;
+  line-height: 0.5;
+  margin: 0.205em 0.153em 0 0;
+  margin-bottom: .5em;
+}
+
+img {
+  width: 100%;
+}
+
+/* SIDE COLUMN */
+
+#constance {
+  width: 0;
+}
+
+#constance-mobile {
+  width: 100%;
+  margin-top: 0;
+  padding-top: 1em;
+  opacity: 1.0;
+}
+
+#constance-caption-mobile {
+  width: 100%;
+  opacity: 1.0; 
+}
+
+
+#Stockton {
+  width: 100%;
+  padding-top: 18em; 
+}
+
+#Meno {
+  width: 100%;
+  padding-top: 5em; 
+}
+
+#pullOutOne {
+  margin-top: 35em;
+}
+
+#Braden {
+  width: 100%;
+  padding-top: 25em;
+}
+
+#Grogg {
+  width: 100%;
+  padding-top: 10em; 
+}
+
+#pullOutTwo {
+  margin-top: 30em;
+}
+
+#Eichberg {
+  width: 100%;
+  padding-top: 32em; 
+}
+
+#pullOutThree {
+  margin-top: 25em;
+}
+
+#pullOutFour {
+  margin-top: 70em;
+}
+
+#Hara {
+  width: 100%;
+  padding-top: 15em; 
+}
+
+#Freudinge {
+  width: 100%;
+  padding-top: 15em; 
+}
+
+
+
+
+h5 {
+  font-size: 24px;
+  border-left: 10px solid red;
+  padding-left: 1em;
+  margin-top: 5em;
+}
+
+h5 .attribute {
+  font-size: 15px;
+}
+
+
+
+footer {
+  background: black;
+    height: 50px;
+
+}
+
+.col-md-3 {
+  opacity: 0;
+}
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 450px) { 
+
+.col-md-3 {
+  opacity: 1.0;
+}
+
+header { 
+  height: 650px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 1px;
+  opacity: 0;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-size: 1px;
+  opacity: 0;
+}
+
+
+#headline h1 {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  padding-top: 5.2em;
+  padding-left: .3em;
+  margin-top: 0;
+  opacity: 1.0;
+
+}
+
+
+#byline h4 {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding-left: 1.8em;
+  opacity: 1.0;
+
+}
+
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.dropcap {
+   float: left;
+  font-size: 60px;
+  line-height: 0.5;
+  margin: 0.205em 0.153em 0 0;
+
+  }
+
+/*SIDE COLUMN */
+
+#constance {
+  width: 100%;
+  padding-top: 15em;
+  opacity: 1.0;
+}
+
+#constance-caption {
+  width: 100%;
+  opacity: 1.0; 
+}
+
+
+#constance-mobile {
+  width: 0;
+  opacity: 0;
+}
+
+#constance-caption-mobile {
+  width: 0;
+  opacity: 0; 
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+.col-md-3 {
+  opacity: 1.0;
+}
+
+header { 
+  height: 678px;
+}
+
+#headline h1 {
+  color: white;
+  text-align: right;
+  font-size: 75px;
+  padding-top: 5em;
+  padding-right: .3em;
+  margin-top: 0;
+  opacity: 1.0;
+
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 1px;
+  opacity: 0;
+}
+
+h4 {
+  text-align: center;
+  color: black;
+  font-size: 1px;
+  opacity: 0;
+}
+
+#byline h4 {
+  text-align: right;
+  color: white;
+  font-size: 18px;
+  padding-right: 21.5em;
+  opacity: 1.0;
+
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.dropcap {
+   float: left;
+  font-size: 60px;
+  line-height: 0.5;
+  margin: 0.205em 0.153em 0 0;
+
+  }
+
+}
+
+/* SIDE COLUMN */
+#constance {
+  width: 100%;
+  padding-top: 15em;
+  opacity: 1.0;
+}
+
+#constance-caption {
+  width: 100%;
+  opacity: 1.0; 
+}
+
+
+#constance-mobile {
+  width: 0;
+  opacity: 0;
+}
+
+#constance-caption-mobile {
+  width: 0;
+  opacity: 0; 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) { 
+
+.col-md-3 {
+  opacity: 1.0;
+}
+
+header { 
+  height: 930px;
+}
+
+h1 {
+  color: white;
+  text-align: right;
+  font-size: 75px;
+  padding-top: 5em;
+  padding-right: .7em;
+  margin-top: 0;
+  opacity: 1.0;
+}
+
+h4 {
+  text-align: right;
+  color: white;
+  font-size: 18px;
+  padding-right: 21.5em;
+  opacity: 1.0;
+}
+
+#headline h1 {
+  font-size: 90px;
+  padding-top: 7.5em;
+  opacity: 1.0;
+
+}
+
+#byline h4 {
+  text-align: right;
+  color: white;
+  font-size: 22px;
+  padding-right: 20em;
+  opacity: 1.0;
+
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.dropcap {
+   float: left;
+  font-size: 60px;
+  line-height: 0.5;
+  margin: 0.205em 0.153em 0 0;
+
+  }
+
+  /* SIDE COLUMN */
+#constance {
+  width: 100%;
+  padding-top: 15em;
+  opacity: 1.0;
+}
+
+#constance-caption {
+  width: 100%;
+  opacity: 1.0; 
+}
+
+
+#constance-mobile {
+  width: 0;
+  opacity: 0;
+}
+
+#constance-caption-mobile {
+  width: 0;
+  opacity: 0; 
+}
+}
+
