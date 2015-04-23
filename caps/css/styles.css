@@ -605,7 +605,7 @@ i {
 }
 
 header { 
-  background: url('../images/websiteHeaderRight.jpg') no-repeat center center fixed; 
+  background: url('../images/header.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -619,7 +619,7 @@ header {
   padding-top: 3.25em;
   padding-right: 1.4em;
   margin-top: 0;
-  opacity: 1.0;
+  opacity: 0;
 
 }
 
@@ -647,6 +647,7 @@ header h2 {
   margin-left: 20em;
   margin-bottom: 0;
   border: none;
+  opacity: 0;
 }
 
 #tagline h2 {
@@ -661,7 +662,7 @@ header h2 {
   text-align: right;
   font-size: 18px;
   padding-right: 16em;
-  opacity: 1.0;
+  opacity: 0;
 
 }
 
@@ -703,12 +704,12 @@ figcaption {
 }
 
 header { 
-  background: url('../images/websiteHeaderRight.jpg') no-repeat center center fixed; 
+  background: url('../images/header.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 930px;
+  height: 1000px;
 }
 
 
@@ -733,7 +734,7 @@ header {
 #headline h1 {
   font-size: 80px;
   padding-top: 4.5em;
-  opacity: 1.0;
+  opacity: 0;
   padding-right: 1em;
 }
 
@@ -747,7 +748,7 @@ header {
   margin-bottom: 1.3em;
   border: none;
   font-weight: 300;
-  opacity: 1.0;
+  opacity: 0;
   height: 100%;
 
 }
@@ -758,7 +759,7 @@ header {
   padding-left: 54em;
   margin-top: 0;
   padding-right: 0;
-  opacity: 1.0;
+  opacity: 0;
   font-weight: 300;
 
 }
