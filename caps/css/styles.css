@@ -74,8 +74,9 @@ p, i, caption {
 
 
 header { 
-  background: url('../images/websiteHeaderNone.jpg'); 
-  height: 350px;
+  background: url('../images/mobilehead.jpg') center center ; 
+  background-repeat:no-repeat;
+  height: 500px;
 }
 
 #headline h1 {
@@ -166,19 +167,23 @@ img {
 /* SIDE COLUMN */
 
 #constance {
-  height: 0;
+  /*height: 0;*/
+  display: none;
 }
 
 #constanceCaption {
-  height: 0;
+  /*height: 0;*/
+  display: none;
 }
 
 #constanceMobile {
+  display: block;
   margin-top: 1em;
   opacity: 1.0;
 }
 
 #constanceCaptionMobile {
+  display: block;
   opacity: 1.0; 
   margin-bottom: 1.5em;
 }
@@ -324,83 +329,57 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 450px) { 
 
-.col-md-3 {
-  opacity: 1.0;
-  height: 0;
+.header { 
+  background: url('../images/mobilehead.jpg') center center fixed; 
+  background-repeat:no-repeat;
+  height: 500px;
 }
 
-#taglineMobile {
-  height: 0;
-  padding: 0;
-  margin: 0;
-  border-bottom: none;
+#headline h1 {
+  text-align: center;
+  font-size: 55px;
+  padding-top: 5.2em;
+  padding-left: .1em;
+  padding-right: .1em;
+  margin-top: 0;
   opacity: 0;
 }
 
-header { 
-  background: url('../images/websiteHeaderMobile.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 650px;
+#byline h4 {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0;
+
+}
+
+header h2 {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #head-mobile {
   color: black;
   text-align: center;
-  font-size: 1px;
-  opacity: 0;
-  height: 0;
+  font-size: 50px;
 }
 
 #by-mobile {
   text-align: center;
   color: black;
-  font-size: 1px;
-  opacity: 0;
-  height: 0;
-}
-
-#headline h1 {
-  text-align: center;
-  font-size: 70px;
-  padding-top: 3.2em;
-  margin-top: 0;
-  opacity: 1.0;
-
-}
-
-header h2 {
-  font-size: 25px;
-  padding-left: 9em;
-  padding-right: 9em;
-  margin-bottom: 0;
-  border: none;
-  opacity: 1.0;
-  height: 100%;
-}
-
-#taglineMobile h2 {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-
-}
-
-#byline h4 {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
   font-size: 18px;
-  opacity: 1.0;
+  padding-top: 1em;
+}
+
+#tagline h2 {
+  height: 0;
+  opacity: 0;
 
 }
 
-
-h2 {
-  font-size: 24px;
+#taglineMobile {
+  font-size: 20px;
   text-align: center;
   border-bottom: 1px solid gray;
   padding-bottom: 1em;
@@ -408,193 +387,200 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-.dropcap {
+ h3 {
+  margin-bottom: 1em;
+  margin-top: 2em;
+ }
+
+.col-md-8 {
+ padding-right: 3em; 
+}
+
+p {
+  font-size: 15px;
+  margin-bottom: 1.3em;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+ .dropcap {
    float: left;
   font-size: 60px;
   line-height: 0.5;
   margin: 0.205em 0.153em 0 0;
+  margin-bottom: .5em;
+}
 
-  }
-
- #click {
-  font-size: 12px;
- }
-/*SIDE COLUMN */
-
-figcaption {
+img {
   width: 100%;
-  opacity: 1.0;
-  margin-top: 0.3em;
-  font-size: 13px; 
 }
 
-i {
-  margin-top: .2em;
+#starThings {
+  text-align:center;
 }
+
+/* SIDE COLUMN */
 
 #constance {
-  height: 100%;
-  padding-top: 4em;
-  opacity: 1.0;
+
+  display: none;
 }
 
 #constanceCaption {
-  width: 100%;
-  opacity: 1.0; 
+
+  display: none;
 }
 
-
 #constanceMobile {
-  height: 0;
-  margin: 0;
-  padding: 0;
+  display: block;
+  margin-top: 1em;
+  opacity: 1.0;
 }
 
 #constanceCaptionMobile {
-  height: 0; 
-  margin: 0;
-  padding: 0;
-  opacity: 0;
+  display: block;
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
 }
 
-#pullOutOne {
-  margin-top: 10em;
+#pullOutThree {
+  margin-top: 4em;
 }
 
 #Stockton {
-  height: 100%;
-  padding-top: 33em; 
+  height: 0;
 }
 
 #stocktonMobile {
-  height: 0;
-  margin: 0;
-  padding: 0;
+  margin-top: 1em;
+  opacity: 1.0;
 }
 
 #stocktonCaptionMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
 }
 
-#Grogg {
-  height: 100%;
-  padding-top: 79em; 
-}
-
-#groggMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#groggCaptionMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#pullOutTwo {
-  margin-top: 13em;
-}
-
-#Braden {
-  height: 100%;
-  padding-top: 50em;
-}
-
-#bradenMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#bradenCaptionMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#Eichberg {
-  height: 100%;
-  padding-top: 23em; 
-}
-
-#eichbergMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#eichbergCaptionMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#Freudinger {
-  height: 100%;
-  padding-top: 5em;
-}
-
-#freudingerMobile {
- height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0; 
-}
-
-#freudingerCaptionMobile {
-  height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
-}
-
-#Hara {
+#Meno {
   width: 100%;
   padding-top: 5em; 
 }
 
+#pullOutOne {
+  margin-top: 35em;
+}
+
+#Braden {
+  height: 0;
+}
+
+#bradenMobile {
+  margin-top: 1em;
+  opacity: 1.0;
+}
+
+#bradenCaptionMobile {
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
+#Grogg {
+  height: 0;
+}
+
+#groggMobile {
+  margin-top: 1em;
+  opacity: 1.0;
+}
+
+#groggCaptionMobile {
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
+#pullOutTwo {
+  margin-top: 18em;
+}
+
+#Eichberg {
+  height: 0;
+}
+
+#eichbergMobile {
+  margin-top: 1em;
+  opacity: 1.0; 
+}
+
+#eichbergCaptionMobile {
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
+
+#pullOutFour {
+  margin-top: 70em;
+}
+
+#Freudinger {
+  width: 100%;
+  padding-top: 15em; 
+}
+
+#freudingerMobile {
+  margin-top: 1em;
+  opacity: 1.0;   
+}
+
+#freudingerCaptionMobile {
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
+#Hara {
+  width: 100%;
+  padding-top: 15em; 
+}
+
 #haraMobile {
-   height: 0;
-  opacity: 0;
-  margin: 0;
-  padding: 0;
+  margin-top: 1em;
+  opacity: 1.0;
 }
 
 #haraCaptionMobile {
-  height: 0;
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
+
+
+h5 {
+  font-size: 24px;
+  border-left: 10px solid;
+  border-color: #436983;
+  padding-left: 1em;
+  margin-top: 5em;
+}
+
+h5 .attribute {
+  font-size: 15px;
+}
+
+
+
+footer {
+  background: black;
+    height: 50px;
+
+}
+
+.col-md-3 {
   opacity: 0;
-  margin: 0;
-  padding: 0;
+  height: 0;
 }
 
-#resourcesCaps {
-  padding-top: 40em;
-  height: 100%;
-}
-
- #resourcesCAPS {
-  padding-top: 40em;
-  height: 100%;
-}
-
-#credit {
-  padding-top: 5em;
-  font-size: 11px;
-  text-align: right;
- }
-
-}
+} /* closing tablet */
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -605,12 +591,13 @@ i {
 }
 
 header { 
-  background: url('../images/header.jpg') no-repeat center center fixed; 
+  background: url('../images/mdhead.jpg') center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 2000px;
+  background-repeat:no-repeat;
+  height: 900px;
 }
 
 #headline h1 {
@@ -683,9 +670,30 @@ h2 {
 
   }
 
+/* SIDE COLUMN */
+
+#constance {
+  /*height: 0;*/
+  display: block;
 }
 
-/* SIDE COLUMN */
+#constanceCaption {
+  /*height: 0;*/
+  display: block;
+}
+
+#constanceMobile {
+  display: none;
+  margin-top: 1em;
+  opacity: 1.0;
+}
+
+#constanceCaptionMobile {
+  display: none;
+  opacity: 1.0; 
+  margin-bottom: 1.5em;
+}
+
 figcaption {
   width: 100%;
   opacity: 1.0;
@@ -696,7 +704,7 @@ figcaption {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1300px) { 
+@media (min-width: 1400px) { 
 
 .col-md-3 {
   opacity: 1.0;
@@ -704,12 +712,12 @@ figcaption {
 }
 
 header { 
-  background: url('../images/header.jpg') no-repeat center center fixed; 
+  background: url('../images/mdhead.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1700px;
+  height: 1125px;
 }
 
 
