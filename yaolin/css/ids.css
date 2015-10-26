@@ -1,0 +1,292 @@
+/*Bootstrap is mobile first, so media queries at the bottom apply to larger screens.
+Assume anything not under a media query is for .col-xs */
+
+/*General html*/
+	body{
+		background-color:#F0F0F0;
+	}
+
+/*Fonts and icons*/
+	/*if you want to add a different headline font let us know.*/
+	h1, h2, h3, h4, h5{
+		font-family: 'Lato', sans-serif;
+	}
+
+	/*use h1 for headlines*/
+	h1{
+		font-family: 'Roboto Slab', serif;
+		font-size: 40px;
+		line-height: 1.2;
+		letter-spacing: .05em;
+		font-weight: 900;
+		margin-bottom: -.3em;
+	}
+
+	/*h2 is the italicized subhead.*/
+	h2{
+		font-style: italic;
+		font-size: 20px;
+		line-height: 1.2;
+		color: #939393;
+		margin-bottom: 0em;
+	}
+	
+	/*h6 is used for bylines*/
+	h6{
+		font-family: 'Merriweather', serif;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.name{
+		font-weight: normal;
+	}
+
+	/*We're never gonna change body copy though*/
+	p, i, caption {
+		font-family: 'Merriweather', serif;
+		font-color: #585858;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 1.8;
+		padding-bottom: 1em;
+	}
+
+	figcaption{
+		font-style: italic;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 1.4em;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	
+	/*if you want to change the color of icons throughout the article feel free, but create
+	a new class name so the navbar icons stay the same color. */
+
+	.fa-twitter {
+	  color: white;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.fa-facebook {
+	  color: white;
+	  padding-right: .15em;
+	  font-size: 1.6em;
+	}
+
+/*Links*/
+
+/*media*/
+	figure{
+		width: 100%;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+
+	}
+
+	img{
+		width: 100%;
+
+	}
+
+	.pulledquote p{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+	}
+
+	.pulledquote{
+		border-left: solid 10px;
+		padding-left: 20px;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+
+	.inline .pulledquote{
+		width: 75%;
+	}
+
+	#carousel-example-generic{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	/*.chart{
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}*/
+
+/*navigation*/
+	/*Don't change anything here unless you run into problems with spacing on section links*/
+	.navbar {
+	 margin-bottom: 0px;
+
+	}
+
+	.navbar-brand {
+	  font-size: 24px;
+	  color: white;
+	  font-weight: bold;
+	  padding-left: 1em;
+
+	}
+	
+	#bs-example-navbar-collapse-1 ul{
+		font-family: 'Merriweather', serif;
+		text-align: center;
+		margin-top: 0 auto;
+	}
+
+	.navbar-headline-mobile {
+		font-family: 'Merriweather', serif;
+		text-decoration: none;
+		text-align: center;
+		margin-left: 2em;
+		width: 500px;
+		line-height: 50px;
+	}
+
+	#bs-example-navbar-collapse-1 li .nav-headline{
+		font-family: 'Merriweather', serif;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		margin-left: 2em;
+		margin-right: 0em;
+		line-height: 50px;
+
+	}
+
+/*intro row */
+	.byline{
+		display: none;
+	}
+
+	.byline-mobile{
+		margin-top: -1em;
+		margin-bottom: 2em;
+
+	}
+
+/*inline 6 columns*/
+	
+/*sidebar 4 columns*/
+	.sidebar img{
+		width: 100%;
+	}
+
+	.sidebar .chart {
+		margin-top: 0em;
+	}
+	
+/*breaks*/
+	.break{
+		height: 100%;
+	}
+
+	.break figcaption{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+/*contributors*/
+	.contributors{
+		margin-bottom: 2em;
+	}
+
+	.contributors p{
+		margin-top: -.6em;
+		margin-bottom: -1em;
+	}
+
+	.contributors h3{
+		margin-bottom: 1em;
+	}
+
+	.contributors .fill{
+		display: none;
+	}
+
+/*footer*/
+	footer{
+		height: 5em;
+		background-color: #585858;
+		color: white;
+		padding: 1em;
+		text-align: right;
+		
+	}
+
+/*types of media*/
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+/*Navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+}
+
+/* Medium devices (desktops, 960px and up) */
+@media (min-width:960px) { 
+/*navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+/*Intro and header */
+	.byline-mobile{
+		display: none;
+	}
+
+	.byline{
+		display: inline;
+		margin-top: 0em;
+		padding-top: 0em;
+	}
+
+/*article*/
+	.inline-wide img{
+		width: 150%;
+		height: auto;
+	}
+
+
+/*sidebar*/
+	.pulledquote {
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	.sidebar .pulledquote{
+		margin-top: -1.5em;
+
+	}
+
+/*contributors*/
+	.contributors .fill{
+		display: inline;
+		visibility: hidden;
+	}
+
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) { 
+
+ }
+
+
+
+
+
