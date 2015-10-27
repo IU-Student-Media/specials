@@ -89,9 +89,8 @@ Assume anything not under a media query is for .col-xs */
 
 	}
 
-	img{
+	figure > img{
 		width: 100%;
-
 	}
 
 	.pulledquote p{
@@ -120,6 +119,17 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 	}*/
+
+	hr { 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+	border-color: #d7d7d7;
+	border-width: .1em;
+}
 
 /*navigation*/
 	/*Don't change anything here unless you run into problems with spacing on section links*/
@@ -171,6 +181,10 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: -1em;
 		margin-bottom: 2em;
 
+	}
+
+	.headline{
+		margin-bottom: 3%;
 	}
 
 /*inline 6 columns*/

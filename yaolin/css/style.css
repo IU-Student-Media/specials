@@ -2,18 +2,31 @@
 
 
 .header-visual{
-	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+	background: url('../img/ffYaolin2.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    height: 50vh;
+	height: 40vh;
+    margin-top: 3.5em;
     background-attachment: scroll;
+}
+
+
+.intro-caption{
+	display: none;
+
+}
+
+.intro-caption-mobile{
+	width: auto;
+	margin-top: -15px;
+	color: #d7d7d7;
 }
 
 .dropcap{
 		float: left;
-		font-size: 5em;
+		font-size: 3.5em;
 		line-height: .8em;
 		margin-top: .15em;
 		margin-right: .1em;
@@ -40,14 +53,32 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:960px) {
 .header-visual{
-	background: url('../img/header.lg.jpg') no-repeat center center fixed;
+	background: url('../img/ffYaolin2.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    height: 90vh;
+    height: 95vh;
+    margin-top: 4em;
     background-attachment: scroll;
 }
+
+.intro-caption{
+	display: block;
+	float: right;
+	padding-top: 38%;
+	width: 40%;
+	margin-right: 50px;
+	color: rgba(255,255,255, .5);
+
+}
+
+.intro-caption-mobile{
+	display: none;
+}
+
+
+
 
 	
  }

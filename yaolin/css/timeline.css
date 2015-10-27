@@ -1,3 +1,58 @@
+@media (min-width:1px) { 
+.sms > li > figure{
+  height: 40px;
+  width: 40px;
+  float:right;
+  margin-left: 1.2em;
+  margin-right: 0em;
+}
+
+.sms > li.recieved > figure {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+  float:left;
+  margin-right: 10px;
+}
+
+.sms > li.recieved > .fill{
+  width: 100%;
+  float: left;
+}
+
+
+.sms > li > .fill{
+  width: 100%;
+  float: right;
+}
+
+.sms > li > .panel {
+  width: 60%;
+
+}
+
+.sms > li > .panel:before {
+  top: 15%;
+  
+  
+}
+
+.sms > li > .panel:after {
+  top: 15%;
+   }   
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:500px) { 
 .translation{
   margin-top: .5em;
   display: inline-block;
@@ -27,8 +82,8 @@ li.recieved > .panel{
 }
 .sms > li > .panel {
   display: inline-block;
-/*  width: 60%;
-*/  float: right;
+  width: auto;
+  float: right;
   margin-left: 20px;
   border: 1px solid #d4d4d4;
   border-radius: 2px;
@@ -38,6 +93,7 @@ li.recieved > .panel{
   padding-bottom: -5px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  text-align: right;
   }
 
 .sms > li > .panel:before {
@@ -66,6 +122,7 @@ li.recieved > .panel{
    }
 
 .sms > li.recieved > .panel {
+  text-align: left;
   float: left;
   margin-right: 20px; }
 
@@ -121,6 +178,7 @@ li.timestamp{
   max-width: 20%;
   border-radius: 5px;
   background-color: #cdcdcd;
+  float: none;
   color: white;
   margin: 0 auto;
   margin-bottom: 2%;
@@ -131,5 +189,13 @@ li.timestamp{
 figure{
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+
+
+
+
+
+   
 }
 
