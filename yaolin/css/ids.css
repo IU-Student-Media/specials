@@ -229,7 +229,7 @@ Assume anything not under a media query is for .col-xs */
 /*footer*/
 	footer{
 		height: 5em;
-		background-color: #585858;
+		background-color: #101010;
 		color: white;
 		padding: 1em;
 		text-align: right;
