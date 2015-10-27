@@ -28,7 +28,7 @@ li.recieved > .panel{
 }
 .sms > li > .panel {
   display: inline-block;
-  width: 40%;
+  width: 60%;
   float: right;
   margin-left: 20px;
   border: 1px solid #d4d4d4;
