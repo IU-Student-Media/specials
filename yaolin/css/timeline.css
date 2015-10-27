@@ -1,58 +1,4 @@
-@media (min-width:10px) { 
-.sms > li > figure{
-  height: 30px;
-  width: 30px;
-  float:right;
-  margin-left: 1.2em;
-  margin-right: 0em;
-}
 
-.sms > li.recieved > figure {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 30px;
-  width: 30px;
-  float:left;
-  margin-right: 10px;
-}
-
-.sms > li.recieved > .fill{
-  width: 100%;
-  float: left;
-}
-
-
-.sms > li > .fill{
-  width: 100%;
-  float: right;
-}
-
-.sms > li > .panel {
-  width: 40%;
-
-}
-
-.sms > li > .panel:before {
-  top: 15%;
-  
-  
-}
-
-.sms > li > .panel:after {
-  top: 15%;
-   }   
-}
-
-
-
-
-
-
-
-
-
-@media (min-width:500px) { 
 .translation{
   margin-top: .5em;
   display: inline-block;
@@ -82,7 +28,7 @@ li.recieved > .panel{
 }
 .sms > li > .panel {
   display: inline-block;
-  width: auto;
+  width: 40%;
   float: right;
   margin-left: 20px;
   border: 1px solid #d4d4d4;
@@ -98,7 +44,7 @@ li.recieved > .panel{
 
 .sms > li > .panel:before {
   position: absolute;
-  top: 25%;
+  top: 15%;
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
@@ -111,7 +57,7 @@ li.recieved > .panel{
 
 .sms > li > .panel:after {
   position: absolute;
-  top: 25%;
+  top: 15%;
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
@@ -191,11 +137,20 @@ figure{
   margin-bottom: 0px;
 }
 
+@media (min-width:500px) { 
+.sms > li > .panel {
+  width: auto%;
 
+}
 
+.sms > li > .panel:before {
+  top: 25%;
+  
+  
+}
 
-
-
-   
+.sms > li > .panel:after {
+  top: 25%;
+   }   
 }
 
