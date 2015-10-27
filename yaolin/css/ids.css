@@ -55,11 +55,10 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	figcaption{
-		font-style: italic;
 		font-weight: 300;
-		font-size: 12px;
+		font-size: .8em;
 		line-height: 1.4em;
-		margin-top: 1.5em;
+		margin-top: .5em;
 		margin-bottom: 1.5em;
 	}
 
@@ -91,6 +90,15 @@ Assume anything not under a media query is for .col-xs */
 
 	figure > img{
 		width: 100%;
+	}
+
+	figure > em {
+		font-size: .8em;
+		margin-bottom: .5em;
+		width: 100%;
+		text-align: right;
+		float: right;
+
 	}
 
 	.pulledquote p{
@@ -272,6 +280,11 @@ Assume anything not under a media query is for .col-xs */
 /*article*/
 	.inline-wide img{
 		width: 150%;
+		height: auto;
+	}
+
+	.inline-wide {
+		width: 125%;
 		height: auto;
 	}
 
