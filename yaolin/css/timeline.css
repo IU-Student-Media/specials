@@ -1,7 +1,7 @@
-@media (min-width:1px) { 
+@media (min-width:10px) { 
 .sms > li > figure{
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   float:right;
   margin-left: 1.2em;
   margin-right: 0em;
@@ -11,8 +11,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   float:left;
   margin-right: 10px;
 }
@@ -29,7 +29,7 @@
 }
 
 .sms > li > .panel {
-  width: 60%;
+  width: 40%;
 
 }
 
@@ -175,7 +175,7 @@ li.recieved > .panel{
 }
 
 li.timestamp{
-  max-width: 20%;
+  max-width: 40%;
   border-radius: 5px;
   background-color: #cdcdcd;
   float: none;
