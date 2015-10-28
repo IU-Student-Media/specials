@@ -8,7 +8,7 @@ Assume anything not under a media query is for .col-xs */
 
 /*Fonts and icons*/
 	/*if you want to add a different headline font let us know.*/
-	h1, h2, h3, h4, h5{
+	h2, h3, h4, h5{
 		font-family: 'Lato', sans-serif;
 	}
 
@@ -34,13 +34,16 @@ Assume anything not under a media query is for .col-xs */
 	/*h6 is used for bylines*/
 	h6{
 		font-family: 'Merriweather', serif;
-		font-size: 16px;
 		font-weight: bold;
+		font-size: 16px;
+		
 	}
 
 	.name{
 		font-weight: normal;
 	}
+
+
 
 	/*We're never gonna change body copy though*/
 	p, i, caption {
@@ -123,10 +126,11 @@ Assume anything not under a media query is for .col-xs */
 		margin-bottom: 1em;
 	}
 
-	/*.chart{
-		margin-top: 1.5em;
-		margin-bottom: 1.5em;
-	}*/
+	.graphic-lead > h6{
+		font-family: 'Lato', sans-serif;
+		font-weight: normal;
+		
+	}
 
 	hr { 
     display: block;
