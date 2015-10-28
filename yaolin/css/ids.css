@@ -86,7 +86,7 @@ Assume anything not under a media query is for .col-xs */
 /*media*/
 	figure{
 		width: 100%;
-		margin-top: 1.5em;
+		margin-top: 0em;
 		margin-bottom: 1.5em;
 
 	}
@@ -209,6 +209,10 @@ Assume anything not under a media query is for .col-xs */
 	.sidebar .chart {
 		margin-top: 0em;
 	}
+
+	/*.sidebar > figure{
+		margin-top: 0px;
+	}*/
 	
 /*breaks*/
 	.break{
