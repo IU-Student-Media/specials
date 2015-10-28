@@ -2,7 +2,7 @@
 
 
 .header-visual{
-	background: url('../img/ffYaolin2.jpg') no-repeat center center fixed;
+	background: url('https://s3.amazonaws.com/media.ids/60083_ffyaolin2o.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -53,7 +53,7 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:960px) {
 .header-visual{
-	background: url('../img/ffYaolin2.jpg') no-repeat center center fixed;
+	background: url('https://s3.amazonaws.com/media.ids/60083_ffyaolin2o.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
