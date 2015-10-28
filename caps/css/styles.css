@@ -76,7 +76,7 @@ p, i, caption {
 header { 
   background: url('../images/mobilehead.jpg') center center ; 
   background-repeat:no-repeat;
-  height: 500px;
+  height: 100vh;
 }
 
 #headline h1 {
@@ -332,7 +332,7 @@ footer {
 .header { 
   background: url('../images/mobilehead.jpg') center center fixed; 
   background-repeat:no-repeat;
-  height: 500px;
+  height: 100vh;
 }
 
 #headline h1 {
@@ -597,7 +597,7 @@ header {
   -o-background-size: cover;
   background-size: cover;
   background-repeat:no-repeat;
-  height: 900px;
+  height: 90vh;
 }
 
 #headline h1 {
@@ -717,7 +717,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1125px;
+  height: 90vh;
 }
 
 
