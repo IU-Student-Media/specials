@@ -199,6 +199,10 @@ Assume anything not under a media query is for .col-xs */
 		margin-bottom: 3%;
 	}
 
+	.intro-caption-mobile{
+		margin-top: 5px;
+	}
+
 /*inline 6 columns*/
 	
 /*sidebar 4 columns*/
@@ -315,6 +319,8 @@ Assume anything not under a media query is for .col-xs */
 
 
  }
+
+ 
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:960px) { 
