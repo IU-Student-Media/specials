@@ -1,1 +1,0 @@
-<p>I'm thinking all the stories can live here in individual folders. If we have problems with space, I'm can keep some of the repeated files like jquery and highchart.js in this folder. Everyone's pretty new to code, so for now I'm keeping things simple and putting all the files need in the base-folder I'm giving to words and pictures.</p> 
