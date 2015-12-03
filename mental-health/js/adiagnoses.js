@@ -24,6 +24,18 @@ $(function () {
             categories: ['2012', '2013', '2014', '2015']
         },
         yAxis: {
+            stackLabels: {
+                      style: {
+                          color: 'grey'
+                      },
+                      enabled: true,
+                      y: -8,
+                      // formatter: function () {
+                      //     return this.total + "  ";
+                      // },
+                      verticalAlign: 'top',
+                      pointFormat: "{point.y:,.0f}"
+                  },
             
             title: {
                 text: 'Number of Diagnoses'
@@ -65,20 +77,6 @@ $(function () {
             name: 'Anixety by Physiatrist',
             color: '#C1767C',
             data: [398, 408, 454, 388]
-        }, {
-            name: 'Depression by Counselor',
-            color: '#1F5B83',
-            data: [1570, 1744, 1877, 1872],
-              // marker: {
-              //       symbol: 'square'
-              //   }
-        }, {
-            name: 'Depression by Physiatrist',
-            color: '#8fadc1',
-            data: [653, 708, 741, 600],
-              // marker: {
-              //       symbol: 'square'
-              //   }
         }]
     });
 });

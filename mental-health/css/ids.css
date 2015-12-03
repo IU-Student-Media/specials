@@ -134,6 +134,7 @@ Assume anything not under a media query is for .col-xs */
 
 	.pulledquote{
 		border-left: solid 10px;
+		border-color: #4B7B9B;
 		padding-left: 20px;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
@@ -243,6 +244,10 @@ Assume anything not under a media query is for .col-xs */
 /*inline 6 columns*/
 	
 /*sidebar 4 columns*/
+
+	.sidebar{
+		margin-top: -.5em;
+	}
 	.sidebar img{
 		width: 100%;
 	}

@@ -1,5 +1,5 @@
 $(function () {
-    $('#percent').highcharts({
+    $('#nationalcompare').highcharts({
         chart: {
             type: 'bar'
         },
@@ -59,15 +59,21 @@ $(function () {
         },
 
         series: [{
-            name: 'Clients with anxiety',
-            color: '#C1767C',
+            name: 'CAPS clients diagnosed with Anxiety',
             maxPointWidth: 100,
-            data: [43, 45, 47, 50]
+            color: '#ad4951',
+            data: [82, 77, 61, 58]
         }, {
-            name: 'Clients with depression',
+            name: 'CAPS clients diagnosed with Depression',
             maxPointWidth: 100,
             color: '#8fadc1',
-            data: [51, 52, 54, 55]
+            data: [6, 7, 5, 7]
         }]
     });
 });
+
+
+
+
+
+        

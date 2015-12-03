@@ -1,5 +1,5 @@
 $(function () {
-    $('#percent').highcharts({
+    $('#meds').highcharts({
         chart: {
             type: 'bar'
         },
@@ -60,14 +60,24 @@ $(function () {
 
         series: [{
             name: 'Clients with anxiety',
-            color: '#C1767C',
+            color: '#991C26',
             maxPointWidth: 100,
             data: [43, 45, 47, 50]
         }, {
+            name: 'Prescribed medication for anxiety',
+            maxPointWidth: 100,
+            color: '#C1767C',
+            data: [82, 77, 61, 58]
+        },{
             name: 'Clients with depression',
             maxPointWidth: 100,
-            color: '#8fadc1',
+            color: '#1F5B83',
             data: [51, 52, 54, 55]
+        }, {
+            name: 'Prescribed medication for depression',
+            maxPointWidth: 100,
+            color: '#8fadc1',
+            data: [6, 7, 5, 7]
         }]
     });
 });
