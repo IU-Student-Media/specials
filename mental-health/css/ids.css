@@ -134,17 +134,17 @@ Assume anything not under a media query is for .col-xs */
 
 	.pulledquote{
 		border-left: solid 10px;
-		border-color: #4B7B9B;
+		border-color: #C1767C;
 		padding-left: 20px;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 		width: 75%;
 	}
 
-	.sidebar > .pulledquote{
-		margin-top: 100px;
+	/*.sidebar > .pulledquote{
+		margin-top: 10px;
 	}
-
+*/
 	
 	#carousel-example-generic{
 		margin-top: 1em;
@@ -231,10 +231,12 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	.headline{
+		text-align: center;
 	}
 
 	.led{
-		margin-top: 1em;
+		margin-top: .8em;
+		text-align: center;
 	}
 
 	.intro-caption-mobile{
@@ -339,6 +341,7 @@ Assume anything not under a media query is for .col-xs */
 /*Intro and header */
 	.byline-mobile{
 		display: none;
+		text-align: center;
 	}
 
 	.byline{
@@ -350,7 +353,7 @@ Assume anything not under a media query is for .col-xs */
 /*article*/
 
 	.inline-wide {
-		width: 125%;
+		width: 160%;
 		height: auto;
 	}
 
@@ -362,11 +365,11 @@ Assume anything not under a media query is for .col-xs */
 
 /*sidebar*/
 	.pulledquote {
-		margin-top: 1.5em;
+		/*margin-top: 1.5em;*/
 		margin-bottom: 1.5em;
 	}
 	.sidebar .pulledquote{
-		margin-top: -1.5em;
+		margin-top: -.8em;
 
 	}
 

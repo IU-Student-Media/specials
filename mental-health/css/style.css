@@ -28,6 +28,12 @@
 }
 #IDS { width: 60%;}
 
+.visual img{
+	margin: 10px;
+	width: 100%;
+	height: auto;
+}
+
 	
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */

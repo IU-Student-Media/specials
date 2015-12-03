@@ -46,14 +46,14 @@ $(function () {
         },
         series: [{
             name: 'Anixety Diagnoses',
-          	color: '#4B7B9B',
+          	color: '#C1767C',
             data: [1439, 1706, 1824, 1867],
           		marker: {
                 symbol: 'circle'
             }
         }, {
             name: 'Depression Diagnoses',
-          	color: '#ad4951',
+          	color: '#628ca8',
             data: [1570, 1744, 1877, 1872],
               marker: {
                     symbol: 'square'

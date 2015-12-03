@@ -14,7 +14,7 @@ $(function () {
             }
         },
         yAxis: {
-             opposite: true,
+            
             min: 0,
             max: 100,
             title: {
@@ -59,14 +59,14 @@ $(function () {
         },
 
         series: [{
-            name: 'Clients with anxiety who recieve medication',
+            name: 'Medication for anxiety',
             maxPointWidth: 100,
             color: '#C1767C',
             data: [82, 77, 61, 58]
         }, {
-            name: 'Clients with depression who recieve medication',
+            name: 'Medication for depression',
             maxPointWidth: 100,
-            color: '#8fadc1',
+            color: '#628ca8',
             data: [6, 7, 5, 7]
         }]
     });

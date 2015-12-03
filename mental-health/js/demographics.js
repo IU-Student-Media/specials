@@ -4,7 +4,7 @@ $(function () {
                   thousandsSep: ','
                 }
               });
-    $('#adiagnoses').highcharts({
+    $('#demographics').highcharts({
            credits: {
             enabled: false
         },
@@ -24,7 +24,6 @@ $(function () {
             categories: ['2012', '2013', '2014', '2015']
         },
         yAxis: {
-          max: 3000,
             stackLabels: {
                       style: {
                           color: 'grey'
@@ -39,7 +38,7 @@ $(function () {
                   },
             
             title: {
-                text: 'Number of Diagnoses'
+                text: ' '
             },
             plotLines: [{
                 value: 0,
@@ -67,17 +66,27 @@ $(function () {
             verticalAlign: 'top',
             borderWidth: 0
         },
-        series: [{
-            name: 'By Counselor',
-            color: '#991C26',
-            data: [1439, 1706, 1824, 1867],
-            //     marker: {
-            //     symbol: 'circle'
-            // }
-        }, {
-            name: 'By Physiatrist',
+        series: [  {
+            name: 'Female',
             color: '#C1767C',
-            data: [398, 408, 454, 388]
+            data: [2601, 2806, 2899, 2746],
+              // marker: {
+              //       symbol: 'square'
+              //   }
+        },{
+            name: 'Male',
+            color: '#628ca8',
+            data: [1692, 1827, 1914, 1750],
+              // marker: {
+              //       symbol: 'square'
+              //   }
+        }, {
+            name: 'Non-Binary',
+            color: '#4a7a52',
+            data: [3, 3, 4, 2],
+              // marker: {
+              //       symbol: 'square'
+              //   }
         }]
     });
 });

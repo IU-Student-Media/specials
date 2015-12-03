@@ -66,7 +66,7 @@ $(function () {
         }, {
             name: 'Clients with depression',
             maxPointWidth: 100,
-            color: '#8fadc1',
+            color: '#628ca8',
             data: [51, 52, 54, 55]
         }]
     });
