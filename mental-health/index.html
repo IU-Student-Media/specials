@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
 
-	<title>Build-out template</title>
+	<title>State of Mind</title>
 	<link rel="SHORTCUT ICON"
        href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
 
@@ -20,12 +20,24 @@
 	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>	        
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>	       
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/ids.css"> 
 
 	<!-- FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+	  <style>
+        .axis path {
+            fill: none;
+            stroke: #777;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+            font-family: Lato;
+            font-size: 15px;
+        }
+    </style>
 
 </head>
 
@@ -51,24 +63,22 @@
 		        <span class="icon-bar"></span>
      		</button>
      		<a class="navbar-brand" href="http://www.idsnews.com/" target="_blank" style="color:white">IDS</a>
-     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">Your Headline Here</a>
+     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">State of Mind</a>
 
 		</div> <!-- end of navbar header -->
 
 		<!-- Collect the nav links, forms and otehr content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><span class="nav-headline">Your Headline Here:</span></li>
+				<li><span class="nav-headline">State of Mind:</span></li>
 				<li class="dropdown">
-					<a href="#section1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Section I<span class="caret"></span></a>
+					<a href="#section1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Woes<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#section2">Section II</a></li>
+			            <li><a href="#section2">Trouble at Jacobs</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#section3">Section III</a></li>
+			            <li><a href="#section3">Medication</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#section4">Section IV</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#section5">Section V</a></li>
+			            <li><a href="#section4">Gender and Racial Divide</a></li>
 			          </ul>
 				</li>
 
@@ -84,9 +94,7 @@
 
 
 
-<div class="header-visual">
- <!-- Leading visual should be placed as the background under .led in stlye.css  -->
-</div>
+
 
 <div class="container-fluid">
 	<a name="intro"></a>
@@ -112,7 +120,16 @@
 
 	<div class="row article">
 		<div class="col-md-offset-1 col-md-6 body-copy">
-			<p><span class="dropcap">U</span>se this as the starting index page for your projects. Copy code from <a href="https://github.com/JamesBenedict/ids-buildout-template">the template</a> into this html page to get started. Make sure if the content needs a specifc css or js files to also call those in. Everything should be working on the template page, so use it as reference.</p> 
+			
+
+			
+		<figure>
+			<h4>Who diagnosesed anxiety and depression at CAPS</h4>
+			<h5>Physiatrists aren't the only people able to diagnoses a patient with anxiety or depression, in fact the majority of diagnoses are not given by a doctor.</h5>
+			<h6>By James Benedict</h6>
+			<div id="diagnoses" style="min-width: 200; height: 400px; margin: 0 auto"></div>
+		</figure>
+
 		</div>
 
 		<div class="col-md-4 sidebar">
@@ -142,5 +159,8 @@
 	<!-- scripts -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/chart.js"></script>
+	
 </body>
 </html>
