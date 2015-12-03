@@ -28,10 +28,21 @@
 }
 #IDS { width: 60%;}
 
+.visual{
+	margin-bottom: 3em;
+}
+
 .visual img{
 	margin: 10px;
 	width: 100%;
 	height: auto;
+}
+
+.visual figcaption{
+	text-align: center;
+	
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 	
