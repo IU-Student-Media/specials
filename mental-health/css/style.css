@@ -19,8 +19,13 @@
 		line-height: .8em;
 		margin-top: 0.04em;
 		margin-right: .1em;
+		margin-bottom: 0;
 		padding: 0;
 	}
+
+.headline{
+	margin-top: 4em;
+}
 
 	
 /* Extra small devices (phones, up to 480px) */
