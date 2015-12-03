@@ -17,7 +17,7 @@ Assume anything not under a media query is for .col-xs */
 	/*use h1 for headlines*/
 	h1{
 		font-family: 'Roboto Slab', serif;
-		font-size: 8em;
+		font-size: 5em;
 		line-height: 1;
 		letter-spacing: .05em;
 		font-weight: 900;
@@ -327,6 +327,12 @@ Assume anything not under a media query is for .col-xs */
 /*Navbar*/
 	.navbar-headline-mobile {
 		display: none;
+	}
+
+	h1{
+		
+		font-size: 8em;
+		
 	}
 
 }
