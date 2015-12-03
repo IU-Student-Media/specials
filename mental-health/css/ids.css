@@ -17,8 +17,8 @@ Assume anything not under a media query is for .col-xs */
 	/*use h1 for headlines*/
 	h1{
 		font-family: 'Roboto Slab', serif;
-		font-size: 4.8em;
-		line-height: 1.2;
+		font-size: 8em;
+		line-height: 1;
 		letter-spacing: .05em;
 		font-weight: 900;
 		margin-bottom: 0em;
