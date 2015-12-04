@@ -79,6 +79,10 @@ header {
   height: 100vh;
 }
 
+#g-mdheader-Artboard_1{
+  display: none;
+}
+
 #headline h1 {
   text-align: center;
   font-size: 55px;
@@ -334,6 +338,8 @@ footer {
   background-repeat:no-repeat;
   height: 100vh;
 }
+
+
 
 #headline h1 {
   text-align: center;
@@ -591,13 +597,18 @@ footer {
 }
 
 header { 
-  background: url('../images/mdhead.jpg') center center fixed; 
+  background: none;
+  /*url('../images/mdhead.jpg') center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat:no-repeat;
   height: 90vh;
+}
+
+#g-mdheader-Artboard_1{
+  display: inline;
 }
 
 #headline h1 {
