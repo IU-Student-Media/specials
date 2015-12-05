@@ -74,7 +74,7 @@ $(function () {
               //       symbol: 'square'
               //   }
         }, {
-            name: 'By Physiatrist',
+            name: 'By Psychiatrist',
             color: '#8fadc1',
             data: [653, 708, 741, 600],
               // marker: {

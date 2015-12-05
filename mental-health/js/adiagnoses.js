@@ -75,7 +75,7 @@ $(function () {
             //     symbol: 'circle'
             // }
         }, {
-            name: 'By Physiatrist',
+            name: 'By Psychiatrist',
             color: '#C1767C',
             data: [398, 408, 454, 388]
         }]
