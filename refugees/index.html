@@ -1,0 +1,146 @@
+<!-- If you want your article to get debugged, make sure to leave comments and give understandable names to your divs. The easier your code is to read, the easier it will be to work with. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- The below 3 meta tags must come first in the head; any other head content must come after these tags -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Build-out template</title>
+	<link rel="SHORTCUT ICON"
+       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+
+	<!-- below is the link to the image facebook will pull as the preview to your article -->
+	<meta property="og:image"
+	content="img/header.lg.jpg"/>
+
+	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>	        
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ids.css"> 
+
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+ <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NBJX8F');</script>
+  <!-- End Google Tag Manager --> 
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+     		</button>
+     		<a class="navbar-brand" href="http://www.idsnews.com/" target="_blank" style="color:white">IDS</a>
+     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">Your Headline Here</a>
+
+		</div> <!-- end of navbar header -->
+
+		<!-- Collect the nav links, forms and otehr content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><span class="nav-headline">Your Headline Here:</span></li>
+				<li class="dropdown">
+					<a href="#section1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Section I<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#section2">Section II</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#section3">Section III</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#section4">Section IV</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#section5">Section V</a></li>
+			          </ul>
+				</li>
+
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://twitter.com/idsnews" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="https://www.facebook.com/idsnews" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+			</ul>
+		</div> <!-- end of navbar-collapse -->
+	</div> <!-- end of continer-fluid -->
+  </nav>
+
+
+
+<div class="header-visual">
+ <!-- Leading visual should be placed as the background under .led in stlye.css  -->
+</div>
+
+<div class="container-fluid">
+	<a name="intro"></a>
+
+	<div class="row intro"> <!-- intro row -->
+		<div class="col-md-offset-1 col-md-10 headline"> <!-- intro column -->
+			<h1>Headline</h1>
+		</div>
+
+	  	<div class="col-md-offset-1 col-md-10 led">
+	  		<h2>Subhead</h2>
+	  	</div>
+		
+		<div class="col-xs-12 byline-mobile">
+			<h6>Story by <span class="name">TK</span></h6>
+			<h6>Photos by <span class="name">TK</span></h6>
+			<h6>Designed by <span class="name">TK</span></h6>
+	  		
+	  		<!-- Special thanks to Kathrine Schulze @kas_schulze for developing the orginial build out with me for Megan Jula's story Waiting for Help. Much of this template is adapted from our work last semested, and I couldn't of done it without her.-->
+	  	</div>
+	</div> <!-- end of intro row -->
+
+
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+			<p><span class="dropcap">U</span>se this as the starting index page for your projects. Copy code from <a href="https://github.com/JamesBenedict/ids-buildout-template">the template</a> into this html page to get started. Make sure if the content needs a specifc css or js files to also call those in. Everything should be working on the template page, so use it as reference.</p> 
+		</div>
+
+		<div class="col-md-4 sidebar">
+			<div class="byline">
+				<h6>Story by <span class="name">TK</span></h6>
+				<h6>Photos by <span class="name">TK</span></h6>
+				<h6>Designed by <span class="name">TK</span></h6>
+			</div>
+		</div>
+
+
+	</div>
+
+	 <div class="row contributors">
+			<div class="col-sm-offset-1 col-sm-3">
+				<h3>Contributors</h3>
+					<h6>James Benedict</h6>
+					<p>Head Developer | <a href="https://twitter.com/jamesgbenedict">@jamesgbenedict</a></p>
+			</div>
+	</div> <!-- end of row contributors -->
+</div> <!-- end of container fluid -->
+
+<footer>
+	<p>© James Benedict, 2014-2015.</p>
+</footer>
+
+	<!-- scripts -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
