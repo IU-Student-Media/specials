@@ -14,19 +14,27 @@
 
 .dropcap{
 		font-family: 'Roboto Slab', serif;
+		font-weight: 100;
 		float: left;
-		font-size: 5em;
+		font-size: 4em;
 		line-height: .8em;
-		margin-top: 0.04em;
+		margin-top: .01em;
 		margin-right: .1em;
 		padding: 0;
 	}
+
 
 #map{
 	height: 500px;
 }
 
+#IDS {
+	width: 60%;
+}
 
+.italic {
+	font-style: italic;
+}
 
 
 	

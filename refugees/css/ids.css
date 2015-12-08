@@ -11,18 +11,66 @@ Assume anything not under a media query is for .col-xs */
 	h2, h3, h4, h5{
 		font-family: 'Lato', sans-serif;
 		color: #4b4b4b;
+		margin-top: 0em;
 
 	}
+
+	.graphic1 {
+		font-weight: 300;
+		text-align: left;
+		line-height: 1.8em;
+		margin-bottom: -.1em;
+	}
+
+	.graphic1marg {
+		font-weight: 300;
+		text-align: left;
+		line-height: 1.8em;
+		margin-bottom: 2em;
+	}
+
+	.four {
+		font-weight: 700;
+		color: #BFBFBF;
+		font-size: 20px;
+	}
+
+	.twentytwo {
+		font-weight: 700;
+		color: #808080;
+		font-size: 20px;
+
+	}
+
+	.two {
+		font-weight: 700;
+		color: #CC0000;
+		font-size: 20px;
+	}
+
+	.thirty {
+		font-weight: 700;
+		color: #000000;
+		font-size: 20px;
+	}
+
+	.homs {
+		color: #CC0000;
+		font-weight: bold;
+		font-family: 'Lato', sans-serif;
+	}
+	
 
 	/*use h1 for headlines*/
 	h1{
 		font-family: 'Roboto Slab', serif;
-		font-size: 4.8em;
+		font-size: 3.5em;
 		line-height: 1.2;
 		letter-spacing: .05em;
-		font-weight: 900;
+		font-weight: 300;
 		margin-bottom: 0em;
-		margin-top: .6em;
+		margin-top: 1em;
+		margin-left: 100px;
 	}
 
 	/*h2 is the italicized subhead.*/
@@ -30,12 +78,13 @@ Assume anything not under a media query is for .col-xs */
 		font-size: 1.8em;
 		line-height: 1.3em;
 /*		color: #939393;
-*/		margin-bottom: 1em;
+*/		margin-bottom: 1.8em;
 		font-weight: 300;
+		margin-top: 1.8em;
 	}
 	
 	h3{
-
+		font-size: 1.8em;
 	}
 
 	h4{
@@ -50,15 +99,14 @@ Assume anything not under a media query is for .col-xs */
 	
 	/*h6 is used for bylines*/
 	h6{
-		font-family: 'Lora', serif;
+		font-family: 'Lato', sans-serif;
 		font-size: 16px;
 		line-height: 1.5em;
-
-		
+		font-weight: 300;
 	}
 
 	.by{
-		font-weight: bold;
+		font-weight: 900;
 	}
 
 
@@ -69,8 +117,6 @@ Assume anything not under a media query is for .col-xs */
 		color: #4b4b4b;
 	}
 
-	
-
 	p{
 		font-size: 16px;
 		line-height: 1.8;
@@ -79,10 +125,10 @@ Assume anything not under a media query is for .col-xs */
 
 	figcaption{
 		font-weight: 300;
-		font-size: .8em;
+		font-size: 1em;
 		line-height: 1.4em;
 		margin-top: .5em;
-		margin-bottom: 1.5em;
+		margin-bottom: 3em;
 	}
 
 
@@ -95,6 +141,18 @@ Assume anything not under a media query is for .col-xs */
 	  color: white;
 	  padding-right: .2em;
 	  font-size: 1.6em;
+	}
+
+	.fa-twitter {
+	  color: white;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.pulledquote .fa-twitter {
+	  color: black;
+	  font-size: 1em;
+	  padding-left: .5em;
 	}
 
 	.fa-facebook {
@@ -110,11 +168,25 @@ Assume anything not under a media query is for .col-xs */
 		width: 100%;
 		margin-top: 0em;
 		margin-bottom: 1.5em;
+	}
 
+	.nomarg {
+		margin: 0em;
+	}
+
+	.topmarg {
+		margin: 0px;
+		margin-top: 30px;
+	}
+
+	.leftmarg {
+		margin:0;
+		padding: 10px;
 	}
 
 	figure > img{
 		width: 100%;
+		margin-bottom: 0em;
 	}
 
 	figure > em {
@@ -129,15 +201,25 @@ Assume anything not under a media query is for .col-xs */
 		padding: 0;
 		margin: 0;
 		margin-top: .5em;
+		font-family: 'Lato';
+		font-weight: 900;
+	}
+
+	.pulledquote h3{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'Lato';
+		font-weight: 300;
 	}
 
 
 	.pulledquote{
-		border-left: solid 10px;
 		padding-left: 20px;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 		width: 75%;
+		
 	}
 
 	.sidebar > .pulledquote{
@@ -150,17 +232,13 @@ Assume anything not under a media query is for .col-xs */
 		margin-bottom: 1em;
 	}
 
-	pre {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0;
-    text-align: left;
-}
+	
 
 
 
-	hr { 
+
+
+hr { 
     display: block;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -255,6 +333,18 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: 0em;
 	}
 
+	.sidebar-info{
+		/*border-bottom-style: solid;
+		border-top-style: solid;
+		border-color: #d7d7d7;
+		border-width: .1em;*/
+	
+	}
+
+	.sidebar-related{
+
+	}
+
 	/*.sidebar > figure{
 		margin-top: 0px;
 	}*/
@@ -275,9 +365,22 @@ Assume anything not under a media query is for .col-xs */
 	.break h4{
 			margin-left: 3%;
 			margin-right: 3%;
-		}
-	
-	
+		}	
+
+/*sections for parallax scrolling*/
+
+.unsettled {
+	color: black;
+	left: 20px;
+}
+
+.show-desktop {
+	display: none;
+}
+
+.show-mobile {
+	display: block;
+}
 
 
 /*contributors*/
@@ -308,6 +411,13 @@ Assume anything not under a media query is for .col-xs */
 		
 	}
 
+
+.seperate {
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+
 /*types of media*/
 
 
@@ -315,17 +425,131 @@ Assume anything not under a media query is for .col-xs */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width:768px) { 
+@media (min-width:550px) { 
+
+	h2{
+		font-size: 2em;
+		line-height: 1.3em;
+/*		color: #939393;
+*/		margin-bottom: 2em;
+		font-weight: 300;
+		margin-top: 2em;
+	}
+
 /*Navbar*/
 	.navbar-headline-mobile {
 		display: none;
 	}
+	
+#home {
+	background: url(https://s3.amazonaws.com/media.ids/60546_img_0135edit3web2o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#about {
+	background: url(https://s3.amazonaws.com/media.ids/60541_img_0142edit2web2o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#dog {
+	background: url(https://s3.amazonaws.com/media.ids/60543_img_0152edit2web2o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#rimis {
+	background: url(https://s3.amazonaws.com/media.ids/60544_img_0157edit2web2o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#marwanw {
+	background: url(https://s3.amazonaws.com/media.ids/60549_img_9380editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lona {
+	background: url(https://s3.amazonaws.com/media.ids/60555_img_9702editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1500px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#papers {
+	background: url(https://s3.amazonaws.com/media.ids/60552_img_9470editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1500px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#postoffice {
+	background: url(https://s3.amazonaws.com/media.ids/60542_img_0019editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1500px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#car {
+	background: url(https://s3.amazonaws.com/media.ids/60550_img_9409editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1500px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#lonaclass {
+	background: url(https://s3.amazonaws.com/media.ids/60554_img_9542editweb2o.jpg) 50% 0 repeat fixed;
+	min-height:1500px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.unsettled {
+	height: 458px; 
+  position: absolute; 
+  text-align: left; 
+  top: 350px; 
+  width: 100%; 
+  color: black;
+}
+
 
 }
 
 
 /* Medium devices (desktops, 960px and up) */
 @media (min-width:960px) { 
+
+	.show-desktop {
+	display: block;
+}
 /*navbar*/
 	.navbar-headline-mobile {
 		display: none;
@@ -342,6 +566,16 @@ Assume anything not under a media query is for .col-xs */
 		padding-top: 0em;
 	}
 
+	.unsettled {
+	height: 458px; 
+  position: absolute; 
+  text-align: left; 
+  top: 5px; 
+  width: 100%; 
+  color: white;
+  font-size: 6em;
+}
+
 /*article*/
 
 	.inline-wide {
@@ -357,6 +591,7 @@ Assume anything not under a media query is for .col-xs */
 
 /*sidebar*/
 	.pulledquote {
+		color: #5996AD;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 	}
@@ -372,15 +607,44 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 
- }
+.show-mobile {
+	display: none;
+}
+
+.four {
+		font-weight: 700;
+		color: #BFBFBF;
+		font-size: 22px;
+	}
+
+	.twentytwo {
+		font-weight: 700;
+		color: #808080;
+		font-size: 22px;
+
+	}
+
+	.two {
+		font-weight: 700;
+		color: #CC0000;
+		font-size: 22px;
+	}
+
+	.thirty {
+		font-weight: 700;
+		color: #000000;
+		font-size: 22px;
+	}
+
+}
 
  
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) { 
 
- }
 
+ }
 
 
 
