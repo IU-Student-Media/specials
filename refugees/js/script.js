@@ -18,3 +18,4 @@ var coords = '50% '+ yPos + 'px';
           
                     document.createElement("article");
                     document.createElement("section");
+
