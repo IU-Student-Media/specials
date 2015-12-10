@@ -39,7 +39,7 @@ $(function () {
                   },
             
             title: {
-                text: 'Number of Diagnoses'
+                text: ' '
             },
             plotLines: [{
                 value: 0,

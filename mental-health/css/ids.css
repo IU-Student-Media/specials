@@ -19,7 +19,6 @@ Assume anything not under a media query is for .col-xs */
 		font-family: 'Roboto Slab', serif;
 		font-size: 5em;
 		line-height: 1;
-		letter-spacing: .05em;
 		font-weight: 900;
 		margin-bottom: 0em;
 		margin-top: .6em;
@@ -28,7 +27,7 @@ Assume anything not under a media query is for .col-xs */
 	/*h2 is the italicized subhead.*/
 	h2{
 		font-size: 1.8em;
-		line-height: 1.3em;
+		line-height: 1.4em;
 /*		color: #939393;
 */		margin-bottom: 1em;
 		font-weight: 300;
@@ -57,9 +56,10 @@ Assume anything not under a media query is for .col-xs */
 		
 	}
 
-	.by{
-		font-weight: bold;
-	}
+	.bold {
+	font-weight: bold;
+}
+	
 
 
 
@@ -125,22 +125,13 @@ Assume anything not under a media query is for .col-xs */
 		float: right;
 	}
 
-	.pulledquote p{
-		padding: 0;
-		margin: 0;
-		margin-top: .5em;
-	}
+	
 
 
 	.pulledquote{
-		border-left: solid 10px;
-		border-color: #C1767C;
-		padding-left: 20px;
-		margin-top: 1.5em;
-		margin-bottom: 1.5em;
-		width: 75%;
+		display: none;
 	}
-
+	
 	/*.sidebar > .pulledquote{
 		margin-top: 10px;
 	}
@@ -316,6 +307,10 @@ Assume anything not under a media query is for .col-xs */
 		
 	}
 
+	footer a{
+		color: #4b4b4b;
+	}
+
 /*types of media*/
 
 
@@ -334,6 +329,30 @@ Assume anything not under a media query is for .col-xs */
 		font-size: 8em;
 		
 	}
+
+	.pulledquote{
+		padding-left: 20px;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+		width: 75%;
+		display: inline;
+	}
+
+	.pulledquote h3{
+		font-weight: 300;
+		margin-top: 0em;
+	}
+	
+	.pulledquote p{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'lato';
+		font-weight: 900;
+
+	}
+
+
 
 }
 
@@ -378,7 +397,7 @@ Assume anything not under a media query is for .col-xs */
 		margin-bottom: 1.5em;
 	}
 	.sidebar .pulledquote{
-		margin-top: -.8em;
+		margin-top: 0em;
 
 	}
 
