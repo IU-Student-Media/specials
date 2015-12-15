@@ -19,22 +19,29 @@ Assume anything not under a media query is for .col-xs */
 		font-family: 'Roboto Slab', serif;
 		font-size: 5em;
 		line-height: 1;
-		font-weight: 900;
+		font-weight: 100;
 		margin-bottom: 0em;
-		margin-top: .6em;
+		margin-top: 2em;
 	}
+
+	.sixteenno {
+		margin: 0;
+		margin-top: 0em;
+		margin-bottom: .6em;
+	}
+
 
 	/*h2 is the italicized subhead.*/
 	h2{
 		font-family: 'Roboto Slab', serif;
-		font-size: 6em;
+		font-size: 3.5em;
 		font-weight: 300;		
 		margin-bottom: .3em;
 		text-align: center;
 	}
 
 	.narrow{
-		max-width: 80%;
+		width: 80%;
 		text-align: center;
 		margin: 0 auto;
 
@@ -345,9 +352,9 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	.content{
-		max-width: 50%;
+		max-width: 80%;
 		margin: 0 auto;
-		margin-bottom: 10em;
+		margin-bottom: 6em;
 	}
 
 	
@@ -465,6 +472,18 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: .6em;
 	}
 
+	.content{
+		max-width: 50%;
+		margin: 0 auto;
+		margin-bottom: 10em;
+	}
+
+	.sixteenno {
+		margin: 0;
+		margin-top: 0em;
+		margin-bottom: .6em;
+		font-weight: 100;
+	}
 	
 	.headline h1{
 		margin-top: 0em;
@@ -489,6 +508,13 @@ Assume anything not under a media query is for .col-xs */
 	font-weight: 500;
 }
 
+h2 {
+		font-family: 'Roboto Slab', serif;
+		font-size: 6em;
+		font-weight: 300;		
+		margin-bottom: .3em;
+		text-align: center;
+	}
 	
 
 	.pulledquote{
