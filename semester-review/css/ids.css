@@ -17,9 +17,8 @@ Assume anything not under a media query is for .col-xs */
 	/*use h1 for headlines*/
 	h1{
 		font-family: 'Roboto Slab', serif;
-		font-size: 4.8em;
-		line-height: 1.2;
-		letter-spacing: .05em;
+		font-size: 5em;
+		line-height: 1;
 		font-weight: 900;
 		margin-bottom: 0em;
 		margin-top: .6em;
@@ -27,19 +26,22 @@ Assume anything not under a media query is for .col-xs */
 
 	/*h2 is the italicized subhead.*/
 	h2{
-		font-size: 1.8em;
-		line-height: 1.3em;
-/*		color: #939393;
-*/		margin-bottom: 1em;
-		font-weight: 300;
+		font-family: 'Roboto Slab', serif;
+		font-size: 6em;
+		font-weight: 300;		
+		margin-bottom: .3em;
+		text-align: center;
+	}
+
+	.narrow{
+		max-width: 80%;
+		text-align: center;
+		margin: 0 auto;
+
 	}
 	
-	h3{
-
-	}
-
 	h4{
-		font-weight: bold;
+		font-weight: 500;
 	}
 
 	h5{
@@ -50,17 +52,27 @@ Assume anything not under a media query is for .col-xs */
 	
 	/*h6 is used for bylines*/
 	h6{
-		font-family: 'Lora', serif;
+		font-family: 'lato', serif;
 		font-size: 16px;
 		line-height: 1.5em;
+		margin-bottom: 2.5em;
 
 		
 	}
 
-	.by{
-		font-weight: bold;
+	.bold {
+	font-weight: bold;
+}
+	.red{
+		color: #991C26;
+	}
+	.blue{
+		color: #1F5B83;
 	}
 
+	.block {
+		display: block;
+	}
 
 
 	/*We're never gonna change body copy though*/
@@ -79,12 +91,13 @@ Assume anything not under a media query is for .col-xs */
 
 	figcaption{
 		font-weight: 300;
-		font-size: .8em;
+		font-size: 1em;
 		line-height: 1.4em;
 		margin-top: .5em;
 		margin-bottom: 1.5em;
 	}
 
+	
 
 
 	
@@ -92,13 +105,13 @@ Assume anything not under a media query is for .col-xs */
 	a new class name so the navbar icons stay the same color. */
 
 	.fa-twitter {
-	  color: white;
+	  color: black;
 	  padding-right: .2em;
 	  font-size: 1.6em;
 	}
 
 	.fa-facebook {
-	  color: white;
+	  color: black;
 	  padding-right: .15em;
 	  font-size: 1.6em;
 	}
@@ -125,25 +138,38 @@ Assume anything not under a media query is for .col-xs */
 		float: right;
 	}
 
-	.pulledquote p{
-		padding: 0;
-		margin: 0;
-		margin-top: .5em;
+
+	.big img{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		
 	}
 
+	.big figcaption{
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.introparagraph {
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 8em;
+	}
 
+	figure video{
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
 	.pulledquote{
-		border-left: solid 10px;
-		padding-left: 20px;
-		margin-top: 1.5em;
-		margin-bottom: 1.5em;
-		width: 75%;
+		display: none;
 	}
-
-	.sidebar > .pulledquote{
-		margin-top: 100px;
+	
+	/*.sidebar > .pulledquote{
+		margin-top: 10px;
 	}
-
+*/
 	
 	#carousel-example-generic{
 		margin-top: 1em;
@@ -175,6 +201,9 @@ Assume anything not under a media query is for .col-xs */
 	/*Don't change anything here unless you run into problems with spacing on section links*/
 	.navbar {
 	 margin-bottom: 50px;
+	 color: black;
+	 background-color: #fff;
+	 text-align: center;
 
 	}
 
@@ -183,12 +212,18 @@ Assume anything not under a media query is for .col-xs */
 	  color: white;
 	  font-weight: bold;
 	  padding-left: 1em;
+	  text-align: center;
+
 	}
 
+	.navbar-headline {
+		text-align: center;
+	}
 
 
 	nav{
 		margin-bottom: 500px;
+		text-align: center;
 	}
 	
 	
@@ -198,42 +233,105 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: 0 auto;
 	}
 
+	ul.navbar-nav{
+		text-align: center;
+	}
+
+	ul.navbar-nav li{
+		display: inline-block;
+		text-align: center;
+	}
+
 	.navbar-headline-mobile {
 		font-family: 'lato', serif;
 		text-decoration: none;
 		text-align: center;
-		margin-left: 2em;
-		width: 500px;
+		margin-left: -3em;
+		width: 100%;
 		line-height: 50px;
+	}
+
+	.nav-headline{
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 50px;
+
+
 	}
 
 	#bs-example-navbar-collapse-1 li .nav-headline{
 		font-family: 'lato', serif;
 		text-decoration: none;
 		text-align: center;
-		color: white;
-		margin-left: 2em;
-		margin-right: 0em;
+		width: 100%;
 		line-height: 50px;
 
 	}
 
+	a{
+		text-decoration: none;
+	}
+
+	li a {
+		text-decoration: underline;
+		color: #4b4b4b;
+	}
+
+	a:hover {
+		text-decoration: underline;
+		border-bottom: 1em;
+		color: #326891;
+	}
+
+	h2:hover{	
+		text-decoration: underline;	
+		color: #326891;	
+	}
+
+	h4:hover{
+		text-decoration: underline;
+		color: #326891;
+	}
+
+
+
+/*a:hover:after {
+    content: "";
+    border-bottom: 2px solid #ec6713;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+}*/
+	.lastelement {
+		margin-bottom: 10em;
+	}
+
 /*intro row */
+
+.intro{
+	text-align: center;
+}
 	.byline{
 		display: none;
+
 	}
 
 	.byline-mobile{
 		margin-top: -1em;
 		margin-bottom: 2em;
+		text-align: center;
 
 	}
 
 	.headline{
+		text-align: center;
+		margin-top: 0em;
 	}
 
 	.led{
-		margin-top: 1em;
+		margin-top: .8em;
+		text-align: center;
 	}
 
 	.intro-caption-mobile{
@@ -241,8 +339,41 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 /*inline 6 columns*/
+	.body-copy{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.content{
+		max-width: 50%;
+		margin: 0 auto;
+		margin-bottom: 10em;
+	}
+
 	
+	.center {
+		text-align: center;
+	}
+
+	.body-copy ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+	.content ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	}
+
+
 /*sidebar 4 columns*/
+
+	.sidebar{
+		margin-top: -.5em;
+	}
 	.sidebar img{
 		width: 100%;
 	}
@@ -308,6 +439,10 @@ Assume anything not under a media query is for .col-xs */
 		
 	}
 
+	footer a{
+		color: #4b4b4b;
+	}
+
 /*types of media*/
 
 
@@ -321,6 +456,65 @@ Assume anything not under a media query is for .col-xs */
 		display: none;
 	}
 
+	h1{
+		font-family: 'Roboto Slab', serif;
+		font-size: 5em;
+		line-height: 1;
+		font-weight: 900;
+		margin-bottom: 0em;
+		margin-top: .6em;
+	}
+
+	
+	.headline h1{
+		margin-top: 0em;
+
+	}
+	h1.sixteen{
+	font-size: 7.2em;
+	margin: 0;
+	margin-top: 1em;
+	font-weight: 100;
+	margin-bottom: .1em;
+}
+
+.from {
+	font-weight: 100;
+	font-size: 5.7em;
+	margin-bottom: .5em;
+
+}
+
+.yellow {
+	font-weight: 500;
+}
+
+	
+
+	.pulledquote{
+		padding-left: 20px;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+		width: 75%;
+		display: inline;
+	}
+
+	.pulledquote h3{
+		font-weight: 300;
+		margin-top: -.5em;
+	}
+	
+	.pulledquote p{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'lato';
+		font-weight: 900;
+
+	}
+
+
+
 }
 
 
@@ -332,20 +526,25 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 /*Intro and header */
+
+
 	.byline-mobile{
 		display: none;
+		text-align: center;
 	}
 
 	.byline{
 		display: inline;
 		margin-top: 0em;
 		padding-top: 0em;
+		text-align: center;
+
 	}
 
 /*article*/
 
 	.inline-wide {
-		width: 125%;
+		width: 160%;
 		height: auto;
 	}
 
@@ -357,13 +556,10 @@ Assume anything not under a media query is for .col-xs */
 
 /*sidebar*/
 	.pulledquote {
-		margin-top: 1.5em;
+		/*margin-top: 1.5em;*/
 		margin-bottom: 1.5em;
 	}
-	.sidebar .pulledquote{
-		margin-top: -1.5em;
 
-	}
 
 /*contributors*/
 	.contributors .fill{

@@ -22,8 +22,18 @@
 		padding: 0;
 	}
 
-#map{
-	height: 500px;
+
+#IDS {
+	width: 60%;
+}
+
+
+.navbar-headline-mobile{
+	text-align: center;
+}
+
+h1 .test{
+	font-size: 10em;
 }
 
 
