@@ -1,0 +1,60 @@
+/*necessary style choices*/
+
+
+.header-visual{
+	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+.dropcap{
+		font-family: 'Roboto Slab', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+#map{
+	height: 500px;
+}
+
+
+
+
+	
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+.header-visual{
+	background: url('../img/header.lg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+	
+ }
