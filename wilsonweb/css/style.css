@@ -2,7 +2,7 @@
 
 
 .header-visual{
-	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+	background: url('../img/busride.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -46,7 +46,7 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:960px) {
 .header-visual{
-	background: url('../img/header.lg.jpg') no-repeat center center fixed;
+	background: url('../img/busride.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
