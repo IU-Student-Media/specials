@@ -123,6 +123,15 @@ float: none !important; }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:960px) { 
+	.header-visual{
+		background: url('https://s3.amazonaws.com/media.ids/61173_sym_ho.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	    height: 100vh;
+	    margin-top: 0%;
+	    background-attachment: scroll;
  }
 
 /* Large devices (large desktops, 1200px and up) */
