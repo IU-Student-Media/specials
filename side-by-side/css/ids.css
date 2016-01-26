@@ -342,6 +342,10 @@ Assume anything not under a media query is for .col-xs */
 		
 	}
 
+	footer a{
+		color: #4b4b4b;
+
+	}
 /*types of media*/
 
 
@@ -355,10 +359,9 @@ Assume anything not under a media query is for .col-xs */
 		display: none;
 	}
 
-
-
 /* Medium devices (desktops, 960px and up) */
 @media (min-width:960px) { 
+
 /*navbar*/
 	.navbar-headline-mobile {
 		display: none;
