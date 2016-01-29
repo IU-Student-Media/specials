@@ -118,6 +118,20 @@ Assume anything not under a media query is for .col-xs */
 
 	}
 
+	.nomarg {
+		margin: 0em;
+	}
+
+	.topmarg {
+		margin: 0px;
+		margin-top: 30px;
+	}
+
+	.leftmarg {
+		margin:0;
+		padding: 10px;
+	}
+
 	figure > img{
 		width: 100%;
 	}
@@ -359,8 +373,30 @@ Assume anything not under a media query is for .col-xs */
 		display: none;
 	}
 
+#home {
+	background: url(https://s3.amazonaws.com/media.ids/61259_sym_h_cropo.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#overlook {
+	background: url(https://s3.amazonaws.com/media.ids/61167_pool_overlooko.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Medium devices (desktops, 960px and up) */
 @media (min-width:960px) { 
+		
+		.show-desktop {
+		display: block;
+}
 
 /*navbar*/
 	.navbar-headline-mobile {
@@ -377,6 +413,16 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: 0em;
 		padding-top: 0em;
 	}
+
+	.unsettled {
+	height: 458px; 
+  position: absolute; 
+  text-align: left; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 6em;
+}
 
 /*article*/
 
@@ -400,6 +446,17 @@ Assume anything not under a media query is for .col-xs */
 		margin-top: -1.5em;
 
 	}
+
+/*contributors*/
+.contributors .fill{
+		display: inline;
+		visibility: hidden;
+	}
+
+
+.show-mobile {
+	display: none;
+}
 
 
 
