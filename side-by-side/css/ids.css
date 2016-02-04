@@ -321,7 +321,8 @@ Assume anything not under a media query is for .col-xs */
 
 .unsettled {
 	color: black;
-	left: 20px;
+	left: 70px;
+	padding-top: 50px;
 }
 
 .show-desktop {
