@@ -1,0 +1,154 @@
+/*necessary style choices*/
+
+
+.header-visual{
+	background: url('https://s3.amazonaws.com/media.ids/61478_flyheadero.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+.container{
+	text-align: left;
+}
+.cine{
+	padding-bottom: 0px
+}
+
+#chapbreak{
+	padding-top: 2.0em;
+	padding-right: 0em;
+}
+
+.pull_right {
+    float: right !important;
+    margin: 10px -75% 10px 20px;
+    text-align: left;
+    width: 370px !important;
+}
+
+.pull_right img {
+    min-width: 370px;
+    width: 370px;
+}
+
+.column.small-centered {
+margin-left: auto;
+margin-right: auto;
+float: none !important; }
+
+.pullquote {
+    color: #000;
+    font-family: 'Lato',sans-serif;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 50px 0;
+    text-align: left;
+   
+}
+
+.block{
+	width:70px;
+	height:6px;
+	margin:15px 0;
+}
+
+.block.yellow{
+	background-color:#fcd512;
+}
+
+.block.black{
+	background-color:#000;
+}
+
+.block.red{
+	background-color:#d2232a;
+}
+
+.block.crimson{
+	background-color:#7d110c;
+}
+
+.block.green{
+	background-color:#32CD32;
+}
+
+.dropcap{
+		color: #000;
+		font-family: 'Roboto Slab', serif;
+		float: left;
+		font-size: 4em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+#map{
+	height: 500px;
+}
+
+.graphic {
+	padding: 15px;
+}
+
+#ids{
+	width:60%;
+}
+
+.show-mobile {
+	display: block;
+}
+
+.show-desktop {
+	display: none;
+}
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 	
+.show-desktop {
+	display: block;
+}
+
+.show-mobile {
+	display: none;
+}
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+	.header-visual{
+		background: url('https://s3.amazonaws.com/media.ids/61478_flyheadero.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	    height: 100vh;
+	    margin-top: 0%;
+	    background-attachment: scroll;
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+	.header-visual{
+		background: url('https://s3.amazonaws.com/media.ids/61478_flyheadero.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	    height: 100vh;
+	    margin-top: 0%;
+	    background-attachment: scroll;
+}
+	
+ }
