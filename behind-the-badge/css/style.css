@@ -2,7 +2,11 @@
 
 
 .header-visual{
+<<<<<<< HEAD
 	background: url('https://s3.amazonaws.com/media.ids/60806_busrideo.jpg') no-repeat center center fixed;
+=======
+	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+>>>>>>> IU-Student-Media/master
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -12,6 +16,7 @@
     background-attachment: scroll;
 }
 
+<<<<<<< HEAD
 .cine{
 	padding-bottom: 0px
 }
@@ -22,6 +27,8 @@
 }
 
 
+=======
+>>>>>>> IU-Student-Media/master
 .dropcap{
 		font-family: 'Roboto Slab', serif;
 		float: left;
@@ -36,6 +43,7 @@
 	height: 500px;
 }
 
+<<<<<<< HEAD
 .graphic {
 	padding: 15px;
 }
@@ -43,6 +51,11 @@
 #ids{
 	width:60%;
 }
+=======
+
+
+
+>>>>>>> IU-Student-Media/master
 	
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
@@ -59,6 +72,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:960px) {
+<<<<<<< HEAD
 	.header-visual{
 		background: url('https://s3.amazonaws.com/media.ids/60806_busrideo.jpg') no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -68,6 +82,17 @@
 	    height: 100vh;
 	    margin-top: 0%;
 	    background-attachment: scroll;
+=======
+.header-visual{
+	background: url('../img/header.lg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+>>>>>>> IU-Student-Media/master
 }
 
 	

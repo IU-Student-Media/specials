@@ -35,14 +35,20 @@ Assume anything not under a media query is for .col-xs */
 	}
 	
 	h3{
+<<<<<<< HEAD
 		font-size: 2em;
 		text-align: center;
+=======
+>>>>>>> IU-Student-Media/master
 
 	}
 
 	h4{
 		font-weight: bold;
+<<<<<<< HEAD
 		font-size: 1.8em;
+=======
+>>>>>>> IU-Student-Media/master
 	}
 
 	h5{
@@ -53,10 +59,16 @@ Assume anything not under a media query is for .col-xs */
 	
 	/*h6 is used for bylines*/
 	h6{
+<<<<<<< HEAD
 		font-family: 'Lato', sans-serif;
 		font-size: 16px;
 		line-height: 1.5em;
 		font-weight: 300;
+=======
+		font-family: 'Lora', serif;
+		font-size: 16px;
+		line-height: 1.5em;
+>>>>>>> IU-Student-Media/master
 
 		
 	}
@@ -83,7 +95,11 @@ Assume anything not under a media query is for .col-xs */
 
 	figcaption{
 		font-weight: 300;
+<<<<<<< HEAD
 		font-size: .9em;
+=======
+		font-size: .8em;
+>>>>>>> IU-Student-Media/master
 		line-height: 1.4em;
 		margin-top: .5em;
 		margin-bottom: 1.5em;
