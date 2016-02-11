@@ -1,0 +1,84 @@
+/*necessary style choices*/
+
+
+.header-visual{
+	background: url('https://s3.amazonaws.com/media.ids/60083_ffyaolin2o.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 40vh;
+    margin-top: 3.5em;
+    background-attachment: scroll;
+}
+
+
+.intro-caption{
+	display: none;
+
+}
+
+.intro-caption-mobile{
+	width: auto;
+	margin-top: -15px;
+	color: black;
+}
+
+.dropcap{
+		float: left;
+		font-size: 3.5em;
+		line-height: .8em;
+		margin-top: .15em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+
+
+
+	
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+.header-visual{
+	background: url('https://s3.amazonaws.com/media.ids/60083_ffyaolin2o.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 95vh;
+    margin-top: 4em;
+    background-attachment: scroll;
+}
+
+.intro-caption{
+	display: block;
+	float: right;
+	padding-top: 38%;
+	width: 40%;
+	margin-right: 50px;
+	color: rgba(255,255,255, .5);
+
+}
+
+.intro-caption-mobile{
+	display: none;
+}
+
+
+
+
+	
+ }
