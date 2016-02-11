@@ -68,6 +68,10 @@ Assume anything not under a media query is for .col-xs */
 		font-weight: 900;
 	}
 
+	.center {
+		text-align: center;
+	}
+
 
 
 	/*We're never gonna change body copy though*/
@@ -355,14 +359,28 @@ hr {
 
 /* this is where i am adding all my shit*/
 
+.weekend {
+	margin-top: 2em;
+	margin-top: 2em;
+	text-align: center;
+	font-size: 16px;
+	font-family: "Roboto Slab";
+	font-weight: 300;
+
+}
+
+.bigger {
+	font-size: 30px;
+}
+
 .intro {
 		font-size: 25px;
 		line-height: 1.8;
 		text-align: center;
 		font-family: 'Lato';
 		font-weight: 300;
-		margin-top: 2em;
 		margin-bottom: 2em;
+		margin-top: 2em;
 	}
 
 	.introsmaller {
@@ -550,6 +568,15 @@ hr {
 }
 
 
+.weekend {
+	margin-top: 4em;
+	text-align: center;
+	font-size: 26px;
+	font-family: "Roboto Slab";
+	font-weight: 300;
+
+}
+
 }
 
 
@@ -624,7 +651,7 @@ hr {
 		text-align: center;
 		font-family: 'Lato';
 		font-weight: 300;
-		margin-top: 3em;
+		margin-top: 1em;
 	}
 
 .square {
