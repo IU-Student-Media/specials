@@ -1,0 +1,153 @@
+
+
+
+
+.header-visual {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.header-visual {
+	height: 700px;
+}
+
+
+.story {
+	background-color: white;
+
+}
+
+.intro {
+  font-size: 1.4em;
+}
+
+.infographic {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 0;
+}
+
+
+.row, .intro, .byline-mobile {
+	background-color: white;
+
+}
+.dropcap{
+		font-family: 'Neuton', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+
+.subhead{
+	font-size: 48px;
+	padding-bottom: 10px;
+}
+
+.subhead2 {
+	font-size: 24px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.para {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+section.module.parallax {
+  height: 1000px;
+  background-position:  center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1037_mobiletattoos09o.jpg");
+}
+section.module.parallax-2 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1036_tattoos14o.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1038_mobiletattoos05o.jpg");
+}
+
+
+section.module.parallax-4 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1035_tattoos07o.jpg");
+}
+Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1035_tattoos07o.jpg) no-repeat left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-visual {
+  position: relative;
+}
+
+.header-visual {
+	height: 800px;
+}
+
+
+section.module.parallax-1 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1040_tattoos09o.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1039_tattoos05o.jpg");
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+
+
+
+
+
+.header-visual {
+	height: 1000px;
+}
+h1 {
+	font-size: 130px;
+}
+
+.graphic-sub {
+	text-align: center;
+	font-size: 16px;
+}
+
+}
