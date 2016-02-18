@@ -1,0 +1,106 @@
+/*necessary style choices*/
+
+
+.header-visual{
+	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+.dropcap{
+		font-family: 'Roboto Slab', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+.pullquote {
+    color: #4b4b4b;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 45px;
+    margin: 50px 0;
+    text-align: left;
+   
+}
+
+.block{
+	width:975px;
+	height:3px;
+	margin:15px 0;
+}
+
+.block.yellow{
+	background-color:#fcd512;
+}
+
+.block.grey{
+	background-color:#4b4b4b;
+}
+
+.block.red{
+	background-color:#d2232a;
+}
+
+.block.crimson{
+	background-color:#7d110c;
+}
+
+.block.green{
+	background-color:#32CD32;
+}
+
+#IDS {
+	width: 60%;
+}
+
+
+.navbar-headline-mobile{
+	text-align: center;
+}
+
+h1 .test{
+	font-size: 10em;
+}
+
+
+
+
+	
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+.header-visual{
+	background: url('../img/header.lg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+	
+ }
