@@ -1,21 +1,22 @@
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1046_topmobileo.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1046_topmobileo.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
 }
 
-.header-visual {
-  position: relative;
-  padding: 0;
-  margin: 0 auto;
-}
+
 
 .header-visual {
 	height: 700px;
 }
+
 .header-visual h1 {
 	color: white;
 	font-size: 70px;
@@ -66,9 +67,7 @@
 	padding-bottom: 50px;
 }
 
-img {
-	width: 100%;
-}
+
 
 hr {
 	margin-top: 10px;
@@ -112,22 +111,18 @@ hr {
 	color: #9F1D22;
 }
 
-#menhidden {
-	position: relative;
+.img-responsive {
+	width: 100%;
 }
+.leftmarg {
+		margin:0;
+		padding: 10px;
+	}
+.nomarg {
+		margin: 0em;
+	}
 
-#menhidden {
-    display: none;
-    opacity: 1;
 
-}
-
-#men:hover + #menhidden {
-    display: block;
-    -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;   
-}
 
 /* Extra small devices (phones, up to 480px) */
 /* No media query since this is the default in Bootstrap */
@@ -137,17 +132,17 @@ hr {
 
 
 
-}
-
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:960px) { 
 
 .header-visual { 
-  background: url(../img/top.jpg) no-repeat left fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1043_topo.jpg) no-repeat left fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+   height: 100vh;
+   margin-top: 0%;
 }
 
 .header-visual {
@@ -176,11 +171,12 @@ hr {
 @media (min-width:960px) {
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1043_topo.jpg) no-repeat center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1043_topo.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 .header-visual {
@@ -192,7 +188,7 @@ hr {
 }
 .header-visual h1 {
 	color: white;
-	padding: 200px 0 0 700px;
+	padding: 200px 0 0 600px;
 	font-size: 130px;
 }
 
