@@ -1,0 +1,426 @@
+/*Bootstrap is mobile first, so media queries at the bottom apply to larger screens.
+Assume anything not under a media query is for .col-xs */
+
+/*General html*/
+	body{
+		background-color:#FFF;
+	}
+
+/*Fonts and icons*/
+	/*if you want to add a different headline font let us know.*/
+	h2, h3, h4, h5{
+		font-family: 'Lato', sans-serif;
+		color: #4b4b4b;
+
+	}
+
+	/*use h1 for headlines*/
+	h1{
+		font-family: 'Roboto Slab', serif;
+		font-size: 5em;
+		line-height: 1;
+		font-weight: 900;
+		margin-bottom: 0em;
+		margin-top: .6em;
+	}
+
+	/*h2 is the italicized subhead.*/
+	h2{
+		font-size: 1.8em;
+		line-height: 1.4em;
+/*		color: #939393;
+*/		margin-bottom: 1em;
+		font-weight: 300;
+	}
+	
+	h3{
+
+	}
+
+	h4{
+		font-weight: bold;
+	}
+
+	h5{
+		font-style: normal;
+		font-size: 1.2em;
+
+	}
+	
+	/*h6 is used for bylines*/
+	h6{
+		font-family: 'lato', serif;
+		font-size: 16px;
+		line-height: 1.5em;
+
+		
+	}
+
+	.bold {
+	font-weight: bold;
+}
+	.red{
+		color: #991C26;
+	}
+	.blue{
+		color: #1F5B83;
+	}
+
+
+
+	/*We're never gonna change body copy though*/
+	p, i, caption {
+		font-family: 'Lora', serif;
+		color: #4b4b4b;
+	}
+
+	
+
+	p{
+		font-size: 16px;
+		line-height: 1.8;
+		padding-bottom: 1em;
+	}
+
+	figcaption{
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-top: .5em;
+		margin-bottom: 1.5em;
+	}
+
+
+
+	
+	/*if you want to change the color of icons throughout the article feel free, but create
+	a new class name so the navbar icons stay the same color. */
+
+	.fa-twitter {
+	  color: white;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.fa-facebook {
+	  color: white;
+	  padding-right: .15em;
+	  font-size: 1.6em;
+	}
+
+/*Links*/
+
+/*media*/
+	figure{
+		width: 100%;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+
+	}
+
+	figure > img{
+		width: 100%;
+	}
+
+	figure > em {
+		font-size: .8em;
+		margin-bottom: .5em;
+		width: 100%;
+		text-align: right;
+		float: right;
+	}
+
+	
+
+
+	.pulledquote{
+		display: none;
+	}
+	
+	/*.sidebar > .pulledquote{
+		margin-top: 10px;
+	}
+*/
+	
+	#carousel-example-generic{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+    text-align: left;
+}
+
+
+
+	hr { 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+	border-color: #d7d7d7;
+	border-width: .1em;
+}
+
+/*navigation*/
+	/*Don't change anything here unless you run into problems with spacing on section links*/
+	.navbar {
+	 margin-bottom: 50px;
+
+	}
+
+	.navbar-brand {
+	  font-size: 24px;
+	  color: white;
+	  font-weight: bold;
+	  padding-left: 1em;
+	}
+
+
+
+	nav{
+		margin-bottom: 500px;
+	}
+	
+	
+	#bs-example-navbar-collapse-1 ul{
+		font-family: 'lato', serif;
+		text-align: center;
+		margin-top: 0 auto;
+	}
+
+	.navbar-headline-mobile {
+		font-family: 'lato', serif;
+		text-decoration: none;
+		text-align: center;
+		margin-left: 2em;
+		width: 500px;
+		line-height: 50px;
+	}
+
+	#bs-example-navbar-collapse-1 li .nav-headline{
+		font-family: 'lato', serif;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		margin-left: 2em;
+		margin-right: 0em;
+		line-height: 50px;
+
+	}
+
+/*intro row */
+	.byline{
+		display: none;
+
+	}
+
+	.byline-mobile{
+		margin-top: -1em;
+		margin-bottom: 2em;
+		text-align: center;
+
+	}
+
+	.headline{
+		text-align: center;
+	}
+
+	.led{
+		margin-top: .8em;
+		text-align: center;
+	}
+
+	.intro-caption-mobile{
+		margin-top: 5px;
+	}
+
+/*inline 6 columns*/
+	
+/*sidebar 4 columns*/
+
+	.sidebar{
+		margin-top: -.5em;
+	}
+	.sidebar img{
+		width: 100%;
+	}
+
+	.sidebar .chart {
+		margin-top: 0em;
+	}
+
+	.sidebar  h6{
+		margin-top: 0em;
+	}
+
+	/*.sidebar > figure{
+		margin-top: 0px;
+	}*/
+	
+/*breaks*/
+	.break{
+		height: 100%;
+	}
+
+	/*annoyingly, I can't just include all the text (h1,h2,h3,etc.) after .break as it only applies to the first one listed not everything.
+	if you want to include more text in a break, just at .break h2 {} or whatever text you want.*/
+
+	.break figcaption{
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+
+	.break h4{
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+	
+	
+
+
+/*contributors*/
+	.contributors{
+		margin-bottom: 2em;
+	}
+
+	.contributors p{
+		margin-top: -.6em;
+		margin-bottom: -1em;
+	}
+
+	.contributors h3{
+		margin-bottom: 1em;
+	}
+
+	.contributors .fill{
+		display: none;
+	}
+
+/*footer*/
+	footer{
+		height: 5em;
+		background-color: #101010;
+		color: white;
+		padding: 1em;
+		text-align: right;
+		
+	}
+
+	footer a{
+		color: #4b4b4b;
+	}
+
+/*types of media*/
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+/*Navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+	h1{
+		
+		font-size: 8em;
+		
+	}
+
+	.pulledquote{
+		padding-left: 20px;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+		width: 75%;
+		display: inline;
+	}
+
+	.pulledquote h3{
+		font-weight: 300;
+		margin-top: -.5em;
+	}
+	
+	.pulledquote p{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'lato';
+		font-weight: 900;
+
+	}
+
+
+
+}
+
+
+/* Medium devices (desktops, 960px and up) */
+@media (min-width:960px) { 
+/*navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+/*Intro and header */
+
+
+	.byline-mobile{
+		display: none;
+		text-align: center;
+	}
+
+	.byline{
+		display: inline;
+		margin-top: 0em;
+		padding-top: 0em;
+	}
+
+/*article*/
+
+	.inline-wide {
+		width: 160%;
+		height: auto;
+	}
+
+	.inline-narrow{
+		width: 50%;
+		height: auto;
+	}
+
+
+/*sidebar*/
+	.pulledquote {
+		/*margin-top: 1.5em;*/
+		margin-bottom: 1.5em;
+	}
+
+
+/*contributors*/
+	.contributors .fill{
+		display: inline;
+		visibility: hidden;
+	}
+
+
+ }
+
+ 
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) { 
+
+ }
+
+
+
+
+

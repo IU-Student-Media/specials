@@ -1,0 +1,221 @@
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1035_tattoos07o.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+
+
+.header-height {
+	height: 700px;
+}
+
+
+.header-section2 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1037_mobiletattoos09o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+
+
+
+.header-section3 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1036_tattoos14o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+
+
+
+
+.header-section4 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1038_mobiletattoos05o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+
+
+.story {
+	background-color: white;
+
+}
+
+h2 {
+	font-size: 24px;
+}
+
+.intro {
+  font-size: 1.4em;
+}
+
+.infographic {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 0;
+}
+
+
+.row, .intro, .byline-mobile {
+	background-color: white;
+
+}
+.dropcap{
+		font-family: 'Neuton', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+
+.subhead{
+	font-size: 48px;
+	padding-bottom: 10px;
+}
+
+.subhead2 {
+	font-size: 24px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+
+
+/* ============================================================
+  PRIMARY STRUCTURE
+============================================================ */
+.para {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+
+
+
+
+section.module.parallax-4 {
+  background-image: url("https://s3.amazonaws.com/media.inm.ids/1035_tattoos07o.jpg");
+}
+Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1035_tattoos07o.jpg) no-repeat left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      height: 100vh;
+    margin-top: 0%;
+}
+
+
+
+
+.header-section2 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1040_tattoos09o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+
+.header-section3 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1036_tattoos14o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+   }
+
+   .header-section4 { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1039_tattoos05o.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+   }
+
+h2 {
+	font-size: 40px;
+}
+
+.header-height {
+	height: 1200px;
+}
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+
+
+
+
+
+
+
+h1 {
+	font-size: 130px;
+}
+
+.graphic-sub {
+	text-align: center;
+	font-size: 16px;
+}
+
+}

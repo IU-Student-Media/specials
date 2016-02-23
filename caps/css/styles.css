@@ -27,7 +27,12 @@
 /* No media query since this is the default in Bootstrap */
 
 /* FONTS */
-
+#fill{
+  height: 5px;
+  width: auto;
+  margin-top: 2px;
+  margin-top: 2px;
+}
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
 }
@@ -74,10 +79,41 @@ p, i, caption {
 
 
 header { 
-  background: url('../images/mobilehead.jpg') center center ; 
+  /*background: url('../images/mobilehead.jpg') center center ; */
+  background: center center;
   background-repeat:no-repeat;
-  height: 500px;
+/*  height: 100vh;
+*/  width: 100%;
+  margin-top: 3%;
 }
+
+
+#g-mbheader-box{
+  width: 100%;
+  display: inline;
+
+}
+
+#g-smallheader-box{
+  display: none;
+}
+
+#g-tabletheader-box{
+  display: none;
+}
+
+#g-laptop-box{
+  display: none;
+}
+
+#g-mdheader-box{
+  display: none;
+}
+#g-lg_header-box{
+  display: none;
+}
+
+
 
 #headline h1 {
   text-align: center;
@@ -329,11 +365,41 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 450px) { 
 
-.header { 
-  background: url('../images/mobilehead.jpg') center center fixed; 
-  background-repeat:no-repeat;
-  height: 500px;
+
+#g-mbheader-box{
+  display: none;
 }
+
+#g-smallheader-box{
+  display: inline;
+  
+}
+
+#g-tabletheader-box{
+  display: none;
+  width: 100%;
+}
+
+
+#g-laptop-box{
+  display: none;
+}
+
+#g-mdheader-box{
+  display: none;
+
+}
+
+
+.header { 
+  /*background: url('../images/mobilehead.jpg') center center fixed; */
+  background-repeat:no-repeat;
+  /*height: 100vh;*/
+   margin-top: 13%;
+
+}
+
+
 
 #headline h1 {
   text-align: center;
@@ -582,6 +648,45 @@ footer {
 
 } /* closing tablet */
 
+@media (min-width:700px){
+  #g-tabletheader-box{
+    display: inline;
+
+  }
+  #g-smallheader-box{
+    display: none;
+    }
+  #g-lg_header-box{
+  display: none;
+}
+
+
+}
+
+@media (min-width: 800px){
+  #g-laptop-box{
+  display: none;
+  width: 100%;
+}
+
+
+#g-mbheader-box{
+  display: none;
+}
+
+#g-tabletheader-box{
+  display: inline;
+}
+
+#g-mdheader-box{
+  display: none;
+
+}
+#g-lg_header-box{
+  display: none;
+}
+
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
@@ -591,16 +696,40 @@ footer {
 }
 
 header { 
-  background: url('../images/mdhead.jpg') center center fixed; 
+  background: none;
+  /*url('../images/mdhead.jpg') center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat:no-repeat;
-  height: 900px;
+  /*height: 100vh;*/
+   margin-top: 4%;
+}
+
+#g-mbheader-box{
+  display: none;
+}
+
+#g-tabletheader-box{
+  display: none;
+}
+
+#g-laptop-box{
+  display: inline;
+  width: 100%;
+}
+
+#g-mdheader-box{
+  display: none;
+
+}
+#g-lg_header-box{
+  display: none;
 }
 
 #headline h1 {
+  display: none;
   text-align: right;
   font-size: 75px;
   padding-top: 3.25em;
@@ -611,6 +740,7 @@ header {
 }
 
 #head-mobile {
+  display: none;
   color: black;
   text-align: center;
   font-size: 1px;
@@ -619,6 +749,7 @@ header {
 }
 
 #by-mobile {
+  display: none;
   text-align: center;
   color: black;
   font-size: 1px;
@@ -642,6 +773,7 @@ header h2 {
   opacity: 0;
   margin: 0;
   padding: 0;
+  display: none;
 
 }
 
@@ -702,9 +834,31 @@ figcaption {
 }
 
 }
+@media (min-width: 1000px){
+   #g-laptop-box{
+  display: inline;
+  width: 100%;
+}
 
+#g-lg_header-box{
+  display: none;
+}
+
+
+#g-mbheader-box{
+  display: none;
+}
+
+#g-tabletheader-box{
+  display: none;
+}
+
+#g-lg_header-box{
+  display: none;
+}
+}
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1400px) { 
+@media (min-width: 1200px) { 
 
 .col-md-3 {
   opacity: 1.0;
@@ -712,13 +866,37 @@ figcaption {
 }
 
 header { 
-  background: url('../images/mdhead.jpg') no-repeat center center fixed; 
+ /* background: url('../images/mdhead.jpg') no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1125px;
+  /*height: 100vh;*/
+  margin-top: 5%;
 }
+#g-mbheader-box{
+  display: none;
+
+}
+
+#g-tabletheader-box{
+  display: none;
+}
+
+#g-laptop-box{
+  display: none;
+}
+
+#g-mdheader-box{
+  display: none;
+  width: 100%;
+
+}
+
+#g-lg_header-box{
+  display: inline;
+}
+
 
 
 #head-mobile {
@@ -788,6 +966,13 @@ h2 {
   margin: 0.205em 0.153em 0 0;
 
   }
+
+  #fill{
+  height: 0px;
+  width: auto;
+  margin-top: 0px;
+  margin-top: 0px;
+}
 
   /* SIDE COLUMN */
 }

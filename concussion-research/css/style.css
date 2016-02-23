@@ -1,0 +1,200 @@
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1046_topmobileo.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+
+
+.header-visual {
+	height: 700px;
+}
+
+.header-visual h1 {
+	color: white;
+	font-size: 70px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.story {
+	background-color: white;
+
+}
+
+.source {
+	font-family: Arial, sans-serif;
+	padding-top: 2.0em;
+}
+
+.source span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+
+.infographic {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 0;
+}
+
+
+.row, .intro, .byline-mobile {
+	background-color: white;
+
+}
+.dropcap{
+		font-family: 'Neuton', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+.last {
+	padding-bottom: 50px;
+}
+
+
+
+hr {
+	margin-top: 10px;
+}
+
+.graphic {
+	margin: 0 auto;
+}
+
+.graphic-sub {
+	text-align: center;
+	font-size: 24px;
+	padding-top: 2.0em;
+}
+.graphicdescription {
+	padding: 0;
+}
+
+
+.no, .single, .multiple {
+	font-family:Arial, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: .2em;
+	margin: 0 auto;
+	text-align: right;
+	padding-right: .2em;
+}
+
+
+.no {
+	color: #7F7F7F;
+}
+
+.single {
+	color: #E02127;
+}
+
+.multiple {
+	color: #9F1D22;
+}
+
+.img-responsive {
+	width: 100%;
+}
+.leftmarg {
+		margin:0;
+		padding: 10px;
+	}
+.nomarg {
+		margin: 0em;
+	}
+
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:640px) { 
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:960px) { 
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1043_topo.jpg) no-repeat left fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   height: 100vh;
+   margin-top: 0%;
+}
+
+.header-visual {
+  position: relative;
+}
+
+.header-visual {
+	height: 600px;
+}
+.header-visual h1 {
+	color: white;
+	padding: 200px 0 0 300px;
+	font-size: 100px;
+}
+.no {
+	padding-top: 16px;
+}
+
+.qdrop {
+	padding-top: 1.5em;
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:960px) {
+
+.header-visual { 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1043_topo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.header-visual {
+  position: relative;
+}
+
+.header-visual {
+	height: 900px;
+}
+.header-visual h1 {
+	color: white;
+	padding: 200px 0 0 600px;
+	font-size: 130px;
+}
+
+.dquote {
+	padding-top: 2.0em;
+}
+
+
+}
