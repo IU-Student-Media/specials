@@ -36,7 +36,7 @@ Assume anything not under a media query is for .col-xs */
 	}
 	
 	h3{
-		font-size: 1.0em;
+		font-size: 1.8em;
 	}
 
 	h4{
@@ -80,10 +80,11 @@ Assume anything not under a media query is for .col-xs */
 
 	figcaption{
 		font-weight: 300;
-		font-size: 1em;
+		font-size: 1.0em;
 		line-height: 1.4em;
 		margin-top: .5em;
 		margin-bottom: 1.5em;
+		margin-left: 1em;
 	}
 
 
@@ -134,21 +135,11 @@ Assume anything not under a media query is for .col-xs */
 
 
 	.pulledquote{
+		border-left: solid 10px;
 		padding-left: 20px;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 		width: 75%;
-		font-size: 1.0em;
-
-	}
-
-	.pulledquote h3{
-		padding: 0;
-		margin: 0;
-		margin-top: .5em;
-		font-family: 'Lato';
-		font-weight: 300;
-		
 	}
 
 	.sidebar > .pulledquote{
@@ -230,12 +221,6 @@ hr {
 		display: none;
 	}
 
-	.byline-mobile{
-		margin-top: -1em;
-		margin-bottom: 2em;
-
-	}
-
 	.headline{
 	}
 
@@ -297,10 +282,7 @@ hr {
 		}
 	
 	
-	.seperate {
-	text-align: center;
-	letter-spacing: 10px;
-}
+
 
 /*contributors*/
 	.contributors{
@@ -338,8 +320,6 @@ hr {
 .show-mobile {
 	display: block;
 }
-
-
 /*footer*/
 	footer{
 		height: 5em;
@@ -368,10 +348,10 @@ hr {
 
 /* Medium devices (desktops, 960px and up) */
 @media (min-width:960px) { 
+
 	.show-desktop {
 		display: block;
-	}
-
+}
 /*navbar*/
 	.navbar-headline-mobile {
 		display: none;
@@ -402,7 +382,8 @@ hr {
 
 
 /*sidebar*/
-	.pulledquote p {
+	.pulledquote {
+		color: #5996AD;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 	}
@@ -416,11 +397,11 @@ hr {
 		display: inline;
 		visibility: hidden;
 	}
+
 	.show-mobile {
 	display: none;
-	}
+}
 
- 
 
  
 
