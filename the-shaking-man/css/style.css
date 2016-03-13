@@ -1,0 +1,168 @@
+
+.header-visual{
+	background: url('https://s3.amazonaws.com/media.ids/62100_crosman01_webo.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+.dropcap{
+		font-family: 'Roboto Slab', serif;
+		float: left;
+		font-size: 5em;
+		line-height: .8em;
+		margin-top: 0.04em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+.subhead2:target:before {
+content:"";
+display:block;
+height:90px; /* fixed header height*/
+margin:-90px 0 0; /* negative fixed header height */
+}
+
+
+#map{
+	height: 500px;
+}
+
+
+#boots {
+	width:100%;
+	position:absolute;
+	z-index:-999;
+	opacity:.3;
+	left:100%;
+	top:500px;
+}
+
+.largephoto {
+	width:60%;
+	margin:0 auto;
+}
+
+.show-mobile {
+	display: block;
+}
+
+.show-desktop {
+	display: none;
+}
+
+/*Graphics*/
+
+
+#meth-states {
+	display:none;
+}
+
+/*Font/text choices*/
+
+.break {
+	text-align:center;
+}
+
+#head {
+	font-size:3em;
+}
+
+.byline-mobile {
+	padding:1em 0 0 15px;
+	display:block;
+	margin:0 auto;
+}
+
+.text-wrapped {
+	width:100%;
+	padding:2em 0;
+	margin-bottom:0;
+}
+
+/*Bylines*/
+
+.new-byline {
+	margin:2em 0 0 8.33333333%;
+	display:none;
+}
+
+.new-byline figure {
+	font-family: 'Lora', serif;
+	display:inline;
+	font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 3em 0;
+    font-weight: 300;
+}
+
+.new-byline figure .contact {
+	font-size:.8em;
+}
+
+.new-byline hr {
+	margin-bottom:0;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) { 
+	
+
+	.text-wrapped {
+		width:50%;
+		float:right;
+		padding:0 1.2em 2.5em 1.2em;
+	}
+
+	.new-byline {
+		display:inherit;
+	}
+
+	.show-desktop {
+	display: block;
+}
+
+.show-mobile {
+	display: none;
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992px) { 
+
+
+	#firetruck {
+		padding-bottom:30px;
+	}
+
+	#meth-states {
+		display:inherit;
+	}
+	/*Olivia, setting something to display:inherit will make it go back to its default setting, which is to be a visible block-level element. In other words, I'm turning the image back on.*/
+	
+	#meth-states img {
+		width:70%;
+	}
+	/*It was too long before, so I made it thinner.*/
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+	.header-visual{
+	background: url('https://s3.amazonaws.com/media.ids/62100_crosman01_webo.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 3.3%;
+    background-attachment: scroll;
+}
+ }
