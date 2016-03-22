@@ -127,6 +127,10 @@ nav{
 /*end of navbar*/
 
 /*intro*/
+
+.mobile-headline{
+	margin: 2%;
+}
 .intro{
 	margin-top: 0em;
 }

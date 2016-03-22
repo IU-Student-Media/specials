@@ -13,6 +13,8 @@ $(document).ready(function(){
           $(".twitter-logo").html("<img src='img/b.twitter.svg'>");
           $(".fb-logo").html("<img src='img/b.facebook.svg'>");
           $(".nav-headline").css('color', 'black');
+          $(".nav-headline").html('First Rounds');
+
 
 
 
@@ -23,11 +25,16 @@ $(document).ready(function(){
           $(".twitter-logo").html("<img src='img/w.twitter.svg'>");
           $(".fb-logo").html("<img src='img/w.facebook.svg'>");
           $(".nav-headline").css('color', '#f0f0f0');
+          $(".nav-headline").html(' ');
+
+
 
 
 
 
        }
+
+       
    });
     }
 });
