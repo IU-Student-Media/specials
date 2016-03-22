@@ -1,3 +1,4 @@
+
 // Script written by Dylan Holmes http://jsfiddle.net/dylanholmes222/AzhN9/4/
 $(document).ready(function(){       
    var scroll_start = 0;
@@ -27,14 +28,14 @@ $(document).ready(function(){
           $(".nav-headline").css('color', '#f0f0f0');
           $(".nav-headline").html(' ');
 
-
-
-
-
-
        }
 
-       
+
    });
     }
 });
+
+
+
+// change to desired min value of screen
+
