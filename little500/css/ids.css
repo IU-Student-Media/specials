@@ -98,6 +98,7 @@ Assume anything not under a media query is for .col-xs */
 
 
 
+
 	
 	/*if you want to change the color of icons throughout the article feel free, but create
 	a new class name so the navbar icons stay the same color. */
@@ -332,6 +333,11 @@ hr {
 	/*.sidebar > figure{
 		margin-top: 0px;
 	}*/
+
+	.logo {
+		width: 25px;
+		height: 25px;
+	}
 	
 
 	
@@ -346,7 +352,7 @@ hr {
 	margin: 0 auto;
 }
 
-.secondary {
+.click {
 	text-align: center;
 	color: black;
 	padding-top: 650px;
