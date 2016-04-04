@@ -346,8 +346,8 @@ hr {
 .primary {
 	text-align: center;
 	color: black;
-	padding-top: 300px;
-	text-shadow: 2px 2px black;
+	padding-top: 200px;
+	text-shadow: 3px 3px black;
 	display: inline-block;
 	margin: 0 auto;
 }
@@ -355,7 +355,7 @@ hr {
 .click {
 	text-align: center;
 	color: black;
-	padding-top: 650px;
+	padding-top: 500px;
 	text-shadow: 2px 2px black;
 	display: inline-block;
 	margin: 0 auto;
@@ -439,9 +439,10 @@ hr {
 	.navbar-headline-mobile {
 		display: none;
 	}
+	
 
 	#home {
-	background: url(https://s3.amazonaws.com/media.ids/62687_spitt_web_tighto.jpg) 50% 0 repeat fixed;
+	background: url(https://s3.amazonaws.com/media.ids/61971_spmenslittle500_1o.jpg) 50% 0 repeat fixed;
 	min-height:1000px;
 	 -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -449,8 +450,17 @@ hr {
   background-size: cover;
 }
 
+#first {
+	background: url(https://s3.amazonaws.com/media.ids/62700_62619_spitt_web_08oo.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #second {
-	background: url(https://s3.amazonaws.com/media.ids/62403_littleprofiles06o.jpg) 50% 0 repeat fixed;
+	background: url(https://s3.amazonaws.com/media.ids/62661_little_5_missin_2_webo.jpg) 50% 0 repeat fixed;
 	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -459,7 +469,25 @@ hr {
 }
 
 #third {
-	background: url(https://s3.amazonaws.com/media.ids/62410_littleprofiles08o.jpg) 50% 0 repeat fixed;
+	background: url(https://s3.amazonaws.com/media.ids/62618_spitt_web_07o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#fourth {
+	background: url(https://s3.amazonaws.com/media.ids/62517_spquals_web_09o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#fifth {
+	background: url(https://s3.amazonaws.com/media.ids/62668_missin_n_out_webo.jpg) 50% 0 repeat fixed;
 	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -508,17 +536,17 @@ hr {
 
 	.primary {
 	height: 458px; 
-  position: absolute; 
+  position: fixed; 
   text-align: middle; 
   top: 20px; 
   width: 100%; 
   color: white;
-  font-size: 8em;
-  font-weight: 300;
+  font-size: 7em;
+  font-weight: 400;
 }
 	.click {
 	height: 458px; 
-  position: absolute; 
+  position: fixed; 
   text-align: middle; 
   top: 20px; 
   width: 100%; 
