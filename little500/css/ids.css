@@ -42,7 +42,14 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	h4{
-		font-weight: bold;
+		color: #000;
+		font-family: 'Roboto Slab', serif;
+		font-size: 2.8em;
+		line-height: 1.2;
+		letter-spacing: .05em;
+		font-weight: 300;
+		margin-bottom: 0em;
+		margin-top: .6em;
 	}
 
 	h5{
@@ -119,9 +126,8 @@ Assume anything not under a media query is for .col-xs */
 	figure{
 		width: 10%;
 		margin-top: 0em;
-		margin-bottom: 1.5em;
+	
 	}
-
 	figure > img{
 		width: 100%;
 	}
@@ -329,7 +335,62 @@ hr {
 	
 
 	
-	
+/*sections for parallax scrolling*/
+
+.primary {
+	text-align: center;
+	color: black;
+	padding-top: 300px;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.secondary {
+	text-align: center;
+	color: black;
+	padding-top: 650px;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+
+.first {
+	text-align: center;
+	color: black;
+	padding-top: 550px;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.second {
+	text-align: center;
+	color: black;
+	padding-top: 550px;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.third {
+	text-align: center;
+	color: black;
+	padding-top: 550px;
+	text-shadow: 2px 2px black;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.show-desktop {
+	display: none;
+}
+
+.show-mobile {
+	display: block;
+}
+
 
 
 /*contributors*/
@@ -372,11 +433,38 @@ hr {
 	.navbar-headline-mobile {
 		display: none;
 	}
+
+	#home {
+	background: url(https://s3.amazonaws.com/media.ids/62687_spitt_web_tighto.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#second {
+	background: url(https://s3.amazonaws.com/media.ids/62403_littleprofiles06o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#third {
+	background: url(https://s3.amazonaws.com/media.ids/62410_littleprofiles08o.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 	
 		figure{
 		width: 100%;
 		margin-top: 0em;
-		margin-bottom: 1.5em;
+		
 	}
 	
 	.inline-narrow {
@@ -391,6 +479,10 @@ hr {
 
 /* Medium devices (desktops, 960px and up) */
 @media (min-width:960px) { 
+
+			.show-desktop {
+		display: block;
+}
 /*navbar*/
 	.navbar-headline-mobile {
 		display: none;
@@ -406,6 +498,57 @@ hr {
 		margin-top: 0em;
 		padding-top: 0em;
 	}
+
+	.primary {
+	height: 458px; 
+  position: absolute; 
+  text-align: middle; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 8em;
+  font-weight: 300;
+}
+	.secondary {
+	height: 458px; 
+  position: absolute; 
+  text-align: middle; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 4em;
+}
+
+
+	.first {
+	height: 458px; 
+  position: absolute; 
+  text-align: middle; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 6em;
+  font-weight: 800;
+}
+
+	.second {
+	height: 458px; 
+ 	text-align: middle; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 6em;
+  font-weight: 800;
+}
+	.third {
+	height: 458px;   
+  text-align: middle; 
+  top: 20px; 
+  width: 100%; 
+  color: white;
+  font-size: 6em;
+  font-weight: 800;
+}
 
 /*article*/
 
@@ -434,8 +577,16 @@ hr {
 		visibility: hidden;
 	}
 
+	.show-mobile {
+	display: none;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) { 
 
  }
+
+
 
 
 
