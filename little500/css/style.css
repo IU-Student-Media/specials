@@ -26,7 +26,13 @@
 	height: 500px;
 }
 
+.show-mobile {
+	display: block;
+}
 
+.show-desktop {
+	display: none;
+}
 
 
 	
@@ -35,7 +41,13 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:640px) { 
+.show-desktop {
+	display: block;
+}
 
+.show-mobile {
+	display: none;
+}
 	
 }
 
