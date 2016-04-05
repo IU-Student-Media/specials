@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <!-- link in content for facebook to pull as the preview to your article -->
+	<meta property="og:url" content="..."/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="..." />
+	<meta property="og:description" content="..."/>
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="..."/>
+	
+	<title>Images</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+
+	
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Lato|Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<h3>Drug overdoses in Indiana</h3>
+			
+		</div>
+		<div class="col-sm-6 col-sm-offset-1">
+			<h5>Overdose by type of drug from 1999-2014</h5>
+		</div>
+		<div class="col-sm-5">
+			<h5>County overdose rate per 100,000 from 2011-2014</h5>
+		</div>
+		<div class="col-sm-6 col-sm-offset-1">
+			<div id="overdosechart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+		
+		<div class="col-sm-3">
+			<figure>
+				<img src="img/overdosemaps.png" alt="">
+			</figure>
+		</div>
+		<div class="col-sm-2 legend">
+			
+			<div style="height: 15px; width: 15px; background-color: #dcc3a6; display: inline-block"></div>
+			<h5 style="display: inline">Not Available</h5>
+			<br>
+			<div style="height: 15px; width: 15px; background-color: #bf864f;  display: inline-block"></div>
+			<h5 style="display: inline"> 0-10</h5>
+			<br>
+			<div style="height: 15px; width: 15px; background-color: #8e4f40;  display: inline-block"> </div>
+			<h5 style="display: inline">10-20</h5>
+			<br>
+			<div style="height: 15px; width: 15px; background-color: #c16260;  display: inline-block"> </div>
+			<h5 style="display: inline">20-30</h5>
+			<br>
+			
+
+		</div>
+		<div class="col-sm-6 col-sm-offset-1">
+			<h6>Source Indiana State Department of Health, Epidemiology Resource Center, Data Analysis Team</h6>
+		</div>
+		
+
+
+
+	</div>
+</div> <!-- end of body container fluid -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<script src="js/overdosechart.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/navcolorchange.js"></script>
+<script src="js/bootstrap.edits.js"></script>
+
+
+
+</body>
+</html>
