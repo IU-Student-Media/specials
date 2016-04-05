@@ -55,8 +55,11 @@ h5{
 h6{
 	opacity: .6;
 	font-size: 1em;
-	margin-bottom: 2em;
 
+}
+
+h6:last-child{
+	margin-bottom: 2em;
 }
 p{
 	font-family: 'lora', serif;
@@ -65,6 +68,8 @@ p{
 	font-weight: 400;
 	margin-bottom: 1em;
 }
+
+
 
 .aside p{
 	font-weight: bold;
