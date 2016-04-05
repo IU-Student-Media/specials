@@ -96,7 +96,10 @@ Assume anything not under a media query is for .col-xs */
 		margin-bottom: 1.5em;
 	}
 
-
+	.logo {
+		width: 25px;
+		height: 25px;
+	}
 
 
 	
@@ -197,6 +200,10 @@ hr {
 		height: auto;
 		float: left;
 	}
+.inline-wide {
+	width: 100%;
+	height: auto;
+}
 
 /*navigation*/
 	/*Don't change anything here unless you run into problems with spacing on section links*/
@@ -334,10 +341,7 @@ hr {
 		margin-top: 0px;
 	}*/
 
-	.logo {
-		width: 25px;
-		height: 25px;
-	}
+
 	
 
 	
@@ -588,8 +592,9 @@ hr {
 /*article*/
 
 	.inline-wide {
-		width: 125%;
+		width: 100%;
 		height: auto;
+		float: left;
 	}
 
 	.inline-narrow{
@@ -614,6 +619,10 @@ hr {
 
 	.show-mobile {
 	display: none;
+}
+.logo {
+	width:25px;
+	height:25px;
 }
 
 /* Large devices (large desktops, 1200px and up) */
