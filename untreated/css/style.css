@@ -42,7 +42,8 @@ h4{
 	font-size: 1.5em;
 	line-height: 1.5em;
 	font-weight: 300;
-	margin-top: 0em;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
 }
 
 h5{
@@ -56,6 +57,10 @@ h6{
 	opacity: .6;
 	font-size: 1em;
 
+}
+
+h6.lead-sm{
+	padding-top: 1em;
 }
 
 h6:last-child{
@@ -91,9 +96,9 @@ p{
 	}
 
 hr{
-	width: 25%;
-	margin-top: 3.5em;
-	margin-bottom: 3.5em;
+	width: 50%;
+	margin-top: 3em;
+	margin-bottom: 2em;
 }
 /*end of fonts*/
 
@@ -410,8 +415,7 @@ br{
 
 abbr
 {
-    border-bottom: 4px solid #666;
-    border-color: #bf6363;
+    background-color: #FFF6D9;
 	cursor: help;
 }
 
