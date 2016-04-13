@@ -1,6 +1,6 @@
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1072_rowing04o.jpg) no-repeat center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1072_rowing04f.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,7 +19,7 @@
 
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1075_rowing07o.jpg) no-repeat top center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1075_rowing07f.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,7 +31,7 @@
 }
 
 .header-section3 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1073_rowing16o.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1073_rowing16f.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,7 +127,7 @@ Extra small devices (phones, up to 480px) */
 @media (min-width:960px) { 
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1072_rowing04o.jpg) no-repeat center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1072_rowing04f.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -140,7 +140,7 @@ Extra small devices (phones, up to 480px) */
 
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1075_rowing07o.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1075_rowing07f.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -151,7 +151,7 @@ Extra small devices (phones, up to 480px) */
 }
 
 .header-section3 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1073_rowing16o.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1073_rowing16f.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
