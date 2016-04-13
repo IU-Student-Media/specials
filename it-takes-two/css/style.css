@@ -1,6 +1,6 @@
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1066_performance03o.jpg) no-repeat center top fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1066_performance03f.jpg) no-repeat center top fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,7 +22,7 @@ iframe {
 }
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1065_covero.jpg) no-repeat top center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1065_coverf.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +34,7 @@ iframe {
 }
 
 .header-section3 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1067_perfomance01o.jpg) no-repeat top right fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1067_perfomance01f.jpg) no-repeat top right fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -125,7 +125,7 @@ Extra small devices (phones, up to 480px) */
 @media (min-width:960px) { 
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1066_performance03o.jpg) no-repeat center top fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1066_performance03f.jpg) no-repeat center top fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -138,7 +138,7 @@ Extra small devices (phones, up to 480px) */
 
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1065_covero.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1065_coverf.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -149,7 +149,7 @@ Extra small devices (phones, up to 480px) */
 }
 
 .header-section3 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1067_perfomance01o.jpg) no-repeat top center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1067_perfomance01f.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
