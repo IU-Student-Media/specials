@@ -1,0 +1,660 @@
+.col-md-6{
+	margin-right: 10px;
+}
+.lead-xs{
+
+}
+.lead-sm{
+	display: none;
+}
+.lead-md{
+	display: none;
+}
+.lead-lg{
+	display: none;
+}
+/*fonts*/
+h2, h3, h4, h5, figcaption{
+	font-family: 'Lato', sans-serif;
+	}
+
+h1{
+	font-family: 'Roboto Slab', serif;
+	font-size: 3em;
+	font-weight: 400;
+	/*font-weight: 100*/
+}
+
+h2{
+	font-size: 1.5em;
+	line-height: 1.3em;
+	font-weight: 300;
+}
+
+h3{
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+
+h4{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: 300;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+
+}
+
+h5{
+	line-height: 1.5em;
+}
+
+
+
+
+h6{
+	opacity: .6;
+	font-size: 1em;
+
+}
+
+h6.lead-sm{
+	padding-top: 1em;
+}
+
+h6:last-child{
+	margin-bottom: 2em;
+}
+p{
+	font-family: 'lora', serif;
+	font-size: 18px;
+	line-height: 1.5em;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+
+
+.aside p{
+	font-weight: bold;
+}
+
+.bold{
+	font-weight: 900;
+}
+
+.dropcap{
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	float: left;
+	font-size: 3.5em;
+	line-height: .8em;
+	margin-top: .01em;
+	margin-right: .1em;
+	padding: 0;
+	}
+
+hr{
+	width: 50%;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+/*end of fonts*/
+
+/*navbar*/
+
+.navbar-default{
+    background: rgba(255, 255, 255, 0.05);
+    border:none !important;
+}
+.navbar-nav>li>a:hover{
+    color:#1a1a1a;
+} 
+.collapse.in{
+    
+    background-color:#f0f0f0 !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus
+
+.spacer{
+   background-color:#888;   
+}
+
+.spacer{
+    height:100px;
+    }
+
+nav{
+	text-align: center;
+}
+
+.logo img {
+  vertical-align:middle;
+  height: 50px;
+  width: 50px;
+}
+
+
+.navbar-right img{
+	height: 25px;
+}
+.navbar-brand img {	
+	max-height: 25px;	  
+}
+.nav-headline {
+	font-family: 'roboto slab', serif;
+	font-size: 140%;
+	line-height: 50px; 
+	color: white;
+}
+
+.navbar-default{
+	background-color: transparent;
+}
+/*end of navbar*/
+
+/*intro*/
+
+.mobile-headline{
+	margin: 2%;
+}
+.intro{
+	margin-top: 0em;
+	text-align: center;
+}
+
+
+/*end of intro*/
+
+/*figures and images*/
+figure{
+	margin-top: 0em;
+}
+
+
+figure > img{
+	width: 100%;
+}
+
+figcaption{
+	margin-top: .75em;
+	margin-bottom: 1.5em;
+}
+
+
+
+.wide{
+	width: 100%;
+	margin-left: 0%;
+}
+
+.lead-img {
+
+}
+.lead-img img{
+	max-width: 80%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.break{
+	margin-bottom: 0em;
+	margin-top: 1em;
+}
+
+.break-caption{
+	padding: 0em;
+}
+
+
+
+.break-left, .break-right{
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+.final{
+	margin-bottom: 0em;
+}
+
+
+.break-left *, .break-right *{
+	padding: 0 !important;
+	margin-top: 0em;
+}
+
+.break-right > figure .break-right{
+	color: red;
+}
+
+
+.break-left figcaption{
+	margin-left: 2em;
+	margin-top: 1em;
+	
+}
+.break-right figcaption{
+	margin-top: 1em;
+	margin-left: 0em;
+}
+
+
+
+/*end of figs and imgs*/
+
+/*article*/
+.article{
+	margin-top: 2em;
+}
+
+aside{
+	margin-top: 0em;
+
+}
+
+aside h6{
+	margin-bottom: .5em;
+	margin-top: 1em;
+}
+
+aside.pulled-quote{
+	margin-bottom: 4em;
+	margin-top: 4em;
+}
+
+.inline-left.pulled-quote{
+	text-align: right;
+}
+
+.inline-left >.share{
+	float: right;
+	
+
+
+}
+
+.inline-left> h5{
+	float: right;
+
+}
+
+.wide-left.pulled-quote{
+	text-align: right;
+}
+
+.wide-left > .share{
+	float: right;
+}
+.wide-left >h5{
+	float: right;
+}
+
+.share img {
+	max-width: 25px;
+	height: auto;
+	margin-top: 0em;
+	margin-right: 5px;
+	float: left;
+}
+.share h5{
+	padding-top: 5px;
+}
+
+.share a{
+	color: black
+}
+
+
+
+table {
+        border-collapse: collapse;
+        padding: 0;
+        margin: 0 0 11px 0;
+        width: 100%;
+    }
+
+table th {
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    vertical-align: bottom;
+    padding: 0 10px 10px 10px;
+    text-align: left;
+}
+
+table td {
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    padding: 10px;
+    text-align: left;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    text-align: left;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 480px){
+.lead-xs{
+	display: none;
+}
+
+.lead-sm{
+	display: inline;
+}
+
+}
+@media screen and (max-width: 480px) {
+
+
+
+/*This media query is only really useful for tables*/
+table,
+tbody {
+    display: block;
+    width: 100%;
+}
+
+thead { display: none; }
+
+table tr,
+table th,
+table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+
+table tr {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+}
+
+table th[data-title]:before,
+table td[data-title]:before {
+    content: attr(data-title) ":\00A0";
+    font-weight: bold;
+}
+
+table td {
+    border: none;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+table td:empty { display: none; }
+table td:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+table td:first-child:before { content: ''; }
+}
+
+br{
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.break-right figcaption{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.legend{
+	padding-top: 15px;
+}
+
+abbr
+{
+    background-color: #FFF6D9;
+	cursor: help;
+}
+
+.tooltip
+{
+	position:absolute;
+	background-color:#f7f7f7;
+/*	border: 1px solid #aaaaca;
+*/	font-size: smaller;
+	padding:4px;
+	width: 160px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);	
+}
+
+#googft-mapCanvas {
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+
+}
+
+@media screen and (min-width: 640px){
+.lead-sm{
+	display: none;
+}
+.lead-md{
+	display: inline;
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 640px) {
+
+h1{
+	font-size: 4em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+.wide{
+	width: 135%;
+	margin-left: -15%;
+}
+
+
+.narrow{
+	width: 25%;
+}
+
+
+.inline-left{
+	float: left;
+	width: 50%;
+	margin-right: 2em;
+}
+
+
+.inline-right{
+	float: right;
+	width: 50%;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+aside.pulled-quote{
+	margin-bottom: 0em;
+	margin-top: 0em;
+}
+
+.grid.wide{
+	margin-left: 0em;
+	width: 150%;
+	margin-left: -25%;
+}
+.grid{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.grid figcaption{
+	padding-left: 15px;
+}
+.grid img{
+	margin-bottom: 1em;
+}
+
+.grid figure figcaption{
+	padding-left: 0em;
+	margin-top: 0em;
+}
+.pulled-quote{
+	margin-top: 0em;
+	width: 30%;
+}
+
+.pulled-quote >p{
+	margin-top: 1em;
+}
+
+.pulled-quote > h2{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 0em;
+}
+
+.wide-left.pulled-quote{
+	width: 100%;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+
+.wide-right.pulled-quote{
+	width: 100%;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+
+.sidebar-l{
+	display: none;
+}
+.sidebar-r{
+	display: none;
+}
+
+.break-left figcaption{
+	margin-right: 2em;
+	margin-top: 0em;
+}
+
+
+
+
+.break-right figcaption{
+	float: left;
+	margin-top: 0em;
+	margin-right: 2em;
+	margin-left: 0em;
+	text-align: right;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+/*.left-c{
+	float: ;
+}*/
+video{
+	width: 100%;
+	height: auto;
+}
+
+
+.lead-md{
+	display: inline;
+}
+}
+
+@media screen and (min-width: 992px){
+.lead-md{
+	display: none;
+}
+.lead-lg{
+	display: inline;
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+h1{
+	font-size: 5em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+.wide-left{
+	float: left;
+	width: 60%;
+	margin-left: -30%;
+	margin-right: 2em;
+}
+
+.wide-left-small{
+	float: left;
+	width: 30%;
+	margin-left: -30%;
+	margin-right: 2em;
+}
+
+.wide-right{
+	float: right;
+	width: 60%;
+	margin-right: -30%;
+	margin-left: 2em;
+}
+
+.wide-left.pulled-quote{
+	width: 50%;
+	margin-bottom: 0em;
+	margin-top: 0em;
+}
+
+.wide-right.pulled-quote{
+	width: 60%;
+	margin-bottom: 0em;
+	margin-top: 0em;
+}
+
+.sidebar-l{
+	display: block;
+	padding-left: 15%;
+	padding-right: 2em;
+	width: 100%;
+}
+.sidebar-r{
+	display: block;
+	padding-right: 15%;
+	padding-left: 2em;
+	width: 100%
+}
+
+.sidebar-align{
+	margin-right: 0px;
+}
+
+.break-right figcaption{
+	margin-left: 3em;
+}
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1000px) {
+	.lead-lg{
+	display: inline;
+}
+
+}
