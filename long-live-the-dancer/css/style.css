@@ -1,6 +1,6 @@
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1061_raymonda012o.jpg) no-repeat center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1061_raymonda012f.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,7 +20,7 @@
 
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1063_raymonda01recreateo.jpg) no-repeat top center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1063_raymonda01recreatef.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,7 +113,7 @@ Extra small devices (phones, up to 480px) */
 @media (min-width:960px) { 
 
 .header-visual { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1061_raymonda012o.jpg) no-repeat center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1061_raymonda012f.jpg) no-repeat center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -126,7 +126,7 @@ Extra small devices (phones, up to 480px) */
 
 
 .header-section2 { 
-  background: url(https://s3.amazonaws.com/media.inm.ids/1063_raymonda01recreateo.jpg) no-repeat center center fixed; 
+  background: url(https://s3.amazonaws.com/media.inm.ids/1063_raymonda01recreatef.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
