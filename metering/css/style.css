@@ -12,24 +12,42 @@ Assume anything not under a media query is for .col-xs */
 		font-family: 'Lato', sans-serif;
 		color: #4b4b4b;
 		margin-top: 0em;
-
 	}
-	
+
+
+	.small {
+		width: 10%;
+		margin-right: -50px;
+	}
+
+	.right {
+		width: 10%;
+		margin-left: 40px;
+	}
+
 
 	/*use h1 for headlines*/
-	h1{
-		font-family: 'Roboto Slab', serif;
-		font-size: 3.5em;
-		line-height: 1.2;
+	.main {
+		font-family: "Lato";
+		font-size: 4em;
 		letter-spacing: .05em;
-		font-weight: 300;
+		font-weight: 900;
 		margin-bottom: 1em;
-		margin-top: 1em;
 		text-align: center;
+		text-transform: uppercase;
+		color: #333333;
+}
+
+	.highlight {
+		background-color: #FFFF00;
 	}
 
 	.smaller {
 		font-size: 2.5em;
+	}
+
+	.margtop {
+		margin-top: 2em;
 	}
 
 	/*h2 is the italicized subhead.*/
@@ -37,11 +55,19 @@ Assume anything not under a media query is for .col-xs */
 		font-size: 1.8em;
 		line-height: 1.3em;
 /*		color: #939393;
-*/		margin-bottom: 1.8em;
+*/		margin-bottom: 1em;
 		font-weight: 300;
 		margin-top: 1.8em;
 	}
 	
+
+.imgvert { 
+  background: url(https://s3.amazonaws.com/media.ids/63110_frame_vertf.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 	h3{
 		font-size: 2em;
 	}
@@ -59,7 +85,7 @@ Assume anything not under a media query is for .col-xs */
 	/*h6 is used for bylines*/
 	h6{
 		font-family: 'Lato', sans-serif;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.5em;
 		font-weight: 300;
 	}
@@ -72,6 +98,10 @@ Assume anything not under a media query is for .col-xs */
 		text-align: center;
 	}
 
+.negmargbottom {
+	margin-bottom: -1em;
+}
+
 
 
 	/*We're never gonna change body copy though*/
@@ -81,7 +111,7 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	p{
-		font-size: 17px;
+		font-size: 14.5px;
 		line-height: 1.8;
 		padding-bottom: 1em;
 		font-weight: 500;
@@ -112,7 +142,7 @@ Assume anything not under a media query is for .col-xs */
 	}
 
 	.pulledquote .fa-twitter {
-	  color: black;
+	  color: white;
 	  font-size: 1em;
 	  padding-left: .5em;
 	}
@@ -357,6 +387,10 @@ hr {
 
 	}
 
+.imghorz {
+	display: none;
+}
+
 /* this is where i am adding all my shit*/
 
 .weekend {
@@ -467,6 +501,7 @@ hr {
 	width: 80px;
 	height: auto;
 	padding-top: 7em;
+	
 }
 
 .border {
@@ -533,7 +568,7 @@ hr {
 	h2{
 		font-size: 2em;
 		line-height: 1.3em;
-		color: #939393;
+		color: #333333;
 		margin-bottom: 2em;
 		font-weight: 300;
 		margin-top: 2em;
@@ -548,34 +583,8 @@ hr {
 		display: none;
 	}
 	
-#kanyemain {
-	background: url(https://s3.amazonaws.com/media.ids/61535_kanyemaino.gif) 50% 0 repeat fixed;
-	min-height:1000px;
-	 -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
-
-#kanyemainsecond {
-	background: url(https://s3.amazonaws.com/media.ids/61542_kanyesecondmaino.gif) 50% 0 repeat fixed;
-	min-height:1000px;
-	 -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-.weekend {
-	margin-top: 4em;
-	text-align: center;
-	font-size: 26px;
-	font-family: "Roboto Slab";
-	font-weight: 300;
-
-}
 
 }
 
@@ -586,6 +595,8 @@ hr {
 	.show-desktop {
 	display: block;
 }
+
+	
 /*navbar*/
 	.navbar-headline-mobile {
 		display: none;
@@ -606,6 +617,18 @@ hr {
 
 	}
 
+
+.imghorz { 
+  background: url(https://s3.amazonaws.com/media.ids/63111_framef.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.imgvert {
+	display: none;
+}
 
 /*article*/
 
@@ -661,23 +684,6 @@ hr {
 	margin-left: 25px;
 }
 
-.tilt {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-          display: inline-block;
-}
- 
-.tilt:hover {
-  -webkit-transform: rotate(-5deg);
-     -moz-transform: rotate(-5deg);
-       -o-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-}
-
 .bold {
 	font-weight: 900;
 }
@@ -709,10 +715,15 @@ hr {
 		font-size: 3.5em;
 	}
 
+	video {
+		width: 50%;
+	}
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width:1200px) { 
 
 
  }
+
 
