@@ -1,0 +1,118 @@
+/*!
+ * Custom style sheet
+ */
+ body {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  line-height: 1.8;
+  color: #333;
+  background: #F0F0F0 !important; 
+}
+  @media(min-width:768px) {p {font-size:120%;}}
+
+	/*if you want to change the color of icons throughout the article feel free, but create
+	a new class name so the navbar icons stay the same color. */
+
+	.fa-twitter {
+	  color: #333;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.fa-twitter {
+	  color: #333;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.pulledquote .fa-twitter {
+	  color: #333;
+	  font-size: 1em;
+	  padding-left: .5em;
+	}
+
+	.fa-facebook {
+	  color: #333;
+	  padding-right: .15em;
+	  font-size: 1.6em;
+	}
+
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #ccc;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #101010;
+}
+
+  .navbar-default {
+    background-color: #101010;
+    border-color: #101010;
+}
+
+  .dropdown-menu > li > a:hover,
+   .dropdown-menu > li > a:focus {
+    color: white;
+   text-decoration: none;
+  background-color: #ccc;  /*change color of links in drop down here*/
+   }
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #101010; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }
+
+
+
+h1,
+.h1 {
+  /*font-weight: bold;*/
+  color: #333;
+  font-family:'Lora', serif;
+  font-weight: bold;
+}
+  @media(min-width:768px) {h1{font-size:350%;}}
+
+h2,
+.h2 {
+  /*font-weight: bold;*/
+  font-size:110%;
+  font-family:'Lora', serif;
+}
+  @media(min-width:768px) {h2{font-size:200%;}}
+
+h3,
+.h3 {
+  /*font-size:65%;*/
+  font-family:'Lora', serif;
+  line-height: 1.5;
+}  
+  @media(min-width:768px) {h3{font-size:200%;}}
+
+h4,
+.h4 {
+  line-height: 1.5;
+}
+  @media(min-width:768px) {h4{font-size:150%;}}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    /* margin-right:-4px; */
+}
