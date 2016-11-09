@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>IDS election coverage</title>
+
+	<!-- info for facebook's system. fill in so fb doesn't wreck your morning by pulling the wrong photo  -->
+	<meta property="og:title" content="..." />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="..."/>
+	<meta property="og:description" content="..."/>
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="..."/>
+	<!-- same goes for twitter -->
+	<meta name="twitter:card" content="...">
+	<meta name="twitter:site" content="...">
+	<meta name="twitter:title" content="...">
+	<meta name="twitter:description" content="...">
+	<meta name="twitter:creator" content="...">
+	<meta name="twitter:image" content="...">
+
+	<!-- styles, concatonate them before publishing -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/zoom.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/alignment.css">
+	<link rel="stylesheet" href="css/type.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300|Lato:400,300|Lora' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+	<nav class="nav_visible">
+
+		<div class="logo">
+			<img src="https://s3.amazonaws.com/media.ids/60674_idslogo_blacko.png" alt="">
+		</div>
+
+
+
+		<div class="title">
+			<h3>2016 Election </h3>
+			
+		</div>
+		
+		<!-- the social div floats right, the icons are changed in the navbar.js -->
+		<div class="social">
+			<ul>
+				<!-- make sure to include the class popup if you want the link to open in a new window -->
+				<a href=" " class="popup">
+					<li class="fb-logo">
+						<img src="img/b.facebook.svg" alt="">
+					</li>
+				</a>
+
+				<a href=" " class="popup">
+					<li class="twitter-logo">
+						<img src="img/b.twitter.svg" alt="">
+					</li>
+				</a>
+
+				<a href="#disqus">
+					<li class="comments-logo">
+						<img src="img/b.comments.svg" alt="">
+					</li>
+				</a>
+			</ul>
+		</div>
+		
+		<!-- This is the indicator bar for how much is left in the story -->
+		<progress value="0"></progress>
+	</nav>
+<article>
+	<div class="lead">
+		<img src="img/lead.jpeg" alt="">
+		<h1>2016 Election</h1>
+	</div>
+
+	<div class="subhead">
+  		  <h2 class="subtitle fancy"><span>Indiana Daily Student Election Coverage</span></h2>
+  	</div>
+
+
+		
+	<a href="#president">
+	<div class="teaser republican">
+		<!-- <img src="img/young.jpg" alt=""> -->
+		<!-- Clinton -->
+<!-- 		<img src="img/US_NEWS_CLINTON_5_ABA(2).jpg" alt="">
+ -->		<!-- Trump -->
+		<img src="img/US_NEWS_GOPDEBATE_5_SIP.jpg" alt="">
+
+		<div class="text">
+				<h2>President</h2>
+		<h5>Trump 58.8%</h5>
+		<h5>Clinton 36.6%</h5>
+
+		</div>		
+	
+
+	</div>
+	</a>
+
+
+	<a href="#governor">
+	<div class="teaser republican">
+		<img src="img/Holcomb2.JPG" class="large" alt="">
+		<img src="img/Holcomb2small.jpg" class="small" alt="">
+
+		<div class="text">
+			<h2>Governor</h2>
+			<h5>Eric Holcomb 52.6%</h5>
+			<h5>John Gregg 44.2%</h5>
+		</div>
+		
+	</div>
+	</a>
+
+	<a href="#senate">
+	<div class="teaser republican">
+		<img src="img/young.jpg" alt="">
+		<div class="text">
+			<h2>US Senate</h2>
+			<h5>Todd Young 52.0%</h5>
+			<h5>Evan Bayh 40.4%</h5>
+		</div>
+	</div>
+	</a>
+
+	<a href="#house">
+	<div class="teaser republican">
+		<img src="img/represent.jpg" class="large" alt="">
+		<img src="img/representsmall.jpg" class="small" alt="">
+
+		<div class="text">
+		<h2>House District 9</h2>
+		<h5>Trey Hollingsworth 52.6%</h5>
+		<h5>Shelli Yoder 42.5%</h5>
+		</div>
+	</div>
+	</a>
+
+		<hr id="president">
+	<div class="story" >
+		<h3>Donald Trump wins Indiana, Nation</h3>
+		<h6>By This dude</h6>
+
+		<p><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+		<img src="img/young.jpg" alt="">
+		<figcaption>By this dude. Figcaption</figcaption>
+		<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+
+		<aside class="right">
+			<img src="img/young.jpg" alt="">
+			
+			<figcaption>By this dude. Figcaption</figcaption>
+			<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		</aside>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+
+
+
+
+	<hr id="governor">
+	<div class="story">
+		<h3>The world is over</h3>
+		<h6>By This dude</h6>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+		<img src="img/young.jpg" alt="">
+		<figcaption>By this dude. Figcaption</figcaption>
+
+		<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+
+		<aside class="right">
+			<img src="img/young.jpg" alt="">
+			
+			<figcaption>By this dude. Figcaption</figcaption>
+
+			<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		</aside>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+
+
+	<hr id="senate">
+	<div class="story">
+		<h3>lets not</h3>
+		<h6>By This dude</h6>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+		<img src="img/young.jpg" alt="">
+		<figcaption>By this dude. Figcaption</figcaption>
+		<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+
+		<aside class="right">
+			<img src="img/young.jpg" alt="">
+			
+			<figcaption>By this dude. Figcaption</figcaption>
+
+			<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		</aside>
+
+
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+
+
+	<hr id="house">
+	<div class="story">
+		<h3>harambe 2016?</h3>
+		<h6>By This dude</h6>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+		<img src="img/young.jpg" alt="">
+		<figcaption>By this dude. Figcaption</figcaption>
+		<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+
+		<aside class="right">
+			<img src="img/young.jpg" alt="">
+			
+			<figcaption>By this dude. Figcaption</figcaption>
+			<div class="share">
+				<a href="https://twitter.com/intent/tweet?text=%22%5BIt%20is%5D%20the%20curse%20of%20the%20lake%2C%20when%20someone%20drowns%20he%20dies%20instantly.%20For%20HIV%20at%20least%20he%20will%20have%20some%20time.%22%20 http://goo.gl/LPqqjX" class="popup" target="_blank"><img src="img/b.twitter.svg" alt=""></a>
+
+				<a href="https://www.facebook.com/sharer.php?u=http://www.jamesbenedict.info/uganda/" class="popup"><img src="img/b.facebook.svg" alt=""></a>
+			</div>
+		</aside>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus ante malesuada, laoreet libero. Pellentesque habitant morbi trnistique senectus et netus et malesuada fames ac turpis egestas. Pellentesque tristique efficitur sagittis. Nullam at mi mi. Aenean libero quam, molestie sed magna non, maximus consectetur urna. Morbi mauris ipsum, bibendum eu risus sit amet, tristique faucibus risus. Nulla bibendum, purus ut sodales pellentesque, erat justo iaculis odio, sit amet pellentesque turpis felis sed elit.</p>
+	</div>
+
+
+
+		<div id="disqus_thread"></div>
+		<script>
+
+		/**
+		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+		// var disqus_config = function () {
+		//     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+		//     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		// };
+
+		(function() { // DON'T EDIT BELOW THIS LINE
+		    var d = document, s = d.createElement('script');
+		    s.src = '//idsnews.disqus.com/embed.js';
+		    s.setAttribute('data-timestamp', +new Date());
+		    (d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                    
+	</article>
+</article>
+	
+
+
+<!-- only include js you actually use -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src=js/popup.js></script>
+
+</body>
+</html>
