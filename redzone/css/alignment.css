@@ -62,7 +62,9 @@ article aside.right {
   margin-bottom: 0%; }
 
 .bottom {
-  margin-top: 39.5%;
+  /*margin-top: 39.5%;*/
+  position: relative;
+  top: 415px;
   margin-left: 15%; }
 
 .parallaxcaption {
@@ -171,7 +173,7 @@ footer {
   .right-wide {
     float: left;
     min-width: 100%;
-    margin: 0%; }
+    margin: 5%; }
   .wide {
     width: 100%;
     margin-left: 0%;}
