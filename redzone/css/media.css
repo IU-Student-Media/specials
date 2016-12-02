@@ -60,7 +60,7 @@ video {
     background-image: url("https://s3.amazonaws.com/media.ids/66140_17_final_20161007kendallinterview_152o.jpg");
     /*background-image: url("https://iu.app.box.com/representation/file_version_113842410211/image_2048_jpg/1.jpg");*/
     /* Set a specific height */
-    height: 700px;
+    height: 1000px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
