@@ -185,7 +185,12 @@ footer {
     margin: 0em;
     padding: 0em;
     width: 100%;
-    margin-left: 0em; } }
+    margin-left: 0em; } 
+.bottom {
+  /*margin-top: 39.5%;*/
+  position: relative;
+  top: 215px;
+  margin-left: 15%; }}
 
 @media (min-width: 768px) {
   article {
