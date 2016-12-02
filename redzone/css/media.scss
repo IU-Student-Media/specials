@@ -1,0 +1,45 @@
+figure{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+img{
+	width: 100%;
+	margin-left: 0%
+}
+
+
+nav img{
+	width: auto;
+}
+
+.wide > figure{
+	width: 100%;
+	margin-left: 0%;
+}
+
+.full > figure{
+	margin-left: 0%;
+}
+
+.aside{
+	.left-wide, .right-wide, .left, .right{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+video{
+	height: 100%;
+}
+
+
+
+
