@@ -39,6 +39,9 @@ footer {
   footer a {
     line-height: 1.25em; }
 
+.fa-clock-o {
+  margin-top: 1em; }
+
 @media (max-width: 768px) {
   .timeline.sidebar:before {
     top: 0;

@@ -62,7 +62,9 @@ footer{
 }
 
 
-
+.fa-clock-o{
+	margin-top: 1em;
+}
 @media(max-width: $sm-min){
 	.timeline.sidebar{
 	&:before {
@@ -101,6 +103,8 @@ footer{
 		}
 	}
 }
+
+
 }
 
 @media (min-width: $lg-min) { 
