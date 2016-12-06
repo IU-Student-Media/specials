@@ -28,10 +28,11 @@ hr {
   margin-bottom: 1em; }
 
 footer {
+  color: #000;
   position: relative;
   height: 5em;
-  bottom: 0;
-  margin-top: 12em;
+/*  bottom: 0;
+*/  margin-top: 12em;
   text-align: right;
   padding-top: 5px; }
   footer .footer-text {
@@ -42,7 +43,26 @@ footer {
 .fa-clock-o {
   margin-top: 1em; }
 
+.leadimage{
+  background-image: url("../img/ballet.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 @media (max-width: 768px) {
+
+  .grid3{
+    width: 100%;
+  }
+.introduction{
+  text-align: left;
+  padding-left: 1em;
+}
+
   .timeline.sidebar:before {
     top: 0;
     bottom: 0;
@@ -56,6 +76,15 @@ footer {
     width: 60%; } }
 
 @media (max-width: 991px) {
+
+  .leadimage{
+  background-image: url("../img/m.ballet.jpg");
+  height: 60vh;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   .timeline.sidebar:before {
     top: 0;
     bottom: 0;
