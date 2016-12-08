@@ -169,7 +169,8 @@ footer {
     min-width: 100%;
     margin: 0%; }
   .wide {
-    width: 100%;
+    width: 90%;
+      padding-left:5%;
     margin-left: 0%; }
   .grid-wrap {
     width: 100%;
@@ -195,7 +196,8 @@ footer {
     margin-left: 5%; }
   .wide {
     margin: 0%;
-    width: 100%; }
+      padding-left: 5%;
+    width: 90%; }
   .xs-hidden {
     display: none; }
   .xs-visible {
@@ -219,6 +221,7 @@ footer {
     margin: 0 5% 0 -25%; }
   .wide {
     width: 75%;
+      padding-left: 0%;
     margin-left: 12.5%; }
   .xs-hidden {
     display: none; }
