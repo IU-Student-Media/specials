@@ -1,0 +1,139 @@
+nav {
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  height: 30px;
+  width: 100%;
+  background-color: #f8f9f9;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  -moz-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  display: inline-block;
+  text-align: center;
+  z-index: 999 !important; }
+  nav .logo {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    padding-top: 5px;
+    padding-left: 5px; }
+    nav .logo img {
+      float: left;
+      max-height: 20px; }
+  nav .title {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    margin-top: -5px;
+    left: 25%; }
+    nav .title ul {
+      list-style: none; }
+    nav .title li {
+      display: inline-block;
+      position: relative; }
+    nav .title li#nav-dropdown {
+      max-height: 8px;
+      margin-top: 0px;
+      left: 0px;
+      top: 0px; }
+    nav .title h3 {
+      display: inline-block;
+      margin-top: 5px;
+      width: auto; }
+    nav .title ul.dropdown {
+      display: inline-block;
+      position: relative; }
+  nav .social {
+    position: relative;
+    top: -47px;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    left: 75%; }
+    nav .social ul {
+      list-style: none;
+      width: 100%; }
+    nav .social li {
+      display: inline-block;
+      position: relative;
+      left: 0;
+      float: right;
+      margin-left: 0em; }
+    nav .social .fb-logo {
+      margin-right: 15px; }
+    nav .social img {
+      z-index: 1;
+      max-width: 25px;
+      max-height: 20px;
+      margin-left: 20px;
+      margin-top: 20%;
+      margin-bottom: 7%; }
+
+.invisible {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 5px 5px transparent;
+  -moz-box-shadow: 0px 5px 5px transparent;
+  box-shadow: 0px 5px 5px transparent;
+  color: white; }
+  .invisible h3 {
+    visibility: hidden; }
+  .invisible progress {
+    color: #f0f0f0;
+    opacity: 0; }
+  .invisible progress::-webkit-progress-value {
+    opacity: 0; }
+  .invisible progress::-moz-progress-bar {
+    opacity: 0; }
+  .invisible .title {
+    display: none; }
+
+progress {
+  /* Positioning */
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 30px;
+  /* Dimensions */
+  width: 100%;
+  height: 5px;
+  /* Reset the appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+  /* Progress bar value for IE10+ */
+  color: #666666;
+  opacity: .6; }
+
+progress::-webkit-progress-bar {
+  background-color: transparent; }
+
+progress::-webkit-progress-value {
+  background-color: #666666;
+  opacity: .6; }
+
+progress::-moz-progress-bar {
+  background-color: #666666;
+  opacity: .6; }
+
+@media (max-width: 767px) {
+  nav li.comments-logo {
+    display: none; } }
+
+@media (min-width: 768px) {
+  nav li.share {
+    display: none; } }
