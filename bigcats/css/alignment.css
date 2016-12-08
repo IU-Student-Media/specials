@@ -176,6 +176,11 @@ footer {
     width: 100%;
     margin-left: 0%;
     padding: 0em; }
+    .grid-wrap figcaption {
+    width: 100%;
+      padding-right:5%;
+        padding-left:5%
+    float: left; }
   .grid2 {
     margin: 0em;
     padding: 0em;
