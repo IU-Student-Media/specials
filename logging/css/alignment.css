@@ -164,6 +164,11 @@ footer {
     width: 50%;
     margin-right: 10%;
   } 
+  .grid-wrap figcaption {
+    width: 95%;
+    float: left; 
+    margin-right: 5%;}
+
   .right-wide {
     float: left;
     min-width: 100%;
