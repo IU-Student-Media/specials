@@ -1,40 +1,4 @@
-.doc-intro {
-  width: 100%;
-  top: 0;
-  margin-top: 0em;
-  padding-top: 6%;
-  padding-bottom: 3%;
-  background-color: #BE4C39; }
-  .doc-intro h1, .doc-intro h2, .doc-intro h5, .doc-intro h6 {
-    width: 50%;
-    margin-left: 25%;
-    color: white;
-    opacity: 1; }
-  .doc-intro h5, .doc-intro h5 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    margin-top: 0em; }
-
-
-/*.grid2seastrom {
-  margin: 0em;
-  padding: 0em;
-  width: 49.5%;
-  margin-left: 0%;
-  margin-right: .5%;
-  float: left;
-  height: 100%; }
-.grid-wrapseastrom{
-  padding: 0em;
-
+body,html{
+  margin: 0px;
+  padding: 0px;
 }
-
-.grid-wrapseastorm figcaption{
-  width: 49.5%;
-  margin-left: .5%
-}
-*/
-@media (max-width: 767px) {
-  .doc-intro h1, .doc-intro h2, .doc-intro h5, .doc-intro h5 {
-    width: 85%;
-    margin-left: 7.5%; } }

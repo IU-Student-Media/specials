@@ -34,7 +34,7 @@ aside.ad {
   float: left;
   margin-right: 2em;
   margin-left: 1.5em;
-  text-align: right; }
+  /*text-align: right;*/ }
 
 article aside.left {
   margin-left: 0em; }
