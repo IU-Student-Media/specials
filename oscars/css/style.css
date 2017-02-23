@@ -55,17 +55,12 @@
   @media(max-width: 617px) {
     nav .title h3 {
       font-size: 1em;
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
 
     }
 
-    @media(max-width: 767px) {
-    article {
-      padding-left: 12%
-
-    }
 
 
 
