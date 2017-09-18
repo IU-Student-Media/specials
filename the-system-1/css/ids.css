@@ -457,6 +457,7 @@ hr {
 
 #ocr1 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/cba539ed-2d2f-47ef-a6dc-9c9e5eb5c388.original.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -465,6 +466,7 @@ hr {
 
 #ocr2 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/17ee1f45-40d2-41a9-9009-6807c99cb787.original.jpg ) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -473,6 +475,7 @@ hr {
 
 #ocr3 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/9f2f411e-46ca-4042-85aa-cd8f6f4de55e.original.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -481,6 +484,7 @@ hr {
 
 #ocr4 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/4f12c30e-ead7-4869-af19-9e2989ac92e8.original.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -489,6 +493,7 @@ hr {
 
 #ocr5 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/5a283415-5283-4155-91ba-3ab030aeb4d3.original.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -498,6 +503,7 @@ hr {
 #ocr6 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/f9bc233c-2690-4091-882b-5c6351f935dd.original.jpg
 ) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -506,6 +512,7 @@ hr {
 
 #ocr7 {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/f60bb870-999b-42a5-a1f1-af128caebdee.original.jpg ) 50% 0 repeat fixed;
+	min-height:1000px;
 	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
