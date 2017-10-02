@@ -1,0 +1,454 @@
+<!-- 
+
+I've updated the template with Bootstrap, so it's scalable on mobile. Check out the css documents in this file (alignment, components, content and ids) to see what elements are preprogrammed for you to use. If you have your own ideas in mind, you are more than welcome to add your own or tweak what is already there. 
+
+I've also included the old template (James's cookbook) in the "example" subfolder. You can still use all of those elements in this template, or even just use that template, so go to town with that. Caveat: there's no bootstrap.
+
+If you need help with style (specifically what falls under IDS style and what doesn't) or any advice at all, contact Eman at emozaffa@indiana.edu, or whoever is on the digital desk at the IDS at the time. 
+
+MAKE SURE TO GET RID OF DOCUMENTS/CODE THAT YOU DON'T USE. Don't load anything that isn't necessary so your page loads more quickly and efficiently!
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- The below 3 meta tags must come first in the head; any other head content must come after these tags -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Something in the night | Indiana Daily Student</title>
+	<link rel="SHORTCUT ICON"
+       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+
+	<!-- below is the link to the image facebook will pull as the preview to your article -->
+	<!--Make sure to fill all of these in with the right info-->
+	<meta property="og:url" content="http://specials.idsnews.com/bats/"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Something in the night" />
+	<meta property="og:description" content="Bats are disappearing — what does that mean for the rest of us?"/>
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/d2bf0914-f9a2-4251-b869-0fc86eb99a46.original.jpg"/>
+	<!--twitter -->
+	<!--Make sure to fill all of these in with the right info-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="Something in the night">
+	<meta name="twitter:description" content="Bats are disappearing — what does that mean for the rest of us?">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/d2bf0914-f9a2-4251-b869-0fc86eb99a46.original.jpg">
+
+	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
+	<link rel="stylesheet" href="css/zoom.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/alignment.css">
+	<link rel="stylesheet" href="css/type.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ids.css"> 
+
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+	
+	<!-- START head content - ADS-->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [728, 90], 'div-gpt-ad-1481216987742-0').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [728, 90], 'div-gpt-ad-1481216987742-1').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials3_leaderboard_728x90', [728, 90], 'div-gpt-ad-1481216987742-2').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials4_leaderboard_728x90', [728, 90], 'div-gpt-ad-1481216987742-3').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials5_leaderboard_728x90', [728, 90], 'div-gpt-ad-1481216987742-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!--END of head content -->
+
+</head>
+<body>
+ <!-- Google Tag Manager --> 
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-NBJX8F');</script> 
+<!-- End Google Tag Manager -->
+
+  <!-- NAVBAR Talk to Eman or any digi person if you need help with including a navigation pane in your navbar, or you can figure it out yourself! You'll need an unordered list and a dropdown menu. For most longform projects, though, you won't need that.-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+
+     		</button>
+     		<a class="navbar-brand" href="http://www.idsnews.com/" style="color:white"><img src="https://s3.amazonaws.com/media.ids/60558_idslogoo.png" id="IDS" alt="IDS"></a>
+     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">Something in the night</a>
+
+		</div> <!-- end of navbar header -->
+
+		<!-- Collect the nav links, forms and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><span class="nav-headline"> Something in the night  </span></li>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="http://twitter.com/home?status=As%20a%20deadly%20disease%20ravages%20bat%20populations,%20researchers%20work%20to%20find%20out%20what%20the%20world%20stands%20to%20lose.%20http%3A%2F%2Fspecials.idsnews.com/bats%2F
+" class="popup" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+
+			
+
+				<li><a href="https://www.facebook.com/idsnews" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+
+				 <ul class="nav navbar-nav" style="height: 32px;">
+      </ul>
+			</ul>
+		</div> <!-- end of navbar-collapse -->
+	</div> <!-- end of continer-fluid -->
+			<!--Make sure to fill in the headlines-->
+  </nav>
+
+<div class="show-desktop">
+		<!--go to ids.css and replace the link in the "dominantimage" with whatever you would like to be the dominant image. if you don't want parallax screens, you can replace this with an image size of your choice (refer to the components and alignment css documents to learn more about the types of alignments for text and visual elements. Play around with them and change the sizings based on your liking. -->
+<section id="dominantimage" data-type="background" data-speed="10">
+		<h1 class="dheadline">Something in <span style = "display: block;">the night</span></h1></section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/298dabd1-8c40-4fa7-8957-b05f53b69790.original.jpg">
+	</figure>
+</div>
+
+<div class="container-fluid show-mobile"> 
+	<div class="row article">
+		<div class="col-md-10 body-copy">
+			<h1 class="leftmarg"><div align = "center">Something in the night</h1></div>
+		</div>
+	</div>
+</div>
+
+<div class="break show-mobile">
+</div>
+
+
+<div class="container-fluid">
+	<div class="row intro"> <!-- intro row -->
+	<div align = "center">
+	  	<div class="col-md-offset-2 col-md-7 subhead">
+	  		<h2>Scientists paid little attention to bats until a decade ago, when a disease called white nose syndrome started wiping out populations across the United States. Now, researchers race against time to find out what bats — and their disappearance — mean for the world at large. </h2>
+	  		</div>
+
+	  	</div>
+	 
+<!-- end of intro row -->
+
+	</div>
+		<!--Make sure to fill in the bylines with Twitter handle, email and name-->
+		<div class="col-md-offset-2 col-md-7">
+		<div align = "center">
+
+				<h6><span class="by">Story by Jack Evans</span> <br> jackevan@indiana.edu | <a href="https://twitter.com/JackHEvans" target="_blank">@JackHEvans</a></h6>
+				<h6><span class="by">Photos by Noble Guyon </span><br> nguyon@iu.edu </h6>
+				<h6><span class="by">Development by Eman Mozaffar</span> <br> emozaffa@indiana.edu | <a href="https://twitter.com/emanmozaffar" target="_blank">@emanmozaffar</a></h6>
+			
+			</div>
+			</div>
+
+</div>
+
+
+	<div class="row article led">
+		<div class="col-md-offset-2 col-md-7 body-copy">
+		  <br>
+<p>MORGAN-MONROE STATE FOREST — The light turns gold as the pickup bumps along Goose Creek Road. By the time the researchers reach their destination, the sun has maybe an hour left in the sky. This is part of the plan. Tonight’s quarry lives in the dark.</p>
+
+<p>When night falls, they work in the glow of headlamps. They rig nets in the soft earth around a pond, and they lie in wait until the netting snags their prey. In latex-gloved hands, they cradle piggish faces squeaking above bodies no bigger than human palms. They inspect the translucent wings for signs of the disease wiping out these creatures.</p>
+
+<aside class = "right">
+<img src = "https://s3.amazonaws.com/snwceomedia/ids/0762d5ea-d3b3-4e21-9d8a-661df5f57d3c.original.jpg"><figcaption>Ball State graduate student Keifer Titus, left, laughs with Indiana State University doctoral students Lizz Beilke, center, and Tim Divoll as they prepare to set up nets intended to catch bats for research purposes on June 21. The team spent the summer in the Morgan Monroe State Forest, along with other graduate students, catching and cataloguing research on multiple species of bats, including the endangered Indiana Bat. </figcaption>
+</aside>
+
+<p>Then they open their hands and watch the bats fly back into the night. </p>
+
+<p>“That’s so cool,” researcher Hannah Friend says.</p>
+
+<p>Sometimes the bats seem like nothing more than ghosts, half-seen figments fluttering across a swatch of sky. They elude the researchers on some nights, and fewer appear each year — as if the caves where they winter have claimed them entirely.</p>
+
+<p>A fungus-borne menace called white nose syndrome has massacred bat populations across the country over the past decade, rendering the species in some places functionally extinct. White nose has gnawed at Indiana, but not as thoroughly as it has some other regions, which makes the state ripe for research.</p>
+
+<p>Even as species such as the Indiana bat and the northern long-ear disappear, scientists know relatively little about them. Widespread interest only blossomed a decade ago, when biologists found themselves pressed for time by a fungus with a comically evil scientific name, Pseudogymnoascus destructans.</p>
+
+<p>Long deemed pests, predators and plague-bringers, bats may play crucial roles in their environments, in agriculture and in human health. So now, deep in these woods, the researchers work into the night taking samples of fur and droppings. They hope to find, while there’s still time, what the world stands to lose.</p>
+
+<div align = "center"> 
+	<img class = "resize" src = "https://s3.amazonaws.com/snwceomedia/ids/dd13e9ad-6abb-4f8e-9996-7a1290490ea2.original.png">
+</div>
+<br>
+
+<p>For centuries, humans have consigned bats to realms of danger, disease and death. Leviticus tells believers to “regard (them) as unclean.” The Mayan bat god Camazotz killed humans with sharp-pointed weapons. In parts of southwest Asia, bats have long been regarded as omens of bad luck or death.</p>
+
+<aside class = "left">
+<img src = "https://s3.amazonaws.com/snwceomedia/ids/f653a9ff-c873-4609-bc66-ee03157f87b9.original.jpg"><figcaption>Indiana State University doctoral student Lizz Beilke walks a net across the length of a small pond in the Morgan Monroe State Forest on June 21. The group of researchers set up an array of three nets around the pond to catch the bats. This proves difficult because the bats are aware that the nets are there due to their echo location. </figcaption>
+</aside>
+
+<p>Researchers and journalists in the last century have documented those fears turning into violence. In his book “The Secret Lives of Bats,” preeminent bat researcher and conservationist Merlin Tuttle remembered seeing people in Venezuela use flamethrowers to kill vampire bats.</p>
+
+<p>Human disturbance, including cave vandalism, led to the listing in the late 1960s of the Indiana bat as endangered, a designation it retained even before white nose syndrome appeared. Now, the species hibernates in just a handful of caves across the Midwest.</p>
+
+<p>Even biology and environmental science largely ignored bats until recently, said Timothy Divoll, who has researched bats in southern Indiana’s forests over the past few summers. </p>
+
+<p>The Indiana State University doctoral student’s research on bat diets illustrates the extent of the ambivalence. Though bats in North America have been known to generally eat bugs, Divoll is still cataloging which bugs and understanding what that might mean for their ecosystems.</p>
+
+<p>“People weren’t really intensely studying these species before the decline,” Divoll said.
+Then white nose came.</p>
+
+<p>Researchers found it first in February 2006 in upstate New York. By 2011, it showed up in Indiana. According to the United States Fish and Wildlife Services, confirmed or suspected cases have surfaced in 33 states and five Canadian provinces.</p>
+
+<p>White nose attacks bats at their most vulnerable. When bats hibernate, they reserve energy so they can survive without eating until spring. Bats with white nose use far more energy during hibernation — as much as twice the amount that healthy bats use, according to a 2015 study.</p>
+
+<aside class = "right">
+<img src = "https://s3.amazonaws.com/snwceomedia/ids/71c9a65f-28a4-4787-95d0-09f92d83be98.original.jpg"><figcaption>An Indiana Bat is shown with a radio transmitter attached to its back on June 21 in the Morgan-Monroe Star Forest. The trackers last for several weeks before falling off the bats. Tim Divoll and his team do their best to collect the transmitters, which can be hard to find because of their size. </figcaption>
+</aside>
+
+<p>The vampiric disease doesn’t just kill bats. It sucks the life out of them.</p>
+
+<p>By 2015, the most recent year with data available from the Indiana Department of Natural Resources, the population of Indiana bats had declined by 27 percent over four years in their namesake state. In the same year, the northern long-eared bat, whose range stretches from the east coast to Louisiana, the Dakotas and Canada, became the first species to be listed as threatened under the Endangered Species Act due to white nose.</p>
+
+<p>Some parts of the country have seen 90 to 100 percent mortality rates.</p>
+
+<p>Lizz Beilke, a doctoral student and one of Divoll’s colleagues at ISU, spent last year’s research season in the Great Smoky Mountains along the Tennessee-North Carolina border. White nose reached there in 2009. By last year, she said, both Indiana bats and northern long-eared bats were functionally extinct there. They may have still existed in small numbers, but they could no longer fulfill their roles in their ecosystems.</p>
+
+<p>They were as good as gone.</p>
+
+<div align = "center"> 
+	<img class = "resize" src = "https://s3.amazonaws.com/snwceomedia/ids/dd13e9ad-6abb-4f8e-9996-7a1290490ea2.original.png">
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="bat1" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/fe796bdb-0a8b-4cfe-8f0f-79a3b7081894.original.jpg">
+	</figure>
+	</div>
+
+	</div>
+
+
+	<div class="row article led">
+		<div class="col-md-offset-2 col-md-7 body-copy">
+
+		<figcaption>Indiana State University doctoral student Lizz Beilke holds a Indiana Bat after untangling the bat from a net on June 21 in the Morgan-Monroe State Forest. The group measured the bat's wingspan, took hair and guano samples. Later attached a radio transmitter to its back. The Indiana Bat is one species of bat that has been affected by white nose syndrome. It has decimated bat populations across North America. Introduced in New York in 2006, the fungus attacks bats when they hibernate during the winter.  </figcaption>
+
+<p>It is a cool May night, the first of the research season, when the team drives down Goose Creek Road armed with latex and Lysol and long black nets. Divoll parks the truck at the head of a clearing off the road.</p>
+
+<p>They make camp in the clearing and take a footpath to a small, still pond with a glassy black surface. Insects flit through the air above it, their bodies made tiny stars by the golden hour light.</p>
+
+<p>The researchers — Divoll, Beilke, Friend and Lauren Hendrickson — unfurl their mist nets, meter after meter of fine polyester. Even in daylight, against the black surface of the pond, the netting becomes hard to see. When night falls, it disappears entirely.</p>
+
+<p>The researchers hem in one end of the pond. The clang of Divoll’s hammer on metal stakes butts against the woods’ soft birdcalls. When the sun goes down, Divoll explains, the bats will swoop low over the pond to drink and feed on the insects, then — hopefully — fly into the netting and entangle themselves.</p>
+
+<aside class = "right">
+<img src = "https://s3.amazonaws.com/snwceomedia/ids/0342ed9a-6596-4b2b-9635-c3963baa2c8f.original.jpg"><figcaption>Indiana State University doctoral student Lizz Beilke untangles the first catch of the night, an endangered Indiana Bat, from a net setup near the pond in the Morgan Monroe State Forest on June 21. The net had only ben up for about 10 minutes before the team had their first bat to study for the evening.  </figcaption>
+</aside>
+
+<p>“We probably only have a couple of minutes,” Divoll warns Beilke as they finish setting up. The setup has taken more than an hour, and now, with the light receding, they return to the clearing where they made camp to cover their bodies in surgical scrubs or navy-blue coveralls and gloves.</p>
+
+<p>“I feel like I should be in a factory,” Hendrickson jokes, but the precautions are less for their own safety and more for that of the bats. By covering their bodies, bagging personal items and disinfecting surfaces, they hope to keep from spreading any outside diseases or fungi to the bats.</p>
+
+<p>Beilke sets up the bat line — “a clothesline for bats,” as Divoll describes it, where bats, after being removed from the nets, will hang in mesh bags until the researchers examine them. The headlamps glow under an inky sky.</p>
+
+<p>The forest quiets. Beilke and Divoll pick out sounds in the distance — flying squirrels, a whip-poor-will — when they spot a flutter that drops their voices to an excited whisper.</p>
+
+<p>“It’s a tiny one,” Divoll says.</p>
+
+<p>“Hopefully he’ll end up in the nets,” Beilke says.</p>
+
+<p>Then headlamp beams cut along the footpath to the pond and onto the nets, where they illuminate three immobilized bundles.</p>
+
+<p>Divoll makes quick work on the first one, a northern long-eared bat. He untangles it but holds on, his grip gentle but firm. The bat squirms and squawks. A metal band around one wingtip shows it was caught and released by researchers before.</p>
+
+<p>“We got a second one,” Friend calls to Divoll. It’s small and gray, and its hairless toes distinguish it as an exciting find for the researchers.</p>
+
+<p>“Shit — that looks like an Indiana bat,” he says. He untangles it, and it too puts up a fight. “She’s a female. She’s probably pregnant — that’s why she’s getting angry.”</p>
+
+<p>Beilke pulls down one more netted bat, a more common red that fidgets less than the others. Divoll would expect a big catch like this to come at the beginning of the night, he says, with the bats all rushing out at once to feed. But at this point, that anything has happened at all elates them.</p>
+
+<p>“First night!” he says.</p>
+
+<p>“First net check!” Beilke calls back.</p>
+
+<div align = "center"> 
+	<img class = "resize" src = "https://s3.amazonaws.com/snwceomedia/ids/dd13e9ad-6abb-4f8e-9996-7a1290490ea2.original.png">
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="stuff" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/6a3bbbc9-6a06-49d4-bd04-1ccbb97540f0.original.jpg">
+	</figure>
+	</div>
+
+	</div>
+
+
+	<div class="row article led">
+		<div class="col-md-offset-2 col-md-7 body-copy">
+
+		<figcaption>Indiana State University doctoral student Tim Divoll prepares surgical cement to be used to attach a radio transmitter to the back of a bat. The transmitters are small so that they fit on the backs of the bats.They help Divoll track the movements of the Indiana Bat, which is endangered due to white nose syndrome.</figcaption>
+
+<p>By the end of the summer, they’ll catch 19 Indiana bats and eight northern long-eared bats. Divoll will determine anecdotally that areas harvested last year by the DNR don’t prove any less hospitable to bats, and the abundance of dead trees may make for better roosts.</p>
+
+<p>The other aspect of the research, analysis of bats’ droppings to better understand their diets, takes longer. But Divoll has already worked on that research for three years, and in that time, he’s found at least 500 species of insects.</p>
+
+<p>“They’re completely insectivorous,” he explained. “We have many options. Fruits, vegetables, meat, dairy. We can get our nutrition many ways. They can only get it from insects.”</p>
+
+<p>In addition to white nose syndrome, climate change and wildlife management practices that alter bugs’ habitats may put bats at greater risk.</p>
+
+<p>They eat beetles that bore into the bark of trees and wipe out whole sections of forest. They eat moths that damage trees by rolling their leaves. They eat the mosquitos that carry dog heartworm and West Nile virus, and if climate change brings the mosquito that carries the Zika virus this far north, they’ll eat that, too. They eat crop pests that, if left unchecked, could threaten agriculture.</p>
+
+<p>And so, Divoll and other scientists have begun to understand, bats exist at a crucial link in America’s environmental and economic chains. Their tiny wings may be hard to spot in the night sky, but they reach far into worlds beyond their own.</p>
+
+<div align = "center"> 
+	<img class = "resize" src = "https://s3.amazonaws.com/snwceomedia/ids/dd13e9ad-6abb-4f8e-9996-7a1290490ea2.original.png">
+</div>
+<br>
+
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="batteeth" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/ac173c5a-61b1-40c9-8208-d800ed1bbf8e.original.jpg">
+	</figure>
+	</div>
+
+	</div>
+
+
+	<div class="row article led">
+		<div class="col-md-offset-2 col-md-7 body-copy">
+
+		<figcaption>Indiana State University doctoral students Tim Divoll, left, and Lizz Beilke place a radio transmitter on the back of an Indiana Bat on June 21 in the Morgan-Monroe State Forest. Since so little is known about bats, it is important that someone is collecting information about their things like diet and movements of the bats, according to Divoll.  </figcaption>
+
+<p>A puff of smoke escapes toward the treetops as Divoll solders two parts of a small metal transmitter, which will help the researchers track the bats and map their roosts.</p>
+
+<p>A few steps away, hunched over a storage tub serving as a work table, Beilke weighs and measures the red bat and takes samples of its fur. When she’s done, Hendrickson and Friend help her attach a metal band. Then they let it go.</p>
+
+<p>They clean their tools and work surfaces with Lysol wipes. An alarm, set for a net check every 10 minutes, sounds — <i>deeeeet deeeeet deeeeet</i> — and a minute later, Divoll returns from the pond with another Indiana bat.</p>
+
+<p>Beilke takes the first Indiana bat from the bat line and spreads her on the work table. Her fingers look huge as they prod the bat’s belly, searching for signs of pregnancy.</p>
+
+<aside class = "right">
+<img src = "https://s3.amazonaws.com/snwceomedia/ids/fd1de3ed-9132-434f-ae0f-ef1fb5b0d7aa.original.jpg"><figcaption>Indiana State University doctoral students Tim Divoll, left, and Lizz Beilke examine the wing of a bat on June 21 in the Morgan-Monroe State Forest. The group takes hair, guano and skin samples from the bats after catching them. They also measure wingspan, attach tags to the wings and in the case of the Indiana Bat, tracking devices. The Indiana Bat has been moved onto the endangered species list after being devastated by white nose syndrome.</figcaption>
+</aside>
+
+<p>“Sometimes you can feel something hard on one side,” Divoll suggests. “The fetus is sideways.”
+She probes the sides of the bat’s stomach with her fingers.</p>
+
+<p>“Yeah,” she says, and Friend marks a spreadsheet with “P” for “pregnant.”</p>
+
+
+<p>Now Beilke pulls the bat’s wings taut to look for scarring, a telltale symptom of white nose syndrome. She is undamaged.</p>
+
+<p>The whole crew leans over the table. Beilke spreads out the bat, her back to the sky. Divoll uses scissors to cut a small bald patch in her fur and cleans it with alcohol. Then he dips a brush in surgical cement, daubs it on one side of the transmitter and attaches it to the bald spot. The transmitter will likely fall off after two weeks, he says, or when the bat molts.</p>
+
+<p>When the cement sets, Divoll coaxes her to the end of his fingertips, where she perches. After deciding she’s not going to fly from his hand, he finds a tree to set her on, and she climbs up and into the night.</p>
+
+<p>By 11 p.m., the crew has determined they’re unlikely to catch any more bats tonight.</p>
+
+<p>They sit in a circle of camping chairs in the quiet of the woods, faces bathed in the light of a single headlamp.</p>
+
+<p>They talk about their hopes and anxieties. Uncertainty haunts the immediate future of wildlife research: President Trump has rolled back the U.S.’s federal environmental standards and proposed slashing the Environmental Protection Agency’s budget.</p>
+
+<p>“Right now, in this political climate, it’s so hard to get your heart set on something,” Divoll says.</p>
+
+<p>Every so often, they simply fall silent. Then, all at once, they tilt their heads and look toward the sky.</p>
+
+
+</div>
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="conclusionimage" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/9115d486-5ed1-415f-a1ff-2fb8be01accd.original.jpg">
+	</figure>
+</div>
+
+
+<div class="container-fluid"> 
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+		</div> <!-- end of body copy -->
+
+
+	</div> <!-- end of row article -->
+
+
+		</div> <!-- end of container-fluid-->
+
+</div> <!-- end of container fluid -->
+
+<footer>
+	<p>© Indiana Daily Student, 2017
+
+	
+</footer>
+
+	<!-- scripts -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.embed.ly/player-0.0.9.min.js"></script>
+	<script src="js/popup.js"></script>
+
+
+</body>
+</html>
