@@ -1,0 +1,176 @@
+/* EXAMPLE OF HOW TO STYLE WITH GOOGLE FONTS:*/
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+* {margin:0; padding:0;}
+
+body {
+	background-color:#FFF;
+}
+
+p {
+	font-size: .8em;
+	font-family: 'PT Serif';
+}
+	
+h1, h2, h3, h4, li, figcaption, .explainer, .intro {
+	font-family: 'PT Serif';
+	margin: 0 .3em .3em .3em;
+	font-weight: 700;
+}
+
+.explainer {
+	font-weight: 300;
+	margin-bottom: 16px
+}
+
+canvas {
+  padding: 1.3em;
+  margin: .5em auto;
+}
+
+.button {
+  border: .5px solid #eee;
+  padding: 0em;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: left; }
+  button:hover {
+    background-color: #337ab7;
+    color: white; }
+    button:hover h1 {
+      color: white; }
+  button h1, button h2, button h3, button h4, button h5, button h6, button p {
+    padding-left: 5px;
+    margin-bottom: 5px; }
+
+
+
+.doughnut-chart-container {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0
+  padding-bottom: 0;
+  height: 80vh;
+  width: 80vw;
+}
+
+.line-chart-container {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0
+  padding-bottom: 0;
+  height: 80vh;
+  width: 80vw;
+}
+
+.bar-chart-container {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 0
+  padding-bottom: 0;
+  height: 80vh;
+  width: 80vw;
+}
+
+
+h4 {
+	font-size: .5em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 2em;
+	margin:10px 5px;
+}
+
+.intro {
+	font-size: .9em;
+	margin-bottom: 16px;
+	font-weight: 300;
+}
+
+figure, figcaption {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: .3em;
+  padding-left: .3em;
+  width: 100%;
+  font-size: .9em;
+  line-height: 1.2em;
+  color: black;
+  font-weight: 300;
+}
+
+figcaption {
+  margin-bottom: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+img	 {
+  margin-right: auto;
+  margin-left: auto;
+  width:100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) { 
+
+p {
+	color: blue;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h4 {
+	letter-spacing: .5em;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+p {
+	color: red;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h4 {
+	letter-spacing: .3em;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+p {
+  color: orange;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h4 {
+	letter-spacing: .2em;
+}
+}
+
