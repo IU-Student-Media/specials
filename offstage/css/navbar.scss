@@ -1,0 +1,277 @@
+@import 'breakpoints.scss';
+
+nav{
+	position: fixed;
+	top: 0;
+	-webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+	height: 2.4em;
+    width: 100%;
+    background-color: #f8f9f9;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0px 5px 5px rgba(204,204,204, 0.4);
+     -moz-box-shadow: 0px 5px 5px rgba(204,204,204, 0.4);
+    box-shadow: 0px 5px 5px rgba(204,204,204, 0.4);
+    display: inline-block;
+    text-align: center;
+    z-index: 999 !important;
+
+    .logo{
+    	margin: 0;
+    	padding: 0;
+    	width: 25%;
+    	padding-top: .5em;
+    	padding-left: 5px;
+    	img{
+    		float: left;
+    		max-height: 20px;
+    	}
+    }
+
+    .title{
+    	margin: 0;
+    	padding: 0;
+    	width: 50%;
+    	text-align: center;
+    	position: fixed;
+      margin-top: -5px;
+    	// display: inline-block;
+    	left: 25%;
+    	ul{
+    		list-style: none;
+			
+    	}
+    	
+    	li{
+    		display: inline-block;;
+    		position: relative;
+
+    	}
+    	li#nav-dropdown{
+    		max-height: 8px;
+    		margin-top: 0px;
+    		left: 0px;
+    		top: 0px;
+    	}
+    	h3{
+    		display: inline-block;
+    		margin-top: 5px;
+    		width: auto;
+
+    	}
+    	ul.dropdown{
+    		display: inline-block;
+    		position: relative;
+    		
+
+    		// float: right;
+    	}
+    	// img{
+    	// 	max-height: 5px;
+    	// 	max-width: 5px;
+    	// }
+    	
+    }
+
+	
+    .social{
+    	position: relative;
+    	top: -47px;
+    	margin: 0;
+    	padding: 0;
+    	width: 25%;
+    	left: 75%;
+    	ul{
+    		list-style: none;
+    		width: 100%
+    	}
+    	li{
+    		display: inline-block;
+    		position: relative;
+    		left: 0;
+    		float: right;
+
+    		margin-left: 0em;
+		
+    	}
+
+    	.fb-logo{
+    		margin-right: 15px;
+    	}
+    	img{
+		z-index: 1;
+		max-width: 30px;
+		max-height: 20px;
+		margin-left: 20px;
+		margin-top: 15%;
+		margin-bottom: 7%;
+		}
+
+		
+    }
+	// ul{
+	// 	list-style-type: none;
+	// 	margin: 0;
+	// 	padding: 0;
+	// 	width: 100%;
+	// }
+	// li{
+	// 	max-height: 25px;
+	// 	display: inline-block;
+	// 	float: left
+	// }
+
+	// h4{
+	// 	position: relative;
+	// 	top: 8px;
+	// }
+
+	// .title{
+	// 	// display: inline-block;
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	text-align: center;
+	// 	z-index: -1;
+	// }
+
+	// .title h4{
+	// 	margin-right: 5%;
+	// }
+
+
+
+	// #logo img{
+	// 	position: relative;
+	// 	z-index: 1;
+	// 	left: 5px;
+	// 	max-width: 40px;
+	// 	margin-top:12%;
+	// 	margin-bottom: 7%;
+	// 	margin-right: 1em;
+	// }
+
+	// .social{
+	// 	position: relative;
+	// 	z-index: 1;
+	// 	right: 15px;
+	// 	float: right;
+	// }
+
+	// .social img{
+	// 	z-index: 1;
+	// 	max-width: 25px;
+	// 	margin-left: 20px;
+	// 	margin-top: 12%;
+	// 	margin-bottom: 7%;
+	// }
+
+	
+
+
+}
+
+.invisible{
+	-webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+	background-color: transparent;
+	border-color: transparent;
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0, 0);
+    -moz-box-shadow: 0px 5px 5px rgba(0,0,0, 0);
+    box-shadow: 0px 5px 5px rgba(0,0,0, 0);
+	color: white;
+	h3{
+		visibility: hidden;
+	}
+
+	progress{
+		color: #f0f0f0;
+		opacity: 0;
+	}
+
+	progress::-webkit-progress-value {
+	  opacity: 0;
+	}
+
+	progress::-moz-progress-bar {
+	  opacity: 0;
+	}
+
+	.title{
+		display: none;
+	}
+	
+
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 2.4em;
+
+  /* Dimensions */
+  width: 100%;
+  height: 5px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: #666666;
+  opacity: .6;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: #666666;
+  opacity: .6;
+}
+
+progress::-moz-progress-bar {
+  background-color: #666666;
+  opacity: .6;
+}
+
+@media (max-width: $xs-max) {
+	nav{
+		li.fb-logo{
+			// display: none;
+		}
+		li.twitter-logo{
+			// display: none;
+		}
+		li.comments-logo{
+			display: none;
+		}
+		
+
+	}
+}
+
+@media (min-width: $xs-max+1){
+	nav{
+		li.share{
+			display: none;
+		}
+	}
+}
+
+
+
+
+
