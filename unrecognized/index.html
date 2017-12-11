@@ -1,0 +1,467 @@
+<!-- 
+I've updated the template with Bootstrap, so it's scalable on mobile. Check out the css documents in this file (alignment, components, content and ids) to see what elements are preprogrammed for you to use. If you have your own ideas in mind, you are more than welcome to add your own or tweak what is already there. 
+
+I've also included the old template (James's cookbook) in the "example" subfolder. You can still use all of those elements in this template, or even just use that template, so go to town with that. Caveat: there's no bootstrap.
+
+If you need help with style (specifically what falls under IDS style and what doesn't) or any advice at all, contact Eman at emozaffa@indiana.edu, or whoever is on the digital desk at the IDS at the time. 
+
+MAKE SURE TO GET RID OF DOCUMENTS/CODE THAT YOU DON'T USE. Don't load anything that isn't necessary so your page loads more quickly and efficiently!
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- The below 3 meta tags must come first in the head; any other head content must come after these tags -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Unrecognized | Indiana Daily Student</title>
+	<link rel="SHORTCUT ICON"
+       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+
+
+	<!-- below is the link to the image facebook will pull as the preview to your article -->
+	<!--Make sure to fill all of these in with the right info that goes with YOUR story.
+		If you don't, social media will be messed up!-->
+	<meta property="og:url" content="http://specials.idsnews.com/unrecognized"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Unrecognized" />
+	<meta property="og:description" content="For homeless students, there's a delicate balance between affording housing and education."/>
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/820664bf-1f26-421a-b3d4-b9260e3c49c1.sized-1000x1000.jpg"/>
+	<!--twitter -->
+	<!--Make sure to fill all of these in with the right info-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="Unrecognized">
+	<meta name="twitter:description" content="For homeless students, there's a delicate balance between affording housing and education.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/820664bf-1f26-421a-b3d4-b9260e3c49c1.sized-1000x1000.jpg">
+
+	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
+	<link rel="stylesheet" href="css/zoom.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/alignment.css">
+	<link rel="stylesheet" href="css/type.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ids.css"> 
+
+	<!-- FONTS 
+		Load what you want to here, but we use Lora OR Lato for body copy, no changes there. You can ask me about other fonts, too.-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700|Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+<!-- START: this goes in the head content -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+
+        //all other leaderboards
+    var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+
+    googletag.defineSlot('/32635621/rectangle1', [300, 250], 'div-gpt-ad-1510067235285-0').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/rectangle2', [300, 250], 'div-gpt-ad-1510067235285-1').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/rectangle3', [300, 250], 'div-gpt-ad-1510067235285-2').addService(googletag.pubads());
+  	googletag.defineSlot('/32635621/leaderboard1', [[728, 90], [320, 50]], 'div-gpt-ad-1510067235285-3').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/leaderboard2', [[728, 90], [320, 50]], 'div-gpt-ad-1510067235285-4').defineSizeMapping(mapping1).addService(googletag.pubads());
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+	googletag.pubads().setCentering(true);
+    googletag.enableServices();
+  });
+</script>
+<!-- END of this goes in the head content -->
+
+</head>
+<body>
+ <!-- Google Tag Manager --> 
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" 
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': 
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], 
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); 
+})(window,document,'script','dataLayer','GTM-NBJX8F');</script> 
+<!-- End Google Tag Manager -->
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+
+     		</button>
+     		<a class="navbar-brand" href="http://www.idsnews.com/" style="color:white"><img src="https://s3.amazonaws.com/media.ids/60558_idslogoo.png" id="IDS" alt="IDS"></a>
+     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">Unrecognized</a>
+
+		</div> <!-- end of navbar header -->
+
+		<!-- Collect the nav links, forms and other content for toggling 
+			For this part, we have a navbar that includes a -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><span class="nav-headline">Unrecognized  </span></li>
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<!-- Right underneath this is the Twitter Web Intent. In the navbar, this will appear as a Twitter icon and when the user clicks on it, a window will pop up and autofill with a tweet and a link to your story. Please go to https://dev.twitter.com/web/tweet-button/web-intent to learn about how to write a tweet for this, and plug them into the a href and you'll be set!-->
+				<li><a href="http://twitter.com/home?status=Thousands%20of%20college%20students%20around%20the%20country%20are%20homeless,%20but%20it%20often%20goes%20unrecognized.%20http%3A%2F%2Fspecials.idsnews.com/unrecognized%2F" class="popup" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<!-- I took out an extra space in here -EA -->
+				
+				<li><a href="https://www.facebook.com/idsnews" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+
+	</div> <!-- end of continer-fluid -->
+  </nav>
+
+<div class="show-desktop">
+	<!--find "home" in ids.css, replace the image url with your desired image, and it will parallax the image for you on desktop. Nice. 
+
+		if you don't want parallax screens, you can replace this with an image size of your choice (refer to the components and alignment css documents to learn more about the types of alignments for text and visual elements. Play around with them and change the sizings based on your liking.
+
+		Also, go to "headline" class in the same file to see the attributes of the headline for the desktop version.-->
+<section id="home" data-type="background" data-speed="10">
+		<h1 class="headline">Unrecognized</h1></section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<!-- Link to dominant image goes here, for mobile version-->
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/820664bf-1f26-421a-b3d4-b9260e3c49c1.sized-1000x1000.jpg">
+	</figure>
+</div>
+
+<div class="container-fluid show-mobile"> 
+	<div class="row article">
+		<div class="col-md-10 body-copy">
+			<h1 class="leftmarg">Unrecognized</h1>
+		</div>
+	</div>
+</div>
+
+<div class="break show-mobile">
+</div>
+
+
+<div class="container-fluid">
+<!-- /32635621/leaderboard1 -->
+<p>&nbsp;<br><div id='div-gpt-ad-1510067235285-3' style="align-content: center">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510067235285-3'); });
+</script>
+</div>&nbsp;<br></p>
+<!-- END /32635621/leaderboard1 -->
+
+	<div class="row intro"> <!-- intro row -->
+	  	<div class="col-md-offset-1 col-md-8 subhead">
+	  		<h2>Thousands of college students struggle to maintain the delicate balance between affording housing and education. But few people know it.</h2>
+
+	  	</div>
+		<!-- Bylines here-->
+		<div class="col-xs-12 byline-mobile">
+				<h6><span class="by">Story by Zoe Spilker</span> <br> zspilker@iu.edu | <a href="https://twitter.com/zoespilker" target="_blank">@zoespilker</a></h6>
+				<h6><span class="by">Photos by Kayleigh Dance </span><br> kndance@iu.edu | <a href="https://twitter.com/iKant_DANCE" target="_blank">@iKant_DANCE</a></h6>
+				<h6><span class="by">Multimedia and development by Emily Miles </span><br> elmiles@iu.edu | <a href="https://twitter.com/emilylenetta" target="_blank">@emilylenetta</a></h6>
+			</div>
+	  	</div>
+	</div> <!-- end of intro row -->
+
+	<!-- This is where your body starts. Look at Bootstrap for tutorials on how to play around with column widths. Go wild. -->
+	<div class="container-fluid">
+	<div class="row article led">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+
+
+<p>Nicole Allen sits on the floor of her residence hall, surrounded by her books. She has 59, if you don’t count the Bible on her nightstand. She keeps them in a medium-sized plastic tote. A year of use has worn out the green lid.</p>
+
+<p>She carefully puts her books back inside the tote, first the big paperbacks and then the smaller ones. She places hardcovers of “City of Lost Souls” and “The Legend of Sleepy Hollow” on top to protect the others, just in case she has to move when it’s raining and water seeps through the lid.</p>
+
+</div>
+
+		<!--Mobile bylines go here, replace with same as above info -->
+		<div class="col-md-4 sidebar">
+			<div class="byline">
+				<h6><span class="by">Story by Zoe Spilker</span> <br> zspilker@iu.edu | <a href="https://twitter.com/zoespilker" target="_blank">@zoespilker</a></h6>
+				<h6><span class="by">Photos by Kayleigh Dance </span><br> kndance@iu.edu | <a href="https://twitter.com/iKant_DANCE" target="_blank">@iKant_DANCE</a></h6>
+				<h6><span class="by">Multimedia and development by Emily Miles </span><br> elmiles@iu.edu | <a href="https://twitter.com/emilylenetta" target="_blank">@emilylenetta</a></h6>
+
+			</div>
+		</div>
+
+<div class="container-fluid">
+<div class="row article led">
+	<div class="col-md-offset-1 col-md-6 body-copy">
+
+<p>She shoves the tote back under her bed, walks over to her desk and opens a small wooden jewelry box. Her class ring sits in the bottom drawer — a silver band and a tiny red gem. Her mom’s credit card payment for the ring went through the day she died. Most of the stability in Nicole’s life ended that day.</p>
+
+<aside class = "right-wide">
+	<hr>
+<h3>The audio version</h3>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/366871172%3Fsecret_token%3Ds-UoMXo&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe><figcaption>Reading isn't always easy. Listen to the full written story here. </figcaption>
+	<hr>
+</aside>
+
+<p>Nicole’s mom had been sick, and at 7:30 p.m. Dec. 3, 2012, she flat-lined. Nicole let go of her hand for the last time, ran out of the hospital and fell in the parking lot, not sure what would happen next.</p>
+
+<p>The courts sent her and her brother to live with their father, who hadn’t been around much.</p>
+
+<p>He charged them rent, and Nicole couldn’t afford it. She was left with nowhere to stay until her guidance counselor at Crawford County High School stepped in. The counselor helped her find families who could take her in until she would start at Vincennes University.</p>
+<!-- BEGIN /32635621/rectangle1 -->
+<p><div id='div-gpt-ad-1510067235285-0' style='height:250px; width:300px; text-align: center'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510067235285-0'); });
+</script>
+</div>&nbsp;<br></p>
+<!-- END /32635621/rectangle1 -->
+
+<p><a href= "http://www.wihopelab.com/publications/Hungry-and-Homeless-in-College-Report.pdf" target="_blank">Fourteen percent</a> of community college students across the country are homeless, but it’s not just a community college problem. Nicole is homeless, too. She lives with a roommate in the Vanderburgh residence hall, but when school is out, she has nowhere to go.</p>
+
+<img src="https://s3.amazonaws.com/snwceomedia/ids/374addbc-e99e-4f95-81cd-e2a6aad290f4.sized-1000x1000.jpg">
+<figcaption>Now a junior, Nicole attends Vincennes University. She pays for food and housing with student financial aid and what she makes working at Tecumseh Dining Center, but she still worries about having enough money to pay for school. As a homeless student, Nicole has no certain place to stay during scheduled breaks when the dorms are closed.</figcaption>
+
+<p>Cindy Knowles is the director of counseling at Crawford County High School who helped Nicole get back on her feet. Crawford is one of the five lowest-income counties in Indiana. Knowles sees about two identified homeless students graduate in each class of about 100.</p>
+
+<p>For all of those students, navigating college and financial aid is confusing. Some can afford to not understand it. Students like Nicole cannot.</p>
+
+<p>“When people think homelessness, they think on the street, in boxes or in a shelter, but that’s not always the case,” Knowles said.</p>
+
+<p>Students might be sleeping in cars, with their friends’ families or with a rotation of family members.</p>
+
+<img src="https://s3.amazonaws.com/snwceomedia/ids/8945fd4d-e2fa-4724-b9be-917b12be47f9.sized-1000x1000.jpg">
+
+<p>At any point — a breakup, an argument, a missed paycheck — their housing could fall through, and they could be left on the street.</p>
+
+<p>The year after Nicole graduated, Knowles saw another student, Khylee Williams, graduate with no clue where to go next.</p>
+
+<p>Khylee spent most of her life floating from home to home as her parents abused drugs and drifted in and out of jail. She moved five times between 7th and 12th grades. Relatives would let her stay with them for a while, and then she would move in with her boyfriend or with friends.</p>
+
+<p>Khylee wanted to be a paramedic, and she tried to go to Ivy Tech, but the financial aid process stopped her.</p>
+
+<p>When Khylee tried to fill out the Free Application for Federal Student Aid in 2015, a nightmarish process for any student, she saw it required her to show her tax return from that year.</p>
+
+<p>The form has about 130 questions to calculate adjusted gross income and the expected family contribution. It takes about an hour to complete for the first time, even with all the documents handy.</p>
+
+<p>Khylee moved so often that the address under which she filed her taxes got mixed up. Without submitting her FAFSA, her only option was to take out about $16,000 in student loans -- money she wasn’t sure she would be able to pay back.</p>
+
+<p>Knowles offered to help her figure out the right tax information, but navigating the system was so frustrating that Khylee gave up.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zyv196DBOZ8?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<figcaption>Dave Murray, president of the National Center for College Costs, helps students at Crawford County High School's FAFSA Day. Murray started the NCCC in 1999 and has worked with many homeless students over the years.</figcaption>
+
+<p>This fall, Khylee set up a meeting with Knowles to try again. But two days before their meeting, Khylee’s car broke down.</p>
+
+<p>She’d just finished a Sunday night shift as a server and hostess at the Overlook Restaurant in Leavenworth, Indiana, and when she went to start her car, nothing happened.</p>
+<!-- BEGIN /32635621/rectangle2 -->
+<p><div id='div-gpt-ad-1510067235285-1' style='height:250px; width:300px; align-content: center'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510067235285-1'); });
+</script>
+</div>&nbsp;<br></p>
+<!-- END /32635621/rectangle2 -->
+
+<p>Her gold 1999 Chrysler Concorde had a cracked head gasket, coolant leaking everywhere and bad brake rotors. Her only option was to dump her car and get a new one, but she would have to wait until spring for her tax refund or until she got a raise at work. Until then, she had to rely on her boyfriend and coworkers for rides.</p>
+
+<p>She was standing in the parking lot trying to call anyone she could for help when it all hit her. She couldn’t make the meeting with Knowles. She was back where she started.</p>
+
+<p>But by Thanksgiving, Khylee had found a one-bedroom home with her boyfriend. It was affordable and available and what she called the perfect little start.</p>
+
+<p>Khylee still plans to go to school for paramedic science, once her car is fixed.</p>
+
+<p>"I'm slowly getting there, but things are working out," Khylee said. "Things are looking up, and I think it's my time to shine."</p>
+
+</div>
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="cindyaction" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/e306f095-6bf0-4e29-99d9-b0e349cc4e67.sized-1000x1000.jpg">
+	</figure>
+	</div>
+
+<div class="container-fluid">
+	<div class="row article led">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+<figcaption>Cindy Knowles helps a family during FAFSA Day, the event Khylee Williams planned to attend before her car broke down. Knowles is a counselor at Crawford County High School and has worked with both Khylee and Nicole in the past.</figcaption>
+
+<p>Bill Wozniak is heavily caffeinated and more enthused about college funding than any human has a right to be.</p>
+
+<p>“I’m fired up. We’re fired up,” he tells a group of about 30 high school counselors. “Let’s get started. Let’s have fun.”</p>
+
+<p>He’s not a game show host but the vice president of marketing for INvestEd Indiana, the organization tasked with providing Indiana students and their parents with information about college funding.</p>
+
+<p>In his audience, one woman wears a dark green T-shirt that reads, “Ask me about community college.”</p>
+
+<p>The counselors are gathered at Ivy Tech’s Bloomington campus for the Indiana Student Financial Aid Association’s 10th workshop this year. There, the counselors get updates on state and federal regulations, scholarship programs and changes to the FAFSA. They came for the answers to their toughest questions about students.</p> 
+
+<p>For example, what if a student is living with her grandparents temporarily because one parent is involved in drugs and the other is in jail?</p>
+
+<p>“Is it OK they don’t have their parents’ information on the application? We can just skip that if there’s no contact?” asks one woman. Her shirt bears education writer P.J. Caposey's quote: “Great teachers focus not on compliance, but on connections and relationships.”</p>
+
+<p>The answer is complicated. If students are documented as homeless, they don't have to fill out any parent information. But, if they aren’t, they should know they’re potentially delaying their aid. And they need a good advocate when they ask the school’s financial aid office to cut them slack.</p>
+
+<p>Knowles is here. Of everyone in the room, she probably has the most direct experience with homeless students.</p>
+
+<p>She and the other counselors bat around the definitions of unaccompanied youth and emancipated minor. She knows that determining a student’s home status is more complicated than checking the right box.</p>
+
+<p>On the federal level, a bill was proposed in September to streamline the process for homeless and foster care youths.</p>
+
+<p>If passed, the bill has the potential to make it easier for school administrators to declare a student homeless. The FAFSA question to determine homelessness would be easier to understand. The form would require less documentation and open the door to more financial aid.</p>
+
+<p>The bill has only two co-sponsors. In the legislative world, that’s like having only two friends.</p>
+
+<img src="https://s3.amazonaws.com/snwceomedia/ids/a34afe73-f447-4c35-a5b6-35496c855216.sized-1000x1000.jpg">
+<figcaption>Nicole shows the tattoo on her arm. The tattoo memorializes the date of her mother's death.</figcaption>
+
+<p>When Nicole Allen was 13, she promised her mom she would go to college so she could open a restaurant one day. Her mom would be the cute hostess at the front, feeding everyone her famous peanut butter fudge.</p>
+<!-- BEGIN /32635621/rectangle3 -->
+<p><div id='div-gpt-ad-1510067235285-2' style='height:250px; width:300px; align-content: center'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510067235285-2'); });
+</script>
+</div>&nbsp;<br></p>
+<!-- END /32635621/rectangle3 -->
+
+<p>But the closest Nicole has gotten is her $7.25-per-hour job scrubbing plastic cups and ceramic plates at the Tecumseh Dining Center.</p>
+
+<p>She was a sophomore in high school when doctors found a large saddle clot in her mom’s heart. It blocked the blood going into and going out of the heart. Her mom was put on a breathing machine for a few days, then the doctors told Nicole they couldn’t save her.</p>
+
+<p>Nicole had baked a peanut butter pie at her mom’s request just a few weeks before. She hated peanut butter, but she loved her mom.</p>
+
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="ring" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/f2f5d8fc-514e-49cd-9232-2b019ae2fb12.sized-1000x1000.jpg">
+	</figure>
+	</div>
+
+	</div>
+
+<div class="container-fluid">
+	<div class="row article led">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+
+		<figcaption>Nicole treasures her class ring from New Albany High School. When Nicole transferred to Crawford County High School, she chose not to change the style of the ring. It was the ring her mother bought for her, and it was the ring she would keep.</figcaption>
+
+<p>Five years had gone by. It was the fall of her junior year of college, and she had switched her major from culinary arts to child development. She was catching up with a coworker during some downtime during her shift at the dining hall. A man rushed in shouting there’d been a stabbing.</p>
+
+<p>“Just call the cops. Someone call the cops.”</p>
+
+<p>Nicole stopped, phone in her hand. She didn’t have much information to give the operator. What if they thought she was pranking them? Could they send her to jail?</p>
+
+<p>Nicole’s friend walked the man to the front desk to get help and to find someone else to call. Within minutes, University police were outside the building and the sound of an ambulance followed.</p>
+
+<p>Nicole was glad to stay out of it. She didn’t want any misunderstanding. She couldn’t afford to go to jail.</p>
+
+<p>Her financial aid covered her tuition, housing costs and most of her food, and her campus job gave her enough money to do her laundry – she wasn’t about to walk around in dirty clothes. And even if she could afford a night in jail, she had nobody to get her out.</p>
+
+<hr>
+
+<h3>The days before break</h3>
+<iframe width="100%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/366542879&amp;color=%23ff5500&amp;inverse=false&amp;auto_play=false&amp;show_user=true"></iframe>
+<figcaption>The day after turning 21, Nicole got into her roommate's car and rode to Carmi, Illinois, for Thanksgiving break. But for Nicole, breaks are not always so certain.</figcaption>
+
+<hr>
+
+<p>Nicole pokes her head into her ethics professor’s office. She tells him she plans to get a draft of her next paper done during Thanksgiving break so she can work on it with her tutor before winter break.</p>
+
+<p>She’s passing the class with a C, but if it goes any lower, Nicole is at risk of losing some of her financial aid.</p>
+
+<p>“Do you have a place to go over Thanksgiving break?” her professor asks.</p>
+
+<p>“Yeah,” she says. She was going to go home with her roommate.</p>
+
+<p>“I was just looking for a student who needed money to put up posters for me. Are you busy?” he asks.</p>
+
+<p>“I was going to go eat, but I can put some up along the way.”</p>
+
+<p>If she keeps her aid, Nicole will graduate next year with an associate’s degree in child development. She can’t say where she’ll be after that. Maybe she will go to a different school for a culinary degree, but only if she can secure a roommate.</p>
+
+<p>More heavy on her mind now is where she’ll stay during winter break when the dorms close for almost a month. Will she have to get a hotel? Will a family member let her stay, if only for a while? She wonders what it’s like for her peers not to worry about where they’ll sleep.</p>
+
+<p>If she ever opens a restaurant some day she wants to serve comfort food, family style.</p>
+
+<p>The kind of food you get at home.</p>
+<!-- BEGIN /32635621/leaderboard2 -->
+<p><div id='div-gpt-ad-1510067235285-4' align="center">
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1510067235285-4'); });
+</script>
+</div>&nbsp;<br></p>
+<!-- END /32635621/leaderboard2 -->
+
+</div>
+
+</div>
+</div>
+
+<div class="show-desktop">
+<section id="conclusionimage" data-type="background" data-speed="10">
+		</section>
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/f28c8a5d-f847-4cb0-95ae-9a4efa380fa9.sized-1000x1000.jpg">
+	</figure>
+</div>
+
+
+<div class="container-fluid"> 
+	<div class="row article">
+		<div class="col-md-offset-1 col-md-6 body-copy">
+		</div> <!-- end of body copy -->
+
+
+	</div> <!-- end of row article -->
+
+
+		</div> <!-- end of container-fluid-->
+
+<footer>
+	<p>© Indiana Daily Student, 2017</p>
+
+	
+</footer>
+
+	<!-- scripts -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.embed.ly/player-0.0.9.min.js"></script>
+	<script src="js/popup.js"></script>
+
+
+</body>
+</html>
