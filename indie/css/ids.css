@@ -15,6 +15,10 @@ Assume anything not under a media query is for .col-xs */
 
 	}
 
+.dom {
+		width: 5em;
+	}
+
 	.graphic1 {
 		font-weight: 300;
 		text-align: left;
@@ -90,7 +94,7 @@ img.resize6 {
   max-height:25%;
 }
 
-	
+
 
 	/*use h1 for headlines*/
 
@@ -121,7 +125,7 @@ img.resize6 {
 		line-height: 1.3em;
 		font-weight: 300;
 	}
-	
+
 	h3{
 		font-family: 'Playfair Display', serif;
 		font-size: 1.5em;
@@ -150,7 +154,7 @@ img.resize6 {
 
 
 	}
-	
+
 	/*h6 is used for bylines*/
 	h6{
 		font-family: 'Lato', sans-serif;
@@ -203,18 +207,18 @@ img.resize6 {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;	
+    width: 50%;
 }
 
 .icon.brain {
-	    width: 25%;	
+	    width: 25%;
 
 }
 
 .icon.city {
-	width: 40%;	
+	width: 40%;
 }
-	
+
 	/*if you want to change the color of icons throughout the article feel free, but create
 	a new class name so the navbar icons stay the same color. */
 
@@ -300,20 +304,20 @@ img.resize6 {
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 		width: 75%;
-		
+
 	}
 
 	.sidebar > .pulledquote{
 		margin-top: 100px;
 	}
 
-	
+
 	#carousel-example-generic{
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 
-hr { 
+hr {
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -343,8 +347,8 @@ hr {
 	nav{
 		margin-bottom: 500px;
 	}
-	
-	
+
+
 	#bs-example-navbar-collapse-1 ul{
 		font-family: 'lato', serif;
 		text-align: center;
@@ -394,7 +398,7 @@ hr {
 	}
 
 /*inline 6 columns*/
-	
+
 /*sidebar 4 columns*/
 	.sidebar img{
 		width: 100%;
@@ -413,7 +417,7 @@ hr {
 		border-top-style: solid;
 		border-color: #d7d7d7;
 		border-width: .1em;*/
-	
+
 	}
 
 	.sidebar-related{
@@ -423,7 +427,7 @@ hr {
 	/*.sidebar > figure{
 		margin-top: 0px;
 	}*/
-	
+
 /*breaks*/
 	.break{
 		height: 100%;
@@ -440,7 +444,7 @@ hr {
 	.break h4{
 			margin-left: 3%;
 			margin-right: 3%;
-		}	
+		}
 
 /*sections for parallax scrolling*/
 
@@ -451,10 +455,16 @@ hr {
 
 .show-desktop {
 	display: none;
+	margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 .show-mobile {
 	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 79%;
 }
 
 
@@ -483,7 +493,7 @@ hr {
 		color: white;
 		padding: 1em;
 		text-align: right;
-		
+
 	}
 
 	footer a{
@@ -518,7 +528,7 @@ hr {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width:550px) { 
+@media (min-width:550px) {
 
 	h2{
 		font-size: 2em;
@@ -541,8 +551,8 @@ hr {
 	display: block;
     margin: 0 auto;
     width: 45%;
-} 
-	
+}
+
 .state-mobile {
 	display: block;
     margin: 0 auto;
@@ -558,7 +568,7 @@ hr {
 	.navbar-headline-mobile {
 		display: none;
 	}
-	
+
 #home {
 	background: url(https://s3.amazonaws.com/snwceomedia/ids/32beb061-b3c6-47da-9b46-cff2b49e209f.original.jpg) 50% 0 repeat fixed;
 	min-height:1000px;
@@ -575,10 +585,14 @@ hr {
 
 
 /* Medium devices (desktops, 960px and up) */
-@media (min-width:960px) { 
+@media (min-width:960px) {
 
 	.show-desktop {
 	display: block;
+	padding-top: 3em;
+	margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 /*navbar*/
 	.navbar-headline-mobile {
@@ -604,11 +618,11 @@ hr {
 }
 
 	.frustration {
-	height: 458px; 
-  position: absolute; 
-  text-align: left; 
-  top: 160px; 
-  width: 100%; 
+	height: 458px;
+  position: absolute;
+  text-align: left;
+  top: 160px;
+  width: 100%;
   color: white;
   font-size: 7em;
   text-shadow: 2px 2px 4px #000000;
@@ -646,7 +660,11 @@ hr {
 
 
 .show-mobile {
-	display: none;
+	/* display: none; */
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 73%;
 }
 
 .four {
@@ -747,9 +765,7 @@ hr {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width:1200px) { 
+@media (min-width:1200px) {
 
 
  }
-
-
