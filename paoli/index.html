@@ -1,0 +1,590 @@
+<!--
+
+I've updated the template with Bootstrap, so it's scalable on mobile. Check out the css documents in this file (alignment, components, content and ids) to see what elements are preprogrammed for you to use. If you have your own ideas in mind, you are more than welcome to add your own or tweak what is already there.
+
+I've also included the old template (James's cookbook) in the "example" subfolder. You can still use all of those elements in this template, or even just use that template, so go to town with that. Caveat: there's no bootstrap.
+
+If you need help with style (specifically what falls under IDS style and what doesn't) or any advice at all, contact Eman at emozaffa@indiana.edu, or whoever is on the digital desk at the IDS at the time.
+
+MAKE SURE TO GET RID OF DOCUMENTS/CODE THAT YOU DON'T USE. Don't load anything that isn't necessary so your page loads more quickly and efficiently!
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- The below 3 meta tags must come first in the head; any other head content must come after these tags -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>The Pride of Paoli | Indiana Daily Student</title>
+	<link rel="SHORTCUT ICON"
+       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+
+	<!-- FACEBOOK SOCIAL CARD -->
+	<!--Make sure to fill all of these in with the right info-->
+	<meta property="og:url" content="http://specials.idsnews.com/paoli"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="The Pride of Paoli" />
+	<meta property="og:description" content="In a town known for intolerance, the Pride of Paoli marching band was a place where misfits belonged."/>
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/c075b5c2-2610-4b2b-b8b1-9984dff40d88.original.jpg"/> <!-- UPDATE THIS IMAGE FOR THE SOCIAL CARD --> 
+	<!-- TWITTER SOCIAL CARD-->
+	<!--Make sure to fill all of these in with the right info-->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="The Pride of Paoli">
+	<meta name="twitter:description" content="In a town known for intolerance, the Pride of Paoli marching band was a place where misfits belonged.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/c075b5c2-2610-4b2b-b8b1-9984dff40d88.original.jpg"> <!-- UPDATE THIS IMAGE FOR THE SOCIAL CARD --> 
+
+	<!-- STYLES make sure ids.css is the last style loaded, unless a custom library you're using requires its style loaded last. Do not make any alterations to it without talking to me first. -->
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="css/zoom.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<link rel="stylesheet" href="css/alignment.css">
+	<link rel="stylesheet" href="css/type.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/ids.css">
+
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Lato:400,300,100,700' rel='stylesheet' type='text/css'>
+
+<!-- START: this goes in the head content -->
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+        //all other leaderboards
+    var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+    googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- END of this goes in the head content -->
+
+</head>
+<body>
+ <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NBJX8F');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- NAVBAR Talk to Eman or any digi person if you need help with including a navigation pane in your navbar, or you can figure it out yourself! You'll need an unordered list and a dropdown menu. For most longform projects, though, you won't need that.-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+
+     		</button>
+     		<a class="navbar-brand" href="http://www.idsnews.com/" style="color:white"><img src="https://s3.amazonaws.com/media.ids/60558_idslogoo.png" id="IDS" alt="IDS"></a>
+     		<a class="navbar-headline-mobile" href="#" target="_blank" style="color:white">The Pride of Paoli</a>
+
+		</div> <!-- end of navbar header -->
+
+		<!-- Collect the nav links, forms and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><span class="nav-headline">The Pride of Paoli</span>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="http://twitter.com/home?status=In%20a%20town%20known%20for%20intolerance,%20the%20Pride%20of%20Paoli%20Marching%20Band%20is%20a%20place%20where%20misfits%20belong.%20http%3A%2F%2Fspecials.idsnews.com/paoli%2F
+" class="popup" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+
+
+
+				<li><a href="https://www.facebook.com/idsnews" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+			</ul>
+				 <ul class="nav navbar-nav" style="height: 32px;">
+
+			</ul>
+		</div> <!-- end of navbar-collapse -->
+	</div> <!-- end of continer-fluid -->
+			<!--Make sure to fill in the headlines-->
+  </nav>
+
+<div class="show-desktop">
+		<!--go to ids.css and replace the link in the "dominantimage" with whatever you would like to be the dominant image. if you don't want parallax screens, you can replace this with an image size of your choice (refer to the components and alignment css documents to learn more about the types of alignments for text and visual elements. Play around with them and change the sizings based on your liking. -->
+<section id="dominantimage" data-type="background" data-speed="10">
+		<h1 class="headline">The Pride of Paoli</h1>
+		<!-- this was used "span style = "display: block;">" to split up the headline -->
+		
+		<div class="row intro">
+			<div class="col-md-offset-1 col-md-4 body-copy">
+				<div class="bigbyline">
+					<h6><span class="by">Story by Laurel Demkovich</span> <br> lfdemkov@iu.edu | <a href="https://twitter.com/LaurelDemkovich" target="_blank">@LaurelDemkovich</a></h6>
+					<h6><span class="by">Photos by Emily Berryman </span><br> eberryma@indiana.edu | <a href="https://twitter.com/Ember_Otter" target="_blank">@Ember_Otter</a></h6>
+					<h6><span class="by">Multimedia and development by Hannah Boufford </span><br> hbouffor@iu.edu | <a href="https://twitter.com/HannahBoufford" target="_blank">@HannahBoufford</a></h6>
+				</div>
+			</div>
+		</div>
+
+</section>
+
+</div>
+
+<div class="break show-mobile">
+	<figure class="topmarg">
+		<img src="https://s3.amazonaws.com/snwceomedia/ids/92f1c241-56dd-4d15-b0aa-252b74aa6df1.original.jpg" alt="The band practices at sunset.">
+	</figure>
+</div>
+
+<div class="container-fluid show-mobile">
+	<div class="row article">
+		<div class="col-md-10 body-copy">
+			<h1 class="leftmarg"><center>The Pride of Paoli</center></h1>
+		</div>
+	</div>
+</div>
+
+
+<div class="col-xs-12 byline-mobile">
+		<hr>
+				<!--Make sure to fill in the bylines with Twitter handle, email and name-->
+			<center><h6><span class="by">Story by Laurel Demkovich</span> <br> lfdemkov@iu.edu | <a href="https://twitter.com/LaurelDemkovich" target="_blank">@LaurelDemkovich</a></h6>
+				<h6><span class="by">Photos by Emily Berryman </span><br> eberryma@indiana.edu | <a href="https://twitter.com/Ember_Otter" target="_blank">@Ember_Otter</a></h6>
+				<h6><span class="by">Multimedia and development by Hannah Boufford </span><br> hbouffor@iu.edu | <a href="https://twitter.com/HannahBoufford" target="_blank">@HannahBoufford</a></h6></center>
+	  	</div>
+
+<div class="container-fluid">
+	<div class="row intro"> <!-- intro row -->
+	  	<div class="col-md-offset-2 col-md-8 subhead">
+	  		<h2><center> Members of the Pride of Paoli Marching Band set aside everything to synchronize – their steps, their clothes, their notes, their minds. In a town that is known for intolerance, the band is a place where misfits belong.</center></h2>
+	  		<hr>
+		<!-- /32635621/ids_specials1_leaderboard_728x90 -->
+		<div id='div-gpt-ad-1512489859064-0' align="center">
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-0'); });
+		</script>
+		</div>&nbsp;<br><hr>
+		<!-- END /32635621/ids_specials1_leaderboard_728x90 -->
+
+	  	</div>
+
+	</div> <!-- end of intro row -->
+				
+	<div class="row article led"> <!-- beginning of row 1 --> 
+		<div class="col-md-offset-3 col-md-6 body-copy"> <!-- beginning of column -->
+		
+
+		<p>INDIANAPOLIS – The lights hanging high above the gymnasium flickered on, turning from purple to yellow to bright white.</p>
+
+		<p>Groans and yawns echoed from every corner. Some students slid deeper into their sleeping bags.</p>
+
+		<aside class="right-wide">
+			<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/187398e0-c4c8-47e0-957b-0ddb6ef5bf18.original.jpg" alt="Keegan Anderson accepts a senior award.">
+				<figcaption>The night before state, band director Bill Laughlin gives each of the seniors their senior awards. When he reaches senior Keegan Anderson, he smiles. Keegan has been part of the band longer than most of the other members.</figcaption>
+			</figure>
+		</aside>
+
+		<p>Keegan Anderson, 17, walked in wearing pajama bottoms and a letterman’s jacket, carrying his mellophone. He’s short and thin with a growing goatee. Keegan, a senior, was one of the longest participating members in the Paoli Junior-Senior High School marching band; he started out as a prop helper in sixth grade.</p>
+
+		<p>In a few hours, the band would march onto the field at Lucas Oil Stadium to compete at the Indiana marching band state finals. The group spent the night at an Indianapolis middle school not far from the competition. The band was two hours from home, far away from the town that became infamous within the last year for housing two well-known white nationalists. But that’s not what today would be about.</p>
+
+		<p>There was talk of Paoli taking first. They finished just tenths of a point away from first place the weekend before at semi-state.</p>
+
+		<p>They were too nervous to think about it.</p>
+
+		<p>Keegan walked up to someone still bundled under her covers. He set his foot atop the air mattress, pulled his instrument to his lips and played a military wake up call.</p>
+
+		<p>Da DAH da da da, Da DAH da da da...</p>
+
+		<p>A band booster shouted: “Hey, horn line! We’re warming up in five minutes!”</p>
+
+		<p>It was 4:52 a.m.</p>
+
+		<p>Sleep would have to wait.</p>
+
+		<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/7b76a688-f5fa-4530-964b-6f34f80f135d.original.jpg" alt="The band practices in their pajamas.">
+				<figcaption>Still clad in their pajamas, students stand in a semi-circle for a quick indoor warm-up at Perry Meridian Middle School. Only moments before, most students stumbled from their beds to find their instruments.</figcaption>
+			</figure>
+
+		<p><center>***</center></p>
+
+		<p>One thing unites this southern Indiana town more than anything else: the junior and high school marching band, the Pride of Paoli.</p>
+
+		<p>Outside the city limits, “Pride” and “Paoli” conjure a less flattering image. In the last year, two residents well-known in the Traditionalist Worker Party, a white nationalist group, brought national attention to Paoli and its 3,600 residents. By the time PBS, the Herald-Times and countless other news outlets left, Paoli could have been mistaken for a town filled with racists.</p>
+
+		<!-- BEGIN /32635621/ids_specials3_rectangle_300x250 -->
+		<p><div id='div-gpt-ad-1512489859064-2' style='height:250px; width:100%' align="center">
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-2'); });
+		</script>
+		</div>&nbsp;<br></p>
+		<!-- END /32635621/ids_specials3_rectangle_300x250 -->
+
+
+		<p>But Paoli, as residents would say, is more than two white nationalists and a few Confederate flags. It’s a place with a ski resort, a bar called Pinky’s and nearly 20 churches. </p>
+
+		<p>It’s a town where the high school football stands are filled on Fridays, and the talk on the town Facebook page is about how long the line is at Taco Bell.</p>
+
+		<p>And it’s a place where, one weekend every November, many residents travel to Indianapolis to cheer on their marching band.</p>
+
+		<p>Between learning the notes and the marching charts, Keegan and the other band members were learning about acceptance and unity in a town with a reputation for division.</p>
+
+		<p>They marched all day in the summer heat during band camp and spent 12 or more hours a day together at Saturday competitions in the fall. They fought over who got to sleep in the best corner of the gymnasium, and they sang top-40 songs on the bus.</p> 
+		<p>They grew up together.</p>
+
+		<p>In a town known for intolerance, the band was a place where misfits belonged. At the end of the day, it wasn't about whom they march next to, but whether they could march in step.</p>
+
+		<p><center>***</center></p>
+
+			<div id='div-gpt-ad-1509477872730-1' align="center">
+				<script>
+				googletag.cmd.push(function() { googletag.display('div-gpt-ad-1509477872730-1'); });
+				</script>
+			</div>
+					<div class="w3-content w3-display-container">
+					  <img class="mySlides" src="https://s3.amazonaws.com/snwceomedia/ids/184d7a98-cced-4bc5-b661-04a68a002639.original.png" alt="The town is primarily white." style="width:100%">
+					   <img class="mySlides" src="https://s3.amazonaws.com/snwceomedia/ids/20710568-713a-460c-bdce-ca32b550c1ae.original.png" alt="Non-white breakdown" style="width:100%">
+					  <img class="mySlides" src="https://s3.amazonaws.com/snwceomedia/ids/5838a4df-8e3a-421f-a316-cf829592caa9.original.png" alt="Two or more breakdown" style="width:100%">
+					  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+					  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+					</div>
+
+					<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+					</script>
+
+		<p><center>***</center></p>	
+
+		<p>The handout for the trip encouraged them to dress up for “the city.” People don’t wear flip-flops, shorts or T-shirts, it read. Girls straightened their hair. They shoved their feet into heels and zipped up skirts and dresses. Keegan put on khakis and dress shoes.</p>
+
+		<p>Keegan and the other 69 members of the band piled onto the bus. Keegan took a seat in the back with other seniors. Then came the drum major — Maggie McGowen, 17. She wore a dress and a scarf.</p>
+
+		<p>From atop her conductor’s podium, Maggie saw everything come together. She broke it down like this: The flutes were bubbly and crazy. The clarinets — they’re hardworking and serious. The percussionists — funny. The saxophones and mellophones were clever.</p>
+
+		<p>The trumpets?</p>
+
+		<p>“Where do I begin with the trumpets?”</p>
+
+		<p>If the band wanted to do well, each section had to balance and blend with the others. Unlike some other sports or competitive events, it took every single person in the band working together. No one was on the sidelines. And if one person missed a note or a step, the whole show was thrown off.</p>
+
+		<p>As the buses left Paoli Junior-Senior High School, Keegan stared at the window and watched as they passed sign after sign sprouted along the route, even miles out of town: “TAKE STATE PRIDE,” “WAY 2 GO P.O.P.,” “WE ARE PROUD.”</p>
+
+		</div> <!-- end column -->
+	</div> <!-- end row -->
+
+		<!-- other two sign photos -->
+
+	<div class="row article led"> <!-- start row-->
+		<div class="col-md-offset-3 col-md-3"> <!-- start column -->
+			<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/7bfe6a50-9e6a-4989-8666-bb25a9f5b583.original.jpg" alt="Painted signs are put around town."></figure>
+		</div> <!-- end column -->
+		<div class="col-md-3"> <!-- start column -->
+			<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/fcfb887f-d452-4a46-892f-1151f33bde76.original.jpg" alt="Super Burger wishes the band good luck."></figure>
+		</div> <!-- end column -->
+	</div> <!-- end row -->
+
+	<div class="row article led"> <!-- start row -->
+		<div class="col-md-offset-3 col-md-6"> <!-- start column -->
+			<figure><figcaption>Before the band left for state finals, supporters posted encouraging signs on the band’s route out of town. Restaurants in town also posted their own good luck messages.</figcaption></figure>
+
+		<p>After the two-hour ride north, Keegan and the band members shuffled off the buses and into Circle Centre Mall. It was a tradition for the band to spend a few hours at the mall the night before state, and afterward they’d spend the night on the floor of the Perry Meridian Middle School gymnasium.</p>
+
+		<p>Couples broke off to grab pretzels at Auntie Anne’s, and small groups meandered through Hot Topic. Keegan met up with his boyfriend, who lives near Indianapolis. The two walked through the mall hand-in-hand.</p>
+
+		<p>Keegan was Homecoming King this year, but no one would ever know unless he told them. He sat next to a rookie on the way home from semi-state, something out of character for a senior. He wore flip-flops to practice once, and band director Bill Laughlin made him march around barefoot in the snow.</p>
+
+		<p>In Paoli, Keegan and his boyfriend can't walk hand-in-hand through the town square. It’s a town set in its traditions, where nearly every face looks like the other.</p>
+
+		<p>Paoli's motto: the Heart of Hoosier Hospitality. The town has yearly festivals, a courthouse built in 1850 and a full-service gas station. Everyone knows everyone, word travels fast, and no one questions how things have always been done.</p>
+
+		<p>Keegan didn’t think much about prejudice or racism growing up. <a href="http://www.idsnews.com/gallery/paoligallery" target = "_blank">Some people in Paoli don’t even think it still exists.</a></p>
+
+		<p>Keegan first learned about the white nationalists in Paoli by scrolling through Twitter. He saw a tweet from J.K. Rowling mentioning Paoli and its white nationalists.</p>
+
+		<p>“This isn’t who we are,” he thought.</p>
+
+		<p><center>***</center></p>
+
+		<p>Keegan’s friend Livia Sullivan, 17, first learned about the white nationalists in her sociology class. Livia played the saxophone. She was the caretaker in the group. If students couldn’t get a ride, Livia picked them up. But she was also not afraid to scold them if they weren't focused or doing their job.</p>
+
+		<!-- BEGIN /32635621/ids_specials4_rectangle_300x250 -->
+		<p><div id='div-gpt-ad-1512489859064-3' style='height:250px; width:100%' align='center'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-3'); });
+		</script>
+		</div>&nbsp;<br></p>
+		<!-- END /32635621/ids_specials4_rectangle_300x250 -->
+
+
+		<p>Livia became aware of race in fourth grade when her parents adopted two children from the Democratic Republic of the Congo. When they first got here, her brothers – now 8 and 10 years old – stuck out. More than 96 percent of Paoli’s population is white, according to U.S. Census data.</p>
+
+		<p>And as they grew up and started school, kids would ask about where they came from or why their skin was so dark. They’d come home crying.</p>
+
+		<p>“There’s nothing wrong with you,” she would tell them. “You’re a normal kid.”</p>
+
+		<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/c075b5c2-2610-4b2b-b8b1-9984dff40d88.original.jpg" alt="Livia marches with the band at semi-state warm-up.">
+			<figcaption>Senior Livia Sullivan marches with her bandmates at the semi-state competition. Livia has two younger siblings adopted from the Democratic Republic of the Congo. She said other kids would make fun of them, but she and her family tried to show love, not hate toward the white nationalists.</figcaption></figure>
+
+		<p>In fall 2016, Livia’s sociology teacher showed a PBS NewsHour segment from October 2016 in class: “Why white nationalists hear a political ally in Donald Trump.”</p>
+
+		<p>She watched as <a href="http://www.idsnews.com/article/2018/03/indiana-white-nationalist-charged-with-battery" target = "_blank">Matthew Heimbach and Matthew Parrott</a>, both Paoli residents at the time, espoused their vision of a racially pure nation where white people and black people are separated and Jewish people are exiled.</p>
+
+		<p>She heard Heimbach, founder of the Traditionalist Workers Party who played a role in the Charlottesville, Va. “Unite the Right” rally, criticize globalization, claiming white Americans had been abandoned. She saw Parrott give a tour of Paoli, pointing out abandoned buildings that used to be businesses.</p>
+
+		<p>Growing up, Livia had always seen a few Confederate flags, but she never thought anyone could believe something like this.</p>
+
+		<p>As she looked around, she saw classmates staring in disbelief.</p>
+
+		<p>“This is ridiculous,” some said.</p>
+
+		<p>When Livia’s mom, Stori Sullivan, found out about the PBS NewsHour segment, she joined a few other residents in starting a Facebook page declaring Paoli welcomes everyone. Livia worked with her mom to spread the message.</p>
+
+		<p>The group gained a following and were soon handing out signs and stickers:</p>
+
+		<p>“NO MATTER WHAT COLOR YOUR SKIN, NO MATTER WHERE YOU ARE FROM, NO MATTER WHAT YOU BELIEVE, WE'RE GLAD YOU ARE OUR NEIGHBOR.”</p>
+
+		<p>The group urged the Paoli Town Council to pass a proclamation rejecting racism and bigotry and promoting tolerance and diversity. The proclamation passed unanimously.</p>
+
+		<p><center>***</center></p>
+
+		<p>This year’s marching band theme: “A View From the Top.” Set to the music of “Elevation” composed by Don Barrett, the band told the story of a mountain climber who finds the view from the top of the mountain worth the challenges he faced along the way.</p>
+
+		<p>Travis Mefford, 19, started the piece alone on the field and ended it by climbing a metal structure shaped like a mountain.</p>
+
+		<p>Before he was co-captain of the color guard, Travis played football and ran track.</p>
+
+		<p>But everything changed when he hurt his back and had to sit out most of a year. As he sat on the sidelines in a back brace, other players called him names. <i>Cripple. Unnecessary. Faker.</i></p>
+
+		<p>He limped for a few months after the brace was removed, and in school, his teammates made fun of the way he walked. They knocked books out of his hand so they could laugh at how he knelt to pick them up.</p>
+
+		<p>Travis’s back healed in time for basketball tryouts in the winter of his seventh grade year. When he showed up, he was greeted with stares and snickers.</p>
+
+		<p>“What are you doing here, cripple?”</p>
+
+		<p>“I’m trying out for basketball.”</p>
+
+		<p>“This is no place for you.”</p>
+
+		<p>Then Travis met Keegan, who encouraged him to try out for the drama club’s production of “The Little Mermaid.” They cast him in the ensemble, where he acted in the background as animals or sailors. Travis found that performing helped him put the bullying aside.</p>
+
+		<p>In eighth grade, an older member of the drama club told him to try out for winter guard. It’s just like acting, he said, but with flags.</p>
+
+		<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/3f1b7d7f-5725-4ca6-b724-b7c5ff970f3f.original.jpg" alt="Travis is the only male color guard member.">
+				<figcaption>Senior Travis Mefford was the only male color guard member and started off the show alone on the field as a mountain climber at the beginning of his journey. Laughlin said the show symbolized all the obstacles a climber has to overcome to reach the top.</figcaption>
+				</figure>
+
+		<p>His mom was not thrilled.</p>
+
+		<p>“People are going to think you’re gay,” she said. “This is not something for a guy to do.”</p>
+
+		<p>But Travis loved it. He didn’t want to quit.</p>
+
+		<p>His old friends on the football team made fun of him for being the only boy in the color guard. They called him gay.</p>
+
+		<p>Travis would come home crying, and when he did, his mom told him he should quit color guard if he wanted the teasing to stop.</p>
+
+		<p>He came out as bisexual his sophomore year. By then, none of his old friends really bothered him anymore. The band kids accepted him. But junior year, when his mom found out, wasn’t so easy.</p>
+
+		<p>Travis was sitting in his basement with his mom and her boyfriend. He and his mom hadn’t argued in two weeks – a long streak for them.</p>
+
+		<p>All of a sudden, his mom looked at him.</p>
+
+		<p>“Travis, you tell me the truth, are you gay?”</p>
+
+		<p><i>I can’t hide this from her anymore, he thought.</i></p>
+
+		<p>“I’m bisexual.”</p>
+
+		<p>His mom became hysterical, Travis said. She threatened to send him to his dad’s house in Ohio.</p>
+
+		<p>“This is a Christian household,” she said. “You are not going to be this way in my house.”</p>
+
+		<p>For weeks, his mom criticized him, asking if he had “straightened out yet.” Eventually, Travis told Keegan, his best friend at the time. Keegan said Travis should talk to Keegan’s mom. He did, and Keegan’s mom offered up her house if Travis ever needed it.</p>
+
+		<p>Travis bought plastic tubs from Walmart to hold his stuff if he ever had to move. He even started moving the tubs to Keegan's house – until his mom found out. But slowly, things started getting better. Travis’s mom acknowledged she hadn’t been there for him and promised to try harder. She started coming to football games to watch him perform. She apologized for not being there sooner, and she promised to support him.</p>
+
+		<p>Now, she’s one of the most supportive people in Travis’s life.</p>
+
+		<p>It wasn't lost on Travis that he and the mountain climber he played in the band’s performance had something in common.</p>
+
+		<p>At the end of the third piece, during the final crescendo, he climbed to the top of a 14-foot metal structure. He lifted his arms up in victory and threw a color guard flag off the side.</p>
+
+		</div> <!-- column -->
+	</div> <!-- row -->
+</div>
+
+	<!-- paralax scroll 1 -->
+
+	<div class="show-desktop">
+		<section id="dominantimage2" data-type="background" data-speed="10"> </section>
+	</div>
+
+	<div class="break show-mobile">
+		<figure class="topmarg">
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/1a28b93f-c8b5-4f87-b733-7aaf057dfeeb.original.jpg" alt="Members huddle together for warmth.">
+		</figure>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row article led">
+		<div class="col-md-offset-3 col-md-6 body-copy">
+			
+			<figcaption>ABOVE: Senior Travis Mefford and junior Maggie McGowen huddle with fellow bandmates before the state competition at Lucas Oil Stadium.</figcaption>
+
+		<p>The band shuffled into the warmup room in Lucas Oil Stadium. The horn line gathered in a U-formation around Laughlin. The percussion section stood in the front and the color guard off to the side.</p>
+
+		<p>The band has won 15 state championships since 1983, and Laughlin, 57, has been there for 12 of them. Even though the group has the most state championships in Indiana, winning this year would mark the first championship since 2005.</p>
+
+		<p>After a short warmup and a final run through of the show, all eyes turn to Maggie. It was time to play “Cadillac of the Skies” one last time before heading into the tunnel that will lead them on the field. Although it was originally composed by John Williams for the film “Empire of the Sun,” the band adopted “Cadillac” in 1998 as their song. They play it every time they warm up.</p>
+
+		<!-- family of misfits video -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrlFDlhBnok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+		<figure><figcaption>The Pride of Paoli provides marching band members a place where they can be themselves and accept one another. The background track for this video is the Pride of Paoli playing "Cadillac of the Skies."</figcaption></figure>
+
+		<p>This was the last time they played the song with these members.  Laughlin had a motto: Anyone who wanted to participate, could. He saw them sign up as awkward and clumsy middle schoolers, and he saw them graduate with a home to which they could always return.</p>
+
+		<p>“Remember what this song is about,” Laughlin reminded them. “What does being a member of the Pride of Paoli mean to you?’”</p>
+
+		<p>Maggie conducted the first beat. For Maggie, this song was a connection to the past. She thought about how much of a family the Pride of Paoli was, including past and present members.</p>
+
+		<aside class="right-wide">
+			<figure><img src="https://s3.amazonaws.com/snwceomedia/ids/7616a236-ce03-43ed-8029-33dd6d09301d.original.jpg" alt="Maggie oversees the band as drum major.">
+			<figcaption>Junior Maggie McGowen leads the band in state warm-ups. Next up is the performance for the judges. While she said she had heard about the white nationalists in Paoli, she hadn’t really been affected. “In no way do they represent Paoli,” Maggie said.</figcaption></figure>
+		</aside>
+
+		<p>Band taught Maggie how to talk to new people and make friends. Becoming drum major at the end of her freshman year wasn’t always easy. She had to gain the respect of upperclassmen. She did, and led the band to a third place finish her first full year as drum major.</p>
+
+		<p>To Travis, “Cadillac of the Skies” meant release. It meant letting go of the bullying and taunting he experienced when he first joined the color guard.</p>
+
+		<p>Livia thought about how fortunate she was to be in such a renowned program. Keegan thought about what he brought to the band: the passion and the emotion.</p>
+
+		<p>Laughlin thought about the scene from “Empire of the Sun.” The song, to him, was about rising to the challenge. It was about students playing from their heart and soul.</p>
+
+		<p>Maggie’s eyes filled with tears. From across the room, Keegan started to cry. The percussion section leader’s face turned red and she started to sniffle. Keegan’s mom retreated to a corner, so no one saw her cry.</p>
+
+		<p>After the last note, Maggie gave the cut off. They turned to each other and hugged. To them, marching band wasn’t simply playing notes or competing each weekend. It was about finding a place where they belong.</p>
+
+		</div> <!-- column -->
+	</div> <!-- row -->
+</div>
+
+	<!-- paralax -->
+	<div class="show-desktop">
+		<section id="dominantimage3" data-type="background" data-speed="10"></section>
+	</div>
+
+	<div class="break show-mobile">
+		<figure class="topmarg">
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/a3256aef-66bc-49f4-a351-47c3ce41fa5f.original.jpg" alt="The band walks onto the field for state finals.">
+		</figure>
+	</div>
+
+	<div class="row article led"> <!-- start row -->
+		<div class="col-md-offset-3 col-md-6"> <!-- start of column -->
+			<div class="container-fluid">
+
+		<figcaption>ABOVE: Band and color guard members carry tents and flags onto the field moments before performing at state.</figcaption>
+
+		<p>On the field, the band performed their best show of the season. The notes were perfect. The formations seamless. On the sidelines, parents cheered and fist-pumped the air. It could not have gone any better.</p>
+
+		<p>As they stood on the field waiting for awards, Keegan started to think of how far the band had come. They had just finished their best performance of the year. Despite their differences, despite where they come from, the misfits had found a way to come together as a team.</p>
+
+		<p>For Keegan, there was nothing else he could’ve asked for. He was at the top of the mountain.</p>
+
+		<aside class="right-wide">
+			<h4>Maggie on the moment they got fourth place</h4>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/pLYYqP9BsPA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<figure><figcaption>When the Pride of Paoli marching band was called for fourth place at the 2017 state finals contest, students and parents alike were shocked. Drum major Maggie McGowen discusses the moment they were called for fourth and her initial reaction on the field.</figcaption></figure>
+		</aside>
+
+		<p>“Class D fourth place," the announcer said. "Paoli Junior-Senior High School.”
+		<p>For a second, their faces dropped. Some looked at each other in confusion and disappointment. Some started to cry.</p>
+
+		<p>Later, they would talk on the bus about what went wrong. They’d watch videos of their performance and listen to judge’s critiques. They’d think about the loss for a few weeks and learn from it.</p>
+
+		<p>But in the end, winning wasn’t why they did this. It was about so much more than that.</p>
+
+		<p>Keegan looked around and saw some of their faces start to drop. He tapped two fingers under his chin, signaling to them to keep their heads held high.</p>
+		
+		<!-- BEGIN /32635621/ids_specials2_leaderboard_728x90 -->
+		<p><div id='div-gpt-ad-1512489859064-1' align="center">
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-1'); });
+		</script>
+		</div>&nbsp;<br></p>
+		<!-- END /32635621/ids_specials2_leaderboard_728x90 -->
+
+
+		</div> <!-- end of column -->
+	</div> <!-- end of row -->
+</div>
+
+	<!-- last paralax scroll -->
+
+	<div class="show-desktop">
+		<section id="dominantimage4" data-type="background" data-speed="10"> </section>
+	</div>
+
+	<div class="break show-mobile">
+		<figure class="topmarg">
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/81d51f6a-7ec8-42a5-9e54-4b92a632bee1.original.jpg" alt="The band holds hands before performing at state finals.">
+		</figure>
+	</div>
+
+<!-- end of container fluid -->
+
+<footer>
+	<p>© Indiana Daily Student, 2018</p>
+
+</footer>
+
+	<!-- scripts -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.embed.ly/player-0.0.9.min.js"></script>
+	<script src="js/popup.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+#banner{
+	height: 60px;
+	#btnClose{
+		position: absolute;
+		right: -15px;
+		top: -5px;
+		z-index: 999!important;
+	}
+
+	#btnClose:hover{
+		background-color: blue;
+	}
+	img{
+		max-height: 60px;
+		width: auto;
+		display: block;
+		margin: 0 auto;
+		
+	}
+}
+
+#aside-ad{
+	height: 50px;
+	
+
+	
+	#btnClose2{
+		position: absolute;
+		right: -15px;
+		top: -5px;
+		z-index: 999!important;
+	}
+
+	#btnClose2:hover{
+		background-color: blue;
+	}
+	img{
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+.ad-passive{
+	display: hidden;
+	
+}
+
+.banner-active{
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+}
+.ad-active{
+	display: inline;
+	height: 100%;
+	width: auto;
+	
+	
+	// background-image: url('http://jamesbenedict.github.io/img/stateofmind.png');
+}
+
+.ad-kill{
+	display: none;
+}
+
