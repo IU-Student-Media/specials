@@ -1,0 +1,320 @@
+
+.container-fluid{
+    padding:0;
+    position:relative;
+}
+
+body {
+    background-color: #CBE8F9;
+}
+
+.game {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h2 {
+    margin-bottom: 5%;
+}
+
+div.path {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #458AB2; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.cursor {
+    cursor: auto;
+    cursor: url(https://s3.amazonaws.com/snwceomedia/ids/671453ed-62c5-4226-bc93-200ec77f4a2d.original.png) 4 12, auto;
+}
+
+#demo {
+    color: white;
+    font-size: 20pt;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+a {
+    border-radius: 9px;
+    text-decoration: none;
+    padding: 2%;
+}
+
+a.piece {
+    text-decoration: none;
+}
+
+div.red {
+    background-color: red;
+    margin: 1em;
+    width: 10em;
+    height: 10em;
+    padding: 10px;
+}
+
+div.white {
+    background-color: #FFFFF0;
+    margin: 1em;
+    width: 10em;
+    height: 10em;
+    padding: 10px;
+}
+
+img {
+    height: 180px;
+    width: auto;
+}
+
+p {
+    font-size: 13px;
+}
+
+.players, .rules {
+    margin: 9em;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #84BFE1;
+  text-align: center;
+  z-index:90000;
+}
+
+#navbar a {
+  display: block;
+  color: #84BFE1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+}
+
+/* .sticky + .content {
+  padding-top: 60px;
+} */
+#sample {
+    width: 650px;
+    height: auto;
+    margin-top: 7%;
+}
+
+#art {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    height: 430px;
+}
+
+#aud {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 430px;
+    height: auto;
+}
+
+#clock {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    height: 370px;
+}
+
+#wells {
+    position: absolute;
+    top: 77%;
+    left: 10%;
+    height: 500px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-visual{
+	background: url('../img/header.sm.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    height: 100vh;
+    margin-top: 0%;
+    background-attachment: scroll;
+}
+
+.dropcap{
+		font-family: 'Roboto Slab', serif;
+		font-weight: 100;
+		float: left;
+		font-size: 4em;
+		line-height: .8em;
+		margin-top: .01em;
+		margin-right: .1em;
+		padding: 0;
+	}
+
+iframe {
+	width: 100%;
+	height: 35x0px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+
+}
+
+#map{
+	height: 500px;
+}
+
+#IDS {
+	width: 60%;
+	height: auto;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+video {
+	width: 100%;
+	height:auto;
+}
+
+@media screen and (max-width: 576px) {
+    #sample {
+        width: 350px;
+        height: auto;
+        margin-top: -7%;
+    }
+
+    #aud {
+        width: 450px;
+        height: auto;
+        top: 50.5%;
+    }
+
+    #clock {
+        top: 68.9%;
+        right: 10%;
+        height: 370px;
+    }
+
+    #wells {
+        height: 200px;
+        top: 81%;
+        left: 10%;
+    }
+
+    #art {
+        height: 240px;
+        top: 9%;
+        right: 1%;
+    }
+
+
+
+    .players, .rules {
+        margin: 0em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #clock {
+        height: 700px;
+    }
+
+    #wells {
+        height: 200px;
+    }
+
+    #art {
+        height: 240px;
+        top: 9%;
+        right: 1%;
+    }
+
+    #aud {
+        width: 430px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #clock {
+        height: 200px;
+    }
+
+    #wells {
+        height: 200px;
+    }
+
+    #art {
+        height: 240px;
+        top: 9%;
+        right: 1%;
+    }
+
+    #aud {
+        width: 430px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #clock {
+        height: 200px;
+    }
+
+    #wells {
+        height: 200px;
+    }
+
+    #art {
+        height: 240px;
+        top: 9%;
+        right: 1%;
+    }
+
+    #aud {
+        width: 230px;
+        height: auto;
+    }
+}
