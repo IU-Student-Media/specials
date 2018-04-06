@@ -22,9 +22,10 @@ h1-main{
 }
 
 .please {
-    color: black;
+    /* color: black; */
     text-decoration: none;
     padding-bottom: 1em;
+    font-size: 17px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -284,13 +285,13 @@ iframe {
 	font-weight: bold;
 }
 
-
-@media screen and (max-width: 576px) {
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) {
     #sample {
-        width: 470px;
+        width: 360px;
         height: auto;
-        /*margin-top: 37%;*/
-        margin-bottom: 5%;
+        margin-top: 8%;
+        margin-bottom: -.5%;
     }
 
     .boardbuffer {
@@ -298,86 +299,329 @@ iframe {
     }
 
     h1-main{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.5em;
+    font-size: 2.6em;
+    line-height: 1.2;
+    letter-spacing: .0001em;
+    margin-bottom: .25em;
+    margin-top: 0.25em;
+    }
+
+    h5 {
+     font-family: 'Lato', sans-serif;
+     font-size: 1.05em;
+     font-style: italic;
+     margin-top: 1em;
+    }
+
+    h6 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.2em;
+    }
+
+    h6.piece {
+     margin-bottom: 5%;
+     font-weight: bold;
+    }
+
+    h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    }
+
+    h5 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-style: normal;
+        margin-top: 2%;
+    }
+
+    h2{
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      line-height: 1.3em;
+      font-weight: 300;
+      margin-top: 1.6em;
+    }
+
+    div.dice {
+      background-color: white;
+      margin: 1em;
+      width: 7.3em;
+      height: 7.3em;
+      text-align: center;
+      border-radius: 9px;
+      margin-top: 9%;
+      margin-bottom: 15%;
+      left: 0%;
+  }
+
+  button {
+      background-color: white;
+      border: none;
+      color: black;
+      padding: 1px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 15px;
+  }
+
+  button.hover {
+      background-color: gray;
+  }
+
+  #demo {
+       color: black;
+       font-size: 20pt;
+       margin-top: 5px;
+    }
+
+   .players, .rules {
+      margin: 0em;
+    }
+
+  #art {
+        height: 320px;
+        top: 37.6%;
+        right: 1%;
+    }
+
+    #aud {
+       width: 330px;
+       height: auto;
+       top: 50.3%;
+       left: 1%;
+    }
+
+    #clock {
+       top: 69%;
+       right: 10%;
+       height: 260px;
+   }
+
+   #wells {
+      height: 370px;
+      top: 80.8%;
+      left: 0%;
+  }
+}
+
+@media (min-width: 532px){
+  #art {
+        height: 320px;
+        top: 36.3%;
+        right: 1%;
+    }
+
+    #aud {
+       width: 330px;
+       height: auto;
+       top: 49%;
+       left: 1%;
+    }
+
+    #clock {
+       top: 67.9%;
+       right: 10%;
+       height: 260px;
+   }
+
+   #wells {
+      height: 370px;
+      top: 80.1%;
+      left: 2%;
+  }
+}
+
+
+@media (min-width: 768px) {
+    #sample {
+        width: 470px;
+        height: auto;
+        margin-top: 8%;
+        margin-bottom: -.5%;
+    }
+
+    h1-main{
         font-family: 'Playfair Display', serif;
         letter-spacing: -0.5em;
-        font-size: 2.6em;
+        font-size: 2.8em;
         line-height: 1.2;
         letter-spacing: .0001em;
         margin-bottom: .25em;
         margin-top: 0.25em;
+        }
+
+    .boardbuffer {
+        padding-top: 4em;
     }
 
     h5 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.05em;
-        font-style: italic;
-        margin-top: 1em;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-style: normal;
+        margin-top: 2%;
     }
 
-    h6 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2em;
+   h6 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.2em;
     }
 
     h6.piece {
-        margin-bottom: 5%;
-        font-weight: bold;
+     margin-bottom: 5%;
+     font-weight: bold;
+     font-size: 1.3em;
     }
 
-    h3{
+    h3 {
         font-family: 'Playfair Display', serif;
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     h2{
-        font-family: 'Playfair Display', serif;
-        font-size: 2em;
-        line-height: 1.3em;
-        font-weight: 300;
-        margin-top: 1.6em;
-    }
+     font-family: 'Playfair Display', serif;
+     font-size: 2em;
+     line-height: 1.3em;
+     font-weight: 300;
+     margin-top: 1.6em;
+   }
 
-    #aud {
-        width: 450px;
-        height: auto;
-        top: 50.5%;
-    }
-
-    #clock {
-        top: 68.9%;
-        right: 10%;
-        height: 370px;
-    }
-
-    #wells {
-        height: 200px;
-        top: 81%;
-        left: 10%;
-    }
-
-    #art {
-        height: 240px;
-        top: 50%;
-        right: 1%;
-    }
-
-    .players, .rules {
-        margin: 0em;
-    }
-
-    div.dice {
-        background-color: white;
-        margin: 1em;
-        width: 8em;
-        height: 8em;
-        text-align: center;
-        border-radius: 9px;
-        margin-top: 12%;
-        margin-bottom: 15%;
-        left: -1%;
+   div.dice {
+      background-color: white;
+      margin: 1em;
+      width: 8em;
+      height: 8em;
+      text-align: center;
+      border-radius: 9px;
+      margin-top: 10%;
+      margin-bottom: 15%;
+      left: 5%;
     }
 
     button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    }
+
+    button.hover {
+    background-color: gray;
+    }
+
+    #demo {
+      color: black;
+      font-size: 20pt;
+      margin-top: 1px;
+   }
+
+   .players, .rules {
+   margin: 7em;
+ }
+
+ #art {
+      height: 370px;
+      top: 36%;
+      right: 5%;
+  }
+  #aud {
+     width: 400px;
+     height: auto;
+     top: 49.5%;
+     left: 5%;
+  }
+
+  #clock {
+       top: 68.15%;
+       right: 9%;
+       height: 310px;
+    }
+
+    #wells {
+     height: 410px;
+     top: 80.24%;
+     left: 9%;
+ }
+}
+
+@media (min-width: 992px) {
+    #sample {
+        width: 560px;
+        height: auto;
+        margin-top: 8%;
+        margin-bottom: -.5%;
+    }
+
+    h1-main{
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -0.5em;
+      font-size: 3em;
+      line-height: 1.2;
+      letter-spacing: .0001em;
+      margin-bottom: .25em;
+      margin-top: 0.25em;
+      }
+
+      .boardbuffer {
+    padding-top: 4em;
+    }
+
+    h5 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.7em;
+        font-weight: bold;
+        font-style: normal;
+        margin-top: 2%;
+    }
+
+    h6 {
+       font-family: 'Lato', sans-serif;
+       font-size: 1.2em;
+     }
+
+     h6.piece {
+      margin-bottom: 5%;
+      font-weight: bold;
+      font-size: 1.3em;
+     }
+
+     h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+}
+
+    h2{
+     font-family: 'Playfair Display', serif;
+     font-size: 2em;
+     line-height: 1.3em;
+     font-weight: 300;
+     margin-top: 1.6em;
+    }
+
+    div.dice {
+       background-color: white;
+       margin: 1em;
+       width: 8em;
+       height: 8em;
+       text-align: center;
+       border-radius: 9px;
+       margin-top: 10%;
+       margin-bottom: 15%;
+       left: 5%;
+     }
+
+     button {
         background-color: white;
         border: none;
         color: black;
@@ -387,104 +631,114 @@ iframe {
         display: inline-block;
         font-size: 18px;
         margin-top: 15px;
-    }
+        }
 
-    button.hover {
+        button.hover {
         background-color: gray;
+        }
+
+        #demo {
+          color: black;
+          font-size: 20pt;
+          margin-top: 1px;
+        }
+
+        .players, .rules {
+        margin: 12em;
+        }
+
+    #art {
+      height: 400px;
+      top: 38%;
+      right: 6%;
     }
 
-    #demo {
-        color: black;
-        font-size: 20pt;
-        margin-top: 5px;
-    }
-}
+      #aud {
+         width: 450px;
+         height: auto;
+         top: 51%;
+         left: 2%;
+      }
 
-@media screen and (max-width: 768px) {
-    #sample {
-        width: 460px;
-        height: auto;
-        /*margin-top: 49%;*/
-        margin-bottom: 9%;
-    }
-
-    #clock {
-        height: 700px;
+  #clock {
+       top: 68.7%;
+       right: 9%;
+       height: 340px;
     }
 
     #wells {
-        height: 200px;
-    }
+     height: 430px;
+     top: 80.7%;
+     left: 9%;
+ }
 
-    #art {
-        height: 240px;
-        top: 35%;
-        right: 1%;
-    }
-
-    #aud {
-        width: 430px;
-        top: 34%;
-        height: auto;
-    }
 }
 
-@media screen and (max-width: 992px) {
-    #clock {
-        height: 200px;
+@media (min-width: 1200px) {
+    #sample {
+        width: 660px;
+        height: auto;
+        margin-top: 8%;
+        margin-bottom: -.5%;
     }
 
-    #wells {
-        height: 200px;
+    h1-main{
+      font-family: 'Playfair Display', serif;
+      letter-spacing: -0.5em;
+      font-size: 2.8em;
+      line-height: 1.2;
+      letter-spacing: .0001em;
+      margin-bottom: .25em;
+      margin-top: 0.25em;
+      }
+
+      .boardbuffer {
+     padding-top: 4em;
+ }
+
+     h6.piece {
+     margin-bottom: 5%;
+     font-weight: bold;
+     font-size: 1.2em;
+    }
+
+    h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.4em;
+    }
+
+    .players, .rules {
+    margin: 4em;
+    }
+
+    .squeeze {
+        margin-left: 8em;
+        margin-right: 8em;
     }
 
     #art {
-        height: 240px;
-        top: 40%;
-        right: 1%;
-    }
+     height: 470px;
+     top: 28%;
+     right: 8%;
+     }
 
-    #aud {
-        width: 430px;
+     #aud {
+        width: 490px;
         height: auto;
-    }
-    #sample {
-        width: 400px;
-        height: auto;
-        /* margin-top: 54%; */
-        margin-bottom: 10%;
-    }
-}
+        top: 44%;
+        left: 5%;
+     }
 
-@media screen and (max-width: 1200px) {
-    #sample {
-        width: 400px;
-        height: auto;
-        /* margin-top: 54%; */
-        margin-bottom: 10%;
-    }
+     #clock {
+          top: 63.4%;
+          right: 11%;
+          height: 400px;
+       }
 
-    #clock {
-        height: 260px;
-        top: 69.8%;
+       #wells {
+        height: 470px;
+        top: 78%;
+        left: 14%;
     }
 
-    #wells {
-        height: 400px;
-        top: 80.8%;
-        left: 1em;
-    }
-
-    #art {
-        height: 290px;
-        top: 38.6%;
-        right: 2%;
-    }
-
-    #aud {
-        width: 330px;
-        top: 51%;
-        left: .5em;
-        height: auto;
-    }
 }
