@@ -466,7 +466,7 @@ iframe {
 
     #clock {
         height: 260px;
-        top: 69%;
+        top: 69.8%;
     }
 
     #wells {
@@ -477,13 +477,13 @@ iframe {
 
     #art {
         height: 290px;
-        top: 37.7%;
+        top: 38.6%;
         right: 2%;
     }
 
     #aud {
         width: 330px;
-        top: 50.5%;
+        top: 51%;
         left: .5em;
         height: auto;
     }
