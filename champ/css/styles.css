@@ -386,7 +386,7 @@ iframe {
 
   #art {
         height: 320px;
-        top: 39.2%;
+        top: 38.3%;
         right: 1%;
     }
 
@@ -398,14 +398,14 @@ iframe {
     }
 
     #clock {
-       top: 69.17%;
+       top: 69.15%;
        right: 10%;
        height: 260px;
    }
 
    #wells {
       height: 370px;
-      top: 80.8%;
+      top: 80.7%;
       left: 0%;
   }
 }
