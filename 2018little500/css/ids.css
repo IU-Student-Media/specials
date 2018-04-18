@@ -1,0 +1,593 @@
+/*Bootstrap is mobile first, so media queries at the bottom apply to larger screens.
+Assume anything not under a media query is for .col-xs */
+
+/*General html*/
+	body{
+		background-color:#FFF;
+	}
+.container-homepage a img{
+	padding-bottom: -5px;
+}
+.twitter-timeline{
+	align-items: center;
+}
+#feat{
+	max-width: 600px;
+	max-height: 400px;
+}
+#dominate {
+		width: 1000px;
+		max-height: 500px;
+		overflow: hidden;
+		padding-top: 10px;
+		padding-left: 10%;
+		padding-right: 10%;
+}
+#headline{
+	padding-top: 10px;
+}
+
+/*Fonts and icons*/
+	/*if you want to add a different headline font let us know.*/
+	h2, h3, h4, h5{
+		font-family: 'Lato', sans-serif;
+		color: #4b4b4b;
+		margin-top: 0em;
+
+	}
+
+	.graphic1 {
+		font-weight: 300;
+		text-align: left;
+		line-height: 1.8em;
+		margin-bottom: -.1em;
+	}
+
+	.graphic1marg {
+		font-weight: 300;
+		text-align: left;
+		line-height: 1.8em;
+		margin-bottom: 2em;
+	}
+
+	.four {
+		font-weight: 700;
+		color: #BFBFBF;
+		font-size: 20px;
+	}
+
+	.twentytwo {
+		font-weight: 700;
+		color: #808080;
+		font-size: 20px;
+
+	}
+
+	.two {
+		font-weight: 700;
+		color: #CC0000;
+		font-size: 20px;
+	}
+
+	.thirty {
+		font-weight: 700;
+		color: #000000;
+		font-size: 20px;
+	}
+
+	.homs {
+		color: #CC0000;
+		font-weight: bold;
+		font-family: 'Lato', sans-serif;
+	}
+
+
+	/*use h1 for headlines*/
+	h1{
+		font-family: 'Lato', serif;
+		font-size: 3.5em;
+		line-height: 1.2;
+		letter-spacing: .05em;
+		font-weight: 300;
+		margin-bottom: 0em;
+		margin-top: 1em;
+	}
+
+	/*h2 is the italicized subhead.*/
+	h2{
+		font-size: 2.5em;
+		line-height: 1em;
+		font-weight: 300;
+		margin-top: .25em;
+		margin-bottom: .5em;
+	}
+
+	h3{
+		font-size: 1.8em;
+	}
+
+	h4{
+		font-weight: bold;
+	}
+
+	h5{
+		/* font-style: italic; */
+		font-size: 1.2em;
+
+	}
+
+	/*h6 is used for bylines*/
+	h6{
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		line-height: 1.5em;
+		font-weight: 300;
+	}
+
+	.by{
+		font-weight: 900;
+	}
+
+
+
+	/*We're never gonna change body copy though*/
+	p, i, caption {
+		font-family: 'Lato', serif;
+		color: #4b4b4b;
+	}
+
+	p{
+		font-size: 18px;
+		line-height: 1.8;
+		padding-bottom: 1em;
+	}
+
+	figcaption{
+		font-weight: 300;
+		font-size: 1em;
+		line-height: 1.4em;
+		margin-top: .5em;
+		margin-bottom: 3em;
+	}
+
+
+
+
+	/*if you want to change the color of icons throughout the article feel free, but create
+	a new class name so the navbar icons stay the same color. */
+
+	.fa-twitter {
+	  color: white;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.fa-twitter {
+	  color: white;
+	  padding-right: .2em;
+	  font-size: 1.6em;
+	}
+
+	.pulledquote .fa-twitter {
+	  color: black;
+	  font-size: 1em;
+	  padding-left: .5em;
+	}
+
+	.fa-facebook {
+	  color: white;
+	  padding-right: .15em;
+	  font-size: 1.6em;
+	}
+
+/*Links*/
+
+/*media*/
+	figure{
+		width: 100%;
+		margin-top: 0em;
+		margin-bottom: 1.5em;
+	}
+
+	.nomarg {
+		margin: 0em;
+	}
+
+	.topmarg {
+		margin: 0px;
+		margin-top: 30px;
+	}
+
+	.leftmarg {
+		margin:0;
+		padding: 10px;
+	}
+
+	figure > img{
+		width: 100%;
+		margin-bottom: 0em;
+	}
+
+	figure > em {
+		font-size: .8em;
+		margin-bottom: .5em;
+		width: 100%;
+		text-align: right;
+		float: right;
+	}
+
+	.pulledquote p{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'Lato';
+		font-weight: 900;
+	}
+
+	.pulledquote h3{
+		padding: 0;
+		margin: 0;
+		margin-top: .5em;
+		font-family: 'Lato';
+		font-weight: 300;
+	}
+
+
+	.pulledquote{
+		padding-left: 20px;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		width: 75%;
+
+	}
+
+	.sidebar > .pulledquote{
+		margin-top: 100px;
+	}
+
+
+	#carousel-example-generic{
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+	border-color: #d7d7d7;
+	border-width: .1em;
+}
+
+/*navigation*/
+	/*Don't change anything here unless you run into problems with spacing on section links*/
+	.navbar {
+	 margin-bottom: 50px;
+
+	}
+
+	.navbar-brand {
+	  font-size: 24px;
+	  color: white;
+	  font-weight: bold;
+	  padding-left: 1em;
+	}
+
+
+
+	nav{
+		margin-bottom: 500px;
+	}
+
+
+	#bs-example-navbar-collapse-1 ul{
+		font-family: 'lato', serif;
+		text-align: center;
+		margin-top: 0 auto;
+	}
+
+	.navbar-headline-mobile {
+		font-family: 'lato', serif;
+		text-decoration: none;
+		text-align: center;
+		margin-left: 2em;
+		width: 500px;
+		line-height: 50px;
+	}
+
+	#bs-example-navbar-collapse-1 li .nav-headline{
+		font-family: 'lato', serif;
+		text-decoration: none;
+		text-align: center;
+		color: white;
+		margin-left: 0em;
+		margin-right: 0em;
+		line-height: 50px;
+
+	}
+
+/*intro row */
+	.byline{
+		display: none;
+		text-align: center;
+	}
+
+	.byline-mobile{
+		margin-top: 1em;
+		margin-bottom: .5em;
+		text-align: center;
+
+
+	}
+
+	.headline{
+	}
+
+	.led{
+		margin-top: 1em;
+	}
+
+	.intro-caption-mobile{
+		margin-top: 5px;
+	}
+
+/*inline 6 columns*/
+
+/*sidebar 4 columns*/
+	.sidebar img{
+		width: 100%;
+	}
+
+	.sidebar .chart {
+		margin-top: 0em;
+	}
+
+	.sidebar  h6{
+		margin-top: 0em;
+	}
+
+	.sidebar-info{
+		/*border-bottom-style: solid;
+		border-top-style: solid;
+		border-color: #d7d7d7;
+		border-width: .1em;*/
+
+	}
+
+	.sidebar-related{
+
+	}
+
+	/*.sidebar > figure{
+		margin-top: 0px;
+	}*/
+
+/*breaks*/
+	.break{
+		height: 100%;
+	}
+
+	/*annoyingly, I can't just include all the text (h1,h2,h3,etc.) after .break as it only applies to the first one listed not everything.
+	if you want to include more text in a break, just at .break h2 {} or whatever text you want.*/
+
+	.break figcaption{
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+
+	.break h4{
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+
+/*sections for parallax scrolling*/
+
+.unsettled {
+	color: black;
+	left: 20px;
+}
+
+.show-desktop {
+	display: none;
+}
+
+.show-mobile {
+	display: block;
+}
+
+
+/*contributors*/
+	.contributors{
+		margin-bottom: 2em;
+	}
+
+	.contributors p{
+		margin-top: -.6em;
+		margin-bottom: -1em;
+	}
+
+	.contributors h3{
+		margin-bottom: 1em;
+	}
+
+	.contributors .fill{
+		display: none;
+	}
+
+/*footer*/
+	footer{
+		height: 5em;
+		background-color: #101010;
+		color: white;
+		padding: 1em;
+		text-align: right;
+
+	}
+
+	footer a{
+		color: #4b4b4b;
+
+	}
+
+
+.seperate {
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+
+/*types of media*/
+
+
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:550px) {
+
+	h2{
+		font-size: 2em;
+		line-height: 1.3em;
+/*		color: #939393;
+*/		margin-bottom: .5em;
+		font-weight: 300;
+		margin-top: .5em;
+	}
+
+/*Navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+#home {
+	background: url(https://s3.amazonaws.com/snwceomedia/ids/c6f90bef-b38a-4909-85f0-84e92f6799f7.original.jpg) 50% 0 repeat fixed;
+	min-height:1000px;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+}
+
+
+}
+.frustration {
+	height: 350px;
+  position: absolute;
+  text-align: left;
+  top: 160px;
+  width: 100%;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Medium devices (desktops, 960px and up) */
+@media (min-width:960px) {
+
+	.show-desktop {
+	display: block;
+}
+/*navbar*/
+	.navbar-headline-mobile {
+		display: none;
+	}
+
+/*Intro and header */
+	.byline-mobile{
+		display: none;
+	}
+
+	.byline{
+		display: inline;
+		margin-top: 0em;
+		padding-top: 0em;
+	}
+
+	.frustration {
+	height: 458px;
+  position: absolute;
+  text-align: left;
+  top: 160px;
+  width: 100%;
+  color: white;
+  font-size: 7em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*article*/
+
+	.inline-wide {
+		width: 125%;
+		height: auto;
+	}
+
+	.inline-narrow{
+		width: 50%;
+		height: auto;
+	}
+
+
+/*sidebar*/
+	.pulledquote {
+		color: #5996AD;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	.sidebar .pulledquote{
+		margin-top: -1.5em;
+
+	}
+
+/*contributors*/
+	.contributors .fill{
+		display: inline;
+		visibility: hidden;
+	}
+
+
+.show-mobile {
+	display: none;
+}
+
+.four {
+		font-weight: 700;
+		color: #BFBFBF;
+		font-size: 22px;
+	}
+
+	.twentytwo {
+		font-weight: 700;
+		color: #808080;
+		font-size: 22px;
+
+	}
+
+	.two {
+		font-weight: 700;
+		color: #CC0000;
+		font-size: 22px;
+	}
+
+	.thirty {
+		font-weight: 700;
+		color: #000000;
+		font-size: 22px;
+	}
+
+}
+
+
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) {
+ }
+
+ .jersey{
+ 	max-width: 200px;
+ }
