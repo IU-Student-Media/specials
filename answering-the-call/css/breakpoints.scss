@@ -1,0 +1,17 @@
+// Defining values
+$xs-min: 1px;
+$sm-min: 768px;
+$xs-max: ($sm-min - 1);
+$md-min: 992px;
+$sm-max: ($md-min - 1);
+$lg-min: 1200px;
+$md-max: ($lg-min - 1);
+$lg-mx: ($xl-min - 1);
+$xl-min: 2000px;
+
+@-ms-viewport{
+  width: device-width;
+}
+
+$red: #bd4147;
+$blue: #42708C;

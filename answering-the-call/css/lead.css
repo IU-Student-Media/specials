@@ -1,0 +1,12 @@
+.lead-img {
+  top: 0;
+  text-align: center; }
+
+.lead-text {
+  text-align: center; }
+
+.lead-overlay {
+  text-align: center; }
+  .lead-overlay .overlay-text {
+    position: relative;
+    margin-top: -15%; }
