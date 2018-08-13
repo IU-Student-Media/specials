@@ -1,0 +1,157 @@
+.show {
+  display: block; }
+
+button {
+  border: .5px solid #eee;
+  padding: 0em;
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: left; }
+  button:hover {
+    background-color: #337ab7;
+    color: white; }
+    button:hover h1 {
+      color: white; }
+  button h1, button h2, button h3, button h4, button h5, button h6, button p {
+    padding-left: 5px;
+    margin-bottom: 5px; }
+
+ul.dropdown {
+  list-style: none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0; }
+
+ul.dropdown a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding-right: 10px; }
+
+ul.dropdown li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-size: 1em; }
+
+ul.dropdown li.title {
+  padding-left: 0em; }
+
+ul.dropdown li:hover {
+  background-color: #f8f9f9;
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  -moz-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4); }
+
+ul.dropdown ul li:last-child {
+  border-bottom: 1px solid #ccc;
+  -webkit-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4);
+  -moz-box-shadow: 0px 5px 5px rgba(204, 204, 204, 0.4); }
+
+ul.dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0; }
+
+ul.dropdown ul li {
+  float: none;
+  width: 200px; }
+
+ul.dropdown ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+  color: #337ab7; }
+
+ul.dropdown ul a:hover {
+  text-decoration: underline; }
+
+ul.dropdown ul ul {
+  top: 0;
+  left: 100%; }
+
+ul.dropdown li:hover > ul {
+  display: block; }
+
+ul.dropdown li:active > ul {
+  display: block; }
+
+  .collapsible {
+  color: #444; */
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: ;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  max-width: none;
+  background-color: #f1f1f1;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 18px;
+    position: relative;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
