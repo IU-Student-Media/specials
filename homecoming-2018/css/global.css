@@ -26,11 +26,6 @@
 			-webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
 		  	transition: background .5s;
 		}
-		.header {
-			background-attachment: fixed;
-		}
-		.header-secondary {
-			background-attachment: fixed;
 	}
 	@media (max-width: 767px) {
 		.transparentnavbar {
