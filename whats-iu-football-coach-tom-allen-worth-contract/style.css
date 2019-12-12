@@ -1,0 +1,256 @@
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
+
+
+.bg-black {
+	background-color: black;
+}
+
+a.navbar-brand {
+	color: white !important;
+	font-family: 'Lato', sans-serif;
+}
+
+a.nav-link {
+	color: white;
+}
+
+.wrapper {
+	color: black;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background-position: center;
+		display: flex;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	background: center center;
+  	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.headline {
+  text-align: center;
+  padding-bottom: %;
+  font-weight: 900;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-size: 2.5em;
+}
+
+
+
+.number {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 900;
+	font-size: 200%;
+}
+
+.wide-image {
+	width: 150%;
+	padding-bottom: 5%;
+	margin-left: -25%;
+	margin-right: 25%;
+}
+
+.wide-image-full {
+	width: 190%;
+	padding-bottom: 5%;
+	margin-left: -45%;
+	margin-right: 45%;
+}
+
+@media (max-width: 767.98px) {
+	.wide-image {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.wide-image-full {
+	width: 100%;
+}
+	.header-mobile {
+		padding-top: 30px;
+	}
+	.wrapper {
+		padding-top: 90px;
+	}
+	.headline {
+		background-color: #83926A;
+  color: white;
+	}
+	.red {
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.red {
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+  background-color: #83926A;
+  color: white;
+}
+
+}
+
+a.story-link {
+		text-decoration: none;
+		color: black !important;
+		border-bottom: 2px solid black;
+		transition: .2s;
+	}
+
+	a.story-link:hover {
+		text-decoration: none;
+		color: black !important;
+	}
+h4 {
+	padding-bottom: 1%;
+	padding-top: 2%;
+}
+
+.headline-treatment {
+}
+
+.ad-caption {
+  text-align: center; font-size: 12px; padding-top: 15px; font-family: 'Lato', sans-serif; text-transform: uppercase;
+}
+.ad-block {
+  margin-top: 10px; padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.ad-code {
+  padding-bottom: 30px;
+}
+
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border: 1px solid black;
+	background-color: white;
+	padding: 4%;
+	position: sticky;
+	margin-top: 2%;
+	font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.timer {
+	padding-bottom: 24px;
+}
+
+.fancy {
+	font-family: 'Playfair Display', serif;
+}
+
+.section {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.text-img {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	text-align: center;
+}
+
+.loading {
+  display: inline-block;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  33% {
+    transform: rotate(1deg);
+  }
+  66% {
+  	transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.loading-1 {
+  display: inline-block;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  33% {
+    transform: rotate(-1deg);
+  }
+  66% {
+  	transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.loading-2 {
+  display: inline-block;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  33% {
+    transform: rotate(-2deg);
+  }
+  66% {
+  	transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.loading-3 {
+  display: inline-block;
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  33% {
+    transform: rotate(2deg);
+  }
+  66% {
+  	transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* html {
+  cursor: url('https://snworksceo.imgix.net/ids/5fe7cac9-13e7-4932-bc20-c417db3fbd15.sized-1000x1000.png?'), auto;	
+} */
+
+.bottom {
+	background-image: url(https://snworksceo.imgix.net/ids/b25d095b-2960-470b-9879-c78ee612ce4c.sized-1000x1000.png?);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.by {
+	padding-top: 5%;
+	font-size: 14px;
+	text-align: center;
+
+}
