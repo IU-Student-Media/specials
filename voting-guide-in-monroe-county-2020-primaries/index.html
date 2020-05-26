@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS/JS/then Popper.js -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="SHORTCUT ICON" href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- does something with the navbar...leave it in -->
+    <script type="text/javascript">
+      function checkScroll(){
+        var startY = $('.navbar').height() * 10; //The point where the navbar changes in px
+        if($(window).scrollTop() > startY){
+            $('.navbar').addClass("blackbg");
+        }else{
+            $('.navbar').removeClass("blackbg");
+        }
+        if($(window).scrollTop() > startY){
+            $('.navtext').addClass("nav-title");
+        }else{
+            $('.navtext').removeClass("nav-title");
+        }
+    }
+    if($('.navbar').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }
+    </script>
+
+    <script type="text/javascript">
+  $.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+
+  window.addEventListener('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }, {passive: true});
+}
+
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+</script>
+
+    <title>2020 Primaries TL;DR | Indiana Daily Student</title>
+
+    <!--Facebook Social Card (Be sure to change these!)-->
+    <meta property=“og:url” content="http://specials.idsnews.com/voting-guide-in-monroe-county-2020-primaries/"/>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="TL;DR on Monroe County’s June 2 Indiana primary candidates" />
+    <meta property="og:description" content="This election isn’t just about the next POTUS — learn about your local candidates."/>
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/4ad8a738-9d74-4ac0-a113-d0feced6b8f1.original.png"/>
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="TL;DR on Monroe County’s June 2 Indiana primary candidates">
+    <meta name="twitter:description" content="This election isn’t just about the next POTUS — learn about your local candidates.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/4ad8a738-9d74-4ac0-a113-d0feced6b8f1.original.png">
+
+
+    <!-- START Ad content: this goes in the head content -->
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+
+  <script>
+    googletag.cmd.push(function() {
+      //all other leaderboards
+    var mapping1 = googletag.sizeMapping()
+      .addSize([768, 0], [728, 90]) // Desktops and Tablets
+      .addSize([0, 0], [320, 50]) // Mobile devices
+      .build();
+    googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+    });
+  </script>
+
+<!-- Show/hide rows based on reader input -->
+  <script type="text/javascript">
+      $(function () {
+          $("#district").change(function () {
+              if ($(this).val() == "46") {
+                $("#house-rep-row").show();
+                $("#title").text($("#district").val());
+                $("#dist46").show();
+                $("#dist60").hide();
+                $("#dist61").hide();
+                $("#dist62").hide();
+                $("#dist65").hide();
+              } else if ($(district).val() == "60") {
+                $("#house-rep-row").show();
+                $("#title").text($("#district").val());
+                $("#dist60").show();
+                $("#dist46").hide();
+                $("#dist61").hide();
+                $("#dist62").hide();
+                $("#dist65").hide();
+              } else if ($(district).val() == "61") {
+                $("#house-rep-row").show();
+                $("#title").text($("#district").val());
+                $("#dist61").show();
+                $("#dist46").hide();
+                $("#dist60").hide();
+                $("#dist62").hide();
+                $("#dist65").hide();
+              } else if ($(district).val() == "62") {
+                $("#house-rep-row").show();
+                $("#title").text($("#district").val());
+                $("#dist62").show();
+                $("#dist46").hide();
+                $("#dist60").hide();
+                $("#dist61").hide();
+                $("#dist65").hide();
+              } else {
+                $("#house-rep-row").show();
+                $("#title").text($("#district").val())
+                $("#dist65").show();
+                $("#dist46").hide();
+                $("#dist60").hide();
+                $("#dist61").hide();
+                $("#dist62").hide();
+              }
+            });
+          },
+        );
+  </script>
+
+  <script type="text/javascript">
+      $(function () {
+          $("#senate-dist").change(function () {
+              if ($(this).val() == "040") {
+                $("#senate-row").show();
+                $("#senate-title").text($("#senate-dist").val());
+                $("#senate-dist40").show();
+                $("#senate-dist44").hide();
+              } else {
+                $("#senate-row").show();
+                $("#senate-title").text($("#senate-dist").val())
+                $("#senate-dist44").show();
+                $("#senate-dist40").hide();
+              }
+            });
+          },
+        );
+  </script>
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBJX8F');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Image and text -->
+    <div class="header" id="header">
+      <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light navbar-default fixed-top transparentnavbar blackbg" >
+        <a class="navbar-brand" href="https://idsnews.com"><img width="70px" src="http://specials.idsnews.com/the-toll-it-took-bloomington-police-department-contract-negotiation/img/logo.png" alt="IDS logo">
+        <span class="navtext nav-before">2020 Primaries TL;DR</span>
+
+        <!-- menu button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <p class="hithere"><i class="fas fa-bars"></i></p>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="text-align: right;">
+          <ul class="navbar-nav nav-white ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fvoting-guide-in-monroe-county-2020-primaries%2F&amp;src=sdkpreparse"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://ctt.ac/a5lK9"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-9">
+            <p class="headline">TL;DR on Monroe County’s June 2 Indiana primary candidates</p>
+            <p class="subhead"><center><em>This election isn’t just about the next POTUS — learn about your local candidates.</em></center></p>
+          </div>
+        </div>
+
+        <div class="header-mobile">
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/4ad8a738-9d74-4ac0-a113-d0feced6b8f1.original.png" class="wide-image">
+          <p class="credit">Illustration by Vivek Rao | <b>IDS</b></p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="subhead">Published May 26, 2020</p>
+            <p class="subhead">Compiled by <a class="byline-link" href="https://www.idsnews.com/staff/carson-terbush" target="_blank">Carson TerBush</a>, <a class="byline-link" href="https://www.idsnews.com/staff/vivek-rao" target="_blank">Vivek Rao</a> and <a class="byline-link" href="https://www.idsnews.com/staff/wei-wang" target="_blank">Wei Wang</a></p>
+            <p class="subhead" style="padding-bottom:5px;">Photos courtesy of candidates, unless otherwise stated</p>
+            <p class="subhead" style="padding-bottom:10px;">Web development by <a class="byline-link" href="https://www.idsnews.com/staff/vivek-rao" target="_blank">Vivek Rao</a></p>
+
+            <p class="story">With Indiana’s June 2 <a href="https://www.idsnews.com/article/2020/05/voting-june-2-primaries-monroe-county-indiana" target="_blank" class="byline-link">primary</a> coming up, most people are already well-versed in the long saga of the U.S. presidential election. Local candidates are less well-known — but don’t worry. We’re here to bridge the gap before you send in your absentee ballot this week.</p>
+
+            <p class="story">Here’s a list we compiled of every local candidate on the ballot for Monroe County voters, their priorities, background and how to find more information. Make sure to take a look at <a href="https://www.idsnews.com/article/2020/05/voting-june-2-primaries-monroe-county-indiana" class="byline-link" target="_blank">this handy guide</a> before you vote.</p>
+
+            <p class="story"><em>Editor’s note: the candidates running for county auditor, treasurer, coroner, surveyor and commissioners (all running unopposed) and for Monroe County Democratic and Republican convention delegates are not included in this list.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD BLOCK -->
+      <div class="bg-light ad-block">
+        <div class="container">
+          <div class="col-md-12">
+            <p class="ad-caption">Advertisement</p>
+            <div class="ad-code">
+              <!-- BEGIN /32635621/rectangle1 -->
+          <div id='div-gpt-ad-1512489859064-0' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-0'); });
+          </script>
+          </div>
+          <!-- END /32635621/rectangle1 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END AD BLOCK -->
+
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 heading">
+            Governor
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">Indiana’s <a href="https://faqs.in.gov/hc/en-us/articles/115005229568-What-are-the-duties-of-the-Governor" class="byline-link" target="_blank">governor</a>, currently Republican Eric Holcomb, is the state’s chief executive officer. The governor reviews bills that pass through Indiana’s House of Representatives and Senate, issues executive orders — such as the recent stay-at-home order — and is the commander-in-chief of Indiana’s armed forces.</p>
+          </div>
+        </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5">
+          <div class="candidate-name">
+            <a class="dem-highlight" href="https://drwoodymyers.com/" target="_blank">Woodrow (Woody) Myers</a>
+          </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/1a16307e-91d9-406c-98a0-40e9514014c4.original.png" class="headshot">
+          <p class="copy"><b>Priorities:&nbsp;</b>decreasing health care costs, increasing school funding, improving renewable energy sources, economic development, improving the workforce through more educational opportunities</p>
+          <p class="copy"><b>Background:&nbsp;</b>physician, Indiana State Health Commissioner (1985-1990), New York City’s Health Commissioner (1990-1991), owner of Myers Ventures</p>
+          <p class="copy">To learn more, click <a href="https://drwoodymyers.com/" target="_blank" class="byline-link">here</a>.</p>
+        </div>
+
+        <div class="col-md-5">
+          <div class="candidate-name">
+            <a class="rep-highlight" href="https://holcombforindiana.com/" target="_blank">Eric Holcomb (incumbent)</a>
+          </div>
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/35fbca70-cf42-4df2-a709-c3bc0c4c388e.original.png" class="headshot">
+            <p class="credit" style="padding-top:-15px;">Tribune News Service</p>
+
+            <p class="copy"><b>Priorities:&nbsp;</b>improve and maintain the economy, invest in Indiana’s roads and bridges, develop a “21st-century-skilled” workforce, address the drug epidemic, keep schools safe, keep government open and accountable, expand WiFi access to rural areas, complete I-69</p>
+            <p class="copy"><b>Background:&nbsp;</b>current Indiana governor (2016-present); former chairman of Indiana Republican party; adviser, deputy chief of staff and 2008 campaign manager for former Gov. Mitch Daniels</p>
+            <p class="copy">To learn more, click <a href="https://holcombforindiana.com/" target="_blank" class="byline-link">here</a>.</p>
+        </div>
+      </div>
+    </div>
+
+      <hr width=80%>
+
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center heading">
+          U.S. Representative — District 9
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">The U.S. representative for Indiana’s <a href="https://ballotpedia.org/Indiana%27s_9th_Congressional_District" class="byline-link" target="_blank">ninth district</a>, currently Republican Trey Hollingsworth, represents Monroe, Brown, Clark, Floyd, Harrison, Jackson, Johnson, Lawrence, Orange and Washington counties and parts of Crawford, Morgan and Scott counties. This representative introduces bills, offers amendments and serves on committees in the U.S. <a href="https://www.house.gov/the-house-explained" class="byline-link" target="_blank">House of Representatives</a>, representing Monroe County in the federal government.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://dorris2020.com" target="_blank">D. Liam Dorris</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/3ce8d6e4-f496-44fb-9bd4-cfee1b92a66e.original.png" class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>anti-corruption by publicly financing political campaigns, Medicare for all, climate change as proposed by Sen. Bernie Sanders, I-Vt., and New York Rep. Alexandria Ocasio-Cortez, D-14th District, fair wages, college for all</p>
+              <p class="copy"><b>Background:&nbsp;</b>from Evansville, served in the Marine Corps for four years, studied metrology (the study of measurement)</p>
+              <p class="copy">To learn more, click <a href="https://dorris2020.com" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.hood2020.com/" target="_blank">Brandon Hood</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/c98966c3-abff-4d7b-a38d-4404708da7b1.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>pay raises for teachers, end the war on drugs, prevent climate change by regulating corporations, Medicare for all, abolish U.S. Immigration and Customs Enforcement, nationalize energy production</p>
+              <p class="copy"><b>Background:&nbsp;</b>independent contractor, advocate for the People’s Platform (a leftist legislative caucus)</p>
+              <p class="copy">To learn more, click <a href="https://www.hood2020.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="http://www.electogabhann.com" target="_blank">James C. O’Gabhann III</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/d091a07b-90ce-40ca-96eb-2f6c56dd01f4.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>put health before the economy in the pandemic, a “Rural Green New Deal” (including healthcare for all, internet accessibility in rural areas, local economic development; address climate change through a carbon-neutral environment and sustainability), enhance public education and end private charter schools</p>
+              <p class="copy"><b>Background:&nbsp;</b>master’s degree in healthcare management, public school teacher in Los Angeles, legislative analyst for the Hopi Tribe in Arizona</p>
+              <p class="copy">To learn more, click <a href="http://www.electogabhann.com" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://pastorpowellforcongress.webs.com/" target="_blank">Mark J. Powell</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/1b31df7a-2896-4a5e-9e98-ad467e1eb38c.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>reform immigration by making Deferred Action for Childhood Arrivals (DACA) permanent, make it easier for immigrants to apply for citizenship; create U.S. Department of the Environment; tighten background checks for gun owners and close gun show loopholes; support access to Congressional Health Insurance to households earning less than $120,000</p>
+              <p class="copy"><b>Background:&nbsp;</b>Lutheran pastor, served in Michigan’s House of Representatives in 2000, served in Kansas House of Representatives in 1994</p>
+              <p class="copy">To learn more, click <a href="https://pastorpowellforcongress.webs.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.andyruff.org/" target="_blank">Andy Ruff</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/3a8e7146-9697-42ba-8a54-71ffe1d3acf4.original.png"  class="headshot">
+              <p class="credit" style="padding-top:-15px;">Ty Vinson | <b>IDS</b></p>
+
+              <p class="copy"><b>Priorities:&nbsp;</b>reform campaign financing by overturning the Supreme Court’s Citizens United ruling, establish universal health care, raise minimum wage to at least $15, forgive student loan debt, support the Green New Deal</p>
+              <p class="copy"><b>Background:&nbsp;</b>Bloomington City Council member (20 years), part-time country musician, developed Indiana’s first Living Wage Ordinance</p>
+              <p class="copy">To learn more, click <a href="https://www.andyruff.org/" target="_blank" class="byline-link">here</a>.</p>
+              <p class="copy"><a href="https://www.idsnews.com/article/2019/12/city-council-member-to-run-for-congress" target="_blank" class="byline-link">Related: City council member to run for Congress archives.</a></p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="rep-highlight" href="http://www.votefortrey.com/" target="_blank">Trey Hollingsworth (incumbent)</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/d580056f-839b-40dc-905e-a482b3cb309f.original.png"  class="headshot">
+              <p class="credit" style="padding-top:-15px;">Alex Deryn | <b>IDS</b></p>
+
+              <p class="copy"><b>Priorities:&nbsp;</b>reducing government influence in business, reinvigorating the economy</p>
+              <p class="copy"><b>Background:&nbsp;</b>founder of Hollingsworth Capital Partners, a multimillion dollar real estate investment firm; served as the District 9 representative since 2017</p>
+              <p class="copy">To learn more, click <a href="http://www.votefortrey.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr width=80%>
+
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center heading">
+        State House
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <p class="story">
+            Voters across Indiana will vote for either Holcomb or Myers as their next governor. But voters will see different candidates for their State House Representatives based on what district they live in.
+          </p>
+
+          <p class="story">
+            Select your district below to see who's running to be your House Representative. If you don't know what district you're in, use our map to search your address to see what district you'll fall under.
+            <em>Don't worry, we won't save your address.</em>
+          </p>
+
+          <p class="story">My district is: &nbsp;&nbsp;&nbsp;<select id="district" onchange="ShowHideDiv()" class="district-dropdown">
+              <option value="default">--select--</option>
+              <option value="46">46</option>
+              <option value="60">60</option>
+              <option value="61">61</option>
+              <option value="62">62</option>
+              <option value="65">65</option>
+            </select>
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <iframe width="100%" height="320" frameborder="0" src='https://vivrao9.carto.com/builder/bf837501-0081-46cf-ba72-95a0b0a43bc7/embed_map?zoom=3&center_lat=39.171192&center_lon=-86.6018862'></iframe>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="display:none; padding-top: 5%;" id="house-rep-row">
+        <div class="heading">
+          Candidates for District <span id="title" class="heading"></span>
+        </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px; display:none;" id="dist46">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://www.indianahouserepublicans.com/members/leadership/bob-heaton" target="_blank">Bob Heaton (incumbent)</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/f138d075-fc28-48e7-9a10-1457fdcd825e.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>grow the economy, limit government spending, strengthen education</p>
+          <p class="copy"><b>Background:&nbsp;</b>incumbent Indiana State Representative (2010-present), president of Heaton Financial Services</p>
+          <p class="copy">To learn more, click <a href="https://www.indianahouserepublicans.com/members/leadership/bob-heaton" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px; display:none;" id="dist60">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://www.peggymayfield.com/" target="_blank">Peggy Mayfield (incumbent)</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/a96c34f4-4220-4aa5-ace5-849dc7b16ced.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>pro-life, co-sponsored <a href="http://iga.in.gov/legislative/2014/bills/senate/292/#digest-heading" target="_blank" class="byline-link">SB292</a> fighting for reproductive health and safety of women; defending the Second Amendment; previously worked to expand voter access through vote centers</p>
+          <p class="copy"><b>Background:&nbsp;</b>incumbent Indiana representative for this district (2012-present), attended the IUPUI-Purdue School of Engineering and Technology, co-owns Mayfield Insurance, served six years as Morgan County Clerk</p>
+          <p class="copy">To learn more, click <a href="https://www.peggymayfield.com/" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://www.facebook.com/dave.rinehart.9" target="_blank">Dave Rinehart</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/20ec82be-84cb-4c9f-88aa-d5560592c9f3.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>supporting public education, eradicating homelessness, supporting farmers and veterans</p>
+          <p class="copy"><b>Background:&nbsp;</b>Martinsville resident, worked at Stout Army Air Field with the Indiana National Guard, Metropolitan School District of Martinsville Board of School Trustee member.</p>
+          <p class="copy">To learn more, click <a href="https://www.facebook.com/dave.rinehart.9" target="_blank" class="byline-link">here</a> or <a href="https://www.youtube.com/watch?v=RUdCaiVw4Pg&feature=emb_logo" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="https://www.facebook.com/TiffanyGrantHD60/" target="_blank">Tiffany Grant</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/52edbbe5-d556-41e0-bb54-6bcef1bd470d.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>support public education by bettering wages for teachers, expand access to wellness programs and healthcare, increase minimum wage, try to fix <a href="http://specials.idsnews.com/tainted-soil-martinsville-cancer-ewing-sarcoma/index.html" target="_blank" class="byline-link">chemical plumes</a> in Martinsville, Indiana</p>
+          <p class="copy"><b>Background:&nbsp;</b>high school math teacher</p>
+          <p class="copy">To learn more, click <a href="https://www.facebook.com/TiffanyGrantHD60/" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px; display:none;" id="dist61">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="https://indianahousedemocrats.org/members/matt-pierce" target="_blank">Matt Pierce (incumbent)</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/97d7bbf5-0be4-4383-8c0e-8961d21a48f4.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities (from past legislation):&nbsp;</b>reform criminal code, advocate for consumers, protect Indiana wilderness from logging, allow physician-assisted suicide for certain end-of-life patients, rural broadband access</p>
+          <p class="copy"><b>Background:&nbsp;</b>Indiana State Representative (2002-present), law, Congressman Baron Hill’s chief of staff (1999-2001)</p>
+          <p class="copy">To learn more, click <a href="https://indianahousedemocrats.org/members/matt-pierce" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px; display:none;" id="dist62">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="http://www.jeffellington.org" target="_blank">Jeff Ellington (incumbent)</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/43b23c40-d366-4fc0-a2f5-231655179d33.original.png"  class="headshot">
+          <p class="credit" style="padding-top:-15px;">Yulin Yu | <b>IDS</b></p>
+
+          <p class="copy"><b>Priorities (from past legislation):&nbsp;</b>improving highways and roads, helping homeless veterans, improving rural broadband service</p>
+          <p class="copy"><b>Background:&nbsp;</b>Indiana State Representative (2015-present), small-business owner, retired firefighter and rescue technician, former Monroe County Council member</p>
+          <p class="copy">To learn more, click <a href="http://www.jeffellington.org/" target="_blank" class="byline-link">here</a> or <a href="https://www.indianahouserepublicans.com/members/general/jeff-ellington" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://www.facebook.com/Hoosiers-For-Knott-100483248207225/" target="_blank">Greg Knott</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/53d5e152-04a1-4727-a712-3d8678751da4.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>require county-wide voter referendum to change income tax, constitutional carry, taxpayer protection pledge, U.S. congressional term limits, raise teachers’ pay directly from state budget</p>
+          <p class="copy"><b>Background:&nbsp;</b>defense contractor for Crane Navy Base (1997), IT administrator for local land surveying company Bledsoe Riggert Cooper James (2000-present), ran as a libertarian for U.S. House of Representatives in 2010, ran for Bloomington City Council in 2014</p>
+          <p class="copy">To learn more, click <a href="http://www.knott.us/" target="_blank" class="byline-link">here</a>.</p>
+          <p class="copy"><a href="https://www.idsnews.com/article/2010/11/a-libertarian-kind-of-celebration-at-kilroys" target="_blank" class="byline-link">Related: A Libertarian kind of celebration at Kilroy’s</a></p>
+          <p class="copy"><a href="https://www.idsnews.com/article/2014/05/knott-to-run-as-republican" target="_blank" class="byline-link">Related: Knott to run as Republican</a></p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="http://www.electalyssabailey.com/" target="_blank">Alyssa Bailey</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/91f40453-cf56-4b39-8b71-7c7dc7bf9062.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>public education and local control, hold charter schools accountable, ensure access to health care, workforce development, economic growth</p>
+          <p class="copy"><b>Background:&nbsp;</b>served in the Air Force, worked as a special education teacher</p>
+          <p class="copy">To learn more, click <a href="http://www.electalyssabailey.com/" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px; display:none;" id="dist65">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://www.indianahouserepublicans.com/members/general/chris-may" target="_blank">Chris May</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/ac4fcef8-5ce8-47e8-9615-f8e4d4bcdaec.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>workforce development, rural development, supporting schools, decreasing health care costs</p>
+          <p class="copy"><b>Background:&nbsp;</b>sales engineer, small business owner, Indiana State Representative since 2016</p>
+          <p class="copy">To learn more, click <a href="https://www.indianahouserepublicans.com/members/general/chris-may" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="https://www.paulastaley2020.com" target="_blank">Paula Staley</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/5bd4dc70-9e71-4612-af67-00867977121e.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>healthcare for all, protecting state forests and the environment, family support through a living wage and improved public education</p>
+          <p class="copy"><b>Background:&nbsp;</b>former nurse, worked at Centers for Disease Control and Prevention</p>
+          <p class="copy">To learn more, click <a href="https://www.paulastaley2020.com/" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr width=80%>
+
+      <div class="container-fluid" style="padding-top: 1%;">
+        <div class="row d-flex justify-content-center heading">
+          State Senate
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">Twenty-five of Indiana’s 50 state senate seats are up for election this year, including the District 40 seat currently held by Democrat Mark Stoops, and the District 44 seat held by Republican Eric Koch. State <a href="https://ballotpedia.org/Indiana_State_Senate" class="byline-link" target="_blank">senators</a> pass laws, influence tax rates and set limits for state spending.</p>
+            <p class="story">Similar to voting for your local House Representatives, you'll vote only for those candidates that are running in your district. Select your district below, or use our map to find your Senate district. <em>Don't worry, we won't save your address.</em></p>
+
+            <p class="story">My district is: &nbsp;&nbsp;&nbsp;<select id="senate-dist" onchange="ShowHideSenators()" class="district-dropdown">
+                <option value="default">--select--</option>
+                <option value="040">040</option>
+                <option value="044">044</option>
+              </select></p>
+
+          </div>
+
+          <div class="col-md-4">
+            <iframe width="100%" height="320" frameborder="0" src="https://vivrao9.carto.com/builder/bcbc941b-3e0f-4bf1-840c-779a30a2f51e/embed_map?zoom=3&center_lat=39.171192&center_lon=-86.6018862" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="display:none; padding-top: 5%;" id="senate-row">
+          <div class="heading">
+            Candidates for District <span id="senate-title" class="heading"></span>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top:10px; display:none;" id="senate-dist40">
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.zodyforindiana.com/" target="_blank">John Zody</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/84f64c69-2abc-4cc8-8350-91096947a5ad.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>education, including universal pre-K, improving K-12 education and increasing teacher pay; more equitable health care; statewide environmental sustainability; equality for all through legislation; expanding voting rights and tackling gerrymandering</p>
+              <p class="copy"><b>Background:&nbsp;</b>chairman of the Indiana Democratic Party, former vice chairman of the Monroe County Democratic Party, program manager in Indiana Department of Commerce, worked on former Gov. Frank O’Bannon’s 2000 campaign, Great Lakes-Mid Atlantic Political Director for Obama’s 2010 re-election campaign, adjunct instructor in O’Neill School of Public and Environmental Affairs</p>
+              <p class="copy">To learn more, click <a href="https://www.zodyforindiana.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.shelliyoder.com/" target="_blank">Shelli Yoder</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/0b628aa9-2afc-452d-a6d8-d4a9c313098c.original.png"  class="headshot">
+              <p class="credit" style="padding-top:-15px;">IDS File Photo</p>
+
+              <p class="copy"><b>Priorities:&nbsp;</b>expand renewable energy production across the state, higher wages to P-12 teachers, support public education, raise Indiana’s minimum wage to $15, protect an individual’s right to make choices regarding their reproductive health, decriminalize marijuana and reduce prescription drug prices</p>
+              <p class="copy"><b>Background:&nbsp;</b>served on the Monroe County Council (2013-2019), including two years as president and two years as vice president, lecturer at the Kelley School of Business</p>
+              <p class="copy">To learn more, click <a href="https://www.shelliyoder.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="http://trentforindiana.com/" target="_blank">Trent Feuerbach</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/1291cf42-b7af-4e8e-8b17-1d331ab0aba3.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>property tax waivers to minimize the effects of COVID-19, expand the Healthy Indiana Plan and HIP Plus to Hoosiers not enrolled in a private health insurance plan, eliminate state and local income taxes for teachers, child care providers and public servants, eliminate homelessness</p>
+              <p class="copy"><b>Background:&nbsp;</b>worked in global management of information systems and supply chains for a variety of companies, ran unsuccessfully for U.S. Congress in District 9 in 2014 as a Republican</p>
+              <p class="copy">To learn more, click <a href="http://trentforindiana.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top:10px; display:none;" id="senate-dist44">
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="rep-highlight" href="https://www.indianasenaterepublicans.com/koch" target="_blank">Eric Koch (incumbent)</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/b1d56ce3-3153-4cd9-ab0c-c6acc68048dd.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities (from past authored bills):&nbsp;</b>improve public assistance to people experiencing homelessness, promote gun rights for those licensed to carry, improving rural broadband, aviation and firefighter safety</p>
+              <p class="copy"><b>Background:&nbsp;</b>incumbent Indiana state senator (2016-now), Indiana House of Representatives (2002-2016), attorney with Koch and McAuley PC</p>
+              <p class="copy">Unopposed incumbent</p>
+              <p class="copy">To learn more, click <a href="https://www.indianasenaterepublicans.com/koch" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <hr width=80%>
+
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center heading">
+          Monroe County Council At-Large
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">The <a href="https://www.chamberbloomington.org/monroe-county-council-candidates-2020.html" target="_blank" class="byline-link">Monroe County Council</a>, made up of seven members — three of whom are at-large members — decides how the county spends its funds, determines the county’s tax rate, and can borrow money from the county. The current at-large members are Democrats Geoff McKim, Trent Deckard and Cheryl Munson. At most, three candidates from each party will advance to the November election.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.geoffmckim.com/" target="_blank">Geoff Mckim (incumbent)</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/02f1fc32-3650-42cf-9589-9c4864537448.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>affordable housing, workforce development, more humane justice system, effectiveness and efficiency of county government</p>
+              <p class="copy"><b>Background:&nbsp;</b>incumbent Monroe County Council member at-large, cybersecurity at National Parks Service, Monroe County Plan Commission, adjunct professor at O’Neill School of Public and Environmental Affairs</p>
+              <p class="copy">To learn more, click <a href="https://www.geoffmckim.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="http://www.cherylmunson.us" target="_blank">Cheryl Munson (incumbent)</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/5731a529-4488-45f4-b628-521e8325dfaa.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>ensure county fiscal responsibility, preserve natural resources, expand affordable housing, increase food security</p>
+              <p class="copy"><b>Background:&nbsp;</b>incumbent Monroe County Council member at-large (has been in the position for eight years), has served on multiple committees including the Public Safety Local Income Tax Committee, board of directors for the Friends of Lake Monroe, Indian Creek Community Association and Friends of Lake Monroe</p>
+              <p class="copy">To learn more, click <a href="http://www.cherylmunson.us/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.facebook.com/ElectTrentDeckard/" target="_blank">Trent Deckard (incumbent)</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/d5730893-ae86-4f59-ba15-2c2a45c9a2d1.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>fairly spending county budget, incentivizing county employment, helping community members struggling with addiction, conservation of Lake Monroe, environmental sustainability, rural community issues, including WiFi access</p>
+              <p class="copy"><b>Background:&nbsp;</b>incumbent Monroe County Council member at-large, two years as chief of staff of Indiana House Democratic Caucus, Democractic co-director of Indiana Election (2011-2015), chairman of Monroe County Democratic party</p>
+              <p class="copy">To learn more, click <a href="https://www.facebook.com/ElectTrentDeckard/" target="_blank" class="byline-link">here</a> or <a href="http://www.monroedems.org/candidate_statement_trent_deckard_county_council" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-3">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.facebook.com/ThompsonsMonroeCounty/" target="_blank">Dominic P Thompson</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/5be70f0f-28de-4927-b6e7-809b2628ccab.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>funding climate change prevention, providing more affordable housing, increasing sustainability</p>
+              <p class="copy"><b>Background:&nbsp;</b>rising IU senior majoring in law and public policy, active in IU student government,﻿
+worked on the Bloomington Commission of Housing Quality & Appeals</p>
+              <p class="copy">To learn more, click <a href="https://www.facebook.com/ThompsonsMonroeCounty/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="rep-highlight" href="https://www.facebook.com/voteallen2020/" target="_blank">James Allen</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/45d421c4-ee8b-4e9e-939c-92b7f0425363.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>public safety, improving roads and bridges, against increasing taxation and increasing costs for residents</p>
+              <p class="copy"><b>Background:&nbsp;</b>retired firefighter/EMT, on the Board of Directors for Monroe County Youth Football</p>
+              <p class="copy">To learn more, click <a href="https://www.facebook.com/voteallen2020/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="rep-highlight" href="https://www.facebook.com/weisheitformonroeco/" target="_blank">Zachary Weisheit</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/20ec82be-84cb-4c9f-88aa-d5560592c9f3.original.png"  class="headshot">
+
+              <p class="copy"><em>Weisheit confirmed in an interview that he planned to withdraw from the race.</em></p>
+              <p class="copy"><b>Priorities:&nbsp;</b>reducing taxation, representing voters’ interests in policy</p>
+              <p class="copy"><b>Background:&nbsp;</b>senior officer at Bloomington Police Department, owner of Weisheit Metalworks</p>
+              <p class="copy">To learn more, click <a href="https://www.facebook.com/weisheitformonroeco/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight"  target="_blank">Karl Boehm</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/1291cf42-b7af-4e8e-8b17-1d331ab0aba3.original.png"  class="headshot">
+
+              <p class="copy"><em>Boehm did not respond to requests for comment.</em></p>
+              <p class="copy"><b>Background:&nbsp;</b>Owner of Karl’s Automotive in Bloomington</p>
+          </div>
+        </div>
+    </div>
+
+      <!-- AD BLOCK -->
+      <div class="bg-light ad-block">
+        <div class="container">
+          <div class="col-md-12">
+            <p class="ad-caption">Advertisement</p>
+            <div class="ad-code">
+              <!-- BEGIN /32635621/rectangle1 -->
+          <div id='div-gpt-ad-1512489859064-1' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-1'); });
+          </script>
+          </div>
+          <!-- END /32635621/rectangle1 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END AD BLOCK -->
+
+      <div class="container-fluid" style="padding-top: 1%;">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">Next up on your ballot, you'll be electing various Circuit Court Judges. There are three races to vote in.</p>
+          </div>
+        </div>
+
+          <div class="row d-flex justify-content-center">
+            <p class="heading">Monroe County Circuit Court Judge — Division I</p>
+          </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+            <p class="story">The <a href="https://www.co.monroe.in.us/egov/documents/1588173731_93592.pdf" class="byline-link" target="_blank">Monroe County Circuit Court</a> has unlimited jurisdiction over every category of case that can be filed. Division I of the court is responsible for half of civil and guardianship cases and all estate and trust, tax sale and tax petition cases.
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top:10px;">
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight" href="https://www.bradley4judge.com/" target="_blank">Geoff Bradley</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/28ca2b41-1e0b-493a-9de0-6470778c9af5.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>increase access to the judicial system and address the special needs of individuals with mental health and substance abuse issues and their families</p>
+              <p class="copy"><b>Background:&nbsp;</b>21 years of experience as a prosecutor (seven years as an assistant prosecuting attorney in Ohio, and the past 14 years as a deputy prosecutor in Monroe County), By-Laws Chair of the Monroe County Black Democratic Caucus; member of the Monroe County branch of the NAACP, 9th District member of the Indiana Latino Democratic Caucus</p>
+              <p class="copy">To learn more, click <a href="https://www.bradley4judge.com/" target="_blank" class="byline-link">here</a> and <a href="https://www.chamberbloomington.org/uploads/1/2/4/4/124469143/geoff_bradley_responses_to_bloomington_chamber_of_commerce_questions.pdf" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="dem-highlight"  target="_blank">Alphonso (Al) Manns</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/675fd809-f5d8-4e43-8aed-9baa93839d6c.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>taking into account the needs of pro se litigants in a court of law</p>
+              <p class="copy"><b>Background:&nbsp;</b>general and appellate practitioner for Indiana for the past 35 years, served on the Monroe-Bloomington Domestic Violence Task Force of the City of Bloomington for five years, served in the Army (1966-1969), counsel and board member to the Monroe County NAACP</p>
+              <p class="copy">To learn more, click <a href="http://www.monroedems.org/monroe_circuit_court_judge_division_1_candidate_alphonso_manns" target="_blank" class="byline-link">here</a> and <a href="https://www.chamberbloomington.org/uploads/1/2/4/4/124469143/al_manns_responses_to_chamber_questions.pdf" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="candidate-name">
+              <a class="rep-highlight" href="https://carllamb4judge.com/" target="_blank">Carl Lamb</a>
+            </div>
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/4f0bdd38-3f0d-4a81-8202-1be0be1bd80b.original.png"  class="headshot">
+
+              <p class="copy"><b>Priorities:&nbsp;</b>fairness and impartiality</p>
+              <p class="copy"><b>Background:&nbsp;</b>attorney for Monroe County for four years, practicing attorney at Carl Lamb and Associates for over 30 years, served four years in the Marine Corps, helped develop annual collegiate charity hockey event Drop the Puck on Cancer, raising over $400,000 in the past nine years, co-founder of the Hope for Hoosiers Foundation</p>
+              <p class="copy">To learn more, click <a href="https://carllamb4judge.com/" target="_blank" class="byline-link">here</a>.</p>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center" style="padding-top:3%;">
+          <p class="heading">Monroe County Circuit Court Judge — Division II</p>
+        </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <p class="story">The <a href="https://www.co.monroe.in.us/egov/documents/1588173731_93592.pdf" class="byline-link" target="_blank">Monroe County Circuit Court</a> has unlimited jurisdiction over every category of case that can be filed. Division II of the court hears a portion of all murder, misdemeanor and expungement cases.
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="padding-top:10px;">
+        <div class="col-md-4">
+          <div class="candidate-name">
+            <a class="dem-highlight" href="https://www.facebook.com/ElectHaughton/" target="_blank">Valeri Haughton (incumbent)</a>
+          </div>
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/6c66a5b9-1649-4085-85cf-4d3db0799d55.original.png"  class="headshot">
+
+            <p class="copy"><b>Priorities:&nbsp;</b>making sure community members are heard</p>
+            <p class="copy"><b>Background:&nbsp;</b>incumbent Monroe County Circuit Court Judge (past 12 years), handles all domestic violence and sexual assault cases in Monroe County, served two years as Presiding Judge of the Monroe County Board of Judges, 14 years as a Deputy Prosecutor in Monroe and Marion Counties, member and former chairwoman of the Bloomington Human Rights Commission; board of directors for the Bloomington Playwrights Project and My Sister’s Closet﻿</p>
+            <p class="copy">To learn more, click <a href="https://www.facebook.com/ElectHaughton/" target="_blank" class="byline-link">here</a>.</p>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center" style="padding-top:3%;">
+        <p class="heading">Monroe County Circuit Court Judge — Division VIII</p>
+      </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3">
+        <p class="story">The <a href="https://www.co.monroe.in.us/egov/documents/1588173731_93592.pdf" target="_blank" class="byline-link">Monroe County Circuit Court</a> has unlimited jurisdiction over every category of case that can be filed. Generally speaking, Division VIII of the Monroe County Circuit Court hears a portion of all domestic relations, protective order, small claims, reciprocal support, civil miscellaneous, and eviction cases.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center" style="padding-top:10px;">
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="rep-highlight" href="https://judgejudith.org" target="_blank">Judith Benckart (incumbent)</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/702c7011-df87-4497-abf1-28059368f085.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>compassion for justice and "doing what is right"</p>
+          <p class="copy"><b>Background:&nbsp;</b>served as a Monroe County Circuit Court judge in division VIII since 2018, supervisor of motor carrier authority legal section at Indiana Department of Revenue, on a corporate counsel and as a deputy prosecuting attorney of misdemeanors, graduate of the Maurer School of Law﻿</p>
+          <p class="copy">To learn more, click <a href="https://judgejudith.org/" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="https://www.jeffkehrforjudge.com/" target="_blank">Jeff Kehr</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/ba3cee6c-6c1c-451a-89c2-2ad77a792e00.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>expansion of problem-solving courts, technical assistance for pro se litigants in civil cases, tenant assistance efforts, crisis diversion center for nonviolent, low-level offenders with mental health and addictions, implicit bias training, tackling case backlogs</p>
+          <p class="copy"><b>Background:&nbsp;</b>served as senior trial attorney, now First Deputy Director at Monroe County Prosecutor’s Office, where he has tried over 50 felony jury trials, graduate of the Maurer School of Law﻿</p>
+          <p class="copy">To learn more, click <a href="https://www.jeffkehrforjudge.com/" target="_blank" class="byline-link">here</a> or <a href="https://www.chamberbloomington.org/uploads/1/2/4/4/124469143/jeff_kehr_responses_to_chamber_of_commerce_questions.pdf" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="candidate-name">
+          <a class="dem-highlight" href="https://karakrotheforjudge.com/" target="_blank">Kara Elaine Krothe</a>
+        </div>
+          <img src="https://s3.amazonaws.com/snwceomedia/ids/191ca1ba-fdd7-4f8d-80af-f9711d3578d3.original.png"  class="headshot">
+
+          <p class="copy"><b>Priorities:&nbsp;</b>increase court efficiency and tackle jail overcrowding through supporting programs such as pretrial release</p>
+          <p class="copy"><b>Background:&nbsp;</b>three years in private practice doing civil law, past 16 years as a Monroe County Public Defender, in which role she volunteered for seven years on the Drug Treatment Court team﻿</p>
+          <p class="copy">To learn more, click <a href="https://karakrotheforjudge.com/" target="_blank" class="byline-link">here</a> or <a href="https://www.chamberbloomington.org/uploads/1/2/4/4/124469143/kara_krothe_responses_to_chamber_of_commerce_questions.pdf" target="_blank" class="byline-link">here</a>.</p>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:15px;">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3 story">
+          <p class="story">So there you have it. Once you know whom you're voting for, follow our <a href="https://www.idsnews.com/article/2020/05/voting-june-2-primaries-monroe-county-indiana" class="byline-link" target ="_blank">guide</a> to see <em>how</em> to vote in the June 2 primaries.</p>
+        </div>
+      </div>
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <p><em>Like what you're reading?</em><br>
+        Support independent, award-winning student journalism. <a class="story-link" target="_blank" href="https://www.idsnews.com/page/donate">Donate.</a></p>
+
+        <hr>
+        <small><p class="float-left">&copy; Copyright 2019 Indiana Daily Student</p>
+        <p class="float-right">Back to <a href="https://idsnews.com" class="story-link"><em>idsnews.com</em></a></p></small>
+      </div>
+    </div>
+  </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+.header {
+		color: white;
+		/* height: 8%; */
+		position:relative;
+		background-size: cover;
+		background-color: black;
+		padding-bottom: 15px;
+		background-position: center;
+		display: inline-block;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+	}
+
+.bg-black {
+	background-color: black;
+}
+
+a.navbar-brand {
+	color: white !important;
+	font-family: 'Lato', sans-serif;
+}
+
+a.nav-link {
+	color: white;
+}
+
+.wrapper {
+	font-family: 'Lato', sans-serif;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+.story {
+  font-family: 'PT Serif', serif;
+	font-weight: 400;
+  font-size: 14;
+  text-align: justify;
+  }
+
+.copy {
+  font-family: 'PT Serif', serif;
+	font-weight: 400;
+  font-size: 14;
+  text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+  }
+
+.headline {
+	padding-top: 5%;
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+  text-align: center;
+  background-color: white;
+  font-size: 40px;
+}
+
+.subhead {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+  background-color: white;
+  background-color: white !important;
+  font-size: 14px;
+	text-align: center;
+}
+
+.heading	{
+	padding-top: 2%;
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	text-align: center;
+	background-color: white;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+	.transparentnavbar {
+		background-color: transparent !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;
+		-webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
+			transition: background .5s;
+	}
+
+	.blackbg {
+	background-color: black !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+
+	.wide-image {
+		width: 60%;
+		text-align: center;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+
+	.credit	{
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+.candidate-name	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.dem-highlight	{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	border-bottom: 2px solid #007FFF;
+	transition: .2s;
+}
+
+.dem-highlight:hover	{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	background: linear-gradient(to top, #007FFF 50%, transparent 50%);
+	color: black;
+	transition: .3s;
+	text-decoration: none;
+}
+
+.rep-highlight	{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	border-bottom: 2px solid #FF0000;
+	transition: .2s;
+}
+
+.rep-highlight:hover	{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	background: linear-gradient(to top, #FF0000 50%, transparent 50%);
+	/* background-color: #223E92; */
+	color: black;
+	transition: .3s;
+	text-decoration: none;
+}
+
+.headshot	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 23px;
+}
+
+.district-dropdown	{
+	background-color: rgba(204,204,204,0.75);
+	color: black;
+	border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+	.transparentnavbar {
+		background-color: black !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;
+		-webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
+			transition: background .5s;
+	}
+
+	.navbar-toggler {
+		border: none !important;
+	}
+
+	.blackbg {
+	background-color: black !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+}
+
+	.wide-image {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.header-mobile {
+		padding-top: -10px;
+	}
+
+	.headline	{
+		font-family: 'PT Serif', serif;
+		font-weight: 700;
+		text-align: center;
+		background-color: white;
+		font-size: 30px;
+		padding-top: 15%;
+	}
+
+	.subhead {
+		text-align: left;
+	}
+}
+
+.credit {
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+a.byline-link {
+		text-decoration: none;
+		color: black !important;
+		border-bottom: 2px solid black;
+		transition: .2s;
+	}
+
+	a.byline-link:hover {
+		text-decoration: none;
+		color: black !important;
+	}
+h4 {
+	padding-bottom: 1%;
+	padding-top: 2%;
+}
+
+.ad-caption {
+  text-align: center; font-size: 12px; padding-top: 15px; font-family: 'Lato', sans-serif; text-transform: uppercase;
+}
+.ad-block {
+  margin-top: 10px; padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.ad-code {
+  padding-bottom: 30px;
+}
