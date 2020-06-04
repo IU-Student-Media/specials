@@ -41,6 +41,42 @@ a.nav-link {
   text-align: justify;
   }
 
+.dem-winner	{
+	box-sizing: border-box;
+	width: 90%;
+	border-style: solid;
+	border-color: #007FFF;
+	padding-bottom: 10px;
+}
+
+.dem-winner-box	{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12pt;
+	background-color: #007FFF;
+	color: white;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.rep-winner	{
+	box-sizing: border-box;
+	width: 90%;
+	border-style: solid;
+	border-width: 1pt;
+	border-color: #FF0000;
+}
+
+.rep-winner-box	{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12pt;
+	background-color: #FF0000;
+	color: white;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .copy {
   font-family: 'PT Serif', serif;
 	font-weight: 400;
