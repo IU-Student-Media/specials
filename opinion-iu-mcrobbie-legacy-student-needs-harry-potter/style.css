@@ -347,6 +347,11 @@ min-height:32px !important;
   margin-left: 5%;
 }
 
+.subhead  {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
 .section-subhed  {
   font-family: 'Lato', sans-serif;
   font-style: italic;
