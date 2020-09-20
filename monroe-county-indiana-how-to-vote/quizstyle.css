@@ -1,0 +1,267 @@
+#header {
+    border-bottom: 2px solid black;
+}
+#nav-main nav{
+    background-color: black;
+}
+.countdown {
+    transform: translateY(-30px);
+    text-align: center;
+    border: 1px black solid;
+    padding: 1em;
+    margin-top: 3em;
+    background: rgb(36, 36, 36);
+    color: rgb(235, 235, 235);
+}
+.row {
+    margin:0;
+}
+.countdown p {
+    -webkit-animation: fade 1.5s linear infinite;
+    animation: fade 1.5s linear infinite;
+}
+.intro {
+    text-justify: auto;
+}
+h6 {
+    font-size: .8em;
+    font-weight: 200;
+    
+}
+#countdown {
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: "Inter";
+    margin-bottom: 0;
+    text-align: center;
+}
+.intro {
+    font-family: "PT Serif";
+}
+#byline{
+    text-align: left;
+    padding: 0;
+}
+.container {
+    padding: 0;
+}
+.name {
+    background: none;
+    border: none;
+    border-bottom: black 1px solid;
+    font-style: "PT Serif"; 
+    text-align: left;
+    margin-bottom: 3em;
+    height: 2em;
+}
+#nameInput {
+    background: none;
+    border: none;
+    width: 65%;
+    outline: none;
+}
+#nameSubmit {
+    border: black .1em solid;
+    background: rgb(253, 253, 253);
+    border-radius: .3em;
+    font-size: .7em;
+    transition: .5s;
+}
+#nameSubmit:hover {
+    background: rgb(175, 175, 175);
+}
+#questions {
+    font-family: "Inter";
+    margin-bottom: 10em;
+    padding: 3em;
+    background-color: #f7f3dd;
+    border-radius: 1em; 
+    box-shadow: -3px 3px rgba(0, 0, 0, 0.295);
+    padding-bottom: 10em;
+    text-align: center;
+}
+#questions p {
+    font-family: "PT Serif";
+}
+#questions button {
+    border: 1px solid black;
+    padding: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 20vw;
+    margin: 0 auto;
+}
+
+#questions button:hover {
+    background-color: #f7f3dd;
+    box-shadow: 2px 2px black;
+}
+#questions h4 {
+    color: black;
+    padding: .5em;
+    margin: 1em;
+    border-radius: .5em;
+    font-size: 1.3em;
+    font-weight: 300;
+    transition: .5s;
+    cursor: pointer;
+    border: 1px  solid black;
+}
+#questions h4:hover{
+    background-color: rgba(255, 255, 255, 0.637);
+    box-shadow: 2px 2px black;
+}
+#questions h2 {
+
+    font-size: 1.5em;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+#questions div {
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+}
+#questions h3 {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.589);
+    padding: 1em;
+    border-radius: .5em;
+}
+#link {
+    color: grey;
+    transition: .5s;
+    text-decoration: underline;
+}
+#link:hover {
+    color: black;
+}
+#cursor {
+    background-color: black;
+    width: 10px;
+    height: 45px;
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-right: .5em;
+}
+#questions .title {
+    background-color: rgba(0,0,0,0);
+    font-weight: 700;
+}
+.field,.ballot,.submit {
+    text-align: left;
+    border-bottom: black solid .3px;
+    font-size: .1em;
+}
+.ballot {
+    margin-bottom: 50px;
+}
+.submit span {
+    font-size: 8em;
+}
+#voted {
+    text-align: center;
+    margin-bottom: 1em;
+}
+#voted img{
+    width: 20vw;
+    margin-bottom: 5em;
+}
+#voted p{
+    font-size: 1.2em;
+    font-family: "Inter";
+    font-weight: 500;
+}
+ul {
+    text-align: left;
+    list-style-type: square;
+}
+li {
+    margin-bottom: .5em;
+    background-color:
+}
+.intros {
+    margin-bottom: 5em;
+}
+@media (min-width: 768px) {
+    .headline h1 {
+        font-size: 1em;
+        border-bottom: solid black 2px;
+    }
+    .intros {
+        margin-bottom: 8em;
+    }
+}
+@media (max-width: 767px) {
+    #headings {
+        width: 100%;
+    }
+    .intros{
+        padding: 0 2em;
+    }
+    #questions button {
+        width: 30vw;
+    }
+    #nameInput {
+        width: 63%;
+    }
+    #voted img {
+        width: 30vw;
+    }
+    .subhead, .byline {
+        margin: 1em;
+    }
+}
+#headings {
+    z-index: -100;
+    top: -250px;
+    background-color: white;
+}
+#header {
+    z-index: 100;
+    background-color: rgba(0, 162, 255, 0.212);
+}
+.subheadline {
+    text-align: center;
+}
+#title {
+    background-color: white;
+    opacity: 1;
+    -webkit-animation: fade 2s linear forwards;
+    animation: fade 2s linear forwards;
+}
+@-webkit-keyframes fade {
+  0%,100% { opacity: .7 }
+  50% { opacity: 1 }
+}
+@keyframes fade {
+    0%,100% { opacity: .7 }
+    50% { opacity: 1 }
+}
+@-webkit-keyframes bob {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes bob {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.arrow {
+    border-radius: 0;
+    transform: rotate(45deg);
+    -webkit-animation: bob .7s infinite alternate;
+    animation: bob .7s infinite alternate;
+    display: block;
+    margin: auto;
+    font-size: 1.5em;
+}
+.arrowContainer {
+    margin-top: 5em;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    margin: 5em auto 0 auto;
+    font-family: "Inter";
+}
