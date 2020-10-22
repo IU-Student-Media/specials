@@ -1,0 +1,676 @@
+/*Bootstrap is mobile first, so media queries at the bottom apply to larger screens.
+Assume anything not under a media query is for .col-xs */
+
+/*General html*/
+body{
+    background-color: black;
+}
+
+.row.d-flex.jusify-content-center.align-items-center {
+    justify-content: center;
+}
+
+.col-md-3.justify-content-center {
+    float: none;
+    
+}
+
+/*Fonts and icons*/
+h2, h3, h4, h5{
+    font-family: 'PT Serif', serif;
+    color: rgb(255, 255, 255);
+    margin-top: 0em;
+}
+
+/*use h1 for headlines*/
+h1{
+    font-family: 'PT Serif', serif;
+    font-size: 3.5em;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    font-weight: 300;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    color: rgba(255, 255, 255) !important;
+}
+
+.smaller {
+    font-size: 2.5em;
+}
+
+/*h2 is the italicized subhead.*/
+h2{
+    font-size: 1.8em;
+    line-height: 1.3em;
+/*		color: #939393;
+*/		margin-bottom: 1.8em;
+    font-weight: 300;
+    margin-top: 1.8em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+h4{
+    font-weight: bold;
+}
+
+h5{
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+/*h6 is used for bylines*/
+h6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: -4px;
+    color: rgba(255, 255, 255, .8);
+}
+
+h6.subline {
+    font-size: 12px;
+    margin-bottom: 4px !important;
+    font-weight: 500 !important;
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.by{
+    font-weight: 900;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+/*We're never gonna change body copy though*/
+p, i, caption {
+    font-family: 'PT Serif', serif;
+    /* color: #4b4b4b; */
+    color: rgba(255, 255, 255, .8);
+}
+
+p{
+    font-size: 17px;
+    line-height: 1.8;
+    padding-bottom: 1em;
+    font-weight: 500;
+}
+
+figcaption{
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-top: .5em;
+    margin-bottom: 3em;
+}
+
+a.story-link {
+    text-decoration: none;
+    color: black !important;
+    border-bottom: 2px solid black;
+    transition: .2s;
+}
+
+a.story-link:hover {
+    text-decoration: none;
+    color: black !important;
+    border-bottom: 2px solid #EDEBEB;
+}
+
+
+/*if you want to change the color of icons throughout the article feel free, but create
+a new class name so the navbar icons stay the same color. */
+
+.fa-twitter {
+  color: white;
+  padding-right: .2em;
+  font-size: 1.6em;
+}
+
+.fa-twitter {
+  color: white;
+  padding-right: .2em;
+  font-size: 1.6em;
+}
+
+.pulledquote .fa-twitter {
+  color: black;
+  font-size: 1em;
+  padding-left: .5em;
+}
+
+.fa-facebook {
+  color: white;
+  padding-right: .15em;
+  font-size: 1.6em;
+}
+
+/*Links*/
+
+/*media*/
+figure{
+    width: 100%;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+}
+
+.nomarg {
+    margin: 0em;
+}
+
+.topmarg {
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.leftmarg {
+    margin:0;
+    padding: 10px;
+}
+
+figure > img{
+    width: 100%;
+    margin-bottom: 0em;
+}
+
+figure > em {
+    font-size: .8em;
+    margin-bottom: .5em;
+    width: 100%;
+    text-align: right;
+    float: right;
+}
+
+.pulledquote p{
+    padding: 0;
+    margin: 0;
+    margin-top: .5em;
+    font-family: 'Inter';
+    font-weight: 900;
+}
+
+.pulledquote h3{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 300;
+}
+
+
+.pulledquote{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+
+#carousel-example-generic{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+hr { 
+display: block;
+width: 100% !important;
+margin: 1em 0 1em 0;
+border: 0;
+border-top: 1px solid rgba(255, 255, 255, .5);
+position: relative;
+box-sizing: content-box;
+}
+
+/*navigation*/
+/*Don't change anything here unless you run into problems with spacing on section links*/
+.navbar {
+ margin-bottom: 50px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  padding-left: 1em;
+  margin-top: 3px;
+}
+
+
+
+nav{
+    margin-bottom: 500px;
+}
+
+
+#my-navbar ul{
+    font-family: 'Inter', serif;
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+.navbar-headline-mobile {
+    font-family: 'Inter', serif;
+    text-decoration: none;
+    text-align: center;
+    /* margin-left: 2em; */
+    /* width: 500px; */
+    line-height: 50px;
+    font-size: 14px;
+}
+
+/* #my-navbar li .nav-headline{
+    font-family: 'lato', serif;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-left: 0em;
+    margin-right: 0em;
+    line-height: 50px;
+} */
+
+li a {
+    font-family: 'Inter', serif;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: auto;
+    /* margin-left: 4.5em; */
+    margin-right: 0em;
+    line-height: 60px;
+}
+
+/*intro row */
+.byline{
+    display: none;
+    font-family: 'Roboto Slab';
+}
+
+.byline-mobile{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: 'Roboto Slab';
+
+
+}
+
+.headline{
+}
+
+.led{
+    margin-top: 1em;
+}
+
+.intro-caption-mobile{
+    margin-top: 5px;
+}
+
+/*inline 6 columns*/
+
+/*sidebar 4 columns*/
+.sidebar img{
+    width: 100%;
+}
+
+.sidebar .chart {
+    margin-top: 0em;
+}
+
+.sidebar  h6{
+    margin-top: 0em;
+}
+
+
+/*breaks*/
+.break{
+    height: 100%;
+}
+
+/*annoyingly, I can't just include all the text (h1,h2,h3,etc.) after .break as it only applies to the first one listed not everything.
+if you want to include more text in a break, just at .break h2 {} or whatever text you want.*/
+
+.break figcaption{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+.break h4{
+        margin-left: 3%;
+        margin-right: 3%;
+    }	
+
+.show-desktop {
+display: none;
+}
+
+.show-mobile {
+display: block;
+}
+
+/*contributors*/
+.contributors{
+    margin-bottom: 2em;
+}
+
+.contributors p{
+    margin-top: -.6em;
+    margin-bottom: -1em;
+}
+
+.contributors h3{
+    margin-bottom: 1em;
+}
+
+.contributors .fill{
+    display: none;
+}
+
+/*footer*/
+footer{
+    height: 5em;
+    background-color: #101010;
+    color: white;
+    padding: 1em;
+    text-align: right;
+    margin-top: 3em;
+    
+}
+
+footer a{
+    color: #4b4b4b;
+}
+
+.support-us {
+    padding-top: 40px;
+    color: rgba(255, 255, 255, .2) !important;
+    background-color: rgb(41, 41, 41);
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.support-us p {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+.support-us a.story-link {
+    color: rgba(255, 255, 255, .5) !important;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+
+/* Spooky specific stuff */
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0 10px 8px;
+}
+.headline {
+    font-family: 'Creepster' !important;
+    font-size: 5rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    float: none;
+    padding: 0 !important;
+    margin-bottom: -.2em;
+    margin-top: 7.5em;
+    /* margin-left: -3%; */
+}
+.subheadline {
+    font-family: 'PT Serif', serif !important;
+    font-size: 2.5rem;
+    /* text-align: center; */
+    float: left;
+    padding: 0px;
+    margin: 10px 0px 8px !important;
+    margin-bottom: -1em;
+    margin-left: -5%;
+}
+.headline-bold {
+    color: white !important;
+    float: left !important;
+    vertical-align: bottom;
+    text-align: left;
+    /* text-shadow: 0px 0px 10px rgba(0, 0, 0, .8); */
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, .8);
+}
+hr.story-separator {
+    width: 20% !important;
+    border-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    /* padding: 50% 0; */
+    transform: translateY(-1.5em); 
+    top: 3px;
+    left: 40%;
+}
+.nav-headline {
+    color: white;
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.spooky-icon {
+    width: 20px;
+    height: auto;
+    color: white;
+	opacity: .5;
+    float: middle;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+a.spooky-icon {
+    margin: auto;
+    align-content: center;
+}
+#mynavbar {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.spooky-icon:hover {
+    opacity: 1;
+}
+.story-dom {
+    width: 100%;
+    /* border-radius: 8px; */
+    margin-top: 15px;
+}
+/* drop cap */
+.spooky-letter {
+    float: left;
+    padding-right: 1rem;
+    font-family: "Creepster";
+    font-size: 6rem !important;
+    line-height: 1;
+    /* color: black; */
+    color: rgba(255, 255, 255);
+}
+.story-title {
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Creepster' !important;
+}
+.dot {
+    height: .5em;
+    width: .5em;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: .6em;
+    position: absolute;
+    top: 1em;
+    left: 48.75%;
+    transform: translateY(-1.5em); 
+}
+.bylines a {
+    font-weight: 500;
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.btn-carson {
+    /* width: 100%; */
+    height: 4rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 3px 5px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.btn-carson:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: .5s;
+}
+
+.flicker {
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+0%   { opacity:1; }
+20%  { opacity:0.65; }
+40% { opacity:1; }
+60% { opacity:0.65; }
+100% { opacity:1;}
+}
+
+/* ADS */
+
+.ad-caption {
+text-align: center; 
+font-size: 12px; 
+padding-top: 15px; 
+font-family: 'Inter', sans-serif; 
+text-transform: uppercase;
+}
+.ad-block {
+margin-top: 10px; padding-bottom: 20px;
+margin-bottom: 20px;
+}
+.ad-code {
+padding-bottom: 30px;
+}
+
+/* TYPES OF MEDIA */
+
+/* desktop */
+@media (min-width: 768px) {
+    .show-desktop {
+		display: block;
+	}
+	.show-mobile {
+		display: none;
+    }
+    h2{
+		font-size: 2em;
+		line-height: 1.3em;
+		color: #939393;
+		margin-bottom: 2em;
+		font-weight: 300;
+		margin-top: 2em;
+    }
+    .navbar-headline-mobile {
+		display: none;
+	}
+
+    .toggler {
+        display: none;
+    }
+    .headline {
+        font-size: 10rem;
+        font-style: normal;
+        color: white;
+        padding: 16px;
+        margin-top: 65%;
+        margin-left: -5%;
+    }
+    .subheadline {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        font-family: PT Serif, sans-serif;
+        font-style: white;
+        font-weight: 500;
+        margin-top: 3% !important;
+        margin-left: -5% !important;
+        float: left;
+        text-align: left;
+    }
+    .story-dom {
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+    .btn-carson {
+        width: 10rem !important;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .show-desktop {
+        display: none;
+    }
+    .show-mobile {
+        display: block;
+    }
+    .headline {
+        font-family: 'Creepster' !important;
+        font-size: 5rem;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        float: none;
+        padding: 0 !important;
+        margin-bottom: -.2em;
+        margin-top: 6.5em;
+        /* margin-left: -3%; */
+    }
+    
+    .subheadline {
+        font-family: 'PT Serif', serif !important;
+        font-size: 2.5rem;
+        /* text-align: center; */
+        padding: 0px;
+        margin: 10px 0px 8px !important;
+        margin-bottom: -1em;
+        margin-left: -5%;
+    }
+    .story-title {
+        font-size: 4rem;
+    }
+    .spooky-letter {
+        font-size: 4rem;
+    }
+    .btn-carson {
+        width: 100%;
+    }
+}
+
+/* extra big */
+@media (min-width: 992px) {
+    .col-md-6 {
+        margin-left: 25%;
+    }
+    .col-md-10 {
+        margin-left: 8.35%;
+    }
+    .col-md-3 {
+        margin-left: 37.5%;
+    }
+    .btn-carson {
+        width: 10rem;
+    }
+}
+
