@@ -125,15 +125,30 @@ a.vendorLink {
 	text-align: center;
 }
 
-.siteTitle {
+@media (max-width: 767.98px) {
+	.siteTitle {
+	text-align: center;
+	font-family: 'Zilla Slab', serif;
+	font-size: 200%;
+	}
+	.subTitle {
+	text-align: center;
+	font-size: 12px;
+}
+}
+
+@media (min-width: 767.99px) {
+	.siteTitle {
 	text-align: center;
 	font-family: 'Zilla Slab', serif;
 	font-size: 400%;
-}
-
-.subTitle {
+	}
+	.subTitle {
 	text-align: center;
 }
+}
+
+
 
 .jumbotron {
 	background-color: rgba(255, 255, 255, 0.8);
