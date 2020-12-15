@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Green audio player -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
+
+    <!-- Bootstrap jquery stuff -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Fonts, Font awesome icons -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://use.typekit.net/lct2kgu.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|PT+Serif:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+    
+    <!-- Title -->
+    <title>By grace through example | Indiana Daily Student</title>
+
+    <!--Facebook Social Card (Be sure to change these!)-->
+    <meta property="og:url" content="http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington"/> <!-- URL (specials.idsnews.com/blah-blah-blah) -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="By grace through example: Steve Moore almost died. Now he uses his experience to show COVID-19 is real and life-changing."/> <!-- headline -->
+    <meta property="og:description" content="After 18 days on a ventilator, Steve had to relearn how to walk and relearn basic facts."/> <!-- abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://i2.ytimg.com/vi/mX_No71Co34/hqdefault.jpg"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="By grace through example: Steve Moore almost died. Now he uses his experience to show COVID-19 is real and life-changing."> <!-- headline -->
+    <meta name="twitter:description" content="After 18 days on a ventilator, Steve had to relearn how to walk and relearn basic facts."> <!-- abstract -->
+    <meta name="twitter:image" content="https://i2.ytimg.com/vi/mX_No71Co34/hqdefault.jpg"> <!-- dominant image -->
+
+    <!-- add header image -->
+    <style type="text/css">
+        .header {
+            /* add header image below */
+            background: url('https://s3.amazonaws.com/snwceomedia/ids/dad50b78-b2e2-4a4e-a79a-43462a86fc22.sized-1000x1000.jpg'); 
+            background-size: cover;
+        }
+        @media (min-width: 768px) {
+            .header {
+                background-position: 65% 20%;
+            }
+        }
+        @media (max-width: 767px) {
+            .header {
+                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://s3.amazonaws.com/snwceomedia/ids/dad50b78-b2e2-4a4e-a79a-43462a86fc22.sized-1000x1000.jpg'); 
+                background-size: cover;
+                background-position: 70% 60%;
+            }
+        }
+    </style>
+    
+    <!-- START Ad content: this goes in the head content -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function() {
+        //all other leaderboards
+        var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+        googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- transparent navbar -->
+    <nav id="nav-main" class="navbar navbar-expand-lg navbar-light navbar-default fixed-top transparentnavbar" >
+        <a class="navbar-brand" href="https://idsnews.com"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="60" viewBox="0, 0, 500, 209">
+            <g id="Layer_1">
+              <g>
+                <path d="M62.066,208.553 L62.066,0.447 L-0,0.447 L-0,208.553 z" fill="#FFFFFF"/>
+                <path d="M175.329,208.553 C236.272,208.553 298.9,187.489 298.9,104.36 C298.9,19.826 239.923,0.447 179.261,0.447 L99.782,0.447 L99.782,208.553 z M161.849,56.616 L177.295,56.616 C218.298,56.616 235.991,68.412 235.991,104.36 C235.991,140.588 217.737,154.35 180.104,154.35 L161.849,154.35 z" fill="#FFFFFF"/>
+                <path d="M406.693,208.553 C465.18,208.553 500,182.165 500,141.36 C500,91.306 460.555,82.601 415.398,78.793 C385.474,76.345 377.041,73.896 377.041,64.103 C377.041,56.214 383.57,52.95 403.428,52.95 C423.559,52.95 449.402,59.751 460.827,67.368 L490.751,24.114 C476.605,12.689 450.49,0.447 402.612,0.447 C356.911,0.447 316.922,17.585 316.922,66.279 C316.922,115.517 359.087,126.671 402.34,130.207 C431.992,132.655 440.153,135.648 440.153,144.081 C440.153,152.242 433.352,158.771 404.789,158.771 C382.482,158.771 354.462,151.426 334.332,137.552 L305.497,178.629 C326.715,195.495 353.374,208.553 406.693,208.553 z" fill="#FFFFFF"/>
+              </g>
+            </g>
+          </svg></a>
+          <span class="navtext nav-before">By grace through example</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hithere"><i class="fas fa-bars"></i></div>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNavDropdown" style="text-align: right;">
+            <ul class="navbar-nav nav-white ml-auto">
+                <!-- social links - be sure to update with correct story links -->
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fsteve-moore-almost-died-coronavirus-bloomington"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://ctt.ac/23bf4"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.reddit.com/submit?title=Cool%20article&url=http%3A%2F%2Fspecials.idsnews.com%2Fsteve-moore-almost-died-coronavirus-bloomington"><i class="fab fa-reddit"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- START HEADER -->
+    <!-- add black color for fade effect -->
+    <div style="background-color:black;">
+        <div class="header">
+            <!-- Headline, subhead -->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 title">
+                        <div class="centerme">
+                            <div>   
+                                <h3 data-scroll-speed="3" class="headline">Steve Moore almost died.</h3>
+                                <h1 data-scroll-speed="4" class="subheadline" id="intro">Now he uses his experience to show COVID-19 is real and life-changing.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <div class="container" style="padding-top:5%;">
+        <div class="row">
+            <!-- BYLINES, TOP PHOTO CAPTION -->
+            <div class="col-md-3" style="padding-bottom:5%;">
+                <div class="bylines">
+                    <p class="byline">
+                        Published Dec. 15, 2020
+                    </p>
+                    <hr>
+                    <p class="byline">
+                        Written by <a href="https://www.idsnews.com/staff/madison-smalstig" target="_blank">Madison Smalstig</a>
+                    </p>
+                    <p class="subline">
+                        <a href="mailto:msmalsti@iu.edu" target="_blank">msmalsti@iu.edu</a> | <a href="https://twitter.com/madi_smals" target="_blank">@madi_smals</a>
+                    </p>
+                    <p class="byline">
+                        Multimedia by <a href="https://www.idsnews.com/staff/izzy-myszak" target="_blank">Izzy Myszak</a>
+                    </p>
+                    <p class="subline">
+                        <a href="mailto:imyszak@iu.edu" target="_blank">imyszak@iu.edu</a> | <a href="https://twitter.com/MyszakIzzy" target="_blank">@MyszakIzzy</a>
+                    </p>
+                    <p class="byline">
+                        Web development by <a href="https://idsnews.com/staff/carson-terbush" target="_blank">Carson TerBush</a>
+                    </p>
+                    <p class="subline">
+                        <a href="mailto:cterbush@iu.edu" target="_blank">cterbush@iu.edu</a> | <a href="https://twitter.com/_carsonology" target="_blank">@_carsonology</a>
+                    </p>
+                    <hr>
+                    <p class="caption">
+                        <b>TOP PHOTO</b>
+                        Steve Moore sits Oct. 17 in Waggin Tails Pet Grooming. Steve and Saundra own the small dog grooming business.
+                    </p>
+                </div>
+            </div>
+            <!-- STORY -->
+            <div class="col-md-6 story">
+                <p>
+                    Steve Moore believes himself to be of average intelligence and average life experience. He doesn’t expect you to think he’s smart. He doesn’t think he is.
+                </p>
+                <p>
+                    The 55-year-old Fortville, Indiana, man doesn’t believe he knows as much as the politicians, such as President Donald Trump, do about the virus that almost killed him. He has now voted for Trump twice and trusts the president’s handling of the pandemic.
+                </p>
+                <!-- AUDIO CLIP -->
+                <div class="gap-example">
+                    <audio>
+                        <source src="https://s3.amazonaws.com/snwceomedia/ids/b13e045d-831d-4911-b659-b2c6f3d1b114.original.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <script>
+                    new GreenAudioPlayer('.gap-example');
+                </script>
+                <p class="caption" style="padding-bottom:3%;">Steve Moore, 55, speaks to his family before being put on a ventilator.</p>
+                <!-- END AUDIO CLIP -->
+                <p>
+                    Steve contracted COVID-19 in late March. The virus, which he had not initially thought that much of, put him on a ventilator for 18 days and led to two weeks spent in a rehabilitation center relearning how to walk and how to breathe and how to remember simple facts such as his wife's birthday.
+                </p>
+                <p>
+                    Steve feels a little self-conscious about all the attention his friends showered on him through social media when he was in the hospital and rehab.
+                </p>
+                <div class="small-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/76adb3f2-c4df-4957-8aff-bdb46f2806b9.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">A card reading “Welcome home Steve” sits on a table Oct. 17 next to the front door of the Moore household. After being released from the hospital Steve wanted to go out to dinner with his family, but was unable to because the restaurants were not open and he did not realize how quarantine had affected the community during his time in the hospital and rehabilitation centers.                </p>
+                    <p>
+                </div>
+                <p>
+                    His family, he says, were the ones who really suffered and deserve recognition. All he did was lay in a bed.
+                </p>
+                <p>
+                    Before he contracted the virus, Steve knew the pandemic was serious. But it wasn’t until after he had completed physical therapy and returned to his job as a dock worker that he realized how important it was for people to wear their masks and socially distance. A number of his Facebook friends posted links to articles or wrote their own posts that showed they either thought the virus was a hoax or about as dangerous as the common flu. Many of them still do.
+                </p>
+                <div class="big-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/ac40e279-6446-4ad3-8892-3e60dbfec377.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">Steve Moore sits Oct. 17 in his pet grooming business holding a dog. Steve has returned to work after recovering from COVID-19. </p>
+                </div>
+                <p>
+                    Steve doesn’t put much stock into politics or politicians. Despite having gotten off a ventilator two and a half months before he voted, he did not think about either presidential candidates’ COVID-19 policies when voting. However, he wishes he would have known that Trump could have established a nationwide mask mandate – something Steve supports.
+                </p>
+                <p>
+                    He believes in serving as an example and telling people how COVID-19 affected his life and his family.
+                </p>
+                <p>
+                    After all he’s been through, Steve still doesn’t claim to be an expert on COVID-19. But one thing he knows is that the virus is real, and he is living, breathing proof.
+                </p>
+                <p class="section-break">
+                    ***
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AD BLOCK -->
+    <div class="bg-light ad-block">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <!-- BEGIN /32635621/rectangle1 -->
+                <div id='div-gpt-ad-1512489859064-1' align="center">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-0'); });
+                </script>
+                </div>
+                <!-- END /32635621/rectangle1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END AD BLOCK -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    Steve started showing COVID-19 symptoms on March 24, a week before he was hospitalized and the day before Indiana’s stay-at-home order first went into effect.
+                </p>
+                <p>
+                    He was at work at the dock when he started coughing quietly, like he was consistently clearing his throat. Throughout the day, the coughing grew deeper and more consistent. He developed a headache. Nothing seemed too serious, just normal flu symptoms.
+                </p>
+                <p>
+                    Then, on March 26, Steve’s wife Saundra Moore started to feel achy and she had a fever.
+                </p>
+                <p>
+                    One day later, the two had a video conference with their doctor who prescribed them Z-Pak. It didn’t help.
+                </p>
+                <p class="_related"><span style="font-family: 'Inter', sans-serif;"><b>Related:</b></span> <a href="http://specials.idsnews.com/iu-coronavirus-testing/" target="_blank" class="story-link">IU’s great big COVID-19 experiment: How one of the nation’s largest universities kept its doors open through spiking cases and daily uncertainty</a></p>
+                <p>
+                    While Saundra and Steve were both experiencing COVID-19 symptoms, they were taking a heavier toll on Steve. His headache had progressed into an unrelenting pain. He was having difficulty breathing and had a cough that prevented him from sleeping soundly.
+                </p>
+                <p>
+                    The doctor recommended they quarantine for 14 days.
+                </p>
+                <p>
+                    Steve began to wonder if it was something serious. He knew about COVID-19, but at the time it seemed like it wasn’t in his community yet and it would be unlikely for him to catch it. He later said it was like he had forgotten he had asthma and had struggled with heart issues.
+                </p>
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7c022f17-c154-4625-86be-067b0cd7605b.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">Steve Moore is seen Oct. 17 through the front door of Waggin Tails Pet Grooming. Steve works at the shop alongside Saundra. </p>
+                </div>
+                <p>
+                    On March 31, after a particularly restless night, Saundra hefted Steve into the car and drove him to Hancock Regional Hospital. The only sounds during the 20-minute ride were of Steve, trying and failing to fully catch his breath.
+                </p>
+                <p>
+                    After Steve had checked in to the hospital, he turned to his wife. She had tears in her eyes. 
+                </p>
+                <p>
+                    “You forgot to give me a hug,” she said.
+                </p>
+                <p>
+                    Even though Saundra got emotional, she fully expected to take Steve home that night. She waited for a few hours in the parking after she dropped him off. Their two adult daughters, Hannah and Allyson, didn’t know he was having serious health issues until after he was checked in to the hospital.
+                </p>
+                <p>
+                    Hannah said she thought he just had a cold.
+                </p>
+                <p>
+                    Even though Steve wasn’t officially diagnosed with COVID-19 until later, the doctors still initially treated him as a COVID patient.
+                </p>
+                <p>
+                    The next few days were a blur of calling nurses and the family exchanging videos with Steve. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AD BLOCK -->
+    <div class="bg-light ad-block">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <!-- BEGIN /32635621/rectangle1 -->
+                <div id='div-gpt-ad-1512489859064-1' align="center">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-1'); });
+                </script>
+                </div>
+                <!-- END /32635621/rectangle1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END AD BLOCK -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    The doctors told Steve’s family on April 2 he was getting better and he would soon be sent home with an oxygen tank. But by the next morning, their diagnosis had changed. Steve’s breathing was so labored that he needed to be put on a ventilator.
+                </p>
+                <p>
+                    “This is no different than any other type of surgery when they put you on a ventilator, except it might be a little bit longer,” Steve told his family in a video that day. “Take care of momma.”
+                </p>
+                <p class="section-break">
+                    ***
+                </p>
+                <p>
+                    Saundra was at a low point. She was without her husband, she was without work, she was struggling through a fever, aches and pains that almost left her couch-ridden and she was only seeing her daughters through her glass storm door every other day.
+                </p>
+                <p>
+                    Steve was on the ventilator and could no longer speak. She wasn’t sure he was going to make it. No other COVID-19 patient had made it off the ventilator at Hancock Regional Hospital.
+                </p>
+                <p>
+                    She already felt like a widow.
+                </p>
+                <div class="big-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d9628016-1bcf-44b2-bf53-0ef13dd4d83f.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">Saundra and Steve pose for a photo Oct. 17 in an apple orchard. After being released from the hospital, Steve was excited to feel the fresh breeze against his face. </p>
+                </div>
+                <p>
+                    That’s when she saw the words “I love you” written in the dust collected at the top of her headboard.
+                </p>
+                <p>
+                    Steve had a habit of leaving her little random notes of love and affirmation. One of his favorite moves was to find a sticky note-pad, flip to the middle of the stack and write “I love you” or draw a heart for Saundra to find later.
+                </p>
+                <p>
+                    Steve thinks he wrote in the dust about two weeks before he went to the hospital. Saundra believes God was saving that message for her to see that exact moment.
+                </p>
+                <p>
+                    She took a picture of the note.
+                </p>
+                <p>
+                    She had been sharing many photos on her Facebook to document her husband’s COVID-19 experience. But she didn’t share this one. She kept this memory for herself.  
+                </p>
+                <div class="big-image">
+                    <h3 class="video">Diagnosed with a severe case of COVID-19: Steve Moore's journey through the coronavirus pandemic</h3>
+                    <div class='embed-container'>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mX_No71Co34" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="caption">
+                            Steve Moore, 55, was diagnosed with COVID-19 in March. He spent 52 days in the hospital and rehabilitation center before being cleared to go home to his family.
+                    </p>
+                </div>
+                <p class="section-break">
+                    ***
+                </p>
+                <p>
+                    Over the next two and a half weeks, as the ventilator mechanically pumped oxygen into Steve’s lungs, his wife battled and beat COVID-19 and, on April 15, he turned 55.
+                </p>
+                <p>
+                    His family celebrated his birthday picking up Mexican food — his favorite — parking outside the hospital, eating in the car and calling to sing him happy birthday. They asked the nurse to hold up the phone to his face so he could hear.
+                </p>
+                <p class="_related"><span style="font-family: 'Inter', sans-serif;"><b>Related:</b></span> <a href="https://www.idsnews.com/article/2020/12/isolated-on-thanksgiving-how-some-iu-students-spent-the-holiday-without-their-families" target="_blank" class="story-link">Isolated on Thanksgiving: How some IU students spent the holiday without their families</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AD BLOCK -->
+    <div class="bg-light ad-block">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <!-- BEGIN /32635621/rectangle1 -->
+                <div id='div-gpt-ad-1512489859064-1' align="center">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-2'); });
+                </script>
+                </div>
+                <!-- END /32635621/rectangle1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END AD BLOCK -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    As their voices rang through the device, his head turned to the sound, his mouth tried to smile and his heart beat increased from 61 to 78 beats per minute.
+                </p>
+                <p>
+                    Throughout Steve’s time in the hospital, Hannah, Saundra and Allyson all posted on Facebook intermittently about his condition and asked people to pray for him. On almost every post they wrote #prayerworks.
+                </p>
+                <p>
+                    All four members of the Moore family are Christians who pray at least once a day, if not more. Sometimes when they’re praying, they walk around their house and talk to God as if he is a close friend. Sometimes they bow their heads and clasp their hands together. Sometimes they kneel.
+                </p>
+                <div class="big-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d65904c9-1bca-4adb-a948-dffb47469d84.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">Steve Moore and his family pose for a photo Oct. 17 in an apple orchard. Spending time with family is something Steve says he cherishes and holds on to a little bit more than he did before contracting the coronavirus.</p>
+                </div>
+                <p>
+                    On April 13, Hannah woke up at about 2 a.m. and saw the hospital had called her. She says God woke her up that night. The nurse had needed permission to replace Steve’s central line, the tube placed in a vein for long-term drug therapy. After she got off the phone with them, she spent an hour praying for the doctors to have the wisdom to know what to do and for her dad to have strength.
+                </p>
+                <p>
+                    Allyson said she prayed so much during her dad’s time at the hospital that eventually she didn’t know what to pray for anymore. So, she made a playlist of church songs. She would listen to the playlist during attempts to stave off panic attacks.
+                </p>
+                <div class="small-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/4b523f7e-fe3c-4b8f-953a-2a9b9e2ab337.sized-1000x1000.jpg" width="100%" alt="">
+                    <p class="caption">Steve’s daughter, Allyson Hamlin, tends to the garden Oct. 17 at her parents' house. The family planted the garden when Steve first found out he had the coronavirus and they have been tending to it ever since.</p>
+                </div>
+                <p>
+                    In addition to praying on their own, Saundra, Hannah and Allyson reached out to more friends, family and followers through social media to have more people speaking in God’s ear.
+                </p>
+                <p>
+                    “I think God listens to every prayer we pray,” Allyson said. “But if there’s thousands of people storming heaven with prayers, it’s kind of hard for God not to listen.”
+                </p>
+                <p>
+                    On April 19, more than 25 people gathered in the hospital parking lot to pray for Steve for about 20 minutes. Saundra only had one prayer that she repeated over and over: for Steve to safely make it to tomorrow.
+                </p>
+                <p class="section-break">
+                    ***
+                </p>
+                <p>
+                    On April 20, Steve became the first COVID-19 patient at Hancock Regional Hospital to be taken off a ventilator. No other patient had survived that long. After 21 days in the hospital and thousands of prayers sent his way, he could breathe on his own. Three days later, he was checked out of the hospital.
+                </p>
+                <!-- AUDIO CLIP -->
+                <div class="gap-example1">
+                    <audio>
+                        <source src="https://s3.amazonaws.com/snwceomedia/ids/d8021fcb-0ac6-498d-bc19-aa93a29971dc.original.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <script>
+                    new GreenAudioPlayer('.gap-example1');
+                </script>
+                <p class="caption" style="padding-bottom:3%;">Hospital staff members cheer as Steve Moore is wheeled out of the hospital to go to a rehabilitation center.</p>
+                <p>
+                    After he was released from Hancock, Steve went to a rehab center. He stayed for just 36 hours before they had to move him to another hospital for a UTI that sent him into a state of delirium.
+                </p>
+                <p>
+                    During his time on the ventilator and laying in a hospital bed, Steve lost a lot of weight, his ability to walk or dress himself and pieces of his memory.
+                </p>
+                <p>
+                    Steve worked to rebuild his memory throughout the two weeks at the second hospital. His family called him every day to ask him questions and test his memory.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AD BLOCK -->
+    <div class="bg-light ad-block">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <!-- BEGIN /32635621/rectangle1 -->
+                <div id='div-gpt-ad-1512489859064-1' align="center">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-3'); });
+                </script>
+                </div>
+                <!-- END /32635621/rectangle1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END AD BLOCK -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    On one of those calls a few days after Steve had been off the ventilator, Hannah asked him some questions to no avail: What’s mom’s birthday? Where are you going to go after the hospital? How long have you been married to mom?
+                </p>
+                <p>
+                    He struggled through almost every question but one.
+                </p>
+                <p>
+                    “What’s Saundra’s favorite color?”
+                </p>
+                <p>
+                    “Yellow,” Steve said.
+                </p>
+                <p>
+                    After he recovered from the UTI, Steve went to Community Rehabilitation Hospital to rebuild his atrophied muscles.
+                </p>
+                <p>
+                    After 14 days at rehab, he wanted to walk out on May 21 without a walker, even though he had not once walked on his own. It had been a goal of his to rush up to his wife and hug her without a walker in between them.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/5bc14ea0-ac3c-4c02-a5af-f5a82ab7b8db.sized-1000x1000.jpg" width=100% alt="">
+                <p class="caption">
+                        Steve Moore poses for a photo alongside his wife Saundra, two daughters and son-in-law, who hold signs they made for Steve. Steve spent 18 days on a ventilator during his treatment for COVID-19. 
+                </p>
+            </div>
+            <div class="col-md-5 show-desktop">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/5353d111-92a3-4515-a49d-bd0842ae7cec.sized-1000x1000.jpg" width=100% alt="">
+                <p class="caption">
+                        Steve and his wife Saundra Moore sit outside in front of a poster reading “Welcome home, Dad” following his discharge from rehabilitation. Steve spent 52 days in the hospital and rehabilitation center before being cleared to go home to his family. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    But the nurse stopped him. So, he limped as fast as he could to Saundra, leaned over the walker and gave her a hug. Saundra said it felt good to hold him.
+                </p>
+                <p>
+                    “We watched him try to cheat his walker,” a nurse told the family. “That’s your job now — to make sure that he doesn’t do that.”
+                </p>
+                <p>
+                    Saundra had been lonely. All those weeks, she had been handling the bills and everything else on her own. But now it seemed like her husband was back from the dead.
+                </p>
+                <p>
+                    The hugs and tears continued as the family helped Steve into the passenger side of their car.
+                </p>
+                <p>
+                    When they closed the doors, Steve noticed the air conditioning was on.
+                </p>
+                <p>
+                    “Can we just roll down the windows?” he asked.
+                </p>
+                <p>
+                    After 52 days stuck in the hospital and rehab, he wanted to feel the breeze on his face.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/6e0ac7f5-3d95-497c-9e44-1a7f219311f0.sized-1000x1000.jpg" width=100% alt="">
+                <p class="caption">
+                        A walker sits next to a bench Oct. 17 by the front door of the Moore household. Steve wanted to walk out of the care facility without using a walker to greet his family, but the nurses would not let him. 
+                </p>
+            </div>
+            <div class="col-md-5 show-desktop">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/34abad3f-b498-4f63-80e4-a5ad8b3f2ef6.sized-1000x1000.jpg" width=100% alt="">
+                <p class="caption">
+                        The family cat sits on the stairs in Steve and Saundra’s house. After returning home, going up the stairs was a big challenge for Steve. 
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p class="section-break">
+                    ***
+                </p>
+                <p>
+                    Nine months after COVID-19 nearly killed him, Steve does not remember his stay at the hospital and only remembers pieces of his time in rehab. He still tires easily and lags behind his family sometimes when they walk together. He is always exhausted after a full day of work at the docks, where he has to make sure he moves the heavier items at the beginning of the day before he gets too tired.
+                </p>
+                <p>
+                    Sometimes, he gets frustrated with the slowness of his progress. But then he remembers that he couldn’t walk. He remembers rocking in a rocking chair to help get his strength back. He remembers standing by a window on the second-floor of the rehab center, staring down at his wife on their 34th wedding anniversary.
+                </p>
+                <p>
+                    He remembers the uncomfortable hospital bed and what it felt like to be stuck in a room without his family. He was less than an hour from his house, and he was homesick. He didn’t know a 55-year-old man could be so homesick so close to home.
+                </p>
+                <p>
+                    He still gets approached by random people who followed his journey on Facebook.
+                </p>
+                <p>
+                    “You’re a miracle,” they say. “We’ve been praying for you.”
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- AD BLOCK -->
+    <div class="bg-light ad-block">
+        <div class="container">
+            <div class="col-md-12">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <!-- BEGIN /32635621/rectangle1 -->
+                <div id='div-gpt-ad-1512489859064-1' align="center">
+                <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-4'); });
+                </script>
+                </div>
+                <!-- END /32635621/rectangle1 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END AD BLOCK -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 story">
+                <p>
+                    Before COVID-19 hit him, Steve wasn’t that worried about the virus. He knew it was important to wash your hands and sanitize, that it was good to wear a mask and it would be smart to not go out as much. But he did not think he was old enough to be seriously affected by the virus. He thought his asthma and heart condition were in check.
+                </p>
+                <p>
+                    Now, he is a strong advocate for wearing masks and reminds people that just because the virus hasn’t directly affected them doesn’t mean it’s fake. He tells them that he knows — he went through it himself.
+                </p>
+                <p>
+                    “I find myself getting sad for the people that get upset about having to wear a mask,” he said. “It makes me want to scratch my head.”
+                </p>
+                <p>
+                    He said he’s even had some conversations with his family about masks because his older daughter Allyson isn’t as enthusiastic about using them. Allyson said she is fully aware that the virus is real and recognizes the long-lasting effects, but she doesn’t like the government controlling her health or what she can and can’t do.
+                </p>
+                <div class="pull-quote-center">
+                    <p class="quote">“I’m just blown away that both of (my daughters) aren’t serious mask wearers."</p>
+                    <p class="attribute">— Steve Moore, COVID-19 survivor</p>
+                </div>
+                <p>
+                    Steve said he supports a mask mandate, he doesn’t believe the pandemic is over and that now we should focus more on preventing COVID-19 spread than healing the economy.
+                </p>
+                <p>
+                    However, when asked if he had any direct criticisms of President Donald Trump’s COVID-19 response, Steve said he feels that he doesn’t know as much about the virus as those in charge of our country. He said since he hasn’t served in Trump’s position he can’t condemn Trump’s actions.
+                </p>
+                <p>
+                    Steve also said he doesn’t know exactly where the federal government could have crossed into state politics. He said he did not know Trump could have established a nationwide mask mandate.
+                </p>
+                <p>
+                    Steve voted in person for President Donald Trump on October 31. He said he voted for Trump because he saw him as the lesser of two evils. He said he was scared by how aggressively the Democratic party had been attacking Trump and trying to remove a Republican president. So, he voted against the Democrats.
+                </p>
+                <p>
+                    He also said it’s hard for him to say the president or our state government should have put in particular restrictions in the past because we are continuously learning about the virus. Steve operates under the idea that even though our nation’s leaders know the most, we don’t know a lot about the virus.
+                </p>
+                <p>
+                    “I can’t ridicule the government like I know more than they do, because I don’t feel like any of us know a ton about this,” Steve said.
+                </p>
+                <p>
+                    He does have one opinion on what leaders shouldn’t do: wait to act until it’s too late.
+                </p>
+                <p>
+                    “Millions of people are not dying, yet,” Steve said. “Don’t wait until they do die to do something.”
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- SOCIAL SHARING BUTTONS -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <hr>
+                <div class="row d-flex jusify-content-center align-items-center" style="padding-bottom:5%;">
+                    <div class="col-4">
+                        <a href="https://ctt.ac/23bf4" target="_blank">
+                        <button type="button" class="btn btn-outline-secondary social" style="float:right;">
+                            <i class="fab fa-twitter" style="padding-right: 2px;">
+                            </i> Tweet
+                        </button>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fsteve-moore-almost-died-coronavirus-bloomington%2F" target="_blank">
+                        <button type="button" class="btn btn-outline-secondary social" style="margin: 0 auto; float:none; display:block;">
+                            <i class="fab fa-facebook" style="padding-right: 2px;">
+                            </i> Share
+                        </button>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="mailto:?&subject=By grace through example&body=https%3A//specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington">
+                        <button type="button" class="btn btn-outline-secondary social" style="float:left;">
+                            <i class="fas fa-envelope">
+                            </i> Email
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- END STORY DIV -->
+    </div>
+
+    <div class="support-us">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p><em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism. <a class="story-link" target="_blank" href="https://www.idsnews.com/page/donate">Donate.</a></p>
+                <hr>
+                <p><small>Copyright 2020 Indiana Daily Student</small></p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- transparent navbar effects -->
+    <script type="text/javascript">
+        function checkScroll() {
+            var startY = $('.navbar').height() * 10; //The point where the navbar changes in px
+            if($(window).scrollTop() > startY) {
+                $('.navbar').addClass("blackbg");
+            } else {
+                $('.navbar').removeClass("blackbg");
+            }
+            if($(window).scrollTop() > startY) {
+                $('.navtext').addClass("nav-title");
+            } else {
+                $('.navtext').removeClass("nav-title");
+            }
+        }
+        if($('.navbar').length > 0) {
+            $(window).on("scroll load resize", function() {
+                checkScroll();
+            });
+        }
+    </script>
+    <!-- scroll speed -->
+    <script type="text/javascript">
+        $.fn.moveIt = function() {
+        var $window = $(window);
+        var instances = [];
+        
+        $(this).each(function() {
+          instances.push(new moveItItem($(this)));
+        });
+        
+        window.addEventListener('scroll', function() {
+          var scrollTop = $window.scrollTop();
+          instances.forEach(function(inst){
+            inst.update(scrollTop);
+          });
+        }, {passive: true});
+        }
+        
+        var moveItItem = function(el) {
+            this.el = $(el);
+            this.speed = parseInt(this.el.attr('data-scroll-speed'));
+        };
+        
+        moveItItem.prototype.update = function(scrollTop) {
+            this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+        };
+      
+        // Initialization
+        $(function() {
+            $('[data-scroll-speed]').moveIt();
+        });
+    </script>
+    <!-- makes content div height automatic -->
+    <script type="text/javascript">
+        function RevealMore() {
+            /* Makes content div height automatic and removes the fade-out div and more link. */
+            /* Specify the ID values of the content div, the fade-out div, and the more link. */
+            document.getElementById("content-div").style.height = "auto";
+            document.getElementById("fade-out").style.display = "none";
+            document.getElementById("more-link").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
