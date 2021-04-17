@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<!--Developed by Vivek Rao, 2021 -->
+<head>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome, for the icons -->
+  <script src="https://use.fontawesome.com/9d1bd96579.js"></script>
+
+  <!-- List.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
+  <!-- Something to do with responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ICPA Spring 2021 Awards &mdash; Yearbook</title>
+
+  <!-- Meta tags for social -->
+  <meta property="og:url" content="specials.idsnews.com/indiana-collegiate-press-association-spring-2021-winners/icpa-yearbook.html"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Indiana Collegiate Press Association Spring 2021 Awards — Yearbook"/>
+  <!-- <meta property="og:description" content="xxx"/> -->
+  <meta property="og:site_name" content="Indiana Collegiate Press Awards">
+  <meta property="og:image" content="img/social-cards/yearbook.jpg"/>
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ICPAconnect">
+  <meta name="twitter:creator" content="@ICPAconnect">
+  <meta name="twitter:title" content="Indiana Collegiate Press Association Spring 2021 Awards — Yearbook">
+  <!-- <meta name="twitter:description" content="xxx"/> -->
+  <meta name="twitter:image" content="img/social-cards/yearbook.jpg" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand navbar-hed" href="index.html">ICPAconnect</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarDropdown" style="text-align: right; padding-right: 5%;">
+      <ul class="navbar-nav nav-white ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="emily-isaacman-brook-baker-journalist-of-the-year-2021.html">Brook Baker Indiana Collegiate Journalist of the Year</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-advertising.html">Advertising</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-literary-magazine.html">Literary Magazine</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-news-magazine.html">News Magazine</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-newspaper-division-1.html">Newspaper Division 1</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-newspaper-division-2.html">Newspaper Division 2</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-newspaper-division-3.html">Newspaper Division 3</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-online.html">Online</a>
+              <a class="dropdown-item nav-item nav-link navbar-text" data-scroll href="icpa-yearbook.html">Yearbook</a>
+            </div>
+          </li>
+
+          <!-- <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link navbar-text" href="#portfolio" style="margin-left:70vw;">Work</a>
+          <a class="nav-item nav-link navbar-text" href="#awards">Awards</a>
+          <a class="nav-item nav-link navbar-text" href="resume.html">Resume</a>
+        </div> -->
+      </ul></div>
+    </nav>
+
+    <div class="container" style="height: 50px;">
+      <div class="row"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"><h1 class="greeting">Indiana Collegiate Press Association Yearbook Winners</h1></div>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <table class="table">
+          <tr>
+            <th>Rank</th>
+            <th>Newspaper</th>
+            <th>Points</th>
+          </tr>
+
+          <tr>
+            <td>1st place</td>
+            <td>Arbutus, Indiana University</td>
+            <td>38 points</td>
+          </tr>
+
+          <tr>
+            <td>2nd place</td>
+            <td>Dome, University of Notre Dame, Saint Mary's College and Holy Cross College</td>
+            <td>21 points</td>
+          </tr>
+
+          <tr>
+            <td>3rd place</td>
+            <td>The Sycamore, Indiana State University</td>
+            <td>12 points</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="row" style="margin-top: 25px;">
+        <div class="col-md-8">
+          <h2 class="subhead"><b>Best Academics Spread</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/1Gn4ABe25a8-UoyZzUL9lL6yIBosANjb8/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/academicspread.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/1Gn4ABe25a8-UoyZzUL9lL6yIBosANjb8/view?usp=sharing" target="_blank">'The privilege of being queer'</a></p>
+                <p class="first-byline">Carson TerBush, Ty Vinson, Matt Rasnic; Arbutus, Indiana University</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Content is interesting and gives insight into the program and the faculty member. Sentences are short and paragraphs brief, featuring transitions that lead the reader smoothly from one paragraph to the next. The chunked paragraphs help keep the reader engaged. Storytelling quotes are used throughout the copy. Nice portrait of Bauder. It would have been a good opportunity to make the mini headlines of the chunked copy sections mimic the colors of the flag behind Bauder to tie the visual and verbal together.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1M1EUQ9fJN8mkztkvr4imHPaHhqO8pntm/view?usp=sharing" target="_blank">Professor tweets about 'women destroying academia'</a></p>
+                <p class="_byline">Jessica Prucha, Ty Vinson, Matt Rasnic; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;The content ties in well to what is happening in 2020, and this is an important story to be told. Yearbook stories do not always have to be positive and surface level, so thank you for this. Editorializing is eliminated from the copy as well, which is important for these types of stories. I do wish more students were featured, but the writing is solid.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1DgJH04ymr60BytpB_V550f4J8L4O8sLa/view?usp=sharing" target="_blank">College of Engineering</a></p>
+                <p class="_byline">Matelda Swiss, Kailee Saunders; The Dome, University of Notre Dame</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Great use of specific examples in the copy. Try to avoid editorializing and vagueness i.e., "exciting projects" and "variety of majors." Give me exact facts and numbers because that information is available to you. Additionally, try to find what is interesting and unique for that year, not something that happens "every year." Missing proper formatting for quotes and transitions. Good use of candid photos for the spread but would like to see grade levels in captions.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Album/Portrait Section</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/19obumgeRvH74PEMWKwHrviOrVjO9VjCI/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestAlbum.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/19obumgeRvH74PEMWKwHrviOrVjO9VjCI/view?usp=sharing" target="_blank">I'm moving out</a></p>
+                <p class="first-byline">Izzy Myszak, Anna Brown; Arbutus, Indiana University</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Nice creative feature of students moving off campus. I like that you included a photo of the students with the quotes but would have liked to see more variety in the images. Possibly the students in front of or inside the place they moved to off campus.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1kP6kbeSTvq2YZ2iNETF0wnHTbzHNZb6N" target="_blank">Senior Portraits</a></p>
+                <p class="_byline">Staff; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Good detail shot of graduation on introduction spread. Good legacy quotes from students to tie to the theme. Would have liked to have all photos on this spread be in cap and gown, or all business professional for consistency.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1kP6kbeSTvq2YZ2iNETF0wnHTbzHNZb6N" target="_blank">Organizations</a></p>
+                <p class="_byline">Staff; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Would like to see more candid photos throughout this section. Try to keep head sizes consistent throughout the organization section.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Cover</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/1EMqIRXldqO7Lxh31oKGzzQU5DgHVd7US/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestCover.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/1EMqIRXldqO7Lxh31oKGzzQU5DgHVd7US/view?usp=sharing" target="_blank">Reflections</a></p>
+                <p class="first-byline">Melissa Fenner, Kaleigh Brauns, Lynne Atkins; The Dome, University of Notre Dame</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;The details of this cover are very nice. Soft touch, foiling and spot gloss elevate the design and give a sense of luxury. Introduces the theme well and design elements of flipped imagery.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1y-oacIfJCbmdylaKmRykUpBCh8PG2cTp/view?usp=sharing" target="_blank">Arbutus Cover</a></p>
+                <p class="_byline">Matt Rasnic; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;The cover design remains consistent but has a new twist every year. It is an inventive concept to make something look and feel new while keeping the same elements on cover. Good texture and color.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1PXmNK6IryNlz_YEOkyODZb9lqvzk4Sg_" target="_blank">The Sycamore 2019-2020</a></p>
+                <p class="_byline">Nayasia Hubbert; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Less is more. The varying photo shapes, sizes, spacing, colors, and opacities distract the audience from the takeaway.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Execution of Theme</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="first-rank"><a href="https://drive.google.com/drive/folders/1Ox2W_3tbv2yvfzhS5Mfi0mhYzhHvRmZp?usp=sharing" target="_blank" class="first-rank">#1</a></div>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/drive/folders/1Ox2W_3tbv2yvfzhS5Mfi0mhYzhHvRmZp?usp=sharing" target="_blank">Reflections</a></p>
+                <p class="first-byline">Melissa Fenner, Susanna Cohen, Kaleigh Brauns; The Dome, University of Notre Dame</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Theme carried throughout cover, endsheets, title page, headlines, and alternative copy. Theme copy could be more relevant to the university and year. "We are constantly busy..." paragraph could be said for almost any student at any university for any year. Try to get more specifics in this copy to set it apart. I believe you chose a spot color for the design, and I would suggest using colors with the same vibrance for a more cohesive design. Try not to mix pastels with jewel tones and super saturated colors.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://www.blurb.com/books/10184315-the-sycamore-2019-2020" target="_blank">The Sycamore 2019-2020</a></p>
+                <p class="_byline">Marisa Combs and Staff; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Theme carried throughout cover, title page, divisions, and pages. I would have liked to see more specific theme copy to tie in legacy. Inside pages do mirror the cover concepts, but less color blocking templates would have helped the content stand out more.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Feature Photography</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="first-rank"><a href="https://drive.google.com/file/d/19Jvej8jmHahWY_3JC9VVpxtGgJDG34j2/view?usp=sharing" target="_blank" class="first-rank">#1</a></div>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/19Jvej8jmHahWY_3JC9VVpxtGgJDG34j2/view?usp=sharing" target="_blank">Va-va-va-vaudville</a></p>
+                <p class="first-byline">Izzy Myszak; Arbutus, Indiana University</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Great color and emotion in these shots! Framing between hoop and triangle shapes make these images visually interesting and engaging. Composition is great but watch for cropping issues on the Dark Side Tribal dancer’s fingertips and the top of the Mrs. Kazooey’s head. Overall, this photo story is a very nice package that tells the story without copy.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1iQ_SYTiy92ja1nuk2oZ2E65xauc__y8K/view?usp=sharing" target="_blank">Lotus Festival</a></p>
+                <p class="_byline">Sam House, Matt Begala; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Great action in the dominant image. The audience can feel the movement and the dancing. Nice composition with the violin players. The hurdy-gurdy image is a bit dark. Watch for orientation of your images, both top images on the left page are tilted in an unnatural way. Only tilt images if you are trying to convey some movement happening. Neither of those images have movement, so the tilted orientation throws it off, especially because they are tilted in opposite directions.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1bMG2KqWnkwMjgUHcBO4Hs1V3SsTZrIAA" target="_blank">Polar Plunge</a></p>
+                <p class="_byline">Kendall Jacobs; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice action shots from this event. The content is creative and is a specific event tied to your university. However, if you are going to use multiple images from the same event, the angle and composition of each image needs to change. This spread would have felt stronger using 1-3 great images than including 6 images that all look and feel the same. Shoot low and shoot high, utilize objects around you for framing the scene.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best News Photography</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/1FMnBuW6YqzoSVTdD9-154HHBw6paOP1e/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestNewsPhotography.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/1FMnBuW6YqzoSVTdD9-154HHBw6paOP1e/view?usp=sharing" target="_blank">IU climate strike</a></p>
+                <p class="first-byline">Sam House, Mat Begala; Arbutus, Indiana Univesity</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Great use of color in these images. The variety of storytelling shots make this a really compelling spread. The emotion was captured, and the cropping is great. The only thing that worries me is that the dominant features children, and that can be tricky without parental consent. To avoid this, try to feature IU students in your dominant photos.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/17NgNDm9EqW7I065GZlu7JnDJfTELiTbv/view?usp=sharing" target="_blank">Hall of the Year</a></p>
+                <p class="_byline">Staff; The Dome, University of Notre Dame</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Even though this image is a little soft in terms of sharpness, the emotion makes up for it. A great image makes the reader want to jump to the caption to know more. What is being dumped on this poor person’s head? And why? And why does the person in the back look shocked? Cropping is a little close to the two heads, try to leave a bit more space. I would have liked to see the floor with this goo on it as well in a wide shot.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1LU35Q_SS4hRZpKush0nsZKBRBYBlCJ3t/view?usp=sharing" target="_blank">Take back the night</a></p>
+                <p class="_byline">Izzy Myszak; Arbutus, Indiana Daily Student</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Night photography is difficult for an array of reasons. The emotion is captured and the storytelling aspect is there. If you are only using one image on a spread, try to give it an interesting angle or framing.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Organizations Spread</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="first-rank"><a href="https://drive.google.com/file/d/1Seyocy4dsA9opOUzpuyERVOFaFyf0Emi/view?usp=sharing" target="_blank" class="first-rank">#1</a></div>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/1Seyocy4dsA9opOUzpuyERVOFaFyf0Emi/view?usp=sharing" target="_blank">Dance Marathon</a></p>
+                <p class="first-byline">Anna Tiplick, Kyra Miller, Jessica Prucha, Sarah Kress; Arbutus, Indiana University</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Great coverage for Dance Marathon. The photography is visually interesting and includes a variety of storytelling images. The copy is broken down by time frames which is interesting and helps move the reader through the story. Try to vary your transitions so the first sentence is not always &lsquo;Grade name etc.&rsquo;&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1jL0WVeVv4l0n6irt_LCZc7WG1l_Xkrrf/view?usp=sharing" target="_blank">A new chapter</a></p>
+                <p class="_byline">Izzy Myszak, Joy Burton, Cate Charron; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Image quality on bid night seems a bit soft, but the emotion makes up for it. The story is a bit generic and feels like any university could have written this any year. Write about what makes recruitment at IU different from any other university. Storytelling quotes are lacking, and watch out for missing spaces in the copy.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1LMgkr69936amgwIjBbKXGUWeJhWn8TA8/view?usp=sharing" target="_blank">ROTC</a></p>
+                <p class="_byline">Melissa Fenner, Kaleigh Brauns; The Dome, University of Notre Dame</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Great dominant image. I do wish the photographer would have taken one step to the left to get the rest of the whole rifle in the image, but great flag movement captured. I do think the two members in front could have been identified in the caption. Good storytelling quotes in the copy. The story formatting needs work with proper LTQT.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Overall Design</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="first-rank"><a href="https://drive.google.com/drive/folders/1Ox2W_3tbv2yvfzhS5Mfi0mhYzhHvRmZp?usp=sharing" target="_blank" class="first-rank">#1</a></div>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/drive/folders/1Ox2W_3tbv2yvfzhS5Mfi0mhYzhHvRmZp?usp=sharing" target="_blank">Reflections</a></p>
+                <p class="first-byline">Melissa Fenner, Susanna Cohen, Kaleigh Brauns; The Dome, University of Notre Dame</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Visual ties to reflections drive the design concept and help keep the design consistent. The use of bars throughout the book and consistent photo editing tie pages together. Use of color is good but could be used more strategically. Pull quote has consistent design but the inconsistent spacing caused negative space issues.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1cuYRY0I24bVpLdFFsbIS3A1HUaI3adQG/view?usp=sharing" target="_blank">Arbutus 2020</a></p>
+                <p class="_byline">Matt Rasnic, staff; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Very consistent design throughout the books. I would like to see more risks taken. Layouts are clean with minimal spacing issues. Typography was tasteful and paired well with the clean design. The book feels very unified, but not innovative in terms of design.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://www.blurb.com/books/10184315-the-sycamore-2019-2020" target="_blank">The Sycamore 2019-2020</a></p>
+                <p class="_byline">Marisa Combs and Staff; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;It is great that you can carry out graphic elements throughout your designs. This helps unify the book and create consistency throughout pages. However, using a more subtle design element/approach would allow the copy and photography to shine. Including larger dominants would help with the feelings of being overwhelmed while taking in the content. Try to stay away from color blocking on every page.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Special Section</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/13FZ6W-vJEVO4fIrjW2ylWJgK4DqKeiCa/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestSpecialSection.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/13FZ6W-vJEVO4fIrjW2ylWJgK4DqKeiCa/view?usp=sharing" target="_blank">Clean freaks, night owls and Laundrygate</a></p>
+                <p class="first-byline">Vivek Rao, Jacob deCastro, Anna Brown; Arbutus, Indiana University</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;&lsquo;Laundrygate,&rsquo; the heatmap, and suspicious dryer use actually had me laughing out loud. The content of this special section is genius and always overlooked in yearbooks. Great use of infographics here that we never knew we needed.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/14SMAK6uyW1NUMPhIqHaSw8y8BzocFdP9" target="_blank">Homecoming</a></p>
+                <p class="_byline">Staff; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;The homecoming history is good, but I am not sure what its purpose is. This was not an anniversary year, and it stops randomly in 1939. Moving forward, the coverage from the weekend is great and is very holistic of what it means for Indiana State University.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1hDkWYZecBW8HfSBoR74kq0aRnQu6VIxG/view?usp=sharing" target="_blank">International Soccer Game</a></p>
+                <p class="_byline">Lauren Stephenson, Lynne Atkins; The Dome, University of Notre Dame</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice special soccer coverage that ties back to your university and connects your stadium. Try to avoid editorializing the story and stick to the facts.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <h2 class="subhead"><b>Best Sports Photography</b></h2>
+          <div class="first">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://drive.google.com/file/d/1_hY0EikjHEyCyZCmKi2SNXRC5izhyWJb/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestSportsPhotography.jpg"></a>
+              </div>
+
+              <div class="col-md-8">
+                <p class="first-hed"><a href="https://drive.google.com/file/d/1_hY0EikjHEyCyZCmKi2SNXRC5izhyWJb/view?usp=sharing" target="_blank">Notre Dame Versus New Mexico</a></p>
+                <p class="first-byline">Frankie Boley; The Dome, University of Notre Dame</p>
+                <p class="first-judges"><b>Judges' comments:</b> &ldquo;Great decisive moment and emotion in the photo from this game. Muscles are tight and it is an intense moment. The player celebrating in the background is nice as well. In terms of composition, try to not crop out the leg on a wide shot, but of course that is easier said than done. This photo could be better if cropped closer to the left and top, to put in-focus player closer to left 1/3 since it's a little off-center right now. This edit will also make the player in the back more noticeable, which distracts from the cut leg.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="second">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="second-rank">#2</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/file/d/1lpHl52Y68uQgiQuNJSCPXCDehpVPxbNG/view?usp=sharing" target="_blank">Touchdown celebration</a></p>
+                <p class="_byline">Alex Deryn; Arbutus, Indiana University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice team celebration shot. Cropping is nice and even though we can't see their faces, emotion and intensity are still captured. The players get a little muddled with the ball-carrier in the background. Despite thesse distractions, the moment is well-captured. I would suggest shooting a little wider so you have more room to crop if needed.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <hr>      <div class="third">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="third-rank">#3</div>
+              </div>
+
+              <div class="col-md-10">
+                <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1UEvh8xAieir1D8sbEFdwweKm9cxCdMmV" target="_blank">Men's Basketball</a></p>
+                <p class="_byline">Kendall Jacobs, Addison Leyerle; The Sycamore, Indiana State University</p>
+                <p class="_judges"><b>Judges' comments:</b> &ldquo;Photos are all mostly leading off the page. To avoid this, try swapping the design. If you are going to include 6 photos from one event, make sure you are using a variety of wide, medium, and tight images on the spread &mdash; these are all wide.
+                  &rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>      <h2 class="subhead"><b>Best Sports Spread</b></h2>
+            <div class="first">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="first-rank"><a href="https://drive.google.com/file/d/1yNXv1huuZSGGsVsZoVDrwVSdly8FEsk_/view?usp=sharing" target="_blank" class="first-rank">#1</a></div>
+                </div>
+
+                <div class="col-md-8">
+                  <p class="first-hed"><a href="https://drive.google.com/file/d/1yNXv1huuZSGGsVsZoVDrwVSdly8FEsk_/view?usp=sharing" target="_blank">George Taliaferro,</a></p>
+                  <p class="first-byline">Anna Brown, Matt Rasnic; Arbutus, Indiana University</p>
+                  <p class="first-judges"><b>Judges' comments:</b> &ldquo;Great story on Taliaferro. The &lsquo;IU football players applaud the end ...&rsquo; photo is not as strong as the others in this package. Nice pull quote and packaging of spreads overall.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>      <div class="second">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="second-rank">#2</div>
+                </div>
+
+                <div class="col-md-10">
+                  <p class="_hed"><a href="https://drive.google.com/file/d/1i_Fix4KP0z-B93rnQbamkY0n5MyKPcPY/view?usp=sharing" target="_blank">Notre Dame Versus Navy</a></p>
+                  <p class="_byline">Conrad Palor, Natalie Behling, Kaleigh Brauns; The Dome, University of Notre Dame</p>
+                  <p class="_judges"><b>Judges' comments:</b> &ldquo;Great action shot for the dominant image. Spacing on the spread overall is nice except for the trapped space between the dominant and the game’s score at the top and feels stair-steppy. The margins are a bit confusing as well. Would like to see jersey numbers incorporated in the captions and copy.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+
+            <hr>      <div class="third">
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="third-rank">#3</div>
+                </div>
+
+                <div class="col-md-10">
+                  <p class="_hed"><a href="https://drive.google.com/file/d/10YlxgcSzbVwdhx72-2Rg4VA_wKrF981Q/view?usp=sharing" target="_blank">Joey Brunk is learning a new system on a familiar floor</a></p>
+                  <p class="_byline">Matt Cohen, Colin Kulpa, Matt Rasnic
+                    ; Arbutus, Indiana University</p>
+                    <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice profile and portrait of Brunk. The story does switch tenses at random, which takes the reader out of the story. Stick to past tense and try to avoid editorializing in the copy.&rdquo;</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr>      <h2 class="subhead"><b>Best Student Life Spread</b></h2>
+              <div class="first">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="https://drive.google.com/file/d/1krFzqH8w5jYc5LFfcQiWFnaPXpoFkhIK/view?usp=sharing" target="_blank"><img class="first-photo" src="img/yearbook/BestStudentLifeSpread.jpg"></a>
+                  </div>
+
+                  <div class="col-md-8">
+                    <p class="first-hed"><a href="https://drive.google.com/file/d/1krFzqH8w5jYc5LFfcQiWFnaPXpoFkhIK/view?usp=sharing" target="_blank">A little less than kind</a></p>
+                    <p class="first-byline">Annie Aguiar, Elle Kreamer; Arbutus, Indiana University</p>
+                    <p class="first-judges"><b>Judges' comments:</b> &ldquo;Incredible story and accompanying images! Probably my favorite in this book.&rdquo;</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr>      <div class="second">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="second-rank">#2</div>
+                  </div>
+
+                  <div class="col-md-10">
+                    <p class="_hed"><a href="https://drive.google.com/file/d/1XXol7eTZMAL2ulD_zLCN3LgIYKCF-PKT/view?usp=sharing" target="_blank">Walk the Walk Week</a></p>
+                    <p class="_byline">Monica Mesecar, Oksana Oleshchuk, Maddie McBride; The Dome, University of Notre Dame</p>
+                    <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice variety of images and great dominant photo. Great coverage of an event specific to your university. Would like to see more paragraph structure in this story. Hard to tell what a quote or transition is. Try to avoid editorializing in the copy.
+                      &rdquo;</p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>      <div class="third">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <div class="third-rank">#3</div>
+                    </div>
+
+                    <div class="col-md-10">
+                      <p class="_hed"><a href="https://drive.google.com/drive/u/0/folders/1HP3Y9QltSKAfEmmGNylFEV7pJVmTfmdW" target="_blank">From here to Miss America</a></p>
+                      <p class="_byline">Brea Haller, Nayasia Hubbert; The Sycamore, Indiana State University</p>
+                      <p class="_judges"><b>Judges' comments:</b> &ldquo;Nice photography, but the lack of a dominant image or element throws the spread off balance. It is also not very easy to read the copy on the salmon-colored bar. Nice quotes from Taylor as well that tie back to your university.&rdquo;</p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+              </div>
+
+              <div class="col-md-4 float-sm-left">
+                <h2 class="sans-hed" style="font-size: 1.4rem;">Browse our other categories</h2>
+                <div class="box">
+                  <!-- <ul> -->
+                  <li class="box-item"><a href="emily-isaacman-brook-baker-journalist-of-the-year-2021.html">Brook Baker Indiana Collegiate Journalist of the Year</a></li>
+                  <li class="box-item"><a href="icpa-advertising.html">Advertising</a></li>
+                  <li class="box-item"><a href="icpa-literary-magazine.html">Literary Magazine</a></li>
+                  <li class="box-item"><a href="icpa-news-magazine.html">News Magazine</a></li>
+                  <li class="box-item"><a href="icpa-newspaper-division-1.html">Newspaper Division 1</a></li>
+                  <li class="box-item"><a href="icpa-newspaper-division-2.html">Newspaper Division 2</a></li>
+                  <li class="box-item"><a href="icpa-newspaper-division-3.html">Newspaper Division 3</a></li>
+                  <li class="box-item"><a href="icpa-online.html">Online</a></li>
+                  <li class="box-item"><a href="icpa-yearbook.html">Yearbook</a></li>
+                  <!-- </ul> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </body>
+        </html>

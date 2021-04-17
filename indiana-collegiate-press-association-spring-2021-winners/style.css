@@ -1,0 +1,245 @@
+.greeting {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.navbar-text {
+  font-family: 'PT Serif', serif;
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.copy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.caption  {
+  font-family: 'PT Sans', sans-serif;
+  color: #747474;
+  font-style: italic;
+  font-size: 0.9em;
+  padding-bottom: 5px;
+  margin-top: -4px;
+}
+
+.box  {
+  background-color: #dbdbdb;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+ul  {
+  list-style-type: none;
+  padding: 0;
+}
+
+.box-item::before  {
+  content: "\2192";
+  padding-right: 5px;
+}
+
+.navbar .navbar-collapse:hover .dropdown-menu  {
+    display: block;
+}
+
+.dropdown-item  {
+  text-align: right;
+}
+
+.navbar-hed {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.footer  {
+  background-color: #000fb0;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-text  {
+  color: white;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sans-hed{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.section-hed {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: .5px;
+  font-weight: 700;
+  color: black;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #FFD0AE 40%);
+}
+
+.subhead  {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: normal;
+  margin-top: 3rem;
+  visibility:  visible;
+}
+
+.opening-line-item  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.first-photo  {
+  width: 250px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 3%;
+  height: 175px;
+  object-fit: cover;
+  left: 0px;
+  top: 0px;
+}
+
+.first-rank  {
+  background-color: #FFD700;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 100%;
+  /* height: 75px; */
+  float: left;
+  padding: 17%;
+  margin-bottom: 3%;
+}
+
+.first-hed  {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.first-byline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+.first-judges {
+  font-family: 'PT Serif', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.second-rank  {
+  background-color: #C0C0C0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 100px;
+  height: 75px;
+  float: left;
+  padding: 17%;
+  margin-bottom: 3%;
+}
+
+._hed {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  margin-left: 5px;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+._byline  {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+._judges  {
+  font-family: 'PT Serif', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.third-rank  {
+  background-color: #cd7f32;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  vertical-align: middle;
+  font-weight: 600;
+  width: 100px;
+  height: 75px;
+  float: left;
+  padding: 17%;
+  margin-bottom: 3%;
+}
+
+.winner-year  {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin-bottom: -3px;
+}
+
+.winner-name  {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: -3px;
+}
+
+.winner-school  {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.pull-quote {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  border-left: 3px solid #dbdbdb;
+  padding-left: 1rem;
+  margin-left: 1rem;
+  width: 65%;
+}
+
+@media (max-width: 767px) {
+  .pull-quote {
+    width: 95%;
+  }
+
+  .mobile-float {
+    width: 95%;
+  }
+}
