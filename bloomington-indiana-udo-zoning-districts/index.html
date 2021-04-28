@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS/JS/then Popper.js -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Bootstrap JS stuff -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome to load navbar icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" type="text/css" href="global.css">
+  <link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+  <!-- Load fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Mapbox elements -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+
+  <title>Rezoning: Explained | Indiana Daily Student</title>
+
+  <!--Facebook Social Card-->
+  <meta property="og:url" content="specials.idsnews.com/bloomington-indiana-udo-zoning-districts"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Here’s what you need to know about zoning controversy in Bloomington." />
+  <meta property="og:description" content="City council officials meet May 5 to vote on adding three new zoning districts."/>
+  <meta property="og:site_name" content="Indiana Daily Student">
+  <meta property="og:image" content="https://snworksceo.imgix.net/ids/e94daa16-a2b6-4114-91f1-41097fc9f703.sized-1000x1000.jpg?"/>
+
+  <!--Twitter Social Card (Be sure to change these!)-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@idsnews">
+  <meta name="twitter:creator" content="@idsnews">
+  <meta name="twitter:title" content="Here’s what you need to know about zoning controversy in Bloomington.">
+  <meta name="twitter:description" content="City council officials meet May 5 to vote on adding three new zoning districts.">
+  <meta name="twitter:image" content="https://snworksceo.imgix.net/ids/e94daa16-a2b6-4114-91f1-41097fc9f703.sized-1000x1000.jpg?">
+
+  <style>
+  #map {
+    top:0;
+    height: 100vh;
+    width:100%; /*setting to 100% from 100vw because initially the map would extend beyond page*/
+    position: sticky;
+    /* position: -webkit-sticky; */
+  }
+  #header {
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+  #header h1, #header h2, #header h3, #header p {
+    margin: 0;
+    padding: 15px;
+    text-align: left;
+  }
+  #footer {
+    width: 100%;
+    min-height: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    position: relative;
+    z-index: 5;
+  }
+  #features {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .centered {
+    width: 50vw;
+    margin: 0 auto;
+  }
+  .lefty {
+    width: 33vw;
+    margin-left: 5vw;
+  }
+  .righty {
+    width: 33%;
+    margin-left: 62%;
+  }
+  .fully {
+    width: 100%;
+    margin: auto;
+  }
+  .light {
+    color: #444;
+    background-color: #fafafa;
+  }
+  .dark {
+    color: #fafafa;
+    background-color: #444;
+  }
+  .step {
+    padding-bottom: 50vh;
+    /* margin-bottom: 10vh; */
+    opacity: 0.25;
+    position: relative;
+    position: -webkit-relative;
+  }
+  .step.active {
+    z-index: 10000;
+    opacity: 0.9;
+  }
+
+  .step div {
+    padding:  10px 15px;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: left;
+    z-index: 1000;
+  }
+
+  .step p {
+    text-align: left;
+    padding: 10px 15px;
+  }
+
+  .step h3 {
+    text-align: left;
+    padding: 10px 15px;
+  }
+
+  .step img {
+    width: 100%;
+  }
+
+  @media (max-width: 750px) {
+    .centered, .lefty, .righty, .fully {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Fix issue on mobile browser where scroll breaks  */
+  .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+  .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+    touch-action: unset;
+  }
+
+  </style>
+
+  <!-- START Ad content: this goes in the head content -->
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+  <script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  </script>
+
+  <script>
+  googletag.cmd.push(function() {
+    //all other leaderboards
+    var mapping1 = googletag.sizeMapping()
+    .addSize([768, 0], [728, 90]) // Desktops and Tablets
+    .addSize([0, 0], [320, 50]) // Mobile devices
+    .build();
+    googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+    googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+  </script>
+  <!-- END Ad content of this goes in the head content -->
+
+</head>
+<body>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NBJX8F');</script>
+  <!-- End Google Tag Manager -->
+
+  <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light navbar-default fixed-top transparentnavbar">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="https://idsnews.com"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="50" viewBox="0, 0, 500, 209">
+      <g id="Layer_1">
+        <g>
+          <path d="M62.066,208.553 L62.066,0.447 L-0,0.447 L-0,208.553 z" fill="#FFFFFF"/>
+          <path d="M175.329,208.553 C236.272,208.553 298.9,187.489 298.9,104.36 C298.9,19.826 239.923,0.447 179.261,0.447 L99.782,0.447 L99.782,208.553 z M161.849,56.616 L177.295,56.616 C218.298,56.616 235.991,68.412 235.991,104.36 C235.991,140.588 217.737,154.35 180.104,154.35 L161.849,154.35 z" fill="#FFFFFF"/>
+          <path d="M406.693,208.553 C465.18,208.553 500,182.165 500,141.36 C500,91.306 460.555,82.601 415.398,78.793 C385.474,76.345 377.041,73.896 377.041,64.103 C377.041,56.214 383.57,52.95 403.428,52.95 C423.559,52.95 449.402,59.751 460.827,67.368 L490.751,24.114 C476.605,12.689 450.49,0.447 402.612,0.447 C356.911,0.447 316.922,17.585 316.922,66.279 C316.922,115.517 359.087,126.671 402.34,130.207 C431.992,132.655 440.153,135.648 440.153,144.081 C440.153,152.242 433.352,158.771 404.789,158.771 C382.482,158.771 354.462,151.426 334.332,137.552 L305.497,178.629 C326.715,195.495 353.374,208.553 406.693,208.553 z" fill="#FFFFFF"/>
+        </g>
+      </g>
+    </svg></a>
+
+    <span class="navtext nav-before">Rezoning: Explained</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <p class="hithere"><i class="fas fa-bars"></i></p>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="text-align: right;">
+      <ul class="navbar-nav nav-white ml-auto">
+
+        <!--Be sure to update these links with the right social sharing ones-->
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=specials.idsnews.com%2Fbloomington-indiana-udo-zoning-districts"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=specials.idsnews.com/bloomington-indiana-udo-zoning-districts"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://www.reddit.com/submit?title=What%20city%20council%27s%20new%20zoning%20districts%20could%20mean&url=specials.idsnews.com/bloomington-indiana-udo-zoning-districts"><i class="fab fa-reddit"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div id="header">
+  <div id="map"></div>
+  <div id="story"></div>
+</div>
+
+<div class="container-fluid" style="height: 35vh; margin-top: 3rem; margin-bottom: 3rem;" id="hedd">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-8">
+      <div>
+        <h3 class="subheadline">Some residents are worried.</h3>
+        <h3 class="subheadline">City officials are optimistic.</h3>
+        <h3 class="subheadline">City council begins debate this week.</h3>
+        <h3 class="headline">Here’s what you need to know about zoning controversy in Bloomington.</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row d-flex">
+
+    <div class="col-md-3" style="padding-bottom: 30px">
+      <div class="bylines">
+        <p class="byline">Published Apr. 27, 2021</p>
+        <hr>
+        <p class="byline">Written by <a class="byline-link" href="https://www.idsnews.com/staff/Cate-charron" target="_blank">Cate Charron</a></p>
+        <p class="subline"><a class="subline-link" href="mailto:catcharr@iu.edu?subject=About the UDO piece" target="_blank">catcharr@iu.edu</a> | <a class="subline-link" href="https://twitter.com/catecharron" target="_blank">@catecharron</a></p>
+        <p class="byline">Photos by <a class="byline-link" href="https://www.idsnews.com/staff/Abbie-Gressley" target="_blank">Abbie Gressley</a></p>
+        <p class="subline"><a class="subline-link" href="mailto:abbgress@iu.edu?subject=About the UDO piece" target="_blank">abbgress@iu.edu</a> | <a class="subline-link" href="https://twitter.com/abbie_photos" target="_blank">@abbie_photos</a></p>
+        <p class="byline">Web development by <a class="byline-link" href="https://www.idsnews.com/staff/vivek-rao" target="_blank">Vivek Rao</a></p>
+        <p class="subline"><a class="subline-link" href="mailto:vivrao@iu.edu?subject=About the UDO piece" target="_blank">vivrao@iu.edu</a> | <a class="subline-link" href="https://twitter.com/v1vra0" target="_blank">@v1vra0</a></p>
+
+        <hr>
+
+      </div>
+    </div>
+
+
+    <div class="col-md-6 story">
+      <p>A sharp divide exists between Bloomington residents regarding whether duplexes and other multiplexes should be allowed in traditionally single-family residential neighborhoods.</p>
+
+      <p>The City of Bloomington is revising its <a href="https://bloomington.in.gov/planning/udo/map/updates" target="_blank" class="story-link">Unified Development Ordinance and Zoning Map</a>. The proposed plans would add three new zoning districts to designate areas for student housing, green spaces and multiple forms of housing.</p>
+
+      <p>The rezoning efforts are part of the larger <a href="https://bloomington.in.gov/sites/default/files/2018-04/Final%20Council%20Amended%20CMP%20%20Web%202.pdf" class="story-link" target="_blank">2018 City of Bloomington Comprehensive Plan</a>, which set goals for the city to achieve by 2040. City officials use the plan as a guide for their decisions on the allotment of funds and resources, including sustainability and diversification of the housing stock.</p>
+    </div>
+  </div>
+
+  <div class="row d-flex">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 story">
+      <p>Diversification of types of housing near downtown would allow more people to live near downtown amenities, City of Bloomington spokesperson Yael Ksander said. Implementing the UDO’s goals would help reduce the city’s carbon footprint by decreasing dependence on vehicles for travel, Ksander said. She said it would also create more housing near downtown and limit sprawl, which is the uncontrolled outward growth of an urban area.</p>
+
+      <p>The city’s <a href="https://storymaps.arcgis.com/stories/6eebfc6a1ee74332902efde15b3dd1d7" target="_blank" class="story-link">website</a> said it intends for the proposed R4 zone to provide diverse housing options in desirable residential neighborhoods, allowing more people to reap the benefits of living in those areas.</p>
+
+      <p>The establishment of R4 would reclassify several pockets of neighborhoods previously considered single-family <a href="https://bloomington.in.gov/business/zoning-districts" target="_blank" class="story-link">residential districts</a> to allow duplex development. In these districts are the city’s “core neighborhoods,” which are older neighborhoods on the perimeter of Bloomington’s downtown. Duplexes are currently not allowed to be built in these neighborhoods.</p>
+
+      <p>Many residents are worried about overcrowding, student rentals and outside rental companies buying properties in the city’s core neighborhoods if the UDO ordinance passes. City council meetings begin Wednesdays 6:30 p.m. on <a href="https://bloomington.in.gov/council" class="story-link" target="_blank">Zoom</a>. The council will discuss both ordinances this week and have time for public comment.</p>
+    </div>
+
+    <div class="col-md-3" style="padding-bottom: 30px">
+      <p style="border-bottom: 2px solid black; font-size: 1.31rem;"><b>Jump to section:</b></p>
+      <p class="toc"><a href="#what-is-udo" class="glossary">What is the UDO, and why is it controversial?</a></p>
+      <p class="toc"><a href="#r4-dense" class="glossary">R4 could allow for more housing closer to downtown. Some say the neighborhoods are already dense enough.</a></p>
+      <p class="toc"><a href="#affordable-housing" class="glossary">Some say these changes will create affordable housing for residents. Others say they’ll actually benefit big companies.</a></p>
+      <p class="toc"><a href="#mixed-messaging" class="glossary">Mixed messaging on zoning changes have made some residents feel betrayed.</a></p>
+      <p class="toc"><a href="#historic-buildings" class="glossary">Will historic buildings be demolished in favor of duplexes? It’s extremely unlikely.</a></p>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- AD BLOCK -->
+<div class="bg-light ad-block">
+  <div class="container">
+    <div class="col-md-12">
+      <p class="ad-caption">Advertisement</p>
+      <div class="ad-code">
+        <!-- BEGIN /32635621/rectangle1 -->
+        <div id='div-gpt-ad-1512489859064-1' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-1'); });
+          </script>
+        </div>
+        <!-- END /32635621/rectangle1 -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END AD BLOCK -->
+
+<div class="container">
+  <div class="row d-flex">
+    <div class="col-md-3" style="padding-bottom: 30px">
+      <hr>
+      <h1 class="explainer-hed">Zoning laws are hard.</h1>
+      <p class="explainer">That’s why we’ve compiled a glossary of key words you need to know.</p>
+      <button type="button" data-toggle="modal" data-target="#documents" class="btn btn-outline-dark btn-sm">Glossary</button>
+      <hr style="margin-bottom: 30px;">
+    </div>
+
+    <div class="col-md-6 story">
+      <p class="section-hed" id="what-is-udo">What is the UDO, and why is it controversial?</p>
+
+      <p>The city has been working on updating the UDO since February 2018 through the addition of these three proposed zoning districts: Mixed-Use Student Housing, Parks and Open Space and R4. The initial UDO is amended through ordinances.</p>
+
+      <p>The proposed R4 district has caused the most controversy.</p>
+
+      <p>Stop Bloomington Upzoning started <a href="https://stopbtownupzoning.org/stop-bloomington-upzoning-resolution/" target="_blank" class="story-link">a petition</a> more than 630 residents had signed as of Wednesday opposing the city’s plan to allow R4 zoning in core neighborhoods. <a href="https://stopbtownupzoning.org" target="_blank" class="story-link">Stop Bloomington Upzoning</a> started as a Facebook group in 2019 that eventually became an organization of people who write a blog to inform residents about housing policies and oppose upzoning, founder Peter Dorfman said.</p>
+
+      <p class="_related">Related: [<a href="https://www.idsnews.com/article/2021/04/bloomington-city-council-proposed-changes-zoning-rules" target="_blank" class="story-link">UPDATE: Bloomington City Council approves changes to zoning rules</a>]</p>
+
+      <p>On March 29, the Bloomington Plan Commission passed a recommendation to allow plex development in the R4 district following a narrow 5-4 vote. For the decision to go into effect, the Bloomington City Council has to pass ordinances updating the UDO.</p>
+
+      <p class="_related">Related: [<a href="https://www.idsnews.com/article/2021/03/bloomington-plan-commission-city-council-duplexes-udo" target="_blank" class="story-link">Bloomington commission narrowly recommends duplexes by right, city council to vote next</a>]</p>
+
+      <p>On Wednesday, the Bloomington City Council will debate Ordinance 21-23, which would amend the UDO, and Ordinance 21-24, which would repeal and replace the Official Zoning Map, to include the three new districts. The council can vote on whether to pass the ordinances May 5, though this date could be postponed.</p>
+
+      <p>The Bloomington City Council can approve, amend, or deny the petition within 90 days of March 29. Denying the petition would kill it for good. If the council choses to amend a petition, it would be sent back to the Plan Commission.</p>
+
+      <div class="big-image">
+        <img src="https://snworksceo.imgix.net/ids/e94daa16-a2b6-4114-91f1-41097fc9f703.sized-1000x1000.jpg?" width="100%" alt="A sign near Bryan Park reads ‘Mayor Hamilton: We didn't elect you to destroy the neighborhoods.’ A proposed zoning district would allow duplexes and similar structures to be built in traditionally single-family home neighborhoods.">
+        <p class="caption">A sign near Bryan Park reads "Mayor Hamilton: We didn't elect you to destroy the neighborhoods." A proposed zoning district would allow duplexes and similar structures to be built in traditionally single-family home neighborhoods.</p>
+      </div>
+
+      <p>The final step would be for Mayor John Hamilton to decide whether to sign the ordinances into law.</p>
+
+      <p>Ksander said there was overwhelming opposition to R4 when it was introduced to the public in October because residents said the proposed changes to neighborhoods were too drastic. </p>
+
+      <p>After receiving community feedback, city planners and other leadership have reduced the size of the R4 district by 75% in comparison to the October 2020 version and made modifications to what could be built in the district, said Jacqueline Scanlan, Bloomington development services manager. </p>
+
+      <p>Scanlan said the city gave residents opportunities to speak about the proposed district via feedback forms, comments to city departments, talks with neighborhood association members and six public meetings.</p>
+
+      <p>Ksander said the mayor thinks the rezoning process has been robust and engaged much of the Bloomington community.</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- AD BLOCK -->
+<div class="bg-light ad-block">
+  <div class="container">
+    <div class="col-md-12">
+      <p class="ad-caption">Advertisement</p>
+      <div class="ad-code">
+        <!-- BEGIN /32635621/rectangle1 -->
+        <div id='div-gpt-ad-1512489859064-4' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-4'); });
+          </script>
+        </div>
+        <!-- END /32635621/rectangle1 -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END AD BLOCK -->
+
+<div class="container">
+  <div class="row d-fle justify-content-center">
+    <div class="col-md-6 story">
+      <p class="section-hed" id="r4-dense">R4 could allow for more housing closer to downtown. Some say the neighborhoods are already dense enough.</p>
+
+      <p>Residents are worried that allowing duplexes and other multi-family structures will change the character of neighborhoods as more people will be living in a smaller space. More rental opportunities also open the door for more students to move into these neighborhoods.</p>
+
+      <p>Scanlan said different housing, like duplexes, permitted in R4 would develop over time and would not be a dramatic change.</p>
+
+      <p>IU’s student population makes up nearly half of the total city population, which is why students’ presence is such a large part of the zoning debate. </p>
+
+      <p>Bloomington had an estimated population of 85,755 in 2019, according to the <a href="https://www.census.gov/quickfacts/fact/table/bloomingtoncityindiana/PST045219" class="story-link" target="_blank">U.S. Census</a>. IU-Bloomington had 42,760 students in 2019, according to the <a href="https://apnews.com/article/b0fe825c58144bcca96eff534cdb4f0c" class="story-link" target="_blank">Associated Press</a>.</p>
+
+      <p>Dorfman said R4 would overcrowd residents of the core neighborhoods leading them to sacrifice their quality of life.</p>
+
+      <p>Dorfman said people have fears about certain core neighborhoods changing from residential middle-class neighborhoods to largely student rentals. He said people who live closer to campus are worried about the character of their neighborhoods changing.</p>
+
+      <p>“Nothing against students, but they live in a different way from the way the typical middle class working people live,” Dorfman said.</p>
+
+      <div class="big-image">
+        <img src="https://snworksceo.imgix.net/ids/6766e04a-3b26-4f13-86db-62978637b68d.sized-1000x1000.jpg?" width="100%" alt="Houses in Maple Heights neighborhood appear April 21 in Bloomington. Maple Heights is one of the multiple core neighborhoods in Bloomington. Residents have raised concerns about increased density, students and quality of life, if the UDO amendments are passed.">
+        <p class="caption">Houses in Maple Heights neighborhood appear April 21 in Bloomington. Maple Heights is one of the multiple core neighborhoods in Bloomington. Residents have raised concerns about increased density, students and quality of life, if the UDO amendments are passed.</p>
+      </div>
+
+      <p>Steve Volan, who represents District VI for the city council, said students want to live in these neighborhoods because they’re closer to campus. He said many of these neighborhoods have been around for about 100 years, and many have gridded streets and traditional pre-World War II architecture, which is why some residents are concerned about students moving in and changing the character of the neighborhood. </p>
+
+      <p>Volan said students and single-family home residents are two very different groups of people, and some non-students don’t like having students as neighbors because they expect them to be stereotypically irresponsible. He disagrees with those assumptions.</p>
+
+      <p>“Most students are not partiers. They're not noisy. They're not parking six cars on a gravel lot or in the grass in their yard,” Volan said. “But that doesn't matter. The fear of that alone is driving a lot of this.”</p>
+
+      <p>Students are often referred to as “kids,” Volan said, but students are constituents who can vote and have a right to be treated equally to other residents.</p>
+
+      <p>“It's not students’ fault that they exist,” Volan said.</p>
+
+      <div class="pull-quote-center">
+        <p class="quote">“It's not students’ fault that they exist.”</p>
+        <p class="attribute"> — Steve Volan, city council member</p>
+      </div>
+
+      <div class="big-image">
+        <img src="https://snworksceo.imgix.net/ids/89ca7ab7-db97-41e8-ab29-de38fafffa1a.sized-1000x1000.jpg?" width="100%" alt="City Flats on Walnut apartments appear April 21 on Walnut Street. Plexes would be permitted in the proposed R4 district, if the Bloomington City Council passes two major UDO amendments April 28.">
+        <p class="caption">City Flats on Walnut apartments appear April 21 on Walnut Street. Plexes would be permitted in the proposed R4 district, if the Bloomington City Council passes two major UDO amendments April 28.</p>
+      </div>
+
+      <p>Susan Sandberg, city councilmember and at-large representative, said not all students are the same and some are better neighbors than others. She said she has had respectful student neighbors as well as ones who were disruptive. She said students might not always care about taking care of property or buy into the community because they stay in Bloomington temporarily.</p>
+
+      <p>Sandberg said people are concerned R4 could cause over-occupancy in core neighborhoods because adding plexes would increase the amount of people residing in the area.</p>
+
+      <p>“We don't have a problem with students per se — it's the over-occupancy,” Sandberg said. “That's multiple cars, that's multiple trash, that's multiple noise.”</p>
+
+      <p>Permanent residents may become fed up and decide to move elsewhere if multiplex rentals emerge around their homes because they expect a quiet environment in their neighborhoods, Sandberg said.The potential change would not be fair to the homeowners and more permanent renters, she said.</p>
+
+      <p>Maria Bashmakov, an IU senior and College Democrats at IU director of political affairs, said the stereotype of students as noisy, inconsiderate neighbors is not accurate and many students are quiet and respectful.</p>
+
+      <p>She said the new UDO revisions will create more affordable housing and provide more housing in desirable locations for students and other residents. Affordable housing located closer to campus would improve college students’ educational experience and make commuting easier, she said.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AD BLOCK -->
+<div class="bg-light ad-block">
+  <div class="container">
+    <div class="col-md-12">
+      <p class="ad-caption">Advertisement</p>
+      <div class="ad-code">
+        <!-- BEGIN /32635621/rectangle1 -->
+        <div id='div-gpt-ad-1512489859064-4' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-4'); });
+          </script>
+        </div>
+        <!-- END /32635621/rectangle1 -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END AD BLOCK -->
+
+<div class="container">
+  <div class="row d-flex">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 story">
+      <p>Sam Curry, an IU graduate student and member of <a href="https://www.neighborsunited.info" target="_blank" class="story-link">Neighbors United</a> — a local group working to support affordable, equitable housing — said the R4 district would help achieve the amount of housing needed in the city. He said allowing a variety of housing options including duplexes and loosening restrictions on traditionally single-family housing districts would be beneficial.</p>
+
+      <p>“It won't necessarily be either you have to choose to rent an apartment or you have to choose to own a large single family home,” he said.</p>
+
+      <p>Curry said allowing duplexes and multi-family structures could create more flexible housing options. They would allow the general public, not just students, to find housing that fits their needs, he said.</p>
+
+      <p>“A lot of students are in Bloomington for a shorter period of time,” Curry said. “There are always going to be more students coming in, and students are always going to be an important part of the community.”</p>
+
+      <p>Curry said he hopes this sentiment of non-student residents not wanting to live among students is not a barrier to passing the UDO ordinances. Having diverse neighbors would only enhance a neighborhood’s character and community, he said.</p>
+
+      <p class="section-hed" id="affordable-housing">Some say these changes will create affordable housing for residents. Others say they’ll actually benefit big companies.</p>
+
+      <p>Many in support of R4 believe the district will help provide more affordable housing closer to downtown, while others feel large development companies will take advantage of the more relaxed zoning code to build more expensive rental multiplexes out of single-family homes.</p>
+    </div>
+
+    <div class="col-md-3" style="padding-bottom: 30px">
+      <p>Bloomington, IN: Some quick facts</p>
+      <hr>
+      <p class="toc"><b>Median Household Income:</b> $37,077</p>
+      <p class="toc"><b>Persons in poverty:</b> 35.3%</p>
+      <p class="toc"><b>Owner-occupied housing unit rate:</b> 35.5%</p>
+      <p class="toc"><b>Median value of owner-occupied housing units:</b> $200,700</p>
+      <p class="toc"><b>Median gross rent:</b> $917</p>
+      <p class="credit">SOURCE: <a href="https://www.census.gov/quickfacts/fact/table/bloomingtoncityindiana/INC910219#INC910219" target="_blank" class="story-link">U.S. Census</a></p>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 story">
+      <p>Affordable housing is defined as housing costs that <a href="https://www.huduser.gov/portal/pdredge/pdr-edge-featd-article-081417.html" target="_blank" class="story-link">do not exceed 30% of a household’s income</a>. A <a href="https://bloomington.in.gov/sites/default/files/2020-08/BloomingtonHousingStudy2020.pdf?target=blank" target="_blank" class="story-link">2020 Bloomington housing study</a> found the biggest housing shortage in the city is units for households making under $25,000 per year. Bloomington is the <a href="https://247wallst.com/special-report/2017/07/07/the-most-expensive-city-in-every-state/4/" target="_blank" class="story-link">most expensive place</a> to live in the state of Indiana, according to a 2017 report from 24/7 Wall St.</p>
+
+      <p>The R4 district would allow multi-family housing in traditionally single-family lots, which would increase the supply of housing in selected neighborhoods, Volan said. This would create housing for a growing middle class that can't afford to buy a house but wants to live closer to downtown, he said.</p>
+
+      <p>Duplexes would help solve the problem of missing middle housing in Bloomington, Ksander said. <a href="https://missingmiddlehousing.com" target="_blank" class="story-link">Missing middle housing</a> refers to the absence of house-sized structures that have multiple units in a neighborhood setting. These include duplexes, triplexes, fourplexes and townhouses and other housing forms.</p>
+
+      <p>Creating housing, like duplexes, will make housing costs more affordable, Ksander said.</p>
+
+      <p>“We want the things that are wonderful about Bloomington to stay wonderful about Bloomington,” Ksander said. “However, one of the things that is not wonderful is that housing is so expensive.”</p>
+
+      <div class="big-image">
+        <img src="https://snworksceo.imgix.net/ids/00431554-46b0-44bc-8710-329ff2b107c9.sized-1000x1000.jpg?" width="100%" alt="A duplex at MeadowCreek neighborhood appears April 21 in Bloomington. The Bloomington City Council will talk about two major UDO amendments April 28.">
+        <p class="caption">A duplex at MeadowCreek neighborhood appears April 21 in Bloomington. The Bloomington City Council will talk about two major UDO amendments April 28.</p>
+      </div>
+
+      <p>Wages and salaries in Bloomington are too low for many working-class people to achieve homeownership, Sandberg said, especially with rents increasing. </p>
+
+      <p>“The biggest gap is low-income housing for low-income folks,” she said. </p>
+
+      <p>Sandberg said she doesn't think densification would lead to more affordable prices because developers will charge higher prices to make a profit. Local governments in Indiana cannot enact rent control, which is a limit on what a landlord can charge for rent.</p>
+
+      <p class="_related">Related: [<a href="https://www.idsnews.com/article/2021/04/bloomington-city-council-switchyard-park-complex" target="_blank" class="story-link">Bloomington City Council to consider complex near Switchyard Park after committee vote</a>]</p>
+
+      <p>“What we have a big shortage of in Bloomington is jobs that pay enough to live in Bloomington,” Dorfman said.</p>
+
+      <div class="pull-quote-center">
+        <p class="quote">“What we have a big shortage of in Bloomington is jobs that pay enough to live in Bloomington.”</p>
+        <p class="attribute"> — Peter Dorfman, founder of Stop Bloomington Upzoning</p>
+      </div>
+
+      <p>Volan said the potential for large developers to buy up houses to renovate and rent shouldn’t be a barrier to establishing more housing.</p>
+
+      <p>“Everyone who's upset about that sort of thing is right to be upset,” Volan said. “That doesn't necessarily mean that we shouldn't build more housing in those neighborhoods.”</p>
+
+      <p class="section-hed" id="mixed-messaging">Mixed messaging on zoning changes have made some residents feel betrayed.</p>
+
+      <p>Many of the core neighborhoods would have been categorized as R4 districts in the initial UDO proposal, Volan said. Negative public feedback led the planning staff to reduce the proposed R4 area by 75%. Despite the decrease, some core neighborhoods such as Bryan Park, Elm Heights and Maple Heights still would have areas zoned as R4 if the current proposal passes.</p>
+
+      <p>“There are very few places where R4 is allowed,” Volan said. “It's still rubbing single-family homeowners the wrong way.”</p>
+
+      <p>Sandberg said the city administration proposed R4 zoning in core neighborhoods after the 2020 municipal election. Sandberg said residents were assured the new R4 district would be for new developments and not in core neighborhoods, but did not turn out to be true in the initial UDO proposal.</p>
+
+      <p>“I hear from neighbors and neighborhoods all across the city. They're feeling very betrayed and very upset,” Sandberg said. “All of a sudden, those maps come out and R4 is everywhere and the people are going, ‘We've been lied to.’”</p>
+
+      <p>Sandberg, councilmember Dave Rollo and councilmember Ron Smith are sponsoring an UDO amendment that would remove duplexes from single-family residential districts including R1, R2 and R3, which cover the core neighborhoods.</p>
+    </div>
+  </div>
+</div>
+
+<!-- AD BLOCK -->
+<div class="bg-light ad-block">
+  <div class="container">
+    <div class="col-md-12">
+      <p class="ad-caption">Advertisement</p>
+      <div class="ad-code">
+        <!-- BEGIN /32635621/rectangle1 -->
+        <div id='div-gpt-ad-1512489859064-0' align="center">
+          <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-0'); });
+          </script>
+        </div>
+        <!-- END /32635621/rectangle1 -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END AD BLOCK -->
+
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-6 story">
+      <p>Sandberg said she is not opposed to the plexes but doesn’t think they should be allowed in core neighborhoods and should instead be developed along major corridors and transportation lines. Not everyone can live downtown, she said, and housing should be spread out, not focused in already dense neighborhoods.</p>
+
+      <p>The city planning staff has excluded the part of the Comprehensive Plan regarding developing commercial nodes or “village centers” around Bloomington in the UDO, Sandberg said. </p>
+
+      <p>Commercial nodes and surrounding neighborhoods would replicate the walkability and connectivity in downtown to bring city services closer to more residents, Sandberg said, much like the area around South Henderson Street and East Hillside Drive.</p>
+
+      <p class="_related">Related: [<a href="https://www.idsnews.com/article/2021/02/bloomington-city-council-zoning-regulations" target="_blank" class="story-link">Bloomington City Council approves rezoning plan for new apartment complex near College Mall</a>]</p>
+
+      <p>Through the inclusion of the R4 district, Dorfman said the UDO is attempting to densify core neighborhoods and is ignoring the part of the Comprehensive Plan about establishing village centers and steering new development away from dense single-family home neighborhoods.</p>
+
+      <p>The Comprehensive Plan and the UDO do not have a one-to-one correspondence, Planning and Transportation Director Scott Robinson said in a statement to the Indiana Daily Student, and city planning staff make recommendations on how to best apply the plan’s policies and land use designations to the UDO. </p>
+
+      <p>Commercial nodes are separate from the proposed R4 district and included in older neighborhoods and areas further away from downtown in the Comprehensive Plan, Robinson said. City officials can interpret the plan to best reflect current and desired land use patterns, he said.</p>
+
+      <p>Dorfman said city amenities should be spread around the city rather than concentrated downtown. </p>
+
+      <p>“The city has radically oversold the value of this idea of being able to walk to downtown from where you live,” he said. “It's nice, but it's not what defines life in Bloomington.”</p>
+
+      <div class="pull-out">
+        <p>“With greater density in the city comes the challenge to preserve neighborhood character and the opportunity to strengthen neighborhoods by developing small commercial nodes as community gathering places. Existing core neighborhoods should not be the focus of the city’s increasing density.”</p>
+      </div>
+      <p class="credit">SOURCE: <a href="https://bloomington.in.gov/sites/default/files/2018-04/Final%20Council%20Amended%20CMP%20%20Web%202.pdf#page=60" target="_blank">City of Bloomington Comprehensive Plan</a></p>
+
+      <p class="section-hed" id="historic-buildings">Will historic buildings be demolished in favor of duplexes? It’s extremely unlikely.</p>
+
+      <p>Some regulations of Bloomington’s historic and conservation districts trump R4 building permissions to preserve the historical legacy of the homes within those districts. Some core neighborhoods, such as Elm Heights and Prospect Hill, are designated as historic districts and have special building protections.</p>
+
+      <p>Historic Preservation Program Manager Conor Herterich said homes will not be bought, demolished and replaced with duplexes in neighborhoods classified as conservation and historic districts.</p>
+
+      <p>“There's really no concern that there's going to be houses knocked over in these core area neighborhoods and replaced with duplexes,” he said. “It's just not going to happen.”</p>
+
+      <p>However, these protections are not extended to neighborhoods that are not conservation or historic districts. </p>
+
+      <p>In a historic district, the Bloomington Historic Preservation Commission reviews any demolition, new construction or external alteration, Herterich said. These include changes as small as replacing windows or front doors.</p>
+
+      <p>The commission cannot dictate use of a property, meaning it could not stop someone from turning their property into a duplex if certain stipulations are still met, Herterich said. As long as additions or renovations don’t jeopardize a home’s historic character or structural integrity, he said owners could turn homes in those districts into plexes.</p>
+
+      <iframe width="100%" height="520" frameborder="0" src="https://vivrao9.carto.com/builder/56ea9be2-d509-4ad9-9ab1-8a141dccdf11/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+      <p>Herterich said a conservation district is a more suitable classification than a historic district for neighborhoods with a substantial amount of historic features and buildings that also have new construction.</p>
+
+      <p>A conservation district is more lenient than a historic district and only requires commission review for full demolition, moving a structure outside that district and new construction.</p>
+
+      <p>After three years from a conservation district’s creation, Herterich said 51% of property owners need to provide a written rejection or it will become a historic district. This has happened three times in Bloomington: in Prospect Hill, McDoel Gardens and Matlock Heights.</p>
+
+      <p>The commission is not going to give someone a permit to demolish a perfectly fine house, Herterich said. For <a href="https://data.bloomington.in.gov/dataset/historic-sites-and-structures-survey-2018-data/resource/ce9f3ea9-ac5f-41b7-8e12-f7e0c00b161c" target="_blank" class="story-link">certain historical structures</a>, the property is subject to <a href="https://bloomington.in.gov/historic-bloomington/demolition-delay" target="_blank" class="story-link">demolition delay</a>, which requires a demolition permit to undergo commission review.</p>
+
+      <p>If the ordinance to create R4 is passed, Herterich said it would take a significant period of time to see any changes in historically protected neighborhoods. Additionally, few empty lots are available to build new structures in conservation and historical districts. </p>
+
+      <p>Decades of neglect and deferred maintenance on multiple lots would have to take place for the historic character of a neighborhood to be destroyed and changed with new construction, he said.</p>
+
+      <p>“I just don't see that happening overnight, or very quickly, if that happens,” he said. “It really has to be kind of a slow death by 1,000 cuts type of scenario.”</p>
+
+      <div class="pull-quote-center">
+        <p class="quote">“I just don't see that happening overnight, or very quickly, if that happens,” he said. “It really has to be kind of a slow death by 1,000 cuts type of scenario.”</p>
+        <p class="attribute"> — Conor Herterich, Historic Preservation Program Manager</p>
+      </div>
+
+      <p>Herterich said an example of how difficult it is to obtain a demolition permit is 309 S. Davisson St. in Greater Prospect Hill, a historic district. He said the homeowner sought to have the structure demolished after a local builder found almost 60% of the original material needed to be replaced to save it. The commission denied demolition of the home, despite it being located in a more lenient historic district.</p>
+
+      <p>“If they're going to deny a house like that for demolition, they're gonna deny most of everything for demolition,” Herterich said.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="support-us">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+        <p style="font-family: 'Inter', system-ui, sans-serif;">Support independent, award-winning student journalism. <a class="story-link" target="_blank" href="https://www.idsnews.com/page/donate">Donate.</a></p>
+        <hr>
+        <p style="font-family: 'Inter', system-ui, sans-serif;"><small>&copy; Copyright 2020 Indiana Daily Student</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Documents modal -->
+<div class="modal fade" id="documents" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin: auto; width: 100%;">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5><b>Glossary</b></h5>
+        <p class="glossary"><b>The Unified Development Ordinance (UDO):</b> A document governing land use and development in Bloomington</p>
+        <p class="glossary"><b>Comprehensive Plan:</b> A document noting the city’s long-term plan for land use and development</p>
+        <p class="glossary"><b>Bloomington Plan Commission:</b> Nine appointed Bloomington residents who make up the land use and development policy- and decision-making body as well as in an advisory capacity for the Bloomington City Council for rezoning requests, preliminary PUDs, and amendments to the UDO.</p>
+        <p class="glossary"><b>Bloomington City Council:</b> The city of Bloomington’s legislative body </p>
+        <p class="glossary"><b>Zoning district:</b> the land that a government divides into zones with each having a different sets of regulations and uses</p>
+        <p class="glossary"><b>Residential Large Lot (R1):</b> A district for single family residential development on relatively large lots</p>
+        <p class="glossary"><b>Residential Medium Lot (R2):</b> A district for single family residential development on medium-sized lots</p>
+        <p class="glossary"><b>Residential Small Lot (R3):</b> A district protecting and enhancing established residential neighborhoods through small-lot subdivisions, accessory dwelling units and property improvements</p>
+        <p class="glossary"><b>Residential Urban (R4):</b> A district accommodating a variety of housing opportunities, such as duplexes and other multi-family structures on a small urban scale.with pedestrian and vehicle access to public services</p>
+        <p class="glossary"><b>Duplex:</b> A multi-family home with two units within one building</p>
+        <p class="glossary"><b>Affordable housing:</b> Housing costs that do not exceed 30% of a household’s income</p>
+        <p class="glossary"><b>Missing middle housing:</b> A term used to describe the lack of house-sized structures with multiple units in a neighborhood setting, including duplexes, triplexes, fourplexes and townhouses, among other housing forms</p>
+        <p class="glossary"><b>Commercial node:</b> Also known as a “village center,” these are neighborhood-scaled retail and service areas for residents </p>
+        <p class="glossary"><b>Commercial corridor:</b> Streets and roadways that are surrounded with businesses and commercial buildings</p>
+        <p class="glossary"><b>Neighbors United:</b> A Bloomington and Monroe County organization that support policies and changes to provide affordable, equitable and sustainable housing options</p>
+        <p class="glossary"><b>Stop Bloomington Upzoning:</b> An organization with a blog that informs residents about housing policies and opposes upzoning in Bloomington</p>
+        <p class="glossary"><b>Upzoning:</b> Increasing the zoning density of an area or allowing a higher density of units to be developed</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+function checkScroll(){
+  var startY = $('.navbar').height() * 105; //The point where the navbar changes in px
+  if($(window).scrollTop() > startY){
+    $('.navbar').addClass("blackbg");
+  }else{
+    $('.navbar').removeClass("blackbg");
+  }
+  if($(window).scrollTop() > startY){
+    $('.navtext').addClass("nav-title");
+  }else{
+    $('.navtext').removeClass("nav-title");
+  }
+}
+if($('.navbar').length > 0){
+  $(window).on("scroll load resize", function(){
+    checkScroll();
+  });
+}
+</script>
+
+<!-- <script type="text/javascript">
+$.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
+
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
+
+  window.addEventListener('scroll', function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }, {passive: true});
+}
+
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
+
+moveItItem.prototype.update = function(scrollTop){
+  this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+};
+</script> -->
+
+<!-- Mapbox script -->
+<script src="./config.js"></script>
+<script>
+var layerTypes = {
+    'fill': ['fill-opacity'],
+    'line': ['line-opacity'],
+    'circle': ['circle-opacity', 'circle-stroke-opacity'],
+    'symbol': ['icon-opacity', 'text-opacity'],
+    'raster': ['raster-opacity'],
+    'fill-extrusion': ['fill-extrusion-opacity'],
+    'heatmap': ['heatmap-opacity']
+}
+
+var alignments = {
+    'left': 'lefty',
+    'center': 'centered',
+    'right': 'righty',
+    'full': 'fully'
+}
+
+function getLayerPaintType(layer) {
+    var layerType = map.getLayer(layer).type;
+    return layerTypes[layerType];
+}
+
+function setLayerOpacity(layer) {
+    var paintProps = getLayerPaintType(layer.layer);
+    paintProps.forEach(function(prop) {
+        var options = {};
+        if (layer.duration) {
+            var transitionProp = prop + "-transition";
+            options = { "duration": layer.duration };
+            map.setPaintProperty(layer.layer, transitionProp, options);
+        }
+        map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+    });
+}
+
+var story = document.getElementById('story');
+var features = document.createElement('div');
+features.setAttribute('id', 'features');
+
+var header = document.createElement('div');
+
+if (config.title) {
+    var titleText = document.createElement('h1');
+    titleText.innerText = config.title;
+    header.appendChild(titleText);
+}
+
+if (config.subtitle) {
+    var subtitleText = document.createElement('h2');
+    subtitleText.innerText = config.subtitle;
+    header.appendChild(subtitleText);
+}
+
+if (config.byline) {
+    var bylineText = document.createElement('p');
+    bylineText.innerText = config.byline;
+    header.appendChild(bylineText);
+}
+
+if (header.innerText.length > 0) {
+    header.classList.add(config.theme);
+    header.setAttribute('id', 'header');
+    story.appendChild(header);
+}
+
+config.chapters.forEach((record, idx) => {
+    var container = document.createElement('div');
+    var chapter = document.createElement('div');
+
+    if (record.title) {
+        var title = document.createElement('h3');
+        title.innerText = record.title;
+        chapter.appendChild(title);
+    }
+
+    if (record.image) {
+        var image = new Image();
+        image.src = record.image;
+        chapter.appendChild(image);
+    }
+
+    if (record.description) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description;
+        chapter.appendChild(story);
+    }
+
+    container.setAttribute('id', record.id);
+    container.classList.add('step');
+    if (idx === 0) {
+        container.classList.add('active');
+    }
+
+    chapter.classList.add(config.theme);
+    container.appendChild(chapter);
+    container.classList.add(alignments[record.alignment] || 'centered');
+    if (record.hidden) {
+        container.classList.add('hidden');
+    }
+    features.appendChild(container);
+});
+
+story.appendChild(features);
+
+var footer = document.createElement('div');
+
+if (config.footer) {
+    var footerText = document.createElement('p');
+    footerText.innerHTML = config.footer;
+    footer.appendChild(footerText);
+}
+
+if (footer.innerText.length > 0) {
+    footer.classList.add(config.theme);
+    footer.setAttribute('id', 'footer');
+    story.appendChild(footer);
+}
+
+mapboxgl.accessToken = config.accessToken;
+
+const transformRequest = (url) => {
+    const hasQuery = url.indexOf("?") !== -1;
+    const suffix = hasQuery ? "&pluginName=scrollytellingV2" : "?pluginName=scrollytellingV2";
+    return {
+      url: url + suffix
+    }
+}
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: config.style,
+    center: config.chapters[0].location.center,
+    zoom: config.chapters[0].location.zoom,
+    bearing: config.chapters[0].location.bearing,
+    pitch: config.chapters[0].location.pitch,
+    interactive: false,
+    transformRequest: transformRequest
+});
+
+if (config.showMarkers) {
+    var marker = new mapboxgl.Marker({ color: config.markerColor });
+    marker.setLngLat(config.chapters[0].location.center).addTo(map);
+}
+
+// instantiate the scrollama
+var scroller = scrollama();
+
+map.on("load", function() {
+    if (config.use3dTerrain) {
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+        // add the DEM source as a terrain layer with exaggerated height
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+        // add a sky layer that will show when the map is highly pitched
+        map.addLayer({
+            'id': 'sky',
+            'type': 'sky',
+            'paint': {
+                'sky-type': 'atmosphere',
+                'sky-atmosphere-sun': [0.0, 0.0],
+                'sky-atmosphere-sun-intensity': 15
+            }
+        });
+    };
+
+    // setup the instance, pass callback functions
+    scroller
+    .setup({
+        step: '.step',
+        offset: 0.5,
+        progress: true
+    })
+    .onStepEnter(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.add('active');
+        map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+        if (config.showMarkers) {
+            marker.setLngLat(chapter.location.center);
+        }
+        if (chapter.onChapterEnter.length > 0) {
+            chapter.onChapterEnter.forEach(setLayerOpacity);
+        }
+        if (chapter.callback) {
+            window[chapter.callback]();
+        }
+        if (chapter.rotateAnimation) {
+            map.once('moveend', function() {
+                const rotateNumber = map.getBearing();
+                map.rotateTo(rotateNumber + 90, {
+                    duration: 24000, easing: function (t) {
+                        return t;
+                    }
+                });
+            });
+        }
+    })
+    .onStepExit(response => {
+        var chapter = config.chapters.find(chap => chap.id === response.element.id);
+        response.element.classList.remove('active');
+        if (chapter.onChapterExit.length > 0) {
+            chapter.onChapterExit.forEach(setLayerOpacity);
+        }
+    });
+});
+
+// setup resize event
+window.addEventListener('resize', scroller.resize);
+
+</script>
+
+<!-- click anywhere on the page onload to load the steps for Safari -->
+<script>
+window.onload=function(){
+  document.getElementById("step-one").click();
+};
+</script>
+
+</body>
+</html>
