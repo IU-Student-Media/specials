@@ -1,0 +1,334 @@
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+@media (max-width: 640px) {
+    .headerimg {
+        display: block !important;
+        /* flex-direction: column-reverse !important; */
+        
+    }
+    .headerimg div{
+        width: 100% !important;
+    }
+    .headerimg .img1, .headerimg .img{
+        height: 70vh;
+    }
+    .headerimg .pull-quote-center {
+        margin: 0 !important;
+        padding: 2em;
+    }
+}
+@media (min-width: 900px) {
+    .headerimg div.headerh {
+        margin-top: 60%;
+    }
+}
+@media (min-width: 1200px) {
+    .headerimg div.headerh {
+        margin-top: 50%;
+    }
+}
+@media (max-width: 990px) {
+    #orgs h5 {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .eventm {
+        display: none !important;
+    }
+}
+@media (max-width: 767px) {
+    div.smallpnav {
+        display: block !important;
+    }
+    .bigpnav {
+        display:none;
+    }
+    .btt {
+        margin: 1em 0 !important;
+        text-align: left !important;
+    }
+    .event {
+        display: none;
+    }
+    .eventm {
+        display: block !important;
+    }
+    .documentc1 {
+        display: block !important;
+    }
+    .documentc2 {
+        display: none;
+    }
+    .headline {
+        margin: 0 1em;
+    }
+    #orgs h5 {
+        font-size: 1.3rem;
+    }
+}
+#orgs p {
+    margin: .6em 0 !important;
+}
+.nav-title {
+    margin: 0 auto;
+}
+#header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.headerimg {
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%;
+}
+.headerimg .img {
+    width: 60%;
+    background-image: url(https://snworksceo.imgix.net/ids/778f921a-f714-41c5-8b49-874dceae79f1.sized-1000x1000.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: -10em; */
+    background-position: 70% 0;
+}
+.headerimg .img1 {
+    width: 60%;
+    background-image: url(https://snworksceo.imgix.net/ids/e8306cab-632d-4884-b26d-f6399f8de1b4.sized-1000x1000.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: -10em; */
+    background-position: 50% 0;
+}
+.headerimg .headerh {
+    width: 100%;
+    margin-top: 70%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.headerimg div {
+    width: 40%;
+}
+.headerimg .pull-quote-center {
+    width: auto;
+    margin: 40vh 1em;
+}
+.headerimg .pull-quote-center .quote, .headerimg .pull-quote-center .attribute{
+    justify-content: center;
+    text-align: center;
+    color: white;
+    line-height: 2em;
+    /* font-family: 'Inter'; */
+}
+.pull-quote-center .caption {}
+.headerimg .attribute {
+    font-weight: 500;
+}
+.attribute {
+    margin: 0;
+}
+/* .tl_line {
+    margin-left: 7%;
+    border-left: 2px solid black;
+    padding-bottom: 20px;
+} */
+.tl_date {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.1rem;
+}
+.tl_explainer {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: .9rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+.event {
+    /* border: 1px solid black; */
+    color: black;
+    text-align: left;
+    margin-right: 1em;
+    /* border-radius: 1em; */
+    margin-bottom: 1em;
+    position: sticky;
+    top:5em;
+    padding:.5em;
+    border-top: 1px #cc0000 solid;
+}
+
+.event p{
+    color: black;
+}
+.email {
+    display: inline-block;
+    border-radius: 1em;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    
+}
+.email_subject {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.email_tofrom {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 0px;
+}
+.email_body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+.danifesto {
+    /*rgb(32, 0, 0);*/
+    background: white;
+    color: black;
+    
+    /* text-decoration: underline; */
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin: 2em 0 2em 0;
+    width: 100%;
+    object-position: center;
+    border: solid black 1px;
+}
+.danifesto .attribute {
+    color: black;
+}
+.attribute {
+    color: white;
+}
+.victims {
+    padding: 1em;
+    border-radius: 1em;
+    border: solid black 1px;
+    margin: 2em 0 2em 0;
+    /* box-shadow: 10px 10px 0px black; */
+    width: 100%; 
+    background: black;
+    color: white;
+}
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 0;
+}
+.modal-header {
+    justify-content: left;
+}
+.modal-title {
+    padding: 16px 16px 16px 0;
+}
+.pagenav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* padding-left: 1em; */
+    /* border-left: black 4px solid; */
+}
+.pagenav a { 
+    color: inherit; 
+    /* transition: .3s; */
+
+} 
+.pagenav li {
+    margin-bottom: .5em;
+}
+a.left, a#backtotop {
+    color: inherit;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
+}
+
+a.left:hover,a#backtotop:hover  {
+    text-decoration-color: rgb(0, 0, 0);
+}
+.pagenavouter {
+    font-family: 'Inter';
+}
+#part1, #part2, #part3, #part4,#pagenav {
+    margin-bottom: 5em;
+}
+
+#documentc {
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Inter'
+}
+#doctitle {
+    font-family: 'Inter';
+    font-weight: 600;
+}
+#orgs {
+    background-color: rgb(228, 228, 228);
+    border-radius: 1em;
+    padding: 1em;
+}
+#orgsbutton,#orgsbuttonl {
+    transition: .3s;
+    border: none;
+    background: black;
+    color: white;
+    border-radius:.5em;
+    margin-top: 1em;
+}
+
+#orgsbutton:hover,#orgsbuttonl:hover {
+    background: rgb(85, 85, 85);
+}
+
+#orgs p {
+    margin: .2em auto;
+    font-family: 'Inter';
+    font-size: .8rem;
+}
+#orgs div {
+    display: none;
+}
+#orgs h5,#orgsbutton,#orgsbuttonl {
+    font-family: 'Inter';
+    font-weight: 700;
+}
+#orgs b {
+    font-weight: 600;
+}
+.story img {
+    width: 100%;
+}
+
+hr {
+    background-color: #cc0000 !important;
+}
+.dropcap::first-letter {
+    font-weight: 500;
+    font-size: 3.5em;
+    font-family: 'PT Serif';
+    margin-top: .2em;
+    margin-right: .1em;
+    float:left;
+}
+.eventm {
+    background: white;
+    margin-right: 0;
+    top: 3.7em;
+    margin-bottom: 0;
+}
+.credit {
+    line-height: normal;
+    margin: .3em 0;
+}
