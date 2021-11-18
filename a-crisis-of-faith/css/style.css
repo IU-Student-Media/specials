@@ -1,0 +1,175 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    Important notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working. 
+    * Make sure to optimize images before you upload them to CEO or the load time will be massive
+    * When working locally on your computer, use the file path of images to 
+      insert them (for example: <img src="images/photo.jpg" alt="a photo">. 
+      Once you're ready to publish with the IDS, you'll upload them
+      into CEO and replace all those file paths with urls (editors will
+      help you)
+    * IMPORTANT When you're ready to input the story text in the buildout, run the 
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    * Make sure to validate your HTML and CSS code to catch any errors
+        HTML validator: https://validator.w3.org/
+        CSS validator: https://jigsaw.w3.org/css-validator/
+    * this buildout template is mobile first. that means design for a tiny screen in the 
+      general styles, then adjust for desktop in the media queries (see the bottom of the file)
+      More on mobile-first design: https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00 
+    
+    *********************** IMPORTANT ***********************
+    BEFORE YOU SUBMIT, GO THROUGH THIS CHECKLIST: https://docs.google.com/document/d/1eeYAbM9-GZbLrcd-WeJFzeNPrtXEYn-jIBtJbAGLvzc/edit?usp=sharing
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+:root {
+    /* --mycolor: #your color here; */
+    --idsred: #990000;
+
+    /* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+    */
+}
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    background: linear-gradient(rgba(48,48,48,0.75), rgba(48,48,48,0.75)), url('https://images.unsplash.com/photo-1550541231-56ddb7f844ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+ /* adjusts image placement, can also be set as percentages */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines. 
+        Here are some other IDS examples, you can inspect the code to 
+        see how they did it: 
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+.bg-light ad-block {
+  align-items: center;
+}
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
