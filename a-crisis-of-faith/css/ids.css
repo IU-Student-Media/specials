@@ -58,10 +58,10 @@ h1, h2 {
 }
 h1 { /* first headline */
     padding: 42vh 0 0.75em;
-    font-size: 62px;
+    font-size: 52px;
 }
 h2 { /* second headline */
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
 }
 h3 { /* section header */
