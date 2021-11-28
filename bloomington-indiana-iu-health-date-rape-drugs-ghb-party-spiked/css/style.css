@@ -70,7 +70,6 @@ header {
 /* SET ANY MORE STYLES YOU WANT HERE: */
 
 p{
-  padding-top: 1em;
 }
 
 h1 {
@@ -78,7 +77,7 @@ h1 {
   font-weight: 700;
   color:antiquewhite;
   font-style: italic;
-  width: 60%;
+  width: 70%;
   font-size: 280%;
   text-shadow: 3px 3px black;
   /* text-shadow: 3px 3px rgb(17, 133, 148); */
@@ -213,6 +212,7 @@ li::not(::first-line){
 .pull-quote-center{
   border: 4px rgb(17, 133, 148) solid;
   padding: 15px;
+  margin: 1em 0 1em 0;
 }
 
 .highlight.active{
@@ -250,29 +250,31 @@ No media query for `xs` since this is the default */
 } */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 400px) { 
     /* .test {
       background-color: orange;
     } */
     h1{
-      font-size: 2.5em;
+      font-size: 35px;
+      width: 80%;
     }
     h2{
-      font-size: 1.5em;
+      font-size: 20px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     header {
         /* adjust header image positioning for larger devices if needed: */
         /* background-position: 50% 50%; */
     }
     h1{
-      font-size: 3.3em;
+      font-size: 40px;
+      width: 70%;
     }
     h2{
-      font-size: 2em;
+      font-size: 30px;
     }
     /* .test {
       background-color: yellow;
@@ -285,8 +287,37 @@ No media query for `xs` since this is the default */
   }
 }
 
+@media (min-width: 700px) {
+  header {
+      /* adjust header image positioning for larger devices if needed: */
+      /* background-position: 50% 50%; */
+  }
+  h1{
+    font-size: 45px;
+    width: 70%;
+  }
+  h2{
+    font-size: 30px;
+  }
+  /* .test {
+    background-color: yellow;
+  } */
+  .show-desktop {
+    display: block;
+  }
+.show-mobile {
+    display: none;
+}
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  h1{
+    font-size: 55px;
+    width: 60%;
+  }
+  h2{
+    font-size: 35px;
+  }
   /* .test {
     background-color: green;
   } */
