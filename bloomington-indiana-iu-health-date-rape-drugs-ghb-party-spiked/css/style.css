@@ -1,0 +1,300 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+
+    Miscellaneous notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * Make sure to optimize images before you upload them or the load time will be massive
+    * When working locally on your computer, use the file path of images to 
+      insert them. Once you're ready to publish with the IDS, you'll upload them
+      onto the IDS github and replace all those file paths with urls (editors will
+      help you)
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working. 
+    * When you're ready to input the story text in the buildout, run the 
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+*/
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+/* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+*/
+.show-desktop {
+  display: none;
+}
+.show-mobile {
+  display: block;
+}
+
+:root {
+    /* --mycolor: #your color here; */
+}
+header {
+    /* add header image below */
+    /* background: url("https://snworksceo.imgix.net/ids/cd6cda16-c961-4d6e-b5be-6e5128995d9f.sized-1000x1000.jpg?s");  */
+    background-image: url("https://s3.amazonaws.com/snwceomedia/ids/0fd8b94e-ed15-4204-9416-da1fc60acd8c.sized-1000x1000.jpeg");
+    background-position: center center ; /* adjusts image placement */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines. 
+
+        Here are some other IDS examples, you can inspect the code to 
+        see how they did it: 
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300;1,500;1,600&display=swap');
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+p{
+  padding-top: 1em;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color:antiquewhite;
+  font-style: italic;
+  width: 60%;
+  font-size: 280%;
+  text-shadow: 3px 3px black;
+  /* text-shadow: 3px 3px rgb(17, 133, 148); */
+  /* padding: 125px 0 0.75em; */
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  color:antiquewhite;
+  /* color:rgb(150, 222, 231); */
+  width: 85%;
+  font-size: 150%;
+  text-shadow: 2px 2px black;
+}
+
+
+.bylines p {
+  padding:3px;
+}
+
+.event {
+  background: white;
+  margin-right: 1em;
+  top: 5em;
+  margin-bottom: 1em;
+  position: sticky;
+  padding: 0.5em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-top: 1px rgb(54, 187, 204) solid;
+  width: 100%;
+}
+
+.tl-time {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.tl-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-md-3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1em;
+  position: sticky;
+  width: 100%;
+  padding-bottom: 0;
+  /* margin-bottom: 0; */
+  /* border: 1px solid red; */
+  /* padding-right: -15px;
+  padding-left: -15px; */
+}
+
+.col-md-6 story {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 1em
+  position: sticky;
+  width: 100%;
+  border: 1px rgb(17, 133, 148) solid;
+  /* padding-right: -15px;
+  padding-left: -15px; */
+}
+
+
+.drug-box{
+  width: 100%;
+  border: 1px solid black;
+  margin: 2em auto;
+  padding: 25px;
+  /* flex-grow: 1;
+  display: flex; */
+  justify-content: space-between;
+  border: 2.5px rgb(17, 133, 148) solid;
+}
+
+.drug-text p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.3em;
+  margin: 0.3em;
+  padding-top: 0.3em;
+}
+
+li{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  list-style-type: circle;
+}
+
+li::not(::first-line){
+  color: red
+}
+
+.ul{
+  padding-left: 1em;
+}
+
+.drug-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* .attribute {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  margin-top: 0;
+  text-align: center;
+} */
+
+.pull-quote-center{
+  border: 4px rgb(17, 133, 148) solid;
+  padding: 15px;
+}
+
+.highlight.active{
+  color: white;
+  animation: highlight 2s ease forwards ;
+}
+@keyframes highlight {
+   from {background-position: 0% 0;}
+   to {background-position: -100% 0;}
+}
+
+.highlight{
+background-size: 200% auto;
+padding: 3px;
+line-height: 26px;
+color: rgb(17, 133, 148);
+background-position: 0% 0;
+background-image: linear-gradient(to right,#fff 50%,rgb(17, 133, 148) 50%);
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* .test {
+  background-color: red;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    /* .test {
+      background-color: orange;
+    } */
+    h1{
+      font-size: 2.5em;
+    }
+    h2{
+      font-size: 1.5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        /* adjust header image positioning for larger devices if needed: */
+        /* background-position: 50% 50%; */
+    }
+    h1{
+      font-size: 3.3em;
+    }
+    h2{
+      font-size: 2em;
+    }
+    /* .test {
+      background-color: yellow;
+    } */
+    .show-desktop {
+      display: block;
+    }
+  .show-mobile {
+      display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* .test {
+    background-color: green;
+  } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* .test {
+    background-color: blue;
+  } */
+}
