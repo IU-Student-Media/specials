@@ -1,0 +1,530 @@
+/*
+    IDS CSS STYLES
+    These are the default styles for an IDS buildout.
+    It includes navigation, typography, spacing, colors, photo placement, etc.
+    Any css styles specific to your story's layout should be changed in the style.css file!
+    ********** DON'T CHANGE STYLES HERE — CHANGE STYLE.CSS FILE **********
+*/
+
+/* import IDS fonts from Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital@0;1&display=swap');
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.show-desktop {
+    display: none;
+}
+.show-mobile {
+    display: block;
+}
+span.show-mobile {
+    display: inline;
+}
+
+/* COLORS */
+/* Use color variables so it's easier to change colors later */
+/* Will create a warning in the W3C CSS validator */
+/* Ignore that - CSS variables are fine to use */
+:root {
+    --footer: #EDEBEB;
+    --gray: rgb(0, 0, 0, 0.1);
+}
+
+/*
+    TYPOGRAPHY
+*/
+h1, h2, .bylines p, footer p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+h3, p {
+    font-family: 'PT Serif', sans-serif;
+}
+/* .bylines, footer p {
+    font-family: 'Inter', sans-serif;
+} */
+h1, h2 {
+    text-align: center;
+    margin: 0 auto;
+    /* max-width: 75%; */
+}
+h1 { /* first headline */
+    padding: 42vh 0 0.75em;
+    font-size: 32px;
+}
+h2 { /* second headline */
+    font-size: 40px;
+    font-weight: 500;
+}
+h3 { /* graphic headline */
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 0.55em;
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+.bylines p {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0.05em;
+}
+.bylines div p:nth-child(even) { /* adjust spacing for subbylines */
+    margin-bottom: 0.6em;
+}
+/* .bylines div:after {
+    content: "";
+    border: 1px solid var(--gray);
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.0em 0;
+} */
+.line-after:after { /* add horizontal lines btwn byline divs */
+    content: "";
+    border: 1px solid var(--gray);
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.0em 0;
+}
+/* .related {
+    padding: 1.0em 0;
+    font-size: 0.95em;
+}
+.related span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+} */
+.related {
+    border: 0.5px solid black;
+    padding: 15px;
+    position: relative;
+    margin: 2.0em 0 2.2em !important;
+}
+.related span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+    position: absolute;
+    top: -14px;
+    background-color: white;
+    padding: 0 10px;
+}
+footer {
+    font-size: 16px;
+}
+.section-break {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 25px;
+    text-align: center;
+}
+
+/* 
+    HEADER
+*/
+header {
+    /* add header image below */
+    background: url('file path to image'); 
+    background-color: rgb(215, 215, 215);
+    background-size: cover;
+    height: 100vh;  /*makes image same height as screen*/
+}
+/* navbar */
+nav {
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 400;   
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+nav li {
+    list-style-type: none;
+    white-space: nowrap;    
+}
+nav li a {
+    margin: 0 0.5em;
+}
+nav ul {
+    margin: 0;
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* styles for li items makes the spacing/alignment work on the menu */
+/* also allows the responsive menu toggler behavior */
+li.logo {
+    margin-right: auto; /* put the logo on the left */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+li.logo img {
+    width: 70px;
+    padding-right: 5px;
+}
+li.logo span {
+    display: none;
+    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+li.item {
+    font-size: 18px;
+    text-align: right;
+}
+li.item a {
+    margin-top: 0.8em;
+}
+li.toggle {
+    /* show menu bar (toggle class) */
+    display: block;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+}
+nav a {
+    /* so the ENTIRE item is clickable */
+    display: block;
+    
+    /* design choices */
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    opacity: 0.9;
+}
+/* hide all list items **that aren't logo or toggle** */
+ul li:not(.logo):not(.toggle) {
+    display: none;
+}
+ul div {
+    display: none;
+}
+/* reveal hidden items (on toggle) */
+/* force this display to take precedence and be more "!important" */
+/* to display properly, also set the width to 100% */
+.show {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+
+/* 
+    ARTICLE ALIGNMENT (flexbox added in larger view widths)
+*/
+article:first-child {
+    padding-top: 5%;
+}
+.story p:first-child {
+    margin-top: 0;
+}
+.bylines {
+    padding-top: 6.5px;
+}
+
+/* 
+    PHOTOS
+*/
+img {
+    display: block;
+    width: 100%;
+}
+figcaption, .caption {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+    line-height: 1.25em;
+}
+p.caption {
+    margin-bottom: 0;
+}
+p.credit {
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: right;
+    margin-bottom: 3px;
+    line-height: 1.2em;
+    padding-top: 0.5em;
+}
+.full-width-image {
+    margin-top: 30px;
+    object-fit: cover;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: -10;
+}
+.big-image {
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.small-image {
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.wide-right {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.wide-left {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+/* youtube embed styles */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+/* pulled quotes */
+.pull-quote-center {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.quote {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-weight: 300;
+}
+.attribute {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: grey;
+    margin-top: 0;
+    text-align: center;
+}
+
+/*
+    LINKS
+*/
+/* default link styles */
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    border-bottom: 0.125em solid black;
+}
+a:hover, a:active {
+    color: black;
+    border-bottom: none;
+}
+/* navbar social icons */
+nav li a:link, nav li a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+nav li a:hover, nav li a:active {
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+/* byline links */
+.bylines a:link, .bylines a:active {
+    color: black;
+    text-decoration: none;
+    border-bottom: none;
+}
+.bylines a:hover, .bylines a:visited {
+    color: black;
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+/*
+    FOOTER
+*/
+footer {
+    background-color: var(--footer);
+    padding: 30px 0 15px;
+    margin-top: 3.0em;
+}
+/* add horizontal line */
+footer p:nth-child(2):after {
+    content: "";
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.0em 0;
+}
+
+/* 
+    ADVERTISEMENTS
+*/
+.ad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Inter';
+}
+.ad-caption {
+    text-align: center; 
+    font-size: 12px; 
+    padding-top: 15px; 
+    font-family: 'Inter', sans-serif; 
+    text-transform: uppercase;
+}
+.ad-block {
+    margin-top: 10px; padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.ad-code {
+    padding-bottom: 30px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+.test {
+    position: fixed;
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .test {
+        background-color: orange;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .show-desktop {
+        display: block;
+    }
+    .show-mobile {
+        display: none !important;
+    }
+    span.show-desktop {
+        display: inline;
+    }
+    /* Hide menu toggle */
+    li.toggle {
+        /* hide menu bars (the toggle) */
+        display: none;
+    }
+    li.item {
+        display: flex !important;
+        align-items: center;
+        margin-left: auto;
+    }
+    li.item a {
+        margin-top: 0;
+    }
+    /* photos */
+    .big-image {
+        width: 160%;
+        /* padding-bottom: 20px; */
+        padding-top: 20px;
+        margin-right: 30%;
+        margin-left: -30%;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    /* pulled quotes */
+    .pull-quote-center {
+        width: 130%;
+        margin-left: -15%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .quote {
+        font-size: 28px;
+        line-height: 37px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Georgia', serif;
+        font-weight: 300;
+    }
+    .attribute {
+        font-size: 18px;
+        padding-top: 5px;
+        font-family: 'Inter', sans-serif;
+        color: grey;
+        margin-top: 0;
+        text-align: center;
+    }
+    .wide-left {
+        padding-top: 20px;
+        padding-bottom: 0;
+        padding-right: 25px;
+        margin-left: -40%;
+        margin-bottom: 0;
+        float: left;
+        width: 80%;
+        text-align: left;
+    }
+    .wide-right {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        margin-right: -40%;
+        float: right;
+        width: 80%;
+    }
+    .related {
+        margin: 10px 0 0 0 !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+

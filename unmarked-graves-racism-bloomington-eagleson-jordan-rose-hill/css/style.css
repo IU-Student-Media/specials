@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Roboto+Mono&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+
+/* 
+  UTILITIES
+*/
+:root {
+    --shadow: rgba(0,0,0,0.5);
+}
+.scrolly-show-desktop {
+  display: none !important;
+}
+.scrolly-show-mobile {
+  display: block !important;
+}
+
+/* 
+  HEADER
+*/
+header {
+    background: url('https://s3.amazonaws.com/snwceomedia/ids/b0433115-d392-48ed-b4e9-50456bfaeb21.sized-1000x1000.jpg'); 
+    background-size: cover;
+    background-position: center center; /* adjusts image placement*/
+}
+
+/* 
+  TYPOGRAPHY
+*/
+h1, h2 {
+  color: rgba(255, 255, 255);
+  opacity: .7;
+}
+h1 {
+  padding: 38vh 0 0.35em;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: trajan-pro-3, serif;
+  text-transform: lowercase;
+}
+h2 {
+  font-size: 28px;
+  font-family: Lato, sans-serif;
+  font-weight: 200;
+  padding: 7vh 15px 0;
+}
+h3 {
+  font-size: 20px;
+  font-family: Lato, sans-serif;
+}
+h5 {
+  margin-bottom: 5px;
+}
+.dropcap:first-letter { /* drop cap */
+  font-family: trajan-pro-3, serif;
+  font-weight: 700;
+  float: left;
+  font-size: 6.0em;
+  line-height: 0.65;
+  margin: 0.04em 0.1em 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+.floating-caption {
+  font-family: Lato, sans-serif;
+  position: relative;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  font-size: 14px;
+  padding: 1.0em;
+  color: white;
+  margin: 100vh auto 100vh;
+  z-index: 300;
+}
+.headstone {
+  background-color: rgb(230, 230, 230);
+  width: 100%;
+  padding: 30px 20px;
+  margin: 35px 0;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+}
+.headstone p {
+  color: rgb(65, 65, 65);
+  font-family: trajan-pro-3, serif;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 0.75em;
+}
+.headstone p:first-child {
+  font-size: 28px;
+}
+.headstone div p:first-child {
+  font-size: 24px;
+}
+.headstone div {
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+.headstone div p {
+  margin-bottom: 0;
+}
+/* 
+  SECTION SEPARATOR
+*/
+.svg-section-break {
+  width: 50%;
+  margin: 40px auto;
+  display: block;
+  fill: rgba(0, 0, 0, 0.8);
+}
+
+
+/* 
+  LAYOUT/SPACING
+*/
+figure.container {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin-bottom: 0;
+}
+.full-page-photo { /* scroll container */
+  height: calc(100vh - 50px);
+  position: sticky;
+  display: block;
+  top: 50px;
+  overflow: hidden;
+  margin-bottom: 3.0em;
+  background-size: cover;
+  margin-top: 30px;
+}
+.full-page-photo.tony {
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/e2306b1b-70a8-4817-947c-7cd6a1a10dca.sized-1000x1000.jpeg');
+  background-position: 70% center;
+}
+.full-page-photo.sunset {
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/109e385e-58a1-454a-bed7-d091a11c8ce2.sized-1000x1000.jpeg');
+  background-position: 80% bottom;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* 
+  SCROLLY GRAPHIC
+*/
+.col-md-12 {
+  margin: 40px 0 0;
+  padding: 0;
+}
+.graphic { /* scroll container */
+  height: calc(100vh - 50px);
+  background-color: rgba(0,0,0,.25);
+  background-position: bottom right;
+  position: sticky;
+  display: block;
+  top: 50px;
+  overflow: hidden;
+  margin-bottom: 3.0em;
+}
+.graphic .image { /* divs with background images set */
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  display: block;
+  transition: .5s all ease;
+}
+.headers h3 {
+  font-size: 22px;
+  font-family: Lato, sans-serif;
+  position: absolute;
+  top: 0.85em;
+  left: 1.5em;
+  color: white;
+  z-index: 100;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.footnote p {
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  /* bottom: 0.75em;
+  right: 1.5em; */
+  bottom: 15px;
+  right: 15px;
+  margin-bottom: 0;
+  z-index: 100;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 1px black;
+}
+.text {
+  font-family: Lato, sans-serif;
+  position: relative;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  padding: 1.0em;
+  color: white;
+  margin: 50vh auto 50vh;
+}
+.text p {
+  font-size: 16px;
+  line-height: 1.4em;
+  padding: 0 20px;
+  margin: 0.7em 0 0.7em;
+}
+.yellow-highlight {
+  border-bottom: 2px solid #e7d835;
+}
+.step {
+  margin: 90vh 0;
+  color: white;
+  padding: 15px;
+  width: 100px;
+  z-index: 1000;
+  opacity: 1;
+
+  /* border: 1px solid purple; */
+}
+.step::before {
+  content: "";
+  height: 1px;
+  display: block;
+  margin-top: -90vh;
+  position: absolute;
+  border: 1px solid transparent;
+}
+.step.name {
+  margin: 20vh 0;
+}
+.step:last-child {
+  height: 1.0em;
+  visibility: hidden;
+  margin-bottom: 0;
+}
+.arrow { /* arrow pointing down to scroll more */
+  position: absolute;
+  color: white;
+  bottom: 35px;
+  z-index: 100;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  transition: 1s opacity ease;
+}
+.arrow p {
+  font-family: Lato, sans-serif;
+  font-style: italic;
+  letter-spacing: .05em;
+  font-weight: lighter;
+  margin-bottom: .1em ; 
+}
+.arrow i {
+  animation: bob 1s ease infinite;
+}
+@keyframes bob {
+  0% { transform: none }
+  50% { transform: translateY(3px); }
+  100% { transform: translateY(0); }
+}
+
+/* 
+  AUDIO PLAYERS
+*/
+.audio-context {
+	font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 18px 0 30px;
+}
+.inner-audio {
+  padding: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.expand-transcript {
+	margin-top: 15px;
+}
+.transcript {
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+.modal,
+.modal-backdrop  {
+  margin-bottom: 0;
+}
+.modal-body {
+  padding: 24px;
+}
+.modal-body h5 {
+  font-size: 28px;
+  margin-bottom: 0.5em;
+}
+.modal-body p {
+  font-family: Lato, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+/* 
+  FOOTER
+*/
+footer {
+  margin-top: -4px;
+  padding-top: 50px;
+  background-color: black;
+  color: white;
+}
+footer p {
+  font-size: 14px;
+  line-height: 1.45em;
+}
+footer a:link,
+footer a:visited {
+  color: white;
+  border-bottom: 0.125em solid white;
+}
+footer a:hover,
+footer a:active {
+  border-bottom: none;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+@media (min-width: 400px) { 
+  h1 {
+    font-size: 46px;
+    padding-top: 38vh;
+  }
+}
+@media (min-width: 500px) { 
+  h1 {
+    font-size: 50px;
+  }
+  .headstone p:first-child {
+    font-size: 32px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .scrolly-show-desktop {
+      display: block !important;
+    }
+    .scrolly-show-mobile {
+      display: none !important;
+    }
+    .floating-caption {
+      border-radius: 5px;
+    }
+    .headstone p {
+      font-size: 24px;
+    }
+    .headstone p:first-child {
+      font-size: 32px;
+    }
+    .headstone div p:first-child {
+      font-size: 24px;
+    }
+    .headstone div {
+      padding: 0 80px;
+    }
+}
+
+@media (min-width: 590px) {
+  h1 {
+    padding: 42vh 0 0;
+  } 
+  h2 {
+    font-size: 36px;
+    padding-top: 15vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* typography */
+    h1 {
+      padding: 40vh 5px 0;
+      font-size: 65px;
+    }
+    h2 {
+      font-size: 42px;
+      padding-top: 13vh;
+    }
+    .headers h3 {
+      font-size: 28px;
+    }
+    .text {
+      font-size: 14px;
+      padding: 1.0em;
+      border-radius: 5px;
+    }
+    .text p {
+      font-size: 20px;
+    }
+    .full-page-photo.tony {
+      background-position: bottom right;
+      background-position: right 40%;
+      margin-bottom: 40px;
+    }
+    .headstone {
+      width: 120%;
+      margin-left: -10%;
+      padding: 30px 70px;
+    }
+    .headstone p {
+      font-size: 20px;
+    }
+    .headstone p:first-child {
+      font-size: 24px;
+    }
+    .headstone div p:first-child {
+      font-size: 20px;
+    }
+    .headstone div {
+      padding: 0 60px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* typography */
+  h1 {
+    font-size: 80px;
+    padding: 40vh 20px 0;
+  }
+  h2 {
+    padding-top: 13vh;
+    font-size: 42px;
+  }
+  .headstone p:first-child {
+    font-size: 28px;
+  }
+  .headstone div {
+    padding: 0 100px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h2 {
+    padding-top: 15vh;
+  }
+}
