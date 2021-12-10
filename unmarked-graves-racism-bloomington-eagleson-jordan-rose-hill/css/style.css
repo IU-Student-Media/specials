@@ -129,6 +129,7 @@ figure.container {
   margin-bottom: 3.0em;
   background-size: cover;
   margin-top: 30px;
+  z-index: -1;
 }
 .full-page-photo.tony {
   background-image: url('https://s3.amazonaws.com/snwceomedia/ids/e2306b1b-70a8-4817-947c-7cd6a1a10dca.sized-1000x1000.jpeg');
