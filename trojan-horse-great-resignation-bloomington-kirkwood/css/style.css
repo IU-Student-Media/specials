@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+
+/* 
+  UTILITIES
+*/
+/* COLORS */
+:root {
+    --idsred: #990000;
+    --lightgray: rgb(108, 108, 108);
+    --total: rgb(13, 186, 189);
+    --leisure: rgb(20, 114, 196);
+    --darkgray: rgba(0, 0, 0, 0.8);
+}
+.show-desktop-flex {
+  display: none;
+}
+
+/* 
+  SET HEADER IMAGE
+*/
+header {
+    background-image: linear-gradient(to top, rgba(0,0,0,.4), rgba(0,0,0,0)), url('https://s3.amazonaws.com/snwceomedia/ids/72875c0f-bedb-43c1-8e1d-27a3b4013cf0.sized-1000x1000.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% center; /* adjusts image placement, can also be set as percentages */
+    background-attachment: fixed;
+}
+
+/* 
+  TYPOGRAPHY
+*/
+h1, h2 {
+  font-family: 'Bigshot One', cursive;
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.719);
+  line-height: 1.1em;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 100px;
+  animation: fade-in 4s;
+}
+h2 {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin:0 0 0.75em;
+  font-size: 38px;
+  line-height: 1.0em;
+  margin-top: -6px;
+}
+h4 {
+  font-family: Lato, sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: .7px;
+  margin-bottom: 0.25em;
+}
+h5 {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1.0em;
+}
+h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0.5em 0 0.25em;
+
+  margin-top: -2.0em;
+  margin-bottom: 2.0em;
+  padding-left: 15px;
+  color: white;
+}
+.bylines p {
+  text-align: center;
+}
+.dropcap:first-letter { /* drop cap */
+  font-family: 'Bigshot One', cursive;
+  font-weight: 700;
+  float: left;
+  font-size: 4.0em;
+  line-height: 0.65;
+  margin: 0.04em 0.1em 0 0;
+  color: var(--darkgray);
+}
+.greek-section-break {
+  width: 20%;
+  margin: 50px auto;
+  display: block;
+  fill: var(--darkgray);
+}
+
+/* 
+  MUG SHOTO
+*/
+.mug img {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+.mug p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+/* line chart */
+.lineChart {
+  margin-bottom: 0.5em;
+}
+.lineChart svg {
+  overflow: visible;
+  position: relative;
+}
+svg.chart {
+  height: 310px;
+}
+.data-path {
+  stroke-width: 1.5;
+}
+/* legend */
+.legend {
+  display: flex;
+  flex-flow: row wrap;
+}
+.legend > div {
+  display: flex;
+  align-items: center;
+  margin-right: 2.0em;
+}
+.legend p {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.color {
+  margin-right: 0.3em;
+  width: 18px;
+  height: 3px;
+  border-radius: 1.5px;
+}
+.recession .color {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 18px;
+  height: 18px;
+}
+/* set legend colors */
+.total .color {
+  background-color: var(--total);
+}
+.leisure .color {
+  background-color: var(--leisure);
+}
+p.x.axis.title {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0; 
+}
+p.footnote {
+  font-family: Lato, sans-serif;
+  text-align: right;
+  font-weight: light;
+  margin-bottom: 0; 
+  font-size: 0.9em;
+}
+.circleLabel {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+.tick text {
+  font-family: Lato, sans-serif !important;
+  transform: scale(1.5);
+}
+.tick line {
+  fill: none !important;
+  height: 0;
+}
+text.x-annotation {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+}
+text.tooltip1 {
+  fill: var(--darkgray);
+  font-weight: 300;
+  font-size: 18px;
+}
+.x-annotation.bkg {
+  fill: white;
+}
+
+/* 
+  ANIMATION FOR H1
+*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-desktop-lg {
+  display: none;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .show-desktop-lg {
+    display: none;
+  }
+  .read-more h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    padding-left: 0;
+    color: black;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* 
+    UTILITIES
+  */
+  .show-desktop-lg {
+    display: none;
+  }
+  .show-desktop-flex {
+    display: flex;
+  }
+  /* 
+      ADJUST TYPOGRAPHY FOR DESKTOP
+  */
+  h1 {
+    font-size: 70px;
+    max-width: 80%;
+    margin-left: 10%;
+    bottom: 150px;
+  }
+  h2 {
+    font-size: 48px;
+    text-align: left;
+  }
+  .bylines p {
+    text-align: left;
+  }
+  /* 
+    WIDE HEADLINE
+  */
+  .wide-hed {
+    width: 150%;
+  }
+  .wide-right {
+    margin-right: -30%;
+    width: 60%;
+  }
+  svg.chart {
+    height: 410px;
+  }
+  .data-path {
+    stroke-width: 2;
+  }
+  .full-page-image {
+    height: 100vh;
+    background-image: url('https://s3.amazonaws.com/snwceomedia/ids/1ccb52ea-e975-458a-b7fa-a3254700925f.sized-1000x1000.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    background-position: center top;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .show-desktop-lg {
+    display: none;
+  }
+  .show-desktop-md {
+    display: inline;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .show-desktop-lg {
+    display: inline;
+  }
+  .show-desktop-md {
+    display: none;
+  }
+}
