@@ -23,7 +23,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 65% center; /* adjusts image placement, can also be set as percentages */
-    background-attachment: fixed;
 }
 
 /* 
@@ -281,6 +280,9 @@ No media query for `xs` since this is the default */
     background-attachment: fixed;
     margin-bottom: 0;
     background-position: center top;
+  }
+  header {
+    background-attachment: fixed;
   }
 }
 
