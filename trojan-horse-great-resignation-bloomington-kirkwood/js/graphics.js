@@ -1819,7 +1819,7 @@ function draw(data) {
 
     // grab svg and define margin, height and width
     let svg = d3.select(".lineChart svg")
-        .attr("transform", `translate(${margin.left}, ${margin.top })`);
+        .attr("transform", `translate(${margin.left}px, ${margin.top }px)`);
 
     // set x axis scale based on months data
     let xScale = d3.scaleTime()
