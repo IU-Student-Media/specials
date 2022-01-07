@@ -1,0 +1,100 @@
+/*
+    SET YOUR STYLES IN THIS FILE
+
+    Miscellaneous notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * Make sure to optimize images before you upload them or the load time will be massive
+    * When working locally on your computer, use the file path of images to
+      insert them. Once you're ready to publish with the IDS, you'll upload them
+      onto the IDS github and replace all those file paths with urls (editors will
+      help you)
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working.
+    * When you're ready to input the story text in the buildout, run the
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+*/
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+/* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+*/
+:root {
+    /* --mycolor: #your color here; */
+}
+
+.hero-image {
+background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(https://s3.amazonaws.com/snwceomedia/ids/de2ead5e-1be6-4658-88e8-7b8b881d4f59.original.jpg) center no-repeat;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+}
+    /* background: url('file path to image');
+    background-position: 65% 35%; /* adjusts image placement
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    } */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines.
+
+        Here are some other IDS examples, you can inspect the code to
+        see how they did it:
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+.red {
+  color:#d41525;
+}
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        /* adjust header image positioning for larger devices if needed: */
+        /* background-position: 50% 50%; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

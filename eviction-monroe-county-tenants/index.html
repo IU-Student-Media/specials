@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>The Scarlet E | Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS: IDS editors will help you with this, don't worry about it for now -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://specials.idsnews.com/eviction-monroe-county-tenants"/> <!-- URL (specials.idsnews.com/blah-blah-blah) -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="The Scarlet E: How eviction can haunt Monroe County tenants forever"/> <!-- headline -->
+    <meta property="og:description" content="Eviction leaves a stain on tenants’ records that makes finding new affordable housing difficult."/> <!-- abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/fd3405f3-8830-4fe5-b78c-1f87ac026a28.original.jpg"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="The Scarlet E: How eviction can haunt Monroe County tenants forever"> <!-- headline -->
+    <meta name="twitter:description" content="Eviction leaves a stain on tenants’ records that makes finding new affordable housing difficult."> <!-- abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/fd3405f3-8830-4fe5-b78c-1f87ac026a28.original.jpg"> <!-- dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function() {
+        //all other leaderboards
+        var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+        googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      console.log('showing slide', n );
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Header-->
+    <header>
+
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com"><img src="http://specials.idsnews.com/the-toll-it-took-bloomington-police-department-contract-negotiation/img/logo.png" alt="alt text"></a>
+                    <span>The Scarlet E</span> <!-- insert your slug here -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li class="item">
+                    <!-- add in the links for each social media to link directly to your story -->
+                    <!-- for facebook: https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fadd-your-url-here -->
+                    <!-- generate a link for Twitter on this site: https://clicktotweet.com/ -->
+                    <!-- for reddit: https://www.reddit.com/submit?title=Cool%20article&url=http%3A%2F%2Fspecials.idsnews.com%2Fyour-url-here -->
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-reddit"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+              <div data-scroll-speed="3" class="hero-image">
+                      <h1 class="headline headline-bold"><span style="color:#ffffff"><strong>The Scarlet '</strong></span><span style="color:#d41525"><strong>E</strong></span><span style="color:#ffffff"><strong>'</strong></span></h1>
+                        <h2><span style="color:#ffffff"><strong>How eviction can haunt Monroe County tenants forever</strong></span></h2>
+                    </div>
+                  <!-- Mobile -->
+
+          <div class="body">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="container" style="padding-top: 30px;">
+              <div class="row">
+                <div class="col-md-3" style="padding-bottom: 30px">
+                </div>
+                </div>
+                </div>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <section class="row">
+                <div class="col-md-3 bylines">
+                    <div>
+                        <p>Published Dec. 7, 2021</p>
+                    </div>
+
+                    <div>
+                        <!-- sub in your team's contact info here -->
+                        <p>Written by Emma Uber</p>
+                        <p><small><a href="mailto:emmauber@iu.edu" target="_blank">emmauber@iu.edu</a> | <a href="https://twitter.com/EmmaUber7" target="_blank">@EmmaUber7</a></small></p>
+                        <p>Photos by Sasha Sears</p>
+                        <p><small><a href="mailto:sassears@iu.edu" target="_blank">sassears@iu.edu</a> | <a href="https://twitter.com/sashasears20" target="_blank">@sashasears20</a></small></p>
+                        <p>Web development by Lauren McLaughlin</p>
+                        <p><small><a href="mailto:lrmclaug@iu.edu" target="_blank">lrmclaug@iu.edu</a> | <a href="https://twitter.com/l_mclaughlin8" target="_blank">@l_mclaughlin8</a></small></p>
+                    </div>
+                    <p class="caption">TOP PHOTO: Greenery surrounds one of Bloomington's many buildings Sept. 15</p>
+                </div>
+                <div class="col-md-6 story">
+                  <p>
+                  They joined the virtual court proceedings from the very homes they stood to lose.
+                  </p>
+                  <p>
+                  They learned their eviction verdicts sitting in living rooms, kitchens and bedrooms momentarily turned courtrooms.
+                  </p>
+                  <p>
+                  A framed family photo hung over the shoulder of one woman, a table cluttered with art supplies stood behind a man. Another man joined the virtual courtroom from his cellphone while sitting in a car packed full of his possessions.
+                  </p>
+                  <p>
+                  In many instances, the woman’s family photo or the man’s art supplies end up like the other man’s belongings: displaced from their homes, packed into boxes and crammed into a car.
+                  </p>
+                  <p>
+                  Monroe County’s switch to virtual eviction hearings offers glimpses of tenants’ lives never seen during in-person court hearings.
+                  </p>
+                  <p>
+                  On Nov. 17, Stephen Wilbur joined court from his cellphone. The judge, attorneys, landlord and mediators saw a man sitting on the floor in a dimly lit room, a dog curled up on his lap with its head on his chest.
+                  </p>
+                  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides">
+<div class="numbertext">1 / 4</div>
+<img src="https://s3.amazonaws.com/snwceomedia/ids/5f395786-4a62-4a0e-8dd2-f22670ded6e2.original.jpg" alt="alt text" style="width:100%">
+<div class="figcaption">Stephen Wilbur and his dog Pinky pose for a portrait Nov. 17, 2021, after his Zoom eviction hearing ends for the day. Wilbur said he wanted to learn his rights and stand up for himself during the eviction process.</div>
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 4</div>
+<img src="https://s3.amazonaws.com/snwceomedia/ids/415e2ae7-c3ad-4e60-ac22-d4a67bb2e1e3.original.jpg" alt="alt text" style="width:100%">
+<div class="figcaption">Wilbur's dog Bruster sits by the front door to Wilbur's apartment Nov. 17, 2021. </div>
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 4</div>
+<img src="https://s3.amazonaws.com/snwceomedia/ids/fc626d1d-9b09-4f87-8662-977e26b32af9.original.jpg" alt="alt text" style="width:100%">
+<div class="figcaption">Wilbur's dog Stanton sits next to Wilbur's mattress Nov. 17, 2021.</div>
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 4</div>
+<img src="https://s3.amazonaws.com/snwceomedia/ids/3b9b2483-7f76-4618-bd63-ef045933ff8c.original.jpg" alt="alt text" style="width:100%">
+<div class="figcaption">Wilbur's dog Polka sits by him to calm his nerves during Wilbur's virtual eviction trial Nov. 17, 2021. Polka is the fourth dog Wilbur took in after his girlfriend's passing.</div>
+</div>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center" class="dots">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+                  <p>
+                They did not know Wilbur sits on the mattress he keeps on his floor because his multiple sclerosis limits his mobility to the point that some days, like Nov. 17, he cannot physically climb up onto his bed. His one-room apartment is dimly lit because it does not have any lights — but it was the only place he could find to stay. The dog curled up on his lap was one of his emotional support animals and sensed his anxiety.
+                  </p>
+                    <p>
+Diagnosed with multiple sclerosis, prone to seizures and struggling with anxiety and post-traumatic stress disorder, Wilbur relies on his dogs to assist him with his physical and mental health. However, his dogs were the reason he was being evicted.                     </p>
+                    <p>
+Wilbur prepared to fight to keep his home. He compiled all the paperwork concerning his lease, collected documents verifying his dogs as emotional support animals, attempted to contact the medical professionals who certified his dogs as emotional support animals, met with pro-bono lawyers and called local housing nonprofits. In a system he felt expected him to go quietly, Wilbur said he wanted to learn his rights and stand up for himself.                    </p>
+
+                    <figure class="img">
+                              <div class='embed-container'>
+                                  <!-- replace src attribute with your youtube embed link -->
+                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/C5ut1WVSYZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                    </figure>
+                    <p>
+                    “I just want my day to get in front of the judge and go, ‘Look this is bull, Your Honor’,” Wilbur said. “This is discrimination and they had this planned from the beginning.”
+                    </p>
+                    <p>
+                      Yet, when the time came, all Wilbur could do was explain his situation and hope for understanding.
+      </p>
+      <p>
+      “The last two years have been rough on me,” Wilbur said. “I’ve lived in motels, I’ve lived on the streets. When I came here I’d been looking since April of this year, trying to find a place. I just want to stay where I’m at until I can find a bigger place.”
+    </p>
+    <p>
+      Wilbur told the court his struggles and tried to make them understand that he exhausted every possible effort to avoid this situation. All there was left for him to do was to listen and wait.
+</p>
+                    <div class="pull-quote-center">
+                        <p class="quote">“I just want my day to get in front of the judge and go, 'Look this is bull, Your Honor'.”</p>
+                        <p class="attribute">— Stephen Wilbur, evicted resident of Monroe County</p>
+                    </div>
+                  </div>
+          </section>
+      </article>
+      <!-- photos: black market -->
+      <!-- http://webapp1.dlib.indiana.edu/archivesphotos/results/item.do?itemId=P0022322&searchId=13&searchResultIndex=2 -->
+      <figure class="container">
+          <div class="row">
+              <div class="col-md-6 show-desktop">
+                  <img src="https://s3.amazonaws.com/snwceomedia/ids/872b4800-9aac-4af5-8f93-aa52ecc7b363.original.jpg" alt="">
+                  <figcaption>
+                    Stephen Wilbur stands outside his apartment building Sept. 28, 2021, checking to see if he recieved any mail. Wilbur lives alone with his four dogs following the death of his girlfriend. "It's just me and my disability," Wilbur said.</figcaption>
+              </div>
+              <div class="col-md-6 show-desktop">
+                  <img src="https://s3.amazonaws.com/snwceomedia/ids/33d45833-8f30-464f-9da1-0962baf58166.original.JPG" alt="">
+                  <figcaption>
+                    Stephen Wilbur's bathroom is pictured. Wilbur, who has multiple sclerosis, should ideally have a walk-in shower to accomodate his health condition. After his first eviction, Wilbur was rushed into housing that can not accommodate his disabilities.</figcaption>
+              </div>
+
+              <div class="col-md-6 show-mobile">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/872b4800-9aac-4af5-8f93-aa52ecc7b363.original.jpg" alt="">
+</div>
+      </figure>
+      <article class="container">
+          <section class="row justify-content-center">
+              <div class="col-md-6 story">
+                <div class="bg-light ad-block">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <p class="ad-caption">Advertisement</p>
+                                    <div class="ad-code">
+                                        <div id='div-gpt-ad-1512489859064-2' align="center">
+                                        <script>
+                                            // this is the only thing you need to change
+                                            // each adIndex from 1-5 represents a different ad
+                                            // change the number for each ad you insert
+                                            let adIndex = 2;
+                                            googletag.cmd.push(function() { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    <h3>OVERVIEW</h3>
+                    <p>
+                    The pandemic changed far more about eviction than the structure of hearings.
+  </p>
+  <p>
+  According to the Congressional Research Service, the U.S. unemployment rate reached an all-time high of 14.8% in April 2020. To help Americans bear the financial burden of the pandemic, local and federal governments instituted eviction moratoria, or temporary bans on eviction for nonpayment of rent.
+</p>
+<p>
+  Despite unemployment rates remaining well above pre-pandemic levels, the U.S. Supreme Court struck down an extension of the Centers for Disease Control and Prevention moratorium Aug. 26, leaving tenants, landlords and the court system alike wondering how to move forward.
+</p>
+<p>
+  The stakes are high all around. Landlords need to be paid after 18 months of eviction moratoria, and tenants still reeling from COVID-19 need housing.
+</p>
+<p>
+  Bloomington residents face an especially difficult situation.
+</p>
+<p>
+  Indiana has led the nation for the number of evictions since the start of the pandemic, with 73,138 evictions filed between March 15, 2020 and Nov. 27, 2021, according to Princeton University’s Eviction Lab. In addition to living in the worst state for evictions, Bloomington residents pay on average the highest rent in Indiana, according to Rent Data. </p>
+                    <h4 style="padding-top:20px">
+                      <strong>2021 Average Fair Market Rent Prices of Monroe County and Indiana</strong>
+                    </h4>
+                      <table>
+                        <tr>
+                          <th></th>
+                          <th>Average Monroe County Rent</th>
+                          <th>Average Indiana Rent</th>
+                        </tr>
+                        <tr>
+                          <th>Studio</th>
+                          <td>$681</td>
+                          <td>$565</td>
+                        </tr>
+                        <tr>
+                          <th>1 Bedroom</th>
+                          <td>$748</td>
+                          <td>$635</td>
+                        </tr>
+                        <tr>
+                          <th>2 Bedroom</th>
+                          <td>$927</td>
+                          <td>$801</td>
+                        </tr>
+                        <tr>
+                          <th>3 Bedroom</th>
+                          <td>$1,274</td>
+                          <td>$1,048</td>
+                        </tr>
+                        <tr>
+                          <th>4 Bedroom</th>
+                          <td>$1,605</td>
+                          <td>$1,194</td>
+                        </tr>
+                      </table>
+<figcaption class="tablecap">Source: "Indiana Fair Market Rent for 2021" by Rent Data</figcaption>
+
+<p>
+Indiana law dictates eviction cannot ever be expunged from a tenant’s criminal record, unlike many criminal convictions. This means eviction leaves a permanent stain on tenants’ records that makes finding new housing nearly impossible, a scarlet “E” dooming many evicted tenants to denied lease applications, extra safety deposits and higher rent for the rest of their lives.
+</p>
+<p>
+For 18 months, eviction moratoria attempted to shield Bloomington tenants from their daunting reality: the steepest rent prices in the state with the most eviction filings during the highest employment rate in U.S. history. But on Aug. 26, time finally ran out.
+</p>
+
+                    <h3>
+                      WHEN TIME RUNS OUT
+                    </h3>
+                  <p>  Time is not something Judge Catherine Stafford of the Monroe County Circuit Court takes for granted.
+  </p>
+  <p>
+  Running a virtual courtroom with up to three eviction hearings scheduled in each 15-minute time slot, she cannot afford to.
+</p>
+<p>
+  She logs into Zoom at 9 a.m. each Wednesday and 1 p.m. each Thursday to command the chaotic courtroom. She begins by introducing each participant, often interrupted by someone unfamiliar with how to mute themselves, unsure if their audio is working or joining early or late.
+</p>
+
+                    <div class="big picture">
+                      <div class="column">
+                      <figure>
+                      <img src="https://s3.amazonaws.com/snwceomedia/ids/c6bb8689-c459-4ae3-a67d-83230be38f76.original.jpeg" alt="alt text" style="width:100%">
+                      <figcaption>
+                        Judge Catherine Stafford poses for a portrait taken by the Monroe County Democratic Party.
+                    </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              <p>  Once she finishes introductions, she assigns each case to a different virtual breakout room, allowing multiple legal advice sessions or mediations to occur simultaneously. Tenants and landlords return to the main Zoom courtroom after their legal advice and mediation sessions, reporting their agreements to the judge and intermixing with the new participants waiting to begin their hearings.
+</p>
+<p>
+With up to 12 eviction hearings occurring per hour, often simultaneously, Stafford does not have the luxury of time. But at least she operates on a strict schedule, determined the night before and tailored to the number of hearings that day.
+</p>
+<p>
+For months, Stafford had no clear idea of when nonpayment evictions would resume.
+</p>
+<p>
+She calls it “eviction whiplash.”
+</p>
+<p>
+The constant changing of eviction law on the local, state and federal levels resulted in financially struggling tenants, overburdened court systems and desperate landlords unsure when the clock would run out on eviction moratoria.
+</p>
+<p>
+Indiana enacted a statewide ban on nonpayment evictions from March 19, 2020, to Aug. 14, 2020. Indiana residents were left unprotected from eviction from Aug. 14, 2020, through Sept. 4, 2020, when the CDC imposed a federal eviction moratorium.
+</p>
+
+
+
+                          <figure>
+                            <div>
+                              <h4>When were the eviction moratoria?</h4>
+                              <div class="flourish-embed" data-src="visualisation/7847166"><script src="https://public.flourish.studio/resources/embed.js"></script> </div>
+                                <figcaption>
+                                        In 2020, Monroe County eviction filings were down from 2019. For part of 2020, Indiana residents were protected from non-payment evictions.</figcaption>
+                            </div>
+                          </figure>
+
+                          <p><strong>RELATED: </strong><a href="https://www.idsnews.com/article/2021/09/eviction-moratorium-bloomington-cdc-moratoria">[The CDC eviction moratorium ended last month. What happens next in Bloomington?]</a></p>
+
+                    <p>The federal moratorium, originally set to expire at the end of December 2020, was extended to expire at the end of June 2021, then extended once more through the end of July 2021. The federal moratorium had only expired for three days until the CDC attempted to extend the moratorium again, this time from Aug. 3, 2021 through Oct. 3, 2021. The U.S. Supreme Court struck down the extension, ruling the CDC overextended its power.
+</p>
+<p>
+“We had so many changes to eviction law that I'm not sure how any of us have managed to keep it straight, let alone the landlords and the tenants,” Stafford said. “If it's difficult for a judge who does this or for attorneys who do this, I can't imagine how difficult it is for the litigants themselves.”
+</p>
+<p>
+On a local level, Stafford said Monroe County attempted to enact the Monroe County Eviction Diversion Program requiring landlords to mediate with tenants prior to filing for eviction, but the Indiana Office of Court Services claimed the program did not comply with the Indiana State Constitution.
+
+</p>
+<p>
+Stafford participated alongside other legal and housing experts in panels featuring names like “Are we in an ‘Eviction Tsunami?’” trying to predict the effect of the unprecedented moratoria. With renters up to 18 months behind on rent and subject to late fees, these panels discussed local and federal rent assistance programs, landlord-tenant mediation, the possibility of local diversion programs and more, but they all revolved around one question: What happens when time finally runs out?
+</p>
+<p>
+“​​I wish I knew the answer,” Stafford said. “If I did, I could probably charge a lot in prognostication for the rest of the country, which is trying to figure out those answers as well.”
+</p>
+<div class="bg-light ad-block">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <p class="ad-caption">Advertisement</p>
+                                    <div class="ad-code">
+                                        <div id='div-gpt-ad-1512489859064-3' align="center">
+                                        <script>
+                                            // this is the only thing you need to change
+                                            // each adIndex from 1-5 represents a different ad
+                                            // change the number for each ad you insert
+                                            let adIndex = 3;
+                                            googletag.cmd.push(function() { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <h3>MOVING OUT DURING MORATORIUM</h3>
+
+<p>Jerrod Adamson arrived home one day in February to a notice taped on his front door. At first glance, nothing out of the ordinary — there had been eviction notices left on the door of his Muncie, Indiana, apartment for months.
+</p>
+<p>
+This one was different. It informed him his landlord changed the locks on his apartment with all of his belongings still inside. Adamson tried his key but it no longer fit. Staring at the door between himself and everything to his name, Adamson wondered why the eviction moratorium did not protect him.
+</p>
+<p>
+Adamson is one of 57,201 Indiana tenants who faced eviction between March 15, 2020, and Aug. 22, 2021, according to Indiana Eviction Lab. Between the Indiana and CDC eviction moratoria, all but three weeks of that timeframe are covered by an eviction moratorium. The three-week gap occurred between Aug. 14, 2020, and Sept. 14, 2020, after the Indiana eviction moratorium ended but the CDC eviction moratorium had not yet begun.
+</p>
+<p>
+Adamson heard of the eviction moratorium and once he began receiving eviction notices from his landlord assumed it would protect him. After all, he is exactly the type of person the moratoria are intended to help.
+</p>
+
+<figure>
+  <div>
+    <h4>Monroe County Eviction Filings (2017-Aug. 2021)</h4>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/7908023"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+      <figcaption>
+          Source: evictionlab.org
+        </figcaption>
+      </div>
+    </figure>
+
+<p>Adamson lost his job due to COVID-19 in April 2020, early in the pandemic. Unable to find work in the height of the U.S. lockdown, he depended on government programs, such as unemployment bonuses and the eviction moratorium, created to protect people suddenly left unemployed.
+</p>
+<p>
+“I wasn't making any money at the time so it was just all unemployment,” Adamson said. “The bonuses were good. I was able to pay my rent, I was able to buy food. But when the bonuses stopped, it was either food or bills. I chose food.”
+</p>
+<p>
+Unlike the Indiana moratorium, the CDC required tenants to opt in to the program and sign paperwork proving they qualify. In order to qualify for the CDC moratorium, the reason for eviction must be nonpayment, tenants must live in a U.S. county with substantial rates of COVID-19, expect to make less than $99,000 in 2021, promise they’ve genuinely attempted to obtain rental assistance, prove they are financially affected by the pandemic and pay as much rent as they can afford, according to the National Low Income Housing Coalition.
+</p>
+<p>
+Adamson met all of these requirements but did not know he needed to invoke the CDC eviction moratorium. The Indiana eviction moratorium did not require tenants to opt in, so the change in policy resulted in confusion.
+</p>
+                    <div class="pull-quote-center">
+                        <p class="quote">“When the bonuses stopped, it was either food or bills. I chose food.”</p>
+                        <p class="attribute">— Jerrod Adamson, former resident of Indianapolis</p>
+                    </div>
+                  <p>  Monroe County Housing and Eviction Prevention Project attended eviction hearings and helped tenants fill out CDC eviction forms during their Zoom hearings because many tenants were unaware they could defer eviction by filling out a form.
+  </p>
+  <p>
+  “It took more than a few Google searches to find what little resources there were. That's disheartening. Get more information out there,” Adamson said. “People don’t even know that help is out there.”
+</p>
+<p>
+  Adamson now lives in a Bloomington apartment and works two part-time jobs to pay rent. Finding a new home with an eviction on his record presented a challenge.
+</p>
+<p>
+  “I’ve been denied from apartments a few times,” Adamson said. “For this apartment, I had to pay double the security deposit.”
+</p>
+<p>
+  Adamson will bear the burden of eviction on his record forever, tainting his housing prospects for the rest of his life.
+</p>
+
+                    <h3>A PERMANENT STAIN</h3>
+
+<p>Strangulation, driving under the influence, theft and fraud can all be expunged from a criminal record in Indiana. Eviction cannot.
+</p>
+<p>
+Expungement means courts agree to seal certain records from public access. Once a crime is expunged from a person’s record, future employers, landlords and other members of the public no longer see that crime when performing background checks or searching the MyCase website.
+</p>
+                  <div class="big-picture">
+                    <div class="column">
+                    <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/4b98252b-9a1c-431c-b0a1-06088aa6aacd.original.jpg" alt="alt text" style="width:100%">
+                    <figcaption>
+                      Stephen Wilbur walks his dog Stanton Nov. 6, 2021, outside his apartment building while his three other dogs wait inside for their turn.
+                  </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+<p>In Indiana, small claims cannot be expunged, meaning eviction brands tenants to landlords like a scarlet letter. Tonda Radewan, Monroe County Housing and Eviction Prevention Project coordinator, said an eviction on record often negatively affects a tenant’s ability to find stable housing years after the eviction.
+</p>
+<p>
+Not only can landlords reject apartment applications due to eviction history, but an eviction in the past seven years disqualifies a tenant from receiving low-income public housing. This often bars low-income housing from the people who need it most, Radewan said.
+</p>
+<p>
+“It's a very tight market in Bloomington,” Radewan said. “Not only is it expensive, but there just aren't many vacant units. With that kind of supply and demand situation, if you pull up a name on MyCase and there's an eviction filing, it will always be a barrier to find future housing.”
+</p>
+                  <div class="pull-quote-center">
+                      <p class="quote">“It will always be a barrier to find future housing.”</p>
+                      <p class="attribute">— Tonda Radewan, Monroe County Housing and Eviction Prevention Project coordinator </p>
+                  </div>
+                <p>  Tenants with evictions on their records often must resort to housing in poor condition or lacking the accommodations they want or need.
+  </p>
+  <p>
+  “We have a couple of landlords who are very well known for not providing housing in good shape,” Stafford said. “But those are also some of the only landlords who will take tenants who had evictions and it's important to remember that. It’s a double-edged sword.”
+</p>
+
+
+                  <h4 style="padding-top: 35px"><strong>Monroe County Property Groups with the Most Eviction Filings (2017-Aug. 2021)</strong></h4>
+                        <div class="flourish-embed flourish-chart" data-src="visualisation/7973486"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                        <figcaption style="padding-bottom: 20px">These five property groups account for roughly 23% of all Monroe County eviction filings between Jan. 2017 and Aug. 2021.</figcaption>
+
+<iframe width="100%" height="520" frameborder="0" src="https://lrmclaug.carto.com/builder/9527ddf6-d23d-4413-a458-dc5a79654e92/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<figcaption style="padding-bottom: 20px">Disclaimer: This data is based on Monroe County property groups with the highest number of eviction filing from Jan. 2017 to Aug. 2021. The data was not adjusted to account for how many properties each property groups owns.</figcaption>
+<p>
+  Preventing eviction does not always look like a tenant getting to keep their current home, Radewan said. In some instances tenants voluntarily move out prior to an official eviction ruling, sacrificing their current housing to save future housing prospects.
+</p>
+<p>
+  For Wilbur, whose multiple sclerosis and limited mobility require him to find housing with disability accommodations, an eviction ruling would be brutal. His current apartment is the only place he could find that would accept his lease application, but the small one-bedroom apartment is not equipped for a tenant with a disability. For instance, getting into the shower each day is a struggle because his apartment has a bath-shower combination as opposed to a more accessible walk-in shower.
+</p>
+<h3>HOME ENOUGH</h3>
+<p>Like many, Wilbur lost a lot to COVID-19 — including his long-term girlfriend and home of eight years.
+</p>
+<p>
+Wilbur’s girlfriend died in February 2021 after being hospitalized with COVID-19. Just two months later in April, his apartment complex ordered Wilbur to move out by August. Wilbur said the building’s management refused to renew his lease because they did not want him to adopt his late girlfriend’s dog. Wilbur felt confused because the three dogs he rescued from abusive homes and trained as support animals had lived there with him since 2013.
+</p>
+<p>
+Wilbur depends on his dogs to help him with his physical and mental health. When his girlfriend passed, Wilbur thought what’s one more dog?
+</p>
+<p>
+Unwilling to give up the last living memory of his girlfriend, Wilbur moved out. There was no eviction hearing as the landlord simply refused to renew Wilbur’s lease, and Wilbur did not pursue legal action, discouraged after losing two important parts of his life in two months and frustrated with a legal system that felt rigged against him.
+</p>
+<div class="big picture">
+  <div class="column">
+  <figure>
+  <img src="https://s3.amazonaws.com/snwceomedia/ids/4765b079-2095-4e0f-9c14-75f786b5f15f.original.jpg" alt="alt text" style="width:100%">
+  <figcaption>
+    Stephen Wilbur struggles to hold onto his dog's leash and find his keys at the same time. Inside his apartment, his three other dogs were jumping up and down on the mattresses, waiting for their turn to go outside.</figcaption>
+</figure>
+</div>
+</div>
+<p>
+Wilbur spent months looking for new housing, living in motels and occasionally sleeping on the street. He said finding anywhere with an affordable vacancy was nearly impossible. He posted on the Monroe County Area Mutual Aid Facebook group looking for places to stay and eventually connected with Shalom Community Center, which helped him find affordable housing.
+</p>
+<p>
+Despite living in a single room apartment lacking the accommodations required by his disability, Wilbur feels thankful to have a place to call home.
+</p>
+<p>
+When asked if there is anything that made the past few months a little brighter, Wilbur said his new neighbor across the hall gave him a free haircut after they learned he is unable to lift his arm above his head or drive.
+</p>
+<p>
+“It’s a place to live,” Wilbur said. “It’d be home enough to me if they’d leave me alone.”
+</p>
+<div class="pull-quote-center">
+    <p class="quote">“It'd be home enough to me if they'd leave me alone.”</p>
+    <p class="attribute">— Stephen Wilbur, evicted resident of Monroe County</p>
+</div>
+<div class="bg-light ad-block">
+                            <div class="container">
+                                <div class="col-md-12">
+                                    <p class="ad-caption">Advertisement</p>
+                                    <div class="ad-code">
+                                        <div id='div-gpt-ad-1512489859064-4' align="center">
+                                        <script>
+                                            // this is the only thing you need to change
+                                            // each adIndex from 1-5 represents a different ad
+                                            // change the number for each ad you insert
+                                            let adIndex = 4;
+                                            googletag.cmd.push(function() { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                  <h3>BREAKING THE CYCLE</h3>
+                <p>When looking at eviction from a tenants’ perspective, it’s easy to forget many landlords’ livelihoods depend on the property they manage.
+</p>
+<p>
+“The landlord has a right to make money. It's not like it's an immoral profession to be a landlord,” Stafford said. “We have a lot of people in town who are small mom and pop landlords who maybe own one or two or three rental homes. They're relying on that income for their own needs.”
+</p>
+<p>
+As a former college student landlord, Mark Webb knows how expensive housing in Bloomington can be. Now, Webb is trying to solve the problem by offering affordable housing, low-cost storage units and economical real estate for young businesses.
+</p>
+<p>
+Webb said the rent prices in Bloomington are outrageously high, but landlords are not entirely to blame. Webb can offer cheap housing because he does not rely on his properties for his primary source of income, but he said many landlords need to charge fair market value rent in order to have their own housing and other basic needs.
+</p>
+<p>
+“You’re talking to an ex-college landlord so I know what the prices are, and I know it’s not always the landlord’s fault because it’s a vicious circle,” Webb said. “You have high prices just for the property, then you pay 20% of your income to pay the property taxes. Assessments go up, insurance automatically increases, utilities are always going up and the person at the end has to pay for it all is the person who is signing the lease. I wanted to get away from that.”
+</p>
+<div class="small-image">
+  <div class="column">
+  <figure>
+  <img src="https://s3.amazonaws.com/snwceomedia/ids/9b07aae3-5695-45e6-9be4-e6b4cf92d1c1.original.jpg" alt="alt text" style="width:100%">
+  <figcaption>
+    Before heading home, Mark Webb checks to see if the heating in his leasing properties work. Some of the men who live on the second floor of Robin and Trisha's House, a nonprofit offering transitional housing for unhoused men, get cold easily. 
+</figcaption>
+</figure>
+</div>
+</div>
+<p>
+Webb owns multiple properties, each of which he uses to contribute to the Bloomington community differently.
+</p>
+<p>
+He purchased a six-unit apartment complex that had been repossessed by the bank and turned it into Veterans Affairs Supportive Housing, meaning homeless veterans can receive rental assistance, case management and clinical services while living there.
+</p>
+<p>
+“It’s not a moneymaker but they’re good people,” Webb said. “I love having them around.”
+</p>
+<p>
+He also owns multiple properties that he leases to new businesses trying to get started.
+</p>
+<p>
+“I’ve been blessed, I don’t rely on this to make a living so I’m using this blessing to kind of help people start a business,” Webb said “Some make it, some don’t, but at least it is a safe and secure place for people to get started.”
+</p>
+<p>
+Webb purchased a number of storage units because he said costs driven up by college students were unfair to local residents.
+</p>
+<p>
+“Everything is geared towards the college student, all the prices for everything,” Webb said. “I thought somebody needs to make a townie storage place so that locals can pay local price and not be gouged just because everything is aimed at the college student.”
+</p>
+<p>
+Most recently, Webb bought another property from the bank and leased it for far under fair market rent to Robin and Trisha’s House, a nonprofit offering transitional housing for unhoused men. The new property can house up to 10 men, but in order to stay, they must prove they are actively looking for employment and pay $300 per month. Webb said Robin and Trisha’s House stood out to him because it requires tenants to search for employment.
+</p>
+</figure>
+<p>“I know there are people that are out there that just take advantage of the system, but I also know there’s a lot of good people that didn’t ask to be in the situation they are in and just need someone else’s compassion and understanding,” Webb said. “It’s not a handout but just help up, a bridge between getting them off the street.”
+</p>
+                  <h3>EVADING EVICTION</h3>
+                  <p>In the weeks following the U.S. Supreme Court striking down the CDC eviction moratorium, Monroe County saw a slight decline in evictions. While not certain why this happened, Stafford said the willingness of landlords and tenants to compromise and keep eviction proceedings out of court and off of tenants’ records is a major factor in the decrease.
+</p>
+<p>
+When tenants and landlords join the Zoom courtroom, Stafford explains the three-pronged court process. First, any unrepresented parties are given the option to enter a breakout room with pro-bono legal counsel from Justice Unlocked, a Bloomington-based legal group dedicated to accessible representation.
+</p>
+<p>
+Second, tenants and landlords are moved to the same breakout room, along with a mediator from Community Justice and Mediation. After about 10 to 12 minutes, the mediation group rejoins the main room and reports whether they reached an agreement or not to Stafford.
+</p>
+<p>
+Third and finally, tenants are sent to a breakout room with Tonda Radewan of the Housing and Eviction Prevention Project who speaks to them about social services available to assist them through the eviction process.
+</p>
+<div class="big picture">
+  <div class="column">
+  <figure>
+  <img src="https://s3.amazonaws.com/snwceomedia/ids/fd3405f3-8830-4fe5-b78c-1f87ac026a28.original.jpg" alt="alt text" style="width:100%">
+  <figcaption>
+    Wilbur sits next to his dogs on one of his mattresses Oct. 7 and holds a folder full of housing documents.</figcaption>
+</figure>
+</div>
+</div>
+<p>
+“I’m getting really fatigued talking to somebody that is desperate, they’ve done everything that they know to do and they’re still going to get kicked out of their house,” Radewan said. “There are some wonderful shelters and agencies that provide services to the unhoused but they are overburdened and there are waitlists. I don’t want to talk to another person and tell them, ‘I’m sorry but you have to sleep in your car until you can qualify for services.’”
+</p>
+<p>
+Wilbur understood the noble intentions of nonprofits but said it was easy to feel angry and frustrated when making call after call searching for ways to keep his home, only to never receive a call back.
+</p>
+<p>
+“They’re trying, but they are so overwhelmed,” Wilbur said. “When you’re working three days a week, and you have a caseload that 20 people working seven days a week couldn’t handle, it is impossible to do everything for everybody.”
+</p>
+<p>
+Programs such as Indiana Emergency Rental Assistance offer valuable resources but struggle to distribute said resources to everyone who needs them in a timely manner. Nearly $372 million in federal funding is dedicated to helping Indiana residents pay their rent. IERA may provide up to 15 months of rental and utility assistance to Indiana renters, according to the Indiana Housing and Community Development Authority.
+</p>
+<div class="pull-quote-center">
+    <p class="quote">“They’ve done everything that they know to do and they’re still going to get kicked out of their house.”</p>
+    <p class="attribute">— Tonda Radewan, Monroe County Housing and Eviction Prevention Project coordinator</p>
+</div>
+<p>
+However, as of Nov. 22, only $76,955,769, or 20% of the allocated funds, have reached tenants, according to the Indiana Housing and Community Development Authority. Additionally, IERA funds are not available to residents living in Hamilton, Monroe, Lake and St. Joseph counties as well as the city of Fort Wayne. Instead, these residents must apply for rental assistance with their municipality.
+</p>
+
+<p>
+While millions of rental assistance money go unused, National Equity Atlas estimates there is $179,400,000 in rental debt across Indiana split between 93,000 households behind on rent.
+</p>
+<p>
+Stafford said she sympathized with people who felt cynical about the court system but encouraged everyone to show up to court no matter how frustrated.
+</p>
+<p>
+“I can't even be mad at people who are jaded,” Stafford said. “Sometimes, they're very right to be because they've been really shunted around. It's a frustrating situation.”
+</p>
+<p>
+Stafford said she takes pride in running an equitable court system that includes on-the-spot pro-bono legal advice and eviction mediation. However, she cannot provide people with those services when they do not attend their court hearings.
+</p>
+  <div class="pull-quote-center">
+        <p class="quote">“I can't even be mad at people who are jaded.”</p>
+      <p class="attribute">— Judge Catherine Stafford, Monroe County small claims judge</p>
+  </div>
+  <p>When landlords do not attend eviction hearings, the case is dismissed, but when tenants do not attend eviction hearings, they receive a default judgment and are evicted without access to the resources Stafford works to provide in court.
+</p>
+<p>
+“​​I think the most frustrating part is when people don't show up for their hearing, because then we can't give them any of the help,” Stafford said.
+</p>
+  <h4><strong>Results of Monroe County Eviction Hearings (2017-Aug. 2021)</strong></h4>
+<div class="flourish-embed flourish-chart show-desktop" data-src="visualisation/7790971"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="show-mobile big-picture">
+  <figure>
+  <img src="https://s3.amazonaws.com/snwceomedia/ids/4ea411bf-d605-4983-90e1-cecaad76bed6.original.jpg" alt="alt text" style="width:100%">
+  <figcaption>
+  Other: the case was closed and there was no further action taken, or the case was transferred to another court</figcaption>
+  <figcaption>Bench Disposition: the court approved a negotiated or mediated agreement
+</figcaption>
+<figcaption>
+  Default Judgement (in civil cases): the defendant did not appear, and the plaintiff made a case</figcaption>
+  <figcaption>
+    Dismissed: the plaintiff did not appear, and the court dismissed the case</figcaption>
+    <figcaption>Bench Trial: a witness was sworn in and provided evidence</figcaption>
+</figure>
+</div>
+<p>Stafford strongly encourages tenants to seek legal assistance and attempt mediation when they arrive in court, but some deny the help.
+</p>
+<p>
+“People who are in crisis are usually the same people who are going through evictions,” Stafford said. “They may be facing not only homelessness, but loss of children’s primary school and changing their children’s teachers. They may be facing loss of job, loss of relationship, loss of food. They’re facing horrendous issues and it’s really hard for someone in crisis to take the rational steps that I wish they would take.”
+</p>
+<p>
+People in crisis are often wary of help and focused solely on fulfilling their immediate basic needs, Stafford said, but this mentality may get in the way of making decisions to protect their long-term wellbeing.
+</p>
+<p>
+“If we can help people get out of crisis, they’re in a lot better position to make those good choices for themselves,” Stafford said. “It’s a rare person of any socio-economic level who can make great decisions when they’re in crisis.”
+</p>
+<p>
+Although Wilbur feels skeptical of the court system and nonprofits, they are all he has.
+</p>
+<p>
+“I try to go to Shalom and all them to get them to help me and sometimes they will,” Wilbur said when asked about his support system. “I can understand, they got a lot of things going on at once.”
+</p>
+<p>
+“It’s just me and my disability. I have no family or nothing.”
+</p>
+<div class="pull-quote-center">
+      <p class="quote">“It's just me and my disability. I have no family or nothing.”</p>
+    <p class="attribute">— Stephen Wilbur, evicted resident of Monroe County</p>
+</div>
+
+<h3>THE COURT ZOOM</h3>
+<p>
+As Wilbur sat silently on his apartment floor listening to the court proceedings, his emotional support dogs began to approach him one by one. The one lying on this lap from the beginning rested his head on Wilbur’s chest. The smallest curled up in a ball at his side. The other two lay on the corner of Wilbur’s bed closest to him, eyes steadfastly trained on Wilbur.
+</p>
+<p>
+Even as Wilbur sat still and expressionless, he said his dogs could sense his mounting anxiety at the thought of losing his home.
+</p>
+<p>
+On the Zoom call, the landlord’s lawyer and the mediator discussed whether Wilbur provided proper documentation proving these dogs were emotional support animals.
+</p>
+<p>
+Wilbur spoke up in defense of his dogs. He explained he offered a signed letter from his psychiatrist stating the necessity of his emotional support animals when he moved in. The landlord argued the letter is not sufficient because it does not explain the purpose of four emotional support animals, saying Wilbur needed to provide a letter detailing each dog’s purpose.
+</p>
+<p>
+Wilbur has been trying to obtain this letter for months, but he said it is not that simple. He can no longer see this psychiatrist because he cannot drive. Both Wilbur and his pro-bono lawyer attempted to contact the psychiatrist to no avail.
+</p>
+<p>
+Wilbur cannot ask another psychiatrist to provide the documentation because there are a limited number of psychiatrists in Bloomington who accept Medicaid or Medicare, and he cannot afford a psychiatrist who does not accept either program. Even if he finds a psychiatrist that does accept either, they are likely extremely busy.
+</p>
+<p>
+In the end, mediation did exactly what it was supposed to do — it bought Wilbur time.
+</p>
+<div class="big picture">
+  <div class="column">
+  <figure>
+  <img src="https://s3.amazonaws.com/snwceomedia/ids/ff994cea-56c8-4a6b-91d0-c9c58b95624b.original.jpg" alt="alt text" style="width:100%">
+  <figcaption>
+    Stephen Wilbur's dogs sit with him a few minutes after his virtual eviction hearing on Nov. 17, 2021.  Wilbur has until February 2022 to update his dogs' therapy certifications. If not, he will have to voluntarily be evicted.</figcaption>
+</figure>
+</div>
+</div>
+<p>
+  Time is a rarity in the eviction process, something that became evident as Wilbur’s mediation was repeatedly interrupted by demands that all of the parties reach an agreement and return to the main courtroom immediately.
+</p>
+<p>
+  Wilbur must provide his landlord with a new letter proving the necessity of his emotional support animals by the end of December. If he fails to do so, his landlord agreed to allow him to voluntarily move out by Jan. 23 to avoid an eviction ruling on his record.
+</p>
+<p>
+  When Wilbur left the main courtroom and entered the final breakout room where Radewan was waiting, they already knew each other. Wilbur reached out to Radewan months before the hearing for help. As Radewan went through her usual list of nonprofit organizations she refers tenants to, she realized Wilbur already contacted them all.
+</p>
+<p>
+  All that is left for Wilbur to do is keep calling his psychiatrist, hoping one day she picks up and agrees to renew his emotional service animal documentation.
+</p>
+<p>
+  “What do I do next? I keep calling and I hope,” Wilbur said. “I don’t know what there is left for me to do.”
+</p>
+
+
+        <!-- AD BLOCK -->
+        <!-- UNCOMMENT THIS BLOCK WHEN YOU ARE READY TO INSERT ADS -->
+        <!-- Place one ad every few scrolls. You can arrange them so they don't disrupt your design. -->
+        <!-- make sure to increment the 'adIndex' variable in the ad JS script
+            so different ads appear in each ad block. -->
+                <!-- </div>
+            </section>
+        </article>
+            <div class="bg-light ad-block">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="ad-caption">Advertisement</p>
+                        <div class="ad-code">
+                            <div id='div-gpt-ad-1512489859064-1' align="center">
+                            <script>
+                                // this is the only thing you need to change
+                                // each adIndex from 1-5 represents a different ad
+                                // change the number for each ad you insert
+                                let adIndex = 1;
+                                googletag.cmd.push(function() { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                            </script>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <article class="container">
+            <section class="row justify-content-center">
+                <div class="col-md-6"> -->
+        <!-- END AD BLOCK -->
+
+                    <!-- image -->
+
+
+
+                </div>
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p><em>Like what you're reading?</em><br>
+                        Support independent, award-winning student journalism. <a class="story-link" target="_blank" href="https://www.idsnews.com/page/donate">Donate.</a></p>
+                    <p><small>&copy; Copyright 2021 Indiana Daily Student</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>
