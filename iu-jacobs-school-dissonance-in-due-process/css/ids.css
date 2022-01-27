@@ -713,6 +713,9 @@ No media query for `xs` since this is the default */
   h1 {
         text-align: center;
   }
+  h2 {
+    font-size: 20px;
+  }
 
 }
 /* Medium devices (tablets, 768px and up) */
@@ -729,6 +732,9 @@ No media query for `xs` since this is the default */
     }
     li.item a {
         margin-top: 0;
+    }
+    h2 {
+      font-size: 25px;
     }
     /* photos */
     .big-image {
@@ -797,6 +803,7 @@ No media query for `xs` since this is the default */
 
 .show-desktop {
     display: none;
+}
 }
 
 @media (min-width: 600px) {
