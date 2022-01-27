@@ -1,0 +1,159 @@
+/*
+    SET YOUR STYLES IN THIS FILE
+
+    Important notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working.
+    * Make sure to optimize images before you upload them to CEO or the load time will be massive
+    * When working locally on your computer, use the file path of images to
+      insert them (for example: <img src="images/photo.jpg" alt="a photo">.
+      Once you're ready to publish with the IDS, you'll upload them
+      into CEO and replace all those file paths with urls (editors will
+      help you)
+    * IMPORTANT When you're ready to input the story text in the buildout, run the
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    * Make sure to validate your HTML and CSS code to catch any errors
+        HTML validator: https://validator.w3.org/
+        CSS validator: https://jigsaw.w3.org/css-validator/
+    * this buildout template is mobile first. that means design for a tiny screen in the
+      general styles, then adjust for desktop in the media queries (see the bottom of the file)
+      More on mobile-first design: https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00
+
+    *********************** IMPORTANT ***********************
+    BEFORE YOU SUBMIT, GO THROUGH THIS CHECKLIST: https://docs.google.com/document/d/1eeYAbM9-GZbLrcd-WeJFzeNPrtXEYn-jIBtJbAGLvzc/edit?usp=sharing
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+:root {
+    /* --mycolor: #your color here; */
+    --idsred: #990000;
+
+    /* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+    */
+}
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* adjusts image placement, can also be set as percentages */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines.
+
+        Here are some other IDS examples, you can inspect the code to
+        see how they did it:
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+/* hello */
+.highlight-underline {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, rgba(214,156,36,0.5) 65%);
+  display: inline;
+}
+
+
+/* SOT STYLE*/
+
+.audio-context {
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 7%;
+	margin-top: 7%;
+	padding-left: -15px;
+}
+
+.inner-audio {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.expand-transcript {
+	margin-top: 15px;
+}
+
+.transcript {
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: $btn-font-weight;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  background-color: rgba(214,156,36,0.5);
+  color: white;
+  border-color: white;
+  border: $btn-border-width solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+
+  // Share hover and focus styles
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  .sot {
+      width: 100%;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      display: inline-block;
+  }
+  .show {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+  }
+
+.tl {
+  position: sticky;
+  top: 0;
+}
+
+  i.vert-move {
+      -webkit-animation: mover 2s infinite  alternate;
+      animation: mover 2s infinite  alternate;
+  }
+  @-webkit-keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+  }
+  @keyframes mover {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+  }
