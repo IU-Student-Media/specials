@@ -306,14 +306,30 @@ text.tooltip1 {
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .show-desktop-lg {
     display: none;
   }
+h1 {
+  font-size      : 30px;
+  }
+  later {
+    font-size: 35px;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  h1 {
+
+    font-size     : 50px;
+  }
+
+  later {
+    bottom         : 25px;
+    font-size      : 55px;
+  }
   h2 {
     font-size: 30px;
   }
