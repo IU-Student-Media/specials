@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+
+/* COLORS */
+:root {
+  --idsred   : #990000;
+  --lightgray: rgb(108, 108, 108);
+  --total    : rgb(13, 186, 189);
+  --leisure  : rgb(20, 114, 196);
+  --darkgray : rgba(0, 0, 0, 0.8);
+}
+
+header {
+  background-image     : linear-gradient(to top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1520916784675-1b97f1fc1c05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  background-repeat    : no-repeat;
+  background-size      : cover;
+  background-position  : left center;
+  /* adjusts image placement, can also be set as percentages */
+  background-attachment: scroll;
+}
+
+h1,
+h2 {
+  font-family   : 'Georgia', serif;
+  /* font-family: 'PT Serif', serif; */
+}
+
+h1 {
+  /* padding-top: 75vh; */
+  color         : white;
+  /* font-weight: 800; */
+  /* font-style : italic; */
+  font-size     : 50px;
+  max-width     : 70%;
+  text-shadow   : 3px 3px 15px rgba(0, 0, 0, 0.719);
+  line-height   : 1.2em;
+
+  position   : absolute;
+  bottom     : 200px;
+  margin-left: 15%;
+
+  animation: fade-in 2s;
+}
+
+later {
+  bottom         : 25px;
+  font-size      : 55px;
+  animation-delay: 3s;
+  animation      : fade-in 6s;
+}
+
+h2 {
+  color              : rgba(0, 0, 0, 0.8);
+  text-align         : left;
+  margin             : 0 0 0.75em;
+  font-size          : 38px;
+  line-height        : 1.1em;
+  margin-top         : -6px;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  /* padding         : 10px 10px 14px; */
+  /* top             : 60vh; */
+  /* max-width       : 60%; */
+}
+
+h4 {
+  font-family   : Lato, sans-serif;
+  font-size     : 26px;
+  font-weight   : 300;
+  letter-spacing: .7px;
+  margin-bottom : 0.25em;
+}
+
+h5 {
+  font-family  : Lato, sans-serif;
+  font-size    : 20px;
+  font-weight  : 500;
+  margin-bottom: 1.0em;
+}
+
+.read-more {
+  margin-bottom: 30px;
+}
+
+h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size  : 20px;
+  margin     : 0.5em 0 0.25em;
+}
+
+.read-more p {
+  font-family: Lato, sans-serif;
+  font-size  : 14px;
+  line-height: 1.4em;
+  color      : rgba(0, 0, 0, 0.685);
+  font-style : italic;
+}
+
+.photo-container {
+  width   : 100%;
+  height  : auto;
+  overflow: hidden;
+}
+
+.read-more img {
+  overflow  : hidden;
+  transition: transform 0.4s;
+}
+
+.read-more a:hover img {
+  transform : scale(1.15);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+  transition: transform 0.4s;
+}
+
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+.dropcap:first-letter {
+  /* drop cap */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Bigshot One', cursive;
+  font-weight: 700;
+  float      : left;
+  font-size  : 4.0em;
+  line-height: 0.65;
+  margin     : 0.04em 0.1em 0 0;
+  /* border  : 1px solid rgba(0, 0, 0, 0.8); */
+  color      : var(--darkgray);
+  /* padding : 15px; */
+}
+
+.greek-section-break {
+  width  : 20%;
+  margin : 50px auto;
+  display: block;
+  fill   : var(--darkgray);
+}
+
+.mug img {
+  height      : 80px;
+  width       : auto;
+  margin-right: 10px;
+}
+
+.mug {
+  display: flex;
+}
+
+.mug p {
+  font-family   : Inter, sans-serif;
+  /* font-weight: 700; */
+  font-size     : 14px;
+  line-height   : 1.3em;
+}
+
+.order {
+  order: -1;
+}
+
+/* dumbbell graphic */
+.lineChart {
+  margin-bottom: 0.5em;
+}
+
+.lineChart svg {
+  overflow: visible;
+  position: relative;
+}
+
+/* legend */
+.legend {
+  display  : flex;
+  flex-flow: row wrap;
+}
+
+.legend>div {
+  display     : flex;
+  align-items : center;
+  margin-right: 2.0em;
+}
+
+.legend p {
+  margin     : 0;
+  font-family: Lato, sans-serif;
+  font-size  : 14px;
+  font-weight: 600;
+}
+
+.color {
+  margin-right : 0.3em;
+  width        : 18px;
+  height       : 3px;
+  border-radius: 1.5px;
+}
+
+.recession .color {
+  background-color: rgba(0, 0, 0, 0.1);
+  width           : 18px;
+  height          : 18px;
+}
+
+/* set legend colors */
+.total .color {
+  background-color: var(--total);
+}
+
+.leisure .color {
+  background-color: var(--leisure);
+}
+
+p.x.axis.title {
+  font-family  : Lato, sans-serif;
+  text-align   : center;
+  font-size    : 14px;
+  font-weight  : 600;
+  margin-bottom: 0;
+}
+
+p.footnote {
+  font-family  : Lato, sans-serif;
+  /* text-align: right; */
+  font-weight  : lighter;
+  margin-bottom: 0;
+}
+
+.circleLabel {
+  font-family: Lato, sans-serif;
+  font-size  : 16px;
+}
+
+.tick text {
+  font-family: Lato, sans-serif !important;
+  transform  : scale(1.5);
+}
+
+.tick line {
+  fill  : none !important;
+  height: 0;
+}
+
+text.x-annotation {
+  font-family: Lato;
+  font-size  : 14px;
+  font-weight: bold;
+}
+
+text.tooltip1 {
+  fill       : var(--darkgray);
+  font-weight: 300;
+  font-size  : 18px;
+}
+
+.x-annotation.bkg {
+  fill        : white;
+  opacity     : .8;
+  stroke      : var(--lightgray);
+  stroke-width: 0.5px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.show-desktop-lg {
+  display: none;
+}
+
+.load-wait {
+  opacity: 0;
+}
+
+.load-now {
+  background-image: linear-gradient(rgba(20, 20, 20, 0.80), #fff 80%);
+}
+
+.load-now .load-one {
+  animation: fade-in 2s;
+}
+
+.load-now .load-two {
+  animation: fade-in 4s;
+}
+
+.load-now .load-three {
+  animation: fade-in 4s;
+}
+
+.d-inline :hover {
+  border-bottom: 0.125em solid #5c5b5b;
+  color        : #5c5b5b;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .show-desktop-lg {
+    display: none;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .wide-hed {
+    width: 150%;
+  }
+
+  .wide-right {
+    margin-right: -30%;
+    width       : 60%;
+  }
+
+  .order {
+    order: 0;
+  }
+
+  .show-desktop-lg {
+    display: none;
+  }
+
+  .full-page-image {
+    /* border: 1px solid red; */
+    height               : 100vh;
+    background-image     : url("https://s3.amazonaws.com/snwceomedia/ids/9b23ea95-0490-48bb-b930-7914de837de7.original.jpg");
+    background-size      : cover;
+    background-attachment: fixed;
+    margin-bottom        : 0;
+    background-position  : center top;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .show-desktop-lg {
+    display: none;
+  }
+
+  .show-desktop-md {
+    display: inline;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .show-desktop-lg {
+    display: inline;
+  }
+
+  .show-desktop-md {
+    display: none;
+  }
+
+}
+
+.highlight.active {
+  animation: highlight 2s ease forwards;
+}
+
+@keyframes highlight {
+  from {
+    background-position: 0% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+.highlight {
+  background-size : 200% auto;
+  padding         : 3px;
+  line-height     : 26px;
+  background-image: linear-gradient(to right, #fff 50%, rgba(201, 255, 4, 0.76) 50%);
+}
+
+.highlight.dark.active {
+  color: white
+}
+
+.highlight.dark {
+  background-image: linear-gradient(to right, #fff 50%, rgba(20, 20, 20, 0.80) 50%);
+}
