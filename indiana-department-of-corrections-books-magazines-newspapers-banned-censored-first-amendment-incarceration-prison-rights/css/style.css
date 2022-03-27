@@ -1,0 +1,199 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+
+    Miscellaneous notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * Make sure to optimize images before you upload them or the load time will be massive
+    * When working locally on your computer, use the file path of images to 
+      insert them. Once you're ready to publish with the IDS, you'll upload them
+      onto the IDS github and replace all those file paths with urls (editors will
+      help you)
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working. 
+    * When you're ready to input the story text in the buildout, run the 
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+/* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+*/
+:root {
+    /* --mycolor: #your color here; */
+}
+header {
+    /* add header image below */
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/cfc9aea9-fca5-4eff-a91a-acfdcc53d414.sized-1000x1000.jpg); 
+    background-position: 30% 30%;
+    /* background-position: 65% 35%; adjusts image placement */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines. 
+
+        Here are some other IDS examples, you can inspect the code to 
+        see how they did it: 
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 40px;
+  color: antiquewhite;
+  text-shadow: 4px 4px black;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 50px;
+  color: antiquewhite;
+  text-shadow: 4px 4px black;
+}
+
+.quote {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+.attribute {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin-top: 0;
+  text-align: center;
+}
+
+.policy{
+  width: 100%;
+  border: 1px solid black;
+  padding: 25px;
+  justify-content: center;
+  border: 2.5px black solid;
+  margin-bottom: 20px;
+}
+
+.side-by-side {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.text p {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+  line-height: 1.3em;
+  margin: 0.3em;
+  padding-top: 0.3em;
+}
+
+li{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  color: black;
+  font-size: 15px;
+}
+
+li::not(::first-line){
+  color: red
+}
+
+.ul{
+  padding-left: 1em;
+}
+
+.title{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.att{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 10px;
+  text-align: right;
+}
+
+.highlight{
+  background-color:rgb(255, 233, 110);
+}
+
+.credit {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+  text-align: right;
+  margin-bottom: 3px;
+  line-height: 1.2em;
+  padding-top: 0.5em;
+}
+
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header {
+        /* adjust header image positioning for larger devices if needed: */
+        /* background-position: 50% 50%; */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
