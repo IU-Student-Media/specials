@@ -176,8 +176,14 @@ li::not(::first-line){
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    
+@media (max-width: 576px) { 
+    h1{
+      padding: 30vh 0 0.75em;
+      font-size: 40px; 
+    }
+    h2{
+      font-size: 30px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
