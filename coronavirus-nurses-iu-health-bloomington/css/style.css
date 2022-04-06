@@ -56,7 +56,7 @@ header {
   background-size: cover;
   background-position: center bottom;
   /* background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('https://s3.amazonaws.com/snwceomedia/ids/51d24bf1-6924-4e7f-9d09-821a8582da4e.original.jpg'); */
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('https://s3.amazonaws.com/snwceomedia/ids/8fe42fe5-edba-4fdb-a2c5-7b279ea8dd22.original.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('https://s3.amazonaws.com/snwceomedia/ids/10d4b40b-7e7d-4256-8995-ffaeeddd91e5.original.jpg');
   /* adjusts image placement, can also be set as percentages */
 
   /* note: there are many alternative ways to style the header
