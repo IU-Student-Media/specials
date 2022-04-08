@@ -93,58 +93,6 @@ header {
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .show-desktop-lg {
-    display: none;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  header {
-    /* adjust header image positioning for larger devices if needed */
-    /* you can also change the header image for mobile here */
-    /* background-position: 50% 50%; */
-  }
-
-  .full-page-image {
-    /* border: 1px solid red; */
-    height: 100vh;
-    /* background-image: url("https://s3.amazonaws.com/snwceomedia/ids/8fe42fe5-edba-4fdb-a2c5-7b279ea8dd22.original.jpg"); */
-    background-image: url("https://s3.amazonaws.com/snwceomedia/ids/51d24bf1-6924-4e7f-9d09-821a8582da4e.original.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: 0;
-    background-position: center top;
-  }
-
-  .show-desktop-lg {
-    display: none;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .show-desktop-lg {
-    display: none;
-  }
-
-  .show-desktop-md {
-    display: inline;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .show-desktop-lg {
-    display: inline;
-  }
-
-  .show-desktop-md {
-    display: none;
-  }
-}
 
 /* Highlight */
 @keyframes highlight {
@@ -223,4 +171,100 @@ loader {
 
 .load-objects.active {
   transform: scale(2.3);
+}
+
+@media (max-width < 576px) {
+ 
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .show-desktop-lg {
+    display: none;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .load-objects {
+    width: 80px;
+    height: 25px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .show-desktop-lg {
+    display: none;
+  }
+
+  /* .load-objects {
+    width: 100px;
+    height: 30px;
+  } */
+}
+
+@media (max-width: 768px) {
+  .load-objects {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .full-page-image {
+    /* border: 1px solid red; */
+    height: 100vh;
+    /* background-image: url("https://s3.amazonaws.com/snwceomedia/ids/8fe42fe5-edba-4fdb-a2c5-7b279ea8dd22.original.jpg"); */
+    background-image: url("https://s3.amazonaws.com/snwceomedia/ids/51d24bf1-6924-4e7f-9d09-821a8582da4e.original.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 0;
+    background-position: center top;
+  }
+
+  .show-desktop-lg {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .show-desktop-lg {
+    display: none;
+  }
+
+  .show-desktop-md {
+    display: inline;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .show-desktop-lg {
+    display: inline;
+  }
+
+  .show-desktop-md {
+    display: none;
+  }
 }
