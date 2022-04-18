@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title -->
+    <!-- TO DO change to your title -->
+    <title>Comics & Superheros | Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <!-- see how bootstrap works: https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap — for aligning text columns -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>   
+     
+
+    <!-- TO DO: SOCIAL CARDS — editors will help you with this, don't worry about it for now -->
+    <!-- BUT DONT FORGET ABOUT IT or your dom image won't show up on social media/texting -->
+    <!--Open Graph Card for social display (Be sure to change these!)-->
+    <meta property="og:url" content="http://specials.idsnews.com/superheros-comics-bloomington-blockbusters"/> <!-- URL (specials.idsnews.com/blah-blah-blah) -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="From kids’ stuff to billion-dollar blockbusters: How America came to love the weird world of superheroes"/> <!-- headline -->
+    <meta property="og:description" content="The characters that once embarrassed their creators now generate billions of dollars."/> <!-- abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://snworksceo.imgix.net/ids/2001dc1f-559c-49f6-b08f-ae8d06f2d529.sized-1000x1000.jpg?"/> <!-- link to dominant image -->
+
+    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="From kids’ stuff to billion-dollar blockbusters: How America came to love the weird world of superheroes"> <!-- headline -->
+    <meta name="twitter:description" content="The characters that once embarrassed their creators now generate billions of dollars."> <!-- abstract -->
+    <meta name="twitter:image" content="https://snworksceo.imgix.net/ids/2001dc1f-559c-49f6-b08f-ae8d06f2d529.sized-1000x1000.jpg?"> <!-- dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function() {
+        //all other leaderboards
+        var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+        googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+        });
+    </script>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBJX8F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com"><img src="http://specials.idsnews.com/the-toll-it-took-bloomington-police-department-contract-negotiation/img/logo.png"></a>
+                    <span>Comics & Superheros</span> <!-- insert your slug here -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li class="item">
+                    <!-- add in the links for each social media to link directly to your story -->
+                    <!-- 
+                        for facebook: https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fiu-health-bloomington-hospital-price-transparency-rule-medical-bill/ 
+                        1. replace 'iu-health-bloomington-hospital-price-transparency-rule-medical-bill/' with the end of your own url
+                        2. copy the fb link into the href attribute of the fb <a> tag below (replace the '#')
+                    -->
+                    <!-- 
+                        generate a link for Twitter on this site: https://clicktotweet.com/ 
+                        1. log in to click to tweet w your personal twitter
+                        2. create a tweet: i usually just put the headline and then the link to the story
+                        3. copy the link from the site and replace the twitter href 
+                    -->
+                    <!-- 
+                        for reddit: https://www.reddit.com/submit?title=Cool%20article&url=http%3A%2F%2Fspecials.idsnews.com%2Fiu-health-bloomington-hospital-price-transparency-rule-medical-bill/
+                        1. replace 'iu-health-bloomington-hospital-price-transparency-rule-medical-bill/' with the end of your own url
+                        2. copy the reddit link into the href attribute of the reddit <a> tag below (replace the '#')
+                    -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspecials.idsnews.com%2Fsuperheros-comics-bloomington-blockbusters/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://ctt.ac/8ewdK" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.reddit.com/submit?title=Cool%20article&url=http%3A%2F%2Fspecials.idsnews.com%2Fsuperheros-comics-bloomington-blockbusters/" target="_blank"><i class="fab fa-reddit"></i></a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 data-scroll-speed="2">From kids’ stuff to billion-dollar blockbusters:</h1>
+        <h2 data-scroll-speed="3">How America came to love the weird world of superheroes</h2>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article class="container">
+            <section class="row">
+                <div class="col-md-3 bylines">
+                    <div>
+                        <!-- TO DO replace publish date -->
+                        <p>Published April 18, 2022</p>
+                    </div>
+                    <div>
+                        <!-- TO DO sub in your team's contact info here -->
+                        <p>Written by <a href="https://www.idsnews.com/staff/bradley-hohulin">Bradley Hohulin</a></p>
+                        <p><small><a href="mailto:bhohulin@iu.edu" target="_blank">bhohulin@iu.edu</a> | <a href="https://twitter.com/bradleyhohulin" target="_blank">@BradleyHohulin</a></small></p>
+                        
+                        <p>Photos by <a href="https://www.idsnews.com/staff/hali-tauxe">Hali Tauxe</a></p>
+                        <p><small><a href="mailto:htauxest@iu.edu" target="_blank">htauxest@iu.edu</a> | <a href="https://www.instagram.com/hali_tauxe" target="_blank">@hali_tauxe</a></small></p>
+                        
+                        <p>Web development by <a href="idsnews.com/staff/molly-miller">Molly Miller</a></p>
+                        <p><small><a href="mailto:millmoab@iu.edu" target="_blank">millmoab@iu.edu</a> <a href="" target="_blank"> </a></small></p>
+                    </div>
+                    <p>TOP: Comic books are pictured March 4, 2022, at Vintage Phoenix Comics. Behind the desk are boxes of comic books set aside for their subscribers, more than 200 people.</p>
+                    </div>
+                <div class="col-md-6 story">
+                    <p>
+
+                        Matt Traughber sits at his desk in the back of Vintage Phoenix Comic Books in downtown Bloomington. As he looks toward the store’s front window, he enters an unending staring contest with thousands of eyes. 
+                    </p>
+                    <p>
+                        Some squint defiantly back at him from behind masks, some crackle with fiery heat vision, but none of them blink. 
+                    </p>
+                    <p>
+                        The colorful characters glaring at Traughber from the sale racks have been his livelihood since he purchased Vintage Phoenix about five years ago. As co-owner and manager, Traughber’s job is figuring out how many of each character’s stories he needs to put on his shelves every week.
+                    </p>
+                    <p>
+                        Order too few, you lose customers, you go out of business. Order too many, you spend more than you can make — you go out of business. 
+                    </p>
+                    <p>
+                        Traughber said there’s no playbook on how to run a comic book store, but fortunately he’s had 20 years working at Vintage Phoenix to learn how. It also doesn’t hurt that, by and large, people in the United States really like superheroes. 
+                    </p>
+                    <p>
+                        “There is something primal about superheroes, at least with Americans,” he said. 
+                    </p>
+
+                    <figure class="big-image">
+                    <div class="row">
+                        <div class="column">
+                          <img src="https://snworksceo.imgix.net/ids/b853a5d2-be23-4e0a-b2a8-a6d4302ae0d5.sized-1000x1000.jpg?" alt="desk" style="width:100%">
+                          <figcaption>
+                            Matt Traughber is pictured on March 4, 2022, at Vintage Phoenix Comics. Traughber said he's been running the shop for over half its more than 30-year history.
+                        </figcaption>
+                        </div>
+                        <div class="column">
+                          <img src="https://snworksceo.imgix.net/ids/12c13e06-cc73-4587-929c-60f1cdfcb2f5.sized-1000x1000.jpg?" alt="computer" style="width:100%">
+                          <figcaption>
+                            Matt Traughber, the co-owner and manager at Vintage Phoenix Comics, is pictured March 4, 2022.Traughber said he's been running the shop for more than half its more than 30 year history.He estimates there are tens of thousands of comics in the store, though it's nearly impossible to keep a comprehensive count. Behind the desk are boxes of comic books set aside for their subscribers, more than 200 people.
+                        </figcaption>
+                        </div>
+                    </div>
+                    </figure>
+                    <p>
+                        In the modern western entertainment industry, few things turn a buck like a superhero. 
+                    </p>
+                    <p>
+                        North American comic book sales hit $1.28 billion in 2020, according to Publishers Weekly,  marking a $400 million increase since 2012. Then there are superhero movies, which generated nearly $10 billion in domestic box office revenue in the last five years and accounted for over 35% of all domestic box office revenue in 2021.
+                    </p>
+                    <p>
+                        Superheroes haven’t merely broken into the mainstream. They have become the mainstream.
+                    </p>
+                    <p>
+                        To a certain extent, the money and popularity don’t surprise Traughber — he said tall tales of heroic individuals with exceptional abilities are nothing new. What surprises him is the fact that some of those billion-dollar movies prominently feature protagonists such as an alien raccoon, a talking tree or a man whose signature ability is communicating with fish. 
+                    </p>
+                    <p>
+                        He said although superheroes have always had their fans, they long carried a stigma of low-brow entertainment for children. 
+                    </p>
+                  
+                    <div class="pull-quote-center">
+                        <p class="quote">
+                            “Not only was it embarrassing for some people to read comic books, historically, people who made them were sort of embarrassed.”</p>
+                            <p class="attribute">—Matt Traughber, Co-owner and Manager at Vintage Phoenix Comic Books</p>
+                    </div>
+                    <p>
+                        Even the late Stan Lee, longtime Marvel editor and co-creator of icons such as Spider-Man, Iron Man and the Hulk, used to conceal his profession from others out of self-consciousness.
+                    </p>
+                    <p>
+                        “I was embarrassed to talk to people about what I did then,” Lee said in a 2014 interview with the Chicago Tribune. “I would meet someone at a party and they would ask what I did and I would say, ‘I'm a writer,’ then start to walk away.”
+                    </p>
+                    <p>
+                        But superheroes still captured enough hearts and minds to populate newsstands, even if their creators were often ashamed of them. 
+                    </p>
+                    <p>
+                        “The kids who read those books, they don't know that,” Traughber said about the stigma. “They love them. Fifteen, 20 years later when they're writing them themselves, the ones who grew up to be pros, there's none of that shame.”
+                    </p>
+                    <div class="bg-light ad-block">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="ad-caption">Advertisement</p>
+                                <div class="ad-code">
+                                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                                        <script>
+                                            let adIndex = 2;
+                                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Stuart Sayger, 49, was one of those kids and now, he is one of those professionals. 
+                    </p>
+                    <p>
+                        Sayger said he loved comics as a kid because he didn’t feel like they talked down to him the way many made-for-children products did. In addition to his fascination with comics,  he also grew up with a love of drawing.
+                    </p>
+                    <p>
+                        Since graduating from IU with a journalism degree in the late 1990s, Sayger has parlayed his childhood pastimes into a career as an illustrator for publishers including DC, IDW and Image Comics.
+                    </p>
+                    <p>
+                        Sayger said to succeed in the comics industry, it isn’t enough for readers to merely like your creation when they have so many other options for entertainment. They have to love it with the same unabashed passion as when they were children.
+                    </p>
+                    <p>
+                        He posited part of why people remain enamored with superheroes for so long is the fact that, unlike most of America’s real-life heroes, they never age.
+                    </p>
+                    <p>
+                        “Michael Jordan could beat everybody, but everybody knew you can’t win forever, Michael,” Sayger said. “You know, Father Time is going to get you, and Father Time’s never going to catch Spider-Man — there’s going to be a new artist to draw him, a new writer to write him and it’s going to be a new actor to play him.”
+                    </p>
+                    <p>
+                        And if things change so Spider-Man isn’t popular anymore?
+                    </p>
+                    <p>
+                        “Well, then he’ll be in space, or he’ll be underwater,” he said. “That thing is malleable enough. Whatever the thing, Spider-Man can be it.”
+                    </p>
+                    <i class="fa-solid fa-burst"></i>
+                    <div class="bg-light ad-block">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="ad-caption">Advertisement</p>
+                                <div class="ad-code">
+                                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                                        <script>
+                                            let adIndex = 3;
+                                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        That adaptability and staying power is a large part of why Traughber believes the superhero genre broke into the mainstream in spite of its once juvenile reputation. Over time, it simply became impossible to ignore.
+                    </p>
+                    <p>
+                        “Eventually there's a weight of it, where people just go, ‘I guess there's something to it,’” Traughber said. 
+                    </p>
+                    <p>
+                        He added that superheroes are more accessible than ever not just because of movies, but because they have become far more diverse. He said there’s something for everyone now because more fans can actually find characters who look and talk like them.
+                    </p>
+                    <p>
+                        “And that helps for the respect for the material too, when you have more stuff that speaks to different people than just, ‘Here's another straight straight white guy,’” Traughber ​​said. 
+                    </p>
+                    <figure class="big-image">
+                        <div class="row">
+                            <div class="column">
+                              <img src="https://snworksceo.imgix.net/ids/79e4348b-0617-4aaf-8ba0-b66d6134a59f.sized-1000x1000.jpg?" alt="shopper" style="width:100%">
+                              <figcaption>
+                                A customer browses March 4, 2022, at Vintage Phoenix Comic shop. The store is located at 114 E. 6th St.
+                            </figcaption>
+                            </div>
+                            <div class="column">
+                              <img src="https://snworksceo.imgix.net/ids/ddcc10e3-99fc-4046-bf6c-ba78ae99eb90.sized-1000x1000.jpg?" alt="shoppers" style="width:100%">
+                              <figcaption>
+                                Customers are seen shopping March 4, 2022, at Vintage Phoenix Comics. Traughber estimates there are tens of thousands of comics in the store, though it's nearly impossible to keep a comprehensive count. 
+                             </figcaption>
+                            </div>
+                            
+                        </div>
+                    </figure>
+                    <p>
+                        Dewitt Kilgore is an associate professor of English at IU and has published numerous journals examining the representation of African culture in science fiction and superhero media. 
+                    </p>
+                    <p>
+                        He is a nearly lifelong fan of superheroes. He jokes that his first published work was a letter to the editor that appeared in the back of an issue of Marvel’s “Luke Cage, Hero for Hire.” 
+                    </p>
+                    <p>
+                        Kilgore has enjoyed superheroes since he was a boy, but at the time he didn’t look anything like the vast majority of them — white men, typically with perfect square chins and round muscles. 
+                    </p>
+                    <div class="bg-light ad-block">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <p class="ad-caption">Advertisement</p>
+                                <div class="ad-code">
+                                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                                        <script>
+                                            let adIndex = 4;
+                                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-${adIndex}`); });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        The sharp jawlines and bulging biceps haven’t changed much, but the overwhelming whiteness has. 
+                    </p>
+                    <p>
+                        In 2018, Marvel Studios' “Black Panther” reached $1.3 billion behind a Black director, a Black lead actor and a primarily Black cast. It is the 13th highest-grossing movie of all time. 
+                    </p>
+                    <p>
+                        Last year, Marvel’s “Shang Chi and the Legend of the Ten Rings” and “Eternals” each featured Asian and Asian American directors and lead actors.
+                    </p>
+                    <p>
+                        Kilgore said increased representation in superhero media begins at the editorial level of major publishers and production studios. When more diverse creators have a voice, the resulting product reflects the evolving political conversation. 
+                    </p>
+                    <div class="pull-quote-center">
+                        <p class="quote">
+                            “It’s when changes in the broader culture around the ideas of race, diversity, civil rights, et cetera began happening that people within the industry became emboldened.”
+                        </p>
+                        <p class="attribute">—Dewitt Kilgore, Associate Professor of English at IU </p>
+                    </div>
+                    <p>
+                        Beyond original characters like Black Panther and Shang-Chi, some comic book writers have also introduced ethnically diverse versions of traditionally white superheroes. 
+                    </p>
+                    <p>
+                        For example, Spider-Man is no longer exclusively white. In August 2011, Marvel’s “Ultimate Fallout” No. 4 introduced readers to Miles Morales, an Afro-Latino teenager who takes over the Spider-Man mantle after its original owner Peter Parker is killed. 
+                    </p>
+                    <p>
+                        Morales made his big screen debut in the 2018 animated feature “Spider-Man: Into the Spider-Verse.” The Oscar-winning film centers on Morales coming into his own as a hero under the pressures of his Black policeman father, the guidance of his hispanic nurse mother and the shadow of his supervillain uncle. 
+                    </p>
+                    <p>
+                        However, the film also features comedian John Mulaney as the voice of Spider-Ham, a wise-cracking pig with spider powers — at least, so it appears until the film reveals he is actually a spider bitten by a radioactive pig.
+                    </p>
+                    
+                    <p>
+                        This juxtaposition of challenging, real-world themes with cartoonish absurdism is fairly commonplace in the superhero genre. 
+                    </p>
+                    <p>
+                        When Iron Man wasn’t flying around firing lasers at supervillains in the 1970s, he was battling alcoholism. In 2008’s “All-Star Superman” No. 10, the man of steel spends an afternoon repairing the moon after a pair of aliens crack it in half and use several of Earth’s bridges to staple it back together. 
+                    </p>
+                    <p>
+                        A few pages later, Superman comforts and successfully dissuades a young woman from committing suicide.
+                    </p>
+                    <p>
+                        It may seem like these tonally disparate plot elements couldn’t possibly mix, but Dr. Kilgore said they can work together so long as their creators treat them seriously. 
+                    </p>
+                    <p>
+                        “Garbage in, garbage out; good stuff in, good stuff out,” he said. “If you have a low expectation about what your medium can do, your medium can only go up to a certain amount. If you have some ambition, then you have a better chance of creating something interesting, perhaps something great.”
+                    </p>
+                    <p>
+                        Traughber readily acknowledged the silliness that often accompanies the superhero genre. To this day, no character gives him the same rush of excitement as his childhood favorite: a little-known DC Comics’ hero named Captain Carrot, an anthropomorphic rabbit who obtains superpowers from eating the orange root vegetable of his namesake. 
+                    </p>
+                    <p>
+                        Though Traughber doesn’t anticipate a big-budget Captain Carrot film series any time soon, he isn’t sure there’s a limit to the level of absurdity movie studios are willing to accept at this point. Not if audiences continue to embrace the weird.
+                    </p>
+                    <p>
+                        Still, that’s not why superhero fans have grown in numbers and stuck around for so long, he said. Underneath all the bright spandex, billowing capes and flying suits of armor are relatable characters with issues that plague the superpowered and powerless alike.
+                    </p>
+                    
+                    <p>
+                        “It's fantasy, it's escapism,” he said. “But the best of them have a relatable human character at the heart of it.
+                    </p>
+                    <p>
+                        At least, they’re as relatable as Kryptonians, talking trees and anthropomorphic rabbits can be.
+                    </p>
+                    <p>
+                        “Human in the broad sense,”  he corrected himself. “Some of them are aliens. But they're still human.”
+                    </p>
+                    
+
+
+        <!-- AD BLOCK -->
+        <!-- UNCOMMENT THIS BLOCK WHEN YOU ARE READY TO INSERT ADS -->
+        <!-- Place one ad every few scrolls. You can arrange them so they don't disrupt your design. -->
+        <!-- make sure to increment the 'adIndex' variable in the ad JS script 
+            so different ads appear in each ad block. -->
+                <!-- </div>
+            </section>
+        </article> 
+            <div class="bg-light ad-block">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="ad-caption">Advertisement</p>
+                        <div class="ad-code">
+                            /* 
+                                AD INSTRUCTIONS
+                                There are 5 ad codes. 
+                                For each ad, change the last number of the ID ('div-gpt-ad-1512489859064-1')
+                                ex. div-gpt-ad-1512489859064-2 or div-gpt-ad-1512489859064-3
+                                Make sure to change both the one in the div id and in the JS script
+                                Each ad should have a diff number. You can repeat ads if you need more than 5.
+                            */
+                            <div id='div-gpt-ad-1512489859064-1' align="center">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display(`div-gpt-ad-1512489859064-1`); }); 
+                            </script>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+        <article class="container">
+            <section class="row justify-content-center">
+                <div class="col-md-6"> -->
+        <!-- END AD BLOCK -->
+
+
+                </div>
+            </section>
+        </article>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p><em>Like what you're reading?</em><br>
+                        Support independent, award-winning student journalism. <a class="story-link" target="_blank" href="https://www.idsnews.com/page/donate">Donate.</a></p>
+                    <p><small>&copy; Copyright 2022 Indiana Daily Student</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ids.js"></script>
+</body>
+</html>

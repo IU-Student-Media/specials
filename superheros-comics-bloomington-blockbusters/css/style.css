@@ -1,0 +1,155 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+
+    Important notes/reminders/resources:
+    * The buildout template can be overwhelming. In my experience the best
+      way to figure out how it works is to play around with the inspector
+      in your browser on an old buildout and see how things work.
+    * You shouldn't need to change any of the styles in the ids.css file — any
+      styles added in this file will overwrite those ones if you want to change them.
+      But looking through that file will give you a good idea of how the styles are
+      working. 
+    * Make sure to optimize images before you upload them to CEO or the load time will be massive
+    * When working locally on your computer, use the file path of images to 
+      insert them (for example: <img src="images/photo.jpg" alt="a photo">. 
+      Once you're ready to publish with the IDS, you'll upload them
+      into CEO and replace all those file paths with urls (editors will
+      help you)
+    * IMPORTANT When you're ready to input the story text in the buildout, run the 
+      body copy through this python script: https://github.com/carsonology/p-tag-generator
+      It will put a <p> tag around each paragraph so you can automatically paste
+      the copy into the html file without typing so many p tags
+    * If you're confused about Bootstrap, which is where the "col-md-6" classes
+      come from, check out this site: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    * Make sure to validate your HTML and CSS code to catch any errors
+        HTML validator: https://validator.w3.org/
+        CSS validator: https://jigsaw.w3.org/css-validator/
+    * this buildout template is mobile first. that means design for a tiny screen in the 
+      general styles, then adjust for desktop in the media queries (see the bottom of the file)
+      More on mobile-first design: https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00 
+    
+    *********************** IMPORTANT ***********************
+    BEFORE YOU SUBMIT, GO THROUGH THIS CHECKLIST: https://docs.google.com/document/d/1eeYAbM9-GZbLrcd-WeJFzeNPrtXEYn-jIBtJbAGLvzc/edit?usp=sharing
+*/
+
+
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+/* COLORS */
+/* set any colors you plan to use throughout the buildout here */
+/* then you can adjust the color value easily */
+:root {
+    /* --mycolor: #your color here; */
+    --idsred: #990000;
+
+    /* call the color in a style like this:
+    body {
+        color: var(--cream);
+    }
+    */
+}
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    background: url(https://snworksceo.imgix.net/ids/fcb8d040-2ae3-41cc-b015-0a79ccbe1866.sized-1000x1000.jpg?);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /* adjusts image placement, can also be set as percentages */
+
+    /* note: there are many alternative ways to style the header
+        other than a photo and 2 headlines. 
+
+        Here are some other IDS examples, you can inspect the code to 
+        see how they did it: 
+
+        Headlines that fade in: http://specials.idsnews.com/iu-kappa-kappa-gamma-sorority-hazing-big-little/
+        Header with a video: http://specials.idsnews.com/bloomington-bluebird-bar-coronavirus-guidelines/
+        Animated header: http://specials.idsnews.com/iu-president-michael-mcrobbie-speeches-gpt-2/
+        Another animated/fade-in header: http://specials.idsnews.com/steve-moore-almost-died-coronavirus-bloomington/
+        Header with multiple photos: http://specials.idsnews.com/what-wasnt-said-racism-indiana-university-bloomington-iu/
+        Dramatic photo header: http://specials.idsnews.com/iu-coronavirus-testing/
+        Cute animation header: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+        Cool typography (from W+P): http://specials.idsnews.com/a-little-less-than-kind-iu-theater-bloomington/index.html
+        Not full width header: http://specials.idsnews.com/how-iu-does-its-laundry/
+    */
+}
+
+/* SET ANY MORE STYLES YOU WANT HERE: */
+
+.column {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.quote{
+  color: #990000;
+}
+
+.caption{
+  padding-bottom: 2em;
+}
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+  
+}
+
+@media (min-width: 768px) {
+    
+  h1{
+      font-size: 65px;
+  }
+  h2{
+      font-size: 50px;
+  }
+  
+  
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1{
+      font-size: 70px;
+  }
+  h2{
+      font-size: 55px;
+  }
+  .column {
+    width: 50%;
+    padding: 5px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1{
+      font-size: 75px;
+  }
+  h2{
+      font-size: 60px;
+  }
+  .column {
+    width: 50%;
+    padding: 5px;
+  }
+}
+
