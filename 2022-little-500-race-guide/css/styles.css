@@ -1,0 +1,1028 @@
+/* Header | Navbar, Headline, Subhead, Bylines */
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+	.header {
+		color: white;
+		height: 45vh;
+		background-size: cover;
+		background-color: black;
+		padding-bottom: 15px;
+		background-position: center;
+		display: flex;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+
+	}
+
+	.header-secondary {
+		color: white;
+		height: 75vh;
+		background-size: cover;
+		background-color: black;
+		padding-bottom: 15px;
+		background-position: center;
+	}
+
+	.dropdown-toggle::after {
+	    display:none;
+	}
+
+	.blackbg {
+		background-color: black !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;	
+	}
+
+	.nav-link {
+		color: white !important;
+		font-size: 16px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.navbar-toggler {
+		border: none !important;
+	} 
+
+	.centerme {
+		color: white;
+		background-color: black;
+		padding-bottom: 7px;
+	}
+
+	.byline {
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		margin-bottom: 6px;
+		font-size: 14px;
+	}
+
+	a.byline-link {
+		font-family: 'Inter', sans-serif;
+		font-weight: 600;
+		color: black;
+		transition: .2s;
+		border-bottom: 1px black solid;
+		text-decoration: none;
+	}
+
+	a.byline-link:hover {
+		color: black;
+		border-bottom: 1px  solid;
+		text-decoration: none;
+	}
+    
+    @media (min-width < 600) {
+        .headline {
+			font-size: 32px;
+			font-family: 'Georgia', serif;
+			letter-spacing: -2px;
+		}
+    }
+
+
+	@media (min-width: 768px) {
+		.transparentnavbar {
+			background-color: transparent !important;
+			border-color:transparent;
+			background-image:none;
+			box-shadow:none;
+			-webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
+		  	transition: background .5s;
+		}
+	}
+	@media (max-width: 767px) {
+		.transparentnavbar {
+			background-color: black !important;
+			border-color:transparent;
+			background-image:none;
+			box-shadow:none;
+			-webkit-transition: background .5s; /* For Safari 3.1 to 6.0 */
+		  	transition: background .5s;
+		}
+	}
+	.dropdown-toggle::after {
+	    display:none;
+	}
+
+    li.logo {
+        margin-right: auto; /* put the logo on the left */
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+    }
+    li.logo img {
+        width: 70px;
+        padding-right: 5px;
+    }
+    li.logo span {
+        display: none;
+        -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+        transition: 1s;
+    }
+
+	.blackbg {
+		background-color: black !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;	
+	}
+
+	.nav-link {
+		color: white !important;
+		font-size: 16px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.navbar-toggler {
+		border: none !important!
+	} 
+
+	.hithere {
+		font-size: 20px;
+		color: white;
+		margin-bottom: 0;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+
+	@media (min-width: 768px) {
+		.headline {
+			font-size: 500%;
+			font-family: 'Georgia', serif;
+			letter-spacing: -2px;
+		}
+		.subheadline {
+			font-size: 25px;
+			line-height: 35px;
+			font-family: 'Georgia', serif;
+			font-weight: 400;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.headline {
+			font-size: 50px;
+			font-family: 'Georgia', serif;
+		}
+		.subheadline {
+			font-size: 20px;
+			font-family: 'Georgia', serif;
+			font-weight: 400;
+		}
+		.centerme {
+		}
+	}
+
+	.headline-lato {
+		font-family: 'Lato', sans-serif;
+	}
+
+	.headline-bold {		
+		font-family: 'Anton', sans-serif;
+		font-size: 100px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: left;
+	}
+
+	.subheadline-lato {
+		font-family: 'Lato', sans-serif;
+	}
+
+	.bylines {
+		padding-bottom: 15px;
+		padding-top: 45px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.byline {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	.subline {
+		margin-top: 0;
+		font-size: 12px;
+		margin-bottom: 4px;
+	}
+
+	.nav-before {
+		color: transparent;
+		padding-left: 10px;
+		font-size: 16px;
+		font-family: 'Lato', sans-serif;
+		transition: 0.2s;
+	}
+
+    .navtext {
+        width: 80%;
+    }
+
+	.nav-title {
+		color: white;
+		padding-left: 15px;
+		font-size: 16px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.byline-link {
+		color: white;
+		transition: .2s;
+	}
+
+	.byline-link:hover {
+		color: #EDEBEB;
+		text-decoration: none;
+	}
+
+/* Body | Body copy, Images, Components */
+
+	.first-sentence {
+		font-family: 'Georgia Pro Cond';
+		font-size: 22px;
+		padding-bottom: 15px;
+		font-weight: 700;
+		font-style: cond;
+	}
+
+	.body {
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	a.story-link {
+		text-decoration: none;
+		color: black !important;
+		border-bottom: 2px solid black;
+		transition: .2s;
+	}
+
+	a.story-link:hover {
+		text-decoration: none;
+		color: black !important;
+		border-bottom: 2px solid #EDEBEB;
+	}
+
+	.story {
+		font-family: 'Georgia', serif;
+		text-align: left;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.caption {
+		margin-top: 2px;
+		font-size: 14px;
+		font-family: sans-serif;
+		line-height: 20px;
+		font-family: 'Lato';
+	}
+
+	.credit {
+		padding-top: ;
+		font-size: 12px;
+		font-family: sans-serif;
+		text-align: right;
+		margin-bottom: -6px;
+		padding-bottom: 0;
+		margin-top: -2px;
+		text-transform: uppercase;
+		font-family: 'Lato';
+	}
+
+	.section-break {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		letter-spacing: 25px;
+		text-align: center;
+	}
+
+	@media (min-width: 768px) {
+
+		.big-image {
+			width: 160%;
+			padding-bottom: 30px;
+			padding-top: 20px;
+			margin-right: 30%;
+			margin-left: -30%;
+			display: inline-block;
+		}
+
+		.pull-quote-center {
+			width: 130%;
+			margin-left: -15%;
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+
+		.quote {
+			font-size: 28px;
+			line-height: 37px;
+			margin-bottom: 0px;
+			text-align: center;
+			font-style: italic;
+			font-family: 'Georgia', serif;
+			font-weight: 300;
+		}
+
+		.attribute {
+			font-size: 18px;
+			padding-top: 5px;
+			font-family: 'Lato', sans-serif;
+			color: grey;
+			margin-top: 0;
+			text-align: center;
+		}
+
+		.wide-right {
+			padding-top: 15px;
+			padding-bottom: 30px;
+			padding-left: 25px;
+			margin-right: -40%;
+			float: right;
+			width: 80%;
+			text-align: right;
+		}
+
+		.wide-left {
+			padding-top: 15px;
+			padding-bottom: 30px;
+			padding-right: 25px;
+			margin-left: -40%;
+			float: left;
+			width: 80%;
+			text-align: left;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.pull-quote-center {
+			width: 100%;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+		.quote {
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 0px;
+			text-align: center;
+			font-style: italic;
+			font-family: 'Georgia', serif;
+			font-weight: 300;
+		}
+		.attribute {
+			font-size: 16px;
+			font-family: 'Lato', sans-serif;
+			color: grey;
+			margin-top: 0;
+			text-align: center;
+		}
+		.big-image,.wide-right,.wide-left {
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
+	}
+
+	.ad {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		text-align: center;
+		font-family: 'Lato';
+	}
+
+/* Directory template | Big table of contents | See hoemcoming guide */
+
+	.bignav {
+		padding-top: 3%;
+		padding-bottom: 0;
+		text-align: left;
+	}
+
+	.bignavlink{
+		color: black;
+		text-decoration: none;
+		font-family: 'Lato', sans-serif;
+		padding-top: 30px;
+	}
+
+	.bignavlink:hover {
+		color: black;
+		text-decoration: none;
+	}
+
+	.image-fit-img {
+		object-fit: cover;
+	}
+
+	.bignav-subhead {
+		text-align: left;
+		margin-top: 0;
+	}
+	.directory-entry {
+		padding-top: 30px;
+	}
+
+	@media (max-width: 767px) {
+		.directory-entry {
+			padding-top: 45px;
+		}
+	}
+
+/* List template */
+
+	.page-title {
+		padding-bottom: 15px;
+		font-family: 'Lato', sans-serif;
+		font-size: 50px;
+	}
+
+/* Footer | Donate link, Copyright notice */
+
+	.support-us {
+		padding-top: 40px;
+		color: black;
+		background-color: #EDEBEB;
+		font-size: 16px;
+		padding-bottom: 30px;
+		margin-top: 45px;
+		font-family: 'Lato', sans-serif;
+	}
+
+	.cover-photo-caption {
+		text-transform: uppercase;
+		font-family: 'Lato', sans-serif;
+		font-size: 14px;
+	}
+
+	.footer {
+		padding-top: 40px;
+		color: #EDEBEB;
+		background-color: black;
+		font-size: 14px;
+		padding-bottom: 30px;
+		margin-bottom: 0;
+		font-family: 'Lato', sans-serif;
+	}
+
+	a.backto {
+		text-decoration: none;
+		color: white !important;
+		border-bottom: 2px solid white;
+		transition: 0.2s;
+	}
+
+	a.backto:hover {
+		text-decoration: none;
+		color: white !important;
+		border-bottom: 2px solid black;
+	}
+
+	i.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+i.vert-move {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+.story-box {
+	background-color: grey;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: ;
+	height: 300px;
+	font-size: 18px;
+}
+
+.ft-box {
+	height: 500px;
+}
+
+.story-box {
+	color: white;
+	margin-bottom: 2em;
+}
+
+.story-head {
+	font-family: 'Anton', 'Lato', sans-serif;
+	font-size: 250%;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	
+}
+
+.advertisement-disclaimer {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/* Fade in */
+
+#test {
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+#test-4 {
+
+    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+}
+
+#test-2 {
+
+       -moz-animation: fadein 8s; /* Firefox < 16 */
+        -ms-animation: fadein 8s; /* Internet Explorer */
+         -o-animation: fadein 8s; /* Opera < 12.1 */
+            animation: fadein 8s;
+}
+
+#test-3 {
+
+       -moz-animation: fadein 11s; /* Firefox < 16 */
+        -ms-animation: fadein 11s; /* Internet Explorer */
+         -o-animation: fadein 11s; /* Opera < 12.1 */
+            animation: fadein 11s;
+}
+
+#test-5 {
+
+       -moz-animation: fadein 12s; /* Firefox < 16 */
+        -ms-animation: fadein 12s; /* Internet Explorer */
+         -o-animation: fadein 12s; /* Opera < 12.1 */
+            animation: fadein 12s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#element {
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Rosters */
+
+.roster-jersey {
+	width: 25%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.roster-name {
+	padding-top: 15px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.l2 {
+	border-bottom: none;
+	color: black;
+}
+
+.l2:hover {
+	color: gray;
+	transition: 0.2s;
+	text-decoration: none;
+}
+@media (max-width: 767.98px) { .story-box {margin-bottom: 15px} }
+
+}
+
+
+/* about style */
+
+#gallery {
+	line-height:0;
+	-webkit-column-count:5; /* split it into 5 columns */
+	-webkit-column-gap:5px; /* give it a 5px gap between columns */
+	-moz-column-count:5;
+	-moz-column-gap:5px;
+	column-count:5;
+	column-gap:5px;
+	margin: 1em 8em ;
+  
+  }
+  
+  #gallery img {
+	width: 100% !important;
+	height: auto !important;
+	margin-bottom:5px; /* to match column gap */
+  }
+  
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+  
+  }
+  
+  .card:hover .overlay {
+	opacity: .7;
+  }
+
+  .card {
+	  border: none;
+	  padding-bottom: 1em;
+  }
+  
+  #text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 50px;
+	color: white;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+  }
+  
+  table th {
+	background-color: var(--idsred);
+	color: white;
+	text-align: left;
+  
+  }
+  
+  table td {
+	padding-left: 5px;
+  }
+  table tr:nth-child(even) {
+	background-color: rgb(233, 233, 233);
+  }
+  table td, table th {
+	padding: 18px;
+  }
+  
+  table {
+	table-layout: fixed;
+	width: 80%;
+	border-collapse: collapse;
+  }
+  
+  
+  table tr {
+	padding: 20px;
+  }
+  
+  table {
+	margin: 0 auto;
+  }
+  
+  .termwidth {
+	  width: 20%;
+  }
+  
+  /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+  /* use these for responsive design — you can set different styles based on how wide the screen is */
+  /* Extra small devices (portrait phones, less than 576px)
+  No media query for `xs` since this is the default */
+  
+  /* Small devices (landscape phones, 400px and up) */
+  @media (min-width: 400px) { 
+	#gallery {
+	  -moz-column-count:    1;
+	  -webkit-column-count: 1;
+	  column-count:         1;
+	 }
+	  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+	  header {
+		  /* adjust header image positioning for larger devices if needed */
+		  /* you can also change the header image for mobile here */
+		  /* background-position: 50% 50%; */
+	  }
+	  #gallery {
+		-moz-column-count:    2;
+		-webkit-column-count: 2;
+		column-count:         2;
+	   }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+	#gallery {
+	  -moz-column-count:    3;
+	  -webkit-column-count: 3;
+	  column-count:         3;
+	 }
+  
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+	
+  
+  }
+
+  .header2 {
+	padding: 4em;
+	background-color: black;
+	color: white;
+	height: 40%;
+  }
+
+
+/* gallery */
+.timeline-nav {
+	position:relative;
+	padding: 10px 5px 5px 50px;
+	max-width: 15%;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 4rem;
+	align-self: flex-start; /* keeps timeline sticky */
+	height: auto;
+  }
+  
+  /* Timeline element */
+  .timeline-nav::before {
+	/* vertical line */
+	content: "";
+	width: 5px;
+	background-color: #990000;
+   
+	/* positon to the left */
+	position: absolute;
+	top: 0; bottom: 0; left: 15px;
+  }
+  
+  div.decade {
+	padding: 5px 5px;
+	background-color: #ffebeb;
+	position: relative;
+	/*border-radius: 6px;*/
+	margin-bottom: 10px;
+  }
+  
+  
+  /* text for timeline navbar */
+  p.year {
+	font-size: 1.1em;
+	font-weight: 700;
+  }
+  p.txt {
+	margin: 0px 0 0 0;
+	color: black;
+  }
+  
+  /*responsive gallery */
+  
+  .gallery {
+	display: flex;
+	flex-wrap: wrap;
+	border:  3px solid #990000;
+	margin-left: 20%;
+	margin-right: 3%;
+	
+  }
+  
+  p.decade {
+	font-size: 1.1em;
+  }
+  
+  .banner {
+	background-color: #990000;
+	color: white;
+	padding-top: 5px
+  }
+  .fb-button {
+	margin-left: auto;
+	width: 30%;
+	margin-right: auto;
+  
+  }
+  
+  
+  
+  
+  /* Live update page styling--- live-updates twitter flex box */
+  .twitterpanel {
+	background-color: black;
+	width: 100%;
+  }
+  /* blurb width */
+  .twitterpanel .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	color: white;
+	text-align: center;
+  }
+  
+  
+  
+  .twitterpanel .live {
+	margin-top: 500px;
+  }
+  
+  .twitter-timeline {
+	margin: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+  /* use these for responsive design — you can set different styles based on how wide the screen is */
+  /* Extra small devices (portrait phones, less than 576px)
+  No media query for `xs` since this is the default */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width < 767px) { 
+	.twitterpanel {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%
+  
+	}
+	
+	.twitter-timeline {
+	  width: 100%;
+	  margin-left: 10px;
+	}
+  
+	.twitterpanel .item {
+	  width: 80%
+	  text-align: center;
+	}
+  
+	.container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  width: 70%;
+	}
+	figure{
+	  width: 100%;
+	}
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+	  header {
+		  /* adjust header image positioning for larger devices if needed */
+		  /* you can also change the header image for mobile here */
+		  /* background-position: 50% 50%; */
+	  }
+	  .twitterpanel {
+			  width:100%;
+			  }
+		.twitterpanel .item {
+			  width: 40%;
+			  padding-top: 15em;
+		  }
+		  .twitter-timeline {
+			  display: flex;
+			  flex-direction: row;
+		  }
+	  /*FIXME: make images fit 3 in a row*/
+	  .figure {
+		min-width: 33.33%;
+  
+		
+	  }
+	  .container {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+		justify-content: space-evenly;
+		flex: 3 1 auto;
+	
+	  }
+  
+  
+	  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+  
+	.container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  width: 70%;
+	  justify-content: space-evenly;
+	  
+		flex: 3 1 auto;
+	
+	}
+	figure{
+	  width: 25%;
+	  padding: 3px 3px 3px 3px;
+	}
+  
+  
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+   
+  
+  }
