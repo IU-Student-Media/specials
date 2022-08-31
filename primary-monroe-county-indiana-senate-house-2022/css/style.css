@@ -1,0 +1,454 @@
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --dems: rgb(25, 74, 200);
+  --reps: rgb(193, 34, 34);
+  --libertarians: goldenrod;
+}
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  font-weight: 600;
+  padding-bottom: 0.45em;
+}
+
+h2 {
+  font-size: 62px;
+  font-weight: 800;
+}
+
+h1,
+h2 {
+  text-align: center;
+  max-width: var(--width-lg);
+}
+
+.headline-container {
+  padding-top: calc(60px + var(--lg));
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h3 {
+  /* section header */
+  margin-bottom: 0.2em;
+  margin-top: var(--xxl);
+}
+
+h3+p {
+  margin-top: 0.5em;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+#methodology h4 {
+  font-size: 18px;
+}
+
+h4+p {
+  margin-top: 0.5em;
+}
+
+/* table of contents box */
+#toc {
+  background-color: var(--gray05);
+  border: 1px solid rgba(0, 0, 0, .05);
+  padding: var(--sm) var(--md);
+}
+
+#toc p,
+#toc li {
+  font-family: Inter, Arial, sans-serif;
+}
+
+#toc p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#toc ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: var(--xs) 0;
+}
+
+#toc li {
+  line-height: 1.6;
+}
+
+/* candidate cards */
+/* fonts */
+.candidate p,
+.candidate li,
+.candidate button {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.candidate p {
+  font-size: 16px;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.square-frame+p {
+  /* candidate name */
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.square-frame+p a:link,
+.square-frame+p a:visited {
+  border-bottom: none;
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.95;
+  text-shadow:
+    1px 1px var(--gray05),
+    1px -1px var(--gray05),
+    -1px 1px var(--gray05),
+    -1px -1px var(--gray05);
+}
+
+.rep .square-frame+p a:link,
+.rep .square-frame+p a:visited {
+  border-color: var(--reps);
+}
+
+.dem .square-frame+p a:link,
+.dem .square-frame+p a:visited {
+  border-color: var(--dems);
+}
+
+.lib .square-frame+p a:link,
+.lib .square-frame+p a:visited {
+  border-color: var(--libertarians);
+}
+
+.candidate p:nth-child(3) {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.candidate.dem p:nth-child(3) {
+  color: var(--dems);
+}
+
+.candidate.rep p:nth-child(3) {
+  color: var(--reps);
+}
+
+.candidate.lib p:nth-child(3) {
+  color: var(--libertarians);
+}
+
+.candidate ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  height: 132px;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.show-priorities {
+  font-size: 0.85em !important;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  cursor: pointer;
+}
+
+.candidate.rep .show-priorities {
+  color: var(--reps);
+}
+
+.candidate.dem .show-priorities {
+  color: var(--dems);
+}
+
+.candidate.lib .show-priorities {
+  color: var(--libertarians);
+}
+
+.candidate li {
+  padding-right: var(--xs);
+}
+
+.candidate li:not(:first-child) p {
+  background-color: var(--gray10);
+  font-size: 0.95em;
+  padding: 0 var(--xs);
+  border-radius: 2px;
+}
+
+/* images */
+.square-frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto var(--sm);
+  overflow: hidden;
+}
+
+.square-frame img {
+  height: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid red;
+  border-radius: 50%;
+}
+
+.candidate.dem img {
+  border-color: var(--dems);
+}
+
+.candidate.rep img {
+  border-color: var(--reps);
+}
+
+.candidate.lib img {
+  border-color: var(--libertarians);
+}
+
+/* structure/layout */
+.candidates-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: var(--width-lg);
+  /* max-width: calc(2 * var(--medium)); */
+  margin: 0 auto;
+  padding: 0 var(--sm);
+}
+
+.candidate {
+  border: 1px solid rgba(0, 0, 0, .1);
+  background-color: var(--gray05);
+  margin: 0 var(--xs) var(--lg);
+  padding: var(--md) var(--sm);
+  position: relative;
+  flex: 1 0 30%;
+  max-width: 33%;
+}
+
+@media screen and (max-width: 768px) {
+  .candidate {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .candidates-container {
+    display: block;
+  }
+}
+
+/* buttons */
+button {
+  font-family: Inter, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid blue;
+  cursor: pointer;
+  padding: var(--xs) var(--sm);
+  margin: var(--md) auto 0;
+  display: block;
+  /* transition: background-color .3s ease-in; */
+  transition: box-shadow .3s, color .3s;
+}
+
+.dem button {
+  box-shadow: inset 0 0 0 0 var(--dems);
+  border-color: var(--dems);
+}
+
+.dem button:hover {
+  box-shadow: inset 100px 0 0 0 var(--dems);
+  color: white;
+}
+
+.rep button {
+  box-shadow: inset 0 0 0 0 var(--reps);
+  border-color: var(--reps);
+}
+
+.rep button:hover {
+  box-shadow: inset 100px 0 0 0 var(--reps);
+  color: white;
+}
+
+.lib button {
+  box-shadow: inset 0 0 0 0 var(--libertarians);
+  border-color: var(--libertarians);
+}
+
+.lib button:hover {
+  box-shadow: inset 100px 0 0 0 var(--libertarians);
+  color: white;
+}
+
+/* modal */
+.candidate.incumbent::before {
+  content: "incumbent";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: var(--gray15);
+}
+
+#modal {
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  width: 100%;
+  top: 60px;
+  margin: 0 auto;
+  padding: 0 var(--sm);
+  z-index: 3;
+  transition: opacity .2s;
+}
+
+#modal .candidate {
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: auto;
+  max-width: calc(var(--small) + 50px);
+  position: relative;
+  padding: var(--md);
+  border-radius: 3px;
+}
+
+.bkg-cover {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+  /* position: fixed; */
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 2;
+  transition: opacity .2s;
+}
+
+#closer {
+  fill: var(--offblack);
+  font-size: 35px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+iframe {
+  margin-bottom: var(--md);
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
