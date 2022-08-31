@@ -120,13 +120,14 @@ const bkg = document.querySelector('.bkg-cover');
 const card = document.querySelector('#modal .candidate');
 
 window.onclick = function (event) {
-    const closer = document.querySelector('i.fa.fa-times');
-    if (event.target === modal || event.target === closer) {
+    // console.log('window onclick event running');
+    if (event.target === modal) {
         hideModal();
     }
 }
 
 function showModal() {
+    // console.log('showModal function called');
     // reveal the modal
     modal.style.opacity = 1;
     bkg.style.opacity = 1;
@@ -167,7 +168,7 @@ function showModal() {
             }
         })
 
-        html += `<div id="closer"><i class="fa fa-times"></i></div></div>`;
+        html += `<div id="closer" onClick="hideModal()"><i class="fa fa-times"></i></div></div>`;
 
         modal.innerHTML = html;
     }
