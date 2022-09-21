@@ -155,7 +155,7 @@ function generateCard(name, modal = false) {
 
     let html = `
         <div class="candidate ${cardData[name].isIncumbent ? 'incumbent' : ''}">
-        ${modal ? `<div id="closer"><i class="fa fa-times" aria-hidden="true"></i></div>` : ''}
+        ${modal ? `<div id="closer" onClick="hideModal()"><i class="fa fa-times" aria-hidden="true"></i></div>` : ''}
             <p class="name"><strong>${cardData[name].website ? `<a href="${cardData[name].website}" target="_blank">` : ""}${cardData[name].name}${cardData[name].website ? '</a>' : ""}</strong></p>
             ${cardData[name].img_url ?
             `<div class="square-frame">
@@ -197,8 +197,8 @@ const card = document.querySelector('#modal .candidate');
 
 
 window.onclick = function (event) {
-    const closer = document.querySelector('i.fa.fa-times');
-    if (event.target === modal || event.target === closer) {
+    // console.log('window onclick event running');
+    if (event.target === modal) {
         hideModal();
     }
 }
@@ -210,8 +210,6 @@ function showModal() {
     bkg.style.pointerEvents = 'auto';
     modal.style.pointerEvents = 'auto';
     document.body.style.overflow = 'hidden';
-
-    console.log(this)
 
     // insert candidate's content
     if (cardData[this.id.toString()]) {
