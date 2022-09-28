@@ -1,0 +1,6 @@
+{
+    "x": {
+        "type": "string",
+        "format": "date-time"
+    }
+}

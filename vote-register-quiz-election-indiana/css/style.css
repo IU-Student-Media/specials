@@ -1,0 +1,448 @@
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: black;
+  /* font-family: Inter, sans-serif; */
+}
+
+.headline-container {
+  top: 15%;
+  background-color: #ffffffcb;
+  border-radius: 1em;
+  padding: 2em;
+  max-width: var(--width-md);
+  margin-bottom: 3em;
+  backdrop-filter: blur(5px);
+  margin: 0 3em;
+}
+
+.headline-container div {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+h1 {
+  font-size: 60px;
+  position: relative;
+  padding-bottom: 0;
+  line-height: 55px !important;
+}
+
+.submit {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: .7em;
+  border-bottom: .3px solid grey;
+  margin-top: 2em;
+}
+
+.submit span {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  padding-top: 0.35em;
+}
+
+
+nav svg {
+  fill: black;
+}
+
+article {
+  border-radius: 2em;
+}
+
+#socials a {
+  color: black;
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/d73c6b7b-bae6-4dbf-bd48-ffbcde4fdaf0.original.gif");
+  background-repeat: no-repeat;
+  background-color: rgba(173, 173, 173, 0.176);
+  z-index: 99;
+  background-size: cover;
+  height: 100vh;
+  background-position: bottom center;
+
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  /* background-position: center center; */
+}
+
+.headline-container {
+  z-index: -100 !important;
+}
+
+.addeventatc {
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.671) !important;
+  margin-top: 0;
+}
+
+.addeventatc,
+.exportDirections,
+.restart {
+  border-radius: 3px;
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  font-size: 15px;
+  box-shadow: none !important;
+  transition: background-color .3s;
+  display: inline-block;
+  z-index: 9 !important;
+}
+
+.exportDirections {
+  padding: 11px;
+}
+
+.exportDirections {
+  margin-bottom: 0;
+  /* display: none; */
+  padding: 12px 12px;
+  margin-right: .5em;
+  font-family: "Open Sans";
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 20%) !important;
+  width: 13em;
+  border: .3px solid rgb(226, 226, 226);
+}
+
+.fa-paper-plane {
+  font-size: 1.5rem;
+  margin-right: .3em;
+}
+
+.email-form {
+  display: none;
+  margin: 0 1.5em 1.5em 1.5em;
+  /* width: 100%;  */
+}
+
+#email-field {
+  font-family: 'Inter', sans-serif;
+  padding: var(--xs) 3px;
+  width: 60%;
+  margin-right: .3em;
+  background-color: #fffef6;
+  font-size: 1rem;
+  border: none;
+}
+
+.generated-directions {
+  font-size: .1em;
+  width: 180px;
+}
+
+.generated-directions a {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+.addeventatc_dropdown {
+  background-color: rgba(255, 255, 255, 0.685) !important;
+  border-radius: .5em !important;
+  top: 50px !important;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+}
+
+.addeventatc_dropdown .frs a {
+  background: none !important;
+  color: none !important;
+}
+
+.addeventatc:hover,
+.restart:hover {
+  background-color: rgba(196, 196, 196, 0.219) !important;
+}
+
+#quiz-container {
+  background-color: #f7f3dd;
+  border-radius: 1em;
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+  padding: var(--lg) var(--xl) var(--md);
+  margin-top: var(--xxl);
+  margin-bottom: 10em !important;
+  transition: box-shadow .3s;
+}
+
+.answer h4 {
+  font-size: 20px !important;
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.315)
+}
+
+#quiz-container:hover {
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 20%);
+}
+
+#quiz-container h3 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  margin-top: 0.5em;
+  position: relative;
+  padding: var(--sm) 0;
+}
+
+#quiz-container h3:before,
+#quiz-container h3:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  left: 0;
+}
+
+#quiz-container h3:before {
+  top: 0;
+}
+
+#quiz-container h3:after {
+  bottom: 0;
+}
+
+#quiz-container h4 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  width: 80%;
+  margin: 1.3em auto 0;
+}
+
+#quiz-container h5 {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  width: 80%;
+  margin: 1.3em auto 0;
+  margin-bottom: .5em;
+}
+
+.finished {
+  width: 80%;
+  margin: 1.3em auto 0;
+  font-weight: 500;
+  font-family: 'Inter';
+}
+
+li::marker {
+  content: "▢ ";
+  padding-right: .5em;
+}
+
+#quiz-container li {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: .5em;
+  font-size: 1.5em;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+#quiz-container ul {
+  margin: auto 3em !important;
+}
+
+#quiz-container p.choice {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: var(--xs);
+  width: 80%;
+  margin: 1.0em auto;
+  padding: 0.5em;
+  text-align: center;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+#quiz-container p.choice:hover {
+  box-shadow: inset 3px -3px 0 black;
+  background-color: #faf7e7;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+p.choice.active {
+  box-shadow: inset 3px -3px 0 black;
+  background-color: #faf7e7;
+}
+
+.no-hover {
+  pointer-events: none;
+}
+
+.restart {
+  font-family: Inter, sans-serif;
+  background-color: transparent;
+  padding: var(--xs) var(--xs);
+  margin: 0;
+  cursor: pointer;
+  color: var(--gray70);
+  font-size: .75em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.restart {
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.bio div {
+  clip: rect(0px, 150px, 100px, 0px);
+  overflow: hidden;
+}
+
+.vote-symbol {
+  height: 100px;
+  width: 100px;
+  margin: 4em auto -3em auto;
+  margin-bottom: -3em;
+  z-index: -99;
+
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 430px) {
+  .headline-container {
+    top: 15%;
+  }
+
+  .header {
+    height: 90vh !important;
+  }
+
+  .addeventatc_dropdown {
+    top: 60px !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #quiz-container {
+    padding: var(--lg) var(--md) var(--md);
+  }
+
+  #quiz-container h4 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 1.75em !important;
+    line-height: 1.3em;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .answer h4 {
+    font-size: 16px !important;
+  }
+
+  .choice {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
