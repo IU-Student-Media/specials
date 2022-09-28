@@ -4,7 +4,7 @@ const data = {
     "slug": "Lotus Festival",
     "title": "29th Annual Lotus Festival Photos",
     "headline": "PHOTOS: 29th Annual Lotus Festival showcases 23 artists",
-    "pub_date": "Sept. 27, 2022",
+    "pub_date": "Sept. 28, 2022",
     "bylines": {
         "Photos by": [
             {
