@@ -1,0 +1,638 @@
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --school: rgb(248, 169, 32);
+  --school-light: rgba(248, 169, 32, .2);
+  --democrat: rgb(25, 74, 200);
+  --republican: rgb(193, 34, 34);
+  --libertarian: goldenrod;
+  --democrat-light: rgba(25, 74, 200, .15);
+  --republican-light: rgba(193, 34, 34, .15);
+  --libertarian-light: rgba(218, 165, 32, 0.2);
+}
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  font-weight: 600;
+  padding-bottom: 0.65em;
+  margin-bottom: 0.35em;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+
+h1,
+h2 {
+  text-align: center;
+  max-width: var(--width-lg);
+  padding: 0 var(--sm);
+}
+
+.headline-container {
+  padding-top: calc(60px + var(--lg));
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+h3 {
+  /* section header */
+  margin-bottom: 0.2em;
+  margin-top: var(--xxl);
+}
+
+h3+p {
+  margin-top: 0.5em;
+}
+
+h4 {
+  margin-bottom: var(--sm);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#methodology h4 {
+  font-size: 18px;
+  text-align: left;
+}
+
+#methodology {
+  margin: 0;
+  padding: 0;
+}
+
+h4+p {
+  margin-top: 0.5em;
+}
+
+/* table of contents box */
+#toc {
+  background-color: var(--gray05);
+  border: 1px solid rgba(0, 0, 0, .05);
+  padding: var(--sm) var(--md);
+  margin-bottom: var(--md);
+}
+
+#toc p,
+#toc li {
+  font-family: Inter, Arial, sans-serif;
+}
+
+#toc p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#toc ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: var(--xs) 0;
+}
+
+#toc li {
+  line-height: 1.6;
+}
+
+/* info tooltip */
+.tooltip {
+  font-size: 0.75em;
+  position: relative;
+  display: inline-block;
+  padding: 0 var(--xxs);
+}
+
+.tooltip a {
+  border-bottom: none;
+  color: var(--gray70);
+}
+
+@media screen and (min-width: 768px) {
+  .tooltip:before {
+    content: "Click to see a map of all school districts";
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    padding: var(--xs);
+    font-size: 14px;
+    border: 2px dashed var(--gray40);
+    background-color: var(--gray05);
+    position: absolute;
+    width: auto;
+    top: 50%;
+    white-space: nowrap;
+    display: inline-block;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 6px;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+
+  .tooltip:hover:before {
+    display: block;
+    opacity: 1;
+    transition: opacity .2s;
+  }
+}
+
+/* candidate cards */
+/* fonts */
+.candidate p,
+.candidate li,
+.candidate button {
+  font-family: Inter, Arial, sans-serif;
+}
+
+.candidate p {
+  font-size: 16px;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+p.party {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+.rep p.party {
+  color: var(--republican);
+}
+
+.dem p.party {
+  color: var(--democrat);
+}
+
+.lib p.party {
+  color: var(--libertarian);
+}
+
+.full-bio {
+  margin-top: var(--sm) !important;
+}
+
+.mb-md {
+  margin-bottom: var(--sm) !important;
+}
+
+p.name {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#modal p.name {
+  font-size: 2.0em;
+}
+
+p.name a:link,
+p.name a:visited {
+  border-bottom: none;
+  padding-bottom: 0.1em;
+  box-shadow: inset 0 -.1em var(--school);
+
+  display: inline-block;
+  line-height: 0.95;
+  transition: box-shadow .2s;
+}
+
+p.name a:hover,
+p.name a:active {
+  box-shadow: inset 0 -.55em var(--school);
+  transition: box-shadow .2s;
+}
+
+.rep p.name a:link,
+.rep p.name a:visited {
+  box-shadow: inset 0 -.1em var(--republican);
+}
+
+.rep p.name a:hover,
+.rep p.name a:active {
+  box-shadow: inset 0 -.55em var(--republican);
+}
+
+.dem p.name a:link,
+.dem p.name a:visited {
+  box-shadow: inset 0 -.1em var(--democrat);
+}
+
+.dem p.name a:hover,
+.dem p.name a:active {
+  box-shadow: inset 0 -.55em var(--democrat);
+}
+
+.lib p.name a:link,
+.lib p.name a:visited {
+  box-shadow: inset 0 -.1em var(--libertarian);
+}
+
+.lib p.name a:hover,
+.lib p.name a:active {
+  box-shadow: inset 0 -.55em var(--libertarian);
+}
+
+.candidate ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 132px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.show-priorities {
+  font-size: 0.85em !important;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0.1em !important;
+  cursor: pointer;
+}
+
+.candidate.rep .show-priorities {
+  color: var(--republican);
+}
+
+.candidate.dem .show-priorities {
+  color: var(--democrat);
+}
+
+.candidate.lib .show-priorities {
+  color: var(--libertarian);
+}
+
+.candidate li {
+  padding-right: var(--xs);
+}
+
+.candidate li:not(:first-child) p {
+  background-color: var(--gray10);
+  font-size: 0.95em;
+  padding: 0 var(--xs);
+  border-radius: 2px;
+}
+
+/* .rep li:not(:first-child) p {
+  background-color: var(--republican-light);
+}
+
+.dem li:not(:first-child) p {
+  background-color: var(--democrat-light);
+}
+
+.lib li:not(:first-child) p {
+  background-color: var(--libertarian-light);
+} */
+
+/* images */
+.square-frame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: var(--sm) auto;
+  overflow: hidden;
+}
+
+.square-frame img {
+  height: 150px;
+  height: 150px;
+  object-fit: cover;
+  /* border: 4px solid red; */
+  border-radius: 50%;
+}
+
+.rep .square-frame {
+  border: 4px solid var(--republican);
+}
+
+.dem .square-frame {
+  border: 4px solid var(--democrat);
+}
+
+.lib .square-frame {
+  border: 4px solid var(--libertarian);
+}
+
+/* structure/layout */
+.candidates-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: var(--width-lg);
+  /* max-width: calc(2 * var(--medium)); */
+  margin: 0 auto var(--lg);
+  padding: 0 var(--sm);
+}
+
+.candidate {
+  border: 1px solid rgba(0, 0, 0, .1);
+  background-color: var(--gray05);
+  margin: 0 var(--xs) var(--lg);
+  padding: var(--md) var(--sm);
+  position: relative;
+  flex: 1 0 30%;
+  max-width: 33%;
+}
+
+.short-bio {
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.short-bio:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(transparent, var(--gray05));
+}
+
+@media screen and (max-width: 768px) {
+  .candidate {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .candidates-container {
+    display: block;
+  }
+}
+
+/* buttons */
+button {
+  font-family: Inter, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid var(--school);
+  cursor: pointer;
+  padding: var(--xs) var(--sm);
+  margin: var(--sm) auto 0;
+  background-color: var(--gray05) !important;
+  display: block;
+  transition: box-shadow .3s, color .3s;
+}
+
+button:hover {
+  box-shadow: inset 100px 0 0 0 var(--school);
+  color: white;
+}
+
+.dem button {
+  box-shadow: inset 0 0 0 0 var(--democrat);
+  border-color: var(--democrat);
+}
+
+.dem button:hover {
+  box-shadow: inset 100px 0 0 0 var(--democrat);
+  color: white;
+}
+
+.rep button {
+  box-shadow: inset 0 0 0 0 var(--republican);
+  border-color: var(--republican);
+}
+
+.rep button:hover {
+  box-shadow: inset 100px 0 0 0 var(--republican);
+  color: white;
+}
+
+.lib button {
+  box-shadow: inset 0 0 0 0 var(--libertarian);
+  border-color: var(--libertarian);
+}
+
+.lib button:hover {
+  box-shadow: inset 100px 0 0 0 var(--libertarian);
+  color: white;
+}
+
+.short-bio+button {
+  margin-top: 2px;
+}
+
+/* modal */
+.candidate.incumbent::before {
+  content: "incumbent";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: var(--gray15);
+}
+
+#modal {
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  width: 100%;
+  top: 60px;
+  margin: 0 auto;
+  padding: 0 var(--sm);
+  z-index: 3;
+  transition: opacity .2s;
+}
+
+#modal .candidate {
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: auto;
+  max-width: calc(var(--small) + 50px);
+  position: relative;
+  padding: var(--md);
+  border-radius: 3px;
+}
+
+.bkg-cover {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+  /* position: fixed; */
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 2;
+  transition: opacity .2s;
+}
+
+#closer {
+  fill: var(--offblack);
+  font-size: 35px;
+  /* position: absolute; */
+  position: sticky;
+  top: 0;
+  /* right: 15px; */
+  cursor: pointer;
+}
+
+#closer i {
+  position: absolute;
+  right: 0;
+  /* text-shadow: -5px -5px 0 purple; */
+}
+
+iframe {
+  margin-bottom: var(--md);
+}
+
+/* more coverage */
+.more-coverage {
+  background-color: #f5f5f5;
+  /* max-width: var(--xlarge); */
+  padding: var(--sm) var(--md);
+  margin: 0 auto;
+  padding-bottom: var(--xs);
+  border-top: 1px solid var(--gray10);
+  margin-top: var(--md);
+}
+
+.more-coverage div.flex-container {
+  display: flex;
+}
+
+.more-coverage h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: -10px;
+  text-align: center;
+  margin-left: var(--sm);
+}
+
+.more-coverage .flex-container img:hover {
+  transform: scale(1.03);
+}
+
+.more-coverage .flex-container img {
+  transition: transform .2s;
+}
+
+footer {
+  margin-top: 0;
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more-coverage div.flex-container {
+    display: block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
