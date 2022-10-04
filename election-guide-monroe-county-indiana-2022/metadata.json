@@ -1,0 +1,16 @@
+{
+    "url": "your-url-here",
+    "slug": "Story slug",
+    "headline": "This is the headline",
+    "title": "Election Landing Page",
+    "pub_date": "Oct. 2, 2022",
+    "bylines": {
+        "By": {
+            "name": "IDS Staff"
+        },
+        "Design and development by": {
+            "name": "Servane CLoteaux",
+            "email": "scloteau@iu.edu"
+        }
+    }
+}

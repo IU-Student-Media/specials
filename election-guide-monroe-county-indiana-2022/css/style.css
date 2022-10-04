@@ -1,0 +1,941 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  font-size: 50px;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h2 {
+  /* second headline */
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+p,
+/* a, */
+span {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: black;
+  /* text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
+}
+
+header {
+  /* background-size: cover; */
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  /* border: green solid 5px; */
+  /* margin: 0; */
+  /* margin-bottom: 20px; */
+}
+
+/* election navigation */
+
+.bold {
+  font-weight: bold;
+}
+
+.election-container {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  /* top: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* border: solid 2px green; */
+  /* margin-top: 70px; */
+  /* max-width: var(--width-xl); */
+  width: 100%;
+  /* margin-left: 10px; */
+  /* border: blue solid 2px; */
+  /* width: 100%; */
+  /* max-width: var(--width-xxl); */
+  background-color: var(--gray10);
+  height: 50px;
+  margin-top: 60px;
+  position: fixed;
+}
+
+.election-nav {
+  /* top: 10%; */
+  margin-left: 20px;
+  /* border: solid 2px blue; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* padding-bottom: 20px; */
+  /* max-width: var(--width-xxl); */
+  /* border: green solid 2px; */
+
+}
+
+.election-nav a {
+  /* padding: 20px; */
+  /* margin-top: 2px; */
+  padding: 5px;
+  margin: 0 0 0 30px;
+  font-size: 17px;
+  color: black;
+  border: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.headline-container {
+  /* top: 10%; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -50px;
+  /* margin-left: 50px;  */
+  /* margin-right: 30px; */
+  /* border: solid 2px yellow; */
+
+}
+
+.headline-container img {
+  width: 50px;
+}
+
+.headline-container a {
+  border: none;
+  font-size: 20px;
+
+}
+
+
+
+.headline-container a:hover,
+.election-nav a:hover {
+  box-shadow: 0px 2px #990000;
+}
+
+article {
+  padding-top: 0;
+}
+
+/* .nav-icon{
+  margin: -100px -100px -100px 90px;
+  width: 100px;
+} */
+
+a:visited {
+  box-shadow: 0px 3px #990000;
+}
+
+.page-nav {
+  /* border: green solid 3px; */
+  /* position: absolute; */
+  /* top: 240px;
+  left: 130px; */
+  background-color: var(--gray05);
+  border: 1px solid rgba(0, 0, 0, .05);
+  padding: var(--sm) var(--md);
+  margin-bottom: 40px;
+
+}
+
+.page-nav li {
+  line-height: 1.6;
+  font-family: Inter, Arial, sans-serif;
+  list-style-type: none;
+}
+
+.page-nav ul {
+  padding-inline-start: 0;
+}
+
+.page-nav select {
+  background-color: white;
+  color: #990000;
+  outline: 0;
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* title */
+
+.title-container {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  /* border: green solid 2px; */
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title-container img {
+  width: 120px;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+/* h2{
+  padding-bottom: 500px;
+} */
+
+option {
+  background-color: white;
+  color: #990000;
+  outline: 0;
+  font-size: 30px;
+
+}
+
+.donate {
+  margin-top: 60px;
+}
+
+
+
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+nav {
+  background-color: white;
+  border-bottom: #990000 solid 5px;
+  /* margin-bottom: 500px; */
+  /* background-color: white; */
+}
+
+/* count down */
+
+.countdown-container {
+  /* background-color:#990000; */
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+
+.countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+
+}
+
+.count span {
+  font-weight: bold;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  ;
+}
+
+.countdown {
+  border: #990000 8px double;
+  font-family: 'Inter', sans-serif;
+}
+
+.countdown span {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+li.toggle {
+  color: black;
+}
+
+/* glossary/ terms to know */
+
+.card a:link {
+  color: white;
+  border-bottom: 0.125em solid white;
+}
+
+.card a:visited {
+  color: white;
+  border-bottom: 0.125em solid white;
+}
+
+.card a:hover {
+  color: white;
+  border-bottom: 0.125em solid black;
+}
+
+.Glossary {
+  /* background-color: black; */
+  /* color: white; */
+  max-width: 100%;
+  /* padding-top: 5px; */
+  background-color: black;
+  color: white;
+  padding: 5px 10px 30px 10px;
+  margin: 30px 0;
+
+}
+
+.Glossary h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  /* border-bottom: white 2px solid; */
+  color: white
+}
+
+.card-layout {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  /* border: green solid 3px; */
+}
+
+.card-layout h4 {
+  color: white;
+  padding-left: 10px;
+}
+
+.card {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  box-shadow: inset 0 0 0 1px #e1e4f1;
+  margin: 10px;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.card h4 {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.card p {
+  padding-left: 15px;
+}
+
+.card:hover {
+  background-color: #990000;
+}
+
+/* meet the candidates */
+
+.candidateImages {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  /* border: red solid 2px; */
+}
+
+.candidateImages2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  /* border: red solid 2px; */
+  padding: 40px;
+  margin: 10px;
+  width: 100%
+}
+
+.candidate-button {
+  border: black solid 0.125em;
+  font-family: Inter, sans-serif;
+  border-radius: 25px;
+  padding: 10px 15px;
+  /* margin-bottom: 30px; */
+}
+
+.candidate-button:hover {
+  background-color: #990000;
+  color: white;
+  border: white solid 0.125em;
+}
+
+#candidateBackground {
+  background-color: var(--gray05);
+  width: 100%
+}
+
+.candidateImages2 img {
+  max-width: 736px;
+}
+
+.candidateImages2 h3 {
+  text-align: center;
+}
+
+.candidateImages2 p {
+  max-width: 800px;
+  text-align: center;
+}
+
+.MeetTheCandidates {
+  /* border: green solid 2px; */
+  margin-top: var(--lg);
+  border-top: black solid 1px;
+}
+
+/* Opinions */
+
+.opinions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: green solid 3px; */
+  margin: 30px 0 20px 0;
+}
+
+.Opinions {
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.Opinions h3 {
+  margin: 10px;
+  padding: 20px 20px 0 0;
+}
+
+
+.opinion-stories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.opinion-story {
+  max-width: 300px;
+  max-height: 500px;
+  /* border-right:black 1px solid; */
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.opinion-stories a {
+  border: none;
+}
+
+.opinion-story p {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+/* news stories */
+
+.NewStories-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* border: aqua solid 2px; */
+}
+
+.NewStories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: green solid 2px; */
+  max-width: 1600px;
+  /* border: green solid 2px; */
+}
+
+.main-story {
+  /* border: red 2px solid; */
+  max-width: 750px;
+  /* border: red solid 2px; */
+}
+
+.smaller-stories {
+  /* border: blue 2px solid; */
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 20px 10px 10px;
+  /* border: yellow solid 2px; */
+}
+
+.smaller-stories img {
+  width: 250px;
+  object-fit: cover;
+  /* padding: 20px; */
+  height: auto;
+}
+
+.news-story-big p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.smaller-stories p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0;
+  /* margin-bottom: 0; */
+}
+
+.author {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+  /* padding-top: 300px; */
+}
+
+.news-story p {
+  max-width: 200px;
+  /* padding: 10px; */
+  padding-left: 20px;
+  font-weight: 400;
+
+}
+
+.smaller-stories p:hover {
+  color: #990000;
+}
+
+.smaller-stories a {
+  border: none;
+  margin: 0 5px 0 0;
+}
+
+.news-story-big h3 {
+  font-size: 26px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.news-story-big h3:hover {
+  font-size: 26px;
+  color: #990000;
+}
+
+/* .news-story-big img{
+  width: 500px;
+} */
+
+.news-story {
+  max-width: 500px;
+  border: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  /* border: orange 2px solid; */
+}
+
+.news-story-big {
+  margin: 10px 10px 50px 10px;
+  text-align: center;
+}
+
+.more-stories {
+  /* border: #990000 2px solid; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-right: 60px;
+
+  /* padding-top: 20px; */
+  font-size: 20px;
+}
+
+.more-stories a {
+  border: none;
+  padding: 10px;
+  border: black 2px solid;
+  border-radius: 25px
+}
+
+.more-stories a:hover {
+  background-color: #990000;
+  color: white;
+  border-radius: 25px;
+  border: white 2px solid;
+}
+
+
+.bylines {
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#pubdate {
+  font-family: Inter, sans-serif;
+  margin-bottom: var(--sm);
+}
+
+/* .other-story{ */
+/* border: green solid 2px; */
+/* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin:
+} */
+
+/* .other-story img{ */
+/* width: 150px; */
+/* border: blue solid 2px; */
+/* } */
+
+/* .other-story a{ */
+/* border: none; */
+/* } */
+
+/* .other-story p{ */
+/* border: solid red 2px; */
+/* max-width: 350px; */
+/* font-size: 14px; */
+/* padding: 10px; */
+/* margin-left: 20px; */
+/* } */
+
+.small {
+  visibility: hidden;
+}
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .countdown span {
+    font-size: 20px;
+  }
+
+  .countdown li {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .countdown span {
+    font-size: 20px;
+  }
+
+  .countdown li {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .election-nav a {
+    /* padding: 20px; */
+    /* margin-top: 2px; */
+    padding: 5px;
+    margin: 0 0 0 30px;
+    font-size: 6px;
+    font-weight: 500;
+    color: black;
+    border: none;
+
+  }
+
+  .election-nav{
+    max-height: 400px;
+  }
+
+  .bold{
+    display: none;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .countdown span {
+    font-size: 30px;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+  .Opinions {
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .election-nav a {
+    /* padding: 20px; */
+    /* margin-top: 2px; */
+    padding: 5px;
+    margin: 0 0 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    border: none;
+  }
+
+  #dissapear {
+    display: none;
+  }
+
+  #seconds {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  .countdown span {
+    font-size: 50px;
+  }
+
+  /* .election-container{
+
+    max-width: var(--width-lg);
+
+  } */
+}
+
+@media (max-width: 1255px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  .smaller-stories {
+    /* border: blue 2px solid; */
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 10px 10px 10px;
+
+    /* border: yellow solid 2px; */
+  }
+
+  .smaller-stories img {
+    width: 200px;
+    object-fit: cover;
+    /* padding: 20px; */
+    height: auto;
+  }
+
+  /* .smaller-stories p{
+    font-size: 14px;
+  } */
+
+  .Opinions {
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .big {
+    display: none;
+  }
+
+  .small {
+    visibility: visible;
+    padding-left: 20px;
+  }
+
+
+
+
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (max-width: 1292px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  } */
+
+/* .candidateImages2{
+    border: green solid 2px;
+  } */
+
+/* .election-nav a{
+    font-size: 20px;
+  }
+
+  .headline-container h1{
+    font-size: 40px;
+  }
+} */

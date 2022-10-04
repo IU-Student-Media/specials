@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/election-guide-monroe-county-indiana-2022" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Your local guide to the 2022 midterm elections" /> <!-- TODO: headline -->
+    <meta property="og:description" content="All the IDS election coverage you need before Nov. 8, in one place" />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/7aa45db8-67b6-43d9-91f0-4cfad8a1b54e.sized-1000x1000.png" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Your local guide to the 2022 midterm elections"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="All the IDS election coverage you need before Nov. 8, in one place">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/7aa45db8-67b6-43d9-91f0-4cfad8a1b54e.sized-1000x1000.png">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:black;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:black;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:black;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+
+        <div class="election-container">
+            <div class="headline-container">
+                <img class="nav-icon"
+                    src="https://s3.amazonaws.com/snwceomedia/ids/cfe63db7-b2d0-44a9-947d-7afa8db262ce.sized-1000x1000.png">
+
+                <!-- <h2 data-scroll-speed="3"></h2> -->
+            </div>
+
+            <div class="election-nav">
+                <!-- <a href="" target="_blank">Meet the Candidates</a> -->
+                <a href="" class="bold">ELECTIONS 2022</a>
+                <a href="https://specials.idsnews.com/vote-register-quiz-election-indiana/" target="_blank">How to
+                    Vote</a>
+                <a href="#MeetTheCandidates">Meet the Candidates</a>
+                <a href="#Glossary">Glossary</a>
+                <!-- <a href="#Opinions">Opinions</a> -->
+                <a href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0"
+                    target="_blank">Priorities Poll</a>
+                <!-- <a href="" target="_blank">Live Updates</a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <!-- <p class="caption header-caption">Caption</p> -->
+        <article>
+            <div class="title-container">
+                <img
+                    src="https://s3.amazonaws.com/snwceomedia/ids/a88f08e6-6902-4c7e-a357-ff6cca9ea81a.sized-1000x1000.png">
+                <h1>Your local guide to the 2022 midterm elections</h1>
+
+                <!-- <h2 data-scroll-speed="3"></h2> -->
+            </div>
+            <!-- <div class="bylines"> -->
+
+            <!-- update bylines in metadata.json -->
+            <!-- </div> -->
+            <!-- TO DO update pub_date in metadata.json -->
+
+            <!-- </div> -->
+            <!-- makes the width small (story tag) -->
+            <div class="story">
+                <div class="bylines" id="bylines"></div>
+                <p id="pubdate"></p>
+                <!-- add update date here -->
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+                <div class="blurb">
+                    <p>Election season is upon us. Absentee ballot registration is open now, early voting in Indiana
+                        opens on Oct. 12, and on Nov. 8, voters across the U.S. will cast their ballots in this year's
+                        midterm elections.</p>
+                    <p>The IDS has localized our coverage to make sure you're well-informed whenever and however you
+                        decide to vote. Along the top, you'll find introductions to your candidates, including local,
+                        state, federal and school board, a quiz to help you cast your vote, political opinion pieces and
+                        live updates on the night itself. There's also a poll to let us know your priorities as a
+                        reader, so we can cover what matters to you. </p>
+                    <p>The IDS is partnering with IUSTV and WIUX News to provide widespread election coverage, and as
+                        that content appears, it will be posted here. </p>
+
+                </div>
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://www.idsnews.com/article/2022/10/letter-editor-ids-wiux-iustv-collab-midterm-elections"
+                        target="_blank" class="story-link">
+                        LETTER FROM THE EDITOR: The IDS, WIUX and IUSTV are collaborating for the midterm elections
+
+                    </a>
+                </p>
+
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <div class="page-nav">
+                    <p>Jump ahead to...</p>
+                    <ul>
+                        <li>
+                            <a href="#NewStories-container">News Stories</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#Opinions">Opinions</a>
+                        </li> -->
+                        <li>
+                            <a href="#MeetTheCandidates">Meet the Candidates</a>
+                        </li>
+                        <li>
+                            <a href="#Glossary">Glossary</a>
+                        </li>
+                        <li>
+                            <a href="#CountDown">Countdown to Election Day</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="NewStories-container" id="NewStories-container">
+
+                <div class="NewStories" id="NewStories">
+                    <div class="main-story">
+                        <a href="https://www.idsnews.com/article/2022/09/monroe-county-2022-mccsc-referendum-property-tax"
+                            target="_blank">
+                            <div class="news-story-big">
+                                <img src="https://snworksceo.imgix.net/ids/29643feb-101d-4146-a37c-61ccdc80a7e6.sized-1000x1000.JPG?w=1000"
+                                    alt="">
+                                <h3>A Monroe County voter's guide to the 2022 MCCSC referendum</h3>
+                                <p class="author">By Emma Uber</p>
+                                <p>Monroe County residents will be faced with an additional question when casting their
+                                    votes Nov. 8 — should the property tax for homeowners and businesses increase for
+                                    the next eight years to fund the Monroe County Community School Corporation? </p>
+                            </div>
+                        </a>
+                        <div class="more-stories big">
+                            <a href="https://www.idsnews.com/section/politics">More Stories &rarr;</a>
+                        </div>
+                        <!-- <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion" target="_blank">
+                                <div class="other-story">
+                                    <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000" alt="">
+                                    
+                                    <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against abortion. </p>
+                                </div>
+                            </a> -->
+                    </div>
+                    <div class="small-container">
+                        <div class="stories-smaller">
+                            <div class="smaller-stories">
+                                <a href="https://www.idsnews.com/article/2022/09/aclu-lawsuit-filed-against-indiana-abortion-ban-monroe-county"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/bbbd7fb8-e23b-46d0-a302-8e0bcf35ac04.sized-1000x1000.jpeg?w=1000"
+                                            alt="">
+                                        <p>ACLU lawsuit filed against Indiana's abortion ban in Monroe County
+                                            <br>
+                                            <span class="author">By Carter DeJong</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/09/democratic-senate-candidate-thomas-mcdermott-abortion-election"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/09c38570-b55a-4670-b5a0-4ef34fa39f04.sized-1000x1000.JPG?w=1000"
+                                            alt="">
+                                        <p>Democratic Senate candidate Thomas McDermott talks 'the top issue' — abortion
+                                            access — and plans if elected
+                                            <br>
+                                            <span class="author">By Nadia Scharf</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/07/indiana-lawmakers-meet-to-debate-abortion-rights-in-special-session"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/43464253-7346-462b-be6c-589f5216ad6e.sized-1000x1000.jpg?w=1000"
+                                            alt="">
+                                        <p>Indiana lawmakers meet to debate abortion rights in special session
+                                            <br>
+                                            <span class="author">By Christina Avery</span>
+                                        </p>
+
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/09/mccsc-school-board-candidates-safety-book-banning-equity-forum-election"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/3f3727b8-bb00-44db-a38f-dd51f1f972d8.sized-1000x1000.jpg?w=1000"
+                                            alt="">
+                                        <p>MCCSC school board candidates discuss safety, book banning and equity during
+                                            forum Monday
+                                            <br>
+                                            <span class="author">By Emma Uber</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more-stories small">
+                            <a href="">More Stories &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="opinions-container">
+                <div class="Opinions" id="Opinions">
+                    <h3>Opinions</h3>
+                    <div class="opinion-stories">
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000"
+                                    alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against
+                                    abortion</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000"
+                                    alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against
+                                    abortion</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000"
+                                    alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against
+                                    abortion</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion" target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000" alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against abortion</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion" target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000" alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against abortion</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="MeetTheCandidates" id="MeetTheCandidates">
+                <!-- <h3>Meet the Candidates</h3> -->
+                <div class="candidateImages">
+                    <div class="candidateImages2">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/1cf8e7ef-39e2-4159-a7ca-5a273c9082fc.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Monroe County candidates for State and Federal Congress</h3>
+                        <p>With less than three months until midterm elections on Nov. 8, state and federal candidates
+                            are out campaigning in full force. Primary elections on May 3 decided Democratic and
+                            Republican candidates, and the IDS has put together what you need to know about this
+                            election's big names.</p>
+                        <a target="_blank"
+                            href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/"
+                            class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                    <div class="candidateImages2" id="candidateBackground">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/bf954941-ec0e-40b7-b3dd-c487779806f7.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Meet the Monroe County candidates for School Board</h3>
+                        <p>Monroe County voters will elect new school board members Nov. 8. The county's two school
+                            districts, Monroe County Community School Corporation and Richland-Bean Blossom Community
+                            School Corporation, both have multiple school board seats up for election this year.</p>
+                        <a href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/"
+                            target="_blank" class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                    <div class="candidateImages2">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/6d7afc53-917c-4279-ba62-32cd2bbbc6b4.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Meet the Bloomington City candidates</h3>
+                        <p>Monroe County voters will elect new school board members Nov. 8. The county's two school
+                            districts, Monroe County Community School Corporation and Richland-Bean Blossom Community
+                            School Corporation, both have multiple school board seats up for election this year.</p>
+                        <a href="https://specials.idsnews.com/local-state-election-monroe-county-indiana-2022/"
+                            target="_blank" class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="story"> 
+
+                <div class="WIUX" id="WIUX">
+                    <h3>WIUX</h3>
+                    <audio src="/music/good_enough.mp3" controls>	
+                        <embed 
+                            src="/music/good_enough.mp3"
+                            width="300"
+                            height="90"
+                            loop="false"
+                            autostart="false">
+                    </audio>
+                </div>
+
+                <div class="IUSTV" id="IUSTV">
+                    <h3>IUSTV</h3>
+                    <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+
+            </div> -->
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Glossary" id="Glossary">
+                <h3>Terms to know</h3>
+                <div class="card-layout">
+                    <div class="card">
+                        <h4>Affidavit </h4>
+                        <p>A written statement under oath that can be shown in court as a piece of evidence. Must be
+                            signed, witnessed and notarized to remain valid. Under <a
+                                href="http://iga.in.gov/legislative/2022ss1/bills/senate/1">Senate Bill 1</a>, pregnant
+                            women seeking abortions must give their physician a signed affidavit confirming rape or
+                            incest - two of the permittable conditions for an abortion procedure. </p>
+                    </div>
+                    <div class="card">
+                        <h4>American exceptionalism </h4>
+                        <p>A theory based on the idea of the U.S. being different than other countries and perhaps even
+                            the outlier of different conflicts, trends and resolutions. The theory implies the U.S. is
+                            superior in values, political system and history due to core principles. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Assessed property value </h4>
+                        <p>Not to be confused with the market value, given that different counties use different
+                            calculations to determine the value of one's property. By voting for the MCCSC referendum,
+                            the average Monroe County household would pay an additional $125 per year in property taxes.
+                            By month, this is approximately $10.40 of expenditure. This is because the referendum will
+                            allocate 18.5 cents for every 100 dollars to MCCSC schools. </p>
+                    </div>
+                    <div class="card">
+                        <h4>COVID-19 Learning Loss</h4>
+                        <p>This disparity is based on student performance as the result of school closures and
+                            adjustments to virtual, hybrid and in-person learning during the COVID-19 pandemic. An
+                            increase in cases, for example, means less in-person options. This can create a more
+                            difficult transition for students and teachers. R-BB Richland District candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Karl
+                                Boehm</a> said this topic was one of his biggest priorities if chosen to be on the
+                            school board. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Electing Constitutionalist Judges </h4>
+                        <p>This is one of Incumbent Republican U.S. Senator <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Todd
+                                Young's</a> priorities. A constitutionalist judge is one who interprets the U.S.
+                            Constitution with strict adherence to the written word. According to the <a
+                                href="https://plato.stanford.edu/entries/constitutionalism/">Stanford Encyclopedia of
+                                Philosophy</a>, with constitutionalism comes a certain degree of predictability and
+                            consistency. </p>
+                    </div>
+                    <div class="card">
+                        <h4>High Ability programs</h4>
+                        <p>According to the <a href="https://www.in.gov/doe/students/high-ability-education/">Indiana
+                                Department of Education</a>, such programs provide high ability students with greater
+                            access to educational resources and infrastructure. MCCSC Monroe County District 3 candidate
+                            <a href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Daniel
+                                O'Neil</a> said this was one of his priorities.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Individualized Education Plan (IEP) </h4>
+                        <p>The IEP is an institutionalized program meant to guarantee children with identified learning
+                            disabilities receive catered instruction and services while in elementary or secondary
+                            school. MCCSC District 3 candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Ashley
+                                Pirani</a> spoke about prioritizing this issue. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Inflation</h4>
+                        <p>Inflation is an issue impacting all levels of the economy today. It refers to price increases
+                            across the market which decrease one's ability to purchase the same amount of goods. <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Thomas
+                                McDermott</a>, the current mayor of Hammond, Indiana, and a democratic nominee for U.S.
+                            Senator, expressed his concerns for <a
+                                href="https://www.idsnews.com/article/2022/09/democratic-senate-candidate-thomas-mcdermott-abortion-election">inflation</a>.
+                            Incumbent Republican U.S. Senator <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Todd
+                                Young</a> and Libertarian U.S. Senate candidate <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">James
+                                Sceniak</a> spoke of inflation being one of their priorities. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Policing</h4>
+                        <p>Actions or activities executed by law enforcement as a means of preserving law and order.
+                            Policing is an issue this <a
+                                href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0">poll
+                                quiz</a> asks readers to rank in terms of political issue priorities. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Referendum</h4>
+                        <p>A referendum is a direct vote on a proposal, law or political issue done by citizens instead
+                            of an elected representative. The popular vote determines the outcome of the policy. How
+                            does this apply to the 2022 local elections? On Nov. 8, Monroe County residents will vote on
+                            whether they want to raise property taxes to help fund MCCSC funding. To read about the
+                            MCCSC property tax, click <a
+                                href="https://www.idsnews.com/article/2022/09/monroe-county-2022-mccsc-referendum-property-tax">here</a>.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>School Resource Officers (SROs) </h4>
+                        <p>A group of active law-enforcement officers with the ability to arrest while in part-time or
+                            full-time positions at various schools. In May 2021, the MCCSC voted that SROs cannot be
+                            armed, but given recent cases of weapons being brought in MCCSC schools, the policy and
+                            ability to change it resurfaced. To learn which school board candidates express concern or
+                            support of arming SROs, click <a
+                                href="https://www.idsnews.com/article/2022/09/mccsc-school-board-candidates-safety-book-banning-equity-forum-election">here</a>.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Transgender extremism </h4>
+                        <p>Indiana Attorney General Todd Rokita spoke at the IMU on Sept. 23. During this time, he spoke
+                            out against transgender advocacy in sports and social acceptance, and he classified it as
+                            “extremism.” However, he also said he feared getting canceled for not supporting transgender
+                            rights. According to <a
+                                href="https://apnews.com/article/sports-indiana-legislature-congress-ed1a6def471929e4bc4e33473c807c49?">AP
+                                News</a>, earlier in March, the governor faced backlash when he suggested banning
+                            transgender girls from competing in girls' school sports teams. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Whole Child Approach </h4>
+                        <p>Based on a system that ensures child development and learning happens on different levels —
+                            socioemotional, cognitive, literacy, scientific and comprehension, among other levels. This
+                            is one of MCCSC District 1 candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/"
+                                class="glossa">Erin Wyatt's</a> priorities. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-5' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-5`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story">
+
+                <div class="countdown-container" id="CountDown">
+                    <h3>Countdown to the midterm elections</h3>
+                    <div id="countdown" class="countdown">
+                        <ul>
+                            <li class="count"><span id="days"></span>days</li>
+                            <li><span>:</span> &nbsp;</li>
+                            <li class="count"><span id="hours"></span>Hours</li>
+                            <li><span>:</span> &nbsp;</li>
+                            <li class="count"><span id="minutes"></span>Minutes</li>
+                            <li id="dissapear"><span>:</span> &nbsp;</li>
+                            <li class="count" id="dissapear"><span id="seconds"></span>Seconds</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- small bios -->
+                <!-- <div class="author-bios"> -->
+                <!-- update bios in metadata.json -->
+                <!-- delete this div if you don't want them to show up -->
+                <!-- </div> -->
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop" style="font-family:Inter,sans-serif;"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script>
+        function myAnchor(value) {
+            var top = document.getElementById(value).offsetTop;
+            window.scrollTo(0, top);
+            //document.getElementById(value).scrollIntoView();
+        }
+    </script>
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "11/08/",
+                birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "Election Day!";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
+</body>
+
+</html>
