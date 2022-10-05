@@ -361,41 +361,40 @@ iframe {
 }
 
 /* more coverage */
+/* more coverage */
 .more-coverage {
-  background-color: var(--gray05);
+  background-color: var(--gray10);
   /* max-width: var(--xlarge); */
   padding: var(--sm) var(--md);
   margin: 0 auto;
   padding-bottom: var(--xs);
-  border: 1px solid var(--gray10);
+  border-top: 1px solid var(--gray10);
   margin-top: var(--md);
 }
 
-.more-coverage h4 {
-  font-size: 20px;
-  color: var(--gray60);
-  margin-top: var(--xs);
+.more-coverage div.flex-container {
+  display: flex;
 }
 
-.more-coverage ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.more-coverage li p {
+.more-coverage h5 {
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
-  color: var(--gray60);
+  font-weight: 800;
+  margin-top: -10px;
+  text-align: center;
+  margin-left: var(--sm);
 }
 
-.more-coverage li a {
-  font-size: 18px;
-  color: var(--gray60);
-  border-color: var(--gray40);
+.more-coverage .flex-container img:hover {
+  transform: scale(1.03);
 }
 
-.more-coverage .related {
-  margin: 0;
-  padding-bottom: 0.35em;
+.more-coverage .flex-container img {
+  transition: transform .2s;
+}
+
+footer {
+  margin-top: 0;
 }
 
 /* 
@@ -455,6 +454,12 @@ No media query for `xs` since this is the default */
   .helper::after {
     content: 'M';
     color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .more-coverage div.flex-container {
+    display: block;
   }
 }
 
