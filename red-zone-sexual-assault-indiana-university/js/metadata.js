@@ -3,7 +3,10 @@ const data = {
     "slug": "The Red Zone",
     "headline": "The Red Zone: Coverage of sexual assaults reported at IU",
     "title": "The Red Zone",
-    "pub_date": "Oct. 4, 2022",
+    "pub_date": {
+        "original": "Oct. 4, 2022",
+        "updated": "Oct. 10, 2022"
+    },
     "bylines": {
         "By": {
             "name": "IDS Staff",
@@ -78,10 +81,14 @@ function setAuthorBio(type, author) {
 }
 
 document.querySelector('#bylines').innerHTML = bylines_html;
-document.querySelector('.author-bios').innerHTML = bios_html;
+// document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
-document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
+if (data.pub_date.updated) {
+    document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date.original + '<br style="padding-top:var(--sm);"=>Updated ' + data.pub_date.updated;
+} else {
+    document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
+}
 
 // title & slug
 document.querySelector('title').innerHTML = data.title + ' | Indiana Daily Student';
