@@ -1,0 +1,218 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+html {
+  background-color: var(--idsred);
+  background: repeating-linear-gradient(90deg, #990000, #990000 30px, #6E0000 30px, #6E0000 60px);
+}
+
+header {
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  top: 0;
+}
+
+article {
+  padding: 0;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+h1,
+h2 {
+  /* alignment */
+  /* text-align: center; */
+  /* width of text */
+  max-width: var(--medium);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+h1 {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  background-color: rgba(130, 0, 0, 0.8);
+  padding: var(--xs) var(--sm);
+  border-radius: 4px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.bylines {
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+#bylines {
+  text-align: left;
+}
+
+.bylines p,
+.bylines a:link,
+.bylines a:hover,
+.bylines a:active,
+.bylines a:visited {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+figcaption {
+  display: none;
+}
+
+p.credit {
+  font-size: 0.7em;
+}
+
+.scrolly {
+  position: relative;
+}
+
+.headline-container {
+
+  bottom: 85px;
+  left: 50px;
+  position: absolute;
+  z-index: 5;
+  top: center;
+  /* transform: translateY(-40%); */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-right: 50px;
+  /* width: 100%; */
+  /* padding: 25px 0; */
+  /* background-color: rgba(130, 0, 0, 0.3); */
+}
+
+@media screen and (max-width:768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .headline-container {
+    padding: var(--lg) var(--md);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.sticky-image {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  transition: opacity 400ms;
+}
+
+.sticky-image figure {
+  transition: opacity 400ms;
+  margin: 0;
+}
+
+.sticky-image figure img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+p.donate {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+.donate a {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  color: white;
+  z-index: 3;
+  background-color: var(--gray95);
+}
+
+footer a.subscribe:link,
+footer a.subscribe:visited {
+  color: var(--gray20);
+  box-shadow: 1px 1px 5px black;
+}
+
+footer a.subscribe:hover,
+footer a.subscribe:active {
+  box-shadow: 2px 2px 10px black;
+}
+
+footer .links a,
+p.copyright,
+footer .logo span {
+  color: var(--gray20);
+}
+
+footer .copyright {
+  background-color: var(--gray90);
+}
+
+
+.author-bios {
+  display: none;
+}
+
+
+.step {
+  position: relative;
+  z-index: 6;
+  background-color: rgba(130, 0, 0, 0.8);
+  max-width: 500px;
+  margin: 10vh var(--sm) 90vh;
+  padding: var(--sm) var(--md);
+  border-radius: 4px;
+
+}
+
+@media screen and (max-width: 550px) {
+  .step {
+    margin-left: var(--sm);
+    margin-right: var(--sm);
+  }
+}
+
+.step p {
+  color: white;
+}
+
+.story {
+  height: 100.1vh;
+}
