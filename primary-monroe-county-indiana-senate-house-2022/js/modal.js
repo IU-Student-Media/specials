@@ -111,6 +111,26 @@ const modalData = {
         isIncumbent: false,
         img_url: "https://s3.amazonaws.com/snwceomedia/ids/79538ff9-04a5-40b9-883d-2f77cfcac202.sized-1000x1000.jpeg",
         full_bio: `Dave Hall is the Republican nominee for Indiana House District 62’s representative. Hall is in his second term as Jackson County Council President and has experience with the Jackson County Redevelopment Commission, Industrial Development Corporation and Sheriff’s Department, according to his <a href="https://www.votedavehall.com/?fbclid=IwAR3eLCVSOdtTPEDNOGOvZIiaT0be9n-lKmant04lDF18G2Vmdb61awo8LYU" target="_blank">website</a>. \nHall lists stopping involuntary annexation, fighting drug abuse and improving infrastructure and broadband access as key issues on his <a href="https://www.votedavehall.com/?fbclid=IwAR3eLCVSOdtTPEDNOGOvZIiaT0be9n-lKmant04lDF18G2Vmdb61awo8LYU" target="_blank">website</a>. He also told Ballotpedia as a representative, he would require paper ballots at future elections. \nAs county council president, Hall told Ballotpedia one of his biggest accomplishments was creating a work-release center for inmates. The center allows inmates who have committed low-level felonies to go to work and come home to the prison facility, paying rent but leaving with money in their checking accounts, according to <a href="https://indianaeconomicdigest.net/MobileContent/Most-Recent/Cutbacks-Closings/Article/Jackson-County-looks-a-work-release-center-to-relieve-increasingly-crowded-jail/31/62/78534" target="_blank">Indiana Economic Digest</a>. `
+    },
+    cummings: {
+        name: "Kurtis Cummings",
+        party: "Democrat",
+        website: "https://kurtisforindiana.com/about-kurtis/",
+        priorities: ["Education", "Healthcare", "Gun Rights", "Rural Development", "Broadband Access", "Lower Corporate Influence"],
+        curr_position: "",
+        isIncumbent: false,
+        img_url: "https://s3.amazonaws.com/snwceomedia/ids/28005ccd-7a0e-45fe-a897-0c4fb8f8797b.sized-1000x1000.jpg",
+        full_bio: `Kurtis Cummings is the Democratic candidate for representative of Indiana House District 46. A native Hoosier, Cummings is a first responder and owns Switchyard Brewing Company in Bloomington. He’s also a Court Appointed Special Advocate in Monroe County.\nCummings <a href="https://ballotpedia.org/Kurtis_Cummings" target="_blank">told Ballotpedia</a> that he’s “not quite left, not quite right,” saying he’s fiscally conservative but socially liberal. He won’t accept money from corporate PACs, he said, because he believes corporate political contributions drown out the voices of everyday people.\nAnother priority, according to Cummings’ <a href="https://kurtisforindiana.com/about-kurtis/" target="_blank">campaign website</a>, is education, including educator wages, benefits and other day-to-day issues as well as career technical education and apprenticeship programs. He also supports restructuring healthcare, investing in infrastructure and first responder mental health. He is a gun owner and supports the Second Amendment.`
+    },
+    heaton: {
+        name: "Bob Heaton",
+        party: "Republican",
+        website: "https://www.indianahouserepublicans.com/members/leadership/bob-heaton/",
+        priorities: ["Education", "Transportation Infrastructure", "Public Safety", "Lower Taxes"],
+        curr_position: "",
+        isIncumbent: true,
+        img_url: "https://s3.amazonaws.com/snwceomedia/ids/b2fe233e-7032-4ccd-9233-ee526142475b.sized-1000x1000.jpg",
+        full_bio: `Bob Heaton is the Republican candidate for representative of Indiana House District 46. He’s the incumbent and has served in the position since 2010, according to the Indiana House Republicans’ <a href="https://www.indianahouserepublicans.com/members/leadership/bob-heaton/" target="_blank">website</a>.\nAs representative, Heaton has been the State House Majority Whip since the 2014 elections, <a href="https://ballotpedia.org/Bob_Heaton" target="_blank">according to Ballotpedia</a>. In 2021-22, he served on the Financial Institutions and Insurance Committee and the Ways and Means Committee. At home in the Wabash Valley, he has served on multiple community organization boards.\nHeaton sponsored <a href="https://www.billtrack50.com/BillDetail/1409464" target="_blank">House Bill 1041</a>, which bans transgender students from participating in school sports, according to the <a href="https://www.aclu-in.org/en/legislation/hb-1041-participation-school-sports" target="_blank">ACLU</a>. He’s also sponsored bills surrounding higher education funding, the department of correction and firearms. Heaton <a href="https://www.indystar.com/story/news/politics/2022/08/05/indiana-abortion-law-how-every-indiana-house-member-voted-senate-bill-1/65390993007/" target="_blank">voted yes</a> to Senate Bill 1.`
     }
 }
 
@@ -188,4 +208,3 @@ function hideModal() {
 modalButtons.forEach((button) => {
     button.addEventListener('click', showModal)
 })
-
