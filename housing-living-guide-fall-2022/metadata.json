@@ -1,0 +1,21 @@
+{
+    "url": "housing-living-guide-fall-2022",
+    "slug": "Housing & Living Guide",
+    "headline": "Housing & Living Guide",
+    "title": "IDS Fall 2022 Housing & Living Guide",
+    "pub_date": "Published Oct. 18, 2022",
+    "bylines": {
+        "By": {
+            "name": "Haripriya Jalluri",
+            "email": "hjalluri@iu.edu",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/b5a5dc15-8ed1-4a9d-ad4a-3a5214b712e0.sized-1000x1000.png",
+            "bio": "Haripriya is the creative director for fall 2022."
+        },
+        "Design and development by": {
+            "name": "Emily Williams",
+            "email": "enwillia@iu.edu",
+            "pfp": "https://iu.instructure.com/images/thumbnails/144962893/8llixVe4bzPzSEcA4TwWPFx8hJGeWY3G9u4hDfMD",
+            "bio": "Emily has worked at the IDS since 2020 as a graphic and digital designer."
+        }
+    }
+}
