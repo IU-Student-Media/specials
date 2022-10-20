@@ -698,8 +698,68 @@ li.toggle {
   visibility: hidden;
 }
 
+/* IUSTV */
 
+.IUSTV-img{
+  max-width: 200px;
+}
 
+.IUSTV{
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.IUSTV-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: center;
+}
+
+.IUSTV-content{
+  max-width: 600px;
+  max-height: 100%;
+  /* border: solid green 2px; */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left; 
+}
+
+.IUSTV-content h4{
+  text-align: left; 
+  margin: 0 0 10px 0;
+  font-size: 25px;
+}
+
+.IUSTV-content figcaption{
+  text-align: left; 
+  padding-left: 0;
+}
+
+figure{
+  margin: 20px;
+}
+
+figure h3{
+  margin-top: 0px;
+}
+
+#update{
+  font-family: Inter, sans-serif;
+  margin-top: -10px;
+  font-size: 0.85em;
+}
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
 /* use these for responsive design — you can set different styles based on how wide the screen is */
@@ -822,6 +882,19 @@ No media query for `xs` since this is the default */
   #seconds {
     display: none;
   }
+
+  .IUSTV-content{
+    max-width: 400px;
+    max-height: 100%;
+    /* border: solid green 2px; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -898,7 +971,24 @@ No media query for `xs` since this is the default */
   }
 
 
+  .IUSTV-content{
+    max-width: 500px;
+    max-height: 100%;
+    /* border: solid green 2px; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
 
+  figure h3{
+    margin-top: 0px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 
 
 }
