@@ -1,0 +1,219 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+html {
+  background-color: var(--gray90);
+}
+
+body {
+  color: var(--gray20);
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.headline-container {
+  padding: var(--md) var(--sm) var(--xs);
+  padding-top: 80px;
+}
+
+.photo-grid-container {
+  padding: 30px var(--sm) 15px;
+  max-width: var(--width-xl);
+  margin: 0 auto;
+}
+
+.photo-grid {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 75vh;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:600px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.photo-grid-photo {
+  background-color: var(--gray80);
+  /* background: url(https://s3.amazonaws.com/snwceomedia/ids/3e1340ad-2ae7-49bd-a37e-1ede49bcaa49.sized-1000x1000.jpg); */
+  background-size: cover;
+  background-position: center center;
+  border-radius: 4px;
+}
+
+/* .imagegrid {
+  max-width: var(--width-lg);
+  padding: 0;
+}
+
+.grid-image-1 {
+  grid-area: 1/2/1/12;
+}
+
+.grid-image-2 {
+  grid-area: 2/1/2/7;
+}
+
+.grid-image-3 {
+  grid-area: 2/7/2/13;
+} */
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  font-size: 100px;
+  text-transform: uppercase;
+  padding-bottom: 0.05em;
+  font-family: 'Creepster', cursive;
+}
+
+h2 {
+  /* second headline */
+  font-size: 35px;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 200;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+figcaption,
+p.caption {
+  padding-top: var(--xs);
+}
+
+.dateline {
+  font-family: Inter, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+}
+
+.section-break svg {
+  height: 26px;
+  padding: 0 15px;
+  margin: var(--md) 0;
+  fill: var(--gray30);
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  h1 {
+    font-size: 80px;
+    padding-bottom: 0.2em;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
