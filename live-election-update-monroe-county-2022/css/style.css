@@ -1,0 +1,533 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+.title-container img {
+  width: 120px;
+  margin-bottom: -30px;
+  /* text-align: center; */
+}
+
+.title-container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  font-size: 4rem;
+  padding-left: 16px;
+  padding-bottom: .2em !important;
+  /* margin-left: 5em; */
+  text-align: center !important;
+}
+
+h2 {
+  /* section headers */
+  /* font-family: "Inter"; */
+  /* margin-bottom: 1em; */
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: left;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: black;
+}
+
+.bylines {
+  padding-bottom: 1em;
+}
+
+body h3 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 1.4em;
+  /* font-family: 'Playfair Display'; */
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#pubdate {
+  font-size: 1rem;
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pre-election .d-section {
+  margin-bottom: 5em;
+}
+
+.state-section,
+.d-section .section {
+  box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.1);
+}
+
+.double {
+  grid-template-columns: 3fr 1fr;
+  display: grid;
+  gap: .7em;
+}
+
+/* .fa-question-circle {
+  display: none !important /;
+} */
+
+.votePerc-bar {
+  width: 63px;
+  height: .3em;
+  border: 1px solid rgb(151, 151, 151);
+  margin-top: .2em;
+  /* border-radius: .2em; */
+}
+
+div[class^="votePerc-progress-"] {
+  margin-top: .2em;
+  /* border-radius: .2em; */
+  height: .3em;
+  background: black;
+  width: 0%;
+  transform: translateY(-.5em)
+}
+
+.votePercMsg {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-family: 'Lato';
+}
+
+.last-updated {}
+
+.votePercMsg p {
+  font-size: 14px;
+}
+
+.votePercMsg p {
+  display: inline-block;
+}
+
+.votePercMsg span {
+  width: 4.5em;
+  text-align: center;
+  font-size: 14px;
+}
+
+.votePercMsg span,
+.incumbent {
+  border: 1px solid rgb(151, 151, 151);
+  color: rgb(102, 102, 102);
+  border-radius: .3em;
+  padding: .2em .5em;
+  margin: 0;
+  display: inline-block;
+}
+
+.incumbent {
+  background: rgb(245, 245, 245);
+  font-size: 12px;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+article {
+  padding-top: 5em;
+}
+
+div#map-viz {
+  clip: rect(19px, 110px, 80px, 25px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.headline-block {
+  display: none !important;
+}
+
+.subsection .lg-image {
+  max-width: var(--width-md);
+}
+
+.d-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.t-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  gap: 1em;
+}
+
+.t-section .section {
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: .5em;
+}
+
+.bc-row {
+  margin-bottom: 1em !important;
+}
+
+.d-section .section {
+  z-index: 10;
+}
+
+.section {
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  padding: 2em;
+  border-radius: .5em;
+  margin-bottom: 1em;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.d-section .section {
+  background: white;
+}
+
+.state-section {
+  /* background: rgba(104, 104, 104, 0.075); */
+  padding: 2em;
+  border-radius: .5em;
+  margin-bottom: 1em;
+  z-index: 9;
+  border: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+.pre-election .section {
+  box-shadow: none;
+}
+
+.state-section hr {
+  margin-bottom: .5em !important;
+}
+
+.pre-election>div {
+  position: relative;
+}
+
+.pre-election-view {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  background-color: #ffffffc3;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  -webkit-mask-image: linear-gradient(to top, black 70%, rgba(0, 0, 0, 0.648) 100%);
+  mask-image: linear-gradient(to top, black 8 0%, rgba(0, 0, 0, 0.648) 100%);
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 60%;
+  margin-top: 9em;
+  padding: 2em;
+}
+
+.pre-election-view h4 {
+  padding-top: 0;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+
+}
+
+.pre-election-view hr {}
+
+.pre-election p {
+  /* max-width: 80%; */
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.story {
+  max-width: 95%;
+  padding: 0;
+  /* margin-left: 20%; */
+}
+
+.info {
+  display: none;
+  position: absolute;
+  left: 25px;
+  top: -60px;
+  z-index: 1;
+  /* margin-top: 80px; */
+  background: rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
+  /* border-bottom-left-radius: 0; */
+  overflow: hidden;
+  width: 80px;
+  height: 120px;
+  /* padding-bottom: 12em; */
+  /* padding-top: -20em; */
+}
+
+.section {
+  position: relative;
+}
+
+.info svg,
+.info img {
+  width: 100px;
+  float: left;
+  position: absolute;
+  top: -67px;
+  right: -10px;
+}
+
+.info img {
+  width: calc(61px*2);
+  height: calc(96px*2);
+  top: -60px !important;
+  right: -30px !important;
+}
+
+.footer {
+  max-width: var(--medium);
+  margin: 0 auto;
+}
+
+/* .fa-question-circle::after {
+  transform: rotate(90deg);
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.37) transparent transparent transparent;
+} */
+
+.fa-question-circle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  bottom: 5px;
+  margin-left: 15px;
+}
+
+.info .show {
+  /* display:  */
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* animation for popup */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  article {
+    padding-top: 6em;
+  }
+
+  .pre-election-view {
+    /* backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -webkit-mask-image: linear-gradient(to top, black 85%, rgba(0, 0, 0, 0.648) 100%);
+    mask-image: linear-gradient(to top, black 85%, rgba(0, 0, 0, 0.648) 100%); */
+  }
+
+  .text {
+    margin-top: 3em;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem !important;
+  }
+
+  h4 {
+    font-size: 1.3rem !important;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+@media(max-width: 976px) {
+  h4 {
+    margin-left: 0;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+  .d-section {
+    grid-template-columns: 1fr;
+  }
+
+  .second-section {
+    display: none !important;
+  }
+
+  .t-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1388px) {
+  .section {
+    padding: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .chart-parent {}
+
+  .story {
+    padding: 0;
+  }
+
+  .d-section {
+    gap: 1em;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
