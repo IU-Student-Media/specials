@@ -1,0 +1,923 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+
+  /* Card Styline */
+  --card-radius-outer: 30px;
+  --card-radius-inner: 15px;
+
+  /* Timeline */
+  --timeline-color-active: #84d3e6;
+  --timeline-color-hover: #b2c3eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: black;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-row .logo,
+.footer-row .socials {
+  width: 33%;
+}
+
+.footer-row .socials,
+.footer-row .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.footer-row .logo a {
+  align-items: center;
+}
+
+.author-bios,
+.donate {
+  max-width: var(--medium);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.index h3,
+.latest-updates h3,
+#coverage h3 {
+  font-family: "Inter", sans-serif;
+}
+
+/* Header Caption */
+.captionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+  gap: 4px;
+}
+
+.captionContainer p {
+  padding-right: 0;
+}
+.captionContainer svg {
+  margin-top: 4px;
+  width: 27px;
+  fill: var(--gray90);
+}
+
+/* Datelines */
+#pubdate,
+#update {
+  font-size: 0.85em;
+  margin-bottom: 0;
+}
+
+#update {
+  margin-bottom: var(--md);
+}
+
+/* Header Styling */
+.headline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: -7%;
+}
+
+.headline-container h2 {
+  width: 100%;
+  max-width: 690px;
+  padding: 1em;
+  font-family: "Inter", sans-serif;
+  text-shadow: none;
+  font-weight: 600;
+  -webkit-transition: 0.5s -webkit-filter ease-in-out;
+  -ms-transition: 0.5s -ms-filter ease-in-out;
+  -o-transition: 0.5s -o-filter ease-in-out;
+  transition: 0.5s filter ease-in-out;
+}
+
+header .background,
+header .foreground {
+  height: 105%;
+  width: 105%;
+}
+
+header .background {
+  background-image: url("https://snworksceo.imgix.net/ids/6aba7014-c63e-4934-b669-bc564e6e4785.sized-1000x1000.jpg?w=1000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -60px;
+  position: absolute;
+  filter: blur(3.5px);
+}
+
+header .backgroundShadow {
+  height: 105%;
+  width: 105%;
+  background: radial-gradient(circle, transparent 30%, black 120%);
+  position: absolute;
+  transition: background 3s ease-in-out;
+}
+
+header .foreground {
+  height: 110%;
+  width: 110%;
+  position: absolute;
+  bottom: -13%;
+  left: -3%;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.7));
+}
+
+header .foreground svg {
+  height: 100%;
+  width: 100%;
+}
+
+header .foregroundShadow {
+  height: 105%;
+  width: 105%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
+  position: absolute;
+  bottom: -10%;
+}
+
+header .headlineShadow {
+  height: 105%;
+  width: 105%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 40%, transparent 100%);
+  position: absolute;
+  bottom: -10%;
+}
+
+/* General Card Styling */
+.latest-updates .datelineContainer .tag,
+#articleContainer .datelineContainer .tag {
+  height: 17.5px;
+  font-size: 0.7em;
+  font-weight: 600;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 0.2em 0.7em;
+  margin-left: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.datelineContainer svg {
+  height: 80%;
+  margin-right: 4px;
+}
+
+.latest-updates .byline,
+#articleContainer .byline {
+  font-weight: 500;
+}
+
+.latest-updates .datelineContainer .dateline,
+#articleContainer .datelineContainer .dateline {
+  font-size: 0.8em;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.latest-updates .headline,
+#articleContainer .headline {
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.latest-updates .headline a:link,
+#articleContainer .headline a:link {
+  border-bottom: none;
+}
+
+.latest-updates .headline a:hover,
+#articleContainer .headline a:hover {
+  color: var(--gray90);
+  border-bottom: 0.125em solid var(--gray90);
+}
+
+.latest-updates .datelineContainer,
+#articleContainer .datelineContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.latest-updates .card:hover,
+#articleContainer .card:hover {
+  transform: scale(1.005);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.18);
+  transition: all 0.2s ease-out !important;
+}
+
+.latest-updates img,
+#articleContainer img {
+  border-radius: var(--card-radius-inner);
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.latest-updates > div,
+#articleContainer > div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+.latest-updates .card,
+#articleContainer .card,
+#terms .card {
+  font-family: "Inter", sans-serif;
+  background-color: var(--gray05);
+  border-radius: var(--card-radius-outer);
+  overflow: hidden;
+  padding: 1em;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+
+/* Latest Updates Cards */
+.latest-updates {
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.latest-updates > div {
+  padding: 0 1em;
+}
+
+.latest-updates h3 {
+  margin-bottom: 1em;
+}
+
+.latest-updates .card {
+  min-height: 415px;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.latest-updates .headline {
+  margin-top: 0.25em;
+}
+
+.latest-updates .datelineContainer {
+  margin-top: 0.5em;
+}
+
+.latest-updates .byline {
+  line-height: 1.5;
+  margin-top: 0.25em;
+}
+
+.latest-updates .metaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.latest-updates .content .readButton {
+  background-color: var(--gray15);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  width: 100%;
+  display: block;
+  border: none;
+  border-radius: 50px;
+  margin-top: 1em;
+  padding: 0.5em;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.latest-updates .content .readButton:hover {
+  background-color: var(--gray20);
+}
+
+.latest-updates .content .readButton .indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+}
+
+.latest-updates .content .readButton .indicator::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  display: block;
+  background-color: var(--gray10);
+  border-radius: 50%;
+}
+
+.latest-updates .content .readButton .unread::after {
+  background-color: #4677ea;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.latest-updates .content .readButton .read::after {
+  background-color: #edf2ef;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) inset;
+}
+
+.latest-updates .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Index Styling */
+.index {
+  background-color: var(--gray05);
+  padding: 1em;
+  padding-left: 1.5em;
+  margin-top: 2em;
+}
+
+.index h3 {
+  margin: 0;
+}
+
+.index ul {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  list-style: none;
+}
+
+.index li {
+  margin-bottom: 0.5em;
+}
+
+#indexCoverage {
+  margin-left: 1.5em;
+}
+
+/* Terms to Know Styling */
+#terms {
+  width: 100vw;
+  padding: 2em;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+#terms .container {
+  width: 100%;
+  max-width: var(--width-lg);
+}
+
+#terms .container p {
+  font-family: "PT Serif", serif;
+}
+
+#termCards {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+}
+
+#terms .word {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 0.8em 1.6em 0.8em 1.2em;
+  border: none;
+  background-color: white;
+  text-align: left;
+  cursor: pointer;
+  border-radius: var(--card-radius-outer);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+#terms .word i {
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  right: 1.2em;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+#terms .card {
+  background-color: white;
+  padding: 0;
+}
+
+#terms .card:hover {
+  transform: scale(1.002);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.18);
+  transition: all 0.2s ease-out !important;
+}
+
+#terms .definition {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 1em;
+  line-height: 1.5;
+}
+
+#terms h3 {
+  font-family: "Inter", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#terms p {
+  font-family: "Inter", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+#terms p:first-of-type {
+  margin-top: 0.3em;
+}
+
+#terms hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Styling */
+#coverage {
+  width: 100%;
+  max-width: var(--width-lg);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+#coverage .header {
+  min-height: 175px;
+  margin-bottom: 1em;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#coverage .header h3 {
+  margin-bottom: 0.2em;
+}
+
+#coverage .header p {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+#tabContainer {
+  font-family: "Inter", sans-serif;
+  width: 87%;
+  max-width: var(--width-md);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+#tabContainer::before {
+  content: "";
+  height: 3px;
+  width: 100%;
+  display: block;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+#tabContainer button {
+  content: "";
+  height: 25px;
+  width: 25px;
+  border: none;
+  border: 3px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+#tabContainer button:hover {
+  background-color: var(--timeline-color-hover);
+  box-shadow: 0 0 3.5px rgba(0, 0, 0, 0.6);
+}
+
+#tabContainer button .heading {
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  top: calc(-100% - 2em);
+  transform: translateX(-50%);
+}
+
+#tabContainer button .subheading {
+  text-align: center;
+  font-weight: 300;
+  display: block;
+  position: absolute;
+  top: calc(100% + 0.6em);
+  transform: translateX(-50%);
+}
+
+#tabContainer button:first-of-type .subheading {
+  line-height: 1;
+}
+
+#tabContainer button.active {
+  background-color: var(--timeline-color-active);
+  border: 3.5px solid black;
+  transform: scale(1.07);
+}
+
+#tabContainer button.active::before {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#tabContainer button.active::after {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Overflow Menu */
+#tabContainer .overflow {
+  position: relative;
+  display: none;
+}
+
+#tabContainer .overflow > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tabContainer .menu {
+  border-radius: 10px;
+  position: absolute;
+  top: calc(100% + 0.5em);
+  background-color: var(--gray05);
+  overflow: hidden;
+  z-index: 99;
+  box-shadow: 0 0 4px rgba(34, 25, 25, 0.3);
+}
+
+#tabContainer .menu div {
+  text-align: left;
+  padding: 0.2em 0.8em 0.2em 0.4em;
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#tabContainer .menu div:hover {
+  background-color: var(--gray10);
+}
+
+#tabContainer .menu .active {
+  font-weight: 600;
+}
+
+#closeBtn {
+  text-align: center !important;
+}
+
+#closeBtn:hover {
+  color: red;
+}
+
+/* Timeline Article Cards */
+#articleContainer .card {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#articleContainer .image {
+  border-bottom: none;
+  align-self: center;
+}
+
+#articleContainer img {
+  object-fit: cover;
+}
+
+#articleContainer .datelineContainer {
+  margin-top: 0.25em;
+}
+
+#articleContainer .byline {
+  line-height: 1.5;
+  margin-top: 0.25em;
+}
+
+#articleContainer .excerpt {
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+#articleContainer .buttonContainer {
+  display: none;
+}
+
+#articleContainer .indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#articleContainer .indicator::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  display: block;
+  background-color: var(--gray10);
+  border-radius: 50%;
+}
+
+#articleContainer .unread::after {
+  background-color: #4677ea;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#articleContainer .read::after {
+  background-color: #edf2ef;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15) inset;
+}
+
+/* 'Load More' button */
+.loadMore {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--gray05);
+  margin-top: 2em;
+  padding: 1.5em;
+  border: none;
+  border-radius: var(--card-radius-outer);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.loadMore:hover {
+  background-color: var(--gray10);
+}
+
+/* Animations */
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards ease;
+  transition: transform 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0.99, 0.99, 1) translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1) translateY(0);
+  }
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: "XS";
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: -1s !important;
+    animation-duration: 1s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+  }
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  header .background {
+    background-position: center top;
+  }
+
+  header .foreground {
+    height: 115%;
+    width: 115%;
+    left: -5%;
+    bottom: -18%;
+  }
+
+  .latest-updates > div {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  #coverage .header {
+    margin-bottom: unset;
+  }
+
+  #tabContainer {
+    width: 80%;
+  }
+
+  #tabContainer button .heading,
+  #tabContainer button .subheading {
+    white-space: nowrap;
+  }
+
+  #tabContainer button:first-of-type .subheading {
+    line-height: unset;
+  }
+
+  #tabContainer button .heading {
+    top: calc(-100% - 0.9em);
+  }
+
+  #tabContainer button .subheading {
+    top: calc(100% + 0.5em);
+  }
+
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: "S";
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header .foreground {
+    left: -9.5%;
+    bottom: -17%;
+  }
+
+  .latest-updates > div {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  #articleContainer .card {
+    max-width: none;
+    flex-direction: row;
+    padding-right: 3em;
+  }
+
+  #articleContainer .indicator {
+    top: 1.2em;
+  }
+
+  #articleContainer img {
+    height: 200px;
+    width: 33vw;
+    max-width: 325px;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: "M";
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .latest-updates > div {
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  #coverage {
+    padding: 0;
+  }
+
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: "L";
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .latest-updates .card {
+    width: 350px;
+  }
+
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: "XL";
+  }
+}
