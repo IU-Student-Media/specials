@@ -18,7 +18,7 @@ function generateSections(articleJSON) {
     const tabContainer = document.getElementById("tabContainer");
 
     // Tab Button
-    var tabButton = document.createElement("button");
+    var tabButton = document.createElement("div");
     tabButton.classList = "sectionButton";
     tabButton.dataset.index = sectionIndex;
 
