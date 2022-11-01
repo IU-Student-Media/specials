@@ -119,6 +119,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: -7%;
+  will-change: transform;
 }
 
 .headline-container h2 {
@@ -138,10 +139,12 @@ header .background,
 header .foreground {
   height: 105%;
   width: 105%;
+  will-change: transform;
 }
 
 header .background {
-  background-image: url("https://snworksceo.imgix.net/ids/6aba7014-c63e-4934-b669-bc564e6e4785.sized-1000x1000.jpg?w=1000");
+  background: radial-gradient(circle, transparent 30%, black 120%),
+    url("https://snworksceo.imgix.net/ids/6aba7014-c63e-4934-b669-bc564e6e4785.sized-1000x1000.jpg?w=1000");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center -60px;
@@ -152,9 +155,7 @@ header .background {
 header .backgroundShadow {
   height: 105%;
   width: 105%;
-  background: radial-gradient(circle, transparent 30%, black 120%);
   position: absolute;
-  transition: background 3s ease-in-out;
 }
 
 header .foreground {
@@ -163,6 +164,7 @@ header .foreground {
   position: absolute;
   bottom: -13%;
   left: -3%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.7));
 }
 
@@ -174,7 +176,6 @@ header .foreground svg {
 header .foregroundShadow {
   height: 105%;
   width: 105%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 40%, transparent 100%);
   position: absolute;
   bottom: -10%;
 }
@@ -433,6 +434,7 @@ header .headlineShadow {
 }
 
 #terms .word {
+  color: black;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1.3em;
@@ -536,6 +538,7 @@ header .headlineShadow {
   position: relative;
   margin-top: 3em;
   margin-bottom: 6em;
+  flex: 0 0 0;
 }
 
 #tabContainer::before {
@@ -549,10 +552,11 @@ header .headlineShadow {
   z-index: -1;
 }
 
-#tabContainer button {
-  content: "";
+#tabContainer .sectionButton {
   height: 25px;
   width: 25px;
+  text-align: center;
+  background-color: white;
   border: none;
   border: 3px solid black;
   border-radius: 50%;
@@ -561,44 +565,46 @@ header .headlineShadow {
   transition: all 0.2s ease-in-out;
 }
 
-#tabContainer button:hover {
+#tabContainer .sectionButton:hover {
   background-color: var(--timeline-color-hover);
   box-shadow: 0 0 3.5px rgba(0, 0, 0, 0.6);
 }
 
-#tabContainer button .heading {
+#tabContainer .sectionButton .heading {
+  color: black;
   font-weight: 600;
   display: block;
   position: absolute;
   top: calc(-100% - 2em);
-  transform: translateX(-50%);
+  transform: translateX(-41%);
 }
 
-#tabContainer button .subheading {
+#tabContainer .sectionButton .subheading {
+  color: black;
   text-align: center;
   font-weight: 300;
   display: block;
   position: absolute;
   top: calc(100% + 0.6em);
-  transform: translateX(-50%);
+  transform: translateX(-41%);
 }
 
-#tabContainer button:first-of-type .subheading {
+#tabContainer .sectionButton:first-of-type .subheading {
   line-height: 1;
 }
 
-#tabContainer button.active {
+#tabContainer .sectionButton.active {
   background-color: var(--timeline-color-active);
   border: 3.5px solid black;
   transform: scale(1.07);
 }
 
-#tabContainer button.active::before {
+#tabContainer .sectionButton.active::before {
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-#tabContainer button.active::after {
+#tabContainer .sectionButton.active::after {
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -719,6 +725,7 @@ header .headlineShadow {
 
 /* 'Load More' button */
 .loadMore {
+  color: black;
   width: 100%;
   font-family: "Inter", sans-serif;
   font-size: 1.2em;
@@ -741,8 +748,28 @@ header .headlineShadow {
 .fadeIn {
   opacity: 0;
   animation: fadeIn 0.4s forwards ease;
-  transition: transform 0.2s ease-out;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
+
+.fShadowIn {
+  transition: all 0.2s ease;
+  box-shadow: -30px -50vh 100px rgba(0, 0, 0, 0.9) inset;
+  animation: opacityIn 1.5s forwards ease;
+}
+
+.bShadowIn {
+  transition: all 0.2s ease;
+  box-shadow: -45vw 0 150px rgba(0, 0, 0, 0.9) inset,
+    33vw 0 150px rgba(0, 0, 0, 0.9) inset;
+  animation: opacityIn 5s forwards ease;
+}
+
+.shadowOut {
+  transition: all 0.2s ease;
+  animation: opacityOut 3s forwards ease;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -752,6 +779,26 @@ header .headlineShadow {
   to {
     opacity: 1;
     transform: scale3d(1, 1, 1) translateY(0);
+  }
+}
+
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacityOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
@@ -822,20 +869,20 @@ No media query for `xs` since this is the default */
     width: 80%;
   }
 
-  #tabContainer button .heading,
-  #tabContainer button .subheading {
+  #tabContainer .sectionButton .heading,
+  #tabContainer .sectionButton .subheading {
     white-space: nowrap;
   }
 
-  #tabContainer button:first-of-type .subheading {
+  #tabContainer .sectionButton:first-of-type .subheading {
     line-height: unset;
   }
 
-  #tabContainer button .heading {
+  #tabContainer .sectionButton .heading {
     top: calc(-100% - 0.9em);
   }
 
-  #tabContainer button .subheading {
+  #tabContainer .sectionButton .subheading {
     top: calc(100% + 0.5em);
   }
 
