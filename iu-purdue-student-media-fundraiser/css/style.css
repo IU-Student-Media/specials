@@ -1,0 +1,336 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --idsred-alpha: #99000090;
+  --darkgray: rgb(80, 80, 80);
+
+  --exponent: #B1946C;
+  --exponent-alpha: #b1946c9d;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('https://s3.amazonaws.com/snwceomedia/ids/f107733d-80f2-417a-8779-3d993ac43f66.sized-1000x1000.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 120vh;
+}
+
+.topper {
+  max-width: var(--width-lg);
+  margin: -105vh auto 0;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1:first-child {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  background-color: rgba(130, 0, 0, 0.8);
+  padding: var(--xs) var(--sm);
+  border-radius: 4px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+h1:nth-child(2) {
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 38px;
+  margin-top: 0;
+  font-weight: 800;
+}
+
+h1,
+h2 {
+  font-family: Inter, sans-serif;
+  /* alignment */
+  text-align: left;
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container {
+  padding: 0 var(--sm);
+}
+
+.header-caption {
+  padding: 0;
+}
+
+/*
+  FUNDRAISING CHART
+*/
+.chart {
+  flex-grow: 1;
+  flex-basis: 33%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding: var(--sm);
+  margin: var(--sm) var(--sm) 0;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.chart-sizer {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto auto;
+  padding: var(--xs);
+  /* background-color: rgba(0, 0, 0, .5); */
+  border: 2px dashed rgba(255, 255, 255, .5);
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.chart h3 {
+  font-family: Inter, sans-serif;
+  width: 90%;
+  color: white;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+/*
+  DONATE BUTTONS
+*/
+.donate-buttons {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding: var(--sm) 0;
+}
+
+.story .donate-buttons {
+  margin: 0 auto;
+}
+
+.donate-buttons:nth-child(2) button.exponent {
+  background-color: var(--exponent);
+}
+
+.donate-buttons:nth-child(2) button.ids {
+  background-color: var(--idsred);
+}
+
+.donate-buttons a:link,
+.donate-buttons a:visited,
+.donate-buttons a:hover,
+.donate-buttons a:active,
+section a:link,
+section a:visited,
+section a:hover,
+section a:active {
+  border: none;
+}
+
+section a h4 {
+  transition: color .3s;
+}
+
+section.ids a h4:hover {
+  color: var(--idsred);
+  transition: color .3s;
+}
+
+section.exponent a h4:hover {
+  color: var(--exponent);
+  transition: color .3s;
+}
+
+button {
+  background-color: rgba(0, 0, 0, .6);
+  backdrop-filter: blur(5px);
+  padding: var(--sm);
+  border-radius: 5px;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+}
+
+button span {
+  font-size: 0.6em;
+}
+
+button.ids,
+.ids button {
+  border: 2px solid var(--idsred);
+  background-color: var(--idsred-alpha);
+}
+
+button.exponent,
+.exponent button {
+  border: 2px solid var(--exponent);
+  background-color: var(--exponent-alpha);
+}
+
+section button {
+  width: 50%;
+  font-size: 18px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+  SPORTS SECTIONS
+*/
+
+.sports-content {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: var(--width-xl);
+  margin: var(--xl) auto var(--xxl);
+}
+
+.sports-content section {
+  margin-bottom: var(--xl);
+}
+
+.sports-content section:after {
+  content: "";
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 0;
+  display: block;
+  margin: 2.5em 0 0.5em;
+}
+
+.sports-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0.5em 0 0.15em;
+}
+
+.sports-content p {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.sports-content section {
+  padding: 0 20px;
+}
+
+section.ids {
+  border-right: 1px solid black;
+}
+
+.clip figure {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  h1:nth-child(2) {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 44px;
+    /* color: red; */
+  }
+}
+
+@media (min-width: 768px) {
+  .topper {
+    flex-flow: row nowrap;
+    padding: 0 var(--sm);
+    margin-top: -75vh;
+  }
+
+  header {
+    height: 85vh;
+  }
+
+  .chart {
+    height: 85vh;
+  }
+
+  .headline-container {
+    margin-left: var(--md);
+    flex-grow: 2;
+    flex-basis: 66%;
+  }
+
+  .sports-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: var(--width-xl);
+    margin: var(--xl) auto var(--xxl);
+  }
+
+  .sports-content section:after {
+    content: "";
+    border: none;
+    height: 0;
+    display: block;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 52px;
+    /* color: purple; */
+  }
+}
+
+@media (min-width: 992px) {
+  h1:nth-child(2) {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 60px;
+    /* color: orange; */
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 65px;
+    /* color: blue; */
+  }
+}
