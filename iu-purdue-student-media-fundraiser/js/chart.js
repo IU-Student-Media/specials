@@ -7,7 +7,7 @@ Chart.defaults.font.family = "Inter";
 Chart.defaults.font.weight = '600';
 Chart.defaults.color = 'white';
 
-const chart_data = [1058, 706]
+const chart_data = [1163, 706]
 var labels = [];
 for (var i = 0; i < 2; ++i) {
     labels.push('$' + chart_data[i]);
