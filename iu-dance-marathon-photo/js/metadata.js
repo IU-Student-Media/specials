@@ -7,7 +7,7 @@ const data = {
     // title will appear on the tab in the browser
     "title": "IU Dance Marathon 2022",
     // make sure to update the pub date before finishing the project
-    "pub_date": "Nov. 4, 2022",
+    "pub_date": "Nov. 6, 2022",
     "bylines": {
         // fill in photographer info
         "Photos by": [
