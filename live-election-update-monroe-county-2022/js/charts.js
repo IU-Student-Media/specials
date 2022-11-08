@@ -23,6 +23,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
         if (raceFinished == 'TRUE') partyColor = { 'R': 'rgba(248, 169, 32,.5)', 'D': 'rgba(248, 169, 32,.5)', 'I': 'rgba(248, 169, 32,.5)' }
         else partyColor = { 'R': 'rgba(248, 169, 32,1)', 'D': 'rgba(248, 169, 32,1)', 'I': 'rgba(248, 169, 32,1)' }
     }
+    if (district == 'referendum') partyColor = { 'R': 'rgba(248, 169, 32,1)', 'D': 'rgba(248, 169, 32,1)', 'I': 'rgba(248, 169, 32,1)' }
     i = 0
     chartData.map(obj => {
         obj.party = parties[i]
@@ -30,7 +31,6 @@ var drawChart = function (chartData, district, raceFinished, type) {
     })
     // sort bars based on vote count
     chartData.sort((a, b) => parseInt(a.votes) < parseInt(b.votes) ? 1 : -1);
-
     let candidates = [];
     let votes = [];
     let colors = [];
@@ -54,9 +54,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
     else if (candidates.length == 2) aspectRatio = 4
     else aspectRatio = 3
     if (window.innerWidth < 576) aspectRatio /= 1.5
-
     if (district == 'Bloomington_Township_Board_Member') colors = ['rgb(25, 74, 200)', 'rgb(25, 74, 200)', 'rgb(25, 74, 200)']
-    if (window.innerWidth < 576) aspectRatio /= 1.5
     const ctx = document.querySelector('#chart-' + district).getContext('2d');
     const chart = new Chart(ctx, {
         type: 'bar',

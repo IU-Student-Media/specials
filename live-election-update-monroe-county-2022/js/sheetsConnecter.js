@@ -5,7 +5,8 @@ const elections = {
     'district_60': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=1320574252',
     'district_62': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=555854463',
     'district_61': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=268456027',
-    'district_46': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=2147039576'
+    'district_46': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=2147039576',
+    'referendum': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=2055690'
 }
 const localElections = {
     'Secretary_of_State': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=994729816',
