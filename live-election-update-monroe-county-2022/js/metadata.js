@@ -80,8 +80,7 @@ document.querySelector('#bylines').innerHTML = bylines_html;
 document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
-document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
-
+document.querySelector('#pubdate').innerHTML = "<p>Published " + data.pub_date + "</p><p><b>Last updated: <span class='last-updated'></span></b></p>"
 // title & slug
 document.querySelector('title').innerHTML = data.title + ' | Indiana Daily Student';
 document.querySelector('#slug').innerHTML = data.slug;

@@ -1,6 +1,9 @@
 function popUp(district) {
-    console.log(district)
-    var popup = document.getElementsByClassName("info")[0];
-    $(".info-" + district).toggleClass("show");
-    console.log($(".info-" + district))
+    // when u click .info (modal background) 
+    $(".info").click(function () {
+        // hide the info box
+        $(".info-" + district).removeClass("show");
+    })
+
+    $(".info-" + district).addClass("show");
 }
