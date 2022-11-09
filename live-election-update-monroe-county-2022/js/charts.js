@@ -163,7 +163,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
                     }
 
                 },
-                y: {
+              y: {
                     grid: {
                         display: false
                     }

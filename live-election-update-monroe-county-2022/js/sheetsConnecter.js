@@ -55,7 +55,7 @@ var insertData = function (response, district, type, index) {
     console.log(district,type)
     if (type == "local" || type == "school") {
         var parent = $('.' + type + '-elections')
-        if (response.rows.length == 5 && response.rows[4]['cellsArray'][0] == 'Uncontested') {
+        if ((response.rows.length == 5 && response.rows[4]['cellsArray'][0] == 'Uncontested')|| district == 'Monroe_County_Council_District_3') {
             // response.rows[2]['cellsArray'][0] = '**' + response.rows[2]['cellsArray'][0]
             let title_district = district
             parent.append(
@@ -109,6 +109,7 @@ var insertData = function (response, district, type, index) {
             response.rows = response.rows.slice(0, 5);
         }
     }
+    console.log(district,percVote)
     $('.votePerc-' + district).text((percVote * 100).toString().slice(0, 4) + '%');
     $('.votePerc-progress-' + district).css('width', percVote * progressBarWidth);
     chartData(response.rows, district, response.rows[1]['cellsArray'][3], type);
