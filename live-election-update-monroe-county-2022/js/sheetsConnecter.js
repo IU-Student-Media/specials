@@ -48,13 +48,13 @@ var insertData = function (response, district, type, index) {
     var percVote = response.rows[1]['cellsArray'][2];
     var url = ""
     if (type == 'local') {
-        url = 'https://specials.idsnews.com/local-state-election-monroe-county-indiana-2022/#'+index
+        url = 'https://specials.idsnews.com/local-state-election-monroe-county-indiana-2022/#' + index
     } else if (type == 'school') {
-        url = 'https://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/#'+index
+        url = 'https://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/#' + index
     }
     if (type == "local" || type == "school") {
         var parent = $('.' + type + '-elections')
-        if ((response.rows.length == 5 && response.rows[4]['cellsArray'][0] == 'Uncontested')|| district == 'Monroe_County_Council_District_3') {
+        if ((response.rows.length == 5 && response.rows[4]['cellsArray'][0] == 'Uncontested') || district == 'Monroe_County_Council_District_3') {
             // response.rows[2]['cellsArray'][0] = '**' + response.rows[2]['cellsArray'][0]
             let title_district = district
             parent.append(
@@ -104,11 +104,12 @@ var insertData = function (response, district, type, index) {
         }
     } else {
         if (district === 'senate') {
-            $('.last-updated').text(response.rows[0]['cellsArray'][2]);
+            console.log(response.rows[5].cellsArray[1])
+            $('.last-updated').text(response.rows[5].cellsArray[1]);
             response.rows = response.rows.slice(0, 5);
         }
     }
-    console.log(district,response.rows)
+    console.log(district, response.rows)
     $('.votePerc-' + district).text((percVote * 100).toString().slice(0, 4) + '%');
     $('.votePerc-progress-' + district).css('width', percVote * progressBarWidth);
     chartData(response.rows, district, response.rows[1]['cellsArray'][3], type);
