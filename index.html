@@ -1,670 +1,777 @@
-<!-- Web development by Jacob deCastro. December 2020 -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-     <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
-        <link rel="SHORTCUT ICON"
-       href="http://duvq7ua50whdw.cloudfront.net/20151014QyeoL4yWsx/dist/img/favicon.ico">
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
 
-    <title>Fall 2020 Virtual Housing Fair | Indiana Daily Student</title>
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
 
-    <!--Facebook Social Card (Be sure to change these!)-->
-    <meta property=“og:url” content=“http://specials.idsnews.com/virtual-housing-fair-ids-bloomington-apartments-places-to-live/index.html“/>
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/election-guide-monroe-county-indiana-2022" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Fall 2020 Virtual Housing Fair | Indiana Daily Student" />
-    <meta property="og:description" content="Find your home away from home."/>
+    <meta property="og:title" content="Your local guide to the 2022 midterm elections" /> <!-- TODO: headline -->
+    <meta property="og:description" content="All the IDS election coverage you need before Nov. 8, in one place" />
+    <!-- TODO: abstract -->
     <meta property="og:site_name" content="IDS News">
-    <meta property="og:image" content="https://snworksceo.imgix.net/ids/28d39b5a-6614-4b7a-bc02-128b3585977c.sized-1000x1000.png?"/>
-
-    <!--Twitter Social Card (Be sure to change these!)-->
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/7aa45db8-67b6-43d9-91f0-4cfad8a1b54e.sized-1000x1000.png" />
+    <!-- TODO: link to dominant image -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@idsnews">
     <meta name="twitter:creator" content="@idsnews">
-    <meta name="twitter:title" content="Fall 2020 Virtual Housing Fair | Indiana Daily Student">
-    <meta name="twitter:description" content="Find your home away from home.">
-    <meta name="twitter:image" content="https://snworksceo.imgix.net/ids/28d39b5a-6614-4b7a-bc02-128b3585977c.sized-1000x1000.png?">
-
+    <meta name="twitter:title" content="Your local guide to the 2022 midterm elections"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="All the IDS election coverage you need before Nov. 8, in one place">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/7aa45db8-67b6-43d9-91f0-4cfad8a1b54e.sized-1000x1000.png">
+    <!-- TODO: link to dominant image -->
 
     <!-- START Ad content: this goes in the head content -->
-  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-  <script>
-    var googletag = googletag || {};
-    googletag.cmd = googletag.cmd || [];
-  </script>
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
 
-  <script>
-
-
-    googletag.cmd.push(function() {
-      //all other leaderboards
-    var mapping1 = googletag.sizeMapping()
-      .addSize([768, 0], [728, 90]) // Desktops and Tablets
-      .addSize([0, 0], [320, 50]) // Mobile devices
-      .build();
-    googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
-    googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
-    googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
-    googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
-    googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-    });
-  </script>
-  </head>
-  <body>
+<body>
     <!-- Google Tag Manager -->
- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F"
- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
- j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
- '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
- })(window,document,'script','dataLayer','GTM-NBJX8F');</script>
- <!-- End Google Tag Manager -->
-    <!-- Image and text -->
-     <nav id="nav-main" class="navbar navbar-expand-lg bg-black navbar-default fixed-top" >
-        <a class="navbar-brand" href="https://idsnews.com"><img height="30" src="img/logo.svg" class="d-inline-block align-top"></a> <span style="color: white !important;
-  font-family: 'Lato', sans-serif;">Virtual Housing Fair</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <p class="hithere"><i class="fas fa-bars"></i></p>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="text-align: right;">
-          <ul class="navbar-nav nav-white ml-auto">
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
 
-  <!--Be sure to update these links with the right social sharing ones-->
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="https://idsnews.com">Back to idsnews.com</a>
-            </li>
-          </ul>
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:black;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:black;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:black;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+
+        <div class="election-container">
+            <div class="headline-container">
+                <img class="nav-icon"
+                    src="https://s3.amazonaws.com/snwceomedia/ids/cfe63db7-b2d0-44a9-947d-7afa8db262ce.sized-1000x1000.png">
+
+                <!-- <h2 data-scroll-speed="3"></h2> -->
+            </div>
+
+            <div class="election-nav">
+                <!-- <a href="" target="_blank">Meet the Candidates</a> -->
+                <a href="" class="bold">ELECTIONS 2022</a>
+                <a href="https://specials.idsnews.com/vote-register-quiz-election-indiana/" target="_blank">How to
+                    Vote</a>
+                <a href="#MeetTheCandidates">Meet the Candidates</a>
+                <!-- <a href="#Glossary">Glossary</a> -->
+                <!-- <a href="#Opinions">Opinions</a> -->
+                <a href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0"
+                    target="_blank">Priorities Poll</a>
+                <a href="https://specials.idsnews.com/live-election-update-monroe-county-2022/" target="_blank">Live
+                    Updates</a>
+            </div>
         </div>
-      </nav>
-    <div class="wrapper">
-      <div class="topThing">
-        <div class="container">
-          <div class="row d-flex justify-content-center aign-items-center">
-            <div class="col-md-9">
-              <div class="jumbotron">
-                <p class="top-line">Indiana Daily Student Virtual Housing Fair Series</p>
-                <hr class="my-4">
-                <h1 class="siteTitle">Find your home away from home!</h1>
-				  <p class="subTitle">Below is a list of housing vendors for our December fair series. Click on a vendor for more information about what they offer. <strong>From 1 – 3 p.m. on Wednesday, Dec. 9, you can join a Zoom meeting to talk with the vendor about their housing opportunities.</strong></p>
-                <hr class="my-4">
-                <div style="display: flex; justify-content: center; align-items: center;">
-                  <a href="#vendors"><button type="button" class="btn btn-danger btn-lg" style="">Meet the vendors</button></a>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <!-- <p class="caption header-caption">Caption</p> -->
+        <article>
+            <div class="title-container">
+                <img
+                    src="https://s3.amazonaws.com/snwceomedia/ids/a88f08e6-6902-4c7e-a357-ff6cca9ea81a.sized-1000x1000.png">
+                <h1>Your local guide to the 2022 midterm elections</h1>
+
+                <!-- <h2 data-scroll-speed="3"></h2> -->
+            </div>
+            <!-- <div class="bylines"> -->
+
+            <!-- update bylines in metadata.json -->
+            <!-- </div> -->
+            <!-- TO DO update pub_date in metadata.json -->
+
+            <!-- </div> -->
+            <!-- makes the width small (story tag) -->
+            <div class="story">
+                <div class="bylines" id="bylines"></div>
+                <p id="pubdate"></p>
+                <p id="update">Updated Nov. 8, 2022</p>
+                <!-- add update date here -->
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+                <div class="blurb">
+                    <p>Election season is upon us. Absentee ballot registration is open now, early voting in Indiana
+                        opens on Oct. 12, and on Nov. 8, voters across the U.S. will cast their ballots in this year's
+                        midterm elections.</p>
+                    <p>The IDS has localized our coverage to make sure you're well-informed whenever and however you
+                        decide to vote. Along the top, you'll find introductions to your candidates, including local,
+                        state, federal and school board, a quiz to help you cast your vote, political opinion pieces and
+                        live updates on the night itself. There's also a poll to let us know your priorities as a
+                        reader, so we can cover what matters to you. </p>
+                    <p>The IDS is partnering with IUSTV and WIUX News to provide widespread election coverage, and as
+                        that content appears, it will be posted here. </p>
+                    
+                        <div class="IUSTV-container">
+                            <div class="IUSTV-content">
+                                <figure class="lg-image">
+                                    <h4 class="video">IUSTV livestream</h4>
+                                    <div class='embed-container'>
+                                        <!-- replace src attribute with your youtube embed link -->
+                                        <<iframe width="560" height="315" src="https://www.youtube.com/embed/iKr7YWHwdOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <figcaption>
+                                        Official livestream of the 2022 IUSTV/WIUX/IDS Midterm Election Special.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                    
+                        <a class="livestream" target="_blank" href="https://www.youtube.com/watch?v=iKr7YWHwdOo">
+                        
+                    </a>
                 </div>
-              </div>
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://www.idsnews.com/article/2022/10/letter-editor-ids-wiux-iustv-collab-midterm-elections"
+                        target="_blank" class="story-link">
+                        LETTER FROM THE EDITOR: The IDS, WIUX and IUSTV are collaborating for the midterm elections
+
+                    </a>
+                </p>
+
             </div>
-          </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <div class="page-nav">
+                    <p>Jump ahead to...</p>
+                    <ul>
+                        <li>
+                            <a href="#NewStories-container">News Stories</a>
+                        </li>
+                        <li>
+                            <a href="#Opinions">Opinions</a>
+                        </li>
+                        <li>
+                            <a href="#MeetTheCandidates">Meet the Candidates</a>
+                        </li>
+                        <li>
+                            <a href="#IUSTV">IUSTV</a>
+                        </li>
+                        <li>
+                            <a href="#Glossary">Glossary</a>
+                        </li>
+                        <li>
+                            <a href="#CountDown">Countdown to Election Day</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="NewStories-container" id="NewStories-container">
+
+                <div class="NewStories" id="NewStories">
+                    <div class="main-story">
+                        <a href="https://www.idsnews.com/article/2022/11/live-update-scenes-updates-around-monroe-county-election-day"
+                            target="_blank">
+                            <div class="news-story-big">
+                                <img src="https://snworksceo.imgix.net/ids/b4b83519-14b4-4149-8205-1a433b885a01.sized-1000x1000.png?w=1000"
+                                    alt="">
+                                <h3>LIVE UPDATE: Scenes, news around Monroe County on Election Day</h3>
+                                <p class="author">By IDS Staff
+                                </p>
+                                <p>The Indiana Daily Student will bring you news, updates and scenes all day at the polls as well results after they close. We have you covered so you know who's on your ballot and whether your candidates are in the lead. </p>
+                            </div>
+                        </a>
+                        <div class="more-stories big">
+                            <a href="https://www.idsnews.com/section/politics">More Stories &rarr;</a>
+                        </div>
+                        <!-- <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion" target="_blank">
+                                <div class="other-story">
+                                    <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000" alt="">
+                                    
+                                    <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against abortion. </p>
+                                </div>
+                            </a> -->
+                    </div>
+                    <div class="small-container">
+                        <div class="stories-smaller">
+                            <div class="smaller-stories">
+                                <a href="https://www.idsnews.com/article/2022/11/polling-locations-for-monroe-county-open-tomorrow"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/90833cde-2c59-47f2-9743-34f521c510a1.sized-1000x1000.jpg?w=1000"
+                                            alt="">
+                                        <p>Monroe County will have 28 polling places open on Election Day. Find yours here.
+                                            <br>
+                                            <span class="author">By Olivia Franklin</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/11/campaign-finance-through-the-lens-of-local-candidates"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/f08a7702-e3b2-4976-8dea-1f052a8041b6.sized-1000x1000.png?w=1000"
+                                            alt="">
+                                        <p>'Lifeblood of politics': Campaign finance through the lens of local candidates
+                                            <br>
+                                            <span class="author">By Joey Sills</span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/11/early-in-person-voting-closes-14-thousand-turned-out"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/685665ca-7d36-4a88-a576-4b4135586feb.sized-1000x1000.jpg?w=1000"
+                                            alt="">
+                                        <p>Early in-person voting closes, 14 thousand turned out
+                                            <br>
+                                            <span class="author">By Nadia Scharf</span>
+                                        </p>
+
+                                    </div>
+                                </a>
+                                <a href="https://www.idsnews.com/article/2022/11/heres-how-monroe-county-voting-really-works"
+                                    target="_blank">
+                                    <div class="news-story">
+                                        <img src="https://snworksceo.imgix.net/ids/a2dd7a20-b351-426d-b5a2-3fa7bc216a12.sized-1000x1000.jpg?w=1000"
+                                            alt="">
+                                        <p>Here's how Monroe County voting really works
+                                            <br>
+                                            <span class="author">By Nadia Scharf</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="more-stories small">
+                            <a href="">More Stories &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opinions-container">
+                <div class="Opinions" id="Opinions">
+                    <h3>Opinions</h3>
+                    <div class="opinion-stories">
+                        <a href="https://www.idsnews.com/article/2022/10/democratic-party-faces-a-looming-disaster-in-the-senate"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/5357a37d-b5d8-4ea2-b0d0-79183247688c.sized-1000x1000.png?w=1000"
+                                    alt="">
+                                <p>The Democratic party faces a looming disaster in the Senate</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/10/do-political-scandals-matter-to-voters-anymore"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/273faf65-8764-43a8-abfd-86558d3105ef.sized-1000x1000.png?w=1000"
+                                    alt="">
+                                <p>Do political scandals even matter anymore?</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/10/midterm-polling-accuracy-what-to-expect-in-november"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/e46ae592-b2c7-4cbd-aa64-2272685898ce.sized-1000x1000.png?w=1000"
+                                    alt="">
+                                <p>Is this midterm's polling accurate, and what to expect going into November</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/debunking-the-myth-of-the-small-government-republican"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/5a143da4-5210-47f3-93dd-daefba869fb8.sized-1000x1000.png?w=1000"
+                                    alt="">
+                                <p>Debunking the myth of the 'small government' Republican</p>
+                            </div>
+                        </a>
+                        <a href="https://www.idsnews.com/article/2022/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion"
+                            target="_blank">
+                            <div class="opinion-story">
+                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000"
+                                    alt="">
+                                <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against
+                                    abortion</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="MeetTheCandidates" id="MeetTheCandidates">
+                <!-- <h3>Meet the Candidates</h3> -->
+                <div class="candidateImages">
+                    <div class="candidateImages2">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/1cf8e7ef-39e2-4159-a7ca-5a273c9082fc.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Monroe County candidates for State and Federal Congress</h3>
+                        <p>With less than three months until midterm elections on Nov. 8, state and federal candidates
+                            are out campaigning in full force. Primary elections on May 3 decided Democratic and
+                            Republican candidates, and the IDS has put together what you need to know about this
+                            election's big names.</p>
+                        <a target="_blank"
+                            href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/"
+                            class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                    <div class="candidateImages2" id="candidateBackground">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/bf954941-ec0e-40b7-b3dd-c487779806f7.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Meet the Monroe County candidates for School Board</h3>
+                        <p>Monroe County voters will elect new school board members Nov. 8. The county's two school
+                            districts, Monroe County Community School Corporation and Richland-Bean Blossom Community
+                            School Corporation, both have multiple school board seats up for election this year.</p>
+                        <a href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/"
+                            target="_blank" class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                    <div class="candidateImages2">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/6d7afc53-917c-4279-ba62-32cd2bbbc6b4.sized-1000x1000.PNG"
+                            alt="">
+                        <h3>Meet the Bloomington City candidates</h3>
+                        <p>In preparation for Election Day on Nov. 8, the Indiana Daily Student reached out to 30
+                            candidates running for Bloomington, Monroe County or executive state of Indiana office to
+                            allow them to introduce themselves to voters.</p>
+                        <a href="https://specials.idsnews.com/local-state-election-monroe-county-indiana-2022/"
+                            target="_blank" class="candidate-button">Read this story &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="WIUX" id="WIUX">
+                    <h3>WIUX</h3>
+                    <audio src="/music/good_enough.mp3" controls>	
+                        <embed 
+                            src="/music/good_enough.mp3"
+                            width="300"
+                            height="90"
+                            loop="false"
+                            autostart="false">
+                    </audio>
+                </div> -->
+
+            <div class="IUSTV" id="IUSTV">
+                <!-- <h3>IUSTV</h3> -->
+                <div>
+                    <img class="IUSTV-img"
+                        src="https://www.iustv.com/wp-content/uploads/2021/09/IUSTV-Logo-Square-White-768x768.png">
+                </div>
+                <div class="IUSTV-container">
+                    <div class="IUSTV-content">
+                        <figure class="lg-image">
+                            <h4 class="video">Overview of most competitive national midterm races</h4>
+                            <div class='embed-container'>
+                                <!-- replace src attribute with your youtube embed link -->
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/S4vrIBD5bgU?start=270"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <figcaption>
+                                Ashton Hackman breaks down the most competitive Senate and Governor races in this year's
+                                midterm elections.
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="IUSTV-content">
+                        <figure class="lg-image">
+                            <h4 class="video">Bloomington City Councilman proposes an all-student district in new map
+                            </h4>
+                            <div class='embed-container'>
+                                <!-- replace src attribute with your youtube embed link -->
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/62IB5T6GcB0?start=90"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <figcaption>
+                                Ashton Hackman reports on Bloomington City Councilman Stephen Volan being willing to
+                                give up his seat in order to have an all-student district in the new, redrawn district
+                                map, but not everyone agrees that a student district should be created.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://www.idsnews.com/article/2022/10/letter-editor-ids-wiux-iustv-collab-midterm-elections"
+                        target="_blank" class="story-link">
+                        LETTER FROM THE EDITOR: The IDS, WIUX and IUSTV are collaborating for the midterm elections
+
+                    </a>
+                </p>
+            </div>
+
+
+
+
+
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Glossary" id="Glossary">
+                <h3>Terms to know</h3>
+                <div class="card-layout">
+                    <div class="card">
+                        <h4>Affidavit </h4>
+                        <p>A written statement under oath that can be shown in court as a piece of evidence. Must be
+                            signed, witnessed and notarized to remain valid. Under <a
+                                href="http://iga.in.gov/legislative/2022ss1/bills/senate/1">Senate Bill 1</a>, pregnant
+                            women seeking abortions must give their physician a signed affidavit confirming rape or
+                            incest - two of the permittable conditions for an abortion procedure. </p>
+                    </div>
+                    <div class="card">
+                        <h4>American exceptionalism </h4>
+                        <p>A theory based on the idea of the U.S. being different than other countries and perhaps even
+                            the outlier of different conflicts, trends and resolutions. The theory implies the U.S. is
+                            superior in values, political system and history due to core principles. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Assessed property value </h4>
+                        <p>Not to be confused with the market value, given that different counties use different
+                            calculations to determine the value of one's property. By voting for the MCCSC referendum,
+                            the average Monroe County household would pay an additional $125 per year in property taxes.
+                            By month, this is approximately $10.40 of expenditure. This is because the referendum will
+                            allocate 18.5 cents for every 100 dollars to MCCSC schools. </p>
+                    </div>
+                    <div class="card">
+                        <h4>COVID-19 Learning Loss</h4>
+                        <p>This disparity is based on student performance as the result of school closures and
+                            adjustments to virtual, hybrid and in-person learning during the COVID-19 pandemic. An
+                            increase in cases, for example, means less in-person options. This can create a more
+                            difficult transition for students and teachers. R-BB Richland District candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Karl
+                                Boehm</a> said this topic was one of his biggest priorities if chosen to be on the
+                            school board. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Electing Constitutionalist Judges </h4>
+                        <p>This is one of Incumbent Republican U.S. Senator <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Todd
+                                Young's</a> priorities. A constitutionalist judge is one who interprets the U.S.
+                            Constitution with strict adherence to the written word. According to the <a
+                                href="https://plato.stanford.edu/entries/constitutionalism/">Stanford Encyclopedia of
+                                Philosophy</a>, with constitutionalism comes a certain degree of predictability and
+                            consistency. </p>
+                    </div>
+                    <div class="card">
+                        <h4>High Ability programs</h4>
+                        <p>According to the <a href="https://www.in.gov/doe/students/high-ability-education/">Indiana
+                                Department of Education</a>, such programs provide high ability students with greater
+                            access to educational resources and infrastructure. MCCSC Monroe County District 3 candidate
+                            <a href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Daniel
+                                O'Neil</a> said this was one of his priorities.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Individualized Education Plan (IEP) </h4>
+                        <p>The IEP is an institutionalized program meant to guarantee children with identified learning
+                            disabilities receive catered instruction and services while in elementary or secondary
+                            school. MCCSC District 3 candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/">Ashley
+                                Pirani</a> spoke about prioritizing this issue. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Inflation</h4>
+                        <p>Inflation is an issue impacting all levels of the economy today. It refers to price increases
+                            across the market which decrease one's ability to purchase the same amount of goods. <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Thomas
+                                McDermott</a>, the current mayor of Hammond, Indiana, and a democratic nominee for U.S.
+                            Senator, expressed his concerns for <a
+                                href="https://www.idsnews.com/article/2022/09/democratic-senate-candidate-thomas-mcdermott-abortion-election">inflation</a>.
+                            Incumbent Republican U.S. Senator <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">Todd
+                                Young</a> and Libertarian U.S. Senate candidate <a
+                                href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2022/">James
+                                Sceniak</a> spoke of inflation being one of their priorities. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Policing</h4>
+                        <p>Actions or activities executed by law enforcement as a means of preserving law and order.
+                            Policing is an issue this <a
+                                href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0">poll
+                                quiz</a> asks readers to rank in terms of political issue priorities. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Referendum</h4>
+                        <p>A referendum is a direct vote on a proposal, law or political issue done by citizens instead
+                            of an elected representative. The popular vote determines the outcome of the policy. How
+                            does this apply to the 2022 local elections? On Nov. 8, Monroe County residents will vote on
+                            whether they want to raise property taxes to help fund MCCSC funding. To read about the
+                            MCCSC property tax, click <a
+                                href="https://www.idsnews.com/article/2022/09/monroe-county-2022-mccsc-referendum-property-tax">here</a>.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>School Resource Officers (SROs) </h4>
+                        <p>A group of active law-enforcement officers with the ability to arrest while in part-time or
+                            full-time positions at various schools. In May 2021, the MCCSC voted that SROs cannot be
+                            armed, but given recent cases of weapons being brought in MCCSC schools, the policy and
+                            ability to change it resurfaced. To learn which school board candidates express concern or
+                            support of arming SROs, click <a
+                                href="https://www.idsnews.com/article/2022/09/mccsc-school-board-candidates-safety-book-banning-equity-forum-election">here</a>.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Transgender extremism </h4>
+                        <p>Indiana Attorney General Todd Rokita spoke at the IMU on Sept. 23. During this time, he spoke
+                            out against transgender advocacy in sports and social acceptance, and he classified it as
+                            “extremism.” However, he also said he feared getting canceled for not supporting transgender
+                            rights. According to <a
+                                href="https://apnews.com/article/sports-indiana-legislature-congress-ed1a6def471929e4bc4e33473c807c49?">AP
+                                News</a>, earlier in March, the governor faced backlash when he suggested banning
+                            transgender girls from competing in girls' school sports teams. </p>
+                    </div>
+                    <div class="card">
+                        <h4>Whole Child Approach </h4>
+                        <p>Based on a system that ensures child development and learning happens on different levels —
+                            socioemotional, cognitive, literacy, scientific and comprehension, among other levels. This
+                            is one of MCCSC District 1 candidate <a
+                                href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/"
+                                class="glossa">Erin Wyatt's</a> priorities. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-0' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-0`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story">
+
+                <div class="countdown-container" id="CountDown">
+                    <h3>Countdown to the midterm elections</h3>
+                    <div id="countdown" class="countdown">
+                        <ul>
+                            <li class="count"><span >0</span>days</li>
+                            <li><span>:</span> &nbsp;</li>
+                            <li class="count"><span id="hours">0</span>Hours</li>
+                            <li><span>:</span> &nbsp;</li>
+                            <li class="count"><span id="minutes">0</span>Minutes</li>
+                            <li id="dissapear"><span>:</span> &nbsp;</li>
+                            <li class="count" id="dissapear"><span id="seconds">0</span>Seconds</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- small bios -->
+                <!-- <div class="author-bios"> -->
+                <!-- update bios in metadata.json -->
+                <!-- delete this div if you don't want them to show up -->
+                <!-- </div> -->
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop" style="font-family:Inter,sans-serif;"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
         </div>
-      </div>
-      <div class="container" id="vendors">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-12" style="padding-bottom: 30px; padding-top: 100px;">
-            <!--<hr class="my-4"> -->
-			  <h1 id="" class="siteTitle" style="font-size: 2.5em; padding-bottom: 75px">Enter <a href="https://docs.google.com/forms/d/e/1FAIpQLSeThyDlnQ1zTKgkiagpuu08-yQin0QLrRBQKHrGel8xqUEMeg/viewform" target="_blank" class="text-danger">HERE</a> for a chance to win the IDS Housing Fair Grand Prize!</h1>
-			<hr class="my-4">  
-            <h2>Meet our vendors</h2>
-            <p><i class="far fa-hand-pointer"></i> Click on each vendor to learn more</p>
-          </div>
-          <div class="col-md-4">
-           
-			<div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#birge">Birge and Held</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#cedarview">Cedarview Management</button>
-			</div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#college-collection">College Collection/Stratum at Indiana</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#elkins">Elkins Apartments</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#fields">The Fields</button>
-            </div>
-           
-            
-            
-          </div>
-          <div class="col-md-4">
-            
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#granite">Granite Student Living</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#legal">IU Student Legal Services</button>
-            </div>
-             <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#monroe">The Monroe</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#olympus">Olympus Properties</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#ren">Renaissance Rentals</button>
-            </div>
-			<div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#reserve">Reserve on Third</button>
-            </div>
-            
-            
-            
-          </div>
-          <div class="col-md-4">
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#springhill">SpringHill Suites by Marriott Student Housing</button>
-            </div>
-             <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#hyatt">Student Housing at Hyatt Place Bloomington</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#varsity">Varsity Properties</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#village">The Village at Muller Park</button>
-            </div>
-            <div class="vendor-name">
-              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#woodbridge">Woodbridge Apartments</button>
-            </div>
-            
-            
-          </div>
-          <div class="col-md-12" style="; padding-top: 30px;">
-            <hr class="my-4">
-            <h2 style="text-align: center; padding-bottom: 15px; padding-top: 15px;">Need help?</h2>
-            <div style="display: flex; justify-content: center; align-items: center;">
-            <a href="#" target="_blank"><button type="button" class="btn btn-danger btn-lg" style="">Click here to chat with our team</button></a>
-          </div>
-          </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
         </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-12" style="padding-bottom: 30px; padding-top: 30px;">
-            <hr class="my-4">
-            <h2>Meet our sponsors</h2>
-          </div>
-          <div class="col-md-2">
-           <a href="http://crazyhorseindiana.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/6bb2cc42-c9df-4a04-b62a-8b5dbf2e65b4.original.png" width="100%" alt="Crazy Horse" class="sponsor-logo"></a>
-            <a href="http://www.switchyardbrewing.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/6df917c7-1282-41e9-ba41-a3cb7924a4dc.original.png" width="100%" alt="Switchyard Brewing Company" class="sponsor-logo"></a>
-          </div>
-          <div class="col-md-2">
-            <a href="http://thesmokeworks.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/2d6f5e90-790f-46af-88d6-b57a01591f22.original.png" width="100%" alt="Smoke Works" class="sponsor-logo"></a>
-            <a href="http://cupandkettletea.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/904bc55f-06bc-4ca0-bd9a-261b7ee5658f.original.png" width="100%" alt="Cup and Kettle" class="sponsor-logo"></a>
-            <a href="http://azzippizza.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/5c993293-9115-4ef3-a523-d347eec77651.original.svg" width="100%" alt="Azzip Pizza" class="sponsor-logo"></a>
-          </div>
-          <div class="col-md-2">
-            <a href="http://buccetos.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/aef8f2e7-4a38-49e4-8f7c-9c4f455352d5.original.png" width="100%" alt="Bucceto's Pizza and Pasta" class="sponsor-logo"></a>
-            <a href="http://vibeyogastudio.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/a43862e8-f8a5-4f08-9eaa-49782562c3e2.original.png" width="100%" alt="Vibe Yoga" class="sponsor-logo"></a>
-            <a href="http://purebarre.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/3d917ec1-a409-4ded-ac43-e86ebf0f845e.original.jpg" width="100%" alt="Purre Barre" class="sponsor-logo"></a>
-            
-          </div>
-          <div class="col-md-2">
-            <a href="http://goteinballs.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/cddb37f0-acbd-4a5c-8cfd-63c44eb88365.original.png" width="100%" alt="Gottein Balls" class="sponsor-logo"></a>
-            <a href="http://grazieitaliano.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/b4dc67db-5b1b-49c0-a765-34316582dd15.original.jpg" width="100%" alt="Grazzie Italiano" class="sponsor-logo"></a>
-            <a href="http://hivebloomington.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/297b7ef3-31ce-496a-885a-fcbec8f6b979.original.png" width="100%" alt="Hive Pizza" class="sponsor-logo"></a>
-          </div>
-          <div class="col-md-2">
-            <a href="http://yogis.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/3b8c94b3-524f-4783-a9e3-3bc1f4694fc2.original.png" width="100%" alt="Yogi's Grill and Bar" class="sponsor-logo"></a>
-            <a href="http://theowleryrestaurant.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/11597cb8-bba0-41b5-968c-71e064665569.original.png" width="100%" alt="The Owlery" class="sponsor-logo"></a>
-            <a href="http://lenniesbloomington.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/2a92d404-092f-46cc-8111-a40ed8976350.original.png" width="100%" alt="Lennie's" class="sponsor-logo"></a>
-            <a href="http://orangetheory.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/06745cec-7bfb-47ce-8554-03639fbd62c0.original.png" width="100%" alt="Orange Theory" class="sponsor-logo"></a>
-            
-          </div>
-          <div class="col-md-2">
-            <a href="http://thetapbeerbar.com" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/20c350c3-41e5-4c62-9bd7-2a5b12cd3845.original.jpg" width="100%" alt="The Tap" class="sponsor-logo"></a>
-            <a href="http://elliemaes.boutique" target="_blank" class="sponsor-link"><img src="https://s3.amazonaws.com/snwceomedia/ids/c1865158-bad3-4291-bb51-03494c576504.original.jpg" width="100%" alt="Ellie Maes" class="sponsor-logo"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="bg-light">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12" style="padding-top: 2%; padding-bottom: 2%; text-align: center; font-family: 'Inter', sans-serif;">
-            <p style="font-size: 14px;">&copy; Copyright 2020 Indiana Daily Student</p>
-            <p class="" style="font-size: 12px; color: #D1D1D1; visibility: hidden;">Web development by Jacob deCastro</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
 
-  <!-- Birge and Held -->
-  <div class="modal fade" id="birge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Birge and Held</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/68573b84-e819-4008-9dd4-0fb05898dbc4.original.png?" width="100%" alt=" Birge and Held " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $679 to $1130 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR</p>
-        <p><strong>Description</strong></p>
-		  <p>Railway Manors – 14th & College – upscale studios, one, two, three, bedrooms just seven blocks from the stadium. The Arbors – Lovely wooded boutique east side two and three bedrooms, two miles to campus by the mall. Continental Terrace – Updated low cost two bed and one bed east side apartments by the mall. Walnut Springs – Two and three bedrooms off campus 3.25 miles south of Sample Gates just off South Walnut St.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Cedarview Management  -->
-  <div class="modal fade" id="cedarview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cedarview Management </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/d9f496bb-47b6-4cd7-b460-f7e08f92b4c8.original.jpg?" width="100%" alt=" Cedarview Management " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $535 to $1680 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR, 5 BR+</p>
-        <p><strong>Description</strong></p>
-        <p>Studio to 5 bedroom apartments and houses surrounding the IU Campus and downtown available for August 2021. Two BRAND NEW downtown locations coming August 2021! Furnished apartments still available for Cityside, Tenth and College Campus, and East Bay. Locations with access to Fitness Center, Study Lounge, Clubhouse, Pool and Sky Lounge.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- College Collection -->
-  <div class="modal fade" id="college-collection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">College Collection/Stratum at Indiana</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/5a2aedc3-b328-4aa4-8ca3-2c8723fcd1cb.original.jpg?" width="100%" alt=" College Collection " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $675 to $1225 per month</p>
-        <p>Bedroom units: 1 BR, 2BR, 3BR, 4BR, 5BR+</p>
-        <p><strong>Description</strong></p>
-        <p>We have a variety of options throughout Bloomington. Whether you want to be downtown, by the stadium or by the mall and shopping; we have you covered. We have immediate move-ins available and are also offering leasing for Fall 2021.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Elkins Apartments -->
-  <div class="modal fade" id="elkins" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Elkins Apartments</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/fb481e59-1c61-40fa-a8b5-8ed46684ca7c.original.jpg?" width="100%" alt=" Elkins Apartments " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $535 to $820 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR, 5 BR+</p>
-        <p><strong>Description</strong></p>
-        <p>We have 1, 2, 3, 4, and 5 bedroom houses, townhouses, and apartments nestled in the heart of the IU campus and near downtown. Most are walking distance to campus. We have homes that can accommodate larger groups up to nine people.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- The Fields -->
-  <div class="modal fade" id="fields" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">The Fields</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/dfbc551d-8cc6-49be-a352-b6f334a1fb81.original.jpg?" width="100%" alt=" The Fields " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $655 to $1055 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR</p>
-        <p><strong>Description</strong></p>
-        <p>The Fields is a luxury student living apartment complex located on Bloomington’s east side along the 3 & 9 bus lines. Residents enjoy 24/7 access to Clubhouse amenities which include a fitness center, cyber lounge, study rooms and more. Units come fully furnished at no additional cost and are incredibly spacious. Utilities included in the monthly rental rate are water, trash, internet and sewer. The Fields will be hosting an Apple Air Pods raffle at today's event.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Granite Student Living -->
-  <div class="modal fade" id="granite" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Granite Student Living</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://snworksceo.imgix.net/ids/4c0326e6-0e22-4565-a008-c206e6141f8b.sized-1000x1000.jpg?" width="100%" alt=" Granite Student Living " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $350 to $1910 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR, 5 BR+</p>
-        <p><strong>Description</strong></p>
-        <p>Find your perfect fit at Granite...We have a variety of unit types (studios, one beds, two beds, three beds, four beds) across an array of property types (houses, duplexes, townhomes, and apartment complexes) located in all desired locations of Bloomington.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- IU Student Legal  -->
-  <div class="modal fade" id="legal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">IU Student Legal Services</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/b9996389-c614-426b-afc3-5067c5e4d98e.original.jpg?" width="100%" alt=" IU Student Legal Services " class="modalImg">
-        <hr>
-        <p><strong>Description</strong></p>
-        <p>IU Student Legal Services is the law office for IU Bloomington students. Our attorneys and legal interns will review a lease with you before you sign to help you understand what you are agreeing to, and to inform you of what to expect as a tenant in Bloomington.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- The Monroe -->
-  <div class="modal fade" id="monroe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">The Monroe</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/c23cf3fc-2229-4083-95dc-18195b0b8cd9.original.jpg?" width="100%" alt=" The Monroe " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $480 to $730 per month</p>
-        <p>Bedroom units: 2 BR, 4 BR</p>
-        <p><strong>Description</strong></p>
-        <p>The Monroe offers two- and four-bedroom bed spaces. We have all-inclusive rates and provide a $30 cap toward monthly electric. We offer roommate matching and are on the 9-bus line to campus. You are also located right behind Kroger and less than a mile from the Simon Mall. The Monroe is offering a $5 Starbucks gift card for those who take a virtual tour. Come take a tour to be entered to win an Amazon gift car, Hydro Water Flask, Air Fryer, Hammock, State Park Year Pass and Smart Phone Printer.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Olympus Properties -->
-  <div class="modal fade" id="olympus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Olympus Properties</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/d5a3d518-de21-4c1d-b8e3-739d1cc823ca.original.jpg?" width="100%" alt=" Olympus Properties " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $315 to $1520 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR, 5 BR+</p>
-        <p><strong>Description</strong></p>
-        <p>From studio apartments to houses for you and all of your friends. Olympus Properties has housing options for all sorts of housing needs. We’re where you want to live!</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Renaissance Rentals -->
-  <div class="modal fade" id="ren" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Renaissance Rentals</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/1ba44a15-ecbc-44e8-ba50-19a209215f6c.original.jpg?" width="100%" alt=" Renaissance Rentals " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $504 to $2140 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR</p>
-        <p><strong>Description</strong></p>
-        <p>We are safely open, walk-ins & appointments welcome, offering self-guided or in person tours and online virtual tours. Studios & 1-4 bedroom rentals. Locally owned for over 30 years. Check out our reviews on Google. Neighborhoods include: Covenanter Hill, SummerHouse, Scholar’s Rock, Scholar’s Quad, MeadowCreek, and more. Renaissance Rentals is offering a $100 signing bonus if the IDS Housing Fair is mentioned at the time of lease signing.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- Reserve on Third -->
-  <div class="modal fade" id="reserve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Reserve on Third</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/370eca2b-d97e-431f-a85f-d52521ea48e8.original.jpg?" width="100%" alt=" Reserve on Third " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $515 to $665 per month</p>
-        <p>Bedroom units: 2 BR, 3 BR</p>
-        <p><strong>Description</strong></p>
-        <p></p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
-  <!-- SpringHill -->
-  <div class="modal fade" id="springhill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">SpringHill Suites by Marriott Student Housing</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/f30ec647-9416-44a9-bf3b-6974f4e5560a.original.jpg?" width="100%" alt=" SpringHill " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $3500 to $6500 per semester</p>
-        <p>Bedroom units: Studio/1BR</p>
-        <p><strong>Description</strong></p>
-        <p>Spacious studio suites located right downtown that include a walk-in closet, living area, microwave, fridge, and housekeeping. All utilities are included such as wifi, cable, and AC! Perfect for students who do not want to enter a long term commitment. SpringHill Suites by Marriott will be giving away one free night stay at the Bloomington location (during non-special event dates).</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script>
+        function myAnchor(value) {
+            var top = document.getElementById(value).offsetTop;
+            window.scrollTo(0, top);
+            //document.getElementById(value).scrollIntoView();
+        }
+    </script>
+    <script>
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
 
-  <!-- Hyatt Place -->
-  <div class="modal fade" id="hyatt" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Student Housing at Hyatt Place Bloomington</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/770c8e7d-d169-42ad-b93b-202d14e79f06.original.jpg?" width="100%" alt=" Student Housing at Hyatt Place Bloomington " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: Ask about special pricing</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR</p>
-        <p><strong>Description</strong></p>
-        <p>Come live with us and leave the stress of furnishing an apartment, utilities, and parking behind. Enjoy complimentary breakfast, housekeeping, secured parking, fitness center and heated pool! Join your fellow students on our exclusive student floor for your upcoming semester! Hyatt Place Bloomington will be giving away a $100 Amazon gift card and a free night stay.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "11/08/",
+                birthday = dayMonth + yyyy;
 
-  <!-- Varsity Properties -->
-  <div class="modal fade" id="varsity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Varsity Properties</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/6424ca80-43dd-40c6-94ab-bfd73dd75dae.original.jpg?" width="100%" alt=" Varsity Properties " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $500 to $650 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR, 5 BR+</p>
-        <p><strong>Description</strong></p>
-        <p>Affordable off-campus housing located near the IU Memorial Stadium.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Village at Muller Park -->
-  <div class="modal fade" id="village" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">The Village at Muller Park</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/9f05957f-c041-4564-966b-78bb26b952d4.original.jpg?" width="100%" alt=" The Village at Muller Park " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $589 to $999 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR, 4 BR</p>
-        <p><strong>Description</strong></p>
-        <p>Student Housing offering 1 bed - 4 bed floorplans. Large square footage. Private bathrooms. Pet friendly. Private bus to IU campus. Free parking.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
 
-  <!-- Woodbridge Apartments -->
-  <div class="modal fade" id="woodbridge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Woodbridge Apartments</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="https://s3.amazonaws.com/snwceomedia/ids/3ca0e887-2434-49f1-aaf0-c4e01766fd65.original.jpg?" width="100%" alt=" Woodbridge Apartments " class="modalImg">
-        <hr>
-        <p><strong>Information</strong></p>
-        <p>Price range: $815 to $1570 per month</p>
-        <p>Bedroom units: Studio/1 BR, 2 BR, 3 BR</p>
-        <p><strong>Description</strong></p>
-        <p>Woodbridge Bloomington is located off of E. 10th St. Approximately 1.5 miles east of the IU campus. The 6 and 6L bus lines stop directly in front of our community. We offer one, two, and three-bedroom apartments and townhomes, ranging from $815 to $1570 per month. Our 2021 year will be very exciting, as we will be undergoing a large-scale interior renovation. Stainless steel appliances, new fixtures and cabinets, granite countertops, and much more. Come check us out! Woodbridge Apartments will be giving away a $50 UberEats gift card.</p>
-        <a href="" target="_blank"><button type="button" class="btn btn-primary">Join Zoom room</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div> 
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function () {
 
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
 
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
+                    //do something later when date is reached
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "Election Day!";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+        }());
+    </script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>
