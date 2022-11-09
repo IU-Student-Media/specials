@@ -1,6 +1,6 @@
 // google sheets urls containing voting data
 const elections = {
-    'senate': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=886228773',
+    'senate': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=1651224490',
     'district_9': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=360782252',
     'district_60': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=1320574252',
     'district_62': 'https://docs.google.com/spreadsheets/d/1S1-muJyvr2tS306noLMLfq4mBhkP1vPIkb0HTwwS-co/edit#gid=555854463',
@@ -52,7 +52,6 @@ var insertData = function (response, district, type, index) {
     } else if (type == 'school') {
         url = 'https://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2022/#'+index
     }
-    console.log(district,type)
     if (type == "local" || type == "school") {
         var parent = $('.' + type + '-elections')
         if ((response.rows.length == 5 && response.rows[4]['cellsArray'][0] == 'Uncontested')|| district == 'Monroe_County_Council_District_3') {
@@ -105,11 +104,11 @@ var insertData = function (response, district, type, index) {
         }
     } else {
         if (district === 'senate') {
-            $('.last-updated').text(response.rows[5]['cellsArray'][1]);
+            $('.last-updated').text(response.rows[0]['cellsArray'][2]);
             response.rows = response.rows.slice(0, 5);
         }
     }
-    console.log(district,percVote)
+    console.log(district,response.rows)
     $('.votePerc-' + district).text((percVote * 100).toString().slice(0, 4) + '%');
     $('.votePerc-progress-' + district).css('width', percVote * progressBarWidth);
     chartData(response.rows, district, response.rows[1]['cellsArray'][3], type);

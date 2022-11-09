@@ -124,7 +124,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
                                 return fontObj;
                             },
                             formatter: function (value, context) {
-                                if (raceFinished == 'TRUE' && winningCandidate.votes == value) {
+                                if ((raceFinished == 'TRUE' && winningCandidate.votes == value) || district=='Bloomington_Township_Board_Member') {
                                     return '\uf00c'
                                 } else {
                                     return ''
