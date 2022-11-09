@@ -54,7 +54,8 @@ var drawChart = function (chartData, district, raceFinished, type) {
     else if (candidates.length == 2) aspectRatio = 4
     else aspectRatio = 3
     if (window.innerWidth < 576) aspectRatio /= 1.5
-    if (district == 'Bloomington_Township_Board_Member') colors = ['rgb(25, 74, 200)', 'rgb(25, 74, 200)', 'rgb(25, 74, 200)']
+    if (district == 'Bloomington_Township_Board_Member') {colors = ['rgb(25, 74, 200)', 'rgb(25, 74, 200)', 'rgb(25, 74, 200)'] 
+    winningColor = 'rgb(25, 74, 200)'}
     const ctx = document.querySelector('#chart-' + district).getContext('2d');
     const chart = new Chart(ctx, {
         type: 'bar',
@@ -144,6 +145,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
             },
             scales: {
                 x: {
+                    max: Math.floor(Math.max(votes.sort((a, b) => b - a)[0]) * 1.1),
                     grid: {
                         // display: false
                     },
