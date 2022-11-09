@@ -104,7 +104,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
                             },
                             formatter: function (value, context) {
                                 var label = Math.floor(parseInt(value)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' votes'
-                                if (value == winningCandidate.votes && raceFinished == 'TRUE' && context.chart.width > 400) label = 'Winner: ' + label
+                                if ((value == winningCandidate.votes && raceFinished == 'TRUE' && context.chart.width > 400)||district=='Bloomington_Township_Board_Member') label = 'Winner: ' + label
                                 return label
                             }
                         },
@@ -145,7 +145,7 @@ var drawChart = function (chartData, district, raceFinished, type) {
             },
             scales: {
                 x: {
-                    max: Math.floor(Math.max(votes.sort((a, b) => b - a)[0]) * 1.1),
+                    grace: '20%',
                     grid: {
                         // display: false
                     },
