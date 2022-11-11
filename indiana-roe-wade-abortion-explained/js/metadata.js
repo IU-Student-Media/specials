@@ -9,13 +9,14 @@ const data = {
             "name": "Lars Conard",
             "email": "lvconard@iu.edu",
             "pfp": "https://lh3.googleusercontent.com/a-/ACNPEu8oFd-ROJSh7kAKSEbkt-SjYJVsEx5CjGQV9CsciQ=s288-p-rw-no",
-            "bio": "Lars has worked at the IDS starting 2022 as a designer."
+            "bio": "Lars has worked at the IDS since 2022 as a digital designer."
         },
         "Introduction by": {
             "name": "Nadia Scharf",
             "email": "njscharf@iu.edu",
+            'twitter': "https://twitter.com/nadiaascharf",
             "pfp": "https://snworksceo.imgix.net/ids/32dbdd9d-461f-454b-91be-28430ee5356a.sized-1000x1000.jpg?w=1000",
-            "bio": "Nadia has worked at the IDS since 2020 as a journalist."
+            "bio": "Nadia is a junior studying journalism, international studies and French who has worked at the IDS since 2021 as a reporter, arts desk editor and managing editor."
         }
     }
 }
