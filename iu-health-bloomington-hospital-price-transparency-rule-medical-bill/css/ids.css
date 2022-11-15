@@ -13,10 +13,13 @@
 html {
     box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-  
+
 /* UTILITIES */
 /* hides an element on screen, but not from screen readers */
 .sr-only {
@@ -29,9 +32,11 @@ html {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
 .show-desktop {
     display: none !important;
 }
+
 .show-mobile {
     display: block !important;
 }
@@ -48,46 +53,62 @@ html {
 /*
     TYPOGRAPHY
 */
-h3, p {
+h3,
+p {
     font-family: 'PT Serif', sans-serif;
 }
-h1, h2, .bylines p, footer p {
+
+h1,
+h2,
+.bylines p,
+footer p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
+
 /* .bylines, footer p {
     font-family: 'Inter', sans-serif;
 } */
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     margin: 0 auto;
 }
+
 h1 {
     padding: 42vh 0 0.75em;
     font-size: 32px;
 }
+
 h2 {
     font-size: 40px;
     font-weight: 500;
 }
+
 h3 {
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 0.55em;
 }
+
 p {
     font-size: 16px;
     line-height: 26px;
 }
+
 .bylines p {
     font-size: 14px;
     line-height: 1.2;
     margin: 0.05em;
 }
-.bylines div p:nth-child(even) { /* adjust spacing for subbylines */
+
+.bylines div p:nth-child(even) {
+    /* adjust spacing for subbylines */
     margin-bottom: 0.6em;
 }
-.bylines div:after { /* add horizontal lines btwn byline divs */
+
+.bylines div:after {
+    /* add horizontal lines btwn byline divs */
     content: "";
     border: 1px solid var(--gray);
     width: 100%;
@@ -95,17 +116,21 @@ p {
     display: block;
     margin: 1.0em 0;
 }
+
 .related {
     padding: 1.0em 0;
     font-size: 0.95em;
 }
+
 .related span {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
+
 footer {
     font-size: 16px;
 }
+
 .section-break {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -122,24 +147,30 @@ header {
     /* background: url('file path to image');  */
     background-color: rgb(215, 215, 215);
     background-size: cover;
-    height: 100vh; /* makes image same height as screen */
+    height: 100vh;
+    /* makes image same height as screen */
 }
+
 /* navbar */
 nav {
     color: white;
     position: fixed;
     width: 100%;
-    z-index: 200;   
-    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    z-index: 200;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
     transition: 1s;
 }
+
 nav li {
     list-style-type: none;
-    white-space: nowrap;    
+    white-space: nowrap;
 }
+
 nav li a {
     margin: 0 0.5em;
 }
+
 nav ul {
     margin: 0;
     padding: 15px;
@@ -149,31 +180,39 @@ nav ul {
     -webkit-align-items: center;
     align-items: center;
 }
+
 /* styles for li items makes the spacing/alignment work on the menu */
 /* also allows the responsive menu toggler behavior */
 li.logo {
-    margin-right: auto; /* put the logo on the left */
+    margin-right: auto;
+    /* put the logo on the left */
     display: flex;
     align-items: center;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
+
 li.logo img {
     width: 70px;
     padding-right: 5px;
 }
+
 li.logo span {
     display: none;
-    -webkit-transition: 1s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
     transition: 1s;
 }
+
 li.item {
     font-size: 18px;
     text-align: right;
 }
+
 li.item a {
     margin-top: 0.8em;
 }
+
 li.toggle {
     /* show menu bar (toggle class) */
     display: block;
@@ -184,23 +223,27 @@ li.toggle {
     color: white;
     font-size: 16px;
 }
+
 nav a {
     /* so the ENTIRE item is clickable */
     display: block;
-    
+
     /* design choices */
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: white;
     opacity: 0.9;
 }
+
 /* hide all list items **that aren't logo or toggle** */
 nav ul li:not(.logo):not(.toggle) {
     display: none;
 }
+
 ul div {
     display: none;
 }
+
 /* reveal hidden items (on toggle) */
 /* force this display to take precedence and be more "!important" */
 /* to display properly, also set the width to 100% */
@@ -217,9 +260,11 @@ ul div {
 article:first-child {
     padding-top: 5%;
 }
+
 section p:first-child {
     margin-top: 0;
 }
+
 .bylines {
     padding-top: 6.5px;
     margin-bottom: 1.0em;
@@ -232,43 +277,52 @@ img {
     display: block;
     width: 100%;
 }
+
 figcaption {
     margin-top: 5px;
     font-size: 14px;
     font-family: sans-serif;
     line-height: 20px;
 }
+
 .big-image {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
 .small-image {
     width: 100%;
     padding-bottom: 30px;
     padding-top: 20px;
     display: inline-block;
 }
+
 /* youtube embed styles */
-.embed-container { 
-    position: relative; 
-    padding-bottom: 56.25%; 
-    height: 0; 
-    overflow: hidden; 
-    max-width: 100%; 
-} 
-.embed-container iframe, .embed-container object, .embed-container embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* pulled quotes */
 .pull-quote-center {
     width: 100%;
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 .quote {
     font-size: 24px;
     line-height: 28px;
@@ -278,6 +332,7 @@ figcaption {
     font-family: 'Georgia', serif;
     font-weight: 300;
 }
+
 .attribute {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -290,33 +345,44 @@ figcaption {
     LINKS
 */
 /* default link styles */
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
     text-decoration: none;
     border-bottom: 0.125em solid black;
 }
-a:hover, a:active {
+
+a:hover,
+a:active {
     color: black;
     border-bottom: none;
 }
+
 /* navbar social icons */
-nav li a:link, nav li a:visited {
+nav li a:link,
+nav li a:visited {
     color: white;
     text-decoration: none;
     border-bottom: none;
 }
-nav li a:hover, nav li a:active {
+
+nav li a:hover,
+nav li a:active {
     color: white;
     text-decoration: none;
     border-bottom: none;
 }
+
 /* byline links */
-.bylines a:link, .bylines a:active {
+.bylines a:link,
+.bylines a:active {
     color: black;
     text-decoration: none;
     border-bottom: none;
 }
-.bylines a:hover, .bylines a:visited {
+
+.bylines a:hover,
+.bylines a:visited {
     color: black;
     text-decoration: underline;
     border-bottom: none;
@@ -330,6 +396,7 @@ footer {
     padding: 30px 0 15px;
     margin-top: 3.0em;
 }
+
 /* add horizontal line */
 footer p:first-child:after {
     content: "";
@@ -349,17 +416,21 @@ footer p:first-child:after {
     text-align: center;
     font-family: 'Inter';
 }
+
 .ad-caption {
-    text-align: center; 
-    font-size: 12px; 
-    padding-top: 15px; 
-    font-family: 'Inter', sans-serif; 
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
 }
+
 .ad-block {
-    margin-top: 10px; padding-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
 .ad-code {
     padding-bottom: 30px;
 }
@@ -369,35 +440,40 @@ footer p:first-child:after {
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
-}
+@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .show-desktop {
         display: block !important;
     }
+
     .show-mobile {
         display: none !important;
     }
+
     /* Hide menu toggle */
     li.toggle {
         /* hide menu bars (the toggle) */
         display: none;
     }
+
     li.item {
         display: flex !important;
         align-items: center;
         margin-left: auto;
     }
+
     li.item a {
         margin-top: 0;
     }
+
     /* typography */
-    h1, h2 {
+    h1,
+    h2 {
         max-width: 70%;
     }
+
     /* photos */
     .big-image {
         width: 160%;
@@ -407,7 +483,7 @@ No media query for `xs` since this is the default */
         margin-left: -30%;
         display: inline-block;
     }
-    
+
     /* pulled quotes */
     .pull-quote-center {
         width: 130%;
@@ -415,6 +491,7 @@ No media query for `xs` since this is the default */
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .quote {
         font-size: 28px;
         line-height: 37px;
@@ -424,6 +501,7 @@ No media query for `xs` since this is the default */
         font-family: 'Georgia', serif;
         font-weight: 300;
     }
+
     .attribute {
         font-size: 18px;
         padding-top: 5px;
@@ -445,6 +523,7 @@ No media query for `xs` since this is the default */
         width: 80%;
         /* text-align: right; */
     }
+
     .wide-left {
         padding-top: 20px;
         padding-bottom: 30px;
@@ -457,7 +536,4 @@ No media query for `xs` since this is the default */
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
+@media (min-width: 1200px) {}

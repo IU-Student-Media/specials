@@ -24,11 +24,10 @@ window.addEventListener('resize', () => {
 // select DOM elements
 const scrolly = document.querySelector('.scrolly');
 const arrow = document.querySelector('.arrow');
-console.log(arrow);
 
 // insert image divs
 const graphicDiv = document.querySelector('.graphic');
-for (let i = 0; i<12; i++) {
+for (let i = 0; i < 12; i++) {
     let html;
     if (i < 6) {
         html = `<div class="image show-desktop"></div>`;
@@ -46,12 +45,10 @@ const mobileURLS = [
     'https://s3.amazonaws.com/snwceomedia/ids/7faed370-883f-4f60-b8cb-d9ccd309855a.sized-1000x1000.png',
     'https://s3.amazonaws.com/snwceomedia/ids/62b520ff-3f48-43ce-901d-534da9c378a8.sized-1000x1000.png'
 ];
-console.log(mobileURLS[0]);
 const desktopURLS = [
     'https://s3.amazonaws.com/snwceomedia/ids/03594f68-06c9-423b-94f5-32a77a60c328.sized-1000x1000.png',
     'https://s3.amazonaws.com/snwceomedia/ids/a5f8702b-c364-4bef-b453-d957f16efc1f.sized-1000x1000.png',
     'https://s3.amazonaws.com/snwceomedia/ids/0b8d1d33-cddf-4035-8382-920ce45747d5.sized-1000x1000.png',
-    'https://s3.amazonaws.com/snwceomedia/ids/db0971a4-d575-4ec1-a019-5aecdb2e41a2.sized-1000x1000.png',
     'https://s3.amazonaws.com/snwceomedia/ids/1557fab9-2d4a-49c4-be6e-b15fc41fac65.sized-1000x1000.png',
     'https://s3.amazonaws.com/snwceomedia/ids/75314f26-3016-4f01-9552-cf40bfba46fa.sized-1000x1000.png'
 ];
@@ -59,13 +56,15 @@ const desktopURLS = [
 // insert background images
 const mobileDivs = document.querySelectorAll('.graphic div.image.show-mobile');
 const desktopDivs = document.querySelectorAll('.graphic div.image.show-desktop');
-console.log(mobileDivs);
-console.log(desktopDivs);
-mobileDivs.forEach( (div, index) => {
+
+mobileDivs.forEach((div, index) => {
     div.style.backgroundImage = `url(${mobileURLS[index]})`;
+    // div.style.background = `rgba('red',.2)`;
 })
-desktopDivs.forEach( (div, index) => {
+desktopDivs.forEach((div, index) => {
     div.style.backgroundImage = `url(${desktopURLS[index]})`;
+    // div.style.background = `rgba('0,0,0',.2)`;
+    // div.innerHTML = `<p style="margin-top:${60 * (index + 1)}px;">${(index.toString())}</p>`;
 })
 
 const desktopImages = document.querySelectorAll('.image.show-desktop');
@@ -80,68 +79,47 @@ if (mobile) {
 // initialize scrollama
 let scroller = scrollama();
 
+/* Progress bar */
+// source: https://codepen.io/pierrinho/pen/rQqGOZ?css-preprocessor=sass
+let scrollTop = window.scrollY;
+let scrollPercent = (scrollTop - scrolly.offsetTop) / (scrolly.offsetHeight - window.innerHeight) * 100;
+let progressBar = document.querySelector('#js-progressbar');
+progressBar.setAttribute('value', scrollPercent);
+
+window.addEventListener('scroll', function () {
+    scrollPercent = (window.scrollY - scrolly.offsetTop) / (scrolly.offsetHeight - window.innerHeight) * 100;
+    progressBar.setAttribute('value', scrollPercent);
+});
+
 // scrollama event handlers
 function handleStepEnter(event) {
 
     let index = event.element.dataset.step;
-
+    // console.log(index)
     // set both mobile and desktop divs to visible
     // media queries will show/hide them depending on the screen width
-    if (index == 1) {
-        mobileImages[1].style.opacity = 1;
-        desktopImages[1].style.opacity = 1;
-    } else if (index == 2) {
-        mobileImages[2].style.opacity = 1;
-        desktopImages[2].style.opacity = 1;
+    mobileImages[index].style.opacity = 1;
+    desktopImages[index].style.opacity = 1;
+
+    if (index == 2) {
         arrow.style.opacity = 0;
-    } else if (index == 3) {
-        mobileImages[3].style.opacity = 1;
-        desktopImages[3].style.opacity = 1;
-    } else if (index == 4) {
-        mobileImages[4].style.opacity = 1;
-        desktopImages[4].style.opacity = 1;
-    } else if (index == 5) {
-        mobileImages[5].style.opacity = 1;
-        desktopImages[5].style.opacity = 1;
-    } else if (index == 6) {
-        mobileImages[6].style.opacity = 1;
-        desktopImages[6].style.opacity = 1;
-    } else if (index == 7) {
-        mobileImages[7].style.opacity = 1;
-        desktopImages[7].style.opacity = 1;
-    } 
+    }
 
 }
 
 function handleStepExit(event) {
 
     if (event.direction === 'up') {
-
         // set both mobile and desktop divs to hidden
         // media queries will show/hide them depending on the screen width
         let index = event.element.dataset.step;
+
+        // console.log(index)
+
+        mobileImages[index].style.opacity = 0;
+        desktopImages[index].style.opacity = 0;
         if (index == 1) {
-            mobileImages[1].style.opacity = 0;
-            desktopImages[1].style.opacity = 0;
             arrow.style.opacity = 1;
-        } else if (index == 2) {
-            mobileImages[2].style.opacity = 0;
-            desktopImages[2].style.opacity = 0;
-        } else if (index == 3) {
-            mobileImages[3].style.opacity = 0;
-            desktopImages[3].style.opacity = 0;
-        } else if (index == 4) {
-            mobileImages[4].style.opacity = 0;
-            desktopImages[4].style.opacity = 0;
-        } else if (index == 5) {
-            mobileImages[5].style.opacity = 0;
-            desktopImages[5].style.opacity = 0;
-        } else if (index == 6) {
-            mobileImages[6].style.opacity = 0;
-            desktopImages[6].style.opacity = 0;
-        } else if (index == 7) {
-            mobileImages[7].style.opacity = 0;
-            desktopImages[7].style.opacity = 0;
         }
     }
 }
@@ -150,7 +128,7 @@ scroller
     .setup({
         step: '.step',
         // debug: true,
-        offset: 1
+        offset: .9,
     })
     .onStepEnter(handleStepEnter)
     .onStepExit(handleStepExit);
@@ -168,8 +146,8 @@ const tooltipDescr = {
     'insulin': '"The lab analyst measures the total insulin level, typically in a serum sample. Total insulin measurement includes both the protein bound insulin and free insulin in the blood."',
     'mri': '"The provider performs magnetic resonance angiography of the vessels of the head and surrounding areas. The provider does not use contrast."',
     'delivery': '"In this procedure, the provider provides admission to the hospital for delivery, labor management, including induction of labor, fetal monitoring, use of low forceps, and episiotomy, vaginal delivery of the fetus and placenta on the same date of service."',
-    'anesthesia': '"The provider performing a diagnostic or therapeutic procedure administers medication to reduce consciousness, but not render the patient unconscious or asleep, in a child younger than five years of age, in the presence of a trained observer who assists in monitoring the patient. This code is for the initial 15 minutes of intraservice time."', 
-    'iv': '"The provider introduces a catheter intravenously for supplementation of fluid and electrolytes for 31 minutes to one hour to treat severe cases of dehydration."' 
+    'anesthesia': '"The provider performing a diagnostic or therapeutic procedure administers medication to reduce consciousness, but not render the patient unconscious or asleep, in a child younger than five years of age, in the presence of a trained observer who assists in monitoring the patient. This code is for the initial 15 minutes of intraservice time."',
+    'iv': '"The provider introduces a catheter intravenously for supplementation of fluid and electrolytes for 31 minutes to one hour to treat severe cases of dehydration."'
 };
 
 const hasTooltips = document.querySelectorAll('.has-tooltip');
@@ -177,10 +155,10 @@ const main = document.querySelector('main');
 main.insertAdjacentHTML('beforebegin', '<div class="price-tooltip"></div>');
 const tooltip = document.querySelector('.price-tooltip');
 
-hasTooltips.forEach( (el) => {
+hasTooltips.forEach((el) => {
     el.addEventListener('mousemove', () => {
-        tooltip.style.top = `${event.pageY+20}px`;
-        tooltip.style.left = `${event.pageX-30}px`;
+        tooltip.style.top = `${event.pageY + 20}px`;
+        tooltip.style.left = `${event.pageX - 30}px`;
     })
     el.addEventListener('mouseover', (event) => {
         let key = event.srcElement.dataset.tooltip;
@@ -207,7 +185,7 @@ const data = [
         'medicare': 3263,
         'tooltip': 'cpr'
     },
-    { 
+    {
         'procedure': 'Appendectomy',
         'anthem': 10880,
         'selfpay': 5026,
@@ -223,7 +201,7 @@ const data = [
         'humana': 128,
         'united': 106,
         'medicare': 61,
-        'tooltip': 'epipen' 
+        'tooltip': 'epipen'
     },
     {
         'procedure': 'Urine pregnancy test',
@@ -290,7 +268,7 @@ const data = [
 ];
 
 // convert data into percentages rather than dollar amounts
-const proportionalData = data.map( (datapoint) => {
+const proportionalData = data.map((datapoint) => {
     datapoint['anthem'] /= datapoint['selfpay'];
     datapoint['medicare'] /= datapoint['selfpay'];
     datapoint['humana'] /= datapoint['selfpay'];
@@ -323,20 +301,20 @@ function draw(user_width) {
 
     // grab svg and define margin, height and width
     let svg = d3.select(".dumbbellGraph svg");
-        // .attr('width', user_width + 'px')
-        // .attr('height', graphHeight + 'px');
-        
+    // .attr('width', user_width + 'px')
+    // .attr('height', graphHeight + 'px');
+
     let margin = { top: 20, right: 8, bottom: 80, left: 0 },
         width = user_width - margin.left - margin.right,
         height = graphheight - margin.top - margin.bottom;
 
     // add scales to create axes
     let xScale = d3.scaleLinear() // linear scale based on data
-                .rangeRound([10, width - 10])
-                .domain([0, 3]);
+        .rangeRound([10, width - 10])
+        .domain([0, 3]);
     let yScale = d3.scalePoint() // categorical scale based on procedure names
-                    .rangeRound([height, 10]).padding(0.4)
-                    .domain(data.map(function(d) { return d.procedure; }));
+        .rangeRound([height, 10]).padding(0.4)
+        .domain(data.map(function (d) { return d.procedure; }));
 
     let chart = svg.append("g") // add chart element to contain chart
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -375,8 +353,8 @@ function draw(user_width) {
     let dumbbell = dumbbellGroup.selectAll(".dumbbell")
         .data(data)
         .enter().append("g")
-            .attr("class", `dumbbell`)
-            .attr("transform", function(d) { return "translate(0," + yScale(d.procedure) + ")"; });
+        .attr("class", `dumbbell`)
+        .attr("transform", function (d) { return "translate(0," + yScale(d.procedure) + ")"; });
 
     // add y axis grid lines
     dumbbell.append("line")
@@ -391,10 +369,10 @@ function draw(user_width) {
     // add white background by measuring, deleting, adding white boxes and re-adding
     dumbbell.append('text')
         .attr('class', 'y axis label')
-        .text(function(d) { return d.procedure; })
+        .text(function (d) { return d.procedure; })
         .style('transform', 'translateY(-10px)')
-        .each(function(d) { 
-            d[`bboxYLabel`] = this.getBBox(); 
+        .each(function (d) {
+            d[`bboxYLabel`] = this.getBBox();
         });
     chart.selectAll('.y.axis.label').remove();
     dumbbell.append('rect')
@@ -406,7 +384,7 @@ function draw(user_width) {
         .style('transform', 'translateY(-28px)');
     dumbbell.append('text')
         .attr('class', 'y axis label')
-        .text(function(d) { return d.procedure; })
+        .text(function (d) { return d.procedure; })
         .style('transform', 'translateY(-12px)')
 
     // set up array with insurers we want to include in the graphic
@@ -417,8 +395,8 @@ function draw(user_width) {
 
         dumbbell.append("line")
             .attr('class', `line between ${insurer}`)
-            .attr("x1", function(d) { return xScale(d.selfpay); })
-            .attr("x2", function(d) { return xScale(d[insurer]); })
+            .attr("x1", function (d) { return xScale(d.selfpay); })
+            .attr("x2", function (d) { return xScale(d[insurer]); })
             .style('stroke', `var(--${insurer})`)
             .style('stroke-width', 3)
             .style('opacity', .6);
@@ -430,12 +408,12 @@ function draw(user_width) {
     for (let insurer of insurers) {
         dumbbell.append('text')
             .attr('class', `circleLabel ${insurer}`)
-            .text(function(d) {
+            .text(function (d) {
                 let format = d3.format(",");
                 return `$${format(Math.round(d[insurer] * d.selfpayTrue))}`;
-            } )
-            .each(function(d) { 
-                d[`bbox${insurer}`] = this.getBBox(); 
+            })
+            .each(function (d) {
+                d[`bbox${insurer}`] = this.getBBox();
             });
     }
     chart.selectAll('.circleLabel').remove();
@@ -447,7 +425,7 @@ function draw(user_width) {
             .attr('height', d => d[`bbox${insurer}`].height)
             .style('fill', 'white')
             .style('opacity', 0)
-            .style('transform', function(d) {
+            .style('transform', function (d) {
                 // if it's 1 or above 1, put it on the right side
                 // console.log(d[insurer]);
                 let translation = xScale(d[insurer]);
@@ -467,16 +445,16 @@ function draw(user_width) {
     for (let insurer of insurers) {
         dumbbell.append('text')
             .attr('class', `circleLabel ${insurer}`)
-            .text(function(d) {
+            .text(function (d) {
                 let format = d3.format(",");
                 return `$${format(Math.round(d[insurer] * d.selfpayTrue))}`;
-            } )
-            .attr('text-anchor', function(d) {
+            })
+            .attr('text-anchor', function (d) {
                 if (d[insurer] < 1) {
                     return 'end';
                 }
             })
-            .style('transform', function(d) {
+            .style('transform', function (d) {
                 // if it's 1 or above 1, put it on the right side of the dot
                 // console.log(d[insurer]);
                 let translation = xScale(d[insurer]);
@@ -500,12 +478,12 @@ function draw(user_width) {
     for (let insurer of insurers) {
         dumbbell.append("circle")
             .attr("class", `circle ${insurer}`)
-            .attr("cx", function(d) { return xScale(d[insurer]); })
+            .attr("cx", function (d) { return xScale(d[insurer]); })
             .attr("cy", 0)
             .attr("r", 6)
             .style('fill', `var(--${insurer})`)
             // add hover effect
-            .on('mouseover', function(d, i) {
+            .on('mouseover', function (d, i) {
                 d3.selectAll('circle') // set all circles to low opacity
                     .style('opacity', .2);
                 d3.selectAll('.line.between') // set all dumbbell lines to low opacity
@@ -535,7 +513,7 @@ function draw(user_width) {
                     .style('opacity', 1);
             })
             // remove hover effect on mouse out
-            .on('mouseout', function(d, i) {
+            .on('mouseout', function (d, i) {
                 d3.selectAll('circle') // return all circles to opacity 1
                     .style('opacity', 1);
                 d3.selectAll('.line.between') // return all lines
@@ -552,7 +530,7 @@ function draw(user_width) {
 
     // add hover effect to legend items
     d3.selectAll('.legend > div')
-        .on('mouseover', function(d, i) {
+        .on('mouseover', function (d, i) {
             d3.selectAll('circle') // set all circles to low opacity
                 .style('opacity', .2);
             d3.selectAll('.line.between') // set all dumbbell lines to low opacity
@@ -582,7 +560,7 @@ function draw(user_width) {
                 .style('opacity', 1);
         })
         // remove hover effect on mouse out
-        .on('mouseout', function(d, i) {
+        .on('mouseout', function (d, i) {
             d3.selectAll('circle') // return all circles to opacity 1
                 .style('opacity', 1);
             d3.selectAll('.line.between') // return all lines

@@ -4,20 +4,23 @@
   UTILITIES
 */
 :root {
-    --shadow: rgba(0,0,0,.25);
-    --selfpay: #1F363D;
-    --anthem: #40798C;
-    --humana: #70A9A1;
-    --united: rgb(180, 205, 184);
-    --medicare: #CFE0C3;
+  --shadow: rgba(0, 0, 0, .25);
+  --selfpay: #1F363D;
+  --anthem: #40798C;
+  --humana: #70A9A1;
+  --united: rgb(180, 205, 184);
+  --medicare: #CFE0C3;
 }
+
 header {
-    /* add header image below */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://s3.amazonaws.com/snwceomedia/ids/1087e76d-a086-4170-aad4-971790a5dc5f.sized-1000x1000.jpg'); 
-    /* background: black; */
-    background-size: cover;
-    background-position: center center; /* adjusts image placement */
+  /* add header image below */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://s3.amazonaws.com/snwceomedia/ids/1087e76d-a086-4170-aad4-971790a5dc5f.sized-1000x1000.jpg');
+  /* background: black; */
+  background-size: cover;
+  background-position: center center;
+  /* adjusts image placement */
 }
+
 .helper {
   background-color: red;
 }
@@ -25,51 +28,70 @@ header {
 /* 
   TYPOGRAPHY
 */
-h1, h2, h3, h5, h6 {
+h1,
+h2,
+h3,
+h5,
+h6 {
   font-family: 'Source Sans Pro', serif;
 }
+
 h4 {
   font-family: Lato, sans-serif;
 }
-h1 { /* top headline */
+
+h1 {
+  /* top headline */
   font-weight: 800;
   font-size: 75px;
   font-style: italic;
   padding-bottom: 0.25em;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-h2 { /* second headline */
+
+h2 {
+  /* second headline */
   font-size: 30px;
   font-weight: 400;
   margin: auto;
   padding: 0 15px;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-h3 { /* subheadline in story */
+
+h3 {
+  /* subheadline in story */
   font-size: 32px;
   font-weight: 600;
   margin: 1.75em 0 1.0em;
   line-height: 1.25em;
 }
-h4 { /* graphic headline */
+
+h4 {
+  /* graphic headline */
   font-size: 26px;
   color: white;
   font-weight: lighter;
   letter-spacing: .7px;
   margin-bottom: 0.5em;
 }
-h5 { /* graphic subheadline */
+
+h5 {
+  /* graphic subheadline */
   color: black;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
   opacity: 0;
 }
-h6 { /* price card headline */
+
+h6 {
+  /* price card headline */
   font-size: 32px;
   margin-bottom: 0.75em;
 }
-.drop-cap:first-letter { /* drop cap */
+
+.drop-cap:first-letter {
+  /* drop cap */
   font-family: 'Source Sans Pro';
   font-weight: 400;
   float: left;
@@ -81,44 +103,57 @@ h6 { /* price card headline */
 /* 
   IMAGES
 */
-img.document { /* medical bill shadow */
+img.document {
+  /* medical bill shadow */
   filter: drop-shadow(2px -2px 9px var(--shadow));
   margin-top: -2.0em;
 }
 
 /* scrolly graphic styles */
-.full-width { /* full width container */
+.full-width {
+  /* full width container */
   margin: 2.0em 0;
 }
-.scrolly  {
+
+.scrolly {
   position: relative;
   height: 900vh;
 }
-.scrolly .col-md-12 { /* remove default bootstrap padding */
+
+.scrolly .col-md-12 {
+  /* remove default bootstrap padding */
   padding: 0;
 }
-.row.scrolly { /* remove default bootstrap margin */
+
+.row.scrolly {
+  /* remove default bootstrap margin */
   margin: 0;
 }
+
 .scrolly img {
-    background-position: top center;
+  background-position: top center;
 }
+
 .graphic {
   height: calc(100vh - 35px);
-  background-color: rgba(0,0,0,.25);
+  background-color: rgba(0, 0, 0, .25);
   position: sticky;
   display: block;
   top: 35px;
   overflow: hidden;
 }
-.headers { /* container for graphic headlines */
+
+.headers {
+  /* container for graphic headlines */
   position: absolute;
   z-index: 20;
   top: 50px;
   left: 25px;
   margin-right: 25px;
 }
-.arrow { /* arrow pointing down to scroll more */
+
+.arrow {
+  /* arrow pointing down to scroll more */
   position: absolute;
   color: white;
   bottom: 35px;
@@ -132,22 +167,35 @@ img.document { /* medical bill shadow */
   align-items: center;
   transition: 1s opacity ease;
 }
+
 .arrow p {
   font-family: Lato, sans-serif;
   font-style: italic;
   letter-spacing: .05em;
   font-weight: lighter;
-  margin-bottom: .1em ; 
+  margin-bottom: .1em;
 }
+
 .arrow i {
   animation: bob 1s ease infinite;
 }
+
 @keyframes bob {
-  0% { transform: none }
-  50% { transform: translateY(3px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: none
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
-.graphic .image { /* divs with background images set */
+
+.graphic .image {
+  /* divs with background images set */
   background-size: cover;
   position: absolute;
   background-position: center center;
@@ -157,19 +205,67 @@ img.document { /* medical bill shadow */
   display: block;
   transition: .5s all ease;
 }
-.step { /* div to trigger scrolling effect */
+
+.step {
+  /* div to trigger scrolling effect */
   /* background-color: blue; */
+  z-index: 50;
+  position: relative;
   min-height: 1px;
   width: 60%;
   margin: 20vh auto 130vh;
+  border: 5px solid rgba(0, 0, 0, .2);
 }
-.step:first-child { /* start first scrolling effect faster */
+
+.step:first-child {
+  /* start first scrolling effect faster */
   margin-top: 0;
+}
+
+.step:last-child {
+  /* start first scrolling effect faster */
+  margin-bottom: 0;
+}
+
+.progress {
+  position: fixed;
+  top: 58px;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+progress {
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
+progress::-moz-progress-bar {
+  background-color: white;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: white;
 }
 
 
 /* price cards */
-.price-card { /* box with prices in them */
+.price-card {
+  /* box with prices in them */
   width: 100%;
   border: 1px solid black;
   margin: 2.0em auto;
@@ -178,54 +274,64 @@ img.document { /* medical bill shadow */
   display: flex;
   justify-content: space-between;
 }
-.price-card > div { /* each column in the card */
+
+.price-card>div {
+  /* each column in the card */
   max-width: 50%;
   margin: 0 .25em;
 }
+
 /* typography  */
 .price-card p {
   font-family: Lato, sans-serif;
   color: black;
   line-height: 1.3em;
 }
+
 .price-card .insurer {
   margin: 0 0 0.4em;
 }
+
 .price-card .price {
   margin: 0 0 -0.1em;
   font-size: 32px;
   font-weight: 800;
   padding: 0;
 }
+
 .price-card strong {
   font-weight: 800;
 }
 
 /* tooltip */
-.has-tooltip { /* add dotted underline */
+.has-tooltip {
+  /* add dotted underline */
   text-decoration: underline dotted 0.07em;
   cursor: default;
   margin-bottom: 0.1em;
 }
+
 /* tooltip element */
 .price-tooltip {
   position: absolute;
   z-index: 100;
   visibility: hidden;
   padding: 15px;
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   border-radius: 5px;
   color: black;
   max-width: 500px;
   border: 1px solid black;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
 }
+
 .price-tooltip small {
   font-family: Lato, sans-serif;
   display: block;
   text-align: right;
   text-transform: uppercase;
 }
+
 .price-tooltip p {
   margin-top: 1.0em;
 }
@@ -234,92 +340,113 @@ img.document { /* medical bill shadow */
 .dumbbellGraph {
   margin-bottom: 0.5em;
 }
+
 .dumbbellGraph svg {
   overflow: visible;
 }
+
 /* legend */
 .legend {
   display: flex;
   flex-flow: row wrap;
 }
-.legend > div {
+
+.legend>div {
   display: flex;
   align-items: center;
   margin-right: 2.0em;
 }
+
 .legend p {
   margin: 0;
   font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
+
 .color {
   margin-right: 0.3em;
   width: 12px;
   height: 12px;
   border-radius: 50%;
 }
+
 /* set legend colors */
 .anthem .color {
   background-color: var(--anthem);
 }
+
 .medicare .color {
   background-color: var(--medicare);
 }
+
 .humana .color {
   background-color: var(--humana);
 }
+
 .selfpay .color {
   background-color: var(--selfpay);
 }
+
 .united .color {
   background-color: var(--united);
 }
+
 /* hide medicare data for anesthesia (missing from data set) */
 .dumbbell:nth-child(9) circle.medicare {
   fill: none !important;
 }
+
 .dumbbell:nth-child(9) line.medicare {
   stroke: none !important;
 }
+
 .dumbbell:nth-child(9) .circleLabel.medicare {
   stroke: none !important;
   opacity: 0 !important;
 }
+
 /* typography */
 .dumbbellGraph h4 {
   color: black;
 }
+
 p.x.axis.title {
   font-family: Lato, sans-serif;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
+
 p.footnote {
   font-family: Lato, sans-serif;
   /* text-align: right; */
   font-weight: lighter;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
+
 .footnote a:link,
 .footnote a:visited {
   border-bottom: 0.1em solid black;
 }
+
 .footnote a:hover,
 .footnote a:active {
   border-bottom: 0;
 }
+
 .circleLabel {
   font-family: Lato, sans-serif;
   font-size: 16px;
 }
+
 text.y.label {
   /* fill: red !important; */
   font-family: Lato, sans-serif;
   font-size: 16px;
 }
+
 .tick text {
   font-family: Lato, sans-serif !important;
   transform: scale(1.5);
@@ -329,11 +456,12 @@ text.y.label {
 .methodology h3,
 h3.reach-out {
   font-family: Inter, sans-serif;
-  color: rgba(0,0,0,.65);
+  color: rgba(0, 0, 0, .65);
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.7em;
 }
+
 .methodology h3:before,
 h3.reach-out:before {
   content: "";
@@ -343,34 +471,39 @@ h3.reach-out:before {
   display: block;
   margin: 1.4em 0 1.4em;
 }
+
 .methodology p,
 .methodology li,
-.reach-out + p {
+.reach-out+p {
   font-family: Inter, sans-serif;
   font-size: 14px;
-  color: rgba(0,0,0,.65);
+  color: rgba(0, 0, 0, .65);
   line-height: 1.4em;
 }
+
 .methodology li {
   padding: 4px 0;
 }
+
 .methodology a:link,
 .methodology a:visited,
 .methodology a:hover,
 .methodology a:active,
-.reach-out + p a:link,
-.reach-out + p a:visited,
-.reach-out + p a:hover,
-.reach-out + p a:active {
-  color: rgba(0,0,0,.65);
+.reach-out+p a:link,
+.reach-out+p a:visited,
+.reach-out+p a:hover,
+.reach-out+p a:active {
+  color: rgba(0, 0, 0, .65);
 }
+
 .methodology a:link,
 .methodology a:visited,
-.reach-out + p a:link,
-.reach-out + p a:visited {
-  border-bottom-color: rgba(0,0,0,.65);
+.reach-out+p a:link,
+.reach-out+p a:visited {
+  border-bottom-color: rgba(0, 0, 0, .65);
   border-bottom-width: 1px;
 }
+
 .code {
   background-color: var(--gray);
   font-family: 'Roboto Mono', monospace;
@@ -383,19 +516,23 @@ h3.reach-out:before {
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) {
   .helper {
     background-color: orange;
   }
+
   .price-card .price {
     font-size: 48px;
   }
+
   .show-desktop {
     display: block !important;
   }
+
   .show-mobile {
-      display: none !important;
+    display: none !important;
   }
+
   h5 {
     opacity: 1;
   }
@@ -403,31 +540,45 @@ No media query for `xs` since this is the default */
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .helper {
-      background-color: yellow;
-      color: black !important;
-    }
-    h1 { /* top headline */
-      font-size: 110px;
-    }
-    h2 { /* second headline */
-      font-size: 42px;
-    }
-    h3 { /* subheadline in story */
-      font-size: 32px;
-    }
-    h4 { /* graphic headline */
-      font-size: 26px;
-    }
-    h5 { /* graphic subheadline */
-      font-size: 18px;
-    }
-    h6 { /* price card headline */
-      font-size: 32px;
-    }
-    .drop-cap:first-letter { /* drop cap */
-      font-size: 4.0em;
-    }
+  .helper {
+    background-color: yellow;
+    color: black !important;
+  }
+
+  h1 {
+    /* top headline */
+    font-size: 110px;
+  }
+
+  h2 {
+    /* second headline */
+    font-size: 42px;
+  }
+
+  h3 {
+    /* subheadline in story */
+    font-size: 32px;
+  }
+
+  h4 {
+    /* graphic headline */
+    font-size: 26px;
+  }
+
+  h5 {
+    /* graphic subheadline */
+    font-size: 18px;
+  }
+
+  h6 {
+    /* price card headline */
+    font-size: 32px;
+  }
+
+  .drop-cap:first-letter {
+    /* drop cap */
+    font-size: 4.0em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -436,6 +587,7 @@ No media query for `xs` since this is the default */
     background-color: green;
     color: white !important;
   }
+
   .price-card .price {
     font-size: 32px;
   }
@@ -446,6 +598,7 @@ No media query for `xs` since this is the default */
   .helper {
     background-color: blue;
   }
+
   .price-card .price {
     font-size: 48px;
   }

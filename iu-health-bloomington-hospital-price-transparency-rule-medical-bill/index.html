@@ -262,9 +262,11 @@
                             <img src="https://s3.amazonaws.com/snwceomedia/ids/55399bbc-278a-4080-b350-3f7022c3d9f4.sized-1000x1000.jpeg"
                                 alt="A woman with brown hair, hoop earrings, a necklace with a small metal cross, and a light gray blazer smiles slightly as she poses for the camera in front of a background of green trees">
                             <figcaption>
-                                <span>Photo by Mallorey Daunhauer | <strong>IDS</strong></span>
-                                Jenni Nolan poses Oct. 22, 2021, outside of Bryan Hall. Nolan owns a small business that
-                                helps clients navigate medical bills.
+                                <span style="text-align:right;display:block;">Photo by Mallorey Daunhauer |
+                                    <strong>IDS</strong><br></span><span style="display:inline-block;">
+                                    Jenni Nolan poses Oct. 22, 2021, outside of Bryan Hall. Nolan owns a small business
+                                    that
+                                    helps clients navigate medical bills.</span>
                             </figcaption>
                         </figure>
                         <p>
@@ -409,6 +411,10 @@
             <section class="full-width">
                 <div class="row scrolly">
                     <div class="col-md-12 graphic">
+                        <!-- <div class="progress-bar"></div> -->
+                        <div class="progress">
+                            <progress id="js-progressbar" value="" max="100"></progress>
+                        </div>
                         <div class="headers">
                             <h4>Hospitals, insurance companies and patients</h4>
                             <h5>How health care price negotiations leave patients in the dark</h5>
@@ -430,7 +436,7 @@
                         <div class="step" data-step="2"></div>
                         <div class="step" data-step="3"></div>
                         <div class="step" data-step="4"></div>
-                        <div class="step" data-step="5"></div>
+                        <div class="step show-mobile" data-step="5"></div>
 
                     </div>
                 </div>
@@ -444,7 +450,8 @@
                         </h3>
                         <p>
                             The health care system is the only economic market in the United States in which consumers
-                            don’t know the cost of a service before they agree to pay for it, Seth Freedman, IU O'Neill School
+                            don’t know the cost of a service before they agree to pay for it, Seth Freedman, IU O'Neill
+                            School
                             of Public and Environmental Affairs associate professor, said.
                         </p>
                         <p>
@@ -631,10 +638,13 @@
                             Bloomington charges patients on different insurance plans or with no insurance at all.
                         </p>
                         <figure class="wide-right">
-                            <img src="https://s3.amazonaws.com/snwceomedia/ids/00f1be71-0bca-4aa5-a9a5-315078cd10ca.sized-1000x1000.JPG" alt="">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/00f1be71-0bca-4aa5-a9a5-315078cd10ca.sized-1000x1000.JPG"
+                                alt="">
                             <figcaption>
-                                    <span>Photo by Ethan Moore | <strong>IDS</strong></span>
-                                IU Health Bloomington Hospital is seen on Oct. 24, 2021 at 601 W. Second St.</figcaption>
+                                <span style="text-align:right;display:block;">Photo by Ethan Moore |
+                                    <strong>IDS</strong><br></span><span style="display:inline-block;">
+                                    IU Health Bloomington Hospital is seen on Oct. 24, 2021 at 601 W. Second St.</span>
+                            </figcaption>
                         </figure>
                         <p>
                             Every year, IU Health provides about $250 million of care it does not receive payment for,
@@ -670,33 +680,33 @@
                             prices. Therefore, this data may not be useful for choosing insurance companies but instead
                             for decisions like determining where and when to get a procedure.
                         </p>
-                        
+
                         <p>
                             All of the data released in compliance with the price transparency law is for all health
                             insurance companies that have negotiated with IU Health. A hospital that is in network for
                             an insurance company has negotiated a price specific to that hospital system.
                         </p>
                         <figure class="wide-left price-wrapper">
-                                <div class="price-card">
-                                    <div>
-                                        <h6 class="has-tooltip" data-tooltip="iv">IV</h6>
-                                        <p>At IU Health Bloomington Hospital would cost... </p>
-                                    </div>
-                                    <div>
-                                        <p class="price">$1,838</p>
-                                        <p class="insurer">Anthem PPO/HMO</p>
-    
-                                        <p class="price">$2,319</p>
-                                        <p class="insurer">Humana</p>
-    
-                                        <p class="price">$201</p>
-                                        <p class="insurer">Medicare</p>
-    
-                                        <p class="price">$849</p>
-                                        <p class="insurer">Self pay</p>
-                                    </div>
+                            <div class="price-card">
+                                <div>
+                                    <h6 class="has-tooltip" data-tooltip="iv">IV</h6>
+                                    <p>At IU Health Bloomington Hospital would cost... </p>
                                 </div>
-                            </figure>
+                                <div>
+                                    <p class="price">$1,838</p>
+                                    <p class="insurer">Anthem PPO/HMO</p>
+
+                                    <p class="price">$2,319</p>
+                                    <p class="insurer">Humana</p>
+
+                                    <p class="price">$201</p>
+                                    <p class="insurer">Medicare</p>
+
+                                    <p class="price">$849</p>
+                                    <p class="insurer">Self pay</p>
+                                </div>
+                            </div>
+                        </figure>
                         <p>
                             “From the customer’s perspective, it means that they can go to any hospital within their
                             network and it will be covered,” Freedman said.
@@ -797,7 +807,8 @@
                             “Just pushing back when you see a ridiculous price, we do have some control here,” Nolan
                             said. “We’ve got to stop just going along with it.”
                         </p>
-                        <p><em>Correction: A previous version of this story misidentified the school within IU where Seth Freedman works.</em></p>
+                        <p><em>Correction: A previous version of this story misidentified the school within IU where
+                                Seth Freedman works.</em></p>
 
                         <h3 class="reach-out">Have a story to tell? </h3>
                         <p id="methodology">
@@ -858,7 +869,12 @@
     <!-- Jquery cdn — used to set data scroll speed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- scrollama -->
+    <!-- <script src="https://unpkg.com/scrollama"></script> -->
     <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"
+        integrity="sha512-YE2BOLTLBOkZ10ahg304yD425ncH98QTjdCgfsjzAJB1tMHWeruT4BBrHL2FXfXLjFJqfsB7I7qhqxubPsT/dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- D3 -->
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="js/ids.js"></script>
