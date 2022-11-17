@@ -8,7 +8,7 @@ const data = {
         "Written by": {
             "name": "Kayla Pallotto",
             "email": "kpallott@iu.edu",
-            // "twitter": "kayla",
+            "twitter": "@pallottokayla",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/5317b41a-7ecb-4b63-9bc8-e4a2e972dbf9.sized-1000x1000.jpg",
             "bio": "Kayla is a third year student at IU studying media advertising with a minor in Spanish."
         },
