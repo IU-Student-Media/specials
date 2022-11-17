@@ -214,6 +214,11 @@ No media query for `xs` since this is the default */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 587px) {
 
+  .full-page-image {
+    /* this property is not supported on mobile browsers. so we'll only apply it for medium/large screens */
+    background-attachment: fixed;
+  }
+
   .helper {
     background-color: yellow;
   }
@@ -321,8 +326,8 @@ p {
 .full-page-image {
   background-image: url("https://s3.amazonaws.com/snwceomedia/ids/b9d58014-5523-4de2-84a8-bfb0b6cf054a.sized-1000x1000.jpeg");
   height: 100vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   margin-bottom: 0px;
   background-position: center top;
   padding-top: var(--md);
