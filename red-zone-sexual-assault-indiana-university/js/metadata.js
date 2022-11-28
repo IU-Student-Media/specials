@@ -5,7 +5,7 @@ const data = {
     "title": "The Red Zone",
     "pub_date": {
         "original": "Oct. 4, 2022",
-        "updated": "Oct. 31, 2022"
+        "updated": "Nov. 21, 2022"
     },
     "bylines": {
         "By": {
