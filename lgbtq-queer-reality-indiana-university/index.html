@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/lgbtq-queer-reality-indiana-university" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The reality of being queer at IU" />
+    <!-- TODO: headline -->
+    <meta property="og:description"
+        content="Though IU has resources and groups for queer students, many issues are still present." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/c31bd7fa-eae8-4d6d-90d0-174f9e9ed8ff.sized-1000x1000.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="The reality of being queer at IU">
+    <!-- TODO: headline -->
+    <meta name="twitter:description"
+        content="Though IU has resources and groups for queer students, many issues are still present.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/c31bd7fa-eae8-4d6d-90d0-174f9e9ed8ff.sized-1000x1000.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <h1 class="header-h1">‘It’s the little things’</h1>
+        <h2 class="header-h2">The reality of being queer at IU</h2>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Sophomore Zsofia Leary poses for a portrait Oct. 28, 2022, near Dunn Meadow.
+            Leary is studying law and public policy at IU with a minor in music.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+                <p class="dropcap">An older man with white hair and a wrinkled face walks by the fold-out table where
+                    Zsofia Leary is sitting on the second floor of the O’Neill SPEA building.</p>
+
+                <p>It’s just after noon on a rainy Wednesday, and Leary has been sitting at the table since 9 a.m. She
+                    skipped her first class, Using IT in Public Affairs, to sit at the table. She plans to for at least
+                    another hour. She’s promoting a meeting about an important cause — one worth missing class for:
+                    equity and inclusion at IU.</p>
+
+                <p>On the table, homemade and store-bought cookies, flyers and a sign-up sheet are neatly organized,
+                    aligned with the table’s front edge.</p>
+
+                <p>Store-bought sugar, M&M and oatmeal raisin cookies are arranged in a large black plastic container.
+                    Beside it, homemade chocolate chip cookies sit in a round clear plastic container. Leary was up
+                    until 2 a.m. making them.</p>
+
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://www.idsnews.com/article/2022/09/iu-named-best-lgbtq-friendly-colleges-country"
+                        target="_blank" class="story-link">
+                        IU named among 'Best of the Best’ LGBTQ-friendly colleges in the country
+                    </a>
+                </p>
+
+                <p>Yellow, pink, blue and purple pens sit idlily next to the sign-up sheet.</p>
+
+                <p>The man glares down at the table and continues to walk.</p>
+
+                <p>“Hi!” Leary says enthusiastically.</p>
+
+                <p>He looks back, gives a smirk and a wave, and then turns around and continues to walk.</p>
+
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <p class="section-break">•••</p>
+
+                <p class="dropcap">On Aug. 24, <a
+                        href="https://www.idsnews.com/article/2022/09/iu-named-best-lgbtq-friendly-colleges-country">IU
+                        was named</a> one of the <a
+                        href="https://www.campuspride.org/campus-pride-announces-the-2022-best-of-the-best-colleges-universities-for-lgbtq-students/">“Best
+                        of the Best”</a> LGBTQ-friendly colleges. The next day, members of the Queer Student Union were
+                    called slurs at the Fall Involvement Fair.</p>
+
+                <p>“While it's safe, in a sense, you're really only safe at the Culture Center or at a QSU event or
+                    whatever organization that may be,” Chloé Diaz, IU junior and former QSU president, said.</p>
+
+            </div>
+
+            <!-- image -->
+            <figure class="inline-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/a261f525-2594-467a-93fe-756f46c8a8cb.sized-1000x1000.jpg"
+                    alt="alt text">
+                <figcaption>
+                    The LGBTQ+ Culture Center is seen Oct. 28, 2022. The center is located at 705 E. Seventh St. across
+                    the street from Dunn Meadow and the Indiana Memorial Union.
+                </figcaption>
+            </figure>
+            <!-- image -->
+
+            <div class="story">
+
+                <p>Incidents like these are not rare. Queer students at IU say there needs to be improvement in the
+                    acceptance and celebration of the LGBTQ community on campus. Small instances of homophobia like
+                    stares and whispers are common, and large instances such as being called slurs or attacked are not
+                    out of the picture.</p>
+
+                <p>The reputation of IU being safe for queer students is not accurate to the reality, Diaz said. They
+                    said the experiences and lives of queer students are being “invalidated and erased.”</p>
+
+                <p>“IU does not make IU safe for queer students,” Diaz said. “Queer students make campus safer for other
+                    queer students."</p>
+
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <p class="section-break">•••</p>
+
+                <p class="dropcap">Leary, 19 and an IU sophomore, identifies as lesbian, and she has been out for three
+                    years. She’s lived in Bloomington her whole life. Coming to IU, Leary felt as if she could break out
+                    of the mold high school forced her into. Doing so has been met with stares, assumptions and
+                    comments.</p>
+
+                <p>“People sometimes look at me, or look at my sexuality, and judge me and assume that I’m a certain way
+                    or even that I’m not smart or capable,” she said.</p>
+
+                <p>She wears a grey bracelet with pink, white, orange and red beads, representing the colors in the
+                    lesbian flag. It sits on her wrist next to a rainbow beaded bracelet bearing her name and another
+                    one that spells out “pride.”</p>
+
+                <div class="pull-quote-center">
+                    <p class="quote">“IU does not make IU safe for queer students. Queer students make campus safer for
+                        other queer students."</p>
+                    <p class="attribute">— Chloé Diaz, IU junior and former QSU president</p>
+                </div>
+
+                <p>Taylor Swift was her first celebrity crush, despite Leary trying to convince herself she liked guys
+                    back then. She started dating her first girlfriend during her sophomore year of high school and used
+                    their relationship as a way to come out to their friends.</p>
+
+                <p>The advisor of her high school’s pride club was scared to come out as bisexual in fear of being
+                    fired. Leary said the advisor did end up being fired, though it was presented as if she quit.</p>
+
+                <p>That’s why Leary decided to major in law and public policy.</p>
+
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://www.idsnews.com/article/2022/08/out-and-proud-bloomington-pridefest-celebrates-the-lgbtq-community"
+                        target="_blank" class="story-link">
+                        'Out and proud': Bloomington Pridefest celebrates the LGBTQ community
+                    </a>
+                </p>
+
+                <p>Leary is also minoring in music. She has always been involved in some form of music in her life,
+                    using it to help cope with mental health lows. Now, she’s an assistant director for the IU
+                    Children’s Choir and has a few original songs out on Spotify.</p>
+
+                <p>“You can express so much with music, and let out all your emotions,” Leary said.</p>
+
+                <p>At IU, she is on the Advocacy Committee within the Queer Student Union and is a board member for the
+                    Students for Equity in Public Affairs. She lives at The Monroe with her dog, Marley.</p>
+            </div>
+
+            <!-- image -->
+            <figure class="lg-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/2cc11983-f214-474e-936f-63038b1bddfa.sized-1000x1000.jpg"
+                    alt="alt text">
+                <figcaption>
+                    Zsofia Leary stands in front of the LGBTQ+ Culture Center Oct. 28, 2022. Leary joined the culture
+                    center this semester and said it is like a family full of people who understand what she has
+                    been through.
+                </figcaption>
+            </figure>
+            <!-- image -->
+
+            <div class="story">
+
+                <p>Growing up, she lived with just her mother, who moved to the U.S. from Hungary for graduate school.
+                    Leary started college as a commuter student only to leave her home in the middle of her freshman
+                    year after her living situation worsened. Her relationship with her mom “deteriorated,” she said.
+                    Leary’s father lives in California and was not around.</p>
+
+                <p>“I was putting myself through college in a way,” Leary said.</p>
+
+                <p>Leary’s mother holds traditional European values. Not necessarily conservative by American
+                    definition, Leary described, but not inclusive either. Leary remembers her mother making comments
+                    about people being gay; she was confused about “why people would do that.”</p>
+
+                <p>“When I was first thinking about how I might not be straight, it was really scary because I was
+                    terrified that my friends wouldn’t understand,” Leary said. “But I was even more terrified that she
+                    wouldn’t.”</p>
+
+                <p>Within the QSU, Leary finds solace in being surrounded by other queer-identifying students. She has
+                    some lifelong friendships from her childhood she still holds close, but the majority of her friends
+                    are straight, so they can’t understand everything she experiences.</p>
+
+                <div class="pull-quote-center">
+                    <p class="quote">“When I was first thinking about how I might not be straight, it was really scary
+                        because I was terrified that my friends wouldn’t understand. But I was even more
+                        terrified that she
+                        wouldn’t."</p>
+                    <p class="attribute">— Zsofia Leary, IU sophomore</p>
+                </div>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <p>“Luckily enough, my friends ended up being super supportive of me,” Leary said. “All of them.”</p>
+
+                <p>IU sophomore Emery James and Leary have been friends since second grade. She remembers Leary dealing
+                    with a lot of instances of homophobia from those close to her. She said Leary was always lifting
+                    people up, even during the toughest times in both of their lives.</p>
+
+                <p>James describes Leary as “the sun,” the brightest person one will ever meet.</p>
+
+                <p>“Even if you don't know her, if you're just seeing her on the street, you can tell that is someone
+                    who is just so bright to be around,” James said.</p>
+
+                <p class="section-break">•••</p>
+
+                <p class="dropcap">Leary lifts her purple and white Adidas backpack up from underneath the white
+                    fold-out table. The front pocket is covered with miscellaneous buttons.</p>
+
+                <!-- image -->
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/db85e7a9-3d12-4d26-9b12-f8bd53d52c17.sized-1000x1000.png"
+                        alt="alt text">
+                    <figcaption>
+                        <p class="credit">Illustration of the buttons Leary described on her backpack</p>
+                    </figcaption>
+                </figure>
+                <!-- image -->
+
+                <p>The student sitting with her laughs.</p>
+
+                <p>“My friend got that one for me, she was like ‘You better not put that on your backpack,’” Leary said
+                    pointing at the “TICE NITS” button.</p>
+
+                <p>In her Kelley School of Business class last semester, the buttons on her backpack were the first
+                    thing her classmates noticed about her.</p>
+
+                <p>“I have some pretty suggestive buttons on my backpack... they were like, ‘Oh, she’s gay,’ and just
+                    giving me looks,” Leary said.</p>
+
+                <p>The class — BUS-W 212 Exploring Entrepreneurship — is the least-accepting class Leary has been in.
+                    She felt left out of class conversations and was called on only after her other classmates were done
+                    talking.</p>
+
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-0' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-0`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <p>“Several students and faculty don’t know what to do with someone who’s not straight,” Leary said. “Or
+                    they’re like ‘OK, you’re different, so we’re just kind of going to avoid you because we don’t know
+                    what to do with you.’”</p>
+
+                <p>Over the summer, Leary took SPEA-V 184, Law and Public Affairs. It was her very first law class.</p>
+
+                <p>She was not only the only woman in that class, she was the only non-straight person. The other
+                    students wouldn’t let her finish a sentence. The men in the class assumed she didn’t know anything.
+                </p>
+
+                <p>“A lot of what happens isn’t very direct,” Leary said. “It’s not like someone’s going to come up to
+                    you and punch you or something. It’s the little things.”</p>
+
+                <p>Leary’s friend got mugged on the street outside of a fraternity. QSU members faced acts of
+                    discrimination within two weeks of this school year. Leary, herself, feels as if classmates
+                    sometimes deem her as not smart or capable.</p>
+
+                <p>It’s not the worst, Leary said. There is an LGBTQ+ Culture Center, and the homophobia never gets too
+                    violent. The issues lie in the hands of IU administration, faculty and some students, she said.</p>
+
+            </div>
+
+            <!-- image -->
+            <figure class="inline-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/1c968f50-d3ad-495c-ac46-6af403723c8c.sized-1000x1000.jpg"
+                    alt="alt text">
+                <figcaption>
+                    The LGBTQ+ Culture Center is seen Oct. 28, 2022. The center serves as a safe and inclusive space
+                    enabling the LGBTQ community to thrive and grow on campus.
+                </figcaption>
+            </figure>
+            <!-- image -->
+
+            <div class="story">
+
+                <p>Leary said one of the main issues lies in diversity training for new IU employees. The training
+                    covers race, religion and even gender, though binary. The topic it doesn’t cover is sexuality, Leary
+                    said. One of the main goals of the QSU Advocacy Committee is improving this training, she said.</p>
+
+                <p>“A lot more faculty and staff would be open and supportive,” Leary said. “It’s not that they don’t
+                    want to be. It’s that they don’t know anything about it; they haven’t been educated about it.”</p>
+
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="http://specials.idsnews.com/pride-photos-bloomington-2022/" target="_blank"
+                        class="story-link">
+                        PHOTOS: Scenes from Bloomington Pridefest 2022 on Kirkwood
+                    </a>
+                </p>
+
+                <p>Beyond training, Leary feels the administration simply isn’t addressing the concerns of queer
+                    students. For example, she said sufficient funding isn’t allocated well for the culture center, and
+                    it needs many renovations, such as better air conditioning and less water damage. She said it’s
+                    “highly overdue.”</p>
+
+                <p>“There’s a prisoner basement, that’s what we call it,” Leary said. “It’s like a basement in a horror
+                    movie.”</p>
+
+                <p class="section-break">•••</p>
+
+                <p class="dropcap">After the older man turns and walks away, Leary and the student next to her let out a
+                    quiet laugh.
+                </p>
+
+                <p>“If you say, ‘Hey, would you like a free cookie?’ normally they’ll come over,” Leary says.</p>
+
+                <p>A few minutes later, two college-aged women walk over to the table.</p>
+
+                <p>Leary smiles, relieved after being ignored by the older man.</p>
+
+                <p>“Hi! We are the Students for Equity in Public Affairs; we’re trying to make O’Neill and IU more
+                    inclusive and equitable. If you’re interested you can put down your email or scan this QR code, our
+                    Instagram is down right now,” Leary said excitingly to the young women.</p>
+
+                <p>The student with Leary leans over to her. “Wow, you’ve got that down.”</p>
+
+                <p>"Yeah, it’s basically a script at this point,” Leary said. “I’ve been here for five hours.”</p>
+
+                <p>“Awesome, thank you!” one of the young women says, bringing their attention back to Leary.</p>
+
+                <p>Leary points to the container of cookies, proudly: “These ones are homemade.”</p>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>

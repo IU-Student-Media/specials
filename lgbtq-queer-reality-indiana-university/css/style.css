@@ -1,0 +1,203 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: black;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  font-family: 'Special Elite', cursive;
+
+}
+
+header {
+  /* height: 964px; */
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/c31bd7fa-eae8-4d6d-90d0-174f9e9ed8ff.sized-1000x1000.jpg');
+  background-size: cover;
+  /* adjust header image positioning for larger devices if needed */
+  /* you can also change the header image for mobile here */
+  background-position: 50% 50%;
+}
+
+.header-h2, .header-h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-size: 27px;
+}
+
+.header-h1 {
+  position: absolute;
+  top: 8%;
+}
+
+.header-h2 {
+  position: absolute;
+  bottom: 5%;
+  padding: 0% 3%;
+}
+
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+  font-weight: 700;
+  float: left;
+  font-size: 4.5em;
+  line-height: 0.65;
+  margin: .3em 0.1em 0 0;
+  color: black;
+  font-family: 'Special Elite', cursive;
+}
+
+figure.inline-image {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .header-h1 {
+    top: 6%;
+  }
+  
+  .header-h2 {
+    bottom: 5%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header-h1 {
+    top: 20%;
+    max-width: 35%;
+    left: 7%;
+    font-size: 33px;
+    padding: 0;
+  }
+  
+  .header-h2 {
+    right: 1%;
+    max-width: 40%;
+    font-size: 33px;
+    top: 20%;
+    padding: 0;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  header {
+    background-position: 55% 15%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  .header-h2 {
+    right: 4%;
+    max-width: 35%;
+    font-size: 40px;
+  }
+
+  .header-h1 {
+    font-size: 40px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  /* .header-h2 {
+    font-size: 50px;
+    padding: 12% 11%;
+  } */
+}
