@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/hot-old-broads-nursing-home-mooresville" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="'Leave no broad behind'" />
+    <!-- TODO: headline -->
+    <meta property="og:description" content="Darla Jones refuses to let people be forgotten" /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/34213fbc-a8ab-4afa-90a6-e546dbf399f5.sized-1000x1000.jpeg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="'Leave no broad behind'">
+    <!-- TODO: headline -->
+    <meta name="twitter:description" content="Darla Jones refuses to let people be forgotten"> <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/34213fbc-a8ab-4afa-90a6-e546dbf399f5.sized-1000x1000.jpeg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="#line1">‘Leave no broad behind’ </h1>
+            <h2 data-scroll-speed="#line2">Darla refuses to let people be forgotten.</h2>
+
+
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">
+
+
+            Darla Jones sits on her living room couch Nov. 5, 2022, at her home in Mooresville. Jones said she has
+            started a new part of her life where she just wants to have fun with others and not take everything so
+            seriously.</p>
+        <p class="credit" style="padding-right:var(--sm);padding-top:0;font-size:.8em;"> Cora Shaw | <b>IDS</b></p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <p class="dropcap"> When most of the world is asleep, Darla Jones wanders through the dim halls of
+                    Miller’s Merry Manor nursing home, fighting to stay awake.</p>
+                <p>It is eerie at night, buzzing with an unnatural quietness. Moonlight sifts through the blinds,
+                    pooling on the floor as Darla attends to her duties. She goes from room to room changing her
+                    residents’ briefs, slipping the fresh one between their legs, turning them over and securing the
+                    sticky tabs from back to front.</p>
+                <p>A call light flashes, beckoning Darla to another room. The woman asks her for a Pepsi.</p>
+                <p>The woman is capable of the small tasks, but she is always pressing the call light. While other
+                    nurses think she is just lazy, Darla searches within and chooses empathy. She imagines this is what
+                    she might do if she were here, if she were lonely but too proud to say it aloud.</p>
+                <p>She takes the woman to the nurse’s station and sets her in a recliner. Darla brings her cookies and
+                    sits next to her. She explains as she folds laundry that she has a sweet tooth — sugar has replaced
+                    alcohol in Darla’s newly sober life.</p>
+                <p>Darla talks endlessly, occasionally pulling other nurses into the conversation, filling the night’s
+                    silence with the stories of a life filled with adventure, heartbreak and horrible dates. Her stories
+                    never resolve; they dance around a meaning, crash into a sudden turn and end with another beginning,
+                    ceasing only when the sun rises and the fluorescent lights come on and Darla collapses at home,
+                    ready to get some sleep.</p>
+                <p class="section-break">•••</p>
+                <p>In the mobile home park where Darla lives, children play football in the road and relish the breezy
+                    autumn weather. Cars roll obediently through the park, slowing as they approach the speed bumps and
+                    pulling into patchy gravel driveways with lawns full of flags: the Stars and Stripes, “Don’t Tread
+                    on Me” and “Fuck Biden.”</p>
+                <p>In a town of 9,000 nearly halfway between Bloomington and Indianapolis, Mooresville, Indiana, is not
+                    the usual place for Darla, who has traveled most of her life, living chunks of it in California and
+                    Washington.</p>
+            </div>
+            <div class="story">
+                <figure class="inline-image">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/a1953741-0d64-4f79-8634-fd3e9e078a52.sized-1000x1000.jpeg">
+                    <figcaption>
+                        <p class="credit">Marissa Meador | <b>IDS</b></p>
+
+                        A street in Mooresville Acres, the mobile home community where Darla Jones lives.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>Darla was born near the end of the Baby Boomer generation, making her 60 years old. She reminisces as
+                    “Sweet Child O' Mine” blares, filling every inch of her living room with electric guitar.</p>
+                <p>“I can still remember when that song had just come out,” she says.</p>
+
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>Darla leads her two dogs, Looney and Sweet Pea, between landmines of steel water bowls and coffee
+                    tins full of dog food. She takes them to her bedroom, which is across from a wall plastered with an
+                    American flag and a row of unhung frames, which Darla calls her “Wall of Fame.”</p>
+                <p>Darla’s beloveds include former Texas Gov. Rick Perry, Judge Judy and Elton John. A photo of Donald
+                    Trump, complete with a fake autograph, is placed right next to a photo of Barack Obama — she doesn’t
+                    want people to think she is too much of a Republican.</p>
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://specials.idsnews.com/lgbtq-queer-reality-indiana-university/" target="_blank"
+                        class="story-link">
+                        The reality of being queer at IU</a>
+                </p>
+                <p>Darla enters the kitchen and pours fresh coffee into a teacup she got from the local antique store.
+                    She is talking about her philosophy on nursing homes and old age when she hears a muffled shout from
+                    outside.</p>
+                <p>“Hey, you need to get your dogs!”</p>
+                <p>Darla freezes: “Oh my God. Oh my God. Oh my God. Oh my God.”</p>
+                <p>She hurries out the door, yanking Looney inside. Slobber is dripping from her teeth to the floor.
+                    Darla runs across the street, where a kid wails on the ground.</p>
+                <p>Looney, in his excitement and trepidation, has nipped the child. His parents are here, soothing him
+                    and checking the injury while Darla apologizes.</p>
+                <p>“She got him a little bit worse than I thought,” the kid’s dad said. “It just kind of got his butt
+                    cheek.”</p>
+                <p>He asks if Looney has all her shots, and Darla says she does.</p>
+                <p>Back inside, Darla types quickly on her computer.</p>
+                <p>“Hold on, I just need to look up something about rabies real quick.”</p>
+                <p>She double-checks that the shots haven’t expired and breathes a sigh of relief.</p>
+                <p>“Looney, Looney, Looney, Looney,” she mutters. “Crazy dog.”</p>
+                <p class="related"><span><b>Related:</b></span>
+                    <a href="https://specials.idsnews.com/iu-freshman-red-zone-sexual-assault/" target="_blank"
+                        class="story-link">
+                        The Education of a Freshman
+                    </a>
+                </p>
+                <p>It’s time to visit her friend Judy, so Darla swaps her blue slides for boots and slips into an
+                    American flag jacket.</p>
+                <p>Darla loves animals; the two saddest places a person can be, she says, are a pediatric ward with
+                    children who have cancer and an animal shelter. She fills a third steel bowl with water for the
+                    dogs, just in case something happens to her while she’s out.</p>
+                <p>In her Dodge Ram truck, Darla drives around the park once to check if there’s anything good in the
+                    dumpster and to give her phone number to the family of the kid in case anything happens when she’s
+                    gone.</p>
+                <p>“Put it this way — public relations.”</p>
+            </div>
+            <p class="section-break">•••</p>
+
+            <div class="story">
+                <p>Before Darla Jones was a certified nursing assistant, she was a journalism major at San Diego State,
+                    a stripper at Paddy Murphy’s Irish Pub, a singer for her friend’s band Tight covering Pat Benatar
+                    and ZZ Top and an employee in a group home for juvenile offenders.</p>
+
+                <p>Her friends describe her as vivacious, impulsive and loud but also sensitive. From her days as a
+                    topless dancer to a certified nursing assistant, Darla has always had a big heart.</p>
+
+
+                <p>Earlier this year, Darla’s heart led her to create the Hot Old Broads' Society, a group of 144 mostly
+                    single, middle-aged to elderly women. The group’s goal is to make sure no woman ever feels lonely.
+                </p>
+            </div>
+            <div class="story">
+                <figure class="sm-image">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/5b4a3ae2-feee-4246-ab68-948005d4fd73.sized-1000x1000.jpg">
+                    <figcaption>
+                        <p class="credit">Courtesy photo </p>
+                        The Hot Old Broads' Society Facebook group as of Sunday, Nov. 27.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>Darla writes in the description of the group on Facebook:</p>
+                <p>“We can have fancy teas one day and get muddy in the creek the next day. We can be benevolent on
+                    Monday and then hit the dance clubs on Saturday night.”</p>
+                <p>She continues:</p>
+                <p>“It’s a new club that will unfold as time goes by. Or not. It might be a fat flop. LOL.”</p>
+            </div>
+
+            <figure class="lg-image">
+                <img
+                    src="https://s3.amazonaws.com/snwceomedia/ids/ef83b9d0-50f6-4da5-a7ba-af0b6a857c84.sized-1000x1000.jpeg">
+                <figcaption>
+                    <p class="credit">Cora Shaw | <b>IDS</b></p>
+                    Darla Jones, founder of the Hot Old Broads, poses outside her home Nov. 5, 2022, in Mooresville.
+                    Jones started the group to bring people together and have fun with other middle-aged women.
+                </figcaption>
+            </figure>
+
+            <div class="story">
+                <p>One member of the HOBS is Darla’s friend and favorite resident Judy. Darla loves her job but hates to
+                    see her residents suffer.</p>
+                <p></p>
+                <p>“Once you’re in a nursing home,” she says. “You’re fucked.”</p>
+                <p></p>
+                <p>Darla envisions HOBS as a vessel for helping her nursing home residents. By making the group fun for
+                    its members, the tone is different from a volunteer group — and she doesn’t want the residents to
+                    feel like a charity case. If she ever ends up in a home, she wants HOBS to be there in case she gets
+                    lonely.</p>
+                <p></p>
+                <p>“There is no such thing as a selfless good deed,” she says with a chuckle.</p>
+                <p class="section-break">•••</p>
+                <p>“Knock knock!” Darla says. “I’m here to see you Hot Old Broads.”</p>
+                <p>The residents of the nursing home sit at white-tableclothed tables with fall decorations and
+                    half-drank cups of lemonade and iced tea. They each push a runny pile of stuffing around on their
+                    plates with plastic spoons, staring at the air.</p>
+                <p>On the front desk, there is a bouquet of carnations from the family of a man who has just passed.</p>
+            </div>
+            <div class="story">
+                <figure class="inline-image">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/c5576cd5-e9a5-430d-b27f-0785554e5f60.sized-1000x1000.jpeg">
+                    <figcaption>
+                        <p class="credit">Marissa Meador | <b>IDS</b></p>
+                        The entrance to Miller's Merry Manor, a nursing home where Darla Jones works as a certified
+                        nursing assistant, is seen Nov. 23, 2022 in Mooresville, Indiana. Jones meets residents' needs
+                        at all hours of the night.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>“It’s already too quiet in here,” Darla says as she sits next to Judy and leans back.</p>
+                <p>Judy is thin and delicate-looking, with eyes like jade pieces. Darla jokes about kidnapping her, and
+                    Judy smiles.</p>
+                <p>“That’s why I like her,” Judy says.</p>
+                <p>Darla sets her sights on a group of ladies sitting at a table across from her.</p>
+                <p>“How about we get some male strippers in here?” she hollers.</p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>One of the ladies recounts a time where she confused the Chippendales, a troupe of male strippers,
+                    with the cartoon chipmunks Chip and Dale. Gentle laughter erupts from the table.</p>
+                <p>There is a sense that here, among death and silence, Darla’s personality is a gift. She is not like
+                    the other nurses, who don’t peel back the packets of butter and jam for breakfast and take too many
+                    smoke breaks.</p>
+            </div>
+
+            <div class="story">
+                <p>At some point, Darla begins talking about a recent drunken driving accident that occurred a few weeks
+                    prior in her hometown, where the driver hit a girl as she was crossing the street to board the
+                    school bus. Darla understands the girl and her family can never forgive the drunken driver, but
+                    Darla feels sympathy for him — sympathy for the way he must live forever knowing what he’s done.</p>
+                <p>“I had to stop drinking because I couldn’t keep myself from driving,” she says to no one in
+                    particular.</p>
+                <p>Deep down, Darla is grateful that it wasn’t her that hit the girl.</p>
+
+                <p class="section-break">•••</p>
+                <p>A little over three months ago, Darla found herself stuck in a ditch. Instead of calling for help,
+                    she sat in her car for hours and drank.</p>
+                <p>When the police arrived in the middle of the night, glowing fluorescent red and blue, she let them
+                    take her to jail and braced for a DUI charge. But for months, she heard nothing.</p>
+                <p>Darla was disappointed. A DUI charge would be a sign that her drinking had gone too far. She would be
+                    forced to confront the dissonance between her preaching about the dangers of speeding and tailgating
+                    with her own dangerous habit.</p>
+
+                <p>The stakes are high, too. In 2020, there were 11,654 alcohol-impaired traffic deaths. Darla knows
+                    someone who killed a person and injured a family while driving drunk but says the woman continues to
+                    drink. In the same month that the kid in Darla’s town was struck by a drunk driver, a drunken driver
+                    in Bloomington killed an IU student on an electric scooter.</p>
+                <p>Driving now as she details the accident, Darla grips the wheel and stares at the road as it rolls
+                    beneath her. She recalls thinking as she debated sobriety: “Do I have to kill someone before I
+                    stop?”</p>
+                <div class="pull-quote-center">
+                    <p class="quote">“There’s no such thing as ‘just one drink.’”</p>
+                    <p class="attribute"> - Darla Jones </p>
+                </div>
+                <p>She made the decision to quit alcohol, marking her journey by scribbling the number of days on her
+                    kitchen calendar in between notes reminding her to mow the lawn. When her dates offer her a drink,
+                    she firmly declines.</p>
+                <p>“There’s no such thing as ‘just one drink,’” she says.</p>
+                <p>But Darla’s sobriety is only half the battle.</p>
+                <p>In mid-October, four months after the incident, Darla was charged with two misdemeanors alleging
+                    driving under the influence. Her blood alcohol level was over 0.15.</p>
+
+                <p>Darla plans to plead not guilty, arguing there is not enough evidence to prove she was driving drunk
+                    since she was drinking in a stopped car that she could not get out of the ditch. But in the courts,
+                    Darla’s journey to sobriety will be outweighed by the question of her past — where the difference
+                    between innocence and guilt could mean jailtime.</p>
+                <p class="section-break">•••</p>
+                <p>On her 100th day of sobriety, Darla wheels her nursing home resident and friend Judy, dressed in an
+                    all-denim outfit and sunglasses, to a Hot Old Broads craft event at an ice cream shop.</p>
+            </div>
+            <div class="story">
+                <figure class="inline-image">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/efdc361c-2aa3-48c0-be33-6c11f6170940.sized-1000x1000.jpeg">
+                    <figcaption>
+                        <p class="credit">Marissa Meador | <b>IDS</b></p>
+                        The Chunky Monkey ice cream shop is seen Nov. 23 in Mooresville, Indiana. Despite last-minute
+                        cancellations, the Hot Old Broads hosted a successful crafting event with materials found around
+                        their homes.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+
+                <p>The broads are a bit disappointed with the turnout; several people canceled last minute. The person
+                    who was supposed to bring craft materials — Hope — got sick and couldn’t come.</p>
+                <p></p>
+                <p>But these are not ordinary women: they are HOBs. Absent of Hope, they will get by with grit.</p>
+                <p></p>
+                <p>The women pull out random materials and half-baked ideas — a wide roll of shimmery ribbon with gold
+                    decoupage, plastic dye gloves, candy pumpkins, a broken fall decoration.</p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p></p>
+                <p>Shelley, Darla’s neighbor, cuts up a magazine into strips and shows the group how to make paper beads
+                    by rolling the strips on a coffee straw and sealing it with clear nail polish. Another HOBS member,
+                    Jo, pulls out several hollowed-out gourds that have been dried to the texture of wood and describes
+                    the process of carving designs and wrapping pine needles around the gourds. The broads laugh and
+                    take pictures and forget about the last-minute cancellations.</p>
+                <p></p>
+
+                <p>The ladies soon move from crafts to chatting over ice cream. Darla eats her ice cream — salted
+                    caramel truffle and peanut butter cup — in the biggest bowl they have with a fork she brought from
+                    home. Small next to her, Judy stays mostly quiet and eats her butter pecan ice cream.</p>
+            </div>
+            <div class="story">
+                <figure class="inline-image">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/adac01a3-6c36-46fe-a475-656d3a173d6e.sized-1000x1000.jpeg">
+                    <figcaption>
+                        <p class="credit">Marissa Meador| <b>IDS</b></p>
+
+                        An array of ice cream flavors in a glass case is seen inside Chunky Monkey Nov. 23 in
+                        Mooresville, Indiana. The Hot Old Broads met at the ice cream shop for a crafting event.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>As she snacks on a sundae, Shelley suggests an idea for an event where groups speak to the HOBs about
+                    safety in dating.</p>
+                <p></p>
+                <p>“How many of our HOBs are still dating?” Shelley asks.</p>
+                <p></p>
+                <p>“Dating?” Angie, another HOBS member, asks. “Well, I’m not really trying … I mean, I would like to,
+                    but … ”</p>
+                <p></p>
+                <p>“These kind of topics could still be good for us,” Shelley says. “Especially when you’re getting into
+                    online dating and stuff and you haven’t dated in 20, 40 years.”</p>
+                <p></p>
+                <p>“Or even just safety being a woman out in public,” Angie adds.</p>
+            </div>
+            <div class="story">
+                <figure class="wide-right">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/b0febd85-2d1b-455e-815a-4728984efb16.sized-1000x1000.jpeg">
+                    <figcaption>
+                        <p class="credit">Courtesy photo </p>
+                        Darla Jones, front left, poses with other members of Hot Old Broads Oct. 2 near the end of their
+                        crafting event. They are gathered in an alcove of the shop decorated to mimic Central Perk, the
+                        coffeehouse featured on the show "Friends."
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>All the broads seem to agree they enjoy being single.</p>
+                <p></p>
+                <p>“I used to think I wanted a boyfriend who would give me really good sex, and now I’ve decided what
+                    I’m really looking for is a handyman,” Shelley declares.</p>
+                <p></p>
+
+                <p>Others chime in:</p>
+                <p></p>
+                <p>“I’m focused on my kids and grandkids now.”</p>
+
+                <p></p>
+                <p>“I don’t care about sex anymore.”</p>
+                <p></p>
+                <p>“But it would be nice to have somebody to go to the movies with, or out to eat.”</p>
+
+                <p>A fact of life, one HOB says later, is it gets harder to make friends as you age. But HOBS has
+                    changed that for her. At the core of the Hot Old Broads' Society is the radical notion that a woman
+                    can be both old and hot. A notion that anyone, at any age, can have friends and have fun.</p>
+            </div>
+            <div class="pull-quote-center">
+                <p class="quote"> “I don’t want anyone to feel like they don’t have options.” </p>
+                <p class="attribute">— Darla Jones</p>
+
+            </div>
+            <div class="story">
+
+                <p>As 4 p.m. approaches, the broads collect their purses and tote bags. One laments the low numbers for
+                    the event, but Darla reassures her.</p>
+                <p></p>
+                <p>“What’s sad is if somebody doesn’t come because they’re too afraid,” she says. “I don’t want anyone
+                    to feel like they don’t have options.”</p>
+                <p class="section-break">•••</p>
+                <p>Although HOBS helps women around Darla’s age find community, Darla was thinking about her residents
+                    when she made the group. HOBS is about aiding people in crisis, and if you’re in a nursing home,
+                    you’re in a major crisis, Darla says.</p>
+                <p>Some residents have reached a stage of acceptance of their condition. Others, wracked with grief,
+                    refuse to take their medications. As they wrestle with the idea of death, their ailments cause them
+                    to be treated as less than human.</p>
+                <p>Darla recalls the group’s motto: leave no broad behind.</p>
+                <p>On a visit to Miller’s to see her residents, Darla sees a woman sitting alone in the corner of the
+                    lunchroom.</p>
+                <p>“The people over there need meal assistance,” Darla says. “But other people call them ‘feeders,’
+                    which I just hate. We’re not feeding the squirrels.”</p>
+                <p>She gets up and wheels the woman who needs meal assistance over to her table. She takes a Styrofoam
+                    box of chocolate cream pie and readies a forkful, scraping some of the filling on the sides of the
+                    box. She lifts the fork to the woman’s mouth.</p>
+                <p>“Here ya go, doll.”</p>
+                <p>The lunchroom is nearly empty now, absent of the nurses’ chatter and shuffle of the residents. Darla
+                    continues to talk, pausing only to gather the whipped filling with a steady hand.</p>
+                <p>The woman loosens her jaw, and Darla Jones feeds her a sweet bite of pie.</p>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>

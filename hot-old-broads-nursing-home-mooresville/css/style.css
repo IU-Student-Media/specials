@@ -1,0 +1,241 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/34213fbc-a8ab-4afa-90a6-e546dbf399f5.sized-1000x1000.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center top;
+  padding-bottom: 30px;
+}
+
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  font-size: 50px;
+  font-family: 'Playfair Display', 'PT Serif', serif;
+  font-weight: 700;
+  font-style: normal;
+  /* margin-top: -10%; */
+  padding-bottom: 0.5em;
+
+}
+
+
+
+h2 {
+  font-size: 25px;
+  line-height: 1.4em;
+  font-family: 'Playfair Display', 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: left;
+  /* width of text */
+  max-width: var(--width-sm);
+  margin: 0;
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
+h1 {
+  animation: fadein 3s;
+}
+
+h2 {
+  opacity: 0;
+  animation: fadein 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.headline-container {
+  /* position: absolute;
+  transform: translateY(-100%);
+  transform: translateX(-25%);
+  display: flex;
+  flex-flow: column;
+  justify-content: left;
+  width: 100%; */
+
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  margin-left: 8vw;
+  padding-bottom: 10vh;
+
+}
+
+@media screen and (max-width:768px) {
+  header {
+    background-position: center;
+  }
+
+  .headline-container {
+    /* max-width: 90%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-5%);
+    transform: translateY(-20%); */
+    justify-content: flex-start;
+    padding-top: 6vh;
+    margin-left: 0;
+    align-items: center;
+
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline-container {
+    margin-left: 2vw;
+    padding-bottom: 15vh;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .headline-container {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headline-container {
+    margin-left: 13vw;
+  }
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
