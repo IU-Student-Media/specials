@@ -1,0 +1,264 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/b2d28d71-9d7c-4a35-99be-556361cefe5c.original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center 25%;
+}
+
+.header-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.headline-container {
+  top: 40%;
+}
+svg {
+  height: 28px;
+}
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+.woodson {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.pull-quote-center {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.fadein {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.first {
+  animation-delay: 1s;
+}
+
+.second {
+  animation-delay: 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  font-family: 'Graduate', 'Playfair Display', 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: -40px;
+  text-shadow: -2px 0 var(--idsred), 0 2px var(--idsred), 2px 0 var(--idsred), 0 -2px var(--idsred);
+}
+
+h2 {
+  /* second headline */
+  font-size: 35px;
+  font-family: 'Inter';
+  font-weight: 300;
+  text-shadow: 1px 1px 5px black;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+}
+
+.headline-container {
+  top: 30%;
+  padding: 1.0em;
+}
+
+h3 {
+  /* section header */
+  font-family: 'Graduate', 'Playfair Display', 'Times New Roman', serif;
+  text-transform: uppercase;
+  color: #990000;
+}
+.quote {
+  color: #990000;
+  font-family: 'Graduate', 'Playfair Display', 'Times New Roman', serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+.pull-quote-center {
+  margin-top: 0;
+  padding-top: 1.0em;
+}
+.sectionbreaks {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  gap: 5%;
+  color: #990000;
+  justify-content: center;
+  margin: 2.0em 0;
+}
+.insta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.insta-mobile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.insta-row {
+  display: none;
+  /* gap: 2.0em; */
+  align-items: top;
+  width: 100%;
+  padding: 0;
+}
+.sidebyside {
+  display: flex;
+  flex-direction: column;
+}
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+  .headline-container {
+    top: 30%;
+  }
+  .insta-mobile {width: auto; display: block; float: left; margin-right: 1.0em; margin-bottom: 1.0em;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+  .insta-mobile {display: none;}
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+  .insta-row { display: flex; flex-direction: row; justify-content: space-between;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+  .insta {width: 50%; display: block; float: right; margin-left: 2.0em; margin-bottom: 1.0em;}
+  .sidebyside {flex-direction: row;}
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+  .bw-photo {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+  .helper::after {
+    content: 'XL';
+  }
+}
