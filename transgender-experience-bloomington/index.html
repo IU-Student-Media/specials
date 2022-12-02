@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <link href="css/timeline.min.css" rel="stylesheet" />
+    <!--Horizontal timeline stylesheet-->
+
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+    <!-- scrollama package -->
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/transgender-experience-bloomington" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="'They can see me': How gender-affirming care affects the lives of four IU students" />
+    <meta property="og:description"
+        content="Transgender students access gender affirming care in a society stuck in the binary." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/b7368437-50be-482e-baac-b3d669bfccfb.sized-1000x1000.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title"
+        content="'They can see me': How gender-affirming care affects the lives of four IU students">
+    <meta name="twitter:description"
+        content="Transgender students access gender affirming care in a society stuck in the binary.">
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/b7368437-50be-482e-baac-b3d669bfccfb.sized-1000x1000.jpg">
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">'They can see me'</h1>
+            <h2 data-scroll-speed="2">How gender-affirming care affects the lives of four IU students</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                </div>
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p class="dropcap">
+                    Xan Smith pulls a fresh shot of espresso into their coffee mug one Thursday morning.
+                </p>
+                <p>
+                    Their partner Randall gives them a quick kiss goodbye as he steps out the front door. The birds
+                    start chirping and light slowly shines through the home’s front windows. Xan picks up their mug and
+                    makes their way toward their office to get their medicine. It’s just about time for their weekly
+                    hormone injection.
+                </p>
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5b503205-41f3-4894-93cf-c448a174a8fd.sized-1000x1000.jpg"
+                        alt="Xan Smith inspects a syringe of testosterone to ensure there are no air bubbles.">
+                    <figcaption>Xan, who is nonbinary transmasculine, doesn’t have a concrete label. The most concrete
+                        label they have is trans masc nonbinary, but that’s as concrete as they’re going to get and they
+                        like that. Xan says it gives them a lot of flexibility to just be who they are. They began
+                        medically transitioning last November and had to learn how to inject themself. At the Student
+                        Health Center, a nurse taught them how to inject, switching the needles and measuring.
+                    </figcaption>
+                </div>
+                <p>
+                    From a nearby shelf, they grab a red and white striped paper bag. You can see the IU logo near its
+                    center. Inside are needles and small vials of clear liquid — testosterone. Xan takes a wrapped
+                    needle and one of the small vials.
+                </p>
+                <p>
+                    Xan is a 31-year-old graduate student at IU. They are a Ph.D. candidate at the Media School,
+                    studying the application of gender in video game avatar creation. They’ve lived in Bloomington for
+                    nine years and got married to Randall in fall 2021.
+                </p>
+                <p>
+                    Since the second grade, Xan has felt different from other kids. Relationships were hard for them. At
+                    the time, Xan was sure they were a girl. They just thought they had to express that identity
+                    differently. When they wore nails or dresses, it was upsetting and didn’t feel right. They used to
+                    like these things when they were little, but they didn’t like how nails and dresses made people
+                    perceive them. They weren’t sure why.
+                </p>
+                <p>
+                    Xan enters the bathroom, sets their mug down on the vanity, unwraps the needle, pokes it into the
+                    vial and starts filling the syringe up with testosterone. They take a quick glance at themselves in
+                    the mirror. They’ve started to grow facial hair, and their voice is lower too. Their students use
+                    their correct pronouns, and they have a good support system. It took their whole life to get here.
+                </p>
+                <!--Ad Block 1-->
+            </div>
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- END AD BLOCK -->
+            <div class="story">
+                <p>
+                    About 0.5% of the population of Indiana identifies as transgender. That is around 25,800 people,
+                    according to data collected by the <a
+                        href="https://williamsinstitute.law.ucla.edu/publications/trans-adults-united-states/"
+                        target="_blank">Williams Institute</a>. For the trans community, coming to terms with your
+                    identity means interfacing with systems and people that feel owed an explanation. As a practice,
+                    gender-affirming care asks for no explanation. It builds acceptance. It saves lives. For four
+                    students at IU, gender-affirming care has helped them gain access to necessary therapies, surgeries,
+                    and support. But red tape, insurance issues, and unqualified professionals can make getting this
+                    care more difficult.
+                </p>
+                <p>
+                    These students receive care at the IU Student Health Center through the Gender Affirming Care Team,
+                    but
+                    gender-affirming care is more than just doctor visits and medicine. It is a partner who supports and
+                    loves you unconditionally.
+                </p>
+                <!--Scrolly-->
+            </div>
+            <section class="full-width">
+                <div class="scrolly">
+                    <div class="graphic">
+                        <div class="arrow">
+                            <p>Scroll</p>
+                            <i class="fas fa-angle-double-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="step" data-step="1">
+                            <p>It is a doctor who respects your individual experience.</p>
+                        </div>
+                        <div class="step" data-step="2">
+                            <p>It is a friend who doesn’t make assumptions about your identity.</p>
+                        </div>
+                        <div class="step" data-step="3">
+                            <p>It is a community who accepts you.</p>
+                        </div>
+                        <div class="step" data-step="4">
+                            <p>A brief flick of the needle is followed by a deep breath.</p>
+                        </div>
+                        <div class="step" data-step="5">
+                            <p>Xan lifts up their favorite black shirt and injects the testosterone into their side.
+                            </p>
+                        </div>
+                        <div class="step" data-step="6">
+                            <p>Xan said the shot was quick. Not a big deal.</p>
+                        </div>
+                        <div class="step" data-step="13" style="padding: 0; margin: 0;"></div>
+                    </div>
+            </section>
+            <div class="story">
+                <p>
+                    People spend their whole lives learning about and accepting who they are. The work of trans people
+                    is no different. It is the work of a lifetime, one day at a time.
+                </p>
+                <p>
+                    Xan drops the needle in a bottle on the vanity. It is just another week.
+                </p>
+                <!--Break-->
+                <p class="section-break">•••</p>
+                <p class="dropcap">
+                    Dr. Laura Knudson leads IU’s Gender Affirming Care Team, which strives to influence the health
+                    center’s protocols and operations to be as gender affirming as possible.
+                </p>
+                <p>
+                    “Gender-affirmative health care can include any single or combination of a number of social,
+                    psychological, behavioral or medical (including hormonal treatment or surgery) interventions
+                    designed to support and affirm an individual’s gender identity,” according to the World Health
+                    Organization.
+                </p>
+                <p>
+                    For the health center, that care includes training nearly all of the center’s employees, including
+                    janitorial staff, in being gender affirming.
+                </p>
+                <p>
+                    Knudson works closely with center’s transgender clients. Her office is full of visual cues to
+                    comfort her patients. On the walls are stickers representing different sexual orientations. She has
+                    a diagram mounted in a frame titled the “gender unicorn.” It delineates the differences between
+                    gender identity and gender expression. In another corner of the room hangs an art piece with
+                    flowers, captioned with the phrase “grow your own gender.”
+                </p>
+                <p>
+                    Xan decided they wanted to start hormone replacement therapy at the health center in October
+                    2021. From there, it took two weeks of blood tests and consultations until they could access the
+                    medication. Two weeks may not seem like a long time, but those two weeks were predicated upon over
+                    10 years of work.
+                </p>
+                <p>
+                    “Once you get in the mind of ‘I want to start this,’ then it's agonizing waiting,” Xan said.
+                </p>
+                <!--Timeline-->
+                <div class="graphic-text">
+                    <h3 class="graphic-hed">How to get hormone therapy at IU Student Health Center</h3>
+                    <p class="graphic-caption">The timeframe between the first and second appointments can be as little
+                        as one week or as long as two months, depending on patient comfort levels and provider
+                        schedules.
+                        Check-ups can also be more frequent if the hormones cause negative side-effects. After the first
+                        year of treatment, hormone therapy check-ups reduce in frequency to every six to 12 months.</p>
+                </div>
+                <!--start of timeline-->
+                <div class="timeline" data-force-vertical-mode="800">
+                    <div class="timeline__wrap">
+                        <div class="timeline__items">
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p>Patients must call the health center to get a hormone appointment, and
+                                        they may complete a name and pronoun form on the health center's website prior
+                                        to their
+                                        appointment</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h2 class="timeline__h2">First Appointment</h2>
+                                    <p>Discussing how the provider can support the patient’s gender and the risks and
+                                        benefits of hormone therapy</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p>Blood tests and labs. There is an informed consent form for hormone therapy. No
+                                        letters from therapists are required.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <h2 class="timeline__h2">Second Appointment</h2>
+                                    <p>Brief physical examination and a review of the lab results. The provider will
+                                        answer any questions and then the patient starts hormone therapy</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p>If everything goes smoothly, the patient has a routine hormone therapy check-up
+                                        every three months.</p>
+                                </div>
+                            </div>
+                            <div class="timeline__item">
+                                <div class="timeline__content">
+                                    <p>Every check-up involves more lab work to ensure the patient's body is reacting
+                                        well to the introduction of hormones.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of timeline-->
+                <p class="credit">Source: Dr. Laura Knudson</p>
+                <p>
+                    The health center has eliminated some of the boundaries other organizations and
+                    administrations fall into with gender-affirming care, Knudson said. Originally, hormone therapies
+                    were not based on informed consent, and instead required letters from mental health professionals to
+                    validate the care. These logistical trappings made it much harder to gain access to care, especially
+                    with low-income students. Now at the center, HRT is based on informed consent, so letters aren’t
+                    necessary. Trans people can also get informed consent HRT from Planned Parenthood.
+                </p>
+                <p>
+                    Family therapist Deborah Pardue said gender-affirming care saves lives. A <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/32345113/" target="_blank">recent study</a> shows about
+                    40% of transgender individuals have attempted suicide. Pardue said that rate is even higher when
+                    factoring in those who succeed. That same study indicates 82% of trans people have thought about it
+                    at some point.
+                </p>
+                <p>
+                    “Once they get gender-affirming care, rates of suicide, depression and anxiety go down because
+                    they're making progress to be who they are,” Pardue said. “It's really relieving for them.”
+                </p>
+                <!--4 Maps-->
+                <h3 class="graphic-hed">Indiana's trans health care is viewed positively compared with surrounding
+                    states</h3>
+                <p class="graphic-caption">In a 2015 survey, trans Hoosiers reported fewer negative experiences with
+                    healthcare providers than respondents from surrounding states, but also reported high costs for
+                    gender-affirming
+                    care.</p>
+            </div>
+            <div class="four-maps">
+                <figure>
+                    <div class="map-title">Refused treatment due to being trans</div>
+                    <iframe title="Refused treatment due to being trans" aria-label="Map" id="datawrapper-chart-3rAf7"
+                        src="https://datawrapper.dwcdn.net/3rAf7/11/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="684"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                    </script>
+                </figure>
+                <figure>
+                    <div class="map-title">Denied coverage due to being trans</div>
+                    <iframe title="Denied coverage due to being trans" aria-label="Map" id="datawrapper-chart-X49iF"
+                        src="https://datawrapper.dwcdn.net/X49iF/13/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="684"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                    </script>
+                </figure>
+                <figure>
+                    <div class="map-title">Didn't see a doctor due to cost</div>
+                    <iframe title="Didn't see a doctor due to cost" aria-label="Map" id="datawrapper-chart-3Mqdd"
+                        src="https://datawrapper.dwcdn.net/3Mqdd/8/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="684"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                    </script>
+                </figure>
+                <figure>
+                    <div class="map-title">Didn't see a doctor due to fear</div>
+                    <iframe title="Didn't see a doctor due to fear" aria-label="Map" id="datawrapper-chart-aDcec"
+                        src="https://datawrapper.dwcdn.net/aDcec/9/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="684"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                    </script>
+                </figure>
+            </div>
+            <div class="story">
+                <p class="credit">Source: <a href="https://www.ustranssurvey.org/reports/#2015report"
+                        target="_blank">2015 U.S. Trans Survey</a></p>
+                <p>
+                    However, being gender affirming takes more than just providing medical care. Knudson takes time to
+                    design the environment she works in so it is welcoming to her patients. Gender-affirming care
+                    requires professionals to step out of the binary understanding of gender, she said.
+                </p>
+                <p>
+                    “Those kinds of changes are really necessary in health care to make sure that everyone is being
+                    served,” she said.
+                </p>
+                <!--Ad Block 2-->
+            </div>
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- END AD BLOCK -->
+            <div class="story">
+                <!--Break-->
+                <p class="section-break">•••</p>
+                <p class="dropcap">
+                    Gender-affirming care was not as widespread in fall 2008 when Xan was in high school. When they were
+                    17, they didn’t know how to process how they felt inside. They said subconsciously they felt they
+                    were a feminine gay man.
+                </p>
+                <p>
+                    “But I wasn't. I was in a female body. I didn't know why,” Xan said.
+                </p>
+                <p>
+                    Growing up in that environment meant being outwardly trans didn’t feel like an option.
+                </p>
+                <p>
+                    “The only other option was to fully deny it.”
+                </p>
+                <!--Side By Side 1 with mobile styling-->
+                <div class="side-by-side">
+                    <img class="rounded-pic show-mobile"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/db38e5e5-9ccd-4c25-8c38-d439623b6dc1.sized-1000x1000.jpg"
+                        alt="Rounded portrait photo of Xan Smith">
+                    <div class="pull-quote-center">
+                        <p class="quote"> “(My coping mechanisms) were all built on this idea of ‘No, I really am a
+                            girl.’”
+                        </p>
+                        <p class="attribute">— Xan Smith</p>
+                    </div>
+                    <img class="rounded-pic show-desktop"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/db38e5e5-9ccd-4c25-8c38-d439623b6dc1.sized-1000x1000.jpg"
+                        alt="Rounded portrait photo of Xan Smith">
+                </div>
+                <p>
+                    Around that time, Xan developed a panic disorder. They still don’t fully know the reason why the
+                    disorder developed, but the attacks kept them up most nights. By senior year of high school, they
+                    said they felt like a husk.
+                </p>
+                <p>
+                    They weren’t particularly enthused to go on their college search. Like every kid, they were
+                    overwhelmed by new places, new people, new everything. The last place they toured was Earlham
+                    College in Richmond, Indiana.
+                </p>
+                <p>
+                    Xan said the tour was typical, but something about Earlham was different. Everything felt more
+                    accepting and less expectant.
+                </p>
+                <p>
+                    That night on the dorm floor, Xan saw two girls asking students if they wanted their nails painted.
+                </p>
+                <p>
+                    “I always admired people with fun nails,” they said. “But when I did it it felt like people were
+                    seeing me as a woman doing it.”
+                </p>
+                <p>
+                    From very early on, Xan learned nails were a signifier, something that girls wore. Even though they
+                    loved nails, they couldn’t bring themselves to try them on. But at Earlham, gender norms were
+                    treated differently. There were masculine women and feminine men. Nails weren't weird or presumptive
+                    of one’s gender.
+                </p>
+                <!-- <div class="pull-quote-center">
+                    <p class="quote">“It was the first time I felt like I wasn’t the only one doing this."</p>
+                    <p class="attribute”>— Xan Smith</p>
+                </div>  not sure if we're using -->
+                <p>
+                    Much to their own surprise, Xan got their nails painted.
+                </p>
+                <p>
+                    “I remember my head being like, that is the last thing I would ever want to do,” they said. “But
+                    then I just said yes.”
+                </p>
+                <p>
+                    They don’t remember what color, but they know it was something dark — a black or purple perhaps. It
+                    didn’t matter. For the first time, they could express themselves free of judgment. Their instinct
+                    about Earlham was right.
+                </p>
+                <p>
+                    As the night wrapped up, Xan wanted to sleep over, but that wasn’t the plan. At first, they didn’t
+                    want to stay because of their panic attacks. However, some instinct was telling them it was going to
+                    be okay, so they stayed.
+                </p>
+                <p>
+                    Back in their house in Bloomington, Xan scours the house for one of their old journals, the one they
+                    knew they wrote on the day they left Earlham.
+                </p>
+                <p>
+                    Randall sits back and watches from the living room couch, smiling the way one smiles toward someone
+                    they truly love. He wears an easy smile, one predicated upon years of experiences of hardships and
+                    good times.
+                </p>
+                <p>
+                    “I appreciate hearing a lot of this because so many things just track really strongly for me, where
+                    I’m like ‘oh yeah, that's you,’” Randall said.
+                </p>
+                <p>
+                    He says he can see how these moments helped form who Xan is now. But he knows these things aren’t so
+                    one-to-one.
+                </p>
+                <p>
+                    Xan eventually found the journal. Written on the bottom of the page is a simple message.
+                </p>
+                <!--Side By Side 2-->
+                <div class="side-by-side">
+                    <img class="rounded-pic show-mobile"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/06b943f2-d0dd-4de7-8f4b-280d81ac75fd.sized-1000x1000.jpg"
+                        alt="Rounded portrait photo of Xan Smith">
+                    <img class="rounded-pic show-desktop"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/06b943f2-d0dd-4de7-8f4b-280d81ac75fd.sized-1000x1000.jpg"
+                        alt="Rounded portrait photo of Xan Smith">
+                    <div class="pull-quote-center">
+                        <p class="quote">“This is an awesome moment. Thank you Earlham, my nails are beautiful.”</p>
+                        <p class="attribute">— Xan Smith</p>
+                    </div>
+                </div>
+                <p>
+                    Looking back, Xan said their time at Earlham through undergrad was healthy, but they say it also
+                    postponed their transition. They were still operating as though they were a woman.
+                </p>
+                <p>
+                    The years between Earlham and now were tumultuous, filled with further denial and some of what Xan
+                    considers internalized transphobia. It wasn’t until after their wedding in 2021 when Xan started
+                    HRT.
+                </p>
+                <!--Ad Block 3-->
+            </div>
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- END AD BLOCK -->
+            <div class="story">
+                <!--Break-->
+                <p class="section-break">•••</p>
+                <p class="dropcap">
+                    Once Xan decided they wanted hormones, they started within weeks. This was partly due to the
+                    insurance provided through IU for graduate students.
+                </p>
+                <p>
+                    One of Knudson’s new patients did not qualify for that insurance, meaning they had to shop. They
+                    were not optimistic the center would accept their insurance.
+                </p>
+                <p>
+                    Some states have protections requiring insurance companies to cover gender-affirming care, but
+                    Indiana is not one of those states. The <a href="https://www.ustranssurvey.org/reports/#2015report"
+                        target="_blank">2015 U.S. Trans Survey</a> shows 25% of trans people were denied
+                    coverage for hormone therapy in the U.S. While the health center tries to reduce these problems, the
+                    patient’s coverage was still denied due their insurance not being accepted.
+                </p>
+                <!--Insurance Graphic (still scrolls why is it like this)-->
+                <div class=graphic-text>
+                    <h3 class="graphic-hed">Insurance companies are more prone to deny trans-related surgeries</h3>
+                    <p class="graphic-caption">State insurance protections for transgender people vary wildly. Because
+                        of this, many transgender people struggle to get coverage even for basic procedures.</p>
+                </div>
+                <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-v6Ry2"
+                    src="https://datawrapper.dwcdn.net/v6Ry2/13/" scrolling="no" frameborder="0"
+                    style="width: 0; min-width: 100% !important; border: none;" height="320" data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                </script>
+                <p>
+                    Dr. Knudson recommended them to apply for a grant that would cover all medical visits, exempting the
+                    testosterone. Eventually, they could receive the care they needed.
+                </p>
+                <p>
+                    The way institutional aid looks outside of the center is less clear-cut.
+                </p>
+                <p>
+                    “Some of the stuff that has been good and supportive was because of the actions of individuals, and
+                    not necessarily because of institutional support,” IU graduate student Erin Ewart said.
+                </p>
+                <p>
+                    When Erin began publicly identifying as a woman, she forgot about things like her graduate student
+                    photo online needing to be updated. It took the person in charge of the photos to realize that need
+                    rather than it being an expectation of the university to reach out.
+                </p>
+                <!--Sidebar-->
+                <div class="wide-right">
+                    <h3 class="graphic-hed">Minnesota leads Midwest in legal transition protections</h3>
+                    <p class="graphic-caption">Indiana is one state where transgender protections are few and far
+                        between according to the <a href="https://www.lgbtmap.org/equality_maps/profile_state/IN"
+                            target="_blank">LGBT Movement Advancement Project</a>. With an overall score of 0, Indiana
+                        is roughly average for the Midwest regarding legal transition protections, which includes gender
+                        neutral markers on licenses and having an easily understandable name-change process.</p>
+                    <p class="graphic-caption">Minnesota and Iowa are polar opposites in the Midwest, with Minnesota
+                        boasting an almost-perfect score of 3.5, while Iowa trails with a score of -2.
+                        These scores are calculated by weighing statewide and local laws for each state, where the
+                        organization docks points for 'negative laws' which make the legal transition process harder.
+                    </p>
+                    </p>
+                    <iframe title="Minnesota leads Midwest in legal transition protections" aria-label="Map"
+                        id="datawrapper-chart-iSPil" src="https://datawrapper.dwcdn.net/iSPil/12/" scrolling="no"
+                        frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="523"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
+                    </script>
+                </div>
+                <p>
+                    “How can we make it to where we're not depending on the kindness and cooperation of the people who
+                    happen to be in these positions of power — minor or otherwise — to help to make this easy for trans
+                    people like me,” Ewart said. “How can we make sure that even if they were neutral or hostile, they
+                    would still be basically coerced by the institution into being trans supportive?”
+                </p>
+                <!--Break-->
+                <p class="section-break">•••</p>
+                <p class="dropcap">
+                    The <a href="https://www.ustranssurvey.org/reports/#2015report" target="_blank">2015 U.S. Trans
+                        Survey</a> reported 55% of trans people were denied coverage for gender-affirming surgeries.
+                </p>
+                <p>
+                    “Surgeries are the hardest to get,” family therapist Pardue said. “You have all of the red tape that
+                    you have to jump through to get it.”
+                </p>
+                <p>
+                    Pardue said these barriers can include requiring letters from medical professionals like herself as
+                    well as extensive wait times. She said there is also difficulty in finding a doctor who is
+                    adequately and competently trained to conduct gender-affirming surgery.
+                </p>
+                <p>
+                    Xan knew they wanted top surgery before they were sure they wanted HRT. When it came time to look
+                    for places to get surgery, they were advised to look out of state. That led them and Randall to Dr.
+                    Haruko Okada, a plastic surgeon in Ohio who specializes in gender-affirming surgeries. Within a
+                    six-month period, Xan was admitted to surgery.
+                </p>
+                <p>
+                    Xan spent the days leading up to their top surgery oscillating between confidence and extreme
+                    nervousness.
+                </p>
+                <p>
+                    “My mornings: I'd wake up and be like, ‘I can do this.’ Evenings were like, ‘everyone's gonna think
+                    I'm insane,’” Xan said.
+                </p>
+                <p>
+                    They were concerned people wouldn’t understand why they needed to change their body like this. They
+                    had similar struggles once they started on testosterone. Would people understand and respect their
+                    choice?
+                </p>
+                <!--Image 2-->
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/769d1b0b-54fb-49a1-a5bf-d7f0b06686d4.sized-1000x1000.JPG"
+                        alt="Xan at their office in the Media School's Institute for Communication Research">
+                    <figcaption> Xan is a Research Assistant in the Institute for Communication Research (ICR) at the
+                        Media School. They study avatar creation and avatar embodiment for transgender, nonbinary, and
+                        gender diverse players.</figcaption>
+                </div>
+                <p>
+                    The surgery also fell right before their qualifying exams for their Ph.D. candidacy. This meant Xan
+                    studied up to the surgery, then spent their spring break recovering, before beginning exams. It made
+                    the whole process all the more stressful.
+                </p>
+                <p>
+                    Although, many moments leading to the surgery were enjoyable for Xan. Days before they left for
+                    Ohio, they would often observe themselves amusedly — their breasts would soon be gone. At one point,
+                    they began to speculate with Randall about how heavy they would weigh. Their mom asked the same
+                    question. When the day finally came for Xan to pack for their trip, they realized they would only
+                    need one bra. And it could be their favorite bra.
+                </p>
+                <p>
+                    From the car ride into the medical facility, Xan was tense.
+                </p>
+                <p>
+                    They were waiting in the pre-surgery room, hooked up to an IV and sitting in a hospital gown. They
+                    sat in their curtained-off section, waiting with other patients. A nurse came in to talk to
+                    Xan before they were admitted. The nurse told them they were the fourth person that week to receive
+                    top surgery.
+                </p>
+                <p>
+                    “It was the first time I felt like I wasn’t the only one doing this,” Xan said.
+                </p>
+                <p>
+                    The surgery was successful. By the time they got to their hotel, Xan was loopy on post-op drugs and
+                    talking about how great it was that the nurse kept getting their pronouns right. Everything went
+                    perfectly.
+                </p>
+                <p>
+                    “It was just so casual,” they said. “Just really casual.”
+                </p>
+                <!--Hover Bios-->
+                <div class="grid hover-bios">
+                    <div class="hover-bio">
+                        <div class="overlay overlay1">
+                            <div class="text">
+                                <div><b>Xan Smith</b> <br> they/them<br> he/him</div>
+                            </div>
+                        </div>
+                        <div class="animated-group">
+                            <img class="rounded-pic image"
+                                src="https://s3.amazonaws.com/snwceomedia/ids/06b943f2-d0dd-4de7-8f4b-280d81ac75fd.sized-1000x1000.jpg"
+                                alt="Xan Smith">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div><b>Xan Smith</b> <br> they/them<br> he/him</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-bio">
+                        <div class="overlay overlay1">
+                            <div class="text">
+                                <div><b>Erin Ewart</b> <br> she/her</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animated-group">
+                            <img class="rounded-pic image"
+                                src="https://s3.amazonaws.com/snwceomedia/ids/272620d8-ada2-4e57-ae1a-4940338dcbd6.sized-1000x1000.jpg"
+                                alt="Erin Ewart">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div><b>Erin Ewart</b> <br> she/her</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-bio">
+                        <div class="overlay overlay1">
+                            <div class="text">
+                                <div><b>Elliot Wilson</b> <br> he/they</div>
+                            </div>
+                        </div>
+                        <div class="animated-group">
+                            <img class="rounded-pic image"
+                                src="https://s3.amazonaws.com/snwceomedia/ids/fc3caffe-cc39-464e-b48f-6a2b3e513d60.sized-1000x1000.jpg"
+                                alt="Elliot Wilson">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div><b>Elliot Wilson</b> <br> he/they</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <figure class="lg-image">
+                    <h3 class="video">The experiences of transgender individuals</h3>
+                    <div class='embed-container'>
+                        <!-- replace src attribute with your youtube embed link -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pu-_c1FjbVM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <figcaption>
+                        Transitioning is the process a person undergoes in order to align their gender expression or
+                        body with their gender identity. Transitioning can include medical, legal and social aspects and
+                        these steps, which can also be referred to as gender affirming care, can vary from person to
+                        person. Our story shares the experiences of transgender individuals and their access to gender
+                        affirming care in Bloomington and IU.
+                    </figcaption>
+                </figure>
+                <!--Break-->
+                <p class="section-break">•••</p>
+                <p class="dropcap">
+                    Gender-affirming spaces do exist outside of the IU Student Health Center, albeit through less
+                    official means. IU freshman Elliot Wilson said his community at the Collins Living Learning Center
+                    has been very supportive. The center is known for being very queer friendly, Elliot said, and he
+                    knows a lot of trans people there.
+                </p>
+                <!--Image 3-->
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fc480d2b-5e27-424f-8af4-7abe09677c30.sized-1000x1000.JPG"
+                        alt="Photo of Elliot Wilson in their dorm. there is a Pride flag on the wall and a small trans flag on the desk. ">
+                    <figcaption>Elliot identifies as transmasculine, but isn't quite sure where he lands there. Right
+                        now, they are just focused on feeling as good as they can. </figcaption>
+                </div>
+                <p>
+                    Elliot isn’t focused on how he identifies. Right now, he’s just focused on feeling as good as he
+                    can. The same is true for Xan as they don’t have a concrete label.
+                </p>
+                <p>
+                    “The most concrete is transmasculine nonbinary, but that's as concrete as I'm gonna get,” they said.
+                </p>
+                <p>
+                    That is what they consider to be their gender identity. They say it allows them the flexibility to
+                    be who they are. They said they like to push back on cisgender people when they ask the label
+                    question. Cisgender people don’t have to answer those kinds of questions, so they don’t ask
+                    themselves those questions.
+                </p>
+                <p>
+                    There is a tattoo on Xan’s right forearm. It is of the hanged man — a tarot card — and is
+                    representative of surrender. The card depicts a person, suspended by their ankle by a rope from a
+                    post. The sun illuminates from behind their head. Xan’s version is special. They have top surgery
+                    scars.
+                </p>
+                <p>
+                    Sitting in the waiting room for their first testosterone injection appointment, that tarot card kept
+                    coming to mind. It always unnerved them. It displays someone allowing themself to die. But something
+                    about the card suddenly clicked in their mind. Surrendering to the unknowns of their experience —
+                    their past and their future, who they are and who they want to become — all of it is knotted into
+                    the figure attached to their arm.
+                </p>
+                <!--Image 4-->
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/83b0eff8-afac-4a51-9033-d6fac3e4685d.sized-1000x1000.JPG"
+                    alt="Image of Xan presenting the tattoo of The Hanged Man on their forearm.">
+                <figcaption>Xan’s tattoo is of the hanged man tarot card, but with top surgery scars and symbolizes the
+                    embracement of the unknown in transitioning, letting go and “ it's kind of a mixture of that with
+                    like, you're, kind of like where your power is coming from.” The hanged man card, Xan said, used to
+                    freak them out but they suddenly understood the card’s meaning while waiting for their testosterone
+                    injection appointments early in their medical transition. </figcaption>
+                <p>
+                    Day by day, Xan finds themselves more comfortable in life. They get acknowledged as masculine in
+                    public. Guys fist bump them on the street. These small things make a big difference.
+                </p>
+                <p>
+                    “I knew that this is what I had always wanted to do,” Xan said. “They can see me.”
+                </p>
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-0' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- END AD BLOCK -->
+            <div class="story">
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <!--Horizontal timeline js-->
+    <script src="js/timeline.min.js"></script>
+    <script src="js/scrolly.js"></script>
+
+</body>
+
+</html>

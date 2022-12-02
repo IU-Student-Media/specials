@@ -1,0 +1,472 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/b7368437-50be-482e-baac-b3d669bfccfb.sized-1000x1000.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: 70%;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* General Styling */
+
+h1 {
+  text-align: center;
+  max-width: var(--width-lg);
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  padding: var(--xs) 0 0.75em;
+  font-size: 70px;
+}
+
+.headline-container {
+  top: auto;
+  bottom: 10vh;
+}
+
+.dropcap:first-letter {
+  /* drop cap */
+  font-weight: 700;
+  /* border: 1px solid red; */
+  float: left;
+  font-size: 3.5em;
+  padding: 3px 0 3px;
+  margin: 0.04em 0.1em 0 0;
+  color: var(--darkgray);
+  font-family: 'Libre Bodoni', serif;
+}
+
+/* Side by side pull quote and rounded profile photos */
+
+.side-by-side {
+  max-width: var(--width-lg);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+  margin: var(--xl) var(--lg) var(--sm);
+}
+
+.side-by-side figure {
+  margin:0;
+}
+
+.rounded-pic {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pull-quote-center {
+  max-width: var(--width-lg);
+  padding: var(--md) var(--sm) var(--md);
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 0;
+  margin-top: var(--sm);
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* This is all of the styling for my 3 portrait photos */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+}
+
+.grid figure {
+  margin: 0;
+}
+
+/* deleting .hover-bio gets rid of the text??? */
+.hover-bio {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.overlay1 {
+  opacity: 1;
+}
+
+.hover-bio:hover .image {
+  opacity: 0.3;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  font-size: 30px;
+  font-family: Inter, sans-serif;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*fade in animation*/
+.hover-bios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.animated-group {
+  opacity: 0;
+}
+
+.hover-bios.active .animated-group {
+  animation: fade-in 2s forwards;
+}
+
+.hover-bios.active .hover-bio:nth-child(2) .animated-group {
+  animation-delay: 1s;
+}
+
+.hover-bios.active .hover-bio:nth-child(3) .animated-group {
+  animation-delay: 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* Four Maps Styling */
+
+.four-maps {
+  max-width: var(--width-lg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: var(--xl) auto var(--xl);
+  padding: 0 var(--sm);
+}
+
+.four-maps figure {
+  margin: 0;
+}
+
+/*labels for maps*/
+.map-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Timeline styling: most of it is in timeline.min.css but i am not touching that so we're doing it here. */
+
+.timeline {
+  padding-top: 15px;
+}
+
+/* Captions and headlines for data graphics */
+
+.graphic-hed {
+  font-family: 'Inter', sans-serif;
+  font-size: 26px;
+  margin: 0;
+}
+
+.graphic-caption {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrolly Stuff */
+
+.full-page-photo {
+  /* scroll container */
+  height: calc(100vh - 50px);
+  position: sticky;
+  display: block;
+  top: 50px;
+  overflow: hidden;
+  margin-bottom: 3.0em;
+  background-size: cover;
+  margin-top: 30px;
+  z-index: -1;
+}
+
+.graphic {
+  /* scroll container */
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, .25);
+  background-position: bottom right;
+  position: sticky;
+  display: block;
+  top: 50px;
+  overflow: hidden;
+  margin-bottom: 3.0em;
+}
+
+.graphic .image {
+  /* divs with background images set */
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  position: absolute;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  display: block;
+  transition: .5s all ease;
+}
+
+.graphic .image:nth-child(3) {
+  background-position: 25%;
+}
+
+.graphic .image:nth-child(4) {
+  background-position: 85%;
+}
+
+.headers h3 {
+  font-size: 22px;
+  font-family: Lato, sans-serif;
+  position: absolute;
+  top: 0.85em;
+  left: 1.5em;
+  color: white;
+  z-index: 100;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.step p {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 1.0em;
+  color: white;
+  margin: 50vh auto 50vh;
+}
+
+.step {
+  margin: 80vh auto;
+  color: white;
+  padding: 15px;
+  max-width: 400px;
+  z-index: 1000;
+  opacity: 1;
+
+  /* border: 1px solid purple; */
+}
+
+.step:last-child {
+  height: 1.0em;
+  visibility: hidden;
+  margin-bottom: 0;
+}
+
+.arrow {
+  /* arrow pointing down to scroll more */
+  position: absolute;
+  color: white;
+  bottom: 35px;
+  z-index: 100;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  transition: 1s opacity ease;
+}
+
+.arrow p {
+  font-family: Lato, sans-serif;
+  font-style: italic;
+  letter-spacing: .05em;
+  font-weight: lighter;
+  margin-bottom: .1em;
+}
+
+.arrow i {
+  animation: bob 1s ease infinite;
+}
+
+@keyframes bob {
+  0% {
+    transform: none
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* its finally over did you like my redundant styling? */
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    background-position: center center;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .four-maps {
+    max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: var(--sm);
+    margin-bottom: var(--lg);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .side-by-side {
+    max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  .wide-left {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    margin-left: -15%;
+    margin-bottom: 0;
+    margin-top: 0;
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
