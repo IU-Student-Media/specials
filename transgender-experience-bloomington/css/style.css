@@ -36,7 +36,7 @@ h1 {
   color: white;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   padding: var(--xs) 0 0.75em;
-  font-size: 70px;
+  font-size: 42px;
 }
 
 .headline-container {
@@ -390,6 +390,10 @@ No media query for `xs` since this is the default */
 
   .helper::after {
     content: 'S';
+  }
+
+  h1 {
+    font-size: 70px;
   }
 }
 
