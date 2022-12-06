@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/substance-abuse-recovery-bloomington-indiana" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seeking sobriety amidst a culture of parties and drugs" />
+    <!-- TODO: headline -->
+    <meta property="og:description" content="IU students share their struggles to remain sober within Bloomington’s party scene.
+    " /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/a34e59de-efcf-4381-8fdb-25401ee0d430.sized-1000x1000.jpeg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Seeking sobriety amidst a culture of parties and drugs"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="IU students share their struggles to remain sober within Bloomington’s party scene.
+    "> <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/a34e59de-efcf-4381-8fdb-25401ee0d430.sized-1000x1000.jpeg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed,
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+
+        <h1>
+            Seeking sobriety amidst a culture of parties and drugs
+        </h1>
+
+        <h2>
+            IU students share their struggles to remain sober within Bloomington’s party scene.
+        </h2>
+        <figure class="xl-image">
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/a34e59de-efcf-4381-8fdb-25401ee0d430.sized-1000x1000.jpeg"
+                alt="">
+            <figcaption>The CRCS is adorned with motivational signs and deocrations. The room itself
+                is small and if a meeting gets too crowded, they'll often expand into the next room over. Since the
+                start of
+                the COVID-19 pandemic, that seldom happens because of low attendence. Slowly but surely, though, the
+                staff
+                said that's starting to change.</figcaption>
+        </figure>
+
+        <!-- <p class="caption header-caption">The CRCS is adorned with motivational signs and deocrations. The room itself
+            is small and if a meeting gets too crowded, they'll often expand into the next room over. Since the start of
+            the COVID-19 pandemic, that seldom happens because of low attendence. Slowly but surely, though, the staff
+            said that's starting to change.</p> -->
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>
+                    On a late Friday evening in a cozy two-bedroom apartment on the south side of Bloomington, and far
+                    from the clamor of
+                    Kirkwood Avenue and the house parties happening just off campus, 24-year-old IU sophomore Bennett
+                    Larsen laboriously
+                    tinkered with a 1-1/2-foot tall model robot from the anime series “Gundam.”
+
+                </p>
+                <p>
+                    The model — one of dozens seemingly occupying every inch of free space around the apartment — was
+                    made up of almost a
+                    hundred individual parts that Larsen would carefully piece together over the course of a few days.
+                    Depending on the size
+                    and complexity of the model, he estimates assembling a model can take from two hours to a week. His
+                    ideal night consists
+                    of five hours of model-making — no interruptions.
+
+                </p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>
+                    “I’m definitely addicted to this,” Larsen said. “I’d rather be addicted to making models than to
+                    marijuana. Trust me,
+                    it’s a lot better than the alternative.”
+                </p>
+            </div>
+            <div class="imagegrid grid1">
+                <figure class="grid-image-1">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/de3730c4-ad55-4c82-937a-b136187dad5e.sized-1000x1000.jpeg"
+                        alt="Bennett Larsen sits at his dinner table with his Gundam models.">
+                </figure>
+                <figure class="grid-image-2">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/6df2efa0-ce93-48e0-a076-2b0e0c2a26d5.sized-1000x1000.jpeg"
+                        alt="A close up of a model part held by Bennett Larsen.">
+                </figure>
+                <figure class="grid-image-3">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/811f1e30-c7e5-4826-bbe6-b55133f99107.sized-1000x1000.jpeg"
+                        alt="A Gundam model sits on top of a dinner table.">
+                </figure>
+                <figure class="grid-image-4">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/655f9ec0-4582-487c-a9bb-7bf0ae3ad9f8.sized-1000x1000.jpeg"
+                        alt="Bennett Larsen sits at his dinner table with his Gundam models.">
+                </figure>
+                <p class="caption"><strong>TOP</strong> Larsen recalls memories of living with a previous significant
+                    other who he said
+                    enabled his addiction at times. He now has a girlfriend who supports his efforts to remain sober.
+                    <strong>BOTTOM
+                        LEFT </strong> One of Larsen's most recent models is a small Gundam figurine. Larsen said a
+                    model of
+                    this size would only take a few hours to build.
+                    <strong>BOTTOM MIDDLE</strong> Larsen looks at the individual weapons and pieces he has yet to cut
+                    out and assemble
+                    on one of his recent models. He said it takes time, but he enjoys the focus it takes to build them. 
+                    <strong>BOTTOM RIGHT</strong> The instructions and tools Larsen uses to make his models sit out on
+                    his kitchen table
+                    as he works on his most recent ones. They often come with dozens of parts he individually
+                    assembles. 
+                </p>
+            </div>
+            <div class="story">
+                <p>
+                    Larsen first came to Bloomington as a part-time Ivy Tech student before becoming addicted to
+                    marijuana and subsequently
+                    leaving the school and his internship program. He had smoked it once before coming to the city, but
+                    once he began
+                    smoking regularly at college, he found it difficult to stop.
+                </p>
+                <p>
+                    “It turned from a couple times a month to every weekend to most nights,” Larsen said. “One time my
+                    friend and I ran into each other on our way to our internship group first thing in the morning and
+                    we looked at each other and went to his room to get high.”
+                </p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>
+                    Drug and party culture in Bloomington is like a snowball rolling down a hill: once it starts
+                    rolling, it’s nearly
+                    impossible to stop after a certain point. IU is known as a prominent party school, ranking in the
+                    top 20 party schools
+                    in the nation by <a href="https://www.newsweek.com/top-party-schools-america-1619664">Newsweek</a>
+                    and <a href="https://www.niche.com/colleges/search/top-party-schools/">Niche.com</a>
+                    . Larsen’s struggles to maintain his sobriety while in a college town is not
+                    uncommon; any all-encompassing culture only leaves stragglers that much more to the wayside.
+                </p>
+                <p>
+                    According to a <a
+                        href="https://monitoringthefuture.org/wp-content/uploads/2022/08/mtf-vol2_2019.pdf">2019</a>
+                    University of Michigan <a
+                        href="https://monitoringthefuture.org/wp-content/uploads/2022/08/mtf-vol2_2019.pdf">survey</a>,
+                    over 76% of Americans between 19 and 22 reported consuming alcohol,
+                    while over 55% of respondents reported having used marijuana in the past. Additionally, the <a
+                        href="https://monitoringthefuture.org/wp-content/uploads/2022/08/mtf-vol2_2018.pdf">2018
+                        version</a> of the same
+                    study reported over 59% of college students had been drunk in the past.
+                </p>
+                <figure>
+                    <iframe title="Do friends approve?" aria-label="Bar Chart" id="datawrapper-chart-lRiZt"
+                        src="https://datawrapper.dwcdn.net/lRiZt/5/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="314"
+                        data-external="1"></iframe>
+                    <script
+                        type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();</script>
+                </figure>
+                <p>
+                    Bloomington is a town where drinking and partying are omnipresent, especially for college students.
+                    Kirkwood Avenue,
+                    downtown's central roadway with a myriad of bars, is packed almost every night with people wandering
+                    between bars or drinking
+                    in the street.
+
+                </p>
+
+                <figure class="audio-context centered">
+                    <div class="inner-audio">
+                        <figcaption class="graphics-text">
+                            <h3>Going out</h3>
+                            Senior Garrett Newman says he enjoys the night life in Bloomington, though he has only been
+                            out two times.
+                        </figcaption>
+                        <hr>
+                        <audio class="audio-container" controls>
+                            <source
+                                src="https://s3.amazonaws.com/snwceomedia/ids/2e3627c4-088b-4027-a2e3-60229fed6cac.original.wav"
+                                type="audio/mp3" />
+                        </audio>
+                        <hr>
+                        <button type="button" data-toggle="modal" data-target="#fun"
+                            class="btn btn-outline-dark btn-sm">Transcript</button>
+
+                        <!-- TRANSCRIPT shown by above button -->
+                        <div class="modal fade" id="fun" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5><b>Transcript</b></h5>
+                                        <p><strong>GARRETT NEWMAN: </strong>
+                                        <p>"I think its fun, I think its a good time."</p>
+
+                                        <p>"I think a lot of people go out a lot more than me, but when I go out I enjoy
+                                            myself."</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <figcaption>
+                        <p class="credit">audio by Evan Shaw
+                        </p>
+                    </figcaption>
+                </figure>
+                <p>
+                    “After midnight you tend to see a lot of extremely inebriated people,” Luke Van Den Eeden, IU
+                    student and bouncer
+                    at Brothers Bar and Grill, said. “Social life in Bloomington involves a lot of alcohol.”
+
+                </p>
+                <p>
+                    “The party culture here in Bloomington seems mildly unsafe, so when I go out I don’t go out by
+                    myself,” local Alyssa
+                    Gartner said while bar hopping following the homecoming football game in October. “Indiana
+                    University is known for being
+                    one of the largest party colleges in the world.”
+                </p>
+                <p>
+                    Ceremonies and celebrations are just excuses for crowds of people to get wildly drunk, IU junior
+                    Abby Bloomer said. She
+                    hadn’t had a drop of alcohol until the day she graduated from high school, but her drinking became a
+                    problem when she
+                    started attending IU.
+
+                </p>
+            </div>
+            <div class="imagegrid grid2">
+                <figure class="grid-image-1">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/6e2b8caa-92f4-4148-856c-3c7518d826ab.sized-1000x1000.jpeg"
+                        alt="A large electronic sign on Kirkwood Avenue that says 'No Open Alcohol'">
+                </figure>
+                <figure class="grid-image-2">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/6d7dc6ad-c028-4b20-a172-53c0c94ca519.sized-1000x1000.jpeg"
+                        alt="A group of people out on Kirkwood Avenue dancing.">
+                </figure>
+                <figure class="grid-image-3">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c73244ae-a5bb-464d-ab0c-bc1b1500859c.sized-1000x1000.jpeg"
+                        alt="A line of people outside Nick's and people walking on the sidewalk adjacent to Kirkwood Avenue.">
+                </figure>
+                <figure class="grid-image-4">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/0583db85-2296-436f-b9e8-ea0addd7fcbb.sized-1000x1000.jpeg"
+                        alt="A police car flashing its lights on Walnut Avenue.">
+                </figure>
+                <p class="caption">
+                    <strong>TOP LEFT</strong> A large road sign is used while Kirkwood is closed to remind visitors that
+                    open alcohol is
+                    illegal to have in public settings. People often hop between bars along Kirkwood, bringing with them
+                    their drinks.
+
+                    <strong>TOP RIGHT</strong> A group of women dance along a closed Kirkwood Avenue after exiting
+                    Kilroy's on Kirkwood, one
+                    of the most popular bars in Bloomington. Just after 9 p.m., the bars are filling up as lines to get
+                    in grow longer.
+
+                    <strong>BOTTOM LEFT</strong> A line forms around the corner and down the sidewalk at Nick's. The
+                    popular venue was
+                    especially busy during Homecoming weekend as families and alumni came into town to celebrate.
+
+                    <strong>BOTTOM RIGHT</strong> A Bloomington Police Department car stops a truck along Kirkwood
+                    Avenue during Homecoming weekend. Police are often
+                    seen patrolling heavily around downtown Bloomington as patrons hop from bar to bar.
+                </p>
+            </div>
+            <div class="story">
+
+                <p>
+                    “My first year was awful: there were no in-person classes, I was stuck in this tiny dorm by myself
+                    and I felt like the only thing entertaining I could do was alcohol,” Bloomer, now a junior, said
+                    about her first months at IU. “When you don’t have any responsibilities, it’s fine to drink Friday,
+                    Saturday, and Sunday if that’s your regular party weekend.”
+                </p>
+                <p>
+                    For Larsen, smoking began as a social event but soon became an escape from schoolwork and other
+                    responsibilities.
+
+                </p>
+                <p>
+                    “I spent every day high,” Larsen said. “I kind of had a job but not really, my family wasn’t
+                    supporting me financially anymore, I’d wake up every morning worried about what I’d get yelled at
+                    for next. But I thought I was happy because I was high.”
+                </p>
+                <figure class="audio-context centered">
+                    <div class="inner-audio">
+                        <figcaption class="graphics-text">
+                            <h3>Not wanting to relapse</h3>
+                            Bennett Larsen struggles with the idea of falling back into addiction. Earlier, Larsen began
+                            playing the soundtrack to the game Hotline Miami 2: Wrong Number, the first vinyl he bought
+                            of his collection.
+                        </figcaption>
+                        <hr>
+                        <audio class="audio-container" controls>
+                            <source
+                                src="https://s3.amazonaws.com/snwceomedia/ids/2d76a2f5-1009-41d2-bb16-fb46eeb6bcb9.original.wav"
+                                type="audio/mp3" />
+                        </audio>
+                        <hr>
+                        <button type="button" data-toggle="modal" data-target="#relapse"
+                            class="btn btn-outline-dark btn-sm">Transcript</button>
+
+                        <!-- TRANSCRIPT shown by above button -->
+                        <div class="modal fade" id="relapse" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5><b>Transcript</b></h5>
+                                        <p><strong>BENNETT LARSEN: </strong>
+                                        <p>"If I start using regularly, at all, and I say regular as in on a schedule."
+                                        </p>
+
+                                        <p>"I am going to end up back where I am using every day."</p>
+
+                                        <p>"And... it's not gonna... it's.. my life will crash and that won't be good.
+                                            Yeah."</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <figcaption>
+                        <p class="credit">audio by Evan Shaw
+                        </p>
+                    </figcaption>
+                </figure>
+                <p>
+                    The simple act of walking across campus is enough to remind Larsen of his struggles to avoid
+                    marijuana since the smell
+                    of the drug is strong, distinguishable and common. Although marijuana possession is illegal in
+                    Indiana, many local
+                    dispensaries are legally able to sell versions of the product with a small enough amount of THC
+                    concentration, commonly
+                    known as Delta 8.
+
+
+                </p>
+                <p>
+                    Larsen found it difficult to quit smoking for the sake of others, and he was unwilling to seek
+                    recovery until he wanted
+                    it for himself. This is common for many people in Narcotics Anonymous, Larsen said.
+                </p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-4' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>
+                    Larsen said he became convinced to quit marijuana one morning when he found himself smoking a bowl
+                    in front of an open
+                    window seemingly without a care in the world.
+                </p>
+                <p>
+                    “It was 9 a.m. in the morning, I’m sitting on the couch with the blinds completely open. I’m sitting
+                    there, in my underwear, and I’m smoking a bowl. Some form of clarity came to me in that moment and I
+                    realized it was the beginning of the day and I’m practically naked, on display for anyone walking by
+                    and we live next to a relatively busy road, and I’m smoking, doing something that is illegal in this
+                    state,” Larsen said. “That was the first time I ever really felt true shame for drug use, and I
+                    realized that maybe things need to change.”
+                </p>
+
+                <figure class="md-image">
+                    <h3 class="video">Social life and sobriety</h3>
+                    <div class='embed-container'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aB9NPKzP1GM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <figcaption>
+                        When the weekend comes around, many college students find themselves in social settings where
+                        substances like alcohol and cannabis are present. But what about the students who are recovering
+                        from substance use disorders?.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    The road to recovery looks different for everyone, Lindsay Potts said, director of Behavioral Health
+                    Services for IU
+                    Health Bloomington.
+
+                </p>
+                <p>
+                    “Recovery is any action toward growth. There are thousands of ways for people to live in
+                    recovery,” Potts said. “Therapy, group therapy and peer support offer resources to individuals to
+                    find their path forward.”
+                </p>
+                <p>
+                    IU Health’s Addiction Treatment and Recovery Centers treat addiction as a symptom of other issues,
+                    supervisor Andrea
+                    Cheek said. Their recovery program encompasses a six to eight week intensive outpatient care course
+                    which often involves
+                    multiple weekly meetings and check-ups. Following this program, patients go through a less intensive
+                    aftercare program
+                    for two to three months.
+
+
+                </p>
+                <p>
+                    “We try to help patients build a support network and help them replace drugs with something more
+                    positive,” Cheek said. “Abusing a substance can become a relationship for some people, so without
+                    something to fill in the gap of that relationship relapses become more likely.”
+                </p>
+            </div>
+            <div class="side-by-side">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5732b766-fd0c-41f8-a563-df1c15dffb1b.sized-1000x1000.jpeg"
+                        alt="Two people sit inside the office of the Collegiate Recovery Community.">
+                    <figcaption>
+                        Larsen sits in front of CRCS Program Coordinator Samantha Reitz's desk as they wait for more
+                        people to arrive. Sometimes they'll have a group of three or four, other times its just one
+                        person.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/9fc5c74a-6a7d-4f35-accc-b3f43dea4eec.sized-1000x1000.jpeg"
+                        alt="A close up of Larsen Bennett's face">
+                    <figcaption>
+                        Larsen signs in at a Tuesday night meeting. He said these weekly meetings offer a more open,
+                        less structured setting where he can talk about anything relating to his recovery.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>
+                    Larsen attends weekly Narcotics Anonymous meetings and works with the Collegiate Recovery Community
+                    to connect with
+                    others who are avoiding substance abuse on and around campus. The NA meetings, he says, are more
+                    rigorous and include a
+                    wider variety of people, but the CRC offers a space for IU students and allows them to talk about
+                    their experiences
+                    while they were using.
+                </p>
+                <figure class="md-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d891a9b4-16c2-47b8-8544-da3c6b971015.sized-1000x1000.jpeg"
+                        alt="A Narcotics Anonymous book sits on Bennett Larsen's dinner table">
+                    <figcaption>
+                        Larsen's Narcotics Anonymous book sits among his models and supplies, idle on the apartment's
+                        kitchen table. He said
+                        some of the testimonials and stories in the book are harrowing.
+                    </figcaption>
+
+                </figure>
+                <figure class="audio-context centered">
+                    <div class="inner-audio">
+                        <figcaption class="graphics-text">
+                            <h3>An eye-opening book</h3>
+                            Larsen talks about his relationship to the Narcotics Anonymous basic text and relates his
+                            own
+                            experiences to those he's read.
+                        </figcaption>
+                        <hr>
+                        <audio class="audio-container" controls>
+                            <source
+                                src="https://s3.amazonaws.com/snwceomedia/ids/3778a824-7a76-457f-90c2-ada13e13276a.original.wav"
+                                type="audio/wav" />
+                        </audio>
+                        <hr>
+                        <button type="button" data-toggle="modal" data-target="#narc"
+                            class="btn btn-outline-dark btn-sm">Transcript</button>
+
+                        <!-- TRANSCRIPT shown by above button -->
+                        <div class="modal fade" id="narc" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5><b>Transcript</b></h5>
+                                        <p><strong>BENNETT LARSEN: </strong>
+                                        <p>"So the first half is, of the book is, working the steps. And then the second
+                                            half is a whole bunch of stories from people in the program."</p>
+
+                                        <p>"And some of these are like, "Whoa, you were in the pits." Like, I spent
+                                            three
+                                            months of my life essentially homeless and another 6 years still not on
+                                            a lease but with my current roommate. Um, like, but three of those months I
+                                            was not living with my family and they were not providing me financial
+                                            support. And I was living with a boyfriend who resented my wealthier
+                                            upbringing."</p>
+
+                                        <p>"And thats where my using got me, and it still took me like a year after that
+                                            to actually go to meetings and stop. But then you read stories in here about
+                                            people who had only one piece of clothing and it was a dress. And it wasnt
+                                            even a dress it was a ratty tube top. "</p>
+
+                                        <p>"You read stories like that and it hurts your heart but you know they are in
+                                            a better place."</p>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <figcaption>
+                        <p class="credit">audio by Evan Shaw
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p>
+                    Getting clean was not a simple process for Larsen. To avoid the temptation of using, he began
+                    spending more time with
+                    friends he made through his connections in the recovery community and stopped seeing people whose
+                    relationship with him
+                    was based solely on their mutual drug usage.
+
+                </p>
+                <figure>
+                    <iframe title="Recovery can be isolating" aria-label="Split Bars" id="datawrapper-chart-OoG9l"
+                        src="https://datawrapper.dwcdn.net/OoG9l/4/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="316"
+                        data-external="1"></iframe>
+                    <script
+                        type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();</script>
+
+                </figure>
+                <p>
+                    “There were many, many relapses between my decision to get clean and my first long stint of
+                    sobriety,” Larsen said. “I decided for myself that I wanted my life to be better, I wanted to go
+                    to school, that I didn’t want to work at Arby’s anymore. It was a good job, but it was not
+                    conducive to a clean mindset.”
+                </p>
+                <p>
+                    Students who seek recovery often do so at the behest of others, such as friends or family, Cheek
+                    said. These patients
+                    tend to be less self-motivated in their recovery, which can be an impediment in their sobriety.
+
+
+                </p>
+            </div>
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-0' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-0`); });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+                <p>
+                    Larsen and Bloomer found it difficult to pursue recovery without an internal motivation. Bloomer
+                    chose to seek recovery
+                    because she found she didn’t like the person she was becoming when she drank.
+
+                </p>
+                <p>
+                    “I had this intense fear of coming down from being drunk so I would just continue drinking as
+                    the night went on. A lot of things happened that I didn’t remember, someone told me that I
+                    kissed someone, a lot of specific things I did that very much were not me, that didn’t reflect
+                    who I was,” Bloomer said. “That was when I realized that I couldn’t keep doing this.”
+                </p>
+                <!-- audio -->
+                <figure class="audio-context inline-image">
+                    <div class="inner-audio">
+                        <figcaption class="graphics-text">
+                            <h3>A reason to get sober</h3>
+                            Abby Blomer's relationship with her cats suffered as a result of her drinking, becoming one
+                            of her reasons to seek recovery.
+                            Bloomer and Larsen both found different motivations to seek recovery.
+                        </figcaption>
+                        <hr>
+                        <audio class="audio-container" controls>
+                            <source
+                                src="https://s3.amazonaws.com/snwceomedia/ids/2e88f6f4-420a-4805-9663-10ab20eea218.original.wav"
+                                type="audio/mp3" />
+                        </audio>
+                        <hr>
+                        <button type="button" data-toggle="modal" data-target="#cats"
+                            class="btn btn-outline-dark btn-sm">Transcript</button>
+
+                        <!-- TRANSCRIPT shown by above button -->
+                        <div class="modal fade" id="cats" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5><b>Transcript</b></h5>
+                                        <p><strong>ABBY BLOMER: </strong>
+                                        <p>"Um, this is like such, I mean I think you have to find the lame reasons to
+                                            recover from substance use. But I was like, I am spending so much less time
+                                            consciously with my cats."</p>
+
+                                        <p>"Because I'd be like high, and then go to bed. And sure I'd pet them and love
+                                            on them, but I was so high that it wasn't like meaningful."</p>
+
+                                        <p> "I'm the type of person, I sit down at the end of the night and I make sure
+                                            both my cats know that I verbalize that I am like thankful for their
+                                            presence. And I will do my best to love them for as much as I can for every
+                                            day of their lives."</p>
+
+                                        <p>"And so I think realizing, like "oh my god, I am not following through on
+                                            that." They might still be getting love but its not as sincere, its not as
+                                            purposeful and if they had a need I might not understand it as well because
+                                            I am high."</p>
+
+                                        <p> "I think that was something that was huge in the changing, was my cats."</p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <figcaption>
+                            <p class="credit">audio by Evan Shaw
+                            </p>
+                        </figcaption>
+                </figure>
+
+                <p>
+                    Recovering from high drug usage is not a linear process and being in recovery isn’t as black and
+                    white as either being
+                    dependent or completely abstinent from a substance, Bloomer said. People like her favor an approach
+                    she calls being
+                    “sober-ish” which is the gradual process of weaning off of problematic substances without quiting
+                    outright.
+
+                </p>
+                <figure><iframe title="&quot;Sober-ish&quot;" aria-label="Split Bars" id="datawrapper-chart-hg8N2"
+                        src="https://datawrapper.dwcdn.net/hg8N2/2/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="251"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrap per-height"][a] + "px" } } })) }();
+                    </script>
+                </figure>
+                <p>
+                    For others like Larsen, seeking sobriety is a goal which supersedes all others. In his pursuit
+                    of recovering from marijuana addiction he has cut ties with friends and significant others who
+                    he felt wouldn’t be conducive to his recovery. His most recent relapse occurred when he was
+                    drunk, so he quit drinking altogether to eliminate one more route to relapse.
+                </p>
+                <p>
+                    “There is a scale of relapsing that ranges from someone using one time after months of sobriety
+                    or to someone falling back into dependence,” Larsen said. “I’m not taking the risk either way.
+                    For me, my recovery relies on being completely sober.”
+                </p>
+                <p>
+                    A list of resources is available <a
+                        href="https://www.idsnews.com/article/2022/09/local-resources-opioid-addiction-drug-overdose-narcan">here</a>
+                    if you or someone you know has a drug addiction.
+                </p>
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+
+                <div class="author-bios">
+                </div>
+
+
+            </div>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <!-- audio players -->
+    <script src="https://cdn.plyr.io/3.5.2/plyr.polyfilled.js"></script>
+    <script>
+        const players = document.querySelectorAll('.audio-container');
+        players.forEach((p) => {
+            new Plyr(p);
+        });
+    </script>
+    <!-- Bootstrap js — used for audio players -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
