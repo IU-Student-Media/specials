@@ -3,7 +3,7 @@ const data = {
     "slug": "Reinventing recovery",
     "headline": "Seeking sobriety amidst a culture of parties and drugs",
     "title": "Reinventing recovery",
-    "pub_date": "Dec 6. 2022",
+    "pub_date": "Dec 7. 2022",
     "bylines": {
         "By": {
             "name": "Cam Garber",

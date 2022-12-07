@@ -23,6 +23,7 @@ header {
   /* background-position: left left ; */
   padding-bottom: 60px;
 }
+
 h1 {
   /* alignment */
   text-align: center;
@@ -33,8 +34,9 @@ h1 {
   /* text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
   font-size: 64px;
   padding-top: 32px;
-  font-weight:700;
+  font-weight: 700;
 }
+
 h2 {
   /* alignment */
   text-align: center;
@@ -47,8 +49,9 @@ h2 {
   padding: auto;
   font-weight: 600;
 }
-h2 {
-}
+
+h2 {}
+
 /* 
   SET ANY MORE STYLES YOU WANT BELOW
   Be sure to delete empty declarations
@@ -77,6 +80,7 @@ h3 {
 article {
   padding-top: var(--l);
 }
+
 .dropcap:first-letter {
   /* change the font/style of the dropcap if you wish to use them */
 
@@ -127,13 +131,118 @@ article {
   grid-column: 7/13;
   grid-row: 2/2;
 }
+
 .audio-context {
   border: 2px solid#ffca76;
-  padding: 15px; margin:1em 1 1em 1;
+  padding: 15px;
+  margin: 1em 1 1em 1;
 }
+
+.imagegrid p.caption {
+  padding-top: var(--xxs);
+  padding-bottom: var(--sm);
+}
+
+.side-by-side {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.imagegrid {
+  margin-bottom: var(--md);
+}
+
 /* 
 media queries helper
 */
+.show-mobile {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
+}
+
+@media screen and (max-width:768px) {
+  .show-desktop {
+    display: none;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .side-by-side figcaption {
+    padding: var(--xxs) var(--sm) var(--md);
+  }
+
+  .side-by-side {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 24px
+  }
+
+  .grid1 {
+    display: block;
+  }
+
+  .grid2 {
+    display: block;
+  }
+
+  .side-by-side {
+    display: block;
+  }
+
+  .grid1 .grid-image-1 {
+    padding-bottom: 15px
+  }
+
+  .grid1 .grid-image-2 {
+    padding-bottom: 15px
+  }
+
+  .grid1 .grid-image-3 {
+    padding-bottom: 15px
+  }
+
+  .grid1 .grid-image-4 {
+    padding-bottom: 15px
+  }
+
+  .grid2 .grid-image-1 {
+    padding-bottom: 15px
+  }
+
+  .grid2 .grid-image-2 {
+    padding-bottom: 15px
+  }
+
+  .grid2 .grid-image-3 {
+    padding-bottom: 15px
+  }
+
+  .grid2 .grid-image-4 {
+    padding-bottom: 15px
+  }
+
+  .grid1 .caption {
+    padding: 0
+  }
+
+  .grid2 .caption {
+    padding: 0
+  }
+}
+
 .helper {
   /* comment out next line to get visual help with media queries while you code */
   display: none !important;
@@ -200,6 +309,10 @@ No media query for `xs` since this is the default */
   .helper::after {
     content: 'L';
     color: white;
+  }
+
+  .show-mobile {
+    display: none;
   }
 }
 
