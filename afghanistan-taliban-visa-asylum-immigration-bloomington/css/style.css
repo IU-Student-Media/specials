@@ -1,0 +1,341 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)),url("https://s3.amazonaws.com/snwceomedia/ids/b870ddde-c2ee-4920-a227-3d1ad9d5b555.sized-1000x1000.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+font-size: 75px;
+/* border: solid red; */
+padding-bottom: 0;
+margin-bottom: 0.5em;
+}
+
+h2 {
+  /* second headline */
+margin-top: 5px;
+/* border: solid red; */
+font-size: 35px;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  padding-left: var(--sm) ;
+  padding-right: var(--sm);
+  
+}
+
+.headline-container {
+   top: auto;
+  bottom: 6vh;
+}
+
+h4 {
+  /* section header */
+font-family: Inter;
+font-style: bold;
+font-size: 30pt;
+text-align: center;
+margin-bottom: 5px;
+margin-left: auto;
+padding-top: 20px;
+padding-bottom: 0px;
+text-align: left;
+/* color: #DF243E; */
+/* border: solid red; */
+}
+h5{
+  font-family: Inter;
+font-style: bold;
+  font-size: 20pt; 
+  text-align: center;
+  /* color: #DF243E; */
+  /* border: solid red; */
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: left;
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+  /* asylum process graphic */
+}
+.graphic{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2em;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-rows: auto auto; */
+  /* grid-gap: 2em; */
+}
+.grid-item{
+  /* border: solid red; */
+  flex-basis: 400px;
+  background-color: #ebeae4;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-radius: 12px;
+
+}
+#asylum{
+  font-family: Inter;
+  margin-left: var(--sm);
+  margin-right: var(--sm);
+  text-align: left;
+  /* border: solid red; */
+  margin-bottom: 3px;
+}
+#asylumSub{
+  font-family: Inter;
+  margin-left:auto;
+  margin-right: var(--sm);
+  text-align: left;
+  /* border: solid red; */
+  margin-bottom: var(--sm);
+}
+#graphic-subhead{
+  font-size: 20pt;
+  font-family: Inter;
+font-style: bold;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: var(--sm);
+  margin-right: var(--sm);
+  line-height: 1.1em;
+  padding-top: var(--sm);
+  /* border: solid red; */
+}
+#asylumIcon{
+  margin-top: 5px;
+
+}
+/* prayer */
+.prayerBreak{
+  background-color: #871727;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 12px;
+    background-position: center top;
+    padding-top: var(--md);
+    padding-bottom: var(--md);
+    height: 400px;
+    overflow: hidden;
+}
+#prayer{
+  color: #DEB373;
+  text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 10%;
+    margin-bottom: 15px;
+}
+.button{
+padding-left:var(--sm) ;
+padding-right: var(--sm);
+padding-top: var(--xs);
+padding-bottom: var(--xs);
+margin-left: 42%;
+margin-bottom: var(--sm);
+border: 2px solid  ;
+font-weight: bold;
+cursor: pointer;
+border-radius: 25px;
+-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button::after{
+  content: '';
+	position: absolute;
+	z-index: -1;mn hn
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.button-1{
+  border: 2px solid  #871727;
+	color:  #871727;
+}
+.button-1c:after{
+  width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:  #DEB373;
+}
+.button-1c:hover,
+.button-1c:active{
+  color: #DEB373;
+}
+.button-1c:hover:after,
+.button-1c:active:after {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+h1{
+  /* color: red;  */
+  font-size: 60px;
+}
+h2{
+  font-size: 25px;
+}
+
+
+
+}
+@media screen and (max-width: 576px) {
+  h1{
+    /* color: blue; */
+  }
+  #prayer{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .button{
+    margin-left: 33%;
+  }
+  .prayerBreak{
+    height: 340px;
+  }
+}
+
+.audio-context{
+  margin-left: var(--sm);
+  margin-right: var(--sm);
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: var(--sm);
+}
+.inner-audio{
+  display: flex;
+ flex-flow: nowrap;
+ padding: var(--xs) ;
+}
+
