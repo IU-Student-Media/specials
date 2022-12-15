@@ -63,7 +63,21 @@ moveItItem.prototype.update = function(scrollTop) {
 $(function() {
     $('[data-scroll-speed]').moveIt();
 });
-
+/***************************************
+*   UTILITIES                          *
+***************************************/
+// detect page size to adjust scrollytelling/graphic 
+let mobile;
+if (window.innerWidth <= 576) {
+    mobile = true;
+}
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 576) {
+        mobile = true;
+    } else {
+        mobile = false;
+    }
+});
 // show hide prayer
 const button= document.querySelector ("#prayerButton");
 const prayer= document.querySelector(".prayerBreak");
@@ -71,11 +85,12 @@ button.addEventListener("click", togglePrayer);
 function togglePrayer() {
     console.log(prayer.style.height);
     if (prayer.style.height=="auto") {
-        prayer.style.height="400px";
+        prayer.style.height= mobile ? "340px" : "400px";
         button.innerHTML="Show more";
         
     } else {
         prayer.style.height="auto";
         button.innerHTML="Show less";
     }
+
 }

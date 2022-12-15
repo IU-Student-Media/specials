@@ -214,6 +214,7 @@ No media query for `xs` since this is the default */
   text-align: left;
   /* border: solid red; */
   margin-bottom: var(--sm);
+  padding-bottom: var(--sm);
 }
 #graphic-subhead{
   font-size: 20pt;
@@ -256,11 +257,13 @@ font-style: bold;
     margin-bottom: 15px;
 }
 .button{
+  display: block;
 padding-left:var(--sm) ;
 padding-right: var(--sm);
 padding-top: var(--xs);
 padding-bottom: var(--xs);
-margin-left: 42%;
+margin-left: auto;
+margin-right: auto;
 margin-bottom: var(--sm);
 border: 2px solid  ;
 font-weight: bold;
@@ -297,6 +300,12 @@ border-radius: 25px;
 .button-1c:active:after {
 	width: 100%;
 }
+.showdesktop{
+  display: block;
+}
+.showmobile{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
 h1{
@@ -308,7 +317,6 @@ h2{
 }
 
 
-
 }
 @media screen and (max-width: 576px) {
   h1{
@@ -318,13 +326,23 @@ h2{
     padding-left: 15%;
     padding-right: 15%;
   }
-  .button{
-    margin-left: 33%;
-  }
   .prayerBreak{
     height: 340px;
   }
+  .imagegrid{
+    display:block;
+  }
+  .imagegrid figure{
+    padding-bottom: var(--sm);
+  }
+  .showdesktop{
+    display: none;
+  }
+  .showmobile{
+    display: block;
+  }
 }
+ 
 
 .audio-context{
   margin-left: var(--sm);

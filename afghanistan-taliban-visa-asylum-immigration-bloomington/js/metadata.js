@@ -1,8 +1,8 @@
 const data = {
-    "url": "your-url-here",
-    "slug": "DREAMING OF AFGHANISTAN",
-    "headline": "",
-    "title": "afghan template",
+    "url": "afghanistan-taliban-visa-asylum-immigration-bloomington",
+    "slug": "Dreaming of Afghanistan",
+    "headline": "She dreams of Afghanistan",
+    "title": "Dreaming of Afghanistan",
     "pub_date": "Dec. 14",
     "bylines": {
         "By": {
@@ -16,7 +16,7 @@ const data = {
             "name": "Avery Antill",
             "email": "aantill@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/d7916c5b-cf20-404e-bd7b-c4b035078bd8.sized-1000x1000.jpg",
-            "bio": " Avery Antill is and sophomore at Indiana University majoring in Arabic and obtaining a certificate in Journalism. She has worked as a photographer for the IDS and is a member of the Arabic Flagship Program. "
+            "bio": " Avery Antill is and sophomore at IU majoring in Arabic and obtaining a certificate in journalism. She has worked as a photographer for the IDS and is a member of the Arabic Flagship Program. "
 
         },
         
@@ -25,7 +25,7 @@ const data = {
             "email": "mijlong@iu.edu",
             "twitter": "mlong39196",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/852530fa-e168-42e9-a047-c7ce597e7080.sized-1000x1000.jpg",
-            "bio": "Michael Long is a senior at Indiana University majoring in Sports Media. He currently works in television production with IU’s Radio and Television Services.",
+            "bio": "Michael Long is a senior at IU majoring in sports media. He currently works in television production with IU’s Radio and Television Services.",
         }
     }
 }

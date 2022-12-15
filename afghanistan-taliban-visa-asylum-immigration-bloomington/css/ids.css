@@ -468,7 +468,7 @@ figure {
     grid-gap: 15px;
     padding-left: var(--sm);
     padding-right: var(--sm);
-    margin: var(--xxl) auto var(--xl);
+    margin: var(--xxl) auto var(--xs);
 }
 
 .imagegrid figure {
