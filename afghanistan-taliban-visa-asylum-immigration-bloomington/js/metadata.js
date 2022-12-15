@@ -3,7 +3,7 @@ const data = {
     "slug": "Dreaming of Afghanistan",
     "headline": "She dreams of Afghanistan",
     "title": "Dreaming of Afghanistan",
-    "pub_date": "Dec. 14",
+    "pub_date": "Dec. 15",
     "bylines": {
         "By": {
             "name": "Lauren Ulrich",
