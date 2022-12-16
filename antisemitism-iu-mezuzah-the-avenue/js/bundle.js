@@ -1,4 +1,4 @@
-/*! Last updated December 15, 2022 - https://specials.idsnews.com/antisemitism-iu-mezuzah-the-avenue */
+/*! Last updated December 16, 2022 - https://specials.idsnews.com/antisemitism-iu-mezuzah-the-avenue */
 // replace <div class="ad"></div> with proper ad code
 let adDivs = document.querySelectorAll(".ad");
 let adCount = 2;
