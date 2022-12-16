@@ -16,7 +16,7 @@ const data = {
             "name": "Avery Antill",
             "email": "aantill@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/d7916c5b-cf20-404e-bd7b-c4b035078bd8.sized-1000x1000.jpg",
-            "bio": " Avery Antill is and sophomore at IU majoring in Arabic and obtaining a certificate in journalism. She has worked as a photographer for the IDS and is a member of the Arabic Flagship Program. "
+            "bio": " Avery Antill is a sophomore at IU majoring in Arabic and obtaining a certificate in journalism. She has worked as a photographer for the IDS and is a member of the Arabic Flagship Program. "
 
         },
         
