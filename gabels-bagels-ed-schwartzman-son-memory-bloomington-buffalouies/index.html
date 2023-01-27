@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!--Google Fonts "Cookie" - for the dropcaps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Abstract" /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+    <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">“His talent was just undeniable”</h1>
+            <h2 data-scroll-speed="3">Ed Schwartzman celebrates the memory of his son through music</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Gabels Bagels owner Ed Schwartzman speaks with a repair worker in front of the shop's bagel display on December 9th, 2022. A bread slicer had been having difficulties for several days.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p class="dropcap">
+                    Gables Bagels owner Ed Schwartzman cracks a joke in the tight quarters of the back of his store on a Tuesday morning. Richie Bowling, his business partner, scoops homemade chive cream cheese from a mixer. A buzz can be heard in the background.
+                </p>
+                <p>
+                    “My bagels are ready,” Ed says.
+                </p>
+                <p>
+                    But these aren’t just any bagels. Inspired by his first job at a bagel shop in Queens, Ed found  a way to bring New York bagels to Bloomington. Gable's Bagels are 95% cooked, before being overnight shipped from New York  to Ed, bringing the East Coast bagel experience to Indiana.
+                </p>
+                <!--right-align https://s3.amazonaws.com/snwceomedia/ids/e72abcc4-97b3-4070-9b37-d80d22dc6dbe.sized-1000x1000.jpg-->
+                    <div class="wide-right">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/e72abcc4-97b3-4070-9b37-d80d22dc6dbe.sized-1000x1000.jpg"
+                        alt="A customer enters through the front door of Gabels Bagels">
+                        <figcaption>
+                            <p class="caption">A customer enters through the front door of Gabels Bagels on December 9th, 2022.</p>
+                        </figcaption>
+                    </div>
+                <p>
+                    By 8 a.m., Ed begins to package four dozen fresh bagels into a black warmer, separating the asiago cheese from the everything bagels — something Ed says shows you know what you’re doing.
+                </p>
+                <p>
+                    He climbs into his black Kia Telluride and plugs the bagel warmer into the car. His 12-year-old daughter’s soccer gear is still in the backseat from the weekend.
+                </p>
+                <p>
+                    Ed pulls into the Audi dealership on Third Street, greeting everyone with a smile and handshake. After getting their names, he tells them “I’m Ed Schwartzman from Gables Bagels”.
+                </p>
+                <p>
+                    He sets bags of fresh bagels and cream cheese down in the lobby.
+                </p>
+                <p>
+                    “You didn’t have to do this,” general manager Craig Smith said in response to the free breakfast.
+                </p>
+                <p>
+                    “You didn't have to do what you did either,” Ed smiles back.
+                </p>
+                <p>
+                    The previous week, Ed was struggling to get his pontoon boat out of the water in Lake Monroe — a task he always took on alone. A red trailer sat next to him on the ramp, and he hoped that its owner would be able to help him when they arrived. Finally, he saw a candy apple red boat coming in. He offered its driver, Craig, all the help he could possibly use, for any small amount of help he could give in return.
+                </p>
+                <p>
+                    “One good turn deserves another,” Ed said as he left the dealership.
+                </p>
+                <!--Break-->
+                <p class="bagel-break">⊚⊚⊚</p>
+                <p class="dropcap">
+                    In his car, Ed pulls up Spotify. Ben Schwartzman is his most recently played artist. He plugs in his auxiliary cord and smiles as Ben’s face on the cover of his album “Falling Star” lights up the screen on his radio.
+                </p>
+                <p>
+                    Ben is Ed’s son. After battling depression and bipolar disorder, Ben died by suicide 15 years ago at 19 years old. Ben started playing music at open mics in coffee shops when he was 15 years old. He carried his guitar with him everywhere, Ed said.
+                </p>
+                <div class="side-by-side">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/88e0c66b-76db-4386-b63d-d4db4a74dca9.original.png"
+                        alt="The album cover for Ben Schwartzman's Falling Star. It is stylized in the form of a pencil sketch of Ed's son Ben.">
+                        <!--<figcaption>
+                            <p class="caption">
+                                (Do we need a caption for this?)
+                            </p>
+                        </figcaption>-->
+                    <div class="pull-quote-center">
+                        <p class="quote">"Look at the gift this kid left us."</p>
+                        <p class="attribute">— Ed Schwartzman</p>
+                    </div>
+                </div>
+                <p>
+                    Ed listens intently, staring forward as he sings the lines of every song, before Ben even sings it.
+                </p>
+                <p>
+                    When the song “Freakin” comes on Ed cups his hands around his mouth and begins to make a loud trumpet sound with his mouth. Every note matches the song.
+                </p>
+                <p>
+                    “I was really mad he didn’t let me play this on the song because he and I used to hand trumpet all the time,” Ed said with a melancholic smile.
+                </p>
+                <p>
+                    Next, the song “Big Man” plays — a nickname Ben called his father. The song however, is about God. Ed says the lyrics before they play: “Big man up in the sky, when is my time to die?”
+                </p>
+                <p>
+                    “He never shared the lyrics of his songs with me, I had to listen intently,” Ed said. “He knew the lyrics would scare me. Truth is he had a plan. He knew what he was going to do, that he was checking out.”
+                </p>
+                <p>
+                    When Ed drives, he loves to listen to Ben’s songs. However, Ed couldn’t bring himself to listen to his music.
+                </p>
+                  <!--pull quote "Look at the gift this kid left us"-->
+                  <div class="pull-quote-center">
+                    <p class="quote">"I hadn’t listened to my son's music in years because it just killed me, and now, I listen to it with fresh ears."</p>
+                    <p class="attribute">— Ed Schwartzman</p>
+                </div>
+                <p>
+                    For the 15 years following his son's death, Ed shared Ben’s music with everyone he could reach in the entertainment industry, including local filmmaker John Armstrong in 2017. Ed’s daughter, Hayley, said that she thinks Ed dedicated himself to Ben’s music as a way of coping with his death.
+                </p>
+                <div class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fed975f4-19e7-4805-8d79-df2873ae4919.sized-1000x1000.jpg"
+                    alt="A customer waits for his order in a crowd of people during a morning rush at Gabels Bagels">
+                    <figcaption>
+                        <p class="caption">A customer waits for his order amid a rush on the morning of December 9th, 2022.</p>
+                    </figcaption>
+                </div>
+                <p>
+                    In 2021, Armstrong came to Ed with a surprise. He had shared Ben's demos with Airtime Studios, who cleaned up his records. When he went to listen to the music, Ed met local artist Zach Riddle, who was moved by Ben’s music and helped put it on Spotify and Apple Music.
+                </p>
+                <p>
+                    "One of my favorite byproducts of this is that I hadn’t listened to my son's music in years because it just killed me, and now, I listen to it with fresh ears,” Ed said. “I'm just blown away with the quality of it, his talent was just undeniable.”
+                </p>
+                <p>
+                    Ed stares out at the pedestrians walking on the sidewalk ahead of him. He sees people with stories to tell and real struggles, just like Ben.
+                </p>
+                <p>
+                    “He’s not singing about getting laid. He's not singing about cars,” Ed said. “I used to call his music open heart surgery. He’s literally opening up his heart, and it’s hard to listen to him.”
+                </p>
+                <!--Break-->
+                <p class="bagel-break">⊚⊚⊚</p>
+                <p class="dropcap">
+                    Ed walks back into the Gables, greeting customers with a smile as his cheerful voice fills the room. Ed knows, if he doesn’t give customers a fun upbeat experience, they won’t come back. Although, his excitement is not a facade.
+                </p>
+                <!--lg img https://s3.amazonaws.com/snwceomedia/ids/68676ff1-3dfa-4d20-8df6-febc312ac9f9.sized-1000x1000.jpg-->
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/68676ff1-3dfa-4d20-8df6-febc312ac9f9.sized-1000x1000.jpg"
+                    alt="Ed Schwartzman laughs with a customer">
+                    <figcaption>
+                        <p class="caption">Owner Ed Schwartzman laughs with a customer on December 9th, 2022.</p>
+                    </figcaption>
+                </div>
+                <p>
+                    “Ed’s happy place is meeting everyone,” Jaimie Schwartzman, Ed’s wife, said. “He’s beyond extraverted. There’s an extra level to him being outgoing, and it's not fake. It's not for business or a show, it's truly who he is.”
+                </p>
+                <p>
+                    A woman steps up to the register, ordering a bagel sandwich with pepper jack cheese.
+                </p>
+                <p>
+                    “I can tell you like a little kick, so I’m going to throw on some of my jalapeno cream cheese, okay?” Ed says to the woman.
+                </p>
+                <p>
+                    In his spot behind the counter, Ed continues to give his recommendations to every order, applying his New York expertise and homemade shmears to each bagel.
+                </p>
+                <p>
+                    “Trust me,” he tells people, and they do.
+                </p>
+                <!--Break-->
+                <p class="bagel-break">⊚⊚⊚</p>
+                <p class="dropcap">
+                    In both of his stores Ed banters joyfully with everyone he encounters. He loves asking people where they’re from, what brings them to town, or what the students are studying.
+                </p>
+                <p>
+                    Chatting with the people in his restaurants, Ed’s answer to the frequently asked question of how many kids he has, varies depending on the situation. When he feels the time and place is right, Ed shares Ben’s story with his customers. Jaimie believes that this feeling Ed gets is a God moment.
+                </p>
+                 <!--left align https://s3.amazonaws.com/snwceomedia/ids/40c7496c-da9e-40a2-8f54-4657057dd32e.sized-1000x1000.jpg-->
+                 <div class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/40c7496c-da9e-40a2-8f54-4657057dd32e.sized-1000x1000.jpg"
+                    alt="Ed Schwartzman talks to a group of customers sitting at tables in Gabels Bagels by a window">
+                    <figcaption>
+                        <p class="caption">Owner Ed Schwartzman talks to customers on December 9th, 2022. He spent the morning moving between the counter and interacting with customers at the tables.</p>
+                    </figcaption>
+                </div>
+                <p>
+                    “We have had these crazy encounters that you wouldn't even believe, where not even knowing someone's situation and the impact he's having on them, he has shared the story and unknowingly later someone comes back and says, ‘I think you saved my life that night’,” Jaimie Schwartzman said.
+                </p>
+                <p>
+                    Ed is also invested in his employees’ lives. One thing Jaimie admires about Ed is he never fails to match the same expectations he has of his workers.
+                </p>
+                <p>
+                    “If you come in, you’ll see it in the way we all interact with each other,” sophomore employee Aeriana Weigand said. “I’ve never worked in an environment where the owners themselves have facilitated that family-oriented staff. It makes a really big difference in the quality of work that we do and in the experience.”
+                </p>
+                <p>
+                    Weigand met Ed her freshman year at IU when she took a semester off school for mental health reasons. She began working as a cashier at Buffalouie’s, saw Gables Bagels start as a ghost kitchen out of Buffalouie’s during the COVID-19 pandemic. Now, she works at both stores.
+                </p>
+                <!--right-align https://s3.amazonaws.com/snwceomedia/ids/c10a42e4-1a07-40ab-9362-90dd79eda442.sized-1000x1000.jpg-->
+                <div class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c10a42e4-1a07-40ab-9362-90dd79eda442.sized-1000x1000.jpg"
+                    alt="Employee name tags and letters to Ed displayed behind the counter">
+                    <figcaption>
+                        <p class="caption">Employee name tags and letters to Ed are seen on display behind the counter on December 9th, 2022.</p>
+                    </figcaption>
+                </div>
+                <p>
+                    “I’m bipolar as well, which is what Ben suffered from, and he has consistently taken the time to make sure that I’m doing okay and that he can relate to me in that way,” Weigand said. “Really with any of his employees, he’s not scared to be genuine and open about his life and give any advice that he can to people. I've honestly never seen or met anyone like Ed.”
+                </p>
+                <p>
+                    Mental health is close to Ed’s heart, and his intention with Ben’s music was never to make a penny. Ed contacted Centerstone, a nonprofit focused on mental health care and addiction rehab. While Ed has no idea if money will be made, any cent of profit will go to its cause.
+                </p>
+                <p>
+                    “Look at the gift this kid left us, let's do something with it," Ed said. "In the worst case we have a concert.” 
+                </p>
+                <!--Break-->
+                <p class="bagel-break">⊚⊚⊚</p>
+                <p class="dropcap">
+                    Ed is passionate about the delicious New Jersey bagels he grew up eating with his family, but his mission is more than bagels. He wants to leave a positive legacy.
+                </p>
+                <!--Pull "One good turn deserves another"-->
+                <div class="pull-quote-center">
+                    <p class="quote">"One good turn deserves another."</p>
+                    <p class="attribute">— Ed Schwartzman</p>
+                </div>
+                <p>
+                    “Folks, thanks so much for joining us, we appreciate your business,” Ed says to customers walking out.
+                </p>
+                <p>
+                    Another day of business comes to a close, and Ed gets back into his car to head home to his family. Ben’s music plays, and the telluride remains full of soccer gear. 
+                </p>
+                <div class="lg-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2674a66b-245a-42a5-a94b-32ddb311eb09.sized-1000x1000.jpg"
+                    alt="Customers sit at tables inside Gabels Bagels">
+                    <figcaption>
+                        <p class="caption">Customers sit at Gabels Bagels' three tables on December 9th, 2022.</p>
+                    </figcaption>
+                </div>
+                <p>
+                    Ed makes the most of the challenges and opportunities in his life. He shares Ben’s story, smiles every time someone orders a salt bagel — his dad's favorite, and takes on each day with positivity and compassion.
+                </p>
+                <p>
+                    “The only guarantee is that there’s no guarantees,” Ed says.  
+                </p>
+                <!-- small bios -->
+                <div class="author-bios">
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
