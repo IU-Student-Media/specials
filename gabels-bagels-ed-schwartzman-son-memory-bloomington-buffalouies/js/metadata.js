@@ -1,6 +1,6 @@
 const data = {
     "url": "gabels-bagels-ed-schwartzman-son-memory-bloomington-buffalouies",
-    "slug": "Ed Schwartzman celebrates the memory of his son through music",
+    "slug": "",
     "headline": "'His talent was just undeniable': Ed Schwartzman celebrates the memory of his son through music",
     "title": "Ed Schwartzman celebrates the memory of his son through music",
     "pub_date": "Jan 27, 2023",
