@@ -14,7 +14,7 @@ const data = {
         "Photos by": {
             "name": "Goodman Murphy-Smith",
             "twitter": "weekinturkey",
-            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/14095f35-022c-4634-a5ac-f933c2b4fca0.original.jpg",
+            "pfp": "https://s3.amazonaws.com/snwceomedia/ids/901dbd11-fe28-437a-9434-1fa9f3186961.original.jpg",
             "bio": "Goodman Murphy-Smith is a freshman studying film production. He has worked at the IDS since 2022 as a photographer."
         },
         "Design and development by": {
