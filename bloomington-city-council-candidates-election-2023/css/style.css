@@ -1,0 +1,301 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --repred: rgba(228, 24, 24, 0.3);
+  --demblue: rgba(64, 117, 217, 0.3);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/80659665-7b6c-4d0b-a6f7-176e36a54f9b.original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  font-size:58px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.element {
+  padding:10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element p {
+  margin-left:15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.grid2 .grid3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+.grid figure {
+  margin:10px;
+}
+
+.grid .text{
+  font-size:18px;
+}
+
+.side-by-side .text{
+  font-size:15px;
+}
+
+/* deleting .hover-bio gets rid of the text??? */
+.hover-bio {
+  position: relative;
+  margin-bottom:15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.rep {
+  background-color: var(--repred);
+}
+
+.dem {
+  background-color: var(--demblue);
+}
+
+.overlay1 {
+  opacity: 1;
+}
+
+.hover-bio:hover img {
+  opacity: 0.5;
+  transition:0.5s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.text {
+  font-size: 22px;
+  font-family: Inter, sans-serif;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*fade in animation*/
+.hover-bios {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.animated-group {
+  opacity: 0;
+}
+
+.hover-bios.active .animated-group {
+  animation: fade-in 3s forwards;
+}
+
+.hover-bios.active .hover-bio:nth-child(2) .animated-group {
+  animation-delay: 1s;
+}
+
+.hover-bios.active .hover-bio:nth-child(3) .animated-group {
+  animation-delay: 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .side-by-side .text{
+    font-size:24px;
+    padding:20px;
+  }
+
+  .grid .text{
+    font-size:24px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .grid2 .text {
+    font-size:18px;
+  }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+
+  .side-by-side {
+    max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-bottom: var(--sm);
+    margin-top: var(--sm);
+  }
+
+  .grid .text {
+    font-size:18px;
+  }
+
+  .grid2 .text {
+    font-size:24px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+  
+  .wide-right {
+    width:45%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  .side-by-side .text {
+    font-size: 24px;
+  }
+}
