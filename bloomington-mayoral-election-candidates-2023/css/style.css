@@ -1,0 +1,465 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/b4333838-86b1-4051-bc1c-4ab7afd60a9b.original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  font-size:36px;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container h2 {
+  font-size:24px;
+}
+
+.headline-container {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.profile-title {
+  color:rgb(20,20,20);
+  text-shadow:none;
+  margin:0;
+  margin-top:1em;
+}
+
+.explain {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight:400;
+  font-size:18px;
+  margin-top:8px;
+  margin-bottom:0;
+}
+
+.to-top {
+  float:right;
+  margin:0;
+}
+
+.column li:before {
+  content: "\00BB";
+  padding-right:6px;
+  font-weight: 600;
+}
+
+.column li {
+  font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  list-style-type:none;
+  line-height:1.8;
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* This is for the Profile Cards */
+
+.container {
+  max-width: var(--medium);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:15px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-around;
+  width:fit-content;
+}
+
+.border {
+  height:97%;
+    width:95%;
+  background: transparent;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 15px;
+}
+.card0 {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/89f2637a-d15d-4310-918f-82f87198d895.original.jpeg') center top no-repeat;
+  background-size: 300px;
+}
+
+.card1 {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/0ed5f803-bdf8-48ea-ab9f-283fd34e97ad.original.jpeg') center top no-repeat;
+  background-size: 400px;
+}
+
+.card2 {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/e3e0f5ca-62c7-4655-9984-a84d16041801.original.jpeg') 60% top no-repeat;
+  background-size: 420px;
+}
+
+.card3 {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/e927c2c2-16b9-4c32-9276-a9ffe9afa509.original.jpeg') center 40% no-repeat;
+  background-size: 450px;
+}
+
+.card h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+}
+
+.icons {
+  position: absolute;
+  height: 15%;
+  top: 65%;
+  width:7%;
+  text-decoration: none;
+}
+
+.icons a{
+  position: relative;
+  text-decoration:none;
+  display: block;
+  border:none;
+  margin:8px;
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.icons li {
+  list-style-type:none;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .container {
+    max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    margin-left:18vw;
+    margin-right:10vw;
+  }
+
+  .card{
+    margin-left: 15px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .no-tablet{
+    display:none;
+  }
+
+  .tablet {
+    display:block;
+  }
+
+  .headline-container h1 {
+    font-size:48px;
+  }
+
+  .headline-container h2 {
+    font-size:36px;
+  }
+
+  .container {
+    max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .columns {
+    display:flex;
+    gap:30px;
+    margin-left: 5vw;
+    margin-right:8vw;
+  }
+  .column {
+    width:50vw;
+  }
+
+  .overflow {
+    margin-left: 5vw;
+    margin-right:8vw;
+  }
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  .no-tablet {
+    display:block;
+  }
+
+  .tablet {
+    display:none;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .headline-container h2 {
+    font-size: 34px;
+  }
+
+  .columns {
+    margin:0;
+  }
+
+  .overflow {
+    margin:0;
+  }
+
+  /* Cool desktop hover effects */
+
+  .card h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 20px;
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .card .fa .fab {
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .border {
+    height:97%;
+    width:95%;
+  background: transparent;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid white;
+  opacity:0;
+  }
+
+
+  .border:hover {
+    opacity:1;
+    transition:1s;
+  }
+
+  .card0:hover {
+    background: url('https://s3.amazonaws.com/snwceomedia/ids/89f2637a-d15d-4310-918f-82f87198d895.original.jpeg') 30% 30% no-repeat;
+    background-size: 450px;
+  }
+
+  .card0:hover .fa {
+      opacity: 1;
+  }
+
+  .card0:hover h2 {
+      opacity: 1;
+  }
+
+  .card1:hover {
+    background: url('https://s3.amazonaws.com/snwceomedia/ids/0ed5f803-bdf8-48ea-ab9f-283fd34e97ad.original.jpeg') 35% 15% no-repeat;
+    background-size: 600px;
+}
+  .card1:hover .fa {
+      opacity: 1;
+  }
+
+  .card1:hover h2 {
+      opacity: 1;
+  }
+
+.card2:hover {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/e3e0f5ca-62c7-4655-9984-a84d16041801.original.jpeg') 50% 20% no-repeat;
+  background-size: 650px;
+}
+
+.card2:hover .fa {
+opacity: 1;
+}
+
+.card2:hover h2 {
+opacity: 1;
+}
+
+.card3:hover {
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/e927c2c2-16b9-4c32-9276-a9ffe9afa509.original.jpeg') 43% 30% no-repeat;
+  background-size: 650px;
+}
+
+.card3:hover .fa {
+opacity: 1;
+}
+
+.card3:hover h2 {
+opacity: 1;
+}
+
+.container {
+  max-width: var(--medium);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  .headline-container h1 {
+    font-size: 72px;
+  }
+  
+  .headline-container h2 {
+    font-size: 36px;
+  }
+  
+  .card {
+    margin-top:0;
+  }
+
+  .border {
+    height:97%;
+    width:95%;
+    background: transparent;
+    border-radius: 8px;
+    position: relative;
+    border: 1px solid white;
+    opacity:0;
+    }  
+
+  .container {
+    width: 80vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 500px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

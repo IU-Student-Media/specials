@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Meet the candidates running for Mayor of Bloomington</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Meet the candidates running for Mayor of Bloomington" />
+    <meta property="og:description" content="Four candidates, including three Democrats and one Independent, are running for mayor." /> 
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Meet the candidates running for Mayor of Bloomington">
+    <meta name="twitter:description" content="Four candidates, including three Democrats and one Independent, are running for mayor."> 
+    <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Meet the candidates running for Mayor of Bloomington</h1>
+            <h2 data-scroll-speed="2">Four candidates, including three Democrats and one Independent, are running for mayor.</h2>
+        </div>
+    </header>
+    <!-- main article -->
+    <main>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p><i>Editor’s note: Candidate responses were sent via email and were edited for brevity, clarity and style. </i></p>
+                <p>
+                    With a four-candidate field and no incumbent, the race for mayor is already in full swing. Among the contenders are Democrats Susan Sandberg, Kerry Thomson and Don Griffin as well as Independent Joseph Davis.  
+                </p>
+                <p>
+                    Although current mayor John Hamilton is not running for reelection, the race is happening <a href="https://www.idsnews.com/article/2023/01/bloomington-city-council-police-headquarters-relocation" target="_blank" rel="noopener noreferrer">amid tensions</a> between the city council, the mayor and the county council, generating frustration that things aren’t getting done.  
+                </p>
+                <p>
+                    The big issues in this race include different approaches to achieving affordable housing, zoning controversies, <a href="https://www.idsnews.com/article/2023/01/bike-lanes-bloomington-indiana-city-council-cyclists-biker-safety-elm-heights" target="_blank" rel="noopener noreferrer">bicycle and pedestrian-friendly infrastructure</a> and <a href="https://www.idsnews.com/article/2023/02/monroe-county-residents-oppose-annexation-bloomington-city-tax" target="_blank" rel="noopener noreferrer">annexation</a>. On May 2, the city will be able to choose from the three Democrats in the primary and will make a final choice in November.  
+                </p>
+                <div id="top" style="padding-top:15px;"></div>
+                <h2 class="profile-title">Who's running for mayor?</h2>
+                <p class="show-desktop no-tablet explain">Hover over the candidate to see more, click their name to jump to their bio.</p>
+                <p class="show-mobile tablet explain">Tap a candidate's name to jump to their bio.</p>
+                </div>
+                    <div class="container">
+                        <!--I can only get these anchor links to work if they are surrounding the h2 tag. Otherwise they override the icon links or create weird happenings with the grid element. We will just have to say that you have to tap/click the candidate's name. They do work, though, and I adjusted the spacing a little so that when you click it the IDS nav bar doesn't cover up the top of the section.-->
+                                <div class="card card0">
+                                    <div class="border">
+                                    <a href="#Susan">
+                                    <h2>Susan Sandberg</h2>
+                                    </a>
+                                    <div class="icons">
+                                    <li>
+                                        <a href="https://www.susan-sandberg.com/meet-susan" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Sandberg4Mayor" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/susansandberg2023" target="_blank" rel="noopener noreferrer">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    </div>
+                                    </div>
+                                </div>
+                        <div class="card card1">
+                            <div class="border">
+                            <a href="#Kerry">
+                            <h2>Kerry Thomson</h2>
+                            </a>
+                            <div class="icons">
+                                <a href="https://kerryforbloomington.com//" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                                <a href="https://twitter.com/kerryforbtown" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.facebook.com/kerryforbloomington" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/kerryforbloomington/?fbclid=IwAR28oi2WeLX4OAzieWO0Drltl-U9wq8lCchEhnWLQZf7imSGLHmyOpjd-34" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>                
+                        <div class="card card2">
+                            <div class="border">
+                                <a href="#Don">
+                                <h2>Don Griffin</h2>
+                                </a>
+                                <div class="icons">
+                                    <a href="https://www.griffinformayor.org/" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://twitter.com/griffinforbtown" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/griffin4mayor" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/griffinforbtown/?next=%2F" target="_blank" rel="noopener noreferrer">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                            <div class="card card3">
+                                <div class="border">
+                                    <a href="#Joseph">
+                                    <h2>Joseph Davis</h2>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                <div class="story">
+                    <div id="Susan" style="padding-top:10px;"></div>
+                    <h3>Susan Sandberg (D)</h3>
+                    <div class="columns">
+                        <div class="column">
+                            <p>
+                                Susan Sandberg currently serves as an at-large member of the city council. A former IU Singing Hoosier and member of Bloomington's ukulele band, the UkeTones, Sandberg said she is a longtime supporter of the arts and understands the contribution to the city’s vibrant culture and economy provided by arts organizations and venues.    
+                            </p>
+                            <p>
+                                Sandberg recently retired from her job as a Career Services consultant with the IU O'Neill School of Public and Environmental Affairs. Other jobs she’s had include working for the Green and Monroe County Departments of Child Services as an investigator and ongoing case manager, which she said gave her an appreciation for the challenges faced by vulnerable families in the community.    
+                            </p>
+                        </div>
+                        <div class="overflow show-mobile">
+                            <p>
+                                Sandberg is an IU graduate with a bachelor’s degree in psychology. 
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p>
+                                <b>Why she is running:</b>
+                            </p>
+                            <p>
+                                Sandberg said she is running for mayor to make Bloomington a safer and more affordable place to live, build trust with community partners and prioritize essential public services and infrastructure, like streets, sidewalks, sanitation, water utilities, transit and emergency services. She said these are critical to support growth and withstand challenges from climate change.   
+                            </p>
+                            <p>
+                                <b>Priorities:</b>
+                            </p>
+                            <ul>
+                                <li>Support for the arts</li>
+                                <li>Safety</li>
+                                <li>Affordability</li>
+                                <li>Infrastructure</li>
+                                <li>Climate change</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="overflow show-desktop">
+                        <p>
+                            Sandberg is an IU graduate with a bachelor’s degree in psychology. 
+                        </p>
+                    </div>
+                    <p class="to-top">
+                        <a href="#top">To top</a>
+                    </p>
+                    <br>
+                    <!-- AD BLOCK -->
+                <div class="ad-block">
+                    <p class="ad-caption">Advertisement</p>
+                    <div class="ad-code">
+                        <div id='div-gpt-ad-1512489859064-2' align="center">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-2'); }); 
+                            </script>
+                        </div>
+                    </div>
+                </div> 
+                <!-- END AD BLOCK -->
+                <div id="Kerry" style="padding-top:10px;"></div>
+                <h3>Kerry Thomson (D)</h3>
+                <div class="columns" id="Kerry">
+                    <div class="column">
+                        <p>
+                            As former CEO of Habitat for Humanity of Monroe County, Kerry Thomson said she took over the organization while it was in debt and transformed it. Thomson said she created unprecedented growth for the organization, including a $6 million mortgage portfolio and hundreds of thousands of dollars in investments to allow the organization to build homes for more than 400 people.  
+                        </p>
+                        <p>
+                            After 20 years of service with Habitat, Thomson became the executive director of IU’s Center for Rural Engagement in 2018. In this role, she leads efforts to create results-driven initiatives to improve the quality of life and economic vitality of rural communities. Since leading the center, she has expanded its reach into 50 counties, impacting 20,000 Hoosiers through 300 different projects.</p>
+                </div>
+                <div class="overflow show-mobile">
+                    <p>
+                        An avid cyclist, Thomson has served on boards at IU Credit Union, Indiana Habitat for Humanity, Habitat for Humanity International’s U.S. Council and the Tithe Advisory Board. She is married to an IU physicist professor and lives in Elm Heights with her five children.  
+                    </p>
+                </div>
+                    <div class="column">
+                        <p>
+                            <b>Why she’s running:</b>
+                        </p>
+                        <p>
+                            A lifelong Democrat, Thomson said she is running for mayor to address some of the city’s problems she believed have been long neglected. Her priorities include addressing the lack of affordable housing, the drug and mental health crisis she believes is plaguing downtown, better assisting unhoused residents and ending the political infighting and finger-pointing that Thomson believes has stalled progress in the city. After spending her career working to build better communities, Thomson said she wants to bring real progress, change and a new approach to city hall. 
+                        </p>
+                        <p>
+                            <b>Priorities:</b> 
+                        </p>
+                        <ul>
+                            <li>Affordable housing</li>
+                            <li>Drug and mental health issues</li>
+                            <li>Homelessness</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="overflow show-desktop">
+                    <p>
+                        An avid cyclist, Thomson has served on boards at IU Credit Union, Indiana Habitat for Humanity, Habitat for Humanity International’s U.S. Council and the Tithe Advisory Board. She is married to an IU physicist professor and lives in Elm Heights with her five children.  
+                    </p>
+                </div>
+                <p class="to-top"><a href="#top">To top</a></p>
+                <div id="Don" style="padding-top:10px;"></div>
+                <h3>Don Griffin (D)</h3>
+                <div class="columns">
+                    <div class="column">
+                        <p>
+                            Donald Griffin Jr. was born and raised in Bloomington. He founded Griffin Realty Holdings, Inc. in 2003, which he still owns and leads. He was appointed deputy mayor of Bloomington by Hamilton in March of 2021 and served in this role through December 2022.  
+                        </p>
+                        <p>
+                            During his time as deputy mayor, Griffin oversaw 16 city departments and 850 employees. He collaborated with other city leaders to implement policies related to affordable housing, investments in the arts, diversity, equity and inclusion, improving quality of life and addressing homelessness. Griffin said he had an extensive record of civic engagement in the areas of racial justice, community development and the arts.  
+                        </p>
+                    </div>
+                    <div class="overflow show-mobile">
+                        <p>
+                            Griffin has also served as president of the city’s Redevelopment Commission, president and co-founder of the Monroe County Black Democratic Caucus and vice president of the Monroe County branch of the NAACP. He is also a board member for the Monroe County History Center, Bloomington Board of Realtors and the Eskenazi Museum of Art.  
+                        </p>
+                        <p>
+                            Griffin’s past service includes being on the boards of Habitat for Humanity of Monroe County and the Lotus World Music Festival. Griffin also contributed to the development of the City’s Growth Policy Plan and has served on the Bloomington Hospital Revitalization Committee.  
+                        </p>
+                        <p>
+                            Griffin and his wife, Nicole, have one son. Their son, Dexter, is a senior at IU studying at the Jacobs School of Music in the opera department. Griffin, Nicole and Dexter all attended University School in Bloomington. 
+                        </p>
+                    </div>
+                    <div class="column">
+                    <p>
+                        <b>Why he’s running:</b> 
+                    </p>
+                    <p>
+                        Griffin said he is running for mayor because he believes in Bloomington.  
+                    </p>
+                    <p>
+                        “Together, we must focus on sustainability, creating a community where we all belong, innovative housing solutions, and economic and cultural growth,” Griffin said. “Bloomington should be a shining example of a city with a high quality of life that is accessible to everyone.” 
+                    </p>
+                    <p>
+                        <b>Priorities:</b> 
+                    </p>
+                    <ul>
+                        <li>Sustainability</li>
+                        <li>Diversity, equity and inclusion</li>
+                        <li>Housing</li>
+                        <li>Economic and cultural growth</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="overflow show-desktop">
+                    <p>
+                        Griffin has also served as president of the city’s Redevelopment Commission, president and co-founder of the Monroe County Black Democratic Caucus and vice president of the Monroe County branch of the NAACP. He is also a board member for the Monroe County History Center, Bloomington Board of Realtors and the Eskenazi Museum of Art.  
+                    </p>
+                    <p>
+                        Griffin’s past service includes being on the boards of Habitat for Humanity of Monroe County and the Lotus World Music Festival. Griffin also contributed to the development of the City’s Growth Policy Plan and has served on the Bloomington Hospital Revitalization Committee.  
+                    </p>
+                    <p>
+                        Griffin and his wife, Nicole, have one son. Their son, Dexter, is a senior at IU studying at the Jacobs School of Music in the opera department. Griffin, Nicole and Dexter all attended University School in Bloomington. 
+                    </p>
+                </div>
+                <p class="to-top"><a href="#top">To top</a></p>
+                <br>
+                <!-- AD BLOCK -->
+                <div class="ad-block">
+                    <p class="ad-caption">Advertisement</p>
+                    <div class="ad-code">
+                        <div id='div-gpt-ad-1512489859064-3' align="center">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-3'); }); 
+                            </script>
+                        </div>
+                    </div>
+                </div> 
+                <!-- END AD BLOCK -->
+                <div id="Joseph" style="padding-top:10px;"></div>
+                <h3>Joseph Davis (I)</h3>
+                <div class="columns">
+                    <div class="column">
+                        <p>
+                            “Born of a multigenerational farm family in Cass Co., Indiana, I am a regular Joe who was taught the values of a supportive community, stewardship of the environment, self-sufficiency, and entrepreneurship,” Davis said.   
+                        </p>
+                        <p>
+                            Davis calls himself a Bloomington transplant, having lived here for 30 years. He has worked as an organic farm producer among other self-employment ventures, but his longest jobs were as a community activist for the Center for Sustainable Living and the owner and operator of Indiana Natural Builders, a sustainable architecture firm.   
+                        </p>
+                        <p>
+                            After retiring from his building career, Davis began pursuing a sustainable tech startup called <a href="https://www.ccx.cool/" target="_blank" rel="noopener noreferrer">Community Carbon Exchange</a>. The startup rewards people who conduct planet-friendly behaviors with money. 
+                        </p>
+                        <p>
+                            Davis said his family and community taught him to place others’ needs before his own, which has since become a key part of his philosophy.    
+                        </p>
+                        <p>
+                            “The sun shines on everyone, and there is plenty to go around,” Davis said.    
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p><b>Why he's running:</b></p>
+                        <p>
+                            Davis said serving as mayor, or local offices in general, is about serving the people.   
+                        </p>
+                        <p>
+                            “The lights must be on. The water must be clean. The trash must be picked up. The citizenry must be safe,” Davis said.   
+                        </p>
+                        <p>
+                            Davis said he believes that governance in the city has been harmed by partisanship, what Davis sees as a predatory real estate market and a reliance on outside consultants.  
+                        </p>
+                        <p>
+                            “Outsourcing our future is not the answer,” Davis said.  
+                        </p>
+                        <p>
+                            Davis also lamented inflation and unchecked borrowing as issues in the city. A major focus of his campaign is self-empowerment, and Davis said he would donate half of his mayoral salary to self-empowerment initiatives. 
+                        </p>
+                        <p>
+                            “It is time to dig in,” he said. “Nourish our roots, protect, and let the enfolding flower of our best bloom for our Bloomington.” 
+                        </p>
+                        <p>
+                            <b>Priorities:</b>
+                        </p>
+                        <ul>
+                            <li>Transparency and accountability</li>
+                            <li>Universal basic income, $1000 per month, per citizen </li>
+                            <li>No prosecution for minimal amounts of THC possession </li>
+                            <li>Maintaining or reducing local income tax</li>
+                            <li>Increasing homeownership</li>
+                            <li>Supporting police, fire and utility union workers</li>
+                            <li>Eliminating partisan politics</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="to-top">
+                    <a href="#top">To top</a>
+                </p>
+                <div style="padding:10px;"><!--Why do i have to do this to seperate the link from the bios??????--></div>
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
