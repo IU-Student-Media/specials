@@ -1,12 +1,12 @@
 const data = {
-    "url": "your-url-here",
+    "url": "beaver-relocation-iu-campus-river",
     "slug": "",
-    "headline": "This is the headline",
-    "title": "Buildout Template",
-    "pub_date": "02/08/2023",
+    "headline": "Dam, what ever happened to the beaver on IU's campus?",
+    "title": "",
+    "pub_date": "03/03/2023",
     "bylines": {
         "By": {
-            "name": "Bardley Hohulin",
+            "name": "Bradley Hohulin",
             "email": "bhohulin@iu.edu"
         },
         "Photos by": {
