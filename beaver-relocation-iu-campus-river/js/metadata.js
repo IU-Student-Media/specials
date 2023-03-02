@@ -2,7 +2,7 @@ const data = {
     "url": "beaver-relocation-iu-campus-river",
     "slug": "",
     "headline": "Dam, what ever happened to the beaver on IU's campus?",
-    "title": "",
+    "title": "Campus River Beaver",
     "pub_date": "03/03/2023",
     "bylines": {
         "By": {
