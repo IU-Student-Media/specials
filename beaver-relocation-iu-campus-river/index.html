@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro:wght@400;700&family=Kanit&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Abstract" /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+    <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+        
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Dam, what ever happened to the beaver on IU&rsquo;s campus?</h1>
+            <h2 data-scroll-speed="3">A beaver made its home at IU, but met resistance from the university</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption"></p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            
+            <div id="story" class="story">
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+
+                <img class="beaver_img" id="beaver" src="/images/beaver.png">
+            
+
+                <p>There was a beaver on IU&rsquo;s Campus River. </p>
+
+                <p>For 13 weeks, it did as thousands of freshmen do every fall semester, steadily working to make IU its home. When students departed for Thanksgiving break, the beaver remained in its campus housing, recently winterized with extra mud.  </p>
+                    
+                <p>When the students returned, campus was short of its largest rodent. What happened to the beaver remained a mystery tangled up in sticks and leaves.  </p>
+                    
+                <p class="section-break">•••</p>
+                    
+                <p class="dropcap">Late in the morning of Saturday Nov. 5, Greg Eismin took his sons Tyto and Haya to the Wendell W. Wright Education Building for the School of Education&rsquo;s Saturday Science program.  </p>
+                    
+                <p>Strolling by the stretch of Campus River that flows about 150 paces north of the Education Building&rsquo;s entrance, the Eismins discovered trees with chunks missing near their bases. They also noticed the water below the path connecting Seventh Street and the Education Building was unusually high.  </p> 
+                    
+                <p>That Saturday, the boys&rsquo; science lesson would suddenly feature a crash course in wetland ecology. </p>
+                    
+                <p>The Eismins found a dam made of interwoven twigs and leaves, then met its architect — a large gray and brown beaver, roughly one yard long from orange buck teeth to broad brown tail.  </p> 
+                    
+                <p>Seemingly absorbed in the task at hand, the industrious rodent allowed the Eismins to get within 20 feet as it added little touches to its lodge just downstream of the dam. It glided through the water, using its hind feet as paddles and its tail as a rudder. Once the beaver found a leaf that was up to code, it clutched it in its rear teeth and swam back to the lodge. The steadfast critter did this several times.   </p>
+
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/87fd69d4-d122-4cc8-8585-819c7b92d17a.original.jpg" alt="beaver knawing on wood">
+                    <figcaption>
+                    <p class="credit">Michael Claycamp | <b>IDS</b></p>
+                    </figcaption>
+                </figure>
+                    
+                <p>The beaver couldn&rsquo;t know that its abode had been condemned. In less than a month, its craftsmanship would be undone. </p>
+                    
+                <p>As Eismin&rsquo;s sons watched, they began referring to the furry engineer with two simple letters: BB. They tended to describe BB as a she, though whether the beaver is male or female remains a mystery. Determining a beaver&rsquo;s sex requires a degree of physical intimacy best reserved for professionals and other beavers.</p>
+                    
+                <p>Physical characteristics aside, a beaver&rsquo;s sex is still difficult to distinguish behaviorally. Animal taxonomists consider Castor canadensis a matriarchal species with little difference between the roles of males and females. Both build dams, both slap their tails against the earth to ward off potential predators, both hone their ever-growing front teeth on the trunks of trees that tower above them.</p>
+
+                <!-- AD BLOCK -->
+                <div class="ad-block">
+                    <p class="ad-caption">Advertisement</p>
+                    <div class="ad-code">
+                        <div id='div-gpt-ad-1512489859064-2' align="center">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-2'); }); 
+                            </script>
+                        </div>
+                    </div>
+                </div> 
+                <!-- END AD BLOCK -->
+                    
+                <p>While their physical adaptations make beavers excellent survivalists, beavers&rsquo; capacity for destruction can make them unwelcome in urban settings.</p>
+                    
+                <p>Steve Cotter, 60, is a natural resources manager with Bloomington Parks and Recreation. Through 26 years in his position, he has overseen beaver removals at Griffy Lake Nature Preserve and Miller-Showers Park. </p>
+                    
+                <p>Cotter said it&rsquo;s fairly common for beavers to wander from a bigger wetland and settle in a more urban setting. BB may have come from Griffy or Miller-Showers or another body of water entirely.</p>
+
+            </div>
+
+            <div class="pull-quote-center">
+                <p class="quote">"He probably just was looking for a good place and decided to give it a shot there."</p>
+                <p class="attribute">— Steve Cotter</p>
+            </div>
+
+            <div class="story">
+                    
+                <p>But when beavers build dams near human populations, they can cause treefall or flooding, putting nearby buildings, walkways and utility lines at risk.</p>  
+                    
+                <p>Cotter said Parks and Recreation typically tries to relocate beavers, but when it isn&rsquo;t possible to find a nearby location whose owners will accept a beaver, euthanasia is a common management method.</p>
+                    
+                <p>Even then, trappers often use live traps to capture the beaver before moving and euthanizing it. Lethal traps, while unlikely to kill humans, use enough force to be dangerous to unsuspecting passerby. </p>
+                    
+                <p>If relocation is on the table, trappers use bait like carrots and other vegetables to lure beavers into cages, then transport them to a more suitable location. Once the beaver is removed, property owners can dismantle the dam.</p>
+                    
+                <p class="section-break">•••</p>
+                    
+                <p>Around 10 a.m. on Friday, Nov. 11, Eismin rode his bike by BB&rsquo;s lodge and noticed a live trap about 10 feet from it. When he returned an hour later, he saw an IU facility operations truck parked on the grass halfway between the lodge and Seventh Street.</p>
+                    
+                <p>Eismin asked a facility operations employee on the scene whether he had caught the beaver.</p>
+                    
+                <p>“Nope.”</p>
+                    
+                <p>The trap had been triggered, and a note had been left.</p>
+                    
+                <p>“What it say?” Eismin asked.</p>
+                    
+                <p>“Let him be.”</p>
+                    
+                <p>Eismin was excited that someone else had noticed the beaver, even more so that they had taken an activist stance.</p>
+
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f2d2ec03-2d22-4834-8880-addaf25fed9c.original.jpg" alt="BB looking at the camera">
+                    <figcaption>
+                    <p class="credit">Michael Claycamp | <b>IDS</b></p>
+                    </figcaption>
+                </figure>
+                    
+                <p>About 24 hours earlier, IU sophomore Jack Layden saw a facility operations truck driving down Seventh Street in the direction of the sparsely wooded area. He wasn&rsquo;t sure what the truck was for, but when he visited the lodge shortly thereafter, he noticed the cage-like trap and a camera stationed in a nearby tree. </p>
+                    
+                <p>It&rsquo;s possible Layden knew about BB longer than anyone else on IU&rsquo;s campus. He had hardly walked 100 yards from his apartment one hot August day when he noticed a tree had fallen close to the sidewalk leading to the Education Building. He walked down to the bank of the stream, where he found BB and her home in its early stages of construction.</p>
+                    
+                <p>“He&rsquo;s got a dorm and everything in his dam,” Layden said. “He&rsquo;s trying to get an education.”</p>
+                    
+                <p>Layden regularly visited his “beaver friend” throughout the semester. He thought it was cool that campus featured a beaver, and he didn&rsquo;t fully sympathize with IU&rsquo;s efforts to change that.</p>
+
+                <!-- AD BLOCK -->
+                <div class="ad-block">
+                    <p class="ad-caption">Advertisement</p>
+                    <div class="ad-code">
+                        <div id='div-gpt-ad-1512489859064-3' align="center">
+                            <script>
+                                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1512489859064-3'); }); 
+                            </script>
+                        </div>
+                    </div>
+                </div> 
+                <!-- END AD BLOCK -->
+                    
+                <p>“What&rsquo;s your problem?” he said. “It&rsquo;s an adorable little creature that drags sticks around and I don&rsquo;t get why they&rsquo;d want to get rid of it.”</p>
+                    
+                <p>So when Layden saw the cage and the camera that Thursday morning in November, he picked up a nearby stick and without hesitating, triggered the trap. Then, he tore a sheet from the same notebook he uses for classes, penciled a few words and left a note on the now-harmless trap.</p>
+                    
+                <p>The note, an abridged version of which would later be read to Eismin, said:</p>
+
+                <div class="pull-quote-center">
+                    <p class="quote">“Leave him be(aver).”</p>
+                </div>
+                    
+                <p>“Might have undercut my message,” Layden admitted.</p>
+                    
+                <p>Nonetheless, Friday afternoon the trap was gone and BB was still there. She cut down the tree in which the camera was perched shortly after.</p>
+                    
+                <p class="section-break">•••</p>
+                    
+                <p>At 7 p.m. that evening, the water upstream of the lodge was nearly still. The early nightfall of mid-November had blanketed the humble wetland in a darkness punctuated only by the faint outline of a pair of stocky hindquarters and the staccato crunch of enamel on vegetation.</p>
+                    
+                <p>Crouched on a rock just below the pool&rsquo;s surface, BB quietly munched on her dinner as slivers of moonlight cast flickers across her sleek coat and tiny black eyes. By morning, a light snowfall would dust the roof of her dwelling and chill the water around it. She had avoided man&rsquo;s metallic grasp; now she awaited Mother Nature&rsquo;s cool embrace.</p>
+
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/3606da77-aa2f-427f-98ef-c0b40748eda9.original.jpg" alt="BB posing">
+                    <figcaption>
+                    <p class="credit">Michael Claycamp | <b>IDS</b></p>
+                    </figcaption>
+                </figure>
+                    
+                <p>But more traps can be set, and IU wasn&rsquo;t done trying.</p>
+                    
+                <p>On Nov. 30, IU biology professor Roger Hangarter informed the Indiana Daily Student via email that he had seen two men with traps attempting to snare the beaver one night over Thanksgiving break. Several of his students who frequently passed the beaver&rsquo;s lodge told him they had not seen the beaver since returning from break.</p>
+                    
+                <p>The water that once pooled inches below the creek&rsquo;s banks now trickles past a mangled pile of twigs that used to be BB&rsquo;s home. The trees that were in constant danger of falling three months ago now stand without so much as a bite mark. </p>
+
+                <p class="section-break">•••</p>
+                    
+                <p>Two miles northeast of the Education Building sits University Lake. The modest 8-acre reservoir was IU&rsquo;s primary water source from 1911 to 1924 in an effort to combat a series of water shortages. Today, University Lake serves as a restricted site where IU students and faculty can conduct research.  </p>
+                    
+                <p>And late last November, it welcomed a furry, buck-toothed traveler in need of a home.</p>
+                    
+                <p>BB was removed from Campus River on Nov. 23, Keith Thompson, assistant vice president of facility operations, told the IDS on Feb. 14. While Thompson declined to name the third-party contractor that captured BB, he said he has seen documentation confirming her safe relocation to University Lake.</p>
+                    
+                <p>Thompson said the university removed BB for precautionary reasons. IU became aware of the beaver in late October and believed continued treefall created a safety issue.</p>
+                    
+                <p>“It became an unsafe situation for the students in that area,” Thompson said.</p>
+
+                <p>Over the course of 13 weeks, BB single-handedly raised the Campus River's waterline several inches so that it rested just below the creek's banks. She littered the clearing around her homestead with bare trees that came to pale yellow points like freshly sharpened pencils. </p>
+
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fc3b8e95-668a-4f40-8d22-6a49fa26760c.original.jpeg" alt="cut down trees">
+                    <figcaption>
+                    <p class="credit">Michael Claycamp | <b>IDS</b></p>
+                    </figcaption>
+                </figure>
+
+                <p>But her appetite for wood and destruction was untenable in the eyes of the university where she resided. University Lake, closed off to the public, offers the occasionally destructive rodent a fresh start. </p>
+
+                <p class="section-break">•••</p>
+
+                <p>While BB was moving into her new lodgings, decorating her home and meeting wetland neighbors, she was not forgotten at her old stomping grounds. </p>
+
+                <p>Late in the afternoon of Saturday, Nov. 26, IU&rsquo;s campus was still and quiet as students steadily trickled back in from break. In front of the Education Building, the Campus River once again flowed largely unimpeded.</p>
+
+                <p>Partially muted by the babble of the stream, footsteps could be heard on the footbridge of the path between Seventh Street and the Education Building. Walking in the shade cast by a golden sunset, a group of three students turned their heads in the direction of the dilapidated lodge. </p>
+
+                <p>“I love you,” a young woman called out to the water. One of her companions echoed the sentiment. </p>
+
+                <p>Their words of affection fell like the setting sun upon the creek&rsquo;s glistening surface. </p>
+
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
