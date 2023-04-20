@@ -1,6 +1,6 @@
 const data = {
     "url": "members-allege-spiritual-abuse-high-rock-church-bloomington-network",
-    "slug": "Spiritual Abuse High Rock Church Network Bloomington",
+    "slug": "High Rock Spiritual Abuse",
     "headline": "Former members of Bloomington’s High Rock Church allege spiritual abuse",
     "title": "High Rock Church harmed people in the pursuit of growth, former members say.",
     "pub_date": "Apr. 20",
