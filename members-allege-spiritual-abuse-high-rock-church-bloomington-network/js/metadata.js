@@ -1,9 +1,9 @@
 const data = {
-    "url": "members-allege-spiritual-abuse-high-rock-church-bloomington-network  ",
-    "slug": "High Rock Church Spiritual Abuse",
-    "headline": "High Rock Church harmed people in the pursuit of growth, former members say.",
+    "url": "members-allege-spiritual-abuse-high-rock-church-bloomington-network",
+    "slug": "Spiritual Abuse High Rock Church Network Bloomington",
+    "headline": "Former members of Bloomington’s High Rock Church allege spiritual abuse",
     "title": "High Rock Church harmed people in the pursuit of growth, former members say.",
-    "pub_date": "Apr. 3",
+    "pub_date": "Apr. 20",
     "bylines": {
         "By": {
             "name": "Marissa Meador",
@@ -14,7 +14,8 @@ const data = {
         },
         "Photos by": {
             "name": "Marissa Meador",
-            "email": "marnmead@iu.edu",
+            "email": "izzymyszak@iu.edu",
+            "twitter": "izzymyszak"
         },
         "Design and development by": {
             "name": "Kara Adams",
@@ -24,9 +25,9 @@ const data = {
             "bio": "Kara has worked at the IDS since 2022 as a web and graphic designer."
         },
         "Graphics by": {
-            "name": "",
-            "email": "",
-            "twitter": ""
+            "name": "Vivek Rao",
+            "email": "vivrao@iu.edu",
+            "twitter": "vivrao"
         }
     }
 }
