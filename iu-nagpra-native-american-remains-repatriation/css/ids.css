@@ -928,7 +928,8 @@ footer .socials a {
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default */
 
-.show-desktop {
+.show-desktop,
+.show-desktop-inline {
     display: none;
     margin: none;
     padding: none;
@@ -936,6 +937,10 @@ No media query for `xs` since this is the default */
 
 .show-mobile {
     display: block;
+}
+
+.show-mobile-inline {
+    display: inline;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -959,7 +964,12 @@ No media query for `xs` since this is the default */
         display: block;
     }
 
-    .show-mobile {
+    .show-desktop-inline {
+        display: inline;
+    }
+
+    .show-mobile,
+    .show-mobile-inline {
         display: none;
         padding: 0 !important;
     }
