@@ -1,0 +1,605 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --lightgray: rgb(230, 230, 230);
+}
+
+header {}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: var(--lightgray);
+  /* text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
+  font-weight: 600;
+  /* padding: 0 var(--sm); */
+}
+
+h1 {
+  /* top headline */
+  margin-top: 0;
+  /* padding-top: 2.0em; */
+  font-size: 24px;
+  line-height: 1.4em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: .5em;
+}
+
+h2 {
+  /* second headline */
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  margin-bottom: .75em;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: .5em;
+  line-height: 1.4em;
+}
+
+h3 {
+  /* subhed */
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h4 {
+  /* graphic hed */
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+#methodology h4 {
+  margin: 1.0em 0 .5em;
+}
+
+h5 {
+  /* graphic subhed */
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: 1.3em;
+}
+
+.topper {
+  background-color: rgb(39, 39, 39);
+  padding-bottom: var(--md);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--lg);
+  padding: 72px var(--md) var(--sm);
+}
+
+.imagegrid {
+  padding: var(--md) 0;
+  margin: 0 auto;
+}
+
+.imagegrid img {
+  border-radius: 10px;
+  box-shadow: 5px 3px 15px rgba(39, 39, 39, .6);
+  width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.imagegrid .topper-img-1 {
+  grid-row: 1 /8;
+  grid-column: 1 /10;
+  animation: fade-in 1s forwards;
+}
+
+.imagegrid .topper-img-2 {
+  grid-row: 6/14;
+  grid-column: 4/15;
+  animation: fade-in 1s forwards 1s;
+  opacity: 0;
+}
+
+.imagegrid .topper-img-3 {
+  grid-row: 12/20;
+  grid-column: 1 /11;
+  animation: fade-in 1s forwards 2s;
+  opacity: 0;
+}
+
+.topper div {
+  padding-top: var(--sm);
+  order: -1;
+}
+
+p.topper-caption {
+  margin-bottom: var(--lg);
+}
+
+/* dropcap */
+.section-break+p:first-letter,
+p.drop-cap:first-letter {
+  font-family: 'Source Serif Pro', 'Times New Roman', serif;
+  font-weight: 800;
+  float: left;
+  font-size: 4.0em;
+  line-height: 0.65;
+  margin: 0.08em 0.07em 0 0;
+  color: var(--darkgray);
+}
+
+.graphic-footnote {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.definition-card {
+  background-color: var(--lightgray);
+  border-radius: 15px;
+  padding: var(--sm) var(--md) var(--md);
+  /* max-width: 80%; */
+}
+
+.definition-card p {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+p.word {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+p.definition {
+  font-size: 16px;
+  margin: 0.5em 0;
+}
+
+.definition-card p.source {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  /* font-weight: bold; */
+  /* text-align: right; */
+  color: var(--darkgray);
+  margin: 0;
+}
+
+#strip-chart {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#strip-chart .tick text {
+  font-family: "Fira Sans";
+  font-size: 8px;
+}
+
+.strip-box,
+.strip-box:hover {
+  transition: stroke 1s ease-in-out;
+}
+
+.iu-strip,
+.IU {
+  stroke: #990000 !important;
+  stroke-width: 2px;
+  /* fill: #990000 !important; */
+  opacity: 1 !important;
+}
+
+#bubble-map {
+  width: 100%;
+  /* max-width: 1200px; */
+  /* width: 00px; */
+  padding: 0 var(--sm);
+  margin: 0 auto;
+}
+
+#inventory-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  max-width: var(--width-lg);
+  padding: 0 var(--sm);
+  display: block;
+  margin: 0 auto;
+  font-family: "Fira Sans", sans-serif;
+  max-height: 500px;
+  overflow: scroll;
+  position: relative;
+  color: rgb(80, 80, 80);
+  font-weight: 500;
+  margin-top: var(--xl);
+}
+
+#inventory-table thead {
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+}
+
+#inventory-table a:link,
+#inventory-table a:visited {
+  color: rgb(80, 80, 80);
+  border-bottom-color: rgb(80, 80, 80);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#inventory-table tbody {
+  font-size: 0.9em;
+}
+
+#inventory-table td,
+#inventory-table th {
+  border: 3px solid white;
+  padding: var(--xs) var(--xs);
+  vertical-align: baseline;
+}
+
+#inventory-table td {
+  max-height: 200px;
+  overflow: scroll;
+  background-color: #f1f1f1;
+  /* white-space: nowrap; */
+}
+
+.bubble {
+  fill-opacity: .5;
+  stroke: #fff;
+  stroke-width: .25px;
+  /* fill: #eff3ff;
+  fill: #bdd7e7; */
+  fill: #084594
+    /* #eff3ff #bdd7e7 #6baed6 #3182bd #08519c */
+}
+
+.state,
+.state:hover,
+.bubble circle,
+.bubble circle:hover {
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.state:hover {
+  stroke-width: 3px;
+  stroke: white;
+  transition: .3s all;
+}
+
+.bubble circle:hover {
+  /* opacity: 1; */
+  stroke-width: 2px;
+  stroke: white;
+}
+
+.legend circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.legend text {
+  fill: #777;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.tooltip {
+  z-index: 100;
+  color: black;
+  background-color: rgba(255, 255, 255, .9);
+  padding: var(--xs) var(--sm);
+  border-radius: 5px;
+  max-width: 250px;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .1);
+  pointer-events: none;
+  /* height: 0;
+  width: 0; */
+  /* display: none; */
+}
+
+.tooltip p {
+  margin: 0;
+  font-family: "Fira Sans";
+  font-size: 15px;
+  line-height: 1.3em;
+}
+
+#beeswarm {
+  margin-bottom: var(--lg);
+}
+
+.beeswarm-circle {
+  /* box-shadow: 1px 1px 1px red; */
+  cursor: pointer;
+}
+
+.legendCells .label {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+}
+
+#beeswarm .legendTitle {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#bubble-map .legendTitle {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container svg,
+.map-legend svg {
+  margin-left: auto;
+  margin-right: 130px;
+  margin-bottom: -100px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.map-legend svg {
+  margin-left: auto;
+  margin-right: 130px;
+  margin-bottom: -80px;
+  /* padding-top: 40px; */
+  font-family: "Fira Sans", sans-serif;
+}
+
+.arrow-label {
+  font-size: 15px;
+  font-family: "Fira Sans", sans-serif;
+  fill: var(--darkgray);
+}
+
+.container .title,
+.map-legend .title {
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container .tick text,
+.map-legend .tick text {
+  font-size: 14px;
+}
+
+.container .tick line,
+.map-legend .tick line {
+  stroke: white;
+}
+
+
+
+/* svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+} */
+
+.land {
+  fill: #ddd;
+}
+
+.border {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* sidebar note */
+.sidebar-note-inner {
+  max-width: var(--medium);
+  margin: 2.0em auto;
+  padding: 0 var(--sm);
+}
+
+@media screen and (min-width: 1024px) {
+
+  .sidebar-note-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .small-spacer {
+    flex: 1 1 20%;
+  }
+
+  .sidebar-note-inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .text-spacer {
+    flex: 0 0 calc(var(--medium) - 16px);
+    pointer-events: none;
+  }
+
+  .sidebar-note {
+    flex: 1 1 20%;
+  }
+}
+
+.mug img {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.mug {
+  display: flex;
+}
+
+.mug p {
+  margin: 0;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .topper .imagegrid .topper-img-1 {
+    grid-row: 1 /8;
+    grid-column: 1 /9;
+  }
+
+  .topper .imagegrid .topper-img-2 {
+    grid-row: 6/14;
+    grid-column: 6/14;
+    /* border: 1px solid pink; */
+  }
+
+  .topper .imagegrid .topper-img-3 {
+    grid-row: 12/20;
+    grid-column: 1 /9;
+  }
+
+  .topper div {
+    order: -1;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .topper div {
+    order: 0;
+    /* padding-top: 0; */
+  }
+
+  .topper .imagegrid .topper-img-1 {
+    grid-row: 1 /8;
+    grid-column: 1 /6;
+  }
+
+  .topper .imagegrid .topper-img-2 {
+    grid-row: 4/12;
+    grid-column: 5/10;
+  }
+
+  .topper .imagegrid .topper-img-3 {
+    grid-row: 1/8;
+    grid-column: 9/14;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
