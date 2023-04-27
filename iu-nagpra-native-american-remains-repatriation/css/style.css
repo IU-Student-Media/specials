@@ -14,8 +14,6 @@
   --lightgray: rgb(230, 230, 230);
 }
 
-header {}
-
 /* 
   SET ANY MORE STYLES YOU WANT BELOW
   Be sure to delete empty declarations
@@ -62,7 +60,7 @@ h2 {
 h3 {
   /* subhed */
   font-family: 'Fira Sans', Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -144,6 +142,11 @@ h5 {
 
 p.topper-caption {
   margin-bottom: var(--lg);
+}
+
+.wide-left {
+  margin-top: 2.0em;
+  margin-bottom: 1.75em;
 }
 
 /* dropcap */
@@ -549,6 +552,15 @@ No media query for `xs` since this is the default */
 
   h2 {
     font-size: 22px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .wide-left {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .helper {
