@@ -597,6 +597,10 @@ No media query for `xs` since this is the default */
     color: black;
   }
 
+  .topper {
+    padding-bottom: 1.5em;
+  }
+
   .topper div {
     order: 0;
     /* padding-top: 0; */
