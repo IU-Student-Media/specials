@@ -3,7 +3,7 @@ const data = {
     "slug": "NAGPRA at IU",
     "headline": "Thousands of Native American remains, a legacy of offensive research and the effort to move forward",
     "title": "NAGPRA at IU",
-    "pub_date": "April 28, 2023",
+    "pub_date": "April 28, 2023 • 9 a.m.",
     "bylines": {
         "Story, graphics, design and development by": {
             "name": "Carson TerBush",
