@@ -6,7 +6,6 @@ import d3_colorLegend from "https://api.observablehq.com/@d3/color-legend.js?v=3
 */
 
 const drawMap = (countyData, stateData, us) => {
-    console.log(us)
 
     // var statemap = new Map(topojson.feature(us.objects.states).features.map(d => [d.id, d]))
 
@@ -124,9 +123,6 @@ const drawMap = (countyData, stateData, us) => {
 
     // choropleth states
     drawStates("nonzero", "color", "state").on("mouseover", (d, i) => {
-        // console.log(d.screenY)
-        // console.log(d)
-        console.log(i)
         tooltip.style("opacity", 1)
             .html(`<p>IU reported remains of at least <strong>${d3.format(',')(i.properties.mni)}</strong> individual${i.properties.mni == 1 ? '' : 's'} from <strong>${i.properties.name}</strong></p>`)
             .style("visibility", 'visible')
