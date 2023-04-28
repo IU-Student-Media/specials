@@ -142,7 +142,7 @@ const drawMap = (countyData, stateData, us) => {
         .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
         .attr("class", "border border--state")
         .attr("d", path)
-        .attr("stroke", "white")
+        .attr("stroke", "darkgray")
         .attr("stroke-width", "1px")
 
     // map the bubbles
@@ -192,11 +192,12 @@ const drawMap = (countyData, stateData, us) => {
 
 // asynchronously fetch county + state aggregate data
 const asyncCounties = async () => {
-    return d3.csv('./files/inventory_clean.csv')
+    return d3.csv('./files/inventory_counties.csv')
     // return d3.csv('https://raw.githubusercontent.com/ids-digi/nagpra/main/files/inventory_clean.csv?token=GHSAT0AAAAAACASYJVWQ74VP3TUMYLGTSHOZCF54CQ')
 }
 const asyncStates = async () => {
-    return d3.csv('./files/state_df.csv')
+    // return d3.csv('./files/state_df.csv')
+    return d3.csv('./files/inventory_states.csv')
     // return d3.csv('https://raw.githubusercontent.com/ids-digi/nagpra/main/files/state_df.csv?token=GHSAT0AAAAAACASYJVWGGILIYOJKFQQZO5AZCF54KA')
 }
 const asyncAlbers = async () => {
