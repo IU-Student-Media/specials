@@ -124,7 +124,7 @@ const drawMap = (countyData, stateData, us) => {
     // choropleth states
     drawStates("nonzero", "color", "state").on("mouseover", (d, i) => {
         tooltip.style("opacity", 1)
-            .html(`<p>IU reported remains of at least <strong>${d3.format(',')(i.properties.mni)}</strong> individual${i.properties.mni == 1 ? '' : 's'} from <strong>${i.properties.name}</strong></p>`)
+            .html(`<p>IU reported unrepatriated remains of at least <strong>${d3.format(',')(i.properties.mni)}</strong> individual${i.properties.mni == 1 ? '' : 's'} from <strong>${i.properties.name}</strong></p>`)
             .style("visibility", 'visible')
             .style("left", (d.pageX + 10) + "px")
             .style("top", (d.pageY + 10) + "px")
@@ -158,7 +158,7 @@ const drawMap = (countyData, stateData, us) => {
         .attr("r", (d) => radius(d.properties.mni))
         .on("mouseover", (d, i) => {
             tooltip.style("opacity", 1)
-                .html(`<p>IU reported remains of at least <strong>${d3.format(',')(i.properties.mni)}</strong> individual${i.properties.mni == 1 ? '' : 's'} from <strong>${i.properties.name} County, ${i.properties.state}</strong></p>`)
+                .html(`<p>IU reported unrepatriated remains of at least <strong>${d3.format(',')(i.properties.mni)}</strong> individual${i.properties.mni == 1 ? '' : 's'} from <strong>${i.properties.name} County, ${i.properties.state}</strong></p>`)
                 // .html(`<p><strong>${i.properties.name} County, ${i.properties.state}:</strong> IU still has remains of at least <strong>${d3.format(",")(+i.properties.mni)}</strong> individuals</p>`)
                 .style("visibility", 'visible')
                 .style("left", (d.pageX + 10) + "px")
