@@ -1,7 +1,7 @@
 {
-  "name": "crash-dashboard",
+  "name": "car-crash-dashboard-monroe-county",
   "version": "0.1.0",
-  "homepage": "https://carsonology.github.io/crash-dashboard",
+  "homepage": "https://specials.idsnews.com/car-crash-dashboard-monroe-county",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
