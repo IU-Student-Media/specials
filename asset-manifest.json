@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/car-crash-dashboard-monroe-county/static/css/main.8779a7db.css",
-    "main.js": "/car-crash-dashboard-monroe-county/static/js/main.0b883623.js",
-    "static/js/787.35560885.chunk.js": "/car-crash-dashboard-monroe-county/static/js/787.35560885.chunk.js",
-    "static/js/mapbox-gl-csp-worker.d2209d66.worker.js": "/car-crash-dashboard-monroe-county/static/js/mapbox-gl-csp-worker.d2209d66.worker.js",
-    "static/media/master-deaths.min.geojson": "/car-crash-dashboard-monroe-county/static/media/master-deaths.min.eb89cad6a42673b41f62.geojson",
-    "index.html": "/car-crash-dashboard-monroe-county/index.html",
-    "main.8779a7db.css.map": "/car-crash-dashboard-monroe-county/static/css/main.8779a7db.css.map",
-    "main.0b883623.js.map": "/car-crash-dashboard-monroe-county/static/js/main.0b883623.js.map",
-    "787.35560885.chunk.js.map": "/car-crash-dashboard-monroe-county/static/js/787.35560885.chunk.js.map"
+    "main.css": "/crash-dashboard/static/css/main.8779a7db.css",
+    "main.js": "/crash-dashboard/static/js/main.d0dd2419.js",
+    "static/js/787.e8d00e08.chunk.js": "/crash-dashboard/static/js/787.e8d00e08.chunk.js",
+    "static/js/mapbox-gl-csp-worker.3dfcf83d.worker.js": "/crash-dashboard/static/js/mapbox-gl-csp-worker.3dfcf83d.worker.js",
+    "static/media/master-deaths.min.geojson": "/crash-dashboard/static/media/master-deaths.min.eb89cad6a42673b41f62.geojson",
+    "index.html": "/crash-dashboard/index.html",
+    "main.8779a7db.css.map": "/crash-dashboard/static/css/main.8779a7db.css.map",
+    "main.d0dd2419.js.map": "/crash-dashboard/static/js/main.d0dd2419.js.map",
+    "787.e8d00e08.chunk.js.map": "/crash-dashboard/static/js/787.e8d00e08.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8779a7db.css",
-    "static/js/main.0b883623.js"
+    "static/js/main.d0dd2419.js"
   ]
 }
