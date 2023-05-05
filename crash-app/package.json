@@ -1,7 +1,7 @@
 {
   "name": "crash-dashboard",
   "version": "0.1.0",
-  "homepage": "https://iu-student-media.github.io/specials/car-crash-dashboard-monroe-county/",
+  "homepage": "https://iu-student-media.github.io/specials/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
