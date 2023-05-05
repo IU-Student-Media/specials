@@ -1,7 +1,7 @@
 {
   "name": "crash-dashboard",
   "version": "0.1.0",
-  "homepage": "https://carsonology.github.io/crash-dashboard",
+  "homepage": "https://iu-student-media.github.io/specials",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -45,7 +45,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BUILD_PATH='./../car-crash-dashboard-monroe-county' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
