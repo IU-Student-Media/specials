@@ -1,8 +1,5 @@
 :root {
   --point-color: yellow;
-  --hex-color: blue;
-  --district-color: rgba(255, 255, 255, .2);
-  --district-label-color: rgb(119, 216, 240);
   --light-gray: lightgray;
   --text: rgb(250, 236, 236);
   --text-2: rgb(189, 169, 169);
