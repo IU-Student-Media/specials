@@ -1,7 +1,7 @@
 const data = {
     "url": "car-crash-traffic-safety-iu-monroe-county",
     "slug": "County Car Crashes",
-    "headline": "“Catastrophic”: The troubling trend of severe car crashes in Bloomington",
+    "headline": "‘Catastrophic’: The difficulty of addressing severe car crashes in Bloomington",
     "title": "Car Crashes",
     "pub_date": "May 7, 2023",
     "bylines": {
