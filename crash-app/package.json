@@ -1,6 +1,6 @@
 {
-  "homepage": "https://iu-student-media.github.io/specials/car-crash-dashboard-monroe-county",
-  "name": "car-crash-dashboard-monroe-county",
+  "name": "crash-app",
+  "homepage": "https://specials.idsnews.com/car-crash-dashboard-monroe-county",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
