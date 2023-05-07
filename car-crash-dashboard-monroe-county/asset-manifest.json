@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/specials/car-crash-dashboard-monroe-county/static/css/main.239c0e65.css",
+    "main.js": "/specials/car-crash-dashboard-monroe-county/static/js/main.c1481bd0.js",
+    "static/js/787.35560885.chunk.js": "/specials/car-crash-dashboard-monroe-county/static/js/787.35560885.chunk.js",
+    "static/js/mapbox-gl-csp-worker.f1e31718.worker.js": "/specials/car-crash-dashboard-monroe-county/static/js/mapbox-gl-csp-worker.f1e31718.worker.js",
+    "static/media/master-deaths.min.geojson": "/specials/car-crash-dashboard-monroe-county/static/media/master-deaths.min.eb89cad6a42673b41f62.geojson",
+    "index.html": "/specials/car-crash-dashboard-monroe-county/index.html",
+    "main.239c0e65.css.map": "/specials/car-crash-dashboard-monroe-county/static/css/main.239c0e65.css.map",
+    "main.c1481bd0.js.map": "/specials/car-crash-dashboard-monroe-county/static/js/main.c1481bd0.js.map",
+    "787.35560885.chunk.js.map": "/specials/car-crash-dashboard-monroe-county/static/js/787.35560885.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.239c0e65.css",
+    "static/js/main.c1481bd0.js"
+  ]
+}
