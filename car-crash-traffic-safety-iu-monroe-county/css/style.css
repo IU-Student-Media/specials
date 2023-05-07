@@ -1,0 +1,526 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --lightgray: rgb(230, 230, 230);
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+
+#animation-container {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: var(--offblack);
+  /* text-shadow: 0 0 15px rgba(0, 0, 0, 0.7); */
+  font-weight: 600;
+  padding: 0 var(--sm);
+}
+
+h1 {
+  /* top headline */
+  margin-top: 0;
+  /* padding-top: 2.0em; */
+  font-size: 32px;
+  line-height: 1.4em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: .5em;
+}
+
+h2 {
+  /* second headline */
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: .5em;
+  line-height: 1.4em;
+}
+
+h3 {
+  /* subhed */
+  font-family: 'Fira Sans', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+h4 {
+  /* graphic hed */
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 800;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+#methodology h4,
+.read-more h4 {
+  margin: 1.0em 0 .5em;
+}
+
+.read-more h4 {
+  margin: .35em 0;
+}
+
+.read-more ul {
+  /* list-style-type: none; */
+  padding-left: var(--sm);
+  margin: 0;
+}
+
+.read-more {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+  background-color: #DEEDF7;
+}
+
+h5 {
+  /* graphic subhed */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: .5em;
+  line-height: 1.3em;
+}
+
+h6 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 1.5em 0 1.0em;
+}
+
+.topper {
+  padding-bottom: var(--md);
+  margin-bottom: 0;
+  padding: 72px var(--md) 0;
+}
+
+.imagegrid {
+  padding: var(--md) 0;
+  margin: 0 auto;
+}
+
+.imagegrid img {
+  border-radius: 10px;
+  box-shadow: 5px 3px 15px rgba(39, 39, 39, .6);
+  width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.imagegrid .topper-img-1 {
+  grid-row: 1 /8;
+  grid-column: 1 /10;
+  animation: fade-in 1s forwards;
+}
+
+.imagegrid .topper-img-2 {
+  grid-row: 6/14;
+  grid-column: 4/15;
+  animation: fade-in 1s forwards 1s;
+  opacity: 0;
+}
+
+.imagegrid .topper-img-3 {
+  grid-row: 12/20;
+  grid-column: 1 /11;
+  animation: fade-in 1s forwards 2s;
+  opacity: 0;
+}
+
+/* .topper div {
+  padding-top: var(--sm);
+  order: -1;
+} */
+
+p.topper-caption {
+  margin-bottom: var(--lg);
+}
+
+/* dropcap */
+.section-break+p:first-letter,
+p.drop-cap:first-letter {
+  font-family: 'Source Serif Pro', 'Times New Roman', serif;
+  font-weight: 800;
+  float: left;
+  font-size: 4.0em;
+  line-height: 0.65;
+  margin: 0.08em 0.07em 0 0;
+  color: var(--darkgray);
+}
+
+.graphic-footnote {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+
+.tooltip {
+  z-index: 100;
+  color: black;
+  background-color: rgba(255, 255, 255, .9);
+  padding: var(--xs) var(--sm);
+  border-radius: 5px;
+  max-width: 250px;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .1);
+  pointer-events: none;
+  /* height: 0;
+  width: 0; */
+  /* display: none; */
+}
+
+.tooltip p {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.3em;
+}
+
+/*
+  CHARTS
+*/
+#heat-map {
+  margin-top: var(--md);
+}
+
+#heat-map .tick text {
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+#legend line {
+  /* margin: 0 auto; */
+  stroke: white;
+}
+
+#legend svg .title {
+  font-size: 14px;
+
+}
+
+ul.list-inline {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  max-width: 500px;
+  margin: 0;
+}
+
+.list-inline li {
+  margin: 0;
+}
+
+.list-inline li p {
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  margin-left: -.6em;
+}
+
+li.key {
+  border-top-width: 20px;
+  border-top-style: solid;
+  font-size: .75em;
+  width: 10%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+/* svg path {
+  fill: none;
+  stroke: #000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+} */
+
+.land {
+  fill: #ddd;
+}
+
+.border {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* sidebar note */
+.sidebar-note-inner {
+  max-width: var(--medium);
+  margin: 2.0em auto;
+  padding: 0 var(--sm);
+}
+
+@media screen and (min-width: 1024px) {
+
+  .sidebar-note-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .small-spacer {
+    flex: 1 1 20%;
+  }
+
+  .sidebar-note-inner {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .text-spacer {
+    flex: 0 0 calc(var(--medium) - 16px);
+    pointer-events: none;
+  }
+
+  .sidebar-note {
+    flex: 1 1 20%;
+    margin-top: var(--sm);
+  }
+}
+
+.mug img {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.mug {
+  display: flex;
+}
+
+.mug p {
+  margin: 0;
+  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .topper .imagegrid .topper-img-1 {
+    grid-row: 1 /8;
+    grid-column: 1 /9;
+  }
+
+  .topper .imagegrid .topper-img-2 {
+    grid-row: 6/14;
+    grid-column: 6/14;
+    /* border: 1px solid pink; */
+  }
+
+  .topper .imagegrid .topper-img-3 {
+    grid-row: 12/20;
+    grid-column: 1 /9;
+  }
+
+  .topper div {
+    order: -1;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .topper div {
+    order: 0;
+    /* padding-top: 0; */
+  }
+
+  .topper .imagegrid .topper-img-1 {
+    grid-row: 1 /8;
+    grid-column: 1 /6;
+  }
+
+  .topper .imagegrid .topper-img-2 {
+    grid-row: 4/12;
+    grid-column: 5/10;
+  }
+
+  .topper .imagegrid .topper-img-3 {
+    grid-row: 1/8;
+    grid-column: 9/14;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
+
+.emgithub-container h1,
+.emgithub-container h2,
+.emgithub-container p {
+  text-align: left;
+  padding-left: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.emgithub-container h1 {
+  font-size: 24px;
+}
+
+.emgithub-container h2 {
+  font-size: 20px;
+}
+
+.emgithub-container p {
+  font-size: 16px;
+}
+
+.emgithub-container a:link,
+.emgithub-container a:visited {
+  border-bottom: none;
+  color: blue;
+}
+
+/* .emgithub-container a:hover,
+.emgithub-container a:active {} */
+
+.related {
+  border: 1px solid var(--idsred);
+  border-left: 5px solid var(--idsred);
+  border-radius: 3px;
+  padding: var(--sm);
+  transition: .4s background-color;
+  margin: var(--lg) 0;
+}
+
+.related span {
+  color: var(--idsred);
+  font-size: 18px;
+}
+
+.related p.hed {
+  font-weight: 600;
+  font-family: 'Source Serif Pro', 'Times New Roman', serif;
+  font-size: 20px;
+  margin-top: .4em;
+  margin-bottom: .2em;
+  line-height: 1.2em;
+}
+
+.related p.subhed {
+  font-size: 14px;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  margin-bottom: .4em;
+  line-height: 1.4em;
+}
+
+.related:hover {
+  background-color: #DEEDF7;
+  transition: .4s background-color;
+}
