@@ -958,6 +958,12 @@ No media query for `xs` since this is the default */
     padding: none;
 }
 
+.show-desktop-flex {
+    display: none;
+    margin: none;
+    padding: none;
+}
+
 .show-mobile {
     display: block;
 }
@@ -981,6 +987,11 @@ No media query for `xs` since this is the default */
 @media (min-width: 768px) {
     .show-desktop {
         display: block;
+    }
+
+
+    .show-desktop-flex {
+        display: grid;
     }
 
     .show-mobile {

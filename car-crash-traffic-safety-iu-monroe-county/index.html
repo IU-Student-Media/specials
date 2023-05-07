@@ -129,11 +129,13 @@
             <figure class="lg-image" style="margin-top: var(--lg);">
                 <img src="https://s3.amazonaws.com/snwceomedia/ids/bd4e11eb-e8f2-4660-99a0-3b37ca20f481.original.jpg"
                     alt="A road with a firetruck, multiple police cars and first responders heading toward a car that is flipped over">
-                <p class="credit">IDS file photo by Alex Deryn</p>
-                <p class="caption">Bloomington police cars and fire trucks surround a car crash site Aug. 11, 2020.
-                    Fatal crashes jumped in 2020 while total crashes fell, due to increased speeding during
-                    COVID-19 lockdowns.
-                </p>
+                <figcaption>
+                    <p class="credit">IDS file photo by Alex Deryn</p>
+                    <p class="caption">Bloomington police cars and fire trucks surround a car crash site Aug. 11, 2020.
+                        Fatal crashes jumped in 2020 while total crashes fell, due to increased speeding during
+                        COVID-19 lockdowns.
+                    </p>
+                </figcaption>
             </figure>
             <!-- <h2>IU graduate workers begin picketing for union recognition</h2> -->
             <div class="bylines">
@@ -151,12 +153,19 @@
                         <h4>County Car Crashes</h4>
                         <p>The IDS has published a three-part series about car crashes in Monroe County.</p>
                         <p>See more:</p>
-                        <ul>
+                        <ul
+                            style="display:flex;flex-flow:row wrap;list-style-type:none;padding:0;justify-content:space-between;">
                             <li><a href="#">
-                                    <p>Interactive map of crashes</p>
+                                    <p><strong>Interactive map of crashes</strong></p>
+                                    <img style="max-width:200px;"
+                                        src="https://s3.amazonaws.com/snwceomedia/ids/616ed303-b29b-43e4-bdde-6fa32b365b16.original.png"
+                                        alt="">
                                 </a></li>
-                            <li><a href="#">
-                                    <p>Five charts that explain car crashes in Monroe County</p>
+                            <li"><a href="#">
+                                    <p><strong>Five charts that explain car crashes in Monroe County</strong></p>
+                                    <img style="max-width:200px;"
+                                        src="https://s3.amazonaws.com/snwceomedia/ids/4ea55302-a4d8-4b02-8b3e-3cb808dd10fb.original.png"
+                                        alt="">
                                 </a></li>
                         </ul>
                     </div>
@@ -221,8 +230,9 @@
 
                 <h4>In 2020, fatal crashes rose even as total crashes dropped</h4>
 
-            </div>
-            <div class="side-by-side" style="margin-top: 0;padding-left:var(--sm);padding-right:var(--sm);">
+                <!-- </div>
+            <div class="side-by-side show-desktop-flex"
+                style="margin-top: 0;padding-left:var(--sm);padding-right:var(--sm);">
                 <figure>
                     <h6 style="margin-bottom:-10px;">Total crashes by cateogry since 2007</h6>
                     <iframe title="Percentage of reported crashes that resulted in injury (Copy) (Copy)"
@@ -244,7 +254,18 @@
                     </script>
                 </figure>
             </div>
-            <div class="story">
+            <div class="story"> -->
+
+                <figure>
+                    <h6 style="margin-bottom:-10px;">Percent change from 2007</h6>
+                    <iframe title="Percentage of reported crashes that resulted in injury (Copy)"
+                        aria-label="Interactive line chart" id="datawrapper-chart-3CmP2"
+                        src="https://datawrapper.dwcdn.net/3CmP2/1/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="420"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+                    </script>
+                </figure>
 
                 <p>U.S. citizens in 2019 were <a
                         href="https://www.cdc.gov/injury/features/global-road-safety/index.html#:~:text=For%20example%2C%20the%20U.S.%20had,(4.8%20per%20100%2C000%20population)."
@@ -360,7 +381,7 @@
 
 
             </div>
-            <div class="side-by-side">
+            <div class="side-by-side show-desktop-flex">
                 <!-- ratio: 163 x 120 -->
                 <figure>
                     <img style="
@@ -369,7 +390,7 @@
                         "
                         src="https://s3.amazonaws.com/snwceomedia/ids/7d206811-709d-4570-8791-c8d276f47289.original.jpg"
                         alt="a cyclist in a red shirt and a helmet cycles on a road with green grass and trees and a stop sign">
-                    <figcaption>
+                    <figcaption style="padding-left:var(--sm)">
                         <p class="credit">Zuzanna Kukawska | <strong>IDS</strong></p>
                         <p class="caption">A bicyclist is seen on the Seventh and Longview Greenway May 5, 2023,
                             crossing
@@ -386,7 +407,7 @@
                     object-fit: cover;
                 " src="https://s3.amazonaws.com/snwceomedia/ids/77bfca6c-14d8-4a0b-b611-8e228efd20ca.original.jpg"
                         alt="a man with a blue shirt rides a lime scooter right next to a bus with trees in the image and a blue sky">
-                    <figcaption>
+                    <figcaption style="padding-right:var(--sm);">
                         <p class="credit">Zuzanna Kukawska | <strong>IDS</strong></p>
                         <p class="caption">A lime scooter and campus shuttle share the street May 5, 2023, on the
                             Seventh
@@ -399,6 +420,24 @@
                 </figure>
             </div>
             <div class="story">
+
+                <figure class="show-mobile">
+                    <img style="
+                    height: auto;
+                    object-fit: cover;
+                " src="https://s3.amazonaws.com/snwceomedia/ids/77bfca6c-14d8-4a0b-b611-8e228efd20ca.original.jpg"
+                        alt="a man with a blue shirt rides a lime scooter right next to a bus with trees in the image and a blue sky">
+                    <figcaption>
+                        <p class="credit">Zuzanna Kukawska | <strong>IDS</strong></p>
+                        <p class="caption">A lime scooter and campus shuttle share the street May 5, 2023, on the
+                            Seventh
+                            and Longview Greenway. Some new neighborhood greenways projects have resulted in
+                            pushback
+                            from residents.
+
+                        </p>
+                    </figcaption>
+                </figure>
 
                 <p>Rosenbarger also said Vision Zero requires a proactive approach, not just choosing new projects
                     as a
