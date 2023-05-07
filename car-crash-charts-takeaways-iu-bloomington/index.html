@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <link rel="stylesheet" href="css/emgithub.css">
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/car-crash-charts-takeaways-iu-bloomington" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="5 charts that explain car crashes in Monroe County " /> <!-- TODO: headline -->
+    <meta property="og:description"
+        content="An IDS analysis of public data shows a recent uptick in crashes, following national trends." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/4ea55302-a4d8-4b02-8b3e-3cb808dd10fb.original.png" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="5 charts that explain car crashes in Monroe County "> <!-- TODO: headline -->
+    <meta name="twitter:description"
+        content="An IDS analysis of public data shows a recent uptick in crashes, following national trends.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/4ea55302-a4d8-4b02-8b3e-3cb808dd10fb.original.png">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+            <div class="topper">
+                <div>
+                    <div id="animation-container"></div>
+                    <h1>5 charts that explain car crashes in Monroe County
+                    </h1>
+                    <h2>An IDS analysis of public data shows a recent uptick in crashes, tracking with
+                        national trends
+                    </h2>
+                </div>
+            </div>
+            <!-- <figure class="sm-image">
+                <img src="files/angel-mounds2.jpeg" alt="">
+                <p class="credit">courtesy of IU archives</p>
+                <p class="caption">The Angel Mounds archaeological site in Vanderburgh County, Indiana.</p>
+            </figure> -->
+            <!-- <h2>IU graduate workers begin picketing for union recognition</h2> -->
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="sidebar-note-wrapper">
+                <div class="sidebar-note-inner">
+                    <div class="text-spacer"></div>
+                    <div class="small-spacer"></div>
+                    <div class="sidebar-note read-more">
+                        <h4>County Car Crashes</h4>
+                        <p>The IDS has published a three-part series about car crashes in Monroe County.</p>
+                        <p>See more:</p>
+                        <ul>
+                            <li><a href="#">
+                                    <p>Interactive map of crashes</p>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>Read about how the city addresses traffic safety</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story">
+
+                <p>The Indiana Daily Student has published a series of articles about traffic safety in Bloomington
+                    after conducting a monthslong analysis of Monroe County crash data, including an interactive
+                    map.
+                    These are some takeaways from the data.</p>
+
+                <h4>1. Pedestrian/cyclist crashes are very dangerous</h4>
+                <h5>Crashes involving people walking or biking are far more likely to result in injury or death.
+                </h5>
+                <h6>Percentage of crashes that resulted in injury or death</h6>
+                <iframe title="Percentage of crashes that resulted in injury" aria-label="Interactive line chart"
+                    id="datawrapper-chart-iG8mo" src="https://datawrapper.dwcdn.net/iG8mo/1/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="420"
+                    data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+                </script>
+
+                <h4>2. Severe crashes increased in 2020</h4>
+                <h5>While there were fewer drivers on the road during 2020, crashes and fatalities rose in Monroe
+                    County,
+                    following national trends. </h5>
+                <h6>Deaths for every 1,000 crashes</h6>
+                <iframe title="Deaths for every 1,000 crashes" aria-label="Interactive line chart"
+                    id="datawrapper-chart-JfUOd" src="https://datawrapper.dwcdn.net/JfUOd/3/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"
+                    data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+                </script>
+
+            </div>
+
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-2' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <h4>3. Weekday afternoons saw the most crashes</h4>
+                <!-- <p>While there were fewer drivers on the road during 2020, crashes and fatalities rose in Monroe County,
+                    following national trends. </p> -->
+                <h5>An analysis of Monroe County car crash data shows higher risk of crashing during these hours,
+                    while
+                    weeknights from 2 to 4 a.m. pose the least risk.</h5>
+                <h6>Annual average number of crashes</h6>
+                <div id="legend"></div>
+                <div id="heat-map"></div>
+                <p class="graphic-footnote">Data from 2003 to 2021.</p>
+                <p class="graphic-footnote"><strong>Source:</strong> <a
+                        href="https://data.bloomington.in.gov/dataset/traffic-data" target="_blank">City of
+                        Bloomington crash data</a></p>
+
+                <h4>4. These were the most dangerous intersections</h4>
+                <h5>All of these intersections had at least 30 crashes between 2003 and 2022 that resulted in injury
+                </h5>
+                <iframe title="Some of the most dangerous intersections in the county" aria-label="Locator maps"
+                    id="datawrapper-chart-ec936" src="https://datawrapper.dwcdn.net/ec936/1/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="648"
+                    data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+                </script>
+
+            </div>
+
+            <!-- AD BLOCK -->
+            <div class="ad-block">
+                <p class="ad-caption">Advertisement</p>
+                <div class="ad-code">
+                    <div id='div-gpt-ad-1512489859064-3' align="center">
+                        <script>
+                            googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); }); 
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="story">
+
+                <h4>5. These were the most dangerous intersections for pedestrians and cyclists</h4>
+                <h5>All of these intersections had at least three reported crashes between 2003 and 2022 that involved
+                    people
+                    walking or biking</h5>
+                <iframe title="The worst intersections for pedestrians &amp;amp; cyclists" aria-label="Locator maps"
+                    id="datawrapper-chart-ZLuMt" src="https://datawrapper.dwcdn.net/ZLuMt/1/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="665"
+                    data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
+                </script>
+
+                <h4>More information</h4>
+
+                <p>For more information about how the IDS analyzed crash data, or to download the data yourself, see
+                    the
+                    <a href="https://github.com/ids-digi/moco-crash-data/blob/main/README.md" target="_blank">public
+                        Github repository</a> that includes all our code.
+                </p>
+
+                <script
+                    src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fids-digi%2Fmoco-crash-data%2Fblob%2Fmain%2FREADME.md&style=github&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+
+
+                <!-- <div id="methodology">
+                    <h4>About this story</h4>
+                    <p>Methodology</p>
+                </div> -->
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="subscribe-cta">
+            <div class="cta-content">
+                <div>
+                    <h3>Get updates on the Daily Rundown.</h3>
+                    <p>See the day's top headlines and weekly recaps every Friday.</p>
+                </div>
+                <a href="https://www.idsnews.com/subscribe">Sign me up!</a>
+            </div>
+        </div>
+
+        <div class="footer-row">
+            <div class="footer-col">
+                <!-- IDS LOGO SVG -->
+                <div class="logo">
+                    <a href="https://idsnews.com">
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                        <span class="show-desktop"> | Indiana Daily Student</span>
+                    </a>
+                </div>
+                <address>
+                    <p>812-855-0763</p>
+                    <p>ids@indiana .edu</p>
+                    <p>601 E. Kirkwood.Ave</p>
+                    <p style="margin-top:-.3em;">Bloomington, IN 47405-7108</p>
+                </address>
+                <div class="socials">
+                    <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                        target="_blank"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+
+                <h4>General Info</h4>
+                <ul class="links">
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                                target="_blank">Advertising</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col marketplace">
+
+                <h4>Marketplace</h4>
+                <ul class="links">
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                                target="_blank">Advertising</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"><small>All content &copy; 2023 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+
+            container: document.getElementById('animation-container'),
+
+            path: './data/sjBtlD8mb2.json',
+
+            renderer: 'svg',
+
+            loop: false,
+
+            autoplay: true,
+
+            name: "Demo Animation",
+
+        });                  
+    </script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="js/heatMap.js"></script>
+</body>
+
+</html>
