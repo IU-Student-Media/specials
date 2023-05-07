@@ -3,7 +3,7 @@ const data = {
     "slug": "County Car Crashes",
     "headline": "5 charts that explain car crashes in Monroe County ",
     "title": "County Car Crashes",
-    "pub_date": "May 7, 2023",
+    "pub_date": "May 7, 2023 • 6 p.m.",
     "bylines": {
         "Story, graphics, data, design and development by": {
             "name": "Carson TerBush",
