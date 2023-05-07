@@ -366,3 +366,52 @@ hr {
   top: 15px;
   /* left: 30px; */
 }
+
+.Modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-info {
+  max-width: 700px;
+  background-color: var(--text);
+  color: var(--text-dark);
+  padding: 15px 20px;
+  border-radius: 4px;
+  max-height: 500px;
+  overflow: scroll;
+  position: relative;
+}
+
+.modal-info h4 {
+  /* graphic hed */
+  font-size: 20px;
+  line-height: 1.3em;
+  font-weight: 800;
+  margin-top: .5em;
+  margin-bottom: 0.5em;
+}
+
+.modal-info p,
+.modal-info li {
+  /* graphic subhed */
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: .5em;
+  line-height: 1.3em;
+}
+
+.modal-info .closer {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}

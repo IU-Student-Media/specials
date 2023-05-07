@@ -8,6 +8,8 @@ function Controls(props) {
     const {
         menuOpen,
         setMenuOpen,
+        showMethod,
+        setShowMethod,
         speedVisibility,
         setSpeedVisibility,
         showDeaths,
@@ -55,6 +57,10 @@ function Controls(props) {
         setMenuOpen(false)
     }
 
+    const methodOn = () => {
+        setShowMethod(true)
+    }
+
     return (
         <div className="Controls" style={{
             width: menuOpen ? detectMobile.isMobile() ? windowWidth * .8 : '250px' : 0,
@@ -83,7 +89,7 @@ function Controls(props) {
 
 
                     <h1>Monroe County Crash Dashboard</h1>
-                    <p><em><a href="#" >About the data</a></em></p>
+                    <p><em><a href="#" onClick={methodOn} >About the data</a></em></p>
 
                     <div style={{
                         maxWidth: 220
@@ -181,7 +187,7 @@ function Controls(props) {
                     })}
 
                 </div>
-                <p><strong>Source:</strong> <a href="#">IDS analysis</a> of <a href="https://data.bloomington.in.gov/dataset/traffic-data">Bloomington traffic data</a></p>
+                <p><strong>Source:</strong> <a href="https://github.com/ids-digi/moco-crash-data" target="_blank">IDS analysis</a> of <a href="https://data.bloomington.in.gov/dataset/traffic-data">Bloomington traffic data</a></p>
             </div>
         </div >
     )

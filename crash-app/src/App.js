@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import MapContext from './MapContext.js'
 import Controls from './Controls.js'
+import Modal from './Modal.js'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
   const [showBikePedOnly, setShowBikePedOnly] = useState(false)
   // if it's mobile, hide the menu on the first load
   const [menuOpen, setMenuOpen] = useState(true)
+  const [showMethod, setShowMethod] = useState(false)
 
   const menuOn = () => { // show the controls menu
     setMenuOpen(true)
@@ -30,9 +32,12 @@ function App() {
         </svg>
       </a>
       {/* controls component => the side menu */}
+      {showMethod && <Modal setShowMethod={setShowMethod} />}
       <Controls
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
+        showMethod={showMethod}
+        setShowMethod={setShowMethod}
         speedVisibility={speedVisibility}
         setSpeedVisibility={setSpeedVisibility}
         showDeaths={showDeaths}
