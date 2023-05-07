@@ -3,7 +3,7 @@ const data = {
     "slug": "NAGPRA at IU",
     "headline": "Thousands of Native American remains, a legacy of offensive research and the effort to move forward",
     "title": "NAGPRA at IU",
-    "pub_date": "April 28, 2023 • 9 a.m.",
+    "pub_date": { "original": "April 28, 2023 • 9 a.m.", "updated": "May 7, 2023 • 10 a.m." },
     "bylines": {
         "Story, graphics, design and development by": {
             "name": "Carson TerBush",
@@ -75,7 +75,7 @@ document.querySelector('#bylines').innerHTML = bylines_html;
 document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
-document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
+document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date.original + "<br>Last updated " + data.pub_date.updated;
 
 // title & slug
 document.querySelector('title').innerHTML = data.title + ' | Indiana Daily Student';
