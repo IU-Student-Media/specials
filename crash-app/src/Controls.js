@@ -187,7 +187,8 @@ function Controls(props) {
                     })}
 
                 </div>
-                <p><strong>Source:</strong> <a href="https://github.com/ids-digi/moco-crash-data" target="_blank">IDS analysis</a> of <a href="https://data.bloomington.in.gov/dataset/traffic-data">Bloomington traffic data</a></p>
+                <p><strong>Source:</strong> <a href="https://github.com/ids-digi/moco-crash-data" target="_blank">IDS analysis</a> of <a href="https://data.bloomington.in.gov/dataset/traffic-data" target="_blank">Bloomington traffic data</a></p>
+                <p><small>Map and analysis by <a href="https://www.idsnews.com/staff/Carson-TerBush" target="_blank">Carson TerBush</a></small></p>
             </div>
         </div >
     )

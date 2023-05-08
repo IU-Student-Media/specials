@@ -22,6 +22,7 @@ function Modal(props) {
                     </svg>
                 </a>
                 <h4>Methodology</h4>
+                <p><a href="https://specials.idsnews.com/car-crash-traffic-safety-iu-monroe-county/" target="_blank">Read more</a> about the difficulties of addressing severe crashes in Bloomington.</p>
                 <ul>
                     <li>Crash data is reported by local law enforcement, aggregated at the state level by the Indiana State Police and then sent back to county officials. Map data includes all reported crashes in Monroe County from 2003 to 2022.
                     </li>
