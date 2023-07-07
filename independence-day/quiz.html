@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>4 july </title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  padding: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  color: red;
+}
+body {
+  font-family: sans-serif;
+  background: #3c3c3c;  /* Background color for old browsers and fallback */
+  background: -webkit-linear-gradient(to right, #3c3c3c, #244f87);  /* Background color for Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c3c3c, #244f87); /* Background color for modern browsers */
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+h1.main{
+  font-weight: 100;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.user-role {
+  transition: opacity .2s ease;
+}
+
+.user-role.mute {
+  opacity: .5;
+}
+
+.question{
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-250%);
+  background-color: rgba(255, 255, 255, 0.218);
+  padding: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: slide-in 0.8s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-50%) translateX(-250%);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+.question.current {
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.wrong.current {
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.question.blur {
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.deactivate {
+  pointer-events: none;
+}
+
+.question h2{
+  min-width: calc(100% - 20%);  
+  max-width: calc(100% - -20%);
+  background-color: transparent;
+  color: #fff;
+  font-weight: 100;
+  padding: 0;
+  border-radius: 3px;
+  animation: fade-in 0.8s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.question .answers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question .answers span{
+  display: inline-block;
+  width: calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  background-color: rgba(255, 255, 255, .5);
+  color: #cb2d3e;
+  font-size: 1.05em;
+  margin: 5px 5px 0 0;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  animation: fade-in 0.8s forwards;
+}
+
+.question .answers span.selected {
+  animation: select-answer .2s ease;
+  background-color: #fff;
+}
+
+@keyframes select-answer {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.question .next-question {
+  margin-top: 15px;
+  padding-right: 5px;
+  text-align: right;
+}
+
+.question .next-btn {
+  background-color: #fff;
+  border: none;
+  padding: 3px 20px;
+  border-radius: 3px;
+  font-size: 1.5em;
+  color: #cb2d3e;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.question .next-btn:focus {
+  outline: none;
+}
+
+.question .next-btn[disabled] {
+  opacity: .6;
+  cursor: no-drop
+}
+
+.slide-fade-enter-active {
+  transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.slide-fade-enter {
+  transform: translateY(-40%);
+  opacity: 0;
+}
+
+.slide-fade-leave-to /* .slide-fade-leave-active for <2.1.8 */ {
+  transform: translateY(40%);
+  opacity: 0;
+}
+
+.status {
+  font-size: 0.8em;
+  margin: 3px auto 0;
+  text-align: center;
+  padding: 5px;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, .5);
+  transition: color .3s ease;
+}
+
+.status:hover {
+  color: #fff;
+}
+
+.result{
+  max-width: 560px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: slide-in 0.8s forwards;
+}
+
+.result.active {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.result svg {
+  position: absolute;
+  opacity: 0.15;
+  animation: fade-in 0.8s forwards;
+}
+
+.result .success {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 100%;
+  opacity: 0.1;
+  background-size: 120px;
+  background-repeat: repeat-x;
+}
+
+.result h2 {
+  font-family: 'Bad Script', cursive;
+  font-weight: 400;
+  text-align: center;
+  animation: fade-in 0.8s forwards;
+}
+
+.result h1 {
+  font-size: 2.3em;
+  font-weight: 400;
+  margin-bottom: -10px;
+  animation: fade-in 0.8s forwards;
+}
+
+.result small {
+  color: #887;
+  font-size: 0.8em;
+}
+
+.result button {
+  position: absolute;
+  bottom: 7px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #d21d0f;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-family: 'Bad Script', cursive;
+  transition: box-shadow .2s ease;
+  animation: fade-in 0.8s forwards;
+}
+
+.result button.close {
+  right: 10px;
+  padding: 0 15px;
+  font-size: 1.3em;
+}
+
+.result button.show-wrong-ones {
+  left: 10px;
+  padding: 5px;
+}
+
+.result button:hover {
+  box-shadow: 4px 6px 15px 1px #ddd;
+}
+
+.green {
+  color: #0dcc0d;
+}
+
+.red {
+  color: #d21d0f;
+}
+
+.wrong-questions {
+  width: 80vw;    
+  max-height: 100vh;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 5px;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrong-questions.active {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.wrong-questions::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.wrong-questions::-webkit-scrollbar {
+  width: 4px;
+}
+
+.wrong-questions::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #e6e6e6;
+}
+
+.wrong-questions h2 {
+  font-weight: 100;
+  margin: 10px 0;
+  text-align: center;
+  color: #d21d0f;
+}
+
+.wrong-questions .wrong-one {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 3px 7px;
+  border-bottom: 1px solid #eee;
+}
+
+.wrong-questions .wrong-one h3 {
+  font-weight: 100;
+}
+
+.wrong-questions .answers-container {
+  padding-right: 40px;
+}
+
+.wrong-questions .answers-container span {
+  display: block;
+  padding: 0 7px;
+  position: relative;
+}
+
+.wrong-questions .answers-container span:after {
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  font-weight: 100;
+  font-size: .9em;
+}
+
+.wrong-questions .answers-container span.selected {
+  color: #d21d0f;
+}
+
+.wrong-questions .answers-container span.selected:after {
+  content: "Yours";
+}
+
+.wrong-questions .answers-container span.correct {
+  color: #0dcc0d;
+}
+
+.wrong-questions .answers-container span.correct:after {
+  content: "Correct";
+  right: -52px;
+}
+
+.wrong-questions button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #d21d0f;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-family: 'Bad Script', cursive;
+  transition: box-shadow .2s ease;
+}
+
+.wrong-questions button:hover {
+  box-shadow: 4px 6px 15px 1px #dddddd;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Styles for quiz-app */
+#quiz-app {
+  margin: 2px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #f5f5f500;
+}
+
+.question.blur {
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+/* Styles for status */
+.status {
+  margin-bottom: 20px;
+}
+
+/* Styles for user-role */
+.user-role {
+  margin-bottom: 20px;
+}
+
+/* Styles for question */
+.question {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Styles for answers */
+.answers {
+  margin-top: 10px;
+}
+
+/* Styles for next-question */
+.next-question {
+  margin-top: 20px;
+}
+
+/* Styles for result */
+.result {
+  margin-bottom: 20px;
+}
+
+/* Styles for success */
+.success {
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Styles for h2 in result */
+.result h2 {
+  margin-bottom: 1px;
+}
+
+/* Styles for h1 in result */
+.result h1 {
+  margin-bottom: 10px;
+}
+
+/* Styles for small in result */
+.result small {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Styles for close button */
+.close {
+  margin-right: 10px;
+}
+
+/* Styles for show-wrong-ones button */
+.show-wrong-ones {
+  margin-right: 10px;
+}
+
+
+}
+
+/* Animation for scroll-down icon */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+<body translate="no">
+  <h1 class="main"><a href="https://www.idsnews.com">Indiana Daily Student</a></h1>
+  <h1 class="main"><a href="./index.html">Fourth of July Quiz</a></h1>
+  
+  <div id="quiz-app">
+    <div class="status">
+      <span>{{ questions.length }} Questions</span>
+      <span v-if="answered > 0">{{ answered }} Answered,</span>
+      <span>{{ questions.length - answered }} Remaining</span>
+    </div>
+    <div class="user-role">
+      <div class="question current">
+        <transition name="slide-fade" mode="out-in">
+          <div :key="questions[currentQuestion].question" :class="{'deactivate': answered == questions.length}">
+            <h2>{{ questions[currentQuestion].question }}</h2>
+            <div class="answers">
+              <span v-for="(answer, index) in questions[currentQuestion].answers" :key="index" v-bind:data-index="index" @click="selectAnswer">{{ answer }}</span>
+            </div>
+          </div>
+        </transition>
+        <div class="next-question">
+          <button class="next-btn" disabled>{{ currentQuestion < (questions.length - 1) ? 'Next' : 'Result!' }}</button>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="success"></div>
+        <h2>You have successfully finished the quiz, and your score is:</h2>
+        <h1 :class="[(Number(((correctAnswers / questions.length) * 100)).toFixed(2) >= 50) ? 'green' : 'red']">{{ Number(((correctAnswers / questions.length) * 100)).toFixed(2) }}%</h1>
+        <small><b>{{ correctAnswers }}</b> Correct, <b>{{ wrongAnswers }}</b> Wrong</small>
+        <button class="close">close</button>
+        <button class="show-wrong-ones" v-show="wrongAnswers > 0" @click="showWrongQuestion = true">Wrong answers</button>
+      </div>
+    </div>
+
+    <div class="wrong-questions">
+      <h2 v-if="wrongQuestions.length > 1">Your wrong Questions</h2>
+      <h2 v-else-if="wrongQuestions.length == 1">Your wrong Question</h2>
+      <div class="wrong-one" v-for="question in wrongQuestions">
+        <h3>{{ question.question }}</h3>
+        <div class="answers-container">
+          <span class="selected">{{ question.answers[question.selected] }}</span>
+          <span class="correct">{{ question.answers[question.correct_answer] }}</span>
+        </div>
+      </div>
+
+      <button id="return-to-result">Show my result</button>
+    </div>
+  </div>
+</body>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js'></script>
+      <script id="rendered-js" >
+new Vue({
+  el: '#quiz-app',
+  data() {
+    return {
+      questions: [
+  // Easy Questions
+  {
+    question: 'Which year did the United States declare independence?',
+    answers: [
+      '1776',
+      '1789',
+      '1812',
+      '1865'
+    ],
+    correct_answer: 0,
+    selected: null,
+    sense: 0
+  },
+  {
+    question: 'Who was the principal author of the Declaration of Independence?',
+    answers: [
+      
+      'George Washington',
+      'Thomas Jefferson',
+      'Benjamin Franklin',
+      'John Adams'
+    ],
+    correct_answer: 1,
+    selected: null,
+    sense: 0
+  },
+  {
+    question: 'What is the national anthem of the United States?',
+    answers: [
+      
+      'God Bless America',
+      'America the Beautiful',
+      'The Star-Spangled Banner',
+      'My Country, America'
+    ],
+    correct_answer: 2,
+    selected: null,
+    sense: 0
+  },
+  // Medium Questions
+  {
+    question: 'Which battle is considered the turning point of the American Revolutionary War?',
+    answers: [
+      'Battle of Saratoga',
+      'Battle of Yorktown',
+      'Battle of Bunker Hill',
+      'Battle of Trenton'
+    ],
+    correct_answer: 0,
+    selected: null,
+    sense: 0
+  },
+  {
+    question: 'Who wrote the poem that later became the lyrics for the national anthem of the United States?',
+    answers: [
+      'Walt Whitman',
+      'Langston Hughes',
+      'Emily Dickinson',
+      'Francis Scott Key'
+    ],
+    correct_answer: 3,
+    selected: null,
+    sense: 0
+  },
+  // Hard Questions
+  {
+    question: 'Which historical event led to the introduction of the Fourth of July as a federal holiday in the United States?',
+    answers: [
+      'The adoption of the Declaration of Independence',
+      'The signing of the Constitution',
+      'The end of the American Revolutionary War',
+      'The ratification of the Bill of Rights'
+    ],
+    correct_answer: 0,
+    selected: null,
+    sense: 0
+  },
+  {
+    question: 'Who was the second President of the United States?',
+    answers: [
+      
+      'Thomas Jefferson',
+      'John Adams',
+      'George Washington',
+      'James Madison'
+    ],
+    correct_answer: 1,
+    selected: null,
+    sense: 0
+  }
+],
+
+
+
+      showWrongQuestion: false,
+      wrongQuestions: [],
+      temp: [],
+      currentQuestion: 0,
+      answered: 0,
+      wrongAnswers: 0,
+      correctAnswers: 0 };
+
+  },
+  methods: {
+    selectAnswer: function (e) {
+      var choise = e.currentTarget,
+      answers = document.querySelectorAll('.answers span'),
+      nextBtn = document.querySelector('.next-btn');
+
+      answers.forEach(answer => {
+        answer.classList.contains('selected') ? answer.classList.remove('selected') : '';
+      });
+
+      choise.classList.add('selected');
+
+      this.questions[this.currentQuestion].selected = choise.dataset.index; // add the selected index to the obj in the 'selected' property
+
+      nextBtn.removeAttribute('disabled');
+
+    },
+    calculateResult: questions => {
+      var correct;
+
+      for (var i = 0; i < questions.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+        this.questions[i].selected == questions[i].correct ? correct++ : '';
+      }window.CP.exitedLoop(0);
+
+      return correct / questions.length * 100;
+    } },
+
+  mounted() {
+
+    var nextBtn = this.$el.querySelector('.next-btn'),
+    wrongAnswersBtn = this.$el.querySelector('.show-wrong-ones'),
+    answers = this.$el.querySelectorAll('.answers span'),
+    questionsLength = this.questions.length,
+    result = this.$el.querySelector('.result'),
+    question = this.$el.querySelector('.question'),
+    closeResult = this.$el.querySelector('.result button.close'),
+    wrongQuestions = this.$el.querySelector('.wrong-questions'),
+    showMyResults = this.$el.querySelector('#return-to-result');
+
+    nextBtn.addEventListener('click', () => {
+
+      this.answered < this.questions.length ? this.answered++ : '';
+
+      if (!nextBtn.hasAttribute('disabled') && this.currentQuestion < questionsLength - 1) {
+        this.currentQuestion++;
+
+        answers.forEach(answer => {
+          answer.classList.contains('selected') ? answer.classList.remove('selected') : '';
+        });
+
+        nextBtn.setAttribute('disabled', '');
+
+      } else if (this.currentQuestion >= questionsLength - 1) {
+
+        this.questions.forEach(question => {
+          if (question.selected == question.correct_answer && question.sense == 0) {
+
+            this.correctAnswers++;
+            question.sense = 1;
+
+          } else if (question.selected != question.correct_answer && question.sense == 0) {
+
+            this.wrongAnswers++;
+            question.sense = 1;
+            let temp = {};
+            temp.answers = question.answers;
+            temp.question = question.question;
+            temp.correct_answer = question.correct_answer;
+            temp.selected = question.selected;
+
+            this.wrongQuestions.push(temp);
+          }
+        });
+
+        result.classList.add('active');
+        question.classList.add('blur');
+      }
+    });
+
+    closeResult.addEventListener('click', () => {
+      result.classList.remove('active');
+      question.classList.remove('blur');
+    });
+
+    wrongAnswersBtn.addEventListener('click', () => {
+      result.classList.remove('active');
+      wrongQuestions.classList.add('active');
+    });
+
+    showMyResults.addEventListener('click', () => {
+      result.classList.add('active');
+      wrongQuestions.classList.remove('active');
+    });
+  } });
+
+    </script>
+
+  
+</body>
+
+</html>
