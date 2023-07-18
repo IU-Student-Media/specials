@@ -1,8 +1,8 @@
 const data = {
     "url": "school-shootings",
-    "slug": "School Shootings Capture National Headlines",
+    "slug": "Changes in School Policing",
     "headline": "How one school resource officer’s job has changed",
-    "title": "School Shootings Capture National Headlines",
+    "title": "Changes in School Policing",
     "pub_date": "July 18 ,2023",
     "bylines": {
         "By": {
