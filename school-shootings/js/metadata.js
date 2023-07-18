@@ -1,6 +1,6 @@
 const data = {
     "url": "school-shootings",
-    "slug": "Changes in School Policing",
+    "slug": "Changes in School Policing ",
     "headline": "How one school resource officer’s job has changed",
     "title": "Changes in School Policing",
     "pub_date": "July 18 ,2023",
