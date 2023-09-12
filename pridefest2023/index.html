@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <meta charset="UTF-8">
+  <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <meta property="og:url" content="http://specials.idsnews.com/pridefest2023" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PrideFest 2023" /> <!-- TODO: headline -->
+ <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/53a53596-3274-42c5-95a1-b67ddb445345.original.JPG" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="PrideFest 2023">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="PrideFest 2023 | Indiana Daily Student"> <!-- TODO: headline -->
+<!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/53a53596-3274-42c5-95a1-b67ddb445345.original.JPG"> <!-- TODO: link to dominant image -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+
+  <title>PrideFest 2023</title>
+  <script>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+      googletag.cmd.push(function () {
+          //all other leaderboards
+          var mapping1 = googletag.sizeMapping()
+              .addSize([768, 0], [728, 90]) // Desktops and Tablets
+              .addSize([0, 0], [320, 50]) // Mobile devices
+              .build();
+          googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+          googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+          googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+          googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+          googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.pubads().collapseEmptyDivs();
+          googletag.enableServices();
+      });
+  </script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+  <meta charset="UTF-8">
+  
+
+
+    <meta name="apple-mobile-web-app-title" content="IDS">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+
+ 
+
+
+  
+  
+    <link rel="canonical" href="https://codepen.io/supah/pen/xxJMbbg" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto'>
+
+  <style>
+    .name {
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+<style>
+body {
+  overflow: hidden;
+  font-family:sans-serif;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.5),    /* Red with 70% opacity */
+    rgba(255, 165, 0, 0.5),  /* Orange with 70% opacity */
+    rgba(255, 255, 0, 0.5),  /* Yellow with 70% opacity */
+    rgba(0, 128, 0, 0.5),    /* Green with 70% opacity */
+    rgba(0, 0, 255, 0.5),    /* Blue with 70% opacity */
+    rgba(75, 0, 130, 0.5),   /* Indigo with 70% opacity */
+    rgba(148, 0, 211, 0.5)   /* Violet with 70% opacity */
+  );
+  
+}
+
+.carousel {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.carousel-item {
+  --items: 1;
+  --width: clamp(400px, 60vw, 800px);
+  --height: clamp(250px, 60vw, 500px);
+  --x: calc(var(--active) * 800%);
+  --y: calc(var(--active) * 200%);
+  --rot: calc(var(--active) * 0deg);
+  --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+  --active: 0; 
+  overflow: hidden;
+  position: absolute;
+  z-index: var(--zIndex);
+  width: var(--width);
+  height: var(--height);
+  margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transform-origin: 0% 100%;
+  box-shadow: 0 10px 50px 10px rgba(0, 0, 0, 0.5);
+  background: black;
+  pointer-events: all;
+  transform: translate(var(--x), var(--y)) rotate(var(--rot));
+  transition: transform 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+.loader {
+    border: 4px solid white;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  #loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+        z-index: 9999; /* Ensure it's on top of everything */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styles for the loader (you can customize this) */
+    #loader {
+        border: 4px solid white;
+        border-top: 4px solid transparent;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
+.carousel-item .carousel-box {
+  position: absolute;
+  z-index: 1;
+  --active: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0, 0.02, 0, 1);
+  opacity: var(--opacity);
+  font-family: "Orelo-sw-db", serif;
+}
+
+.carousel-item .carousel-box:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.carousel-item .title {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  font-family:sans-serif;
+  bottom: 2px;
+  left: 20px;
+  transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+  font-size: clamp(20px, 3vw, 30px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Initially hidden */
+}
+.carousel-item .title1 {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: 2px;
+  left: 20px;
+  font-family:  'Playfair Display', 'Times New Roman', serif;;
+  transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+  font-size: clamp(20px, 3vw, 30px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  opacity: 1; /* Initially hidden */
+}
+.carousel-item:hover .title1 {
+  opacity: 1; /* Visible on hover */
+}
+.carousel-item:hover .title {
+  opacity: 1; /* Visible on hover */
+}
+
+.carousel-item .num {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  top: 10px;
+  left: 20px;
+  transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+  font-size: clamp(20px, 10vw, 80px);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.layout {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.layout:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 90px;
+  width: 10px;
+  height: 100%;
+
+  border-top: none;
+  border-bottom: none;
+  opacity: 0.15;
+}
+
+.layout .box {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    color: #fff;
+    transform-origin: 0% 10%;
+    transform: rotate(0deg);
+    font-size: 23px;
+    opacity: 0.8;
+  }
+
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  left: 28px;
+  background: #ff909000;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  font-family: bloomer ;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+  overflow: hidden;
+  padding-bottom: 0.1em;
+}
+.social1 {
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  right: 170px;
+  color: #fff;
+  opacity: 0.9;
+ 
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 28px;
+  color: #fff;
+  opacity: 0.9;
+}
+.social a {
+  display: inline-block;
+  margin-left: 3px;
+}
+.social svg {
+  --fill: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.cursor {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
+  transition: transform 1.0s cubic-bezier(0, 0.02, 0, 1);
+  display: none;
+  pointer-events: none;
+}
+@media (pointer: fine) {
+  .cursor {
+    display: block;
+  }
+}
+
+.cursor2 {
+  --size: 2px;
+  transition-duration: 1.0s;
+}
+
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script src="./js/googleTagManager.js"></script>
+<div id="loader-container">
+  <div id="loader"></div>
+</div>
+<div class="helper"></div>
+
+
+<div class="carousel">
+  <div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title1" > <b>Scenes from Bloomington Pridefest 2023 </b><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h6 style="font-family: sans-serif;"> 
+               Photos by :
+               <a href="https://www.idsnews.com/staff/audrey-engel"><span class="name">Audrey Engel<br/>
+                
+              </span></a>Aug. 26, 2023</h6>
+      </div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/320abb6a-80d3-4181-a03e-7a85d5cc91b8.original.JPG" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+      <div class="num">01</div>
+			<div class="title"><h6>PrideFest kicks off Aug. 26, 2023, on Kirkwood Avenue. Banners and flags marked the start of the annual festival.</h6></div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/53a53596-3274-42c5-95a1-b67ddb445345.original.JPG" />
+		</div>
+	</div>
+
+
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Artist Dom Darko is seen at PrideFest on Aug. 26, 2023, on Kirkwood Avenue. His booth showcased his artwork including paintings, earrings and pins. 
+      </h6></div>
+			<div class="num">02</div>
+			<img
+				src="https://s3.amazonaws.com/snwceomedia/ids/d8997eb2-965a-43bb-a6d4-a4600aa330fb.original.JPG"
+			/>
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6> painting hangs in Dom Darko’s PrideFest booth on Aug. 26, 2023, on Kirkwood Avenue. Darko’s walls were lined with his art and various pieces of pride gear. 
+      </h6></div>
+			<div class="num">03</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/88e68b04-a92a-4fe1-bcf5-e90ccf73b5f0.original.JPG" />
+		</div>
+	</div>
+
+
+  <div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6> Mullins (left) and Oriana Barleston (right) are photographed at Barleston’s PrideFest booth on Aug. 26, 2023, on Kirkwood Avenue. Barleston’s booth showcased their crocheted pieces, offering items such as hats and mug covers.</h6> </div>
+			<div class="num">04</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/9c315d9e-e53f-4a9b-9c91-abd9a2007fea.original.JPG" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Tyler Dieden is photographed at PrideFest on Aug. 26, 2023, on Kirkwood Avenue. Dieden’s rainbow eye makeup matched the flags and banners displayed in booths.</h6> </div>
+			<div class="num">05</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/c7e3f6ea-1895-4fb8-a554-7d9b747fbadd.original.JPG" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>The IU LGBTQ+ Project booth is seen at PrideFest, Aug. 26, 2023, on Kirkwood Avenue. People of all ages attended PrideFest, enjoying beverages and snacks.</h6></div>
+			<div class="num">06</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/4dacbc1c-9264-4f0e-82fb-76246fc68a97.original.JPG" />
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Adelaide Young Brust poses for a photo on Aug. 26, 2023, on Kirkwood Avenue. Wearing a predominantly black outfit, Young Brust contrasted it with a rainbow fan.</h6></div>
+			<div class="num">07</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/9a967667-9973-4a19-aaf0-cbf6223606b6.original.JPG" />
+		</div>
+	</div>
+  <div class="carousel-item">
+    <div class="carousel-box">
+      <div class="title" align="center">
+        <h1>
+          <a href="https://give.myiu.org/iu-bloomington/I380012686.html">Support IDS!</a>
+        </h1>
+      </div>
+      <div class="story">
+        <div class="ad-block" style="text-align: center; background-color: white;">
+          <p class="ad-caption">Advertisement</p>
+          <div class="ad-code">
+            <div id='div-gpt-ad-1512489859064-4' align="center">
+              <script>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story" align="center">
+        <div class="ad-block" style="text-align: center; background-color: white;">
+          <p class="ad-caption">Advertisement</p>
+          <div class="ad-code">
+            <div id='div-gpt-ad-1512489859064-4' align="center">
+              <script>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="https://s3.amazonaws.com/snwceomedia/ids/be4f32f2-dca6-4a6a-b8cf-bcc32fbce59c.original.jpg" />
+    </div>
+  </div>
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Carla Jackson is photographed Aug. 26, 2023, at PrideFest on Kirkwood Avenue. Jackson wore several pride bracelets, rainbow earrings, and pins in support of the LGBTQIA+ community.</h6> </div>
+			<div class="num">08</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/72a66dfb-b0b2-471b-b5e0-a050b032ef13.original.JPG" />
+		</div>
+
+  </div>
+
+	<div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Marc Carmichael and Mandy Hussey are photographed at PrideFest on Aug. 26, 2023, on Kirkwood Avenue. Several candidates advertised their campaigns at the festival including Carmichael, who is running for the United States Senate. </h6> </div>
+			<div class="num">09</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/54d8b7d0-a6fa-44aa-9931-be3d41d28287.original.JPG" />
+		</div>
+    
+	</div>
+  <div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Chalk art is photographed at PrideFest on Aug 26, 2023, on Kirkwood Avenue. Kirkwood was decked out in chalk of all different colors to commemorate pride. </h6> </div>
+			<div class="num">10</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/320abb6a-80d3-4181-a03e-7a85d5cc91b8.original.JPG" />
+		</div>
+    
+	</div>
+  <div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Brie Blazek poses for a photo on Aug. 26, 2023, at PrideFest. Blazek had bejeweled eye makeup and a rainbow head covering in honor of pride. </h6> </div>
+			<div class="num">11</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/9ac277aa-b1ed-4397-9f70-4c2c5c4d8777.original.JPG" />
+		</div>
+    
+	</div>
+  <div class="carousel-item">
+		<div class="carousel-box">
+			<div class="title"><h6>Crowds are photographed at PrideFest on Aug. 26, 2023, on Kirkwood Avenue. Hundreds of people with rainbow gear roamed Kirkwood, exploring the wide variety of booths available.       </h6> </div>
+			<div class="num">12</div>
+			<img src="https://s3.amazonaws.com/snwceomedia/ids/b5528d5a-8272-44dc-8f8b-7104ddb2e15f.original.JPG" />
+		</div>
+    
+	</div>
+
+
+<div class="carousel-item">
+  <div class="carousel-box">
+    <div class="title" align="center">
+      General Info :<br/>
+        <a href="https://www.idsnews.com/page/contact" target="_blank">| Contact us |</a> <a href="https://www.idsnews.com/page/employment" target="_blank">Employment |</a>
+      <a href="https://www.idsnews.com/page/policies" target="_blank">Policies |</a>
+            
+            <a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising |</a>
+            <a href="https://issuu.com/idsnews/docs/binder1_357aeeb2b95e46" target="_blank">Print edition |</a>
+            <br/>
+            <a href="https://www.idsnews.com/page/contact" target="_blank">| Write to us|</a>
+    </div>
+    <div class="story">
+      <div class="ad-block" style="text-align: center; background-color: white;">
+        <p class="ad-caption">Advertisement</p>
+        <div class="ad-code">
+          <div id='div-gpt-ad-1512489859064-4' align="center">
+            <script>
+              googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="story" align="center">
+      <div class="ad-block" style="text-align: center; background-color: white;">
+        <p class="ad-caption">Advertisement</p>
+        <div class="ad-code">
+          <div id='div-gpt-ad-1512489859064-4' align="center">
+            <script>
+              googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="https://s3.amazonaws.com/snwceomedia/ids/be4f32f2-dca6-4a6a-b8cf-bcc32fbce59c.original.jpg" />
+  </div>
+</div>
+<div class="carousel-item">
+  <div class="carousel-box">
+    <div class="title"><h6>A collection of flags decorates the street Aug. 26, 2023, on Kirkwood Avenue. The festival ended with a Grand Finale Show at 9 p.m., featuring drag performer Jasmine Kennedie at Poindexter.</h6> </div>
+    <div class="num">13 </div>
+    <img src="https://s3.amazonaws.com/snwceomedia/ids/469aec70-02b6-4b9c-9c04-decbf6172e46.original.JPG" />
+  </div>
+  
+</div>
+  
+
+  
+
+
+
+
+
+ 
+  
+</div>
+<div class="layout">
+  <div class="box">  <p >Use the arrow keys to scroll</p>
+ 
+    
+  </div>
+  </div>
+
+
+  
+  
+  
+
+
+  <a href="https://www.idsnews.com/" target="_blank" class="logo"> 
+    <img style="width: 80px;" src="https://s3.amazonaws.com/snwceomedia/ids/408634bf-5ac3-42df-ad23-245c2ce81977.original.png">
+
+  </a>
+
+
+
+<div class="social1"  style="font-weight: bold;"  >Pridefest 2023 </div>
+<div class="social">
+  
+  <a href="https://www.facebook.com/idsnews" target="_blank">
+    <svg>
+      <use xlink:href="#ico-linkedin"></use>
+    </svg>
+  </a>
+  
+  <a href="https://twitter.com/idsnews" target="_blank">
+    <svg>
+      <use xlink:href="#ico-twitter"></use>
+    </svg>
+  </a>
+
+  <a href="https://instagram.com/idsnews" target="_blank">
+    <svg>
+      <use xlink:href="#ico-instagram"></use>
+    </svg>
+  </a>
+</div>
+
+
+<svg style="display: none">
+	<symbol id="ico-instagram" viewBox="0 0 35 35">
+		<circle opacity=".2" cx="17.5" cy="17.5" r="17" stroke="var(--fill)" fill="none"></circle>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M24.944 20.476c.028-.457.042-1.282.042-2.476s-.014-2.019-.042-2.476c-.056-1.09-.378-1.93-.965-2.517s-1.422-.91-2.503-.965C21.018 12.014 20.194 12 19 12s-2.019.014-2.476.042c-1.081.047-1.92.368-2.517.965s-.918 1.436-.965 2.518C13.014 15.98 13 16.805 13 18c0 1.194.014 2.019.042 2.476.047 1.09.368 1.93.965 2.517s1.436.91 2.518.965c.466.028 1.29.042 2.475.042 1.184 0 2.01-.014 2.476-.042 1.072-.047 1.906-.368 2.503-.965.597-.597.918-1.436.965-2.517ZM19 13.075h-1.427c-.186 0-.438.01-.755.029a11.61 11.61 0 0 0-.797.07c-.215.028-.401.08-.56.154-.26.102-.489.251-.685.447-.196.196-.35.425-.461.685-.056.15-.103.336-.14.56a7.843 7.843 0 0 0-.084.811 7.113 7.113 0 0 0-.014.741c.01.178.01.453 0 .826-.01.373-.01.573 0 .601.01.028.01.228 0 .601s-.01.648 0 .826c.01.177.014.424.014.74 0 .318.028.588.084.812l.14.56c.112.26.265.489.461.685.196.196.425.345.685.447.15.056.336.108.56.154.224.047.49.07.797.07.308 0 .56.01.755.028.196.019.471.019.826 0 .354-.019.554-.019.601 0 .047.019.242.019.587 0s.62-.019.826 0c.205.019.456.01.755-.028.298-.037.569-.06.811-.07.242-.01.424-.06.546-.154.26-.102.494-.251.699-.447a1.75 1.75 0 0 0 .447-.686c.056-.149.103-.335.14-.559.038-.224.066-.494.084-.811.019-.317.023-.564.014-.741a11.82 11.82 0 0 1 0-.826c.01-.373.01-.573 0-.601-.01-.028-.01-.228 0-.601s.01-.648 0-.826c-.01-.177-.014-.424-.014-.74 0-.318-.028-.588-.084-.812l-.14-.56a1.956 1.956 0 0 0-1.147-1.133 3.979 3.979 0 0 0-.545-.153 3.915 3.915 0 0 0-.811-.07c-.326 0-.578-.01-.755-.028a5.916 5.916 0 0 0-.826 0c-.372.019-.568.019-.587 0Zm3.706 2.225c.14-.14.21-.308.21-.504a.57.57 0 0 0-.21-.503.767.767 0 0 0-.517-.21.718.718 0 0 0-.504.21.622.622 0 0 0-.21.503c.01.196.08.364.21.504s.299.21.504.21c.205 0 .377-.07.517-.21ZM22.063 18c0 .849-.298 1.576-.895 2.182a2.882 2.882 0 0 1-2.168.895 3.075 3.075 0 0 1-2.182-.895c-.606-.588-.904-1.315-.895-2.182.01-.867.308-1.594.895-2.182.588-.587 1.315-.886 2.182-.895.867-.01 1.59.29 2.168.895.578.606.876 1.333.895 2.182Zm-1.077 0a1.95 1.95 0 0 0-.573-1.413A1.897 1.897 0 0 0 19 16c-.56 0-1.03.196-1.413.587A2.001 2.001 0 0 0 17 18c-.01.55.186 1.021.587 1.413.401.391.872.587 1.413.587.54 0 1.012-.196 1.413-.587.4-.392.592-.863.573-1.413Z"
+			transform="translate(-1.5 -0.5)"
+			fill="var(--fill)"
+		></path>
+	</symbol>
+
+	<symbol id="ico-linkedin" viewBox="0 0 35 35">
+		<circle opacity=".2" cx="17.5" cy="17.5" r="17.5" stroke="var(--fill)" fill="none"></circle>
+		<path
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"
+			transform="translate(5.5 5.5)"
+			fill="var(--fill)"
+		></path>
+	</symbol>
+
+  <symbol id="ico-twitter" viewBox="0 0 35 35">
+    <circle opacity=".2" cx="17.5" cy="17.5" r="17" stroke="var(--fill)" fill="none"></circle>
+    <path
+      d="M19.7828 3.91825C20.1313 3.83565 20.3743 3.75444 20.5734 3.66915C20.8524 3.54961 21.0837 3.40641 21.4492 3.16524C21.7563 2.96255 22.1499 2.9449 22.4739 3.11928C22.7979 3.29366 23 3.6319 23 3.99986C23 5.08079 22.8653 5.96673 22.5535 6.7464C22.2911 7.40221 21.9225 7.93487 21.4816 8.41968C21.2954 11.7828 20.3219 14.4239 18.8336 16.4248C17.291 18.4987 15.2386 19.8268 13.0751 20.5706C10.9179 21.3121 8.63863 21.4778 6.5967 21.2267C4.56816 20.9773 2.69304 20.3057 1.38605 19.2892C1.02813 19.0108 0.902313 18.5264 1.07951 18.109C1.25671 17.6916 1.69256 17.4457 2.14144 17.5099C3.42741 17.6936 4.6653 17.4012 5.6832 16.9832C5.48282 16.8742 5.29389 16.7562 5.11828 16.6346C4.19075 15.9925 3.4424 15.1208 3.10557 14.4471C2.96618 14.1684 2.96474 13.8405 3.10168 13.5606C3.17232 13.4161 3.27562 13.293 3.40104 13.1991C2.04677 12.0814 1.49999 10.5355 1.49999 9.49986C1.49999 9.19192 1.64187 8.90115 1.88459 8.71165C1.98665 8.63197 2.10175 8.57392 2.22308 8.53896C2.12174 8.24222 2.0431 7.94241 1.98316 7.65216C1.71739 6.3653 1.74098 4.91284 2.02985 3.75733C2.1287 3.36191 2.45764 3.06606 2.86129 3.00952C3.26493 2.95299 3.6625 3.14709 3.86618 3.50014C4.94369 5.36782 6.93116 6.50943 8.78086 7.18568C9.6505 7.50362 10.4559 7.70622 11.0596 7.83078C11.1899 6.61019 11.5307 5.6036 12.0538 4.80411C12.7439 3.74932 13.7064 3.12525 14.74 2.84698C16.5227 2.36708 18.5008 2.91382 19.7828 3.91825ZM10.7484 9.80845C10.0633 9.67087 9.12171 9.43976 8.09412 9.06408C6.7369 8.56789 5.16088 7.79418 3.84072 6.59571C3.86435 6.81625 3.89789 7.03492 3.94183 7.24766C4.16308 8.31899 4.5742 8.91899 4.94721 9.10549C5.40342 9.3336 5.61484 9.8685 5.43787 10.3469C5.19827 10.9946 4.56809 11.0477 3.99551 10.9046C4.45603 11.595 5.28377 12.2834 6.66439 12.5135C7.14057 12.5929 7.49208 13.0011 7.49986 13.4838C7.50765 13.9665 7.16949 14.3858 6.69611 14.4805L5.82565 14.6546C5.95881 14.7703 6.103 14.8838 6.2567 14.9902C6.95362 15.4727 7.65336 15.6808 8.25746 15.5298C8.70991 15.4167 9.18047 15.6313 9.39163 16.0472C9.60278 16.463 9.49846 16.9696 9.14018 17.2681C8.49626 17.8041 7.74425 18.2342 6.99057 18.5911C6.63675 18.7587 6.24134 18.9241 5.8119 19.0697C6.14218 19.1402 6.48586 19.198 6.84078 19.2417C8.61136 19.4594 10.5821 19.3126 12.4249 18.6792C14.2614 18.0479 15.9589 16.9385 17.2289 15.2312C18.497 13.5262 19.382 11.1667 19.5007 7.96291C19.51 7.71067 19.6144 7.47129 19.7929 7.29281C20.2425 6.84316 20.6141 6.32777 20.7969 5.7143C20.477 5.81403 20.1168 5.90035 19.6878 5.98237C19.3623 6.04459 19.0272 5.94156 18.7929 5.70727C18.0284 4.94274 16.5164 4.43998 15.2599 4.77822C14.6686 4.93741 14.1311 5.28203 13.7274 5.89906C13.3153 6.52904 13 7.51045 13 8.9999C13 9.28288 12.8801 9.5526 12.6701 9.74221C12.1721 10.1917 11.334 9.92603 10.7484 9.80845Z"
+      transform="translate(4.5 6.0)"
+      fill="var(--fill)"
+
+    ></path>
+  </symbol>
+  
+
+
+
+
+
+</svg>
+
+<div class="cursor"></div>
+<div class="cursor cursor2"></div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+<script id="rendered-js" >
+/*--------------------
+Vars
+--------------------*/
+let progress = 0;
+let startX = 0;
+let active = 0;
+let isDown = false;
+
+/*--------------------
+Contants
+--------------------*/
+const speedWheel = 0.02;
+const speedDrag = 0.1;
+
+/*--------------------
+Get Z
+--------------------*/
+const getZindex = (array, index) => array.map((_, i) => index === i ? array.length : array.length - Math.abs(index - i));
+
+/*--------------------
+Items
+--------------------*/
+const $items = document.querySelectorAll('.carousel-item');
+const $cursors = document.querySelectorAll('.cursor');
+
+const displayItems = (item, index, active) => {
+  const zIndex = getZindex([...$items], active)[index];
+  item.style.setProperty('--zIndex', zIndex);
+  item.style.setProperty('--active', (index - active) / $items.length);
+};
+
+/*--------------------
+Animate
+--------------------*/
+const animate = () => {
+  progress = Math.max(0, Math.min(progress, 100));
+  active = Math.floor(progress / 100 * ($items.length - 1));
+  console.log('Progress:', progress);
+  console.log('Active:', active);
+  console.log('Active1:', $items.length);
+  $items.forEach((item, index) => displayItems(item, index, active));
+};
+animate();
+
+/*--------------------
+Click on Items
+--------------------*/
+$items.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    progress = i / $items.length * 100 + 7;
+    animate();
+  });
+});
+
+/*--------------------
+Handlers
+--------------------*/
+const handleWheel = e => {
+  const wheelProgress = e.deltaY * speedWheel;
+  progress = progress + wheelProgress;
+  animate();
+};
+
+const handleMouseMove = e => {
+  if (e.type === 'mousemove') {
+    $cursors.forEach($cursor => {
+      $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    });
+  }
+  if (!isDown) return;
+  const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+  const mouseProgress = (x - startX) * speedDrag;
+  progress = progress + mouseProgress;
+  startX = x;
+  animate();
+};
+
+const handleMouseDown = e => {
+  isDown = true;
+  startX = e.clientX || (e.touches && e.touches[0].clientX) || 0;
+};
+
+const handleMouseUp = () => {
+  isDown = false;
+};
+
+const handleTouchStart = e => {
+  isDown = true;
+  startX = e.touches && e.touches[0].clientX || 0;
+};
+
+const handleTouchMove = e => {
+  if (!isDown) return;
+  const x = e.touches && e.touches[0].clientX || 0;
+  const touchProgress = (x - startX) * speedDrag;
+  progress = progress + touchProgress;
+  startX = x;
+  animate();
+};
+
+const handleTouchEnd = () => {
+  isDown = false;
+};
+
+const handleKeyDown = e => {
+  if (e.key === 'ArrowUp' ||e.key === 'ArrowLeft' ) {
+    progress -= 7.5;
+    animate();
+  } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+    progress += 7.5;
+    animate();
+  }
+};
+
+/*--------------------
+Listeners
+--------------------*/
+document.addEventListener('mousewheel', handleWheel);
+document.addEventListener('mousedown', handleMouseDown);
+document.addEventListener('mousemove', handleMouseMove);
+document.addEventListener('mouseup', handleMouseUp);
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchmove', handleTouchMove);
+document.addEventListener('touchend', handleTouchEnd);
+document.addEventListener('keydown', handleKeyDown);
+
+const app = new Vue({
+    el: '#app',
+    mounted() {
+      setTimeout(() => {
+        document.getElementById('loader-container').style.display = 'none'; // Hide the loader
+       // Show the content
+      }, 5000); // Display content after 5 seconds
+    }
+  });
+
+
+</script>
+
+  
+</body>
+
+</html>
