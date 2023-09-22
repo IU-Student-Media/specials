@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color: #570707;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+        
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.3;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #000000;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+}
+
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+
+.card:before {
+  background: #e17f7f;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: rgb(250, 173, 173);
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space .num {
+    margin-left : 0;
+
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/fall-sports-guide" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Fall 2023 Big Ten Guide" /> <!-- TODO: headline -->
+    <meta property="og:description" content="The Sports Edition" /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/d903334a-59af-4d6f-b75d-b5731815fead.original.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Fall 2023 Big Ten Guide"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="The Sports Edition"> <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/d903334a-59af-4d6f-b75d-b5731815fead.original.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85" fill="#c80000">
+                            <path d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+          <!--
+            <h2 data-scroll-speed="2" >Big Ten Guide</h2>
+            <h2 data-scroll-speed="3" >IDS Fall 2023</h2>-->
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        
+        <p class="caption header-caption"></p>
+        <article>
+            <div class="story">
+                <div class="bylines">
+                    <div id="bylines">
+                        <!-- update bylines in metadata.json -->
+                    </div>
+                    <!-- TO DO update pub_date in metadata.json -->
+                    <p id="pubdate"></p>
+                    <p class="intro">The Big Ten Guide is a Special Publication published by the Indiana Daily Student. 
+                      It contains comprehensive information, insights, and coverage of the Indiana fall sports.</p>
+                </div>
+                <!--
+                    TODO: add story content!
+                -->
+                <section class="cards-wrapper">
+                    <div class="card-grid-space">
+                      <div class="num">01</div>
+                      <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-field-hockey-key-matchups" target="_blank" style="--bg-img: url(https://snworksceo.imgix.net/ids/8a50b5be-2d14-4c34-a20c-de305b5e0610.sized-1000x1000.jpg?w=1000)">
+                        <div>
+                          <h1>A look ahead at key matchups for Indiana field hockey</h1>
+                          <p>By Matt Rudella</p>
+                          <div class="date">Sep 7, 2023</div>
+                          <div class="tags">
+                            <div class="tag"> FIELD HOCKEY</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-grid-space">
+                      <div class="num">02</div>
+                      <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-club-hockey-releases-roster-schedule-2023-24" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/5c393b2d-43eb-4045-b6ec-967eba3e9e52.sized-1000x1000.jpeg?w=1000')">
+                        <div>
+                          <h1>Indiana club hockey releases 2023-24 roster, schedule</h1>
+                          <p>By Molly Gregory</p>
+                          <div class="date">Sep 7, 2023</div>
+                          <div class="tags">
+                            <div class="tag">HOCKEY CLUB</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-grid-space">
+                      <div class="num">03</div>
+                      <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-cross-country-new-era-replicate-historic-success" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/d7892494-0001-4a89-8760-6bc481b5a571.sized-1000x1000.jpeg?w=1000')">
+                        <div>
+                          <h1>Indiana cross country looking to replicate historic success as it enters new era</h1>
+                          <p>By Will Foley</p>
+                          <div class="date">Sep 7, 2023</div>
+                          <div class="tags">
+                            <div class="tag">CROSS-COUNTRY</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    
+                    <div class="card-grid-space">
+                      <div class="num">04</div>
+                      <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-football-big-ten-schedule-preview" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/9b656f03-50fa-422f-8dd0-521035b4dd82.sized-1000x1000.jpg?w=1000')">
+                        <div>
+                          <h1>Indiana football looking to impress in Big Ten slate</h1>
+                          <p>By Dalton James</p>
+                          <div class="date">Sep 7, 2023</div>
+                          <div class="tags">
+                           <div class="tag">FOOTBALL</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-grid-space">
+                      <div class="num">05</div>
+                      <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-football-defense-resurgence" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/1c1008cd-5825-4df4-9506-e0f2eabbc639.sized-1000x1000.jpg?w=1000')">
+                        <div>
+                          <h1>New faces, veterans lead Indiana football’s defensive resurgence</h1>
+                          <p>By Matt Press</p>
+                          <div class="date">Sep 7, 2023</div>
+                          <div class="tags">
+                            <div class="tag">FOOTBALL</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="card-grid-space">
+                        <div class="num">06</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-womens-soccer-quest-achieving-big-ten-prominence" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/b36bba4f-50b4-429a-a64f-839477b85ddc.sized-1000x1000.jpg?w=1000')">
+                          <div>
+                            <h1>Indiana women’s soccer’s quest toward achieving Big Ten prominence</h1>
+                            <p>By Quinn Richards</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                              <div class="tag">WOMEN'S SOCCER</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">07</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-womens-golf-revamped-improved-campaign" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/cd0145d0-0b10-4c1c-b635-2f66c80f7cc2.sized-1000x1000.jpg?w=1000')">
+                          <div>
+                            <h1>Revamped Indiana women’s golf team looking for improved 2023-24 campaign</h1>
+                            <p>By Will Foley</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                              <div class="tag">GOLF</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">08</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-mens-golf-fall-season-full-swing" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/5f181252-8067-4bc8-b0c4-1e0ef3e64c45.sized-1000x1000.jpg?w=1000')">
+                          <div>
+                            <h1>Indiana men’s golf fall season in full swing</h1>
+                            <p>By Charlie Huiras</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                             <div class="tag">GOLF</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">09</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-volleyball-avry-tatum-new-home" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/7351811c-27a8-45a6-853f-58219ba4bf1e.sized-1000x1000.jpeg?w=1000')">
+                          <div>
+                            <h1>Avry Tatum finds new home in Bloomington with Indiana volleyball</h1>
+                            <p>By Michael Livingston</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                             <div class="tag">VOLLEYBALL</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">10</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/column-big-ten-expanding-indiana-athletics" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/2696f48c-0452-49bf-9f2a-3b8f86b7ee3a.sized-1000x1000.jpg?w=1000')">
+                          <div>
+                            <h1>Is the Big Ten expanding good for Indiana athletics?</h1>
+                            <p>By Anirudh Lingaraju</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                              <div class="tag">SPORTS</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">11</div>
+                        <a class="card" href="https://www.idsnews.com/article/2023/09/indiana-mens-soccer-national-championship-contender" target="_blank" style="--bg-img: url('https://snworksceo.imgix.net/ids/822e7830-2ca1-4096-a379-d215e31ac556.sized-1000x1000.JPG?w=1000')">
+                          <div>
+                            <h1>Get ready for another deep, exciting season for Indiana men’s soccer</h1>
+                            <p>By Leo Paes</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                             <div class="tag">MEN'S SOCCER</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-grid-space">
+                        <div class="num">12</div>
+                        <a class="card" href="https://issuu.com/idsnews/docs/09-07-23" target="_blank" style="--bg-img: url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fimage.isu.pub%2F230907162522-ac1acd7fc1e0e5279cb5710e132969f9%2Fjpg%2Fpage_1.jpg')">
+                          <div>
+                            <h1> Check Out  </h1>
+                            <h1> The Print Edition </h1>
+                            <br/> <br/> <br/> 
+
+                            <p>on Issuu</p>
+                            <div class="date">Sep 7, 2023</div>
+                            <div class="tags">
+                              <div class="tag">IDS</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+
+                    <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+                  </section>
+                
+                    <div class="ad-block">
+                        <p class="ad-caption">Advertisement</p>
+                        <div class="ad-code">
+                            <div id='div-gpt-ad-1512489859064-2' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2023 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>

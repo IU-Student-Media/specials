@@ -1,0 +1,21 @@
+{
+    "url": "sports-guide-fall-2022",
+    "slug": "Sports Guide",
+    "headline": "Sports Guide",
+    "title": "IDS Fall 2022 Sports Guide",
+    "pub_date": "Published Sep. 11, 2023",
+    "bylines": {
+        "By": {
+            "name": "Salomé Cloteaux",
+            "email": "scclotea@iu.edu",
+            "pfp": "https://ca.slack-edge.com/T0G159G5S-U01D2D3P6NM-a92881b89a5d-72",
+            "bio": "Current Editor-in-Chief of the Indiana Daily Student."
+        },
+        "Design and development by": {
+            "name": "Rahul Suresh Ubale",
+            "email": "raubale@iu.edu",
+            "pfp": "https://iu.instructure.com/images/thumbnails/144962893/8llixVe4bzPzSEcA4TwWPFx8hJGeWY3G9u4hDfMD",
+            "bio": "Current Managing Editor of Digital Desk of the Indiana Daily Student."
+        }
+    }
+}
