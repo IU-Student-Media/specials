@@ -1,0 +1,282 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --gray05: rgb(242, 242, 242);
+  --gray90: rgb(26, 26, 26);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/d903334a-59af-4d6f-b75d-b5731815fead.original.jpg');
+  /* https://s3.amazonaws.com/snwceomedia/ids/af9ecb9e-0b66-44e8-a0e8-454f0de03dff.original.jpg // https://s3.amazonaws.com/snwceomedia/ids/7232ee57-d947-47d8-b360-1682ddf622c1.original.jpg
+  */
+  background-repeat: no-repeat;
+  background-size: contain;
+  ;
+  
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: 50% 50%;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+
+
+h1,
+h2 {
+  /* alignment */
+  /* font-size: 40px; */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+
+h3 {
+  /* section header */
+  text-align: center;
+  margin: 10px 0 0.55em;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin: 15px 10px 10px 10px;
+}
+
+nav i {
+  color: black;
+}
+
+a:link,
+a:visited {
+  color: var(--gray90);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+a:hover,
+a:active {
+  color: var(--gray90);
+  border-bottom: 0.125em solid var(--gray90);
+}
+
+.desc {
+  margin: 10px;
+}
+
+.by {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.author-bios,
+.donate {
+  max-width: var(--medium);
+  margin: 0 auto;
+}
+
+.story {
+  max-width: var(--width-l);
+  margin: 0 auto;
+}
+
+#container {
+  margin: 0 auto;
+}
+
+h2,
+figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.gallery {
+  display: block;
+}
+
+figure {
+  padding: 10px;
+  margin: 2px;
+}
+
+.intro {
+  padding: 0px 0px 15px 0px;
+}
+
+/*images*/
+
+/* img {
+  border-radius: 5%;
+} */
+
+
+.img-sizer {
+  border-radius: 10px;
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+/* .img-contain {
+  object-fit: contain;
+} */
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .img-sizer {
+    height: 390px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* header { */
+  /* adjust header image positioning for larger devices if needed */
+  /* you can also change the header image for mobile here */
+  /* background-position: 50% 50%; */
+  /* } */
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    font-size: 51px;
+  }
+
+  .img-sizer {
+    height: 500px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  figure {
+    width: 320px;
+    padding: 10px;
+    margin: 2px;
+  }
+
+  .img-sizer {
+    height: 200px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  figure {
+    width: 350px;
+    padding: 10px;
+    margin: 1em;
+  }
+  
+}
