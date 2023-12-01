@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>A Naturally Unnatural Life | IDS</title>
+		<link rel="SHORTCUT ICON" href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/ids.css" />
+
+		<!-- Include Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<style>
+
+			.author-bios {
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					background-color: #f8f8f8;
+					padding: 20px;
+					border-radius: 10px;
+				}
+
+				.author-bio {
+					text-align: center;
+					width: 50%; /* Each author-bio takes 50% of the width */
+					box-sizing: border-box; /* Include padding and border in the width */
+					padding: 0 20px; /* Add padding to each author-bio for spacing */
+				}
+
+				.author-avatar {
+					width: 100px;
+					height: 100px;
+					border-radius: 50%;
+					object-fit: contain;
+					margin: 0 auto; /* Centers the image */
+				}
+
+
+			@media only screen and (min-width: 768px) {
+				.mobile-view {
+					display: none;
+				}
+			}
+				
+						/* Add your custom styles here if needed */
+						.socials a {
+							margin-right: 10px; /* Adjust the spacing between icons if needed */
+						}
+
+				
+					#pig {
+			max-width: 300px;
+			}
+
+			#ear_sm_1_, #ear_big_8_, #ear_sm, #piggy_body, #nose_shadow, #nose_top, #nostrel_1, #nostrel_2, #ear_big_2_, #ear_big_1_, #ear_big, #eyes_open, #eyes, #money_slot, #money_slot_1_ {
+				float: left;
+				-webkit-animation-name: Floatingx;
+				-webkit-animation-duration: 2.5s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: ease-in;
+				-moz-animation-name: Floating;
+				-moz-animation-duration: 2.5s;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-timing-function: ease-in;
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+
+			@-webkit-keyframes Floatingx{
+				from {-webkit-transform:translate(0, 0px);}
+				65% {-webkit-transform:translate(0, -10px);-webkit-transform:translate(-3px,-4px);}
+				to {-webkit-transform: translate(0, -0px);-webkit-transform:translate(0px,0px);}    
+			}
+			@-moz-keyframes Floating{
+				from {-moz-transform:translate(0, 0px);}
+				65% {-moz-transform:translate(0, 30px);}
+				to {-moz-transform: translate(0, -0px);}    
+			}
+
+			#tail {
+				float: left;
+				-webkit-animation-name: Floatingx;
+				-webkit-animation-duration: .5s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: ease-in;
+				-moz-animation-name: Floating;
+				-moz-animation-duration: .5s;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-timing-function: ease-in;
+				margin-left: 30px;
+				margin-top: 5px;
+			}
+
+			@-webkit-keyframes Floatingx{
+				from {-webkit-transform:translate(0, 0px);}
+				65% {-webkit-transform:translate(0, -10px);-webkit-transform:translate(-3px,-4px);}
+				to {-webkit-transform: translate(0, -0px);-webkit-transform:translate(0px,0px);}    
+			}
+			@-moz-keyframes Floating{
+				from {-moz-transform:translate(0, 0px);}
+				65% {-moz-transform:translate(0, 30px);}
+				to {-moz-transform: translate(0, -0px);}    
+			}
+
+			#eyes_open {
+				animation: blink 4s steps(10, start) infinite;
+				-webkit-animation: blink 4s steps(10, start) infinite;
+			}
+			@keyframes blink {
+			to {
+				visibility: hidden;
+			}
+			}
+			@-webkit-keyframes blink {
+			to {
+				visibility: hidden;
+			}
+			}
+			@-webkit-keyframes Floatingx{
+				from {-webkit-transform:translate(0, 0px);}
+				65% {-webkit-transform:translate(0, -10px);-webkit-transform:translate(-3px,-4px);}
+				to {-webkit-transform: translate(0, -0px);-webkit-transform:translate(0px,0px);}    
+			}
+			@-moz-keyframes Floating{
+				from {-moz-transform:translate(0, 0px);}
+				65% {-moz-transform:translate(0, 30px);}
+				to {-moz-transform: translate(0, -0px);}    
+			}
+		</style>
+		
+		
+
+
+
+		    <!-- SOCIAL CARDS — Make sure to update!! -->
+			<meta property="og:url" content="http://specials.idsnews.com/a-naturally-unnatural-life" />
+			<meta property="og:type" content="article" />
+			<meta property="og:title" content="A Naturally Unnatural life" /> <!-- TODO: headline -->
+			<meta property="og:description" content="Pip was rescued from a farm factory, now, he resides at PEAK Animal Sanctuary." /> <!-- TODO: abstract -->
+			<meta property="og:site_name" content="IDS News">
+			<meta property="og:image"
+				content="https://s3.amazonaws.com/snwceomedia/ids/c2839fa6-f4fb-45c4-a1d9-cb26dd6f6383.original.jpg" />
+			<!-- TODO: link to dominant image -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:site" content="@idsnews">
+			<meta name="twitter:creator" content="@idsnews">
+			<meta name="twitter:title" content="A Naturally Unnatural life"> <!-- TODO: headline -->
+			<meta name="twitter:description" content="Pip was rescued from a farm factory, now, he resides at PEAK Animal Sanctuary."> <!-- TODO: abstract -->
+			<meta name="twitter:image"
+				content="https://s3.amazonaws.com/snwceomedia/ids/c2839fa6-f4fb-45c4-a1d9-cb26dd6f6383.original.jpg">
+
+
+
+				<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+				<script>
+					var googletag = googletag || {};
+					googletag.cmd = googletag.cmd || [];
+				</script>
+				<script>
+					googletag.cmd.push(function () {
+						//all other leaderboards
+						var mapping1 = googletag.sizeMapping()
+							.addSize([768, 0], [728, 90]) // Desktops and Tablets
+							.addSize([0, 0], [320, 50]) // Mobile devices
+							.build();
+						googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+						googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+						googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+						googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+						googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [600, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+						googletag.pubads().enableSingleRequest();
+						googletag.pubads().collapseEmptyDivs();
+						googletag.enableServices();
+					});
+				</script>
+
+	</head>
+	<body class="demo-2">
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+				style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script src="js/googleTagManager.js"></script>
+	
+		<div class="helper"></div>
+		<div id="container" class="container intro-effect-fadeout">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="custom-link" href="https://www.idsnews.com">
+					<span><img style="width: 75px; margin-top: -25px; color: #ffffff00;" src="https://s3.amazonaws.com/snwceomedia/ids/408634bf-5ac3-42df-ad23-245c2ce81977.original.png" alt="IDS News Logo"></span>
+				</a>
+				<span class="right">
+					<a class="codrops-icon" style="color: rgb(249, 244, 244); text-decoration: none;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">
+						<span>A Naturally Unnatural life</span>
+					</a>
+				</span>
+			</div>
+			<header class="header">
+				<div class="bg-img" style="background-color: black;" >
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/c2839fa6-f4fb-45c4-a1d9-cb26dd6f6383.original.jpg" alt="Background Image" style="opacity: 0.5;">
+				</div>
+								<div class="title">
+					<h1 style="font-size: 2.5em;">A Naturally Unnatural Life </h1>
+					<p class="subline">By <strong><a href="https://www.idsnews.com/staff/carolyn-marshall">Carolyn  Marshall</a> </strong>  on <strong>Dec 1, 2023</strong><br>
+					<br>Design and development by <strong><a href="https://www.idsnews.com/staff/Rahul-Suresh-Ubale">Rahul Suresh Ubale</a> </strong><br>
+					<br>Photos by <strong><a href="https://www.idsnews.com/staff/carolyn-marshall">Carolyn Marshall</a> </strong></p>
+
+					<br>
+
+				</div>
+				
+			</header>
+			
+
+			<button class="trigger" data-info="Pip lays in his light blue house  Oct. 3, 2023."><span>Trigger</span></button>
+			<article class="content">
+				<div>
+					<p><span data-contrast="auto">
+					FREEDOM, IN - Pip the pig lays in his pile of hay, surrounded by a wooden house painted light blue. His ears stand up straight through the straw, unlike the other pigs who lay, ears flopping down, in the surrounding wooden houses or underneath the trees.</span></p>
+					<p><span data-contrast="auto">Suddenly, an engine noise sounds in the distance. Tarra Danner, 2animal caregiver and volunteer coordinator of PEAK Animal Sanctuary, drives her red MULE 5x F1 golf cart around the corner of a patch of pines, oaks and walnut trees. Pip&rsquo;s eyes open, revealing blue irises. It&rsquo;s breakfast time. </span></p>
+					<p><span data-contrast="auto">Since being rescued, Pip has come to be known as the most sociable of this family of pigs, notorious for being the youngest and always getting what he wants. When guests visit the sanctuary, he runs up to beg for attention, chatting with them through oinks. He wears his heart on his skin &mdash; literally, with a black splotch in the shape of a heart on the side of his belly. It perhaps represents his soft and gentle nature, especially towards his rumored girlfriend, Tulip. </span></p>
+					<p><span data-contrast="auto">Pip, a Yorkshire pig, was born on a North Carolina factory farm in August 2018. His life was set to end at 5 months, the average age genetically modified pigs live before being processed into meat. </span></p>
+					<p><span data-contrast="auto">However, at four months, he and 40 other piglets didn&rsquo;t meet the weight requirement to be sent to the next stage of a factory farm process, also known as a &ldquo;</span><a href="https://www.rotecna.com/en/solutions/fattening/"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">fattening farm.</span></span></a><span data-contrast="auto">&rdquo; In farm factories, hog farmers often dispose of pigs if they are growing slower than needed. Pip, his brother Potter and 40 other piglets were planned to be executed at a </span><a href="https://www.speciesunite.com/news-stories/americas-gas-chambers-for-pigs-revealed-in-unprecedented-undercover-footage"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">gas </span><span data-ccp-charstyle="Hyperlink">chamber</span></span></a><span data-contrast="auto">, a common practice for disposing of pigs seen as unfit to fulfill their determined purpose.</span></p>
+
+		
+                 
+					<figure class="lg-image" style="max-width: 100%; margin: 0; text-align: left;">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/f8cc8130-ffa1-407c-afdc-54c0388bc6a8.original.jpg" alt="alt text">
+						<figcaption style="margin-top: 0;">
+							<p class="credit" style="font-size: small; margin-bottom: 0;">Carolyn Marshall | <b>IDS</b></p> 
+							Pip forages in the forest floor on Oct. 13, 2023. Pigs often forage for snacks like nuts or berries.
+						</figcaption>
+					</figure>
+                         <br>
+						<!-- story content.... -->
+						<p><span data-contrast="auto">During the COVID-19 outbreak, </span><a href="https://www.nytimes.com/2020/05/14/business/coronavirus-farmers-killing-pigs.html"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">meatpack</span><span data-ccp-charstyle="Hyperlink">ing</span><span data-ccp-charstyle="Hyperlink"> plants</span></span></a><span data-contrast="auto"> suffered greatly, resulting in a backlog of pigs ready for slaughter but with nowhere to go. Highly populated barns were gassed, or pigs were shot directly in the head. &nbsp;</span></p>
+						<p><span data-contrast="auto">Rescue groups across Indiana frequently seek out opportunities to bargain with farmers about rescuing farm animals, even if it&rsquo;s just a few. In Pip's and brother Potter&rsquo;s case, a rescuer won. </span></p>
+						<p><span data-contrast="auto">Kristy Todd, another PEAK Animal Sanctuary employee, drove down the next day to bring the two brothers home in November 2018. They&rsquo;ve been given a chance for a new, longer and more fulfilling life. </span></p>
+						<p><span data-contrast="auto">However, the effects of their genetic modifications continue to reveal themselves with age. Genetic modifications of pigs have been used since </span><a href="https://www.sciencedirect.com/topics/immunology-and-microbiology/transgenic-pig#:~:text=In%201985%20the%20first%20transgenic,are%20available%20(Cibelli%20et%20al."><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">1985</span></span></a><span data-contrast="auto">, and since then, have increased to account for </span><a href="https://clf.jhsph.edu/projects/technical-and-scientific-resource-meatless-monday/meatless-monday-resources/meatless-monday-resourcesmeat-consumption-trends-and-health-implications#:~:text=Meat%20consumption%20in%20the%20United,doubled%20in%20the%20last%20century."><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">escalating </span><span data-ccp-charstyle="Hyperlink">meat</span><span data-ccp-charstyle="Hyperlink"> demand</span></span></a><span data-contrast="auto">. Unlike Pip, the other pigs in his group are sightless, eyes sealed shut. They also have flopped ears. </span></p>
+						<p><span data-contrast="auto">Danner said the volunteers at the sanctuary were unsure if thesge physical effects were the result of their genetic modifications</span><span data-contrast="auto">,</span><span data-contrast="auto"> because many pig breeds are genetically modified. Usually, pigs are known for their bad eyesight, which is outweighed by their keen sense of smell and impressive hearing. </span></p>
+						<p class="section-break"><span data-contrast="auto">***</span></p>
+
+
+						<div class="ad-block">
+							<div class="ad-code">
+							  <div class="ad-caption">Advertisement</div>
+								<div id='div-gpt-ad-1512489859064-2' align="center">
+									<script>
+										googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+									</script>
+								</div>
+							</div></div>
+								<br>
+					
+								<p><span data-contrast="auto">That same morning, Danner was in charge of doing the rounds and ensuring each animal was fed.&nbsp;</span></p>
+								<p><span data-contrast="auto">As she came forward with large plastic bowls in hand, each of the pigs popped out of their various piles of hay and jumped off of the grass floor, moseying their way over to eat. </span></p>
+								<p><span data-contrast="auto">Pip and his group of pigs receive a breakfast of mixed minerals, vitamins, oats, barley and corn, which the team of caregivers at the farm receive from the feeder store, Cloverdale Agricultural Center Inc. &nbsp;&nbsp;</span></p>
+								<p><span data-contrast="auto">Each of the pigs have a different background, but all are similar to Pip&rsquo;s. Some have jumped off pig transportation trucks on the way to slaughterhouses and were found wandering on highways. Others escaped from farms or factories where they were to be processed, found wandering in fields with frostbite or torn ears.</span></p>
+								<p><span data-contrast="auto">To protect themselves from the approaching cold, the pigs choose sleeping spots strategically, covering themselves with hay to keep warm. As Pip trotted over to his breakfast bowl, his hooves pattered across the dew drop covered grass and oinks filled the air. The pigs mainly kept to their own bowls, interrupted occasionally by the approach of another pig and a slight shove. </span></p>
+								<p><span data-contrast="none">Compared to the others, Pip has a smaller build, weighing around 700 lbs. The others weigh up to 900 lbs.</span></p>
+								<p><span data-contrast="auto">Tulip, the leader of the group and Pip&rsquo;s rumored girlfriend according to PEAK Animal Sanctuary caregivers, rested in her orange house as the others continued to eat. Unlike the other pigs, she is a mixture of a Yorkshire and Meishan breed. Her genetic modification has left her living a life of decreased mobility: she faces joint disintegration and arthritis, among other difficulties. </span><span data-contrast="auto">&nbsp;</span></p>
+								<p><span data-contrast="auto">Slight burns were present on her ears, which is common among the other Yorkshire pigs within the group. Danner puts zinc oxide sunblock on the pigs each morning to aid their sensitivity to the sun.</span></p>
+								<p><span data-contrast="auto">During breakfast, Danner chatted with the pigs, to which they oinked back, asking them about their days.</span></p>
+								<p><span data-contrast="auto">&ldquo;I&rsquo;m comin&rsquo; Lily! Watch your tone Hank,&rdquo; Danner said toward a couple of the pigs. </span></p>
+								<p><span data-contrast="auto">One of them walked over to her and plopped on their side. Danner reached down and scratched their belly. &ldquo;Well, hi there Sue,&rdquo; she said.</span></p>
+
+                         
+						<figure class="lg-image" style="max-width: 992px; margin: 0; text-align: left;">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/84948080-0b3b-4e57-8ece-80937bb85be8.original.jpg" alt="alt text">
+							<figcaption style="margin-top: 0;">
+								<p class="credit" style="font-size: small; margin-bottom: 0;">Carolyn Marshall | <b>IDS</b></p>
+								Sue rolls over for belly rubs while Tulip lays in her house on Oct. 13, 2023. Tarra Danner is a caregiver at upland PEAK sanctuary.  
+							</figcaption>
+						</figure>
+						<br>
+						<p><span data-contrast="auto">After finishing up breakfast, the group of pigs spread back out to their own areas. A couple walked down the sloping hill towards a deeper set of woods, while others walked back to their own houses to lay back down. Pip walked over to clean Tulip&rsquo;s face, a gesture he practices daily.&nbsp;</span></p>
+						<p><span data-contrast="auto">All of the pigs have a certain infatuation with Tulip since she&rsquo;s the leader of the group. However, Pip shows a certain care for her, consistently checking in. &nbsp;</span></p>
+						<p><span data-contrast="auto">&ldquo;He&rsquo;s always got to know where his girl is,&rdquo; Rayann Sanchez said, animal care manager of the sanctuary. </span></p>
+						<p><span data-contrast="auto">After checking in with her, he went to a nearby meadow where small white flowers grew. Pip snacked on the flowers and stood there, looking out onto the nearing patch of woods.&nbsp;Later in the afternoon, he decided to lie in the sun. One pig nearby immersed themself in a wallow, a puddle dug up by the pigs&rsquo; noses to help them cool down in the hot sun since they can&rsquo;t sweat. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+						<p><span data-contrast="auto">In factory farm conditions, the pigs' floors are concrete, and their spaces are crowded, making it impossible to smell the earth, eat flowers or wander through the shaded forest.</span></p>
+
+
+						<div class="ad-block">
+							<div class="ad-code">
+							  <div class="ad-caption">Advertisement</div>
+						<div id='div-gpt-ad-1512489859064-3' align="center">
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+							</script>
+						</div>
+						</div></div>
+						<br>
+
+						<p><span data-contrast="auto">Normally, female pigs born into factory farms are confined in a gestation crate. The confinement is so they can&rsquo;t move when being repeatedly artificially inseminated, having </span><a href="https://canadianfoodfocus.org/on-the-farm/ask-an-expert-how-many-litters-do-pigs-have-in-a-year/#:~:text=Pigs%20are%20very%20efficient%20reproducers,includes%208%20to%2012%20piglets."><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">two to three litters each </span><span data-ccp-charstyle="Hyperlink">year</span></span></a><span data-contrast="auto">. After three to four years, their bodies can no longer sustain their conditions and they are then processed for meat.</span></p>
+						<p><span data-contrast="auto">At PEAK Animal Sanctuary, there&rsquo;s an unused gestation crate set outside of the properties main house to give an example of the crates. On it, a sign describes the conditions that pigs face. Blue flowers have grown and twisted around the metal bars, as though symbolizing the new life that the sanctuary caregivers hope to give to their rescued animals. </span></p>
+						
+						<figure class="lg-image" style="max-width: 992px; margin: 0; text-align: left;">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/5c0484a7-dd88-4ef1-aa26-c3d4aec3d712.original.jpg" alt="alt text">
+							<figcaption style="margin-top: 0;">
+								<p class="credit" style="font-size: small; margin-bottom: 0;">Carolyn Marshall | <b>IDS</b></p>
+								A gestation crate pictured on Oct. 3, 2023. Normally, female pigs spend their whole lives in confinement in factory farms.
+							</figcaption>
+						</figure>
+						<br>
+						<p><span data-contrast="auto">According to the sign, </span><a href="https://www.wur.nl/en/dossiers/file/preventing-tail-biting-in-pigs.htm"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">tail bit</span><span data-ccp-charstyle="Hyperlink">in</span><span data-ccp-charstyle="Hyperlink">g</span></span></a><span data-contrast="auto"> becomes common in these conditions because of their experience of heightened stress. The pigs become more susceptible to infections, lameness, paralysis or death.&nbsp;</span></p>
+						<p><span data-contrast="auto">As the sun reached its peak, Pip settled in a grove of trees. The same engine noise from the morning feed was heard in the distance as Sanchez made her rounds in the off-road golf cart. Pip poked his head up and began running towards the sound as the engine came closer.</span></p>	
+						<div class="ad-block">
+							<div class="ad-code">
+							  <div class="ad-caption">Advertisement</div>
+							   <div id='div-gpt-ad-1512489859064-4' align="center">
+							  <script>
+								  googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+							  </script>
+							</div>
+  
+							</div>
+						  </div>
+						  <br>
+						  <p><span data-contrast="auto">&ldquo;Not yet Pip! Dinner isn&rsquo;t happening yet!&rdquo; she expressed, waving him off. </span></p>
+						  <p><span data-contrast="auto">Pip&rsquo;s eyes followed Sanchez as she left, the engine noise trailed off into the distance. Once the noise dissipated, he made his way up the slope from the grove of trees to Tulip&rsquo;s doorstep.</span></p>
+						
+						
+						
+						
+						
+
+
+
+
+
+						<figure class="lg-image" style="max-width: 992px; margin: 0; text-align: left;">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/595730ea-b609-402b-b475-75ef54107c10.original.jpg" alt="alt text">
+							<figcaption style="margin-top: 0;">
+								<p class="credit" style="font-size: small; margin-bottom: 0;">Carolyn Marshall | <b>IDS</b></p>
+								Pip visits Tulip on Oct. 13, 2023. Pip is the most social of the group, especially attentive towards her.
+							</figcaption>
+						</figure>
+						<br>
+
+						<p><span data-contrast="auto">She snorted at him as he touched noses with her, his head bent down as he affectionately licked her forehead. After she gave an oink and moved her head indifferently, he stepped back, picked up a bit of hay in his mouth, then spat it back out. </span></p>
+						<p><span data-contrast="auto">He turned around and looked out on the field in front of him once more, the clouds trailed along the blue sky as the hot summer sun passed and a cool breeze settled in. Dinnertime was coming soon. </span></p>
+						<p><span data-contrast="auto">Maria Shau, the director of the sanctuary, said if Pip hadn&rsquo;t been rescued, his factory fate would have been certain.&nbsp;</span></p>
+						<p><span data-contrast="auto">Each year, </span><a href="https://www.mspca.org/animal_protection/farm-animal-welfare-pigs/"><span data-contrast="none"><span data-ccp-charstyle="Hyperlink">an average</span></span></a><span data-contrast="auto"> of 105 million pigs are raised on factory farms, with 97% destined for slaughter. Once they reach three or four weeks old, piglets are taken from their mothers and placed in metal barred pens in warehouses with little to no room to move around. &nbsp;</span></p>
+						<p><span data-contrast="auto">It is common for piglets who don&rsquo;t reach standard growth rates to be killed to make room for new piglets in these factory farms, Shau said. For the group of pigs at the sanctuary, the sanctuary caregiver&rsquo;s goal is to provide a better life where they can breathe fresh air and roam through the forest.&nbsp;</span></p>
+						<p><span data-contrast="auto">As a part of their daily snacks, the pigs also receive a plethora of medications which attempt to remedy their genetically modified deficiencies. The sanctuary caretakers will put Zyrtec pills, an allergy medicine which is helpful for the pigs&rsquo; pollen sensitive lungs, into small cupcakes. &nbsp;</span></p>
+						<p><span data-contrast="auto">Their medications also include meloxicam to relieve joint pain, dexamethasone to enhance their breathing, gabapentin to lessen nerve pains and tramadol to relieve more intense pain. Due to being genetically modified for the sake of being processed into meat, these pigs were never meant to live past 5 months. While their caretakers have improved their quality of life, the impact of the farm factory industry is still felt. </span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335551550&quot;:1,&quot;335551620&quot;:1,&quot;335559685&quot;:0,&quot;335559737&quot;:0,&quot;335559738&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}">&nbsp;</span></p>
+						
+						<div id='div-gpt-ad-1512489859064-4' align="center">
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+							</script>
+						</div>
+						<br>
+						
+						<p><span data-contrast="auto">Roughly 125.3 million hogs and pigs were slaughtered within the U.S. in 2022.</span></p>
+						<p><span data-contrast="auto">Seven of the pigs who at one point could be a part of the statistic now reside at PEAK Animal Sanctuary, each given the rare opportunity of living their lives fully to old age together.</span></p>
+						<p><span data-contrast="auto">As the group waited for dinner to arrive, Pip scanned the dirt floor under a group of trees. Many of the roots had already been dug up, leaving a desolate space of dusty soil. He shoved his pink nose into the dirt, which was speckled with piles of leaves, grass and sticks he had flipped up with the upward motion of his head. His snorts broke the streamline noise of the crickets and cicadas. He exhaled heavily to expel the dirt gathered in his nose. </span></p>
+						<p><span data-contrast="auto">As he continued his foraging, the golf cart was heard once more, his head poked up. His ears, standing tall, pierced forward as he looked for Sanchez, who would soon provide the last meal of the day. As the food approached, dark clouds rose from the horizon, a cool breeze swept its way through the trees and the other pigs came running up the hill in excitement.</span></p>
+						<p><span data-contrast="auto">After his shared meal with his group, Pip checked in with Tulip once more then retreated back to his light blue house and closed his eyes to sleep in Freedom. </span></p>
+				
+
+						<figure class="lg-image" style="max-width: 992px; margin: 0; text-align: left;">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/4b58cd05-743c-4a54-a5c3-6193a4645eb5.original.jpg" alt="alt text">
+							<figcaption style="margin-top: 0;">
+								<p class="credit" style="font-size: small; margin-bottom: 0;">Carolyn Marshall | <b>IDS</b></p>
+								Pip looks out to the edge of the woods Oct. 13, 2023. Him and the pigs experience effects of their genetic mutations but each day live a life of freedom. 
+							</figcaption>
+						</figure>
+						<br>
+						
+						<div class="ad-block">
+						  <div class="ad-code">
+						    <div class="ad-caption">Advertisement</div>
+						     <div id='div-gpt-ad-1512489859064-0' align="center">
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						  </div>
+
+						  </div>
+					    </div>
+						<br>
+
+
+
+
+                        <div class="author-bios">
+							<!-- Dynamically generate author bios from metadata.json -->
+							<!-- You can replace the metadata with your actual data -->
+							<!-- For demonstration purposes, using sample data -->
+							<div class="author-bio">
+								<img class="author-avatar" src="https://media.licdn.com/dms/image/D5603AQGfrkjSSHxHMA/profile-displayphoto-shrink_400_400/0/1698010039222?e=1706745600&v=beta&t=ijkCTF8JpYnjqsCLrpdfJgvM2q5DtbtweSaQFuVaK0o" alt="Author 1">
+								<h3><a href="https://www.idsnews.com/staff/carolyn-marshall"> Carolyn Marshall</a></h3>
+								<p>Content Writer</p>
+								<p><a href="linkedin.com/in/carolyn-marshall-068375261">Contact</a></p>
+								
+							</div>
+						
+							<div class="author-bio">
+								<img class="author-avatar" src="https://s3.amazonaws.com/snwceomedia/ids/3c5ec873-82c3-4a00-9d7c-ba27e91b1820.original.png" alt="Author 2">
+								<h3><a href="https://www.idsnews.com/staff/Rahul-Suresh-Ubale">Rahul Suresh Ubale</a></h3>
+								<p>Developer Lead </p>
+								<p><a href="https://rahulubale.github.io/rahulubale/">Contact</a></p>
+							</div> <div></div>
+                        </div>
+					
+					<p class="donate" style="text-align: center; margin-bottom: 10px;">
+						<em>Like what you're reading?</em><br>
+						Support independent, award-winning student journalism.
+						<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+						
+						
+					</p>
+
+
+				</div>
+			</article>
+			<div style="text-align: center;">
+				<svg  version="1.1" id="pig" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
+			 <style type="text/css">
+			   .st0{fill:#E6E7E8;}
+			   .st1{fill:#E8A7AA;}
+			   .st2{fill:#FAC8CE;}
+			   .st3{display:none;fill:#E8A7AA;}
+			 </style>
+			 <ellipse id="shadow" class="st0" cx="997.6" cy="1477.1" rx="359.8" ry="25.2"/>
+			 <path id="leg_back_1_" class="st1" d="M824.1,1471.2c-31.5,0-63,0-94.5,0c-9.9,0-41.8-163.2-41.8-163.2c0-6.6,5.4-12,12-12H851
+			   c6.6,0,12,5.4,12,12C863,1308,833,1471.2,824.1,1471.2z"/>
+			 <path id="leg_back" class="st1" d="M1167.1,1471.2c-31.5,0-63,0-94.5,0c-9.9,0-41.8-163.2-41.8-163.2c0-6.6,5.4-12,12-12H1194
+			   c6.6,0,12,5.4,12,12C1206,1308,1176.1,1471.2,1167.1,1471.2z"/>
+			 <g id="ear_sm_1_">
+			   <path class="st1" d="M597.7,643.4c-10.3,3.7-16.6-1.9-14-12.6l33.2-133.1c2.7-10.7,12.1-14.1,21-7.6l110.6,81.3
+				 c8.9,6.5,7.6,14.9-2.7,18.6L597.7,643.4z"/>
+			 </g>
+			 <g id="ear_big_8_">
+			   <path class="st2" d="M594.9,651.3c-10.3,3.7-16.6-1.9-13.8-12.6L615.6,505c2.7-10.7,12.3-14.1,21.2-7.6l111.9,80.9
+				 c8.9,6.4,7.7,14.8-2.6,18.5L594.9,651.3z"/>
+			 </g>
+			 <g id="ear_sm">
+			   <path class="st1" d="M610.8,620.4c-10.3,3.7-16.6-1.9-13.8-12.6l21.5-83.6c2.7-10.7,12.3-14.1,21.2-7.6l69.9,50.6
+				 c8.9,6.4,7.7,14.8-2.6,18.5L610.8,620.4z"/>
+			 </g>
+			 <ellipse id="piggy_body" class="st2" cx="998.7" cy="953.5" rx="577.1" ry="492.4"/>
+			 <ellipse id="nose_shadow" class="st1" cx="548.6" cy="892.7" rx="159.3" ry="146.1"/>
+			 <ellipse id="nose_top" class="st2" cx="529.9" cy="879.1" rx="153.5" ry="140.7"/>
+			 <path id="leg_front" class="st2" d="M911.7,1485.2c-31.5,0-63,0-94.5,0c-9.9,0-41.8-163.2-41.8-163.2c0-6.6,5.4-12,12-12h151.2
+			   c6.6,0,12,5.4,12,12C950.6,1322,920.6,1485.2,911.7,1485.2z"/>
+			 <path id="leg_front_1_" class="st2" d="M1270.7,1485.2c-31.5,0-63,0-94.5,0c-9.9,0-41.8-163.2-41.8-163.2c0-6.6,5.4-12,12-12h151.2
+			   c6.6,0,12,5.4,12,12C1309.6,1322,1279.7,1485.2,1270.7,1485.2z"/>
+			 <ellipse id="nostrel" class="st1" cx="456.4" cy="879.1" rx="12" ry="37.7"/>
+			 <ellipse class="st1" cx="517.9" cy="879.1" rx="12" ry="37.7"/>
+			 <g id="ear_big_2_">
+			   <path class="st1" d="M686.7,570.7c-10.9-1.8-13.3-9.5-5.4-17.2L784.4,453c7.9-7.7,18.4-5.9,23.4,3.9L873,585.2
+				 c5,9.8,0.2,16.4-10.7,14.6L686.7,570.7z"/>
+			 </g>
+			 <g id="ear_big_1_">
+			   <path class="st2" d="M679,573.7c-10.9-1.8-13.2-9.4-5.2-17l106.6-100.3c8-7.5,18.8-5.7,23.9,4L873,589.7
+				 c5.2,9.7,0.5,16.2-10.4,14.4L679,573.7z"/>
+			 </g>
+			 <g id="ear_big">
+			   <path class="st1" d="M693.3,575.6c-10.9-1.8-13.4-9.6-5.6-17.4l90.3-90.6c7.8-7.8,18-6.1,22.8,3.8l55.4,114.3
+				 c4.8,9.9-0.2,16.5-11,14.8L693.3,575.6z"/>
+			 </g>
+			 <path class="st3" d="M931,568.5"/>
+			 <g id="money_slot">
+			   <g>
+				 <path class="st1" d="M1218.6,512.2c-52.3-17.2-106.4-28.7-161.3-33.9c-31.5-3-63.4-3.9-94.9-1.3c-6.4,0.5-12.9,1.2-19.3,2.2
+				   c-8,1.3-12.5,11.3-10.5,18.5c2.3,8.5,10.4,11.8,18.5,10.5c4.2-0.7-4.6,0.5-0.5,0.1c3.1-0.4,6.2-0.7,9.4-1
+				   c11.7-1,23.5-1.5,35.3-1.6c18-0.2,36,0.6,54,2c24.6,2,43.1,4.5,67.4,9.1c31.8,6,63.2,14.2,94,24.4c7.5,2.5,16.7-2.8,18.5-10.5
+				   C1230.9,522.4,1226.6,514.8,1218.6,512.2L1218.6,512.2z"/>
+			   </g>
+			 </g>
+			 <g id="tail">
+			   <g>
+				 <path class="st2" d="M1520.6,930.2c25.2,9.4,53.8,16.8,80.8,14.9c17.6-1.2,34.4-7.4,45.2-22.1c11.9-16.2,10.8-37.7,6.4-56.4
+				   c-4-17.2-12.5-33.3-26.2-44.7c-8.8-7.4-20-13.7-31.7-8.8c-9.6,4.1-14.2,13.7-17.4,23c-6.2,18-4.3,38.2,2.7,55.8
+				   c7.6,19,23.2,38.8,43.1,46c22.4,8.1,46.3-1.3,59.8-20.1c12.8-17.8,16.1-40,13-61.4c-0.8-5.4-7.6-8.3-12.3-7
+				   c-5.7,1.6-7.8,6.9-7,12.3c0.2,1.7,0-0.3-0.1-0.5c0.1,0.7,0.2,1.5,0.2,2.2c0.1,1.4,0.2,2.8,0.3,4.2c0.2,4,0.1,8.1-0.4,12.1
+				   c-1,8.2-3.7,16-7.9,23.1c-3.4,5.8-7.7,10.7-13.9,14.1c-0.7,0.4-4.6,2.1-1.9,1.1c-1.1,0.4-2.2,0.9-3.4,1.2
+				   c-3.4,1.1-6.7,1.6-10.3,1.5c-16.4-0.2-30-15.2-37.4-28.7c-6.4-11.8-10-26.8-8.1-40.2c0.8-6,3-14.7,6.9-19c1.4-1.6,2.4-1.9,5-1
+				   c3.5,1.2,6.6,4.3,9.3,6.7c10,9.1,15.3,20.8,18.3,33.7c3,12.8,4.9,29-4.3,40.4c-7.3,9.1-18.8,12-29.8,12.5
+				   c-24.8,1.2-50.3-5.6-73.7-14.3c-5.1-1.9-11,2.1-12.3,7C1512.1,923.5,1515.5,928.3,1520.6,930.2L1520.6,930.2z"/>
+			   </g>
+			 </g>
+			 <g id="money_slot_1_">
+			   <g>
+				 <path d="M541.9,1109c16,2.3,33.6,3,49.3-1.8c9.2-2.8,5.3-17.3-4-14.5c-13,3.9-28,3.7-41.3,1.8c-4-0.6-8,1-9.2,5.2
+				   C535.6,1103.3,537.8,1108.4,541.9,1109L541.9,1109z"/>
+			   </g>
+			 </g>
+			 <path id="eyes" d="M571.3,675.8c0,1.3-4.5,2.4-10,2.4s-10-1.1-10-2.4c0-1.3,4.5-2.4,10-2.4S571.3,674.5,571.3,675.8z M687.4,673.4
+			   c-5.5,0-10,1.1-10,2.4c0,1.3,4.5,2.4,10,2.4s10-1.1,10-2.4C697.4,674.5,692.9,673.4,687.4,673.4z"/>
+			 <path id="eyes_open" d="M701.6,675.8c0,7.9-6.4,14.3-14.3,14.3c-7.9,0-14.3-6.4-14.3-14.3c0-7.9,6.4-14.3,14.3-14.3
+			   C695.2,661.5,701.6,667.9,701.6,675.8z M561.3,661.5c-7.9,0-14.3,6.4-14.3,14.3c0,7.9,6.4,14.3,14.3,14.3c7.9,0,14.3-6.4,14.3-14.3
+			   C575.6,667.9,569.2,661.5,561.3,661.5z"/>
+			 </svg>
+				</div>
+			<footer>
+
+				<div class="footer-row">
+					<!-- IDS LOGO SVG -->
+					<div class="logo">
+						<a href="https://idsnews.com">
+							<svg viewBox="0 0 163.17 68.85">
+								<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+								<path style="fill:#990000;"
+									d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+								<path style="fill:#990000;"
+									d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+							</svg>
+							<span class="show-desktop"> | Indiana Daily Student</span>
+						</a>
+					</div>
+					<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+						SUBSCRIBE
+					</a>
+					<div class="socials">
+						<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+						<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+							target="_blank"><i class="fab fa-spotify"></i></a>
+					</div>
+				</div>
+				<div class="links">
+					<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+					<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+					<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+					<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+							target="_blank">Advertising</a></p>
+					<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+					<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+				</div>
+				<p class="copyright"><small>All content &copy; 2023 Indiana Daily Student</small></p>
+			</footer>
+
+			
+
+		</div><!-- /container -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/ads.js"></script>
+		<script src="js/ids.js"></script>
+		<script src="js/metadata.js"></script>
+		<script src="js/classie.js"></script>
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE 
+					//if( ie ) {
+						//preventDefault(e);
+					//}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+		
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script src="https://use.fontawesome.com/38fa1b3bd6.js"></script>
+<script src="script.js">
+</script>
+</body>
+</html>
+  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+<script src='https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js'></script>
+      <script id="rendered-js" >
+$(document).ready(function () {
+  $("#card").flip({
+    trigger: 'manual' });
+
+
+  $('#flip').click(function (event) {
+    $("#card").flip(true);
+  });
+
+  $('#unflip').click(function (event) {
+    $("#card").flip(false);
+  });
+
+});
+    </script>
+
+  
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
+</body>
+	</body>
+</html>
