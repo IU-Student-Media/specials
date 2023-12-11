@@ -18,7 +18,6 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/6127110b-3dd2-4ed7-97f4-3b6fc1d1e700.original.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
 }
 
