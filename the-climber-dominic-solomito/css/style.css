@@ -1,0 +1,190 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+/* Default styling for header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/6127110b-3dd2-4ed7-97f4-3b6fc1d1e700.original.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  header {
+    background-position: 75% center;; /* Adjusted for  part */
+  }
+}
+
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+/*attempt at scroll animation*/
+
+#filler{ 
+size: cover;
+display: none;
+}
+/**/
+.quote1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.rockred {
+  color: rgb(207, 12, 12) 
+}
+.rockorange {
+  color:rgb(247, 94, 12) 
+}
+.rockblue {
+  color: rgb(37, 120, 230) 
+
+}
+.rockpink {
+  color: hotpink
+}
+.rockyellow {
+  color:rgb(251, 230, 7)
+}
+/* 
+TYPOGRAPHY
+*/
+
+
+h1 {
+  /* top headline */
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+  /* second headline */
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: left;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container {
+   top: auto;
+  bottom: 20vh; 
+}
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
