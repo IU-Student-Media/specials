@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The first season | IDS </title>
+  <link rel="SHORTCUT ICON"
+  href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ids.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+
+
+
+  <style>
+    /* import IDS fonts from Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* Style for drop cap */
+    .drop-cap::first-letter {
+      font-weight: 700;
+    float: left;
+    font-size: 3.5em;
+    line-height: 0.65;
+    margin: 0.04em 0.1em 0 0;
+    color: var(--darkgray);
+    }
+
+    /* Style for the rest of the paragraph */
+    .paragraph {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+ 
+
+
+    .center-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .ball {
+      width: 30px; /* Adjust the width as needed */
+      height: 30px; /* Adjust the height as needed */
+      background: url('https://redonion.se/img/codepen/fof/fof-ball3.png') no-repeat center center;
+      background-size: cover;
+      display: inline-block;
+      margin-right: 10px; /* Adjust the spacing between balls as needed */
+    }
+
+    #score-ball {
+
+        top:-5000px;
+        left: -5000px;
+        width: 26px;
+        height: 26px;
+        background: url('https://redonion.se/img/codepen/fof/fof-ball3.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none; /* Ensures the ball doesn't interfere with mouse events */
+        transform: translate(10%, 5%); /* Center the ball on the pointer */
+        animation : spin 2s linear infinite
+        }
+    
+        @keyframes spin {
+            to {
+                transform: translate(10%, 5%) rotate(360deg); /* Rotate the ball 360 degrees */
+            }
+        }
+</style>
+
+
+
+
+<meta property="og:url" content="http://specials.idsnews.com/the-first-season" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The First Season" /> <!-- TODO: headline -->
+<meta property="og:description" content="Just 16 miles away from the award-winning IU men’s team, a rural high school ignites a legacy of soccer." /> <!-- TODO: abstract -->
+<meta property="og:site_name" content="IDS News">
+<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/469cdf62-658e-4f05-83b0-87f7d941610e.original.jpg" /> <!-- TODO: link to dominant image -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@idsnews">
+<meta name="twitter:creator" content="@idsnews">
+<meta name="twitter:title" content="The First Season"> <!-- TODO: headline -->
+<meta name="twitter:description" content="Just 16 miles away from the award-winning IU men’s team, a rural high school ignites a legacy of soccer."> <!-- TODO: abstract -->
+<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/469cdf62-658e-4f05-83b0-87f7d941610e.original.jpg"> <!-- TODO: link to dominant image -->
+
+<!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+
+</script>
+<script>
+    googletag.cmd.push(function () {
+        //all other leaderboards
+        var mapping1 = googletag.sizeMapping()
+            .addSize([768, 0], [728, 90]) // Desktops and Tablets
+            .addSize([0, 0], [320, 50]) // Mobile devices
+            .build();
+        googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+        googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.enableServices();
+    });
+</script>
+
+</head>
+
+<body>
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script src="js/googleTagManager.js"></script>
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('https://snworksceo.imgix.net/ids/22410d8d-92a9-4213-af66-e722393c262e.sized-1000x1000.jpg');
+     background-position: 50% 50%; background-size: fit;" >       
+     
+     
+     <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 ml-auto">
+            <h1 class="text-white">The First Season</h1>
+            <p style="font-size: larger;">Just 16 miles away from the award-winning IU men’s team, a rural high school ignites a legacy of soccer.</p>
+           
+            <p>
+              <div>
+                <p style="margin: 0;">By <a target="_blank" href="https://www.idsnews.com/staff/Marissa-Meador" style="color: white;">Marissa Meador</a></br>
+                Photos by <a target="_blank"href="https://idsnews.com/staff/Jacob-Spudich" style="color: white;">Jacob Spudich</a></br>
+                Design and development by <a target="_blank"href="https://idsnews.com/staff/Rahul-Suresh-Ubale" style="color: white;">Rahul Suresh Ubale</a>
+                <p style="margin-top: 1px; font-size: 14px;">Published Dec. 13, 2023</p></p>
+              </div>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <div class="container">
+      
+      
+      <div class="row">
+        <div class="col-lg-12">
+          
+          <div class="d-flex team-vs">
+            
+           
+              <div class="team-details w-100" style="padding-left: 16% ; padding-right: 16%; padding-top: 5%; padding-bottom: 5%; font-family:  'PT Serif', sans-serif; font-size: 18px;" >
+                
+                <ul class="list-unstyled">
+                  <div id="score-ball"></div>
+                  <p class="drop-cap paragraph"><span data-contrast="none">The Eastern Greene Thunderbirds, embarking on their first year as a high school soccer team, are still learning to fly.</span></p>
+                  <p><span data-contrast="auto">When the co-ed team takes the field at Mooresville Christian Academy on a late summer day, they are halfway through the season and still winless. Though the T-Birds' 26 players come from an array of other sports at Eastern Greene High School, few have experience with soccer.</span></p>
+                  <p><span data-contrast="auto">Yet the smattering of red shirts remains determined.&nbsp;</span></p>
+                  <p><span data-contrast="auto">As the players trade the ball up and down the field, the two teams prove themselves equally matched, with neither able to take control of momentum.&nbsp;</span></p>
+                  <p><span data-contrast="auto">Miraculously, the T-Birds take a 1-point lead, rallying the small enclave of parents in folding chairs tacked along the sideline. Then tragedy strikes &mdash; in a scuffle near the goal, a gangly player taps the ball too hard. It rolls in.&nbsp;</span></p>
+                  <p><span data-contrast="auto">As the dust settles, it is the T-Birds&rsquo; freshman midfielder Timothy McCoin who has scored &mdash; for the other team.&nbsp;</span></p>
+                  
+                              
+                  <div class="center-container" ><p><div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div></span></p></div>
+                    <p></p>
+                  <p><span data-contrast="none">The Thunderbirds hail from rural Greene County, just 16 miles from one of the </span><a target="_blank"href="https://www.idsnews.com/article/2023/11/indiana-mens-soccer-wins-big-ten-tournament-title-bloomington"><span data-contrast="none"><span data-ccp-char="">best collegiate soccer pr</span><span data-ccp-char="">ograms</span></span></a><span data-contrast="none"> in the nation. Despite their proximity to such success, the coaches and players have long struggled to bring soccer to Eastern Greene.</span></p>
+                  <p><span data-contrast="none">T-Birds head coach Kurtis Moffitt, whose bushy white beard and booming voice betray a softer, more emotional side, jumpstarted his quest to bring soccer to Eastern Greene when he started a junior high league in the summer of 2021. The first practice was on a field behind Cincinnati Christian Church, bordered by an electric pole and snaked with mole hills and patches of gravel.&nbsp;</span></p>
+                  
+                  
+                  
+                  <figure style="max-width: 1000px; margin: 0 auto;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d5c60221-19b8-4ad0-bc18-ed44127d4b59.original.jpg" alt="Alt Text" style="width: 100%; height: auto; display: block;">
+                    <figcaption style="text-align: center; font-style: italic; font-size: 14px; color: #555; margin-top: 8px;">
+                      <!-- <p class="credit" style="color: azure;">Jacob Spudich | <b>IDS</b> <br> -->
+                        Eastern Greene head coach Kurtis Moffitt looks on from the sideline in a game against the Bloomington Bobcats on Sept. 28, 2023, at Karst Farm Park in Bloomington. Moffitt and assistant coach Tracy Crane always emphasize talking and passing among players.</p>
+                    </figcaption>
+                  </figure>
+
+
+
+
+                  <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-3' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+
+
+                  <p><span data-contrast="none">Enter the T-Birds' assistant coach, Tracy Crane. A former college soccer player and coach who instructs her players with precision and a blunt attitude, Crane found the field&rsquo;s conditions unacceptable and allowed the team to practice on the Crane family farm instead.</span></p>
+                  <p><span data-contrast="none">Though people at Eastern Greene had tried and failed to start a high school soccer team for years, the recruiting success of Moffitt&rsquo;s junior high team exposed a genuine interest in soccer in the area.</span></p>
+                  <p><span data-contrast="none">In a high school of around 300 students, Crane&rsquo;s initiative to prove they had the numbers and would not siphon players from the football team &mdash; a major concern of the community according to Moffitt and Crane &mdash; was the recipe for success.&nbsp;</span></p>
+                  <p><span data-contrast="none">In October 2022, Crane finally secured board approval for the high school team.&nbsp;</span></p>
+                  <p><span data-contrast="none">After receiving the green light, Moffitt and Crane then had the delicate task of organizing a team of varying abilities and backgrounds.&nbsp;</span></p>
+                  <p><span data-contrast="none">One player, junior midfielder Clara Hawk, showed incredible speed on the field due to her running background but struggled to stop herself from catching the ball with her hands. Zac West, a senior defender with a background in soccer, had to miss some practices for football, which he had joined as a kicker before the school board approved the soccer team.</span></p>
+                  <p><span data-contrast="none">When the team suffered a blowout loss to Bedford North Lawrence High School in their first scrimmage in August, Moffitt expected to lose at least five players.&nbsp;</span></p>
+                  <p><span data-contrast="none">That is, until junior midfielder Roman Valentine approached him with a grin.&nbsp;</span></p>
+                  <p><span data-contrast="none">&ldquo;I didn&rsquo;t know what I was doing, but that was fun!&rdquo; Roman said. </span></p>
+                  <p><span data-contrast="none" algin = "center"></span></p>
+                  
+                  
+                  <div class="center-container" ><p><div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div></span></p></div>
+                    
+                  <p></p>
+                  <p><span data-contrast="none">A yellow butterfly crosses the turf at Mooresville High School&rsquo;s Pioneer Classic Tournament on Sept. 23, hosted by a 3A school at a facility that dwarfed the T-Birds' humble grass field. Though Eastern Greene has just faced a crushing loss at the hands of the host team in the first game of the tournament, there is a sense of lightness in the air.&nbsp;</span></p>
+                  <p><span data-contrast="none">Moms of the players swarm the group as they gather in the shade, handing out sandwiches rapid-fire. Among their cornucopia of snacks are bananas, Capri Suns and pickle juice &mdash; a magical elixir that vanishes cramps, according to the T-Birds. Just a few feet away, three young boys kick a soccer ball into the chain-link fence, its metallic shudder mimicking the pull of the net.</span></p>
+                  <p><span data-contrast="none">It&rsquo;s been four games since they played Mooresville Christian Academy on Sept. 11, and they still have not clinched a victory. This approaching rematch with the school, who is also in the tournament, provides the opportunity for redemption.</span></p>
+                  <p><span data-contrast="none">The match begins, and immediately the T-Birds struggle to communicate with one another on the field, a critique reiterated by the coaches time and time again.&nbsp;</span></p>
+                  <p><span data-contrast="none">One voice, however, rises above the chatter.&nbsp;</span></p>
+                  <p><span data-contrast="none">&ldquo;MINE!!!!&rdquo;&nbsp;</span></p>
+                  <p><span data-contrast="none">It is a primal scream from the T-Birds' freshman goalkeeper, Bryce Bowersock, as he sweeps the ball up and sends it to the other side of the field.</span></p>
+                  <p><span data-contrast="none">It is an unwritten rule in soccer that the goalie should indicate when he&rsquo;s heading for the ball, but the intensity of Bryce&rsquo;s scream, out-of-step with his skinny frame and freckles, almost seemed to confuse and intimidate the opposing players.&nbsp;</span></p>
+                  <p><span data-contrast="none">A player on the bench confirms: he screams like that every time.&nbsp;</span></p>
+                  <p><span data-contrast="none">Beyond ferocious stops at the goal, the T-Birds seem to have sharpened their game and found a rhythm. German exchange student and junior midfielder Finn Wulbrandt scores the first goal, but it&rsquo;s quickly matched by MCA.&nbsp;</span></p>
+
+
+
+                  <figure style="max-width: 1000px; margin: 0 auto;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7cc3c258-fefe-47a0-8e0e-f48171963708.original.jpg" alt="Alt Text" style="width: 100%; height: auto; display: block;">
+                    <figcaption style="text-align: center; font-style: italic; font-size: 14px; color: #555; margin-top: 8px;">
+                      <!-- <p class="credit" style="color: azure;">Jacob Spudich | <b>IDS</b> <br> -->
+                        Eastern Greene junior midfielder Finn Wulbrandt (left), senior defender Zac West (center) and senior forward Maddox Ault (right) celebrate after a goal against the Bloomington Bobcats on Sept. 28, 2023, at Karst Farm Park in Bloomington. Finn Wulbrandt, an exchange student from Germany, started playing midseason.</p>
+                    </figcaption>
+                  </figure>
+
+
+
+
+                  <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-1' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+                  <p><span data-contrast="none">&ldquo;No more ties,&rdquo; Crane yells. &ldquo;Go, let&rsquo;s do this!&rdquo;</span></p>
+                  <p><span data-contrast="none">Freshman midfielder Ethan Moffitt, one of the sons of the head coach, answers with a goal, putting the T-Birds in the lead. When the ball hits the back of the net, Bryce lets out his signature scream again, this time in joy.&nbsp;</span></p>
+                  <p><span data-contrast="none">Momentum carries into the second half with another goal from Finn. The tone has shifted, putting the T-Birds in a rare position. MCA&rsquo;s players start to unravel, and the MCA goalkeeper struggles to reign in his frustration.&nbsp;</span></p>
+                  <p><span data-contrast="none">&ldquo;We are </span><em><span data-contrast="none">not</span></em><span data-contrast="none"> losing to this team,&rdquo; their keeper calls out to his team.&nbsp;</span></p>
+                  <p><span data-contrast="none">The T-Birds do not respond.&nbsp;</span></p>
+                  <p><span data-contrast="none">But trouble is mounting for Eastern Greene. Finn, who has scored 2 of their 3 goals so far, falls to the ground. Another player hoists him up and helps him walk to the bench, while another player hunts for pickle juice.&nbsp;</span></p>
+                  <p><span data-contrast="none">&ldquo;I&rsquo;m out,&rdquo; Finn says, defeated. &ldquo;I&rsquo;ve got the biggest cramp of my whole life.&rdquo;</span></p>
+                  <p><span data-contrast="none">Things start to peel apart. Junior midfielder Clara Hawk gets possession of the ball several times near the goal but fails to keep control of it, at one point ending up on the ground with the ball flying.&nbsp;</span></p>
+
+                  
+                  
+                  <figure style="max-width: 1000px; margin: 0 auto;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/13be75b7-8dac-4a65-b3c2-402bff2e6308.original.jpg" alt="Alt Text" style="width: 100%; height: auto; display: block;">
+                    <figcaption style="text-align: center; font-style: italic; font-size: 14px; color: #555; margin-top: 8px;">
+                      <!-- <p class="credit" style="color: azure;">Jacob Spudich | <b>IDS</b> <br> -->
+                        Eastern Greene junior midfielder Clara Hawk volleys the ball in the air against the Bloomington Bobcats, a homeschool soccer club, on Sept. 28, 2023, at Karst Farm Park in Bloomington. This is Hawk's first time playing soccer.
+                      </p>
+                    </figcaption>
+                  </figure>
+
+
+                  <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                  <p><span data-contrast="none">Now the score is tied once more, at 3-3. It&rsquo;s a spot Eastern Greene is used to, always being on the edge of victory with the dread of knowing one wrong move could result in yet another defeat.&nbsp;</span></p>
+                  <p><span data-contrast="none">But then Ethan scores again. It is the final goal of the game &mdash; the winning goal &mdash; as the final minutes drain without a response from MCA.</span></p>
+
+                  <p><span data-contrast="none">The team is almost too stunned to celebrate, quickly gathering their things amid a few hugs and the obligatory &ldquo;good game&rdquo; with the other team.&nbsp;</span></p>
+                  <p><span data-contrast="none">But at the post-game huddle, the coach reminds them that was the first win in school history. Years from now, they will be the team that broke in the cleats, blazed the trail, shattered the barriers. </span></p>
+                  
+                  <div class="center-container" ><p><div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div></span></p></div>
+                    <p></p>
+                  <p><span data-contrast="none">On a chilly October morning, Zac, Clara, Esther, Finn and senior forward Oliver Pate get together for breakfast at Cloverfield Restaurant South in Bloomington.&nbsp;</span></p>
+                  <p><span data-contrast="none">Zac orders Lucky Charm pancakes with chocolate chips, bacon and scrambled eggs. Finn orders the same, sans chocolate chips. They report back: it just tasted like a normal pancake, not &ldquo;magically delicious.&rdquo;</span></p>
+                  <p><span data-contrast="none">Across the table, Clara and Esther peel open a strawberry jam packet and taste it. Oliver, who is still recovering from an injury, arrives in Shrek Crocs.&nbsp;</span></p>
+                  <p><span data-contrast="none">The players mostly live in rural areas. While their school is addressed to Bloomfield, it is actually 12 miles away from the town. Surrounded by fields, churches and abandoned gas stations, teenagers don&rsquo;t have much to do for fun other than walk around Walmart or spend time at one another&rsquo;s homes.&nbsp;</span></p>
+                  <p><span data-contrast="none">Oliver lists off some things they like to do for fun </span><span data-contrast="auto">&mdash;</span><span data-contrast="none"> shooting bottle rockets, hunting and playing hide-and-seek at Clara&rsquo;s house </span><span data-contrast="auto">&mdash;</span><span data-contrast="none"> while Clara jokes about &ldquo;fishing in the crawfish hole.&rdquo;&nbsp;</span></p>
+                  <p><span data-contrast="none">But soccer gave the kids an opportunity to hang out on the field, with much of their time absorbed by practice, games and schoolwork. Without it, the kids describe feeling almost bored.&nbsp;</span></p>
+                  <p><span data-contrast="none">When asked if they feel like they&rsquo;re trailblazers, the group is modest. Esther says it&rsquo;s more like they&rsquo;re &ldquo;bushwhacking a trail.&rdquo; Zac describes it as &ldquo;those dudes in Ohio who first got cars,&rdquo; painting a </span><a target="_blank"href="https://ohiomemory.ohiohistory.org/archives/2866"><span data-contrast="none"><span data-ccp-char="">scene</span></span></a><span data-contrast="none"> of swerving Ford Model T cars rumbling over cobblestone before the invention of traffic lights.&nbsp;</span></p>
+                  
+                 
+                  
+                  <figure style="max-width: 1000px; margin: 0 auto;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a3655ffb-f751-4275-bede-88ff734074ce.original.jpg" alt="Alt Text" style="width: 100%; height: auto; display: block;">
+                    <figcaption style="text-align: center; font-style: italic; font-size: 14px; color: #555; margin-top: 8px;">
+                      <!-- <p class="credit" style="color: azure;">Jacob Spudich | <b>IDS</b> <br> -->
+                        Eastern Greene senior defender Zac West prepares to throw the ball in against the Bloomington Bobcats, a homeschool soccer club, on Sept. 28, 2023, at Karst Farm Park in Bloomington. West is team captain of the Eastern Greene Thunderbirds.                      </p>
+                    </figcaption>
+                  </figure>
+                  
+                  
+                  <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-4' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <p><span data-contrast="none">Though he&rsquo;s graduating soon, Zac wants to return to help the team next year. In his role as captain, Zac had learned a lot about how to coach people, including knowing how to respond to someone when they make a mistake.</span></p>
+                  <p><span data-contrast="none">&ldquo;I want to win soccer games too, but we gotta teach these darn kids,&rdquo; he said.&nbsp;</span></p>
+                  <div class="center-container" ><p><div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div></span></p></div>
+                    <p></p>
+                  <p><span data-contrast="none">The Rock Creek Lions are a hive mind.</span></p>
+                  <p><span data-contrast="none">Though they knew the Lions were the toughest team in their division going into the first game of sectionals Oct. 2, the T-Birds did not expect the sheer interconnectedness of their opponents.&nbsp;</span></p>
+                  <p><span data-contrast="none">The Sellersburg, Indiana, team demonstrated a choreographed grace, exercising a discipline the T-Birds' coaches say can only be developed through the muscle memory of endless drills. </span></p>
+                  <p><span data-contrast="none">The match quickly becomes a game of &ldquo;monkey-in-the-middle,&rdquo; players say, as they hopelessly test their speed against Rock Creek&rsquo;s relentless movement and sophisticated passing. Goalkeeper Caden McCormick valiantly defends against a barrage of shots from the Lions, eventually succumbing. Rock Creek continues to mark up the scoresheet, and frustration mounts.&nbsp;</span></p>
+
+                  <figure style="max-width: 1000px; margin: 0 auto;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/311c0668-7ce5-4566-a316-e1e05972aad4.original.jpg" alt="Alt Text" style="width: 100%; height: auto; display: block;">
+                    <figcaption style="text-align: center; font-style: italic; font-size: 14px; color: #555; margin-top: 8px;">
+                      <!-- <p class="credit" style="color: azure;">Jacob Spudich | <b>IDS</b> <br> -->
+                        Eastern Greene sophomore goalkeeper Caden McCormick lunges to save the ball after a shot against the Bloomington Bobcats on Sept. 28, 2023, at Karst Farm Park in Bloomington. The game against the Bobcats was Eastern Greene's final game before sectionals.                                         </p>
+                    </figcaption>
+                  </figure>
+
+                  <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-2' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+
+
+                  <p><span data-contrast="none">By halftime, winning seems out of the question. In the end, the T-Birds lost 8-2 to Rock Creek.</span></p>
+                  <p><span data-contrast="none">As the game winds down and twilight descends, the floodlights switch on. Exhausted and under pressure, Finn flings himself on the grass. When he stands, he kicks the ground, sending a clump of dirt flying with the tip of his cleat.&nbsp;</span></p>
+                  <p><span data-contrast="none">It was a sour end to a sweet season. For some of the players, it was not only their first high school soccer season, but their last.&nbsp;</span></p>
+                  <p><span data-contrast="none">Zac emerges from the postgame huddle crying. It is a quiet kind, signaled by red-rimmed eyes and the vanishing of his characteristic smile. The whole season, Zac had been the one to comfort, to inspire, to lead. Now, his team was here for him, flooding him with hugs.&nbsp;</span></p>
+                  <p><span data-contrast="none">But on the 74-minute bus ride to Eastern Greene, the T-Birds transform back into a group of teenagers. The bus makes a stop at Circle K, where ravenous players grab half-dozen boxes of donuts, entire tubs of ice cream and an endless stream of chips and soda. Back on the bus, they eat, chat, scroll on TikTok or sleep, cherishing one of their last moments as a team.&nbsp;</span></p>
+                  <p><span data-contrast="none">As the kids lug their bags off the bus and head toward their parents&rsquo; cars, headlights cast a glow on the hill by the school, where a gravel road leads to Eastern Greene&rsquo;s new soccer field. Its verdant green now weathered, it awaits next season, when a new version of the T-Birds will return.</span></p>
+                </ul>
+                
+                <div class="author-bios">
+                  <!-- update bios in metadata.json -->
+                  <!-- delete this div if you don't want them to show up -->
+              </div>
+            
+              <p class="donate">
+                  <em>Like what you're reading?</em><br>
+                  Support independent, award-winning student journalism.
+                  <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    </div>
+
+    <!-- <div class="container site-section">
+      <div class="row">
+        <div class="col-6 title-section">
+          <h2 class="heading">Credits</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="custom-media d-flex">
+            <div class="img mr-3">
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/e9b57707-14b5-4734-96e2-faddb7338f50.original.jpg"  style="max-width: 200px;"alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+              <span class="meta">Written By</span>
+              <h3 class="mb-4"><a target="_blank" href="https://www.idsnews.com/staff/Marissa-Meador">Marissa Meador </a></h3>
+              <p>Marissa has worked at the IDS since 2022 and currently serves as a managing editor.</p>
+              <p><a target="_blank"href="https://www.linkedin.com/in/marissa-meador-b91905209/">Know more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="custom-media d-flex">
+            <div class="img mr-3">
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/3c5ec873-82c3-4a00-9d7c-ba27e91b1820.original.png" style="max-width: 200px;" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+              <span class="meta">Design and development by</span>
+              <h3 class="mb-4"><a target="_blank"href="https://www.idsnews.com/staff/Rahul-Suresh-Ubale">Rahul Suresh Ubale</a></h3>
+              <p>Rahul has worked at the IDS since 2023 and currently holds the position of Developer Lead at IDS.</p>
+              <p><a target="_blank"href="https://rahulubale.github.io/rahulubale/">Know more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="custom-media d-flex">
+            <div class="img mr-3">
+              <img src="https://s3.amazonaws.com/snwceomedia/ids/ebe21b45-f67f-41a0-b57f-3d4253a80045.original.jpg" style="max-width: 200px; height: 200px; object-fit:cover;" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+              <span class="meta">Photos by</span>
+              <h3 class="mb-4"><a target="_blank" href="https://www.idsnews.com/staff/jacob-spudich">Jacob Spudich</a></h3>
+              <p>Jacob has been at the IDS since 2021 and has been a reporter, photographer and editor.</p>
+              <p><a target="_blank"href="https://www.linkedin.com/in/jacob-spudich-98573b222/">Know more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+    
+
+    <script>
+        // JavaScript to make the score ball follow the mouse pointer
+        var scoreBall = document.getElementById("score-ball");
+
+        let ballSize = scoreBall.clientWidth;
+
+        document.addEventListener("mousemove", function (event) {
+            // Update the position of the score ball based on the mouse pointer
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            scoreBall.style.left = mouseX - ballSize/2  + "px";
+            scoreBall.style.top = mouseY - ballSize/2  + "px";
+        });
+    </script>
+
+    <footer>
+
+      <div class="footer-row">
+          <!-- IDS LOGO SVG -->
+          <div class="logo">
+              <a class="ids_footer-link" href="https://idsnews.com">
+                  <svg viewBox="0 0 163.17 68.85">
+                      <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                      <path style="fill:#990000;"
+                          d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                      <path style="fill:#990000;"
+                          d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                  </svg>
+                  <span class="show-desktop"> | Indiana Daily Student</span>
+              </a>
+          </div>
+          <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+              SUBSCRIBE
+          </a>
+          <div class="socials">
+              <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                  target="_blank"><i class="fab fa-spotify"></i></a>
+          </div>
+      </div>
+      <div class="links">
+          <p><a href="https://www.idsnews.com/page/contact" class="footer-link" target="_blank">Contact us</a></p>
+          <p><a href="https://www.idsnews.com/page/employment" class="footer-link" target="_blank">Employment</a></p>
+          <p><a href="https://www.idsnews.com/page/policies" class="footer-link" target="_blank">Policies</a></p>
+          <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+            class="footer-link" target="_blank">Advertising</a></p>
+          <p><a href="https://issuu.com/idsnews" class="footer-link" target="_blank">Print edition</a></p>
+          <p><a href="https://www.idsnews.com/page/contact" class="footer-link" target="_blank">Write to us</a></p>
+      </div>
+      <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+  </footer>
+
+    <!-- <footer class="footer-section">
+      <div class="container">
+        <div class="row" style="justify-content: center; margin-bottom: 30px;">
+          <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+            SUBSCRIBE
+        </a>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+
+            <div class="site-logo">
+              <a target="_blank" href="https://idsnews.com">
+                  <svg viewBox="0 0 163.17 68.85">
+                      <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                      <path style="fill:#990000;"
+                          d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                      <path style="fill:#990000;"
+                          d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                  </svg>
+                  <span class="show-desktop"> | Indiana Daily Student</span>
+              </a>
+          </div>
+
+          </div>
+          <div class="col-lg-2">
+            <div class="widget mb-3">
+              <h3>News</h3>
+              <ul class="list-unstyled links">
+                <li><a target="_blank"href="https://www.idsnews.com/section/campus">Campus</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/section/in-depth">Features & In-Depth</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/section/city">City</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/section/sports">Sports</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/section/arts">Arts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="widget mb-3">
+              <h3>General  Info</h3>
+              <ul class="list-unstyled links">
+                <li><a target="_blank"href="https://www.idsnews.com/page/about-us">About Us</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/page/staff-list">Staff List</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/page/contact">Contact Us</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/page/employment">Employment</a></li>
+                <li><a target="_blank"href="https://www.idsnews.com/rates">Advertising</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="widget mb-3">
+              <h3>Community Hub</h3>
+              <ul class="list-unstyled links">
+                <li><a target="_blank"href="http://guides.idsnews.com/classifieds">Classifieds</a></li>
+                <li><a target="_blank"href="http://guides.idsnews.com/happenings">Events</a></li>
+                <li><a target="_blank"href="http://guides.idsnews.com/health">Health</a></li>
+            
+              
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+
+            <div class="widget mb-3">
+              <h3 style="text-align:start;">Social</h3>
+              <div class="row" style="width: 100%; justify-content: center;">
+              <ul class="list-unstyled links" style="width:100%;">
+                <div class="row" style="width: inherit;margin-left: 10px;">
+                <li style="width: 25%;"><a target="_blank"href="https://twitter.com/idsnews"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li style="width: 25%;"><a target="_blank"href="https://facebook.com/idsnews"><i class="fa fa-facebook fa-2x"></i></a></li>
+                <li style="width: 25%;"><a target="_blank"href="https://instagram.com/idsnews"><i class="fa fa-instagram fa-2x"></i></a></li>
+                <li style="width: 25%;"><a target="_blank"href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw"><i class="fa fa-spotify fa-2x"></i></a></li>
+              </div>
+              </ul>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <div class="pt-5">
+              <p>
+                All content © 2024 Indiana Daily Student
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> -->
+
+
+ 
+  <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  
+  <script src="js/ads.js"></script>
+  <script src="js/ids.js"></script>
+  <script src="js/metadata.js"></script>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
