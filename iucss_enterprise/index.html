@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> IUCSS Enterprise</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize &mdash; removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet &mdash; default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet &mdash; put all your design choices here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Dropcap Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome &mdash; for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS &mdash; Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/iucss_enterprise/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Meet the IU Center for Spacetime Symmetries: The group that could revolutionize physics" />
+    <meta property="og:description" content="The IUCSS investigates the universe&rsquo;s symmetries and the established rules of
+    physics." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/caeac734-4f02-4fd3-a30c-b85aefe91373.original.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Meet the IU Center for Spacetime Symmetries: The group that could revolutionize physics">
+    <meta name="twitter:description" content="The IUCSS investigates the universe&rsquo;s symmetries and the established rules of
+    physics.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/caeac734-4f02-4fd3-a30c-b85aefe91373.original.jpg">
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this &mdash; it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up &mdash; you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Meet the IU Center for Spacetime Symmetries:<br>The group that could revolutionize
+                physics</h1>
+            <h2 class="sub-headline" data-scroll-speed="3">The IUCSS investigates the universe&rsquo;s symmetries and the established rules of
+                physics.</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="credit">Martin Wolf | <strong>IceCube/NSF</strong> </p>
+        <p class="caption header-caption">IceCube Neutrino Observatory at the South Pole, Antarctica.</p>
+
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p class="dropcap">&ldquo;Perfect symmetry is boring,&rdquo; Mike Snow, director of the IU Center for Spacetime
+                    Symmetries, said over biscuits, gravy and a much-needed cup of coffee early in the morning at
+                    Runcible Spoon. </p>
+                <p>His organization works to find potential breaks in fundamental rules of the universe that much of
+                    modern physics is based on &mdash; rules so fundamental, upending them could lead to a revolution in the
+                    field. These rules are known as symmetries.</p>
+                <p>To the people in the IUCSS investigating these basic laws of the universe, their work is everything.
+                    If their research bears fruit, it would be one of the most transformative events in modern physics
+                    in recent memory. </p>
+                <p>Even if it doesn&rsquo;t, their research would still confirm basic assumptions and rules most of modern
+                    physics is based on, and their enormous body of work &mdash; the fleshed-out understandings of particles,
+                    math and phenomena &mdash; could ripple through the field of physics for years to come.</p>
+                <p class="section-break"><span>✶</span><span>✶</span><span>✶</span></p>
+                <h3>History of the IUCSS</h3>
+                <p class="dropcap">The work of finding potential aberrations in the established laws of physics began in
+                    the late 20th
+                    century with the work of Alan Kostelecky, now a distinguished professor of theoretical physics at
+                    IU, and one of the world&rsquo;s leading authorities on spacetime symmetries. </p>
+                <p>Working within String Theory &mdash; a promising framework developed in the late 20th century that
+                    attempted to unify physics under one theory of everything &mdash; Kostelecky said he demonstrated the
+                    existence of processes within the theory that could break established rules including Lorentz and
+                    CPT symmetry. This spurred him to look into other ways these symmetries could be violated in nature.
+                </p>
+                <p>He developed the Standard Model Extension, a theory containing all possible violations of these
+                    rules. This prompted deluge of scientists to test if these violations exist; in the early 2000s,
+                    scientists at IU realized they had a critical mass of people who were interested in studying these
+                    potential violations. They founded the IUCSS soon after in 2010.</p>
+
+                    <div class="ad-block">
+                   
+                        <div class="ad-code" style = 'align-items: center;'>
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-2' align = 'center'>
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                                </script>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+
+                    <figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/4f7d0c64-5c2b-4a5c-8863-c9beac74ef9d.original.jpg" alt="A large group of people, members of the IUCSS, stand outside of Swain Hall East on a sunny day.">
+                        <p style="padding-right: 5px;" class="credit">Ding Yunhua</p>
+                        <p class="caption">Members of the IUCSS pose outside Swain Hall East at the eighth meeting for CPT and Lorentz Symmetry, held May 12-16, 2019. The organization has worked to find potential breaks in fundamental rules of the universe that much of modern physics is based on — rules so fundamental, upending them would lead to a revolution in the field.</p>
+                    </figure>
+                <p>The center, composed of a rotating cast of graduate students and around 20 full-time IU scientists
+                    and professors, has attracted talent with all sorts of specializations: theorists, experimentalists
+                    and everyone in between. Every three years, it brings together scientists from around the world who
+                    are interested in their field of research for a conference. Its last <a href="https://indiana-my.sharepoint.com/personal/iucss_iu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fiucss%5Fiu%5Fedu%2FDocuments%2Farchived%2Dmeetings%2F2022%2Dmeeting%2DCPT22%2Epdf&parent=%2Fpersonal%2Fiucss%5Fiu%5Fedu%2FDocuments%2Farchived%2Dmeetings&ga=1" target="_blank" rel="noopener noreferrer">meeting</a> was held virtually in
+                    2022 and included participants from 5 continents.</p>
+                <p>River Govin, a graduate student at the center studying modified neutrino energies, said bringing
+                    together very niche disciplines &mdash; from those studying unimaginably small particles to theorists
+                    working on overarching theory &mdash; is one of the main benefits of the center.</p>
+                <p>Opposed to having one specialized group searching for violations, he said they have multiple groups
+                    using different approaches and background knowledge &mdash; all looking for the same thing.</p>
+                <p>There is also the value of having experimentalists and theorists working together, which Snow, an
+                    experimentalist, said is the focus of their conferences.</p>
+                    <!--We could pull the below quote and add a image of snow here-->
+                <p>&ldquo;It's a two-way street, because, if you only do the theoretical work in a vacuum, more often than not
+                    it's very unlikely that what you thought up as a possibility is testable,&rdquo; Snow said. &ldquo;The good
+                    theorists keep a very sharp eye on what is happening in experiment(s), and what you could do given
+                    our level of technology.&rdquo;</p>
+
+                    <div class="ad-block">
+                   
+                        <div class="ad-code" style = 'align-items: center;'>
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-3' align = 'center'>
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                                </script>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <p class="section-break"><span>✶</span><span>✶</span><span>✶</span></p>
+                <h3>Lorentz, CPT symmetry drive the center&rsquo;s research</h3>
+                <p class="dropcap">The center&rsquo;s research focuses on testing whether two fundamental symmetries to our
+                    understanding of
+                    the universe &mdash; Lorentz symmetry and CPT symmetry &mdash; are violated, however minutely, in the universe.
+                </p>
+                <p>Lorentz symmetry, in short, means that laws of physics would apply the same to objects no matter
+                    where they are positioned in space, or if they are moving. This assumption is the basis of many
+                    higher-level theories of physics, including relativity. If it were to be violated, these theories
+                    would have to be critically rethought.</p>
+                <p>The slightly more complicated CPT symmetry surrounds charge conjugation (C), parity inversion (P) and
+                    time reversal (T). This means antimatter, or particles with their positions reflected, should follow
+                    the same laws of physics as the standard matter making up our bodies, the earth and all known
+                    objects. The laws of physics should also apply both forward and backwards in time.</p>
+                <p>Together, these symmetries are linked by CPT theorem, which says in theories of physics where Lorentz
+                    symmetry applies, CPT symmetry must also apply. If one is violated, the other may be as well. </p>
+                <p><a href="https://www.youtube.com/watch?v=0HnaLnUdYvs" target="_blank"
+                        rel="noopener noreferrer">Relativity</a>, a keystone to modern physics formulated by Albert
+                    Einstein in the early 20th century,
+                    also lies at the heart of the IUCSS&rsquo;s research.</p>
+                <p>The extremely simplified version of gravity in relativity: matter causes space and time to <a
+                        href="https://www.youtube.com/watch?v=MTY1Kje0yLg" target="_blank"
+                        rel="noopener noreferrer">curve</a>
+                    around mass, like a bowling ball would shift the surface of a trampoline. The bowling ball would end
+                    up in the center, creating a valley which would make other objects placed on the trampoline fall
+                    toward it. In real life, this distortion involves the three spacial dimensions as well as the
+                    dimension of time.</p>
+                    <figure class="wide-left">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/d675121f-734e-44ff-80ba-b0e02c1cc945.original.jpg" alt="A NASA illustration of a supermassive black hole.">
+                        <p class="credit">NASA Goddard</p>
+                        <p class="caption">The immense gravity of a black hole is pictured distorting light from stars and galaxies behind it. In Matthew McConaughey’s voyage into space in the movie “Interstellar,” traveling near the black hole caused McConaughey to end up significantly younger than his daughter on Earth.</p>
+                     </figure>
+                <p>For example, in Matthew McConaughey&rsquo;s voyage into space in the movie &ldquo;Interstellar,&rdquo; traveling near
+                    the black hole causes McConaughey to end up significantly younger than his daughter on earth. By
+                    traveling extremely fast and experiencing the immense gravitational force of a black hole onto
+                    spacetime, he experiences &ldquo;less&rdquo; time.</p> 
+                 
+                <p>However, the IUCSS is not sure Lorentz and CPT symmetries, and relativity by extension, are airtight.
+                    As an example, Snow once again brought up Einstein&rsquo;s theory of relativity, which filled in gaps left
+                    by Isaac Newton&rsquo;s prior theory of gravity. </p>
+                <p>Newton&rsquo;s theory had one small problem: Mercury&rsquo;s orbit had a small deviation from its expected path.
+                    According to Snow, scientists dismissed this concern until Einstein combined space and time as one
+                    unified body with relativity. </p>
+                <p>Einstein was convinced relativity was right, Snow said, because his theory predicted that small
+                    deviation of Mercury&rsquo;s orbit. The differences between the predicted orbits were minute, and yet the
+                    difference between the theories was massive.</p>
+
+                    <div class="ad-block">
+                   
+                        <div class="ad-code" style = 'align-items: center;'>
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-4' align = 'center'>
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+                                </script>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <p class="section-break"><span>✶</span><span>✶</span><span>✶</span></p>
+                <h3>Looking for violations in experimentation</h3>
+                <p class="dropcap">Just as Einstein&rsquo;s theory was confirmed by such a small observation, the IUCSS looks
+                    for signs of
+                    Lorentz and CPT violations on unbelievably small scales. In physics, symmetry has been recognized as
+                    very important, but violations have been found in other areas outside the center&rsquo;s realm of study.
+                </p>
+                <p>Parity (P in CPT) is known to be violated as is time reversal in some processes, Ralph Lehnert, a
+                    senior research scientist and associate director at the IUCSS, said. </p>
+                <p>Lehnert works in phenomenology, meaning he uses the Standard Model Extension to make predictions or
+                    phenomena, for experiments. Based on his findings, he projects certain results for experimentalists
+                    like Snow to find in their experiments if violations are found, though the symmetries and relativity
+                    have held up so far outside of the margin of error.</p>
+                <p>They test out these potential violations in ways too numerous to list, but luckily for the
+                    researchers, the SME provides all possible violations under their model. Lehnert said this is
+                    possible because the theory works within mathematical principles the SME abides by&mdash; constraining the
+                    number of violations possible in the theory.</p>
+                <p>For example, in many science fiction series, spaceships use antimatter as fuel under the idea that
+                    gravity would make antiparticles &ldquo;fall&rdquo; upward. However, a recent <a
+                        href="https://www.nytimes.com/2023/09/27/science/physics-universe-antimatter.html"
+                        target="_blank" rel="noopener noreferrer">experiment</a> at CERN proved gravity
+                    makes both antiparticles and particles fall, upholding CPT theorem&rsquo;s assertion that gravity would
+                    affect antimatter the same as matter while also crushing sci-fi fans&rsquo; dreams.</p>
+
+                    <div class="ad-block">
+                   
+                        <div class="ad-code" style = 'align-items: center;'>
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-1' align = 'center'>
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                                </script>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                <p>Snow said their experimental research also involves measuring gravitational waves, which some
+                    processes, such as black hole mergers, can observably cause. Accepted theory, Snow said, predicts
+                    the speed of gravitational waves traveling across space should be the same as the speed of the
+                    light. Though it currently looks like they do travel at the same speed, this has yet to be precisely
+                    confirmed.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e5e74165-7595-4053-99c5-2e61704f83fe.original.gif"
+                        alt="A looping gif divided in half horizontally. The top half shows a representation of the earth's orbit around the sun, with red arrows pointing diagonally up and to the right. The bottom half shows two trees, the one on the right is in winter, and the apple falls from the tree very quickly. The one on the left is in summer, and the apple falls from the tree noticably slower.">
+                    <p class="credit">Alan Kostelecky</p>
+                    <p class="caption">An animation depicts potential differences in apples falling between summer and winter. IUCSS research has shown this effect as a possibility of Lorentz and CPT violations.</p>
+                </figure>
+
+                <p>In these experiments, neutrons held in the nucleus of an atom alongside protons with the <a
+                        href="https://www.youtube.com/watch?v=c3nGE8Z3-lo" target="_blank"
+                        rel="noopener noreferrer">strong
+                        nuclear force</a>, are exploded away from the nucleus. They are then guided to collisions with
+                    cold
+                    material, slowing them down enough to make a beam, which they then manipulate. One common experiment
+                    often done to poke at general relativity, Snow said, is measuring clocks in space due to their
+                    precision.</p>
+                <p>&ldquo;Measuring time is one of the most precise things we know how to do, because ultimately all you have
+                    to do is count,&rdquo; Snow said.</p>
+                <p>In this experiment, clocks are lined up and compared to what relativity calculates their measurements
+                    should be. If discrepancies between the clocks are credibly found, a violation of Lorentz or CPT
+                    could be causing it.</p>
+                    <!--Atomic clocks in space gif side-by-side-->
+                <p>Teppei Katori, a former IUCSS graduate student who studies ultra-high energy neutrinos at King&rsquo;s
+                    College in London along with many members of the IUCSS, focuses much of his research on one of the
+                    most unusual particles known in the universe: the neutrino. </p>
+                <p>Roughly 100 trillion of them pass through your body every second, and yet they are extremely
+                    difficult for scientists to catch and measure. Neutrinos pass through solid matter almost as if it
+                    were empty space &mdash; making them extremely difficult to catch and measure. The IceCube neutrino
+                    observatory at the South Pole, the largest in the world, only detects <a
+                        href="https://icecube.wisc.edu/about-us/facts/#:~:text=IceCube%20detects%20275%20atmospheric%20neutrinos%20daily%20and%20about%20100%2C000%20per%20year."
+                        target="_blank" rel="noopener noreferrer">275 per day</a>.</p>
+                <p>Neutrinos <a href="https://www.youtube.com/watch?v=7fgKBJDMO54" target="_blank"
+                        rel="noopener noreferrer">oscillate</a> between its subtypes on a whim when measured, something
+                    that could be influenced
+                    by Lorentz or CPT symmetry violations. Many scientists affiliated with the IUCSS and the search for
+                    violations devote their lives to studying these particles with almost endless opportunity for
+                    discovery.</p>
+
+                    <div class="ad-block">
+                   
+                        <div class="ad-code" style = 'align-items: center;'>
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-1' align = 'center'>
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                                </script>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                <p>Though no violations have been found yet in their decades of searching, if one is proven to exist,
+                    the consequences would be enormous. Modern physics revolves around Lorentz and CPT symmetry, meaning
+                    any discovery could have the potential to reshape the very foundation of physics.</p>
+                <p>&ldquo;We would be shocked and everyone in physics would be shocked, because these symmetries are the
+                    foundation of how we think about space and time,&rdquo; Snow said.</p>
+                <p>Light, a vexing phenomenon produced by photons that act as <a
+                        href="https://www.youtube.com/watch?v=J1yIApZtLos" target="_blank"
+                        rel="noopener noreferrer">particle and wave</a>, could be explained
+                    through violations of Lorentz and CPT symmetry. Through invisible relativity-violating vectors in
+                    space oscillating, light could be generated as a consequence, though the center has not been able to
+                    test this out.</p>
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5196e7fc-601e-41d6-84c2-707d99250469.original.gif"
+                        alt="A looping gif of arrows pointed upward, oscillating from side-to-side as described.">
+                    <p class="credit">Alan Kostelecky</p>
+                    <p class="caption">An animation depicts the possibility of light from relativity violations. Through invisible relativity-violating vectors in space oscillating, the IUCSS has shown light can be generated as a consequence.</p>
+                </figure>
+                <p>&ldquo;We seem to have a different idea of what light is every century,&rdquo; Snow laughed. &ldquo;This could be one
+                    of them.&rdquo;</p>
+                <p>It could be seen in other actions too, including apples potentially falling at minisculely different
+                    rates depending on where the Earth is positioned around the sun.</p>
+                <p>All this leaves scientists at the IUCSS, including Snow, without much sleep at night. Between
+                    watching computer simulations, writing on chalkboards and sheets of paper scattered around desks,
+                    the research never stops.</p>
+                <p>&ldquo;I&rsquo;m working,&rdquo; Snow laughed. &ldquo;I am having a blast trying to break these laws, so I try to devote my
+                    efforts to that goal. But there are only 24 hours in a day.&rdquo;</p>
+                <p>Snow said the possibility of not discovering any violations doesn&rsquo;t discourage his team. The
+                    potential of finding a violation and revolutionizing physics, and their daily work of fleshing out
+                    the field of physics, keeps them going. </p>
+                <p>&ldquo;That&rsquo;s why we&rsquo;re excited to try,&rdquo; Snow said. &ldquo;You attack a fundamental idea, you have no idea if
+                    you&rsquo;re going to succeed and discover something or not, but that doesn&rsquo;t deter us. We&rsquo;re stubborn."
+                </p>
+            
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+
+                <div class="ad-block">
+                   
+                    <div class="ad-code" style = 'align-items: center;'>
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0' align = 'center'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn &mdash; used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
