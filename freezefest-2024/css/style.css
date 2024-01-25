@@ -1,0 +1,293 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/b8f2f3da-201b-439f-bd26-01e849ac1310.original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+.ad-block{
+  max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.imagegrid {
+  max-width: var(--width-xxl);
+}
+
+.imagegrid figure {
+  margin-bottom: var(--xxl);
+}
+
+.grid-image-1 {
+  grid-area: 1/2/1/12;
+}
+
+.grid-image-2 {
+  grid-area: 2/1/2/7;
+}
+
+.grid-image-3 {
+  grid-area: 2/8/2/13;
+  align-self: end;
+}
+
+.grid-image-4 {
+  grid-area: 3/2/3/7;
+}
+
+.grid-image-5 {
+  grid-area: 3/7/3/12;
+}
+
+.grid-image-6 {
+  grid-area: 4/1/4/5;
+}
+
+.grid-image-7 {
+  grid-area: 5/1/5/6;
+  align-self: end;
+}
+
+.grid-image-8 {
+  grid-area: 5/7/5/13;
+}
+
+.grid-image-9 {
+  grid-area: 6/1/6/13;
+}
+
+.grid-image-10 {
+  grid-area: 4/9/4/13;
+}
+
+.grid-image-11 {
+  grid-area: 4/5/4/9;
+}
+
+.grid-image-12 {
+  grid-area: 7/3/7/11;
+}
+.grid-image-13 {
+  grid-area: 8/3/8/7;
+}
+.grid-image-14 {
+  grid-area: 8/7/8/11;
+}
+.grid-image-15 {
+  grid-area: 9/2/9/7;
+}
+.grid-image-16 {
+  grid-area: 9/7/9/12;
+}
+.grid-image-17 {
+  grid-area: 10/9/10/13;
+}
+.grid-image-18 {
+  grid-area: 10/5/10/9;
+}
+.grid-image-19 {
+  grid-area: 10/1/10/5;
+}
+
+@media screen and (max-width: 768px) {
+  .imagegrid figure {
+    grid-column: 1/13;
+    margin-bottom: var(--md);
+  }
+
+  .grid-image-1 {
+    grid-row: 1/1;
+  }
+
+  .grid-image-2 {
+    grid-row: 2/2;
+  }
+
+  .grid-image-3 {
+    grid-row: 3/3;
+  }
+
+  .grid-image-4 {
+    grid-row: 4/4;
+  }
+
+  .grid-image-5 {
+    grid-row: 5/5;
+  }
+
+  .grid-image-6 {
+    grid-row: 6/6;
+  }
+
+  .grid-image-7 {
+    grid-row: 7/7;
+  }
+
+  .grid-image-8 {
+    grid-row: 8/8;
+  }
+
+  .grid-image-9 {
+    grid-row: 9/9;
+  }
+
+  .grid-image-10 {
+    grid-row: 10/10;
+  }
+
+  .grid-image-11 {
+    grid-row: 11/11;
+  }
+
+  .grid-image-12 {
+    grid-row: 12/12;
+  }
+
+  .grid-image-13 {
+    grid-row: 13/13;
+  }
+  .grid-image-14 {
+    grid-row: 14/14;
+  }
+  .grid-image-15 {
+    grid-row: 15/15;
+  }
+  .grid-image-16 {
+    grid-row: 16/16;
+  }
+  .grid-image-17 {
+    grid-row: 17/17;
+  }
+  .grid-image-18 {
+    grid-row: 18/18;
+  }
+  .grid-image-19 {
+    grid-row: 19/19;
+  }
+}
+
+
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
