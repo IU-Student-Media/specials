@@ -1,0 +1,99 @@
+@keyframes sway0 {
+    0% {transform: rotate(-5deg);}
+    15% {transform: rotate(25deg);}
+    25% {transform: rotate(-5deg);}
+    45% {transform: rotate(25deg);}
+    70% {transform: rotate(-5deg);}
+    85% {transform: rotate(25deg);}
+    100% {transform: rotate(-5deg);}
+}
+@keyframes sway1{
+    0% {transform: rotate(-5deg);}
+    12% {transform: rotate(25deg);}
+    24% {transform: rotate(-5deg);}
+    36% {transform: rotate(25deg);}
+    48% {transform: rotate(-5deg);}
+    60% {transform: rotate(25deg);}
+    72% {transform: rotate(-5deg);}
+    84% {transform: rotate(25deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+@keyframes sway2 {
+    0% {transform: rotate(-5deg);}
+    11% {transform: rotate(25deg);}
+    22% {transform: rotate(-5deg);}
+    33% {transform: rotate(25deg);}
+    44% {transform: rotate(-5deg);}
+    55% {transform: rotate(25deg);}
+    66% {transform: rotate(-5deg);}
+    77% {transform: rotate(25deg);}
+    88% {transform: rotate(-5deg);}
+    100% {transform: rotate(25deg);}
+}
+  
+@keyframes fall0 {
+    0%{visibility: hidden;}
+    1%{visibility: visible;}
+    99%{visibility: visible;}
+    100% {
+        left: 150vw;
+        visibility: hidden;
+    }
+}
+
+@keyframes fall1 {
+    0%{visibility: hidden;}
+    1%{visibility: visible;}
+    99%{visibility: visible;}
+    100% {
+        left: 120vw;
+        visibility: hidden;
+    }
+}
+
+@keyframes fall2 {
+    0%{visibility: hidden;}
+    1%{visibility: visible;}
+    99%{visibility: visible;}
+    100% {
+        left: 180vw;
+        visibility: hidden;
+    }
+}
+  
+.bird-div{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  
+    top: 0;
+    left: 0;
+  
+    overflow: hidden;
+}
+  
+.flying-bird {
+  
+    display: block;
+
+    visibility: hidden;
+  
+    aspect-ratio: 170/90;
+
+    background-image: url("https://s3.amazonaws.com/snwceomedia/ids/25854ccf-ae96-41ee-ae10-acd36856b98e.original.png");
+    background-size: cover;
+    position: absolute;
+    color: transparent;
+}
+
+.flying-bird.bird0{animation: fall0 linear 1, sway0 ease-in-out infinite;}
+.flying-bird.bird1{animation: fall1 linear 1, sway0 ease-in-out infinite;}
+.flying-bird.bird2{animation: fall2 linear 1, sway0 ease-in-out infinite;}
+.flying-bird.bird3{animation: fall0 linear 1, sway1 ease-in-out infinite;}
+.flying-bird.bird4{animation: fall1 linear 1, sway1 ease-in-out infinite;}
+.flying-bird.bird5{animation: fall2 linear 1, sway1 ease-in-out infinite;}
+.flying-bird.bird6{animation: fall0 linear 1, sway2 ease-in-out infinite;}
+.flying-bird.bird7{animation: fall1 linear 1, sway2 ease-in-out infinite;}
+.flying-bird.bird8{animation: fall2 linear 1, sway2 ease-in-out infinite;}
