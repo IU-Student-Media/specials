@@ -1,0 +1,1067 @@
+/* COLORS */
+
+/* *{
+    outline: solid red 2px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-margin: 130px;
+}
+
+
+:root {
+    /* --mycolor: #your color here; */
+    --idsred: #990000;
+    --darkgray: rgb(80, 80, 80);
+}
+
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+    background-position: center center;
+}
+
+/* !!!!Mobile Styling!!!! */
+
+
+/* Body */
+body{
+    overflow-x: hidden;
+}
+
+
+.title-container {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    /* border: green solid 2px; */
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title-container img {
+    width: 120px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+option {
+    background-color: white;
+    color: #990000;
+    outline: 0;
+    font-size: 30px;
+}
+
+.donate {
+    margin-top: 60px;
+}
+
+nav {
+    background-color: white;
+    border-bottom: #990000 solid 5px;
+}
+
+article {
+    padding-top: 0;
+}
+
+a:visited {
+    box-shadow: 0px 3px #990000;
+}
+
+/* Typography */
+
+h1 {
+    /* top headline */
+    font-size: 50px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    padding: 0.5em 0.2em;
+    /* A little padding on the sides for mobile devices */
+}
+
+p,
+span {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h4,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    /* alignment */
+    text-align: center;
+    /* width of text */
+    max-width: var(--width-lg);
+    /* text color */
+    color: black;
+}
+
+header {
+    /* background-size: cover; */
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 100vw;
+    /* border: green solid 5px; */
+    /* margin: 0; */
+    /* margin-bottom: 20px; */
+}
+
+/* Election Nav */
+
+.election-nav {
+    max-height: 400px;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.election-container {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--gray10);
+    height: 60px;
+    margin-top: 60px;
+    position: fixed;
+}
+
+.nav-icon {
+    padding-left: 10px;
+}
+
+.election-nav {
+    /* margin-left: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.election-nav a {
+    padding: 5px;
+    margin: 0 0 0 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.headline-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-right: -50px; */
+}
+
+.headline-container img {
+    width: 50px;
+}
+
+.headline-container a {
+    border: none;
+    font-size: 20px;
+}
+
+.headline-container a:hover,
+.election-nav a:hover {
+    box-shadow: 0px 2px #990000;
+}
+
+/* Page Nav */
+
+.page-nav {
+    background-color: var(--gray05);
+    border: 1px solid rgba(0, 0, 0, .05);
+    padding: var(--sm) var(--md);
+    margin-bottom: 40px;
+}
+
+.page-nav li {
+    line-height: 1.6;
+    font-family: 'Inter', Arial, sans-serif;
+    list-style-type: none;
+}
+
+.page-nav ul {
+    padding-inline-start: 0;
+}
+
+.page-nav select {
+    background-color: white;
+    color: #990000;
+    outline: 0;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* News */
+
+.sm-st,
+.op-st {
+    width: 300px;
+
+    /* border: 1px solid red; */
+
+}
+
+.sm-st-item,
+.op-st-item {
+    border-top: 1px solid var(--darkgray);
+    padding: 1.5em 1em 0;
+}
+
+.sm-first,
+.op-first {
+    border: none;
+}
+
+.sm-txt {
+    padding: 0 1em;
+}
+
+.Opinions .sm-txt {
+    font-weight: bold;
+}
+
+.NewStories-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.NewStories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1600px;
+}
+
+.main-story {
+    max-width: 750px;
+}
+
+.smaller-stories {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 20px 10px 10px;
+}
+
+.smaller-stories img {
+    width: 250px;
+    object-fit: cover;
+    max-height: 160px;
+}
+
+.news-story-big p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.smaller-stories p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+
+.author {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    font-size: 14px;
+    /* padding-top: 300px; */
+}
+
+.news-story p {
+    max-width: 200px;
+    /* padding: 10px; */
+    padding-left: 20px;
+    font-weight: 400;
+
+}
+
+.sm-st p:hover {
+    color: #990000;
+}
+
+
+.smaller-stories a {
+    border: none;
+    margin: 0 5px 0 0;
+}
+
+.news-story-big h3 {
+    font-size: 26px !important;
+    margin-top: 15px !important;
+    text-align: left !important;
+}
+
+.news-story-big h3:hover {
+    font-size: 26px;
+    color: #990000;
+}
+
+.news-story p:hover{
+    color: #990000;
+}
+
+/* .news-story-big img{
+    width: 500px;
+  } */
+
+.news-story {
+    max-width: 500px;
+    border: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    justify-content: space-around;
+    /* border: orange 2px solid; */
+}
+
+.news-story-big {
+    margin: 10px 10px 50px 10px;
+    text-align: center;
+}
+
+.more-stories {
+    /* border: #990000 2px solid; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-right: 60px;
+    /* padding-top: 20px; */
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+.more-stories a {
+    border: none;
+    padding: 10px;
+    border: black 2px solid;
+    border-radius: 25px
+}
+
+.more-stories a:hover {
+    background-color: #990000;
+    color: white;
+    border-radius: 25px;
+    border: white 2px solid;
+}
+
+.big {
+    display: none;
+}
+
+.bylines {
+    padding: 0;
+    margin-top: 0;
+}
+
+#pubdate {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: var(--sm);
+}
+
+/* .other-story{ */
+/* border: green solid 2px; */
+/* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:
+  } */
+
+/* .other-story img{ */
+/* width: 150px; */
+/* border: blue solid 2px; */
+/* } */
+
+/* .other-story a{ */
+/* border: none; */
+/* } */
+
+/* .other-story p{ */
+/* border: solid red 2px; */
+/* max-width: 350px; */
+/* font-size: 14px; */
+/* padding: 10px; */
+/* margin-left: 20px; */
+/* } */
+
+.small {
+    display: block;
+}
+
+/* Meet the Candidates */
+
+.candidateImages {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    /* border: red solid 2px; */
+}
+
+.candidateImages2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    /* border: red solid 2px; */
+    padding: 40px;
+    /* margin: 10px; */
+    width: 100%
+}
+
+.candidate-button {
+    border: black solid 0.125em;
+    font-family: 'Inter', sans-serif;
+    border-radius: 25px;
+    padding: 10px 15px;
+    /* margin-bottom: 30px; */
+}
+
+.candidate-button:hover {
+    background-color: #990000;
+    color: white;
+    border: white solid 0.125em;
+}
+
+.candidateBackground {
+    background-color: #f5f5f5;
+    width: 100%
+}
+
+.candidateImages2 img {
+    max-width: 736px;
+}
+
+.candidateImages2 h3 {
+    text-align: center;
+}
+
+.candidateImages2 p {
+    max-width: 800px;
+    text-align: center;
+}
+
+.MeetTheCandidates {
+    /* border: green solid 2px; */
+    margin-top: var(--lg);
+    /* border-top: black solid 1px; */
+}
+
+#MeetTheCandidates{
+    margin-top: 6%;
+}
+
+/* Opinions */
+
+.opinions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: green solid 3px; */
+    margin: 30px 0 20px 0;
+}
+
+.Opinions {
+    /* border-top: black solid 1px; */
+    /* border-bottom: black solid 1px; */
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.Opinions h3 {
+    margin: 10px;
+    padding: 20px 20px 0 0;
+}
+
+
+.opinion-stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opinion-story {
+    max-width: 300px;
+    max-height: 500px;
+    /* border-right:black 1px solid; */
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opinion-stories a {
+    border: none;
+}
+
+.opinion-story p {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+/* IUSTV */
+
+.IUSTV-img {
+    max-width: 200px;
+}
+
+.IUSTV {
+    /* border-top: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.IUSTV-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.IUSTV-content {
+    max-width: 600px;
+    max-height: 100%;
+    /* border: solid green 2px; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.IUSTV-content h4 {
+    text-align: left;
+    margin: 0 0 10px 0;
+    font-size: 25px;
+}
+
+.IUSTV-content figcaption {
+    text-align: left;
+    padding-left: 0;
+}
+
+figure {
+    margin: 20px;
+}
+
+figure h3 {
+    margin-top: 0px;
+}
+
+#update {
+    font-family: 'Inter', sans-serif;
+    margin-top: -10px;
+    font-size: 0.85em;
+}
+
+.IUSTV-content {
+    max-width: 400px;
+    max-height: 100%;
+    /* border: solid green 2px; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+/* Glossary */
+
+.acc-menu {
+    /* background-color: black; */
+    /* color: white; */
+    max-width: 100%;
+    /* padding-top: 5px; */
+    background-color: black;
+    color: white;
+    padding: 5px 10px 30px 10px;
+    margin: 30px 0;
+}
+
+/* Glossary accordion styling from W3 schools, altered to maintain IDS design language */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.4s;
+    margin-top: 1em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: white;
+    color: black;
+}
+
+.accordion:hover:after{
+    color: black;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 1.2em;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: black;
+    border-top: 1px solid black;
+    /* thoughts on this border? */
+}
+
+.panel p {
+    padding-left: 0.5em;
+}
+
+.accordion:after {
+    align-self: flex-end;
+
+    content: '\0002B';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 23px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\02212";
+    /* Unicode character for "minus" sign (-) */
+    color: black !important;
+}
+
+/* For these + / - signs i cant get them to turn white and black respectively. */
+/* !important! the + sign at least needs to be fixed ASAP */
+
+/* End accordion styles */
+
+.Glossary {
+    /* background-color: black; */
+    /* color: white; */
+    max-width: 100%;
+    /* padding-top: 5px; */
+    background-color: black;
+    color: white;
+    padding: 5px 10px 30px 10px;
+    margin: 30px 0;
+
+}
+
+.Glossary h3 {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    /* border-bottom: white 2px solid; */
+    color: white
+}
+
+button {
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/* Countdown */
+
+/* count down */
+
+.countdown-container {
+    /* background-color:#990000; */
+    margin: 0 auto 15px auto;
+    margin-top: 15%;
+    text-align: center;
+  }
+  
+  .countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  
+  }
+  
+  .count span {
+    font-weight: bold;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    ;
+  }
+  
+  .countdown {
+    border: #990000 8px double;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .countdown span {
+    font-family: 'Inter', sans-serif;
+  }
+  
+
+/* .countdown-container {
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.countdown li {
+    display: inline-block;  
+    font-size: 14px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.countdown span {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.count span {
+    font-weight: bold;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+.countdown {
+    border: #990000 8px double;
+    font-family: 'Inter', sans-serif;
+}
+
+.countdown .disappear {
+    display: none;
+} */
+
+
+li.toggle {
+    color: black;
+}
+
+/* Media Queries */
+
+@media (max-width: 895px){
+    .bold {
+        display: none;
+    }
+}
+
+@media (max-width: 740px){
+    .headline-container {
+        display: none;
+    }
+
+    .countdown span {
+        font-size: 20px;
+      }
+    
+      .countdown li {
+        font-size: 14px;
+        padding: 5px;
+      }
+
+    #dissapear\ seconds, #dissapear{
+        display: none;
+    }
+
+    ul{
+        padding-left: 0px;
+    }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+    .countdown span {
+      font-size: 20px;
+    }
+  
+    .countdown li {
+      font-size: 20px;
+    }
+  
+  
+  }
+
+
+/* Tablets */
+@media (min-width: 768px) {
+/* 
+    .helper {
+        background-color: yellow;
+    }
+
+    .helper::after {
+        content: 'M';
+        color: black;
+    } */
+
+    /* Typography Tablet */
+
+    /* Election Tablet */
+
+    .election-nav a {
+        font-size: 17px;
+    }
+
+    /* .nav-icon {
+        float:left;
+    } */
+
+    /* Icon in nav bar overlapping link */
+    
+    .bold {
+        font-weight: bold;
+    }
+
+    /* Page Nav Tablet */
+
+    .page-nav {
+        margin: 1em 5em;
+        padding: 1em 5em;
+    }
+
+    .page-nav p {
+        text-align: center;
+    }
+
+    /* News / Opinion Tablet */
+
+    .sm-st {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+
+    .sm-st-item {
+        width: 50%;
+        border: none;
+    }
+
+    /* The images having varying heights here makes it look not very good */
+
+    .op-st {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .op-st-item {
+        width: 50%;
+        border: none;
+
+    }
+
+    .small {
+        display: none;
+    }
+
+    .big {
+        display: initial;
+    }
+
+    .small-container{
+        margin-top: 20px;
+    }
+
+    /* Accordion */
+
+    .acc-menu {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .countdown span {
+        font-size: 30px;
+      }
+
+    /* tried my best, countdown needs to be figured out because I am not able to get it to match the pub ver */
+
+    figure h3 {
+        margin-top: 0px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    
+      /* don't really know what this is changing */
+}
+
+/* Desktops */
+
+@media (min-width: 992px) {
+
+
+    .countdown span {
+        font-size: 50px;
+      }
+
+    /* Countdown is still screwed up here */
+    /* Nav bar is as well 
+        Comparing with pub ver i realized we have completely lost the bold 'elections 2022' text
+    */
+
+    h1 {
+        font-size: 75px;
+    }
+
+    .page-nav {
+        width:60%;
+        margin: 1em auto;
+    }
+
+    .NewStories {
+        margin: 0 6em;
+    }
+
+    .sm-st {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .sm-st-item {
+        width: 25%;
+    }
+
+    .big {
+        display: none;
+    }
+
+    .small {
+        display: initial;
+        margin: 50px;
+        float: right;
+    }
+
+    /* need a way to get this looking better */
+
+    .candidateImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        margin: 0 3%;
+    }
+
+    .MeetTheCandidates h3,
+    .Opinions h3,
+    .NewStories-container h3 {
+        text-align: center;
+        margin-top: 1em;
+        font-size: 48px;
+    }
+
+    /* ok they are all different heights which makes it look kinda funky */
+    /* This is starting to frustrate me */
+
+    .op-st {
+        padding-top: 1em;
+        width: 60%;
+    }
+
+    .op-st-item {
+        width: 30%;
+    }
+
+    /* whatever */
+
+    /* Accordion */
+
+    .acc-menu {
+        width: 60%;
+    }
+
+    .small-container{
+        margin-top: 0;
+    }
+
+}
+
+
+/* XL Screens */
+
+/* @media (min-width: 1200px) { */
+    /* .helper {
+        background-color: blue;
+    }
+
+    .helper::after {
+        content: 'XL';
+    } */
+
+
+/* } */

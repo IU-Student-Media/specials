@@ -1,0 +1,638 @@
+/* COLORS */
+
+/* *{
+    outline: solid red 2px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    scroll-margin: 130px;
+}
+
+:root {
+    /* --mycolor: #your color here; */
+    --idsred: #990000;
+    --darkgray: rgb(80, 80, 80);
+}
+
+header {
+    /* add header image below */
+    /* can use a file path before the photo is uploaded to ceo */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+    background-position: center center;
+}
+
+/* !!!!Mobile Styling!!!! */
+
+
+/* Body */
+body{
+    overflow-x: hidden;
+}
+
+.title-container {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    /* border: green solid 2px; */
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title-container img {
+    width: 120px;
+    text-align: center;
+    /* margin-bottom: -30px; */
+}
+
+option {
+    background-color: white;
+    color: #990000;
+    outline: 0;
+    font-size: 30px;
+}
+
+.donate {
+    margin-top: 60px;
+}
+
+nav {
+    background-color: white;
+    border-bottom: #990000 solid 5px;
+}
+
+article {
+    padding-top: 0;
+    margin: 0 1rem;
+}
+
+a:visited {
+    box-shadow: 0px 3px #990000;
+}
+
+/* Typography */
+
+h1 {
+    /* top headline */
+    font-size: 50px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    padding-bottom: 0.2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    color: black;
+    padding-bottom: 1em;
+
+}
+
+h3{
+    font-size: 26px;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    line-height: 1.3em;
+    margin: 2em 0 1em;
+}
+
+p,
+span {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h4,
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    /* alignment */
+    text-align: center;
+    /* width of text */
+    max-width: var(--width-lg);
+    /* text color */
+    color: black;
+}
+
+header {
+    /* background-size: cover; */
+    height: 15vh;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 100vw;
+    /* border: green solid 5px; */
+    /* margin: 0; */
+    /* margin-bottom: 20px; */
+}
+
+/* Election Nav */
+
+.election-nav {
+    max-height: 400px;
+}
+
+.bold {
+    font-weight: bold !important;
+
+    /* Made visible on smaller screens because the nav bar is significantly reduced */
+}
+
+.election-container {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--gray10);
+    height: 60px;
+    margin-top: 60px;
+    position: fixed;
+}
+
+.nav-icon {
+    padding-left: 10px;
+}
+
+.election-nav {
+    /* margin-left: 10px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.election-nav a {
+    padding: 5px;
+    margin: 0 0 0 30px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.headline-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-right: -50px; */
+}
+
+.headline-container img {
+    width: 50px;
+}
+
+.headline-container a {
+    border: none;
+    font-size: 20px;
+}
+
+.headline-container a:hover,
+.election-nav a:hover {
+    box-shadow: 0px 2px #990000;
+}
+
+.bylines {
+    padding: 0;
+    margin-top: 0;
+}
+
+#pubdate {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: var(--sm);
+}
+
+/* Page Nav */
+
+.page-nav {
+    background-color: var(--gray05);
+    border: 1px solid rgba(0, 0, 0, .05);
+    padding: var(--sm) var(--md);
+    margin-bottom: 40px;
+}
+
+.page-nav li {
+    line-height: 1.6;
+    font-family: 'Inter', Arial, sans-serif;
+    list-style-type: none;
+}
+
+.page-nav ul {
+    padding-inline-start: 0;
+}
+
+.page-nav select {
+    background-color: white;
+    color: #990000;
+    outline: 0;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* .page-nav a {
+    border-bottom: 0.125em solid var(--gray90);
+} */
+
+
+/* Candidate Cards */
+
+/* Card itself */
+
+.card {
+    /* border: 1px solid red; */
+    padding: 1.5rem;
+    border-radius: 8px;
+    /* slightly rounded corners make it look nice */
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    /* The faintest of drop shadows to add a little depth */
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.card img {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto;
+
+    object-fit: cover;
+}
+
+.card img.blank{
+    object-fit: contain;
+}
+
+#beth-white img{
+    object-position: 20%;
+}
+
+#brad-chambers img{
+    object-position: 65%;
+}
+
+/* Add the appropriate party class to the candidates card like so 
+    <div class="card rep"></div>
+*/
+
+.rep{
+    background-color: rgba(248, 104, 104, 0.2);
+    /* semi-transparent red - R */
+}
+
+.dem {
+    background-color: rgba(104, 181, 248, 0.2);
+    /* semi-transparent blue - D */
+}
+
+.lib {
+    background-color: rgba(248, 210, 104, 0.2);
+    /* semi-transparent yellow - L */
+}
+
+/* Add these text-color classes to a small story when needed */
+
+.d {
+    color: rgb(12, 36, 108);
+}
+
+.r {
+    color: rgb(108, 12, 12);
+}
+
+.l {
+    color: rgb(179, 123, 9);
+}
+
+.candidate {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.sm-candidate {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+.card-story {
+    margin: 0.2em 0 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.sm-story {
+    margin: 0.2em 0 0;
+    font-size: 14px;
+    padding: 0;
+}
+
+.author {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+    font-size: 14px;
+    /* padding-top: 300px; */
+}
+
+.sm-author {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.candidate-button {
+    border: black solid 0.125em;
+    font-family: 'Inter', sans-serif;
+    border-radius: 25px;
+    padding: 10px 15px;
+    /* margin-bottom: 30px; */
+    float: right;
+
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.sm-candidate-button {
+    border: black solid 0.125em;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    float: right;
+    margin: auto 0;
+}
+
+.sm-candidate-button:hover,
+.candidate-button:hover {
+    background-color: #990000;
+    color: white;
+    border: white solid 0.125em;
+}
+.card::after {
+    /* clearfix */
+    content: ""; 
+    display: table; 
+    clear: both;
+}
+
+.gov, .att-gen{
+    margin-bottom: 4rem;
+}
+
+.sen {
+    margin-bottom: 6rem;
+}
+
+/* Smaller stories styling */
+
+.small-story {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 1em 2em 0;
+    padding-bottom: 1em;
+    border-bottom: black solid 1px;
+}
+
+.other h5 {
+    padding: 3em 0 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.local h3{
+    font-size: 40px;
+}
+
+.local h4 {
+    margin-top: 3em;
+    font-size: 20px;
+}
+
+.desktop, .tablet {
+    display: none;
+}
+
+/* Countdown */
+
+.countdown-container {
+    /* background-color:#990000; */
+    margin: 0 auto 15px auto;
+    text-align: center;
+  }
+  
+  .countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  
+  }
+  
+  .count span {
+    font-weight: bold;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    ;
+  }
+  
+  .countdown {
+    border: #990000 8px double;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .countdown span {
+    font-family: 'Inter', sans-serif;
+  }
+  
+/* Media Queries */
+
+/* @media (max-width: 895px){ } */
+
+
+@media (max-width: 740px){
+    .headline-container {
+        display: none;
+    }
+
+    .countdown span {
+        font-size: 20px;
+      }
+    
+      .countdown li {
+        font-size: 14px;
+        padding: 5px;
+      }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+    .countdown span {
+      font-size: 20px;
+    }
+  
+    .countdown li {
+      font-size: 20px;
+    }
+  
+  
+  }
+
+
+/* Tablets */
+@media (min-width: 768px) {
+/* 
+    .helper {
+        background-color: yellow;
+    }
+
+    .helper::after {
+        content: 'M';
+        color: black;
+    } */
+
+    .election-nav a {
+        font-size: 17px;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+
+    .countdown span {
+        font-size: 30px;
+      }
+
+    .page-nav {
+        margin: 1em 5em;
+        padding: 1em 5em;
+    }
+
+    .page-nav p {
+        text-align: center;
+    }
+
+    /* Tablet Cards become a 2x2 grid */
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    /* Small story fixes */
+
+    .tablet {
+        display: initial;
+    }
+
+    .small-story {
+        grid-template-columns: 25% 50% 25%;
+        /* add a 3rd column for the blurb */
+        margin: 1em 6em 0;
+    }
+    
+    .sm-story {
+        /* not to be confused with small-story, sm-story is the blurb here */
+        margin: auto 0;
+        font-size: 16px;
+        padding-left: 4px;
+        /* it was running up against Catherine Stafford */
+    }
+
+}
+
+/* Desktops */
+
+@media (min-width: 992px) {
+
+
+    .countdown span {
+        font-size: 50px;
+      }
+
+    h1 {
+        font-size: 75px;
+    }
+    
+    /* Desktop changes */
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .page-nav {
+        width:50%;
+        margin: 1em auto;
+    }
+
+    /* Cards go into 3-column grid here */
+
+    .grid {
+        max-width: var(--width-lg);
+        margin: 1em auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gov h3, .sen h3, .att-gen h3, .local h3 {
+       text-align: center;
+        font-size: 42px;
+        margin-bottom: 0.5em;
+    }
+
+    /* Smaller elections changes */
+
+    .desktop {
+        display: initial;
+    }
+
+    .small-story {
+        grid-template-columns: 20% 1fr 20% 13%;
+        margin: 1em 12em 0;
+    }
+
+    .local h4{
+        margin-left: 6em;
+        font-size: 24px;
+        margin-top: 2em;
+    }
+
+    .local h3{
+        font-size: 70px;
+    }
+}
+
+/* XL Screens */
+
+/* @media (min-width: 1200px) { */
+    /* .helper {
+        background-color: blue;
+    }
+
+    .helper::after {
+        content: 'XL';
+    } */
+
+
+/* } */
