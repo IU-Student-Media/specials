@@ -1,0 +1,132 @@
+header{
+    height: 10vh;
+}
+
+.events-illo{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+    border: solid white 4px;
+}
+
+.blurb a, .desc a{
+    color: var(--sgray);
+    border-color: var(--sgray);
+    font-weight: bold;
+    border-bottom-width: 1px;
+}
+
+.blurb.bottom{
+    margin-bottom: 80px;
+}
+
+
+
+
+.date-sep{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.date{
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.event-block .title{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    color: #dab577;
+}
+
+.event-block .title:hover{
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    color: #cf9c4a;
+}
+
+
+.event-block *{
+    margin: 0;
+}
+
+.event-block{
+    margin: 40px 20px;
+}
+
+.event-block a{
+    color: var(--sgray);
+    font-weight: 500;
+    /* border: none; */
+}
+
+a.title{
+    border: none;
+}
+
+.event-block .location{
+    line-height: 1.4rem;
+}
+
+/* .event-block .time, .event-block .desc{
+    color: var(--sgray);
+} */
+
+.event-block a:hover{
+    color: var(--sdarkgray);
+    cursor: pointer;
+}
+
+/**
+    Time and location
+*/
+
+.time-loc{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.time-loc *{
+    font-size: .9rem;
+}
+.time-loc .time{
+    margin-right: 5px;
+}
+.time-loc .location, .time-loc .not-location{
+    margin-left: 5px;
+}
+
+
+/**
+    Jump Button
+*/
+
+button.jump{
+
+    position: fixed;
+    bottom: 2.5vw;
+    right: 5vw;
+
+    font-size: .9rem;
+    padding: 12px 15px;
+    border-radius: 10000px;
+}
+
+button.jump:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .events-illo{
+        width: 300px;
+    }
+    
+}
+
+

@@ -1,0 +1,32 @@
+header{
+    height: 10vh;
+}
+
+.events-illo{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+    border: solid white 4px;
+}
+
+.p a{
+    color: var(--sgray);
+    border-color: var(--sgray);
+    font-weight: bold;
+    border-bottom-width: 1px;
+}
+
+p.bold{
+    font-weight: bold;
+    color: #dab577;
+}
+
+
+@media (max-width: 800px) {
+    .events-illo{
+        width: 300px;
+    }
+    
+}
+
+
