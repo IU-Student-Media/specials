@@ -282,6 +282,10 @@ header {
     object-fit: cover;
 }
 
+#jaime-reitenour img{
+    object-position: 65%;
+}
+
 /* Add the appropriate party class to the candidates card like so 
     <div class="card rep"></div>
 */
