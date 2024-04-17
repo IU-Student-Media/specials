@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="../css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/little-500-2024" /> <!-- TODO: Do we need to change this URL? -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2024 Little 500 Guide" />
+    <meta property="og:description" content="Everything you need to know for race day." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/2cac25c6-c08b-47ac-88cc-c1f58d0b5172.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="2024 Little 500 Guide">
+    <meta name="twitter:description" content="Everything you need to know for race day.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/2cac25c6-c08b-47ac-88cc-c1f58d0b5172.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="https://www.idsnews.com">
+                    <!-- IDS LOGO SVG -->
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:rgb(249, 245, 240);" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                </a>
+                <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+            </li>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
+            <div class="nav-sections">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="../about/index.html">About the Race</a></li>
+                <li class="item"><a href="../photos/index.html">Photos</a></li>
+                <li class="item"><a href="../roster/index.html">Team Rosters</a></li>
+                <li class="item"><a href="../sports/index.html">Track Coverage</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <div class="headline-container about-img"></div>
+        <div class="black-box">
+            <h1>About The Race</h1>
+            <h2>What you need to know ahead of race day</h2>
+            <p class="author">Photo: Zuzanna Kukawska</p>
+        </div>
+    </header>
+    <main>
+        <article class="home-flex">
+            <aside class="live-updates">
+                <div class="race-time">
+                    <p><span class="bold">Women's Race</span> | 4 p.m., April 19, 2024</p>
+                    <p><span class="bold">Men's Race</span> | 2 p.m., April 20, 2024</p>
+                </div>
+                <h3>Live Updates</h3>
+                <p class="button"><a href="#">Stay up to date on MyLaps &raquo;</a></p>
+                <!-- this is where the twitter feed goes -->
+                <!-- Alternatively, link to the live blog -->
+            </aside>
+            <section class="about-text">
+                <p>By <a href="https://www.idsnews.com/staff/parker-rodgers">Parker Rodgers</a></p>
+                <p>The “World&apos;s Greatest College Weekend” is almost underway at Indiana University. </p>
+                <p>Thirty-three of the fastest men&apos;s and women&apos;s cycling teams at IU will compete in the
+                    Little 500. The
+                    men&apos;s race consists of 200 laps (50 miles) and the women&apos;s race 100 laps (25 miles). </p>
+                <p>Only the quickest men&apos;s and women&apos;s teams can claim the title as Little 500 champions,
+                    hoist the
+                    Borg-Warner trophy and have their names cemented into history. </p>
+            </section>
+
+        </article>
+        <!-- TODO: Ad could go here -->
+        <div class="ad-block">
+            <div class="ad-code" algin="center">
+                <br>
+                <div id='div-gpt-ad-1512489859064-2' align="center">
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <article class="terms-to-know">
+            <h3>Rules to Know</h3>
+            <table>
+                <tr>
+                    <th>Pits</th>
+                    <td>Selected in order of qualification, each team will have their own pit to set up in. When
+                        completing an exchange, the rider getting off the bike must stop by the end of the next pit or
+                        receive a penalty.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Exchanges</th>
+                    <td>Each team must complete exchanges throughout the race. An exchange counts when teams switch
+                        riders with one or two bikes. <br><br> During the exchange, the outgoing rider is not allowed to
+                        touch
+                        the incoming bike until it has
+                        reached the front line of each team's designated pit area. Each exchange also must be completed
+                        within an area of 32 feet. <br><br>
+                        The women are required to complete a minimum of five exchanges
+                        while the men must complete at least 10 exchanges.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Line-up</th>
+                    <td>The lineup is how riders are lined up for the pace lap.</td>
+                </tr>
+                <tr>
+                    <th>Penalties</th>
+                    <td>If a team is in violation of the rules, they&apos;ll be penalized for at least two seconds. The
+                        team's time must be spent in the penalty box, which is near the start line.<br><br>
+                        Teams must serve
+                        the penalty within 10 laps of it being announced.</td>
+                </tr>
+                <tr>
+                    <th>Safety zone</th>
+                    <td>The safety zone is in the infield, 10 feet from the inside line of the track. This area between
+                        the line and the track may only have authorized people in it.</td>
+                </tr>
+                <tr>
+                    <th>Entering the infield</th>
+                    <td>Entering the infield is known as the cement gutter around the inside of the track. Riders are
+                        not to ride on it unless a team is forced onto the gutter and into the infield. <br><br> Any attempt
+                        of a team trying to improve its position by riding through the infield will be assessed a
+                        penalty.</td>
+                </tr>
+            </table>
+            <h3>Officials</h3>
+            <table>
+                <tr>
+                    <th>IUSF Little 500 race director</th>
+                    <td>Emily Carrico, who oversees all cycling activities.</td>
+                </tr>
+                <tr>
+                    <th>Chief Steward</th>
+                    <td>They decide all questions relating to the conduct of the race. They have the power to disqualify
+                        any rider or team from further competition in the race for unsportsmanlike conduct. They also
+                        have the power to assess penalties throughout the race as needed. The chief stewards&apos;
+                        decisions
+                        are final.</td>
+                </tr>
+                <tr>
+                    <th>Judges</th>
+                    <td>There are 17 judges stationed throughout the track. The judges&apos; job is to report
+                        irregularities
+                        to the Chief Steward.</td>
+                </tr>
+                <tr>
+                    <th>Chief Observers</th>
+                    <td>There are three chief observers stationed in observation towers. The observers&apos; main duty
+                        is to
+                        aid the Chief Steward with enforcing rules.</td>
+                </tr>
+                <tr>
+                    <th>Starter</th>
+                    <td>They are responsible for giving out flag signals to riders.</td>
+                </tr>
+                <tr>
+                    <th>Safety Officials</th>
+                    <td>They are responsible for making sure every rider is safe during the race.</td>
+                </tr>
+            </table>
+            <h3>Terms to Know</h3>
+            <!-- check these to make sure they are up to date -->
+            <table>
+                <tr>
+                    <th>Bike</th>
+                    <td>The Indiana University Student Foundation gives each team two bikes for the race. Teams that
+                        fail to comply with the rules or make illegal changes to the bikes will receive a penalty. Teams
+                        may only be issued a third bike if both bikes are damaged beyond repair.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Flags</th>
+                    <td>The race is controlled using official flags that have different meanings based on the color:
+                        <ul>
+                            <li><span class="bold">Green: </span>Starting signal</li>
+                            <li><span class="bold">Black: </span>Ride on outside of track</li>
+                            <li><span class="bold">Red: </span>Stop, the race is halted</li>
+                            <li><span class="bold">Yellow: </span>Ride with caution and maintain position</li>
+                            <li><span class="bold">Blue with orange stripe: </span>Bicycle attempting to pass</li>
+                            <li><span class="bold">White: </span>You are starting your last lap</li>
+                            <li><span class="bold">Checkered black and white: </span>You have completed the race</li>
+                        </ul>
+                        Teams that fail to observe flags will receive penalties.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pole</th>
+                    <td>The team that begins the race in first place.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Borg-Warner Trophy</th>
+                    <td>The name of the trophy presented to the winners of the Little 500. It is a replica of the
+                        Indianapolis 500 trophy.</td>
+                </tr>
+                <tr>
+                    <th>Green Jersey</th>
+                    <td>The team that qualifies at the pole gets to wear the green jersey. Teter will suit up in the
+                        green jersey in the women&apos;s while Sigma Phi Epsilon will do so in the men&apos;s.</td>
+                </tr>
+                <tr>
+                    <th>Yellow Jersey</th>
+                    <td>Last year's winning team for both the men&apos;s and women&apos;s teams get to wear the yellow
+                        jersey.
+                        Melanzana will wear the yellow jersey during the women&apos;s race while CUTTERS will do so in
+                        the
+                        men&apos;s race. </td>
+                </tr>
+                <tr>
+                    <th>White Jersey</th>
+                    <td>Teams that win the spring series get to wear the white jersey. Kappa Alpha Theta will wear the
+                        white jersey in the women&apos;s race while Phi Epsilon in the men&apos;s.</td>
+                </tr>
+                <tr>
+                    <th>Drafting</th>
+                    <td>When a rider conserves energy by riding behind another rider, which benefits the rider from
+                        reduced wind resistance.</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <!-- TODO: Ad could go here -->
+
+    <div class="ad-block">
+        <div class="ad-code" algin="center">
+            <br>
+            <div id='div-gpt-ad-1512489859064-0' align="center">
+                <script>
+                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/ads.js"></script>
+    <script src="../js/ids.js"></script>
+    <script src="../js/metadata.js"></script>
+</body>
+
+</html>

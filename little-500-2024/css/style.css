@@ -1,0 +1,916 @@
+:root {
+    --idsred: #990000;
+    --offblack: rgb(24, 24, 24);
+    --gray05: rgb(242, 242, 242);
+    --gray10: rgb(230, 230, 230);
+    --gray15: rgb(218, 218, 218);
+    --gray20: rgb(204, 204, 204);
+    --gray30: rgb(179, 179, 179);
+    --gray40: rgb(153, 153, 153);
+    --gray50: rgb(128, 128, 128);
+    --gray60: rgb(102, 102, 102);
+    --gray70: rgb(77, 77, 77);
+    --gray80: rgb(51, 51, 51);
+    --gray90: rgb(26, 26, 26);
+    --cream: rgb(249, 245, 240);
+    --nav-height: 57.422px;
+}
+
+/* By Sarah Parrish, 2024 */
+
+/* Main content is desktop first, media queries for devices smaller than 600px */
+
+/* Universal Structure/Styles */
+
+body {
+    background-color: var(--cream);
+}
+
+/* Typography */
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+
+nav {
+    font-size: 16px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: var(--nav-height);
+    color: var(--cream);
+    overflow: visible;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: none;
+    margin: 0;
+    padding: 0;
+    height: var(--nav-height);
+    color: var(--cream);
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: var(--cream);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cream);
+    display: block;
+    padding: 1rem;
+    transition: background-color 0.5s ease;
+    height: var(--nav-height);
+
+    font-family: Inter, 'sans-serif';
+}
+
+nav a:hover {
+    background-color: #990000;
+    transition: background-color 0.5s ease;
+    color: var(--cream);
+}
+
+nav li a:visited {
+    color: var(--cream);
+}
+
+nav li a:link {
+    color: white
+}
+
+nav .logo a:hover {
+    background-color: transparent;
+}
+
+nav .nav-sections {
+    display: flex !important;
+    flex-direction: row;
+    transition: .2s;
+}
+
+nav .nav-sections.show {
+    flex-direction: column;
+    position: fixed;
+    top: var(--nav-height);
+    right: 0px;
+    width: 160px;
+    background-color: black;
+}
+
+nav .nav-sections.show * {
+    height: 45px;
+    margin: 0;
+    line-height: 10px;
+    color: white !important;
+}
+
+/* Header Box */
+
+header {
+    height: 600px;
+    position: relative;
+}
+
+.headline-container {
+    width: 100%;
+    height: 600px;
+}
+
+/* Gallery image is for the photos page FYI */
+
+.gallery-img {
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/519b8105-f32a-43bc-917c-141fae2a1b39.original.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.home-img {
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.original.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.about-img {
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/2cac25c6-c08b-47ac-88cc-c1f58d0b5172.original.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.roster-img {
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/3142e85b-e2d5-4e7b-b7aa-5b6a9f4b65e1.original.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+/* news coverage is in the sports folder, don't ask why, i don't know. It's too late to change */
+
+.coverage-img {
+    background: url(https://s3.amazonaws.com/snwceomedia/ids/f87e9360-9fa0-42e7-b7c2-f61822c8b0ff.original.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.black-box {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.black-box h1,
+.black-box h2 {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    color: var(--cream);
+    text-align: center;
+}
+
+.black-box h1 {
+    font-size: 80px;
+}
+
+.black-box h2 {
+    font-size: 38px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.black-box p {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--cream);
+}
+
+/* Byline bar is only on home page */
+
+.byline-bar {
+    height: fit-content;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.byline-bar p {
+    color: var(--gray90);
+    font-size: 16px;
+}
+
+/* Some of these styles may be redundant with IDS.css */
+
+.byline-bar a {
+    text-decoration: none;
+    border-bottom: 0.125em solid var(--gray90);
+    color: var(--gray90);
+}
+
+.byline-bar a:hover {
+    border-bottom: none;
+}
+
+/* Sets max-width on most page content unless otherwise specified */
+
+main {
+    margin: 4rem auto;
+    max-width: 1000px;
+}
+
+.index-main {
+    margin-top: 0;
+}
+
+article {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    gap: 2rem;
+}
+
+/* base img width, can be overridden */
+
+img {
+    width: 250px;
+}
+
+/* important for the gallery */
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Below is all of the styling needed (roughly approximately maybe with some edits) 
+for the historical photo gallery (styled as polaroid photos) */
+
+/* .group {
+    position: relative;
+} */
+/* 
+.year {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: var(--cream);
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+} */
+
+/* .credit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: var(--gray60);
+    font-size: 20px;
+    /* border: 1px solid red; */
+/* font-family: 'Caveat', cursive; */
+/* } */
+
+/* .polaroid {
+    background-color: white;
+    padding: 10px 10px 3em 10px;
+}
+
+.polaroid {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* Photo gallery styles */
+
+figcaption {
+    color: var(--gray90);
+}
+
+/* sets photo gallery wider than usual */
+
+.photos-width {
+    max-width: 1200px;
+}
+
+/* this isn't the prettiest thing in the world but it will be quickly updatable without too much hassle */
+
+.gallery {
+    flex-flow: column nowrap;
+}
+
+.gallery h3 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.gallery-hed {
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.modern figure {
+    max-width: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.modern figure img {
+    align-self: center;
+}
+
+.modern {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 2rem;
+}
+
+.modern img {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modern .credit {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+    text-align: right;
+    color: var(--gray70);
+}
+
+/* small-description needs to be put on any blurbs in the photo gallery */
+
+.small-description {
+    font-size: 16px;
+    max-width: 500px;
+    padding-top: 1rem;
+    align-self: center;
+}
+
+/* This adds a border on top of only the first small-description element */
+
+.small-description:first-of-type {
+    border-top: 2px solid var(--idsred);
+}
+
+/* Home styles */
+
+.home-flex {
+    justify-content: space-evenly;
+}
+
+.photo-teaser {
+    max-width: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.photo-teaser img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.35;
+    object-fit: cover;
+}
+
+.flex-text-teaser {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.photo-teaser-container h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.small-img-teaser {
+    width: 33%;
+}
+
+.button {
+    align-self: flex-end;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--cream);
+    display: block;
+    padding: 10px 15px;
+    background-color: var(--idsred);
+    border-bottom: none;
+}
+
+.button a:hover {
+    background-color: #5f0000;
+}
+
+/* uncomment styles below for a box link to another page with an image in the background */
+
+.box-link {
+    background-image: url(https://s3.amazonaws.com/snwceomedia/ids/3142e85b-e2d5-4e7b-b7aa-5b6a9f4b65e1.original.jpg);
+    background-size: cover;
+    max-width: 600px;
+    height: 300px;
+    color: var(--cream);
+    margin-bottom: 2rem;
+}
+
+.unfiltered {
+    max-width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box-link h3 {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+.blurb {
+    padding: 0 10px;
+    margin: 0 0 1rem 10px;
+}
+
+.box-button,
+.box-button:visited,
+.box-button:link {
+    border: 1px solid var(--cream);
+    border-radius: 4px;
+    width: fit-content;
+    margin: 1em 0 0 20px;
+    padding: 7px;
+    color: var(--cream);
+}
+
+.box-button:hover {
+    background-color: var(--idsred);
+    border: 1px solid var(--cream);
+    color: var(--cream);
+    transition: .2s;
+}
+
+
+/* This is an aside section for live updates / extra info if applicable */
+
+.live-updates {
+    border-left: 2px solid var(--idsred);
+    padding-left: 2em;
+    width: 250px;
+}
+
+.live-updates h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.race-time {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--idsred);
+    margin-bottom: 10px
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.race-time p {
+    padding: 5px 0;
+}
+
+/* About / Terms to know styles */
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text p {
+    padding: 0 0 1em;
+    line-height: 1.3em;
+    font-size: 18px;
+}
+
+.terms-to-know {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.terms-to-know h3 {
+    font-size: 38px;
+    margin: 1em 0 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--idsred);
+    width: 80%;
+    text-align: center;
+}
+
+/* The terms to know is a table */
+
+table {
+    max-width: 800px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 1em;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--idsred);
+    color: var(--cream);
+}
+
+/* Rosters page, includes accordion menu and photo gallery */
+
+.team-rosters {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.small-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.team-name {
+    padding-top: 1rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Change these numbers if needed */
+
+.shirt-icon {
+    width: 100px;
+}
+
+.flex-text {
+    width: 80%;
+}
+
+.womens,
+.mens {
+    max-width: 50%;
+}
+
+/* Accordion styles borrowed and modified from W3 schools accordion menu */
+
+.acc-menu {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkred;
+    color: var(--cream);
+    border-bottom: 1px solid var(--cream);
+}
+
+.accordion-button:last-of-type {
+    border-bottom: none;
+}
+
+.active,
+.accordion:hover {
+    background-color: var(--cream);
+    color: var(--gray90);
+}
+
+.accordion:hover:after {
+    color: var(--gray90);
+}
+
+.panel {
+    padding: 0 1rem;
+    background-color: var(--cream);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: var(--gray90);
+}
+
+.accordion:after {
+    align-self: flex-end;
+    content: '\0002B';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 23px;
+    color: var(--cream);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\02212";
+    /* Unicode character for "minus" sign (-) */
+    color: var(--gray90);
+    float: right;
+}
+
+.team-rosters h4 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+/* gallery below accordion menu with Media Day photos */
+
+.roster-gallery {
+    flex-flow: column nowrap;
+}
+
+/* In my case, all the photos were done by the same person. YMMV */
+
+.roster-gallery .credit {
+    text-align: left;
+}
+
+.roster-gallery h3 {
+    margin: 0;
+}
+
+.roster-gallery-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.roster-gallery h4 {
+    font-size: 24px;
+}
+
+/* Set relative so overlay can be absolute */
+
+.img-container {
+    position: relative;
+}
+
+/* team name overlay on photo */
+
+.overlay {
+    position: absolute;
+    color: var(--cream);
+    bottom: 0;
+    right: 5px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* News / Track coverage page */
+
+/* Top section with one or two important stories */
+
+.recent-updates {
+    max-width: 600px;
+}
+
+.recent-updates h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Bottom section with 4-6 older stories */
+
+.more-coverage {
+    max-width: 800px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 0;
+}
+
+.more-coverage h3 {
+    font-size: 32px;
+    margin: 1em 0 0;
+}
+
+.more-coverage .button,
+.live-updates .button {
+    padding-top: 2rem
+}
+
+/* flex box container for story content */
+
+.story-box {
+    display: flex;
+    gap: 2em;
+    flex-flow: row nowrap;
+    padding: 2em 0;
+    border-bottom: 2px solid var(--idsred);
+}
+
+.story-box:last-child {
+    border-bottom: none;
+}
+
+.story-box-lg {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2em;
+    padding: 2em;
+}
+
+.story-box-lg .story-text-flex {
+    font-size: 24px;
+    width: 70%;
+}
+
+.story-box .story-text-flex {
+    width: 90%;
+}
+
+.story-box-lg .author {
+    font-size: 18px;
+}
+
+.story-box-home {
+    padding: 4rem 0;
+}
+
+.story-text-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.story-title a {
+    color: var(--idsred);
+    text-decoration: none;
+}
+
+.story-title a:hover {
+    color: #5f0000;
+    text-decoration: none;
+}
+
+.title-pubdate p:last-child {
+    font-size: 16px;
+}
+
+.author {
+    font-size: 18px;
+}
+
+.author a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--gray90);
+    color: var(--gray90);
+}
+
+.author a:hover {
+    border-bottom: 1px solid var(--idsred);
+    color: var(--idsred);
+}
+
+/* devices under 600px (so mobile, tablet) */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        background-color: black;
+    }
+
+    /* be sure to adjust background images if they look off */
+
+    .black-box h1 {
+        font-size: 48px;
+    }
+
+    .black-box h2 {
+        font-size: 24px;
+    }
+
+    .byline-bar {
+        padding: 1rem;
+    }
+
+    .byline-bar p {
+        font-size: 14px;
+    }
+
+    main,
+    .photos-width {
+        max-width: 500px;
+        margin: 1rem 1rem 3rem;
+    }
+
+    .photos-width {
+        margin-top: 1rem;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .live-updates {
+        padding: 0;
+    }
+
+    .live-updates .button a {
+        font-size: 16px;
+    }
+
+    .story-box-home {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1em;
+        padding: 0 0 3rem;
+    }
+
+    .story-box-lg .story-text-flex {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .story-box-lg .author {
+        font-size: 16px;
+    }
+
+    .story-box,
+    .story-box-lg {
+        flex-flow: column nowrap;
+    }
+
+    .story-box img {
+        align-self: center;
+    }
+
+    .photo-teaser {
+        flex-flow: column nowrap;
+        margin: 0 2rem;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .small-img-teaser {
+        width: 80%;
+    }
+
+    .live-updates {
+        border-left: none;
+        border-top: 2px solid #990000;
+        margin-top: 1rem;
+    }
+
+    .race-time {
+        border-bottom: none;
+        padding: 1rem 0 0;
+    }
+
+    .team-rosters {
+        flex-flow: column nowrap;
+    }
+
+    .button a {
+        font-size: 12px;
+    }
+
+    .womens,
+    .mens {
+        max-width: 100%;
+    }
+}

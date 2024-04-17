@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/little-500-2024" /> <!-- TODO: Do we need to change this URL? -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2024 Little 500 Guide" />
+    <meta property="og:description" content="Everything you need to know for race day." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="2024 Little 500 Guide">
+    <meta name="twitter:description" content="Everything you need to know for race day.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.original.jpg"> <!-- TODO: link to dominant image -->
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="https://www.idsnews.com">
+                    <!-- IDS LOGO SVG -->
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:rgb(249, 245, 240);" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <!-- logo fill changed from white (default) to cream. If changing color in future, dont forget to change this  -->
+                </a>
+                <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+            </li>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
+
+            <div class="nav-sections">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about/index.html">About the Race</a></li>
+                <li class="item"><a href="photos/index.html">Photos</a></li>
+                <li class="item"><a href="roster/index.html">Team Rosters</a></li>
+                <li class="item"><a href="sports/index.html">Track Coverage</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <div class="headline-container home-img"></div>
+        <div class="black-box">
+            <h1>The Little 500 Guide</h1>
+            <h2>Everything you need to know</h2>
+            <p class="author">Photo: Cooper Shannon</p>
+        </div>
+    </header>
+    <div class="byline-bar">
+        <p>Design and development by <a href="https://www.idsnews.com/staff/sarah-parrish" target="_blank"
+                rel="noopener noreferrer">Sarah
+                Parrish</a> and
+            <a href="ids staff link" target="_blank" rel="noopener noreferrer">Matei Cloteaux</a>
+        </p>
+    </div>
+    <main class="index-main">
+        <article class="home-flex">
+            <aside class="live-updates">
+                <div class="race-time">
+                    <p><span class="bold">Women's Race</span> | 4 p.m., April 19, 2024</p>
+                    <p><span class="bold">Men's Race</span> | 2 p.m., April 20, 2024</p>
+                </div>
+                <h3>Live Updates</h3>
+                <p class="button"><a href="#">Stay up to date on MyLaps &raquo;</a></p>
+                <!-- Idk if MyLaps is stylized like this, change if wrong -->
+            </aside>
+            <section>
+                <div class="box-link">
+                    <div class="unfiltered">
+                        <h3>Team Rosters</h3>
+                        <p class="blurb">Know where your team is on the track, including row, jersey, and riders.</p>
+                        <!-- I am not the best at writing, edit? -->
+                        <a class="box-button" href="./roster/index.html">See more &raquo;</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="photo-teaser-container">
+                    <div class="flex-text-teaser">
+                        <h3>Photos from the Track</h3>
+                        <p class="button"><a href="photos/index.html">See more &raquo;</a></p>
+                    </div>
+                    <div class="photo-teaser">
+                        <div class="small-img-teaser">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/2e76e825-ea2b-4f54-bcbd-c5c4edbd006f.original.jpg"
+                                alt="Four male competitors running in a field">
+                            <p class="credit">Jacob Spudich</p>
+                        </div>
+
+                        <div class="small-img-teaser">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/601194ae-20a7-4d73-9446-bf9a3bb55689.original.jpg"
+                                alt="two male competitors pick up their bikes">
+                            <p class="credit">Jacob Spudich</p>
+                        </div>
+                        <div class="small-img-teaser">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/8a41cec6-ff2d-42b5-b6e4-85159c8625e2.original.jpg"
+                                alt="four male competitors warm up on stationary bikes">
+                            <p class="credit">Jacob Spudich</p>
+                        </div>
+                        <!-- I think 3 most recent images is good enough -->
+                    </div>
+                </div>
+                <!-- 
+                <div class="story-box-lg story-box-home">
+                    <!-- This will be the quick-update blog post -->
+
+                <!-- uncomment below if the live blog ends up happening -->
+
+                <!-- <img src="/images/cyclist-a.jpg" alt="Put something here" class="thumbnail">
+                    <div class="story-text-flex">
+                        <div class="title-pubdate">
+                            <p class="bold story-title"><a href="http://" target="_blank"
+                                    rel="noopener noreferrer">Little 500 Live Updates</a>
+                            </p>
+                            <p>April 19 (or 20)</p>
+                        </div>
+                        <div class="story-text">
+                            <p class="author">By <a href="http://" target="_blank" rel="noopener noreferrer">IDS
+                                    Staff</a></p>
+                            <p class="">Live updates from the track</p>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- TODO: Ad could go here -->
+
+    <div class="ad-block">
+        <div class="ad-code" algin="center">
+            <br>
+            <div id='div-gpt-ad-1512489859064-2' align="center">
+                <script>
+                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="center">
+            <p class="donate">
+                <em>Like what you're reading?</em><br>
+                Support independent, award-winning student journalism.
+                <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+            </p>
+        </div>
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>

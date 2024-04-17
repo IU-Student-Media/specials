@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="../css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/little-500-2024" /> <!-- TODO: Do we need to change this URL? -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2024 Little 500 Guide" />
+    <meta property="og:description" content="Everything you need to know for race day." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/f87e9360-9fa0-42e7-b7c2-f61822c8b0ff.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="2024 Little 500 Guide">
+    <meta name="twitter:description" content="Everything you need to know for race day.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/f87e9360-9fa0-42e7-b7c2-f61822c8b0ff.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="https://www.idsnews.com">
+                    <!-- IDS LOGO SVG -->
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:rgb(249, 245, 240);" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                </a>
+                <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+            </li>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
+            <div class="nav-sections">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="../about/index.html">About the Race</a></li>
+                <li class="item"><a href="../photos/index.html">Photos</a></li>
+                <li class="item"><a href="../roster/index.html">Team Rosters</a></li>
+                <li class="item"><a href="../sports/index.html">Track Coverage</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <div class="headline-container coverage-img"></div>
+        <div class="black-box">
+            <h1>Track Coverage</h1>
+            <h2>Stories and results from the race</h2>
+            <p class="author">Photo: Jacob Spudich</p>
+        </div>
+    </header>
+    <main>
+        <article class="home-flex">
+            <aside class="live-updates">
+                <div class="race-time">
+                    <p><span class="bold">Women's Race</span> | 4 p.m., April 19, 2024</p>
+                    <p><span class="bold">Men's Race</span> | 2 p.m., April 20, 2024</p>
+                </div>
+                <h3>Live Updates</h3>
+                <p class="button"><a href="#">Stay up to date on MyLaps &raquo;</a></p>
+                <!-- this is where the twitter feed goes -->
+            </aside>
+            <section class="recent-updates">
+                <!-- 
+    To create a new story-box-lg:
+                <div class="story-box-lg">
+                    <img src="link" alt="thumbnail image" class="thumbnail">
+                    <div class="story-text-flex">
+                        <div class="title-pubdate">
+                            <p class="bold story-title"><a
+                                    href="link"
+                                    target="_blank" rel="noopener noreferrer">Headline</a>
+                            </p>
+                            <p>Pubdate</p>
+                        </div>
+                        <div class="story-text">
+                            <p class="author">By <a href="https://www.idsnews.com/staff/author-name"
+                                    target="_blank" rel="noopener noreferrer">Author Name</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+------------------------------------------------------
+    Emmet String: 
+                div.story-box-lg>img.thumbnail+div.story-text-flex>div.title-pubdate>p.bold.story-title>a^p^div.story-text>p.author>a
+            -->
+                <h3>Recent Updates</h3>
+                <div class="story-box-lg">
+                    <img src="https://snworksceo.imgix.net/ids/7e7e5bb6-31b4-4baf-8d54-13004b4efa68.sized-1000x1000.jpg?w=1000"
+                        alt="a pack of cyclists on the track" class="thumbnail">
+                    <div class="story-text-flex">
+                        <div class="title-pubdate">
+                            <p class="bold story-title"><a
+                                    href="https://www.idsnews.com/article/2024/04/indiana-university-little-500-team-pursuit-kappa-alpha-theta-black-key-bulls-bloomington"
+                                    target="_blank" rel="noopener noreferrer">Team Pursuits: Kappa Alpha Theta sweeps
+                                    series; Black Key Bulls places both teams in finals</a>
+                            </p>
+                            <p>April 8, 2024</p>
+                        </div>
+                        <div class="story-text">
+                            <p class="author">By <a href="https://www.idsnews.com/staff/joseph-ringer" target="_blank"
+                                    rel="noopener noreferrer">Joseph
+                                    Ringer</a>
+                            </p>
+                            <!-- <p>Kappa Alpha Theta edged out Teter in finals to win the women’s Spring Series. </p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="story-box-lg">
+                    <img src="https://snworksceo.imgix.net/ids/67a9a4d0-ee23-45fc-b186-856f711d09f6.sized-1000x1000.jpg?w=1000"
+                        alt="a group of cyclists starting a race" class="thumbnail">
+                    <div class="story-text-flex">
+                        <div class="title-pubdate">
+                            <p class="bold story-title"><a
+                                    href="https://www.idsnews.com/article/2024/04/indiana-university-little-500-luke-matthew-naas-brothers-sigma-alpha-epsilon"
+                                    target="_blank" rel="noopener noreferrer">&lsquo;We&apos;re representing
+                                    them&rsquo;: Naas
+                                    brothers
+                                    aim to immortalize family legacy, SAE in Little 500</a>
+                            </p>
+                            <p>April 7, 2024</p>
+                        </div>
+                        <div class="story-text">
+                            <p class="author">By <a href="https://www.idsnews.com/staff/mateo-fuentes-rohwer"
+                                    target="_blank" rel="noopener noreferrer">Mateo
+                                    Fuentes-Rohwer</a>
+                            </p>
+                            <!-- <p>Luke and Matthew Naas are striving for glory under their father, Bill.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- do not go over 2 stories in the large section, otherwise it will look weird -->
+            </section>
+
+        </article>
+        <!-- TODO: Ad could go here -->
+
+        <div class="ad-block">
+            <div class="ad-code" algin="center">
+                <br>
+                <div id='div-gpt-ad-1512489859064-2' align="center">
+                    <script>
+                        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+            Story box (regular) is very similar to story box lg. the only difference is in the CSS (hence, different class names.)
+            When moving a story down from the main section into the more coverage section, simply delete the "lg" from the class name "story-box-lg"
+        
+            Also, add a p underneath the author (shown below) with the abstract of the story. The lg story boxes don't have abstracts so you will have to add this. 
+
+            Put stories in descending order of recency. New stories at top, push old stories to the bottom. When they hit the end, they are deleted. That's
+            what the 'more little 500 news' link is for, it takes you to the IDS news section on the main site. 
+         -->
+        <article class="more-coverage">
+            <h3>More Stories</h3>
+            <div class="story-box">
+                <img src="https://snworksceo.imgix.net/ids/f5f5a6a1-cd45-484c-ac0e-1b5496c53e98.sized-1000x1000.jpg?w=1000"
+                    alt="a pack of cyclists racing on the track" class="thumbnail">
+                <div class="story-text-flex">
+                    <div class="title-pubdate">
+                        <p class="bold story-title"><a
+                                href="https://www.idsnews.com/article/2024/04/indiana-university-little-500-miss-n-outs-recap-schedule-beta-sigma-psi-kappa-alpha-theta"
+                                target="_blank" rel="noopener noreferrer">Beta Sigma Psi, Kappa Alpha Theta win Miss N
+                                Out as Little 500 nears</a>
+                        </p>
+                        <p>April 6, 2024</p>
+                    </div>
+                    <div class="story-text">
+                        <p class="author">By <a href="https://www.idsnews.com/staff/matt-rudella" target="_blank"
+                                rel="noopener noreferrer">Matt Rudella</a></p>
+                        <p>Conor Furlong and Audrey La Valle took home the win for their respective sides. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-box">
+                <img src="https://snworksceo.imgix.net/ids/e3a948e7-26e8-4ccf-bfd5-dbfbe3ab4600.sized-1000x1000.jpg?w=1000"
+                    alt="cyclist racing on the track" class="thumbnail">
+                <div class="story-text-flex">
+                    <div class="title-pubdate">
+                        <p class="bold story-title"><a
+                                href="https://www.idsnews.com/article/2024/03/kappa-alpha-theta-audrey-la-valle-womens-little-500-individual-time-trials-indiana-hoosiers-bloomington"
+                                target="_blank" rel="noopener noreferrer">Kappa Alpha Theta&apos;s Audrey La Valle wins
+                                women&apos;s ITTs, top team contenders revealed</a>
+                        </p>
+                        <p>March 28, 2024</p>
+                    </div>
+                    <div class="story-text">
+                        <p class="author">By <a href="https://www.idsnews.com/staff/joseph-ringer" target="_blank"
+                                rel="noopener noreferrer">Joseph
+                                Ringer</a></p>
+                        <p>La Valle finished in 2:39.98. Teter and Kappa Alpha Theta tight in Spring Series standings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-box">
+                <img src="https://snworksceo.imgix.net/ids/83f65008-768c-4692-ba13-d325fe1c2199.sized-1000x1000.jpg?w=1000"
+                    alt="cyclist racing on the track" class="thumbnail">
+                <div class="story-text-flex">
+                    <div class="title-pubdate">
+                        <p class="bold story-title"><a
+                                href="https://www.idsnews.com/article/2024/03/indiana-university-hoosiers-mens-little-500-individual-time-trials-luke-naas-judah-thompson-results"
+                                target="_blank" rel="noopener noreferrer">Luke
+                                Naas, Judah Thompson top 2024 Little 500 men&apos;s Individual Time Trials</a>
+                        </p>
+                        <p>March 27, 2024</p>
+                    </div>
+                    <div class="story-text">
+                        <p class="author">By <a href="https://www.idsnews.com/staff/mateo-fuentes-rohwer"
+                                target="_blank" rel="noopener noreferrer">Mateo
+                                Fuentes-Rohwer</a></p>
+                        <p>The .14 second separation between the riders was the smallest since 1994.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-box">
+                <img src="https://snworksceo.imgix.net/ids/f584c5c3-a693-4728-97a6-38f4e9c00da5.sized-1000x1000.jpg?w=1000"
+                    alt="cyclist racing on the track" class="thumbnail">
+                <div class="story-text-flex">
+                    <div class="title-pubdate">
+                        <p class="bold story-title"><a
+                                href="https://www.idsnews.com/article/2024/03/indiana-university-womens-little-500-recap-qualifications-recap-results-teter"
+                                target="_blank" rel="noopener noreferrer">Teter
+                                takes women&apos;s pole position with blistering Little 500 qualifications attempt</a>
+                        </p>
+                        <p>March 23, 2024</p>
+                    </div>
+                    <div class="story-text">
+                        <p class="author">By <a href="https://www.idsnews.com/staff/joseph-ringer" target="_blank"
+                                rel="noopener noreferrer">Joseph
+                                Ringer</a></p>
+                        <p>The deep Teter roster finished with a time of 2:47.142.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-box">
+                <img src="https://snworksceo.imgix.net/ids/4ca24940-33a5-4f29-9143-e99128587fb2.sized-1000x1000.jpg?w=1000"
+                    alt="cyclist racing on the track" class="thumbnail">
+                <div class="story-text-flex">
+                    <div class="title-pubdate">
+                        <p class="bold story-title"><a
+                                href="https://www.idsnews.com/article/2024/03/indiana-university-mens-little-500-qualification-results-sigma-phi-epsilon-black-key-bulls-cutters-mezcla"
+                                target="_blank" rel="noopener noreferrer">Sigma
+                                Phi Epsilon fastest in qualifications for men&apos;s Little 500</a>
+                        </p>
+                        <p>March 23, 2024</p>
+                    </div>
+                    <div class="story-text">
+                        <p class="author">By <a href="https://www.idsnews.com/staff/mateo-fuentes-rohwer"
+                                target="_blank" rel="noopener noreferrer">Mateo
+                                Fuentes-Rohwer</a></p>
+                        <p>The third-place finishers of the 2023 race secured the best time in the qualifications. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- I would say do not go over 5 stories in the small section -->
+            <p class="button"><a href="https://www.idsnews.com/section/little-500">More Little 500 news &raquo;</a></p>
+        </article>
+
+    </main>
+    <!-- TODO: Ad could go here -->
+
+    <div class="ad-block">
+        <div class="ad-code" algin="center">
+            <br>
+            <div id='div-gpt-ad-1512489859064-0' align="center">
+                <script>
+                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/ads.js"></script>
+    <script src="../js/ids.js"></script>
+    <script src="../js/metadata.js"></script>
+</body>
+
+</html>

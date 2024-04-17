@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="../css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="../css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/little-500-2024" /> <!-- TODO: Do we need to change this URL? -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2024 Little 500 Guide" />
+    <meta property="og:description" content="Everything you need to know for race day." />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/519b8105-f32a-43bc-917c-141fae2a1b39.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="2024 Little 500 Guide">
+    <meta name="twitter:description" content="Everything you need to know for race day.">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/519b8105-f32a-43bc-917c-141fae2a1b39.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="https://www.idsnews.com">
+                    <!-- IDS LOGO SVG -->
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:rgb(249, 245, 240);" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:rgb(249, 245, 240);"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                </a>
+                <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+            </li>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
+            <div class="nav-sections">
+                <li class="item"><a href="../index.html">Home</a></li>
+                <li class="item"><a href="../about/index.html">About the Race</a></li>
+                <li class="item"><a href="../photos/index.html">Photos</a></li>
+                <li class="item"><a href="../roster/index.html">Team Rosters</a></li>
+                <li class="item"><a href="../sports/index.html">Track Coverage</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header>
+        <div class="headline-container gallery-img"></div>
+        <div class="black-box">
+            <h1>Little 500 Photos</h1>
+            <h2>Top shots from the track <!--, updated live --></h2>
+            <!-- Uncomment 'updated live' if we decide if it will actually be updated live -->
+            <p class="author">Photo: Zuzanna Kukawska</p>
+        </div>
+    </header>
+    <main class="photos-width">
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Race Day Photos</h3>
+                <p class="small-description">The womens race is Friday, April 19 at 4 p.m.<br>The mens race is Saturday
+                    April 20 at 2 p.m.</p>
+            </div>
+            <div class="modern">
+                <!-- Add new photos to the start, so the most recent photos are at the beginning of the page
+                    format: 
+                        <figure>
+                            <img src="source link" alt="alt text">
+                            <p class="credit">Photographer Name</p>
+                            <figcaption>Caption text</figcaption>
+                        </figure>
+                        ------------------------------------------------------------
+                        emmet string:                    
+                            fig>img+p.credit+figc
+                        To make multiple photos at once, do an asterisk after fig.
+                        Ex: fig*10>img+p.credit+figc -> this will make 10 figures with the image, credit, and caption elements nested.
+                -->
+            </div>
+        </article>
+        <!-- on Friday night you could move the womens race photos to a new section labelled "Womens Race &mdash; April 19, 2024" 
+            and have the small-description p briefly describe the results of the race.
+            If you do this, rename "Race Day Photos" to "Mens Race &mdash; April 20, 2024" and comment out the small-description p until you have something to put there.
+            Otherwise all photos can go into "Race Day Photos". Change the race times when relevant to report results if you want.
+            if you add more 'p' tags, be sure to put the class .small-description on all of them.
+            -->
+        <!-- After race day photos, gallery sections are in order of descending date 
+        To make a new gallery section:
+            ------------------------------------------------------------
+            Copy + paste emmet string for a new gallery section w/ 10 images
+            for more/less than 10 images adjust number after fig*(X) (where X is a whole number)
+            You will have to delete the 'c' at the end of the string and re-type it to get it to work
+            article.gallery>div.gallery-hed>h3+p.small-description^div.modern>fig*10>img+p.credit+figc
+            ------------------------------------------------------------
+        -->
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Team Pursuit &mdash; April 7, 2024</h3>
+                <p class="small-description">Two teams of four start on opposite ends of the track and chase each other
+                    down in a pace line
+                    for 15 laps. The teams are timed based on the third rider to cross the finish line. The two
+                    fastest teams compete to determine the winner.</p>
+            </div>
+            <div class="modern">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2e76e825-ea2b-4f54-bcbd-c5c4edbd006f.original.jpg"
+                        alt="Four male competitors running in a field">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Forest Cycling riders race to their bikes during Team Pursuit contests April 7, 2024, at
+                        Bill Armstrong Stadium in Bloomington. This was the last Spring Series event before the official
+                        race.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/601194ae-20a7-4d73-9446-bf9a3bb55689.original.jpg"
+                        alt="two male competitors pick up their bikes">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>A couple of Forest Cycling riders quickly pick up their bikes during Team Pursuit
+                        contests April 7, 2024, at Bill Armstrong Stadium in Bloomington. Riders started by standing
+                        20-feet from their bikes and running to their bikes.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/8a41cec6-ff2d-42b5-b6e4-85159c8625e2.original.jpg"
+                        alt="four male competitors warm up on stationary bikes">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Delta Tau Delta riders warm up during Team Pursuit contests April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington. Over 160 riders competed in the men's event on Saturday.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f87e9360-9fa0-42e7-b7c2-f61822c8b0ff.original.jpg"
+                        alt="a group of cyclists on the track">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Little 500 riders from Forest Cycling and Kappa Delta Rho round the track during Team
+                        Pursuit contests April 7, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/61ddc639-8fb3-4c3e-9c7f-9b13cc4a1c28.original.jpg"
+                        alt="three male cyclists mounting their bikes">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Team Cinzano jumps on their bikes during Team Pursuit contests April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5e4be258-cc6a-4444-9826-b1b626bb23fe.original.jpg"
+                        alt="a group of cyclists on the track">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Delta Tau Delta riders race around the track during Team Pursuit contests April 7, 2024,
+                        at Bill Armstrong Stadium in Bloomington. During the event, bikes were placed in opposite
+                        corners of the track where riders run to their bikes then start the 15-lap race.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f61e2f3a-ec18-4a48-8c69-da4aa125b68d.original.jpg"
+                        alt="a team of competitors running in a field">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Phi Delta Theta sprints to the track April 7, 2024, at Bill Armstrong Stadium in
+                        Bloomington during Team Pursuit.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/14502917-ea7f-42ee-98ed-bbca31f3dd16.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Sigma Alpha Epsilon rounds the third turn during Team Pursuit April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington. The team placed third in the Spring Series event.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/519b8105-f32a-43bc-917c-141fae2a1b39.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>The Black Key Bulls team rounds the second turn during Team Pursuit April 7, 2024, at
+                        Bill Armstrong Stadium in Bloomington. The team placed first in the Spring Series event.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/1ac9e8b0-d081-48dd-83da-09190e53c062.original.jpg"
+                        alt="two cyclists holding hands while biking">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Black Key Bulls finish off the sprint during Team Pursuit April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/40ec7fe9-338d-4aa5-990a-768875f933d4.original.jpg"
+                        alt="a team of female cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 rider leads their team around turn three on the track during Women's Team
+                        Pursuit April 7, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e416b5cc-4c3d-4d2b-90b7-5a94e36b999b.original.jpg"
+                        alt="a team of female cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 rider leads their team around turn two on the track during Team Pursuit
+                        April 7, 2024, at Bill Armstrong Stadium in Bloomington. Kappa Alpha Theta won the women's Team
+                        Pursuit on Sunday.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b70b1c0f-a61e-41d1-ba6e-d37c0e5cb4ef.original.jpg"
+                        alt="three female cyclists mounting their bikes">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>Little 500 riders race to their bikes during Team Pursuit April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5256bc42-6da5-4f90-add6-cc480cf21a0e.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A trio of Little 500 riders race through the track during women's Team Pursuit April 7,
+                        2024, at Bill Armstrong Stadium in Bloomington. Team Pursuit was the last Spring Series event of
+                        the Little 500 series before the race on April 19.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/201337c6-3b4a-4706-af86-f97489ad7e07.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>Four Little 500 riders are spaced apart during Team Pursuit April 7, 2024, at Bill
+                        Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e7dc192f-784b-40ba-aac3-3261efe9b3b4.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>Two Little 500 teams ride side-by-side on the track during Team Pursuit April 7, 2024, at Bill Armstrong Stadium in Bloomington. Team Pursuit was the last Spring Series event of the Little 500 series before the race on April 19.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/49cc7aab-7a42-491b-92d0-accd123e9c3e.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 rider leads their team through the track during Team Pursuit on April 7, 2024, at Bill Armstrong Stadium in Bloomington. The women's Little 500 race has been scheduled for 4 p.m. on April 19, 2024.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/74bbd9d5-04ff-4f9d-b869-0053799f67c2.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 coach cheers on his team during outside of the track during Team Pursuit April 7, 2024, at Bill Armstrong Stadium in Bloomington. Kappa Alpha Theta won the women's Team Pursuit on Sunday.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a217a481-8665-4b38-ab15-b2d303c1ad99.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Phi Kappa Psi sprint past the stands during Team Pursuit April 7, 2024, at Bill Armstrong Stadium in Bloomington. The men's Little 500 race has been scheduled for 2 p.m. on April 20, 2024.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/74eff85e-61bf-4939-a2f2-c86fc075dee7.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Phi Gamma Delta cyclists run to the track during Team Pursuit April 7, 2024, at Bill Armstrong Stadium in Bloomington. Riders started by standing 20-feet from their bikes and running to their bikes.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fc795d7c-ed36-4c29-83ea-1e99d381bc40.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Little 500 riders race around the track during Team Pursuit contests April 7, 2024, at Bill Armstrong Stadium in Bloomington. Over 160 riders competed in the men's event on Saturday.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/ca9d7be1-dd1a-460f-94b5-67f6304185d1.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Delta Tau Delta and Cinzano riders racing side-by-side during Team Pursuit contests April 7, 2024, at Bill Armstrong Stadium in Bloomington. During the event, bikes were placed in opposite corners of the track where riders run to their bikes then start the 15-lap race.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/3816c735-cd5b-44b3-bc4e-a08b7554f9f0.original.jpg"
+                        alt="a team of cyclists on the track">
+                    <p class="credit">Jacob Spudich</p>
+                    <figcaption>Cinzano riders race around track during Team Pursuit contests April 7, 2024, at Bill Armstrong Stadium in Bloomington. During the event, bikes were placed in opposite corners of the track where riders run to their bikes then start the 15-lap race.</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Miss N&apos; Out &mdash; April 6, 2024</h3>
+                <p class="small-description">
+                    Starting in heats of five to eight, the last place rider is eliminated every lap until three
+                    riders remain. The three advance to the next round until the final heat of eight. Once three
+                    riders are left on the last heat, they begin a one-lap sprint to determine the winner.
+                </p>
+            </div>
+            <div class="modern">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/8a51b9e2-361a-4c62-9c51-fa633ae8b25d.original.jpg"
+                        alt="a cyclist looks behind him">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>CUTTERS cyclist Judan Thompson looks back as he takes the lead during Miss N Out April
+                        6, 2024, at the Bill Armstrong Stadium in Bloomington. CUTTERS placed first in last year's
+                        Little 500 race on April 22, 2023.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b193a57a-3210-4809-8b5c-6d8d72fc495e.original.jpg"
+                        alt="a cyclist pointing forward">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>CUTTERS cyclist Judan Thompson takes the lead during Miss N Out April 6, 2024, at the
+                        Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f2997a0f-1269-4618-9efc-c7158099d006.original.jpg"
+                        alt="four cyclists waiting to start">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Little 500 cyclists mount their bikes at the starting line ahead of Miss N Out April 6,
+                        2024, at Bill Armstrong Stadium in Bloomington. Conor Furlong of Beta Sigma Psi was the winner
+                        of the event for the men's side.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/1b44e068-3909-4d1e-a40c-e9ad8ce1d704.original.jpg"
+                        alt="three cyclists beginning the race">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Little 500 cyclists launch off at the starting line ahead of Miss N Out April 6, 2024,
+                        at Bill Armstrong Stadium in Bloomington. The event consisted of a group of six-to-12 riders in
+                        a short lap race, with the riders progressively getting whittled down.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/75089408-d380-4946-a770-69bc85682634.original.jpg"
+                        alt="a cyclist sitting on the track next to his bike">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A Mezcla cyclist is pictured on the ground after a crash around the third turn during
+                        Miss N Out April 6, 2024, at Bill Armstrong Stadium in Bloomington. There were many crashes
+                        throughout the Spring Series event.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/1a703b2b-77aa-47b9-a539-3eede34fbae3.original.jpg"
+                        alt="a group of cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A peloton of riders race through the first lap of Miss N Out April 6, 2024, at Bill
+                        Armstrong Stadium in Bloomington. Riders Conor Furlong and Audrey La Valle won the Spring Series
+                        event for the men's and women's, respectively.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/35bd86d7-13d2-4359-afda-d936139c2ad1.original.jpg"
+                        alt="two cyclists standing next to their bikes">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Members of Godspeed (left) and NOVUS Cycling (right) stand at the starting line during
+                        Miss N Out April 6, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/3142e85b-e2d5-4e7b-b7aa-5b6a9f4b65e1.original.jpg"
+                        alt="a group of cyclists on stationary bikes">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A group of cyclists warm up on stationary bikes outside of the track during Miss N Out
+                        April 6, 2024, at Bill Armstrong Stadium in Bloomington. Miss N Out was the second event of the
+                        Little 500 Spring Series ahead of the official race.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.original.jpg"
+                        alt="a group of cyclists on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A peloton of riders races through the last turn on the track during Miss N Out April 6,
+                        2024, at Bill Armstrong Stadium.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a4e6dace-cf80-4659-9f77-d5c53e6fb154.original.jpg"
+                        alt="three cyclists standing on the track with their bikes, two are fist bumping.">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>Chi Alpha and Sigma Alpha Epsilon cyclists fist bump before heat two of Miss N Out April
+                        6, 2024, at Bill Armstrong Stadium in Bloomington. </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Womens Individual Time Trials (WITTs) &mdash; March 27, 2024</h3>
+                <p class="small-description">ITTs are a four-lap event, but are completed individually. Four riders
+                    compete at the same
+                    time, starting in each corner of the track, to complete four laps first.</p>
+                <p class="small-description">155 riders paticipated in the 2024 WITTs. Kappa Alpha Theta senior Audrey
+                    La Valle placed first in the event. Kappa Alpha Theta had four of its riders finish in the top 20.
+                </p>
+                <!-- is "top-20" ap-compliant? -->
+            </div>
+            <div class="modern">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e79cc2ac-2504-48cb-9864-6ae8ea3e5e02.original.jpg"
+                        alt="two cyclists walking with their bikes">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Two cyclists walk across the field during the women's Individual Time Trials March 27,
+                        2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/624d8d85-b13e-4b55-8779-ad4aae53742e.original.jpg" alt="a cyclist on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A cyclist rounds the third turn of the track at the women's Individual Time Trials March
+                        27, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/be403d66-0dac-4f7e-98f3-50c5d91ea319.original.jpg" alt="two cyclists on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Two cyclists race on the third turn of the track during women's Individual Time Trials
+                        March 27, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/30fd6120-b38c-4d45-9563-682fd88ba593.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A CSF Cycling rider rounds the second turn of the track at the women's Individual Time
+                        Trials March 27, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2cac25c6-c08b-47ac-88cc-c1f58d0b5172.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A CSF Cycling rider races through the track at the women's Individual Time Trials March
+                        27, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a09cbdd8-b00e-4f0d-87f1-bc69cd854ab1.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A Gamma Phi Beta cyclist speeds through the track during women's Individual Time Trials
+                        March 27, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Mens Individual Time Trials (MITTs) &mdash; March 26, 2024</h3>
+                <p class="small-description">ITTs are a four-lap event, but are completed individually. Four riders
+                    compete at the same
+                    time, starting in each corner of the track, to complete four laps first.</p>
+                <p class="small-description">174 riders competed in the 2024 MITTs. Sigma Alpha Epsilon junior Luke Naas
+                    defeated sophomore Judah
+                    Thompson by .14 seconds, winning the event.</p>
+            </div>
+            <div class="modern">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2d616af4-7c3f-4a3e-b504-57c745ad414e.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Briana Pace</p>
+                    <figcaption>A Little 500 cyclist races around the track during men's Individual Time Trials March
+                        26, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <!-- These captions are all the same. Are they necessary? -->
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d2c37878-80d4-4c42-8ed7-e25b9a807b12.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Briana Pace</p>
+                    <figcaption>A Little 500 rider races around the track during men's Individual Time Trials March 26,
+                        2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/581eb975-c385-4456-8702-dcb4e928aab7.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Briana Pace</p>
+                    <figcaption>A Little 500 cyclist rides around the track during men's Individual Time Trials March
+                        26, 2024, at Bill Armstrong Stadium in Bloomington.</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b3bb08c6-a146-4fe2-b85f-9a8d31fe93e7.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 rider races into the second turn of the track during men's Individual Time
+                        Trials March 26, 2024, at Bill Armstrong Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7280e88f-373d-4fd8-a897-abfd24d3d5b5.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A NOVUS cycling rider races around the track during men's Individual Time Trials March
+                        26, 2024, at Bill Armstrong Stadium in Bloomington. This was the first event of the Little 500
+                        Spring Series before the official race.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/dc2e8d44-0071-41f7-a9bf-25b23929d8d8.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Little 500 rider races into the second turn on the track during men's Individual Time
+                        Trials March 26, 2024, at Bill Armstrong Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5036a4f4-3ffa-4822-9421-d51751abaad1.original.jpg"
+                        alt="a cyclist warming up on a stationary bike">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A NOVUS cycling rider warms up on stationary bike during men's Individual Time Trials
+                        March 26, 2024, at Bill Armstrong Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c296ac12-f174-4eef-a8d1-3bbce5f3ab30.original.jpg"
+                        alt="a cyclist on his bike being held in place by another person">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A NOVUS Cycling rider awaits the start of his race during the men's Individual Time
+                        Trials March 26, 2024, at Bill Armstrong Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/1519adfd-13bf-4164-b07a-14720513a0b5.original.jpg" alt="one cyclist on the track">
+                    <p class="credit">Cooper Shannon</p>
+                    <figcaption>A Phi Gamma Delta rider races around the track during men's Individual Time
+                        Trials March
+                        26, 2024, at Bill Armstrong Stadium in Bloomington. </figcaption>
+                </figure>
+            </div>
+        </article>
+        <article class="gallery">
+            <div class="gallery-hed">
+                <h3>Qualifications &mdash; March 23, 2024</h3>
+                <p class="small-description">Also known as Quals, a team gets four laps to set a fastest time and
+                    qualify
+                    within the 33-man
+                    Little 500 field. The fastest team qualifies on the pole and receives a green jersey to wear on
+                    race day.</p>
+            </div>
+            <div class="modern">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/cbd7586d-8d73-4b8c-8e33-7a4113a37ce8.original.jpg"
+                        alt="a team of male cyclists in purple jerseys holding a time plaque">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Tau Epsilon Phi poses for a photo at Little 500 Qualifications March 23, 2024, at Bill
+                        Armstrong Stadium in Bloomington. The team was one of six that did not qualify for the race.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5e41676a-22a4-4f6e-ab48-1266ba1d74bb.original.jpg"
+                        alt="a cyclist mounting his bike on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Sigma Kappa cyclist jumps on their bike during Little 500 Qualifications March 23, 2024,
+                        at Bill Armstrong Stadium in Bloomington. The team placed 19th at qualifications.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/cecc3f2f-2fa1-4bd2-923d-da49da5e5318.original.jpg"
+                        alt="a cyclist riding on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Bison Cycling rider begins their lap around the track March 23, 2024, at Bill Armstrong
+                        Stadium in Bloomington. The team placed 23rd at Little 500 Qualifications.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f9933c07-2385-4ce2-b160-e0ea8d6c7a05.original.jpg"
+                        alt="a cyclist riding on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>A Pi Kappa Alpha cyclist speeds through the track March 23, 2024, at Bill Armstrong
+                        Stadium in Bloomington. The team placed seventh in Little 500 Qualifications.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/cdec33d1-6bc5-4869-b6a5-cbb935c7acad.original.jpg"
+                        alt="a board with time plaques with a person on a ladder changing one">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Lambda Chi Alpha moves up its plaque to first place on the race chart March 23, 2024, at
+                        Bill Armstrong Stadium in Bloomington. They finished Little 500 Qualifications in fourth.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/dccd3261-c4e4-4cb4-bee3-c7adbe402878.original.jpg"
+                        alt="a group of cyclists posing and smiling">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Alpha Xi Delta team poses for a photo on its way off the track March 23, 2024, at Bill
+                        Armstrong Stadium in Bloomington. The team placed 26th at Little 500 Qualifications.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/d02eebf0-fb44-4487-a05d-f684852b97a4.original.jpg"
+                        alt="a cyclist riding on the track">
+                    <p class="credit">Zuzanna Kukawska</p>
+                    <figcaption>Mezcla cyclist speeds past the fan section of the track March 23, 2024, at Bill
+                        Armstrong Stadium in Bloomington. The team placed 26th at Little 500 Qualifications.
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+    <!-- TODO: Ad could go here -->
+
+    <div class="ad-block">
+        <div class="ad-code" algin="center">
+            <br>
+            <div id='div-gpt-ad-1512489859064-2' align="center">
+                <script>
+                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- I would prefer that an ad NOT break up the photo gallery -->
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/ads.js"></script>
+    <script src="../js/ids.js"></script>
+    <script src="../js/metadata.js"></script>
+</body>
+
+</html>
