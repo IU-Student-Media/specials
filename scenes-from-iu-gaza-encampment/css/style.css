@@ -1,0 +1,353 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+html {
+  background-color: black;
+}
+
+.headline-container {
+  margin-top: 20px;
+  transition: opacity 400ms;
+  filter: drop-shadow(0px 0px 4px black);
+}
+
+h2 {
+  font-size: 60px;
+}
+
+header {
+  position: fixed;
+  z-index: 7;
+  width: 100%;
+  top: 0;
+}
+
+article {
+  padding: 0;
+}
+
+.bylines {
+  background-color: rgba(0, 0, 0, .7);
+  margin-top: 50px;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--medium);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: var(--xs) var(--sm);
+  border-radius: 4px;
+  margin-bottom: var(--md);
+}
+
+.bylines p,
+.bylines a:link,
+.bylines a:hover,
+.bylines a:active,
+.bylines a:visited {
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+  display: none;
+}
+
+p.credit {
+  font-size: 0.7em;
+}
+
+.scrolly {
+  position: relative;
+  /* height: 1345vh; */
+  display: flex;
+}
+
+.headline-container {
+  position: absolute;
+  z-index: 25;
+  top: center;
+  transform: translateY(-40%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.sticky-image {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  transition: opacity 400ms;
+}
+
+
+.sticky-image figure {
+  transition: opacity 400ms;
+  margin: 0;
+}
+
+.sticky-image figure img {
+  height: 100vh;
+  width: 65vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p.donate {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+
+.donate a {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  color: white;
+  z-index: 3;
+  background-color: var(--gray95);
+}
+
+footer a.subscribe:link,
+footer a.subscribe:visited {
+  color: var(--gray20);
+  box-shadow: 1px 1px 5px black;
+}
+
+footer a.subscribe:hover,
+footer a.subscribe:active {
+  box-shadow: 2px 2px 10px black;
+}
+
+footer .links a,
+p.copyright,
+footer .logo span {
+  color: var(--gray20);
+}
+
+footer .copyright {
+  background-color: var(--gray90);
+}
+
+
+.author-bios {
+  display: none;
+}
+
+.steps {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#foot {
+  transition: opacity 400ms;
+}
+
+.step {
+  position: relative;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  margin: 10vh var(--sm) 90vh;
+  padding: var(--xs) var(--sm);
+  border-radius: 4px;
+
+}
+
+* {
+  overflow: none;
+}
+
+@media screen and (max-width: 550px) {
+  .step {
+    margin-left: var(--sm);
+    margin-right: var(--sm);
+  }
+}
+
+.step p {
+  color: white;
+}
+
+.date {
+    font-family: Lato, sans-serif;
+    text-align: left;
+}
+
+/* Timeline adapted from w3 schools: https://www.w3schools.com/howto/howto_css_timeline.asp */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  transition: opacity 400ms;
+  max-width: 35vw;
+  width: 100%;
+  /* z-index: 6; */
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  background-color: white;
+  left: 50%;
+  margin-left: -3px;
+  height: 200%;
+  bottom: -50vh;
+}
+
+/* Container around content */
+.container {
+  padding: 0px 10px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  right: -52px;
+  background-color: white;
+  /* border: 4px solid #FF9F55; */
+  top: 125px;
+  z-index: 6;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  padding-left: 5%;
+}
+
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -40px;
+}
+
+/* The actual content */
+.content {
+  z-index: 4;
+  padding: 20px 0px;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 1500px) {
+  .timeline {
+    margin-left: 25px;
+    z-index: 4;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Add a shadow */
+  .timeline {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 1));
+    /* filter: drop-shadow(1px 1px 6px rgba(0, 0, 0, 1)) drop-shadow(-1px -1px 6px rgba(0, 0, 0, 1)); */
+    /* box-shadow: -3px 3px 5px 3px #000000, 3px -3px 5px 3px #000000, -3px -3px 5px 3px #000000, 3px 3px 5px 3px #00000A; */
+  }
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    left: 31px;
+    margin-left: -3px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: -21px;
+    width: 90px;
+    height: 15px;;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+
+  .sticky-image figure img {
+    width: 100vw;
+  }
+
+  .steps {
+    align-items: start;
+  }
+
+}

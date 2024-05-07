@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- @TODO SOCIAL CARDS — make sure to update these. -->
+    <meta property="og:url" content="http://specials.idsnews.com/scenes-from-iu-gaza-encampment" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Scenes from IU Gaza encampment" />
+    <meta property="og:description" content="Scenes from IU Gaza encampment" />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/36c476d8-107d-4838-a952-0bfba12c9d98.original.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Scenes from IU Gaza encampment">
+    <meta name="twitter:description" content="Scenes from IU Gaza encampment">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/36c476d8-107d-4838-a952-0bfba12c9d98.original.jpg">
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+
+            <div class="headline-container">
+                <h1>PHOTOS</h1>
+                <h2>Scenes from IU’s Gaza encampment</h2>
+                <div class="bylines">
+                    <div id="bylines">
+                    </div>
+                    <p id="pubdate"></p>
+                </div>
+            </div>
+
+            <div class="scrolly">
+                <div class="sticky-image">
+                    <!-- 
+                        Each of these <figure>s contains one of the images
+                        Each image has an "object-position" style set
+                            This determines the focal point of the image. So if you make the screen smaller,
+                            that certain point of the photo will remain in the frame. Make sure to check how
+                            each photo looks in a mobile view, and update those styles accordingly to avoid
+                            cutting off important parts of the image, like the top of someone's head
+                        Each image also has alt text, which will appear if the photo doesn't load, such as if 
+                            the viewer has slow internet, and is important for people who use screen readers
+                            so they know what's going on. 
+                    -->
+                    <figure class="grid-image-1" id="pain">
+                        <img style="object-position: 80% 50%; width: 100vw;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/36c476d8-107d-4838-a952-0bfba12c9d98.original.jpg"
+                            alt="A banner reading 'Liberated Zone' hangs from a white tent.">
+                    </figure>
+                    
+                    
+                    <figure class="grid-image-2">
+                        <img style="object-position: 67% 50%;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/36c476d8-107d-4838-a952-0bfba12c9d98.original.jpg"
+                        alt="A banner reading 'Liberated Zone' hangs from a white tent.">
+                    </figure>
+
+                    <figure class="grid-image-3">
+                        <img style="object-position: 67% 50%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d05b23ad-255c-49ee-9ec7-c7e51c34ce09.original.jpg"
+                            alt="A man plays a blue drumset in a field in front of an assortment of tents. A Palestinian flag
+                            is seen behind him.">
+                    </figure>
+                    <figure class="grid-image-4">
+                        <img style="object-position: 50% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/26f18029-1f79-451b-8ef2-8d28a35bf4cd.original.jpg"
+                            alt="A protester standing at the front of a large group waves a Palestinian flag above their head.">
+                    </figure>
+                    <figure class="grid-image-5">
+                        <img style="object-position: 35% 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/058fba4c-ae0e-48e5-a793-75a19fb5cb3b.original.jpg"
+                            alt="A protester kneels on the ground, while disassembling a gray tent.">
+                    </figure>
+                    <figure class="grid-image-6">
+                        <img style="object-position: 70% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/af3dbf2f-d327-449c-8bff-7dca757f938d.original.jpg"
+                            alt="A line of protestors stands with linked arms, facing a line of armed state police officers.">
+                    </figure>
+                    <figure class="grid-image-7">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/efcdd97b-7e56-495c-ade1-73a2978588b9.original.jpg"
+                            alt="People standing in a line hold up an Israeli flag. A protestor holding a megaphone can be seen in the foreground.">
+                    </figure>
+                    <figure class="grid-image-8">
+                        <img style="object-position: 50% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/696da689-0bb0-4897-a2ff-806955c1ac9f.original.jpg"
+                            alt="Three state police officers in riot gear stand in a field.">
+                    </figure>
+                    <figure class="grid-image-9">
+                        <img style="object-position: 50% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/e4d5f9d7-78eb-4d84-90ef-aa23f7c343a1.original.jpg"
+                            alt="Two police officers detain an older woman.">
+                    </figure>
+                    <figure class="grid-image-10">
+                        <img style="object-position: 48% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/b1d657ac-610a-4bc9-bd7b-3ed7773c9b36.original.jpg"
+                            alt="A man with a Palestinian flag draped over his shoulders is photographed by police officers.">
+                    </figure>
+                    <figure class="grid-image-11">
+                        <img style="object-position: center 70%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d0851e32-97f6-4272-94c2-39f76f5730e3.original.jpg"
+                            alt="A state police officer holds a piece of notepad paper in front of a detained protester.">
+                    </figure>
+                    <figure class="grid-image-12">
+                        <img style="object-position: 55% 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/485724f1-d870-4389-bdeb-4624f6f2e984.original.jpg"
+                            alt="A protester wearing a white shirt reading 'Fuck the KKKOPS' is photographed by police officers.">
+                    </figure>
+                    <figure class="grid-image-13">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/f1725105-5002-4d76-84a0-a59c5060661f.original.jpg"
+                            alt="A white plastic table holding white takeout containers, a pan of brownies, and other snacks.">
+                    </figure>
+                </div>
+
+                <!-- 
+                    Each of these captions appears on top of one of the photos above. 
+                    If there are multiple photographers, include a credit on each caption. 
+                    If there is only one photographer, remove the credits because they will have
+                    their own byline at the top of the story.
+                 -->
+                <div class="steps">
+                    <div class="step" style="visibility: hidden;">
+                        <p class="caption">
+                            <!-- Signage labeled &ldquo;Liberated Zone&rdquo; is shown at encampment location April 25, 2024,
+                            at Dunn
+                            Meadow in Bloomington. Tents started going up 11 a.m. in the morning. -->
+                        </p>
+                        <!-- <p class="credit">Olivia Bianco | <strong>IDS</strong></p> -->
+                    </div>
+
+                    <!-- Timeline adapted from w3 schools: https://www.w3schools.com/howto/howto_css_timeline.asp -->
+                    <div class="timeline">
+
+
+                        <div class="container left">
+                            <div class="content">
+                                <div class="step" data-step=1>
+                                    <h2 class="date">
+                                        April 25
+                                    </h2>
+                                    <p class="caption">Signage labeled &ldquo;Liberated Zone&rdquo; is shown at encampment location April 25, 2024,
+                                        at Dunn
+                                        Meadow in Bloomington. Tents started going up 11 a.m. in the morning.</p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="container right">
+                            <div class="content">
+                                <div class="step" data-step=2>
+                                    <!-- <h2 class="date">
+                                        April 25
+                                    </h2> -->
+                                    <p class="caption">Pro-Palestinian protester Bryce Greene plays the drums April 25,
+                                        2024, at Dunn Meadow in Bloomington. Greene played the drums during chants
+                                        throughout the morning.</p>
+                                    <p class="credit">Jonathan Frey | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+                                <div class="step" data-step="3">
+                                    <p class="caption">A protestor waves a Palestinian flag in Dunn Meadow on April 25,
+                                        2024, in Bloomington. Many other college campuses held protests against the war
+                                        in Gaza on April 25.</p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <div class="step" data-step="4">
+                                    <p class="caption">
+                                        A protester takes down a tent April 25, 2024, at Dunn Meadow in Bloomington.
+                                        Tents were not allowed in Dunn Meadow as some were taken down upon the arrival
+                                        of police officials.
+                                    </p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+                                <div class="step" data-step="5">
+                                    <p class="caption">IU professor Benjamin Robinson stands between armed police
+                                        officers and a line of pro-Palestinian protesters linking arms April 25, 2024,
+                                        at Dunn Meadow in Bloomington. The protest was organized by the IU Divestment
+                                        Coalition. </p>
+                                    <p class="credit">Taylor Satoski | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+
+                                <div class="step" data-step="6">
+                                    <p class="caption">Students hold up a Israeli flag during a protest supporting
+                                        Palestine on April 25, 2024, in Dunn Meadow in Bloomington. On the sidewalk,
+                                        people chanted and yelled at protesters and police.</p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+
+                                <div class="step" data-step="7">
+                                    <p class="caption">Indiana State Troopers form a line opposite of protestors in Dunn
+                                        Meadow April 25, 2024, in Bloomington. The State Police was brought in to clear
+                                        the encampment on Thursday.</p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <div class="step" data-step="8">
+                                    <p class="caption">Gloria Stearns-Burner is detained by police during a
+                                        pro-Palestinian protest on April 25, 2024, at Dunn Meadow in Bloomington. The
+                                        State Police was brought in to clear the encampment on Thursday.</p>
+                                    <p class="credit">Olivia Bianco | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+                                <div class="step" data-step="9">
+                                    <p class="caption">A pro-Palestinian protester is pictured in custody April 25,
+                                        2024, at the Monroe County Correctional Center in Bloomington. Those arrested
+                                        during the protest were shuttled away using IU buses.</p>
+                                    <p class="credit">Mia Hilkowitz | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <div class="step" data-step="10">
+                                    <p class="caption">An Indiana State Police officer photographs a pro-Palestinian
+                                        protester April 25, 2024, outside the Monroe County Jail in Bloomington. 34
+                                        people were booked into the Monroe County Jail after Indiana State Police and IU
+                                        Police Department officers arrested protestors during an hours-long protest and
+                                        encampment.</p>
+                                    <p class="credit">Mia Hilkowitz | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container left">
+                            <div class="content">
+                                <div class="step" data-step="11">
+                                    <p class="caption">A pro-Palestinian protester is pictured in custody April 25,
+                                        2024, at the Monroe County Correctional Center in Bloomington. Those arrested
+                                        during the protest were shuttled away using IU buses.</p>
+                                    <p class="credit">Mia Hilkowitz | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container right">
+                            <div class="content">
+                                <div class="step" data-step="12">
+                                    <p class="caption">Food is pictured April 25, 2024, at Dunn Meadow in Bloomington.
+                                        Protesters returned to Dunn Meadow Thursday night after 34 protesters were
+                                        arrested during an encampment.</p>
+                                    <p class="credit">Taylor Satoski | <strong>IDS</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="step" data-step="13" style=" background-color: transparent; margin-bottom:0;">
+                        <!-- <p class="caption">Caption 2</p> -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="story">
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer id="foot" style="z-index: 100;">
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews/docs/binder1_357aeeb2b95e46" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="https://unpkg.com/scrollama@2.0.1/build/scrollama.js"></script>
+    <script src="js/scrolly.js"></script>
+</body>
+
+</html>
