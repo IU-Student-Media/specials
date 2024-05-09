@@ -7,7 +7,7 @@
 * NUMBER OF IMAGES *
 ******************* */
 
-const numImages = 13;
+const numImages = 12;
 
 
 /***************************************
