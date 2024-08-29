@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/ghost-newspaper-town-fight-indiana" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Start the presses again: One Indiana town fights ghost news with old-school ink and paper." /> <!-- TODO: headline -->
+    <meta property="og:description" content="The deliberately retrograde start-up is a gamble, but so far, it&rsquo;s paying off. " /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/7e9345ef-ced5-4b83-a5dd-4c09df3d59a5.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Start the presses again: One Indiana town fights ghost news with old-school ink
+    and paper."> <!-- TODO: headline -->
+    <meta name="twitter:description" content="The deliberately retrograde start-up is a gamble, but so far, it&rsquo;s paying off."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/7e9345ef-ced5-4b83-a5dd-4c09df3d59a5.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Start the presses again: </h1>
+            <h2 data-scroll-speed="3">One Indiana town fights ghost news with old-school ink
+                and paper. </h2>
+        </div>
+        <div class="headline-dec-container">
+            <img data-scroll-speed="2" horiz-scroll-speed="-1" id="header-dec"
+                src="https://s3.amazonaws.com/snwceomedia/ids/c154872d-699c-4c25-969b-965647676797.original.png">
+        </div>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">The office of the Morgan County Correspondent is pictured on Feb. 26, 2024, in downtown Martinsville, IN. Crane intentionally picked a location close to the Morgan County courthouse.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>Stephen Crane stood behind a table at the Morgan County Fair in South-Central Indiana one year ago.
+                    Through handshakes and friendly conversation, Crane convinced about 700 people to pay for a
+                    newspaper that didn&rsquo;t yet exist.</p>
+                <p>At the time, local news was scarce in Morgan County. But Crane knew the community well and bet that
+                    if he provided a high-quality print newspaper with local stories, the locals would buy it.</p>
+                <p>Weeks later, Crane&rsquo;s paper, the Morgan County Correspondent, began arriving on readers'
+                    doorsteps every Thursday. Could a small town in Indiana support a business model far past its prime?
+                    So far, they have.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/0e6dd1f6-c26a-4f36-8c69-472cc542b72b.original.png"
+                        alt="A map of Indiana with the town of Martinsville marked with an arrow near the center.">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+                <p>
+                    Thousands of local news startups, <a href="https://nonprofitquarterly.org/building-a-new-nonprofit-news-ecosystem-notes-from-inn-days-2024/#:~:text=during%20the%20conference.-,The%20ongoing%20disintegration%20of%20local%20news%20is%20clear.,has%20ballooned%20in%20recent%20years.">most of them not-for-profit</a>, are sprouting across the U.S. These
+                    often online-exclusive enterprises are looking for a fresh model to rescue an <a href="https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2023/report/#vanishing-newspapers">industry marked by
+                        decline</a>. In contrast, Crane&rsquo;s startup is deliberately retrograde.</p>
+
+                <p>Crane felt the Martinsville, Indiana, community still wanted a physical newspaper filled with local
+                    stories. Industry experts advised against the move: print circulation continues its <a href="https://www.pewresearch.org/short-reads/2023/11/28/audiences-are-declining-for-traditional-news-media-in-the-us-with-some-exceptions/#:~:text=Weekday%20circulation%20is%20down%208,in%20weekday%20circulation%20in%202022.">steep decline</a>
+                    nationwide, and one man surely wouldn&rsquo;t be enough to reverse widespread industry trends. Crane
+                    decided to try anyway.</p>
+                <p>Crane, founder and editor of the young newspaper, describes his path into journalism as a
+                    &ldquo;stumble.&rdquo; The Martinsville native earned his degree in theology, taught English to
+                    Chinese factory workers in the Northern Mariana Islands and spent time as a &ldquo;snowboard
+                    bum&rdquo; in Colorado. He settled back in his hometown and began his local journalism career after
+                    getting his master&rsquo;s degree from nearby Indiana University.</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-2' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <p>Starting in 2017, Crane was a reporter and then editor for the Reporter-Times, a newspaper
+                    based in Martinsville and founded in 1889. Gatehouse acquired the paper in 2019, which was later
+                    acquired by Gannett the same year. Crane left in 2022, and the Times&rsquo;s last reporter left the
+                    same year. A reporter hasn&rsquo;t been hired at the Reporter Times since. After 130 years,
+                    Martinsville no longer had local journalism.</p>
+                <p>Six months after the county fair, the Correspondent increased its subscribers to nearly 2,000. Nearly
+                    all subscribers pay to receive the paper weekly. A six-month print and digital subscription is $45,
+                    and the annual subscription is $75. Subscriptions also include access to the paper&rsquo;s website.
+                </p>
+                <p>Newspapers in towns of around 12,000 are hardly ever optimistic these days. <a href="https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2023/report/#vanishing-newspapers">Small papers nationwide
+                    continue to close their doors and slash production days</a>. Roughly two and a half newspapers closed
+                    every week in 2023. Yet in Martinsville, the Correspondent plans to increase page counts and add
+                    color pages.</p>
+                <p>&ldquo;We don&rsquo;t care about our online,&rdquo; Crane said.</p>
+                <p>Residents have even agreed to higher prices in exchange for a better print product, according to the
+                    Correspondent&rsquo;s CFO Josh Messmer.</p>
+                <p>The paper isn&rsquo;t profitable yet, but it expects to break into profit by the end of the year
+                    &mdash; far sooner than Crane and Messmer originally expected.</p>
+                <p>Crane initially told his investors they should be ready to depart with their money and never see it
+                    again. That didn&rsquo;t deter the group of nine from investing $250,000 anyway. The goal
+                    wasn&rsquo;t to make a profit but to bring back a community newspaper.</p>
+                <p>Morgan County&rsquo;s media coverage is similar to that of rural and small cities nationwide.
+                    Martinsville, the county seat, is sandwiched between the state capital of Indianapolis and
+                    Bloomington, the home of Indiana University. Being adjacent to these cities, the bigger markets
+                    often overshadow Martinsville&rsquo;s stories.</p>
+                
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-3' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>When Crane set out to bring local news back to Morgan County after years of editing and reporting in
+                    his hometown, he brought together community stakeholders to purchase the Reporter-Times. Gannett,
+                    the corporate owners of the Reporter-Times, declined its offers. Undeterred, Crane asked his
+                    investors if they would back an even more ambitious idea: a brand-new newspaper in 2023.</p>
+                <p>The Correspondent has done everything it can to effectively brand itself as a local newspaper.
+                    Stories are locally written and locally sourced, and there isn&rsquo;t much that would appeal to a
+                    reader outside the county. Crane writes columns about his family and the birth of his most recent
+                    child. Community members contribute pieces about the joys and trials of aging, the magic of March
+                    Madness and recommendations for home-cooked recipes.</p>
+                <p>All in all, it&rsquo;s what a community newspaper used to be.</p>
+                <img class="section-break"
+                    src="https://s3.amazonaws.com/snwceomedia/ids/8683794b-9c85-41b0-8ce0-61c1dfc3ea27.original.png"
+                    alt="A stack of newspapers.">
+                <p>Newspapers operate in a unique prism. They are community assets but also profit-generating devices.
+                    Journalism is often thought of similarly to teaching, art, or historical research: to enrich lives
+                    rather than fatten wallets. But the economic models of journalism do not reflect its perception.
+                    Historically, <a href="https://www.niemanlab.org/2018/05/why-the-golden-age-of-newspapers-was-the-exception-not-the-rule/#:~:text=In%20the%20second%20half%20of,enjoyed%20profits%20of%2030%20percent">newspapers became one of the most profitable industries in the developed world in the
+                        20th century</a>. With declines in the following decades, newspapers that could not keep a profit margin
+                    were shuttered.</p>
+                <p>When the last paper in rural McDowell County, West Virginia closed last year, <a href="https://apnews.com/article/welch-news-mcdowell-west-virginia-coal-newspaper-dc3a06efe251e0cbb894e5f2281c63a1">residents likened the
+                    loss to losing a family member</a>. Areas that lose local news coverage are more likely to be <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apnews.com/article/welch-news-mcdowell-west-virginia-coal-newspaper-dc3a06efe251e0cbb894e5f2281c63a1&ved=2ahUKEwjBm6rWh5aIAxUPEFkFHSmIH2AQFnoECBUQAQ&usg=AOvVaw12FDyDzZevk5QDy6AuW_lM">older,
+                        low-income and less likely to be college-educated</a>.</p>
+                <p>The documented impacts of news deserts are widespread. Local newspapers are a bedrock of community
+                    information. <a href="https://www.usnewsdeserts.com/reports/expanding-news-desert/loss-of-local-news/">They increase institutional trust and combat misinformation</a> in ways national media
+                    outlets cannot. They also document the lives and stories of those in the community.</p>
+                <img class="section-break"
+                    src="https://s3.amazonaws.com/snwceomedia/ids/8683794b-9c85-41b0-8ce0-61c1dfc3ea27.original.png"
+                    alt="A stack of newspapers.">
+                <p>Just a few blocks from the Correspondent&rsquo;s headquarters, an office sits empty in
+                    Martinsville&rsquo;s quaint downtown. The office bears the sign &ldquo;The Reporter, since
+                    1889&rdquo; and a note on the door that says &ldquo;closed, please call again.&rdquo; But every day
+                    and hour are the same: an empty office and a locked door.</p>
+
+                <figure class="sm-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/07880a0e-a734-4504-8feb-8ef94f52bd9a.original.jpg"
+                        alt="A door reading 'The Reporter, Since 1889' is shown with a sign reading 'closed' hanging beneath it.">
+                    <figcaption>
+                        The office of the Reporter-Times is pictured on Feb. 26, 2024, in downtown Martinsville, IN. The office is empty of any furniture and remains locked throughout the week.
+                    </figcaption>
+                </figure>
+
+                <p>Despite its lack of personnel, the paper is not out of business. The Times is now what industry
+                    experts call a &ldquo;ghost newspaper.&rdquo; The paper has an updated website and still offers a
+                    print edition, but it's filled with stories from Gannett-owned newspapers outside of Morgan County
+                    with functioning newsrooms.</p>
+                
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-4' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>Still, the Reporter-Times rolls off the press six days a week and is trucked 230 miles to
+                    Martinsville from <a href="https://www.indystar.com/story/news/2024/01/31/indystar-newspapers-printing-plant-in-indianapolis-to-close-in-april/72422512007/">Peoria, Illinois</a>, rarely containing content specific to Morgan County.</p>
+                <p>Headlines from the Times often include the winning Mega Millions and Powerball numbers, stories of
+                    Indiana and Purdue basketball and the release of the blockbuster movie trailers. While the content
+                    serves a purpose, it isn&rsquo;t relevant to the community it is intended to serve.</p>
+                <p>The rise of so-called ghost papers in the U.S. is well documented. Local newspapers owned by large
+                    chains often become content aggregators &mdash; not local content producers. The Reporter-Times is
+                    no exception, and local readers have noticed.</p>
+                <p>Last November, the Reporter-Times republished an article originally written for the <a href="https://www.courierpress.com/story/news/local/2023/11/22/what-marijuana-strains-are-best-on-thanksgiving/71518642007/">Evansville
+                    Courier and Press</a>, which highlighted the different strains of marijuana that one could take to
+                    &ldquo;get through&rdquo; the holidays. The article acknowledges marijuana possession remains
+                    illegal in Indiana but continues to explain where to buy the substance both in and out of state
+                    &mdash; which upset Judge Brian H. Williams of Morgan County&rsquo;s Superior Court.</p>
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/88693226-dd74-46d8-a14f-16493f60db14.original.png"
+                        alt="2 human silhouettes, one in front of the other, reading ">
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+                <p>Williams wrote a letter to the editor, featured in the Correspondent but aimed directly at Gannett
+                    and the Reporter-Times, last December entitled &ldquo;Irresponsible &lsquo;journalism&rsquo; demands
+                    responsible action.&rdquo;</p>
+
+                <p>&ldquo;I would write this letter to the Reporter-Times, but I am unaware of any recent letter
+                    sections in that paper,&rdquo; Williams wrote. &ldquo;It appears to be a paper with no local editor,
+                    no local coverage, and now, no sense of local values. Ghost newsrooms are real, and not a single
+                    name appears in their online directory.&rdquo;</p>
+                <p>&ldquo;Further, it&rsquo;s exasperating to realize I will in the next few days be ordering and
+                    sending revenue to the Reporter-Times by way of required legal notice publications,&rdquo; he
+                    continued. &ldquo;My court operations will effectively subsidize this thoughtless
+                    &lsquo;journalism.&rsquo;&rdquo;</p>
+                <p>Although the business model for these small papers and their owners are inconsistent across the
+                    country, many papers continue to exist simply because of revenue from legal notices.</p>
+                <p>These notices, usually comprised of announcements for legal name changes, government land
+                    acquisitions and public hearings, are the most solid revenue block for small-town newspapers after
+                    the decline of print advertising. Many states still have laws requiring community newspapers to
+                    print these notices.</p>
+                <p>Gannett did not respond to staffing-related questions at the Reporter-Times.</p>
+                
+                <div class="ad-block">
+                    <div class="ad-code" algin="center">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0' align="center">
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>The Correspondent will see a significant boost after the passage and enaction of Indiana Enrolled Act
+                    252. The law, which will allow newspapers to publish legal notices after 12 months of publishing
+                    instead of three years, opens the door for the Correspondent to bring in legal notice revenue. Crane
+                    said he expects the Correspondent to receive this revenue starting in October.</p>
+                <img class="section-break"
+                    src="https://s3.amazonaws.com/snwceomedia/ids/8683794b-9c85-41b0-8ce0-61c1dfc3ea27.original.png"
+                    alt="A stack of newspapers.">
+                <p>Crane answered a phone call early on Monday morning in February. A nearby Christian school&rsquo;s
+                    girls&rsquo; basketball team won the state championship and hoped to be featured in Crane&rsquo;s
+                    newspaper.</p>
+                <p>The Correspondent ran a full-length story on the team&rsquo;s sixth state tournament victory in a
+                    row; the Times did not cover the team&rsquo;s victory.</p>
+                <p>Crane understands his responsibility well. Readers share stories of their families gathering around
+                    the table on Thursdays to read his newspaper.</p>
+                <p>&ldquo;People tell us they can&rsquo;t wait for the paper to hit their mailbox,&rdquo; Crane said.
+                </p>
+                <p>The kids in Martinsville may be the last to grow up with a physical newspaper arriving at their
+                    doorstep, or they will be the first part of a trend bigger than themselves – deliberately retrograde
+                    media; information, once again, without screens.</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-1' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="js/horizontal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("https://s3.amazonaws.com/snwceomedia/ids/7e9345ef-ced5-4b83-a5dd-4c09df3d59a5.original.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center 70%;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  font-size: 3rem;
+}
+
+h2 {
+  /* second headline */
+  text-shadow: 0px 0px 10px black !important;
+  font-size: 2rem;
+}
+
+.section-break {
+  width: 100px;
+  margin: auto;
+  padding: 0;
+}
+
+/* TODO: Add a breakpoint for to be bigger on mobile. */
+#header-dec {
+  /* display: none; */
+  position: absolute;
+  width: 180px;
+  right: 10px;
+  top: 80px
+}
+
+.headline-dec-container {
+  width: 100%;
+  padding: 0px;
+  height: 90%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.dec-container-inner {
+  overflow: hidden;
+  margin: 0px;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container {
+  /* top: auto;
+  bottom: 15vh; */
+  top: 40%;
+}
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #header-dec {
+    display: block;
+  }
+
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+  .headline-container{
+    top: 40%;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+  
+  h2{
+    font-size: 3rem;
+  }
+  
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+
+  .section-break {
+    width: 100px;
+    margin: auto;
+    padding: 0;
+  }
+  
+  /* TODO: Add a breakpoint for to be bigger on mobile. */
+  #header-dec {
+    position: absolute;
+    width: 30%;
+    right: 10px;
+    top: 100px;  
+  }
+  
+  .headline-dec-container {
+    width: 100%;
+    padding: 0px;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .dec-container-inner {
+    overflow: hidden;
+    margin: 0px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+  .headline-container {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
