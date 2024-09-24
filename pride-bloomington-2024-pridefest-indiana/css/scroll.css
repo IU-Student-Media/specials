@@ -1,0 +1,84 @@
+#scrolly {
+    position: relative;
+    background-color: #f3f3f3;
+    margin: 0px;
+}
+
+article {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.scroll-img {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    object-fit: cover;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: block;
+    transition: .5s all ease;
+}
+
+figure {
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+}
+
+
+/* Styling the text boxes for the captions */
+/* TODO: Make this less bad */
+.step {
+    margin: 0 auto 2rem auto;
+    color: #fff;
+    position: relative;
+    top: -30vh;
+}
+
+.step:first-of-type {
+    top: -70vh;
+}
+
+.step:last-child {
+    /* margin-bottom: 0; */
+}
+
+.step {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 1));
+}
+
+.step div {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    top: 60vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin: 10vh var(--sm) 90vh;
+    padding: var(--sm) var(--md);
+    border-radius: 4px;
+}
+
+.step div .credit {
+    color: white;
+    font-size: 0.6em;
+}
+
+.step div .caption {
+    color: white;
+}

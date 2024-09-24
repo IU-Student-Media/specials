@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <link rel="stylesheet" href="css/scroll.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/pride-bloomington-2024-pridefest-indiana" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Pridefest Bloomington 2024" /> <!-- TODO: headline -->
+    <meta property="og:description"
+        content="The festival provides a space to celebrate and find a welcoming community." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/a97abc19-c25c-4862-9e36-15f17a6ea21c.original.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Pridefest Bloomington 2024"> <!-- TODO: headline -->
+    <meta name="twitter:description"
+        content="The festival provides a space to celebrate and find a welcoming community."> <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/a97abc19-c25c-4862-9e36-15f17a6ea21c.original.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">&lsquo;It&rsquo;s a celebration of who you are&rsquo;</h1>
+            <h2 data-scroll-speed="3">Bloomington&rsquo;s LGBTQ+ community gathers for Pridefest 2024</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption"> Pride flags fly in the wind at Pridefest. Bloomington PRIDE organized this
+            year’s Pridefest.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+
+            <!-- Start of the Story -->
+            <section id="intro">
+                <div class="story">
+                    <img id="flag-right"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/a473c6f0-2f07-4126-80e8-26d673ef8a94.original.svg">
+
+
+                    <p>Music filled Kirkwood Avenue as crowds gathered to celebrate Bloomington&rsquo;s 11th annual
+                        Pridefest on Sep. 14.</p>
+                    <p>The street was decorated with pride flags and signs as well as dozens of local vendors and booths
+                        selling handmade arts and crafts or advertising local resources and organizations that serve
+                        Bloomington&rsquo;s queer community.</p>
+                    <p>Local Bloomington bands such as WIND, Emma Periodt and The Matriarch performed on stage and as
+                        the sun began to set, the main event, the drag performances, had everyone on their feet,
+                        clapping along to the set and cheering for each performer. The show was emceed by drag artist
+                        Pat Yo Weave and showcased the talents of local drag performers such as Oliver Closeoff, Juniper
+                        Peron, Peter Von Teaser and Desiree Bouvier. Performer Verna Vendetta even performed a number
+                        parodying Bloomington&rsquo;s own Ken Nunn.</p>
+                    <p>Artists took the stage as people gathered around, and performers would step off stage and dance
+                        on the street amongst the crowds of spectators, weaving in and out and commanding the space.</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-2' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- TODO: Fix the CSS for this, maybe fourth image -->
+                <div class="imagegrid">
+                    <figure class="grid-image-1">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/fe02ea66-f315-44e6-907b-dcdc625e4ab7.original.jpg"
+                            alt="A musician stands on an outdoor stage wearing yellow glasses and holding a white guitar.">
+                    </figure>
+                    <figure class="grid-image-2">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/317add96-bbb8-4576-bee9-10b0069099be.original.jpg"
+                            alt="The same musician sings with a purple stage light shining overhead.">
+                    </figure>
+                    <figure class="grid-image-4">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/31963665-2d4e-4784-9335-245a491bdc94.original.jpg"
+                            alt="A banner reading 'Pridefest' in curly rainbow letters hangs over the street.">
+                    </figure>
+                    <figure class="grid-image-3">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/77388d24-52f9-4f87-abf1-efa45b9a8f3c.original.jpg"
+                            alt="A musician speaks into a microphone while holding a red guitar and wearing shiny blue mesh pants.">
+                    </figure>
+                    <p class="caption"><strong>TOP LEFT</strong> Mal Benoit plays guitar with The Matriarch on Sep. 14, 2024. The Matriarch is a queer, indie-rock/folk pop band from Bloomington.
+                        <strong>TOP RIGHT</strong> Guitarist Mal Benoit sings to a crowd at Pridefest on Sep. 14, 2024. The band released
+                        their first album, “Be Safe, I Love You” this year.
+                        <strong>BOTTOM LEFT</strong> A Pridefest sign hangs at the end of Kirkwood Avenue on Sep. 14, 2024. The main
+                        stage event was hosted by Pat Yo Weave.
+                        <strong>BOTTOM RIGHT</strong> Bassist Jo Hockemeyer introduces a song with The Matriarch on Sep. 14, 2024. The
+                        band has released music since 2022.
+                    </p>
+                </div>
+
+                <div class="story">
+                    <p>Bloomington Pride takes place in late August or early September, when students will have returned
+                        to campus after summer break. Having a city-wide celebration of Bloomington&rsquo;s LGBTQ+
+                        community can be an important outlet for new students who may not have pride festivals in their
+                        hometowns, or who are joining an accepting community for the first time, IU senior Rin Maas
+                        said.</p>
+                    <p>&ldquo;It's always so touching to see specifically freshmen here who may have come from a family
+                        or an environment that wasn't super accepting, and they come here, and they see all of this for
+                        maybe the first time. And it's just such a welcoming environment,&rdquo; Maas said. &ldquo;I
+                        think it's really important to have that, especially in a college town where you may be getting
+                        out and exploring yourself for the first time, kind of being on your own, getting out
+                        there.&rdquo;</p>
+                    <p>The festival is a community affair made possible by a team of volunteers who work to keep the day
+                        safe and enjoyable for everyone. Anna Marie Bonds, a volunteer at the festival, shared how
+                        important it is to have Pride in Bloomington.</p>
+                    <p>&ldquo;Bloomington is kind of a blue dot in a big red state,&rdquo; she said. &ldquo;Indiana is
+                        not very gay friendly, and unless you're living in Indianapolis, sometimes it feels like there's
+                        not a lot of opportunities for stuff like this.&rdquo;</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-3' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- Scrolling Time -->
+            <section id="scrolly">
+                <figure>
+                    <img class="scroll-img" style="opacity: 0; object-position: center 60%;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/91e5fa11-4c2d-4859-b7b7-a0644ca6533f.original.jpg"
+                        alt="A crowd fills a sunny festival street in front of the IU sample gates.">
+                    <img class="scroll-img" style="opacity: 0; object-position: 70% 45%; object-fit: cover;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/93669a64-eed8-41e9-b016-192c3dd75481.original.jpg"
+                        alt="Multiple pride flags fly from falgpoles against a blue sky.">
+                    <img class="scroll-img" style="opacity: 0; object-position: 20% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/0d0de020-3d25-4652-a161-18198727571f.original.jpg"
+                        alt="A black dog wearing a white shirt and rainbow tutu simles at the camera.">
+                    <img class="scroll-img" style="opacity: 0; object-position: center center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/baa97449-f0d4-40f8-a139-bc643008a7e4.original.jpg"
+                        alt="Blue and white festival tents line both sides of a busy street.">
+                    <img class="scroll-img" style="opacity: 0; object-position: center center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/e09a1c1a-ca20-4b75-98a6-3d07ee8c87b8.original.jpg"
+                        alt="A person in clown makeup wearing a black leather jester cap with two points.">
+                    <img class="scroll-img" style="opacity: 0; object-position: 70% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/2e2f008a-9061-4145-8c44-4d3bf8278d04.original.jpg"
+                        alt="A performer wearing high heels and shorts performs a pole dance in the street.">
+                    <img class="scroll-img" style="opacity: 0; object-position: 80% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/ff3a89c0-9ab6-48a7-a477-124af2283d9b.original.jpg"
+                        alt="A performer in a white blouse wearing brown leather renaissance garb.">
+                    <img class="scroll-img" style="opacity: 0; object-position: 80% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/3d6ab791-9129-4867-be64-43de398c2c38.original.jpg"
+                        alt="A performer in a white blouse wearing brown leather renaissance garb.">
+                </figure>
+
+                <article>
+                    <!-- Captions to the images in the figure -->
+                    <div class="step" data-step="1">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Pridefest attendees walk down Kirkwood Avenue. PRIDE has partnered with local community
+                                organizations to fund the festival.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Progress Pride flags flutter in the wind. The Progress Pride flag was first developed in
+                                2018.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                A dog, Rasby, wears a pride outfit. Bloomington Pride takes place in late August or early September, when students will have returned to campus after summer break.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Attendees visit vendors on Grant Street Vendors had booths set up on Kirkwood Avenue and on
+                                both sides of Grant Street.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="5">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Drag performer Oliver Closeoff poses for a photo. Pridefest featured
+                                a meet and greet with drag performer Kornbread Jeté.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="6">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                A dancer performs on a pole in front of the vendor booths on Grant Street Last year,
+                                Pridefest had 145 vendor booths.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="7">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Drag performer Juniper Perón dances in front of a crowd. The drag kick-off show was held at 4 p.m.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="step" data-step="8">
+                        <div>
+                            <p class="credit">CREDIT | <b>Danny William</b></p>
+                            <p class="caption">
+                                Juniper Perón poses for the camera. 11 performers took part in the drag show.
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+
+            <!-- Rest of the story -->
+            <section id="outro">
+                <div class="story">
+
+                    <img id="flag-left"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/a473c6f0-2f07-4126-80e8-26d673ef8a94.original.svg">
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-0' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Olivia Thurston, a pride attendee from a small town in Ohio, came from out of town to visit a
+                        friend, and said the festival felt more intimate and welcoming than some pride festivals in
+                        bigger cities.</p>
+                    <p>&ldquo;(It's been) more personable compared to Indy Pride,&rdquo; Thurston said. &ldquo;There's a
+                        lot more commotion than Indy pride but this is just more people our age.&rdquo;</p>
+                    <p>Her friend, Dusty Harshey, echoed that she felt the smallness of the festival aided in its
+                        intimate community feel. She said having pride in a college town could be an important space for
+                        students who may be looking for LGBTQ+ community since coming to college.</p>
+                    <p>Pride is an important event for Bloomington&rsquo;s LGBTQ+ community to gather in celebration.
+                    </p>
+                    <p>For Maas, pride is about uplifting both your community and your sense of self.</p>
+                    <p>&ldquo;It&rsquo;s a celebration of who you are,&rdquo; Maas said.</p>
+                </div>
+                <figure class="lg-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fb03725b-b98c-4f36-b9e9-5bbd973d30f4.original.jpg"
+                        alt="Three people stand together, facing away from the camera in the midst of a busy festival. The one on the left has the pink, blue, and white transgender flag wrapped around their shoulders.">
+                    <figcaption>
+                        <p class="credit">CREDIT | <b>Danny William</b></p>
+                        A Pridefest attendee wears a transgender pride flag. The transgender pride flag debuted in 1999.
+                </figure>
+
+                <div class="story">
+
+
+                    <!-- small bios -->
+                    <div class="author-bios">
+                        <!-- update bios in metadata.json -->
+                        <!-- delete this div if you don't want them to show up -->
+                    </div>
+
+                    <p class="donate">
+                        <em>Like what you're reading?</em><br>
+                        Support independent, award-winning student journalism.
+                        <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="js/scrolly.js"></script>
+
+    <script>
+        const intro = document.getElementById("intro");
+        const outro = document.getElementById("outro");
+        const fl = document.getElementById("flag-left");
+        const fr = document.getElementById("flag-right");
+        const sf = 80;
+        const factor = 1.8;
+        function update_flags() {
+            // console.log(intro.clientHeight / sf)
+            // console.log(`rotate(-90deg) scale(${2 * intro.clientHeight / sf}px, 1)`)
+            fr.style.transform = `rotate(-90deg) scale(${factor * intro.clientHeight / sf}, 1)`;
+            // console.log(outro.clientHeight / sf)
+            fl.style.transform = `rotate(90deg) scale(${factor * outro.clientHeight / 85}, 1)`;
+        }
+        addEventListener("load", update_flags);
+        window.addEventListener("resize", update_flags)
+
+    </script>
+</body>
+
+</html>
