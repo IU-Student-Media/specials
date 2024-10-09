@@ -6,7 +6,7 @@ const data = {
     "pub_date": "Probably Oct. 4, 2024",
     "bylines": {
         "By": {
-            "name": "Eva Remijan-Toba ",
+            "name": "Eva Remijan-Toba",
             "email": "eremijan@iu.edu",
             "twitter": "remitoba",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/47f5728a-5eed-4ca1-a1b2-1daa122b25a5.original.jpg",
