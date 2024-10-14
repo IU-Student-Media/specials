@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/chicken-fingers-eating-iu-culture" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Changing the culture of IU with chicken" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Mark Lowney set out with an incredible goal. He failed. In another way, he succeeded." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/04113c8b-61ef-4af7-93e7-286d1a3ce6fe.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Changing the culture of IU with chicken"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Mark Lowney set out with an incredible goal. He failed. In another way, he succeeded."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/04113c8b-61ef-4af7-93e7-286d1a3ce6fe.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">&lsquo;Changing the culture of IU&rsquo;</h1>
+            <h2 data-scroll-speed="3">with chicken</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">IU senior Mark Lowney lounges in front of his peers while he digests numerous chicken tenders Oct. 11, 2024, in front of the Fine Arts Building in Bloomington. Lowney is the host of IU Student Television&rsquo;s entertainment show “Not Too Late."</p>
+        <p class="credit" style="margin-right: 10px;">Giselle Marsteller | <b>IDS</b></p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <p>IU senior Mark Lowney set out with an incredible goal: eat 25 chicken fingers in front of a crowd of around 80 people.</p>
+                <p>He failed.</p>
+                <p>But, in another sense, he succeeded.</p>
+
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/dcc7f88b-af77-429f-a3dd-aac1228913f9.original.jpg"
+                        alt="alt">
+                    <figcaption>
+                        <p class="credit">Benjamin LeGrand | <b>IDS</b></p>
+                        A flyer reads, "Watch one man attempt to eat 25 chicken fingers" on Oct. 8, 2024, outside Franklin Hall in Bloomington. The flyers went up across campus prior to the event.
+                    </figcaption>
+                </figure>
+
+                <p>Flyers went up Oct. 8 across campus, from a lecture hall in the Radio-Television Building to a statue
+                    of Ernie Pyle. They advertised the event plainly, reading: &ldquo;Watch one man attempt to eat 25
+                    chicken fingers this Friday 4 p.m. Fine Arts Plaza.&rdquo;</p>
+                <p>One line in particular from the poultry-promoting poster drew the attention of some.</p>
+                <p>&ldquo;We&rsquo;re changing the culture of IU,&rdquo; the line read.</p>
+                <p>It&rsquo;s a line that presents an obvious question.</p>
+                <p>&ldquo;I wanted to see how they were going to change the culture,&rdquo; freshman Savannah Dorr said
+                    about why she attended the event.</p>
+                <p>It&rsquo;s a question that was, at least initially, a &ldquo;throwaway line.&rdquo;</p>
+                <p>&ldquo;Truthfully, &lsquo;what does it mean?&rsquo; is a great question,&rdquo; sophomore John Carter Krell, who pitched the idea to Lowney, said. &ldquo;Because I don&rsquo;t even think we know.&rdquo;</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-2' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="pull-quote-center">
+                    <p class="quote">&ldquo;It&rsquo;s stupid, but it&rsquo;s smart&rdquo;</p>
+                    <p class="attribute">&mdash; Mark Lowney</p>
+                </div>
+
+                <p>Lowney and Krell are host and producer, respectively, of <a href="https://www.iustv.com/not-too-late/">IU Student Television&rsquo;s &ldquo;Not Too
+                    Late&rdquo;</a> entertainment show. Lowney said the show, now in its 14th season, is typically filmed on
+                    a set in the Media School&rsquo;s Franklin Hall. This season, he wanted to do more segments outside
+                    the studio.</p>
+                <p>This push for boundary-breaking sketches coincides with a fresh room of writers and producers, Krell
+                    said. After many producers of &ldquo;Not Too Late&rdquo; graduated in the spring, the show was left
+                    in the hands of a younger staff &mdash; at least four freshman or sophomore writers have joined this
+                    year, Krell said.</p>
+                <p>&ldquo;Really, this year is when we&rsquo;re kind of taking the reins of the show and determining
+                    what we want to see for episodes and then determining what&rsquo;s logistical and what&rsquo;s
+                    not,&rdquo; Krell said.</p>
+                <p>Over the years, Krell said, the show has evolved with the humor of the time. Before, it appeared much
+                    more like a traditional late-night show, once featuring actor <a href="https://www.youtube.com/watch?v=XWRSmUjieEc">Jesse Eisenberg as a guest in an
+                        interview</a> reminiscent of those on &ldquo;Jimmy Kimmel Live!&rdquo;</p>
+                <p>Now, it&rsquo;s far less structured and more sketch-based. In one episode from last season, Krell
+                    plays Air Bud, the dog from the film series of the same name, as he considers committing to the IU
+                    basketball program. In another from this season, Lowney hosts a <a href="https://youtu.be/o3sAGF2lXC4?si=CWnNQEzVB5X8dLlP">debate between IUSTV
+                        co-entertainment director Logan Vaught and a fictional conspiracy theorist</a> named &ldquo;Cranberry
+                    Willy.&rdquo;</p>
+                <p>&ldquo;I guess in that way, we are sort of changing the culture of IU, for one IU Student Television
+                    show, but it&rsquo;s got to start somewhere,&rdquo; Krell said.</p>
+                <p>Krell and Lowney said they take inspiration from shows like &ldquo;Saturday Night Live&rdquo; and
+                    comedians including Nathan Fielder, Tim Robinson and Conan O&rsquo;Brien &mdash; all of whom employ
+                    awkward, absurd brands of humor.</p>
+                <p>This style is characteristic of Gen-Z humor, which Lowney said is silly in a clever way. He said
+                    growing up with cartoons like &ldquo;SpongeBob SquarePants&rdquo; influenced his and others&rsquo;
+                    senses of humor.</p>
+                <p>&ldquo;It&rsquo;s stupid, but it&rsquo;s smart,&rdquo; Lowney said. &ldquo;It&rsquo;s very
+                    contradictory; I don&rsquo;t know how to describe it.&rdquo;</p>
+                <p>It&rsquo;s in that context that Krell pitched the chicken eating challenge to Lowney as a segment on
+                    the show, 10 days before it&rsquo;d take place. The idea was specifically inspired by <a href="https://abc7ny.com/cheeseball-man-hundreds-watched-a-masked-man-eat-an-entire-tub-of-cheeseballs-in-new-york-city/14741928/">the
+                        &ldquo;Cheeseball Man,&rdquo;</a> who, much like &ldquo;Not Too Late,&rdquo; advertised his attempt to
+                    eat an entire container of cheeseballs in April in New York City. Over 1,100 people RSVP&rsquo;d to
+                    watch, <a href="https://www.usatoday.com/story/news/nation/2024/04/30/cheese-ball-man-nyc-video/73519213007/">according to USA Today</a>.</p>
+                <p>Lowney was down &mdash; though he requested they change it from the restaurant Krell originally
+                    pitched, Kentucky Fried Chicken, to Raising Cane&rsquo;s.</p>
+                <p>So, the rules were set: Lowney would attempt to eat the 25 Cane&rsquo;s fingers, along with eight
+                    signature sauce cups. He decided not to dunk the food in water, as some professional eaters do to
+                    make swallowing easier, but he would have two bottles of water to aid his effort.</p>
+                <p>What Lowney was attempting would total 4,770 calories in one sitting &mdash; <a href="https://www.raisingcanes.com/allergens/">3,250 for the 25 fingers</a>
+                    and <a href="https://raisingcanes.com/menu/canes-sauce/">1,520 for the sauce cups</a>, according to nutritional information from the Raising Cane&rsquo;s
+                    website.</p>
+                <p>Further, Lowney would not aim to eat the chicken in a specific time limit, à la <a href="https://nathansfranks.sfdbrands.com/en-us/promotions/hot-dog-eating-contest/">the Nathan's Hot Dog
+                    Eating Contest</a>. He was going for spectacle.</p>
+                <p>Lowney said he had one prior experience with an eating challenge; he and some of his friends from his
+                    hometown did a &ldquo;drive-thru challenge,&rdquo; which was for fun and not for &ldquo;Not Too
+                    Late.&rdquo; At 10 fast food restaurants, they asked for the same order as the customers ahead of
+                    them and had to eat the entire order.</p>
+                <p>&ldquo;It&rsquo;s like a normal amount of food 10 times, and you get some breaks because you have to
+                    drive from restaurant to restaurant,&rdquo; Lowney said. &ldquo;This is like 25, all at once. I
+                    think this will be harder, but I&rsquo;m ready to take it on."</p>
+                <p>Lowney and Krell hoped their chicken stunt would draw eyes to &ldquo;Not Too Late.&rdquo; They were
+                    quickly proven successful.</p>
+                <p><a href="https://x.com/btownmoose/status/1843698560493334879">A viral post on X</a>, resharing the posters has over 700,000 views as of
+                    publication, and Pizza X, the Bloomington restaurant staple, followed Lowney on X, Krell said. This
+                    wave of publicity led Krell to hope for a higher turnout than they had initially expected, saying
+                    the event could be one of the biggest the show has ever done.</p>
+                <p>Regardless of the turnout, Lowney felt confident in his ability to achieve glory heading into Friday.
+                </p>
+                <p>&ldquo;I hope I crush it, and I hope I save the town, and I get the girl, and I defeat the bad
+                    guy,&rdquo; Lowney joked two days before the event. &ldquo;I think all that can happen on
+                    Friday.&rdquo;</p>
+                
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-3' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="pull-quote-center">
+                    <p class="quote">&ldquo;This Is Indiana&rdquo;</p>
+                </div>
+                
+                <p>Although Lowney has no aspirations of becoming a professional eater, he did take a page from <a href="https://www.cnbc.com/2020/07/10/how-joey-chestnut-preps-for-competitive-eating.html">Joey</a>
+                    Chestnut&rsquo;s book. The Thursday and Friday leading up to the event, he went on a water-only
+                    fast, consuming about 6 liters of fluid.</p>
+
+                    <figure class="wide-right">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/737b0484-0184-4385-a007-6a4c561d601e.original.jpg"
+                            alt="alt">
+                        <figcaption>
+                            <p class="credit">Lainey Beech | <b>IDS</b></p>
+                            IU senior Mark Lowney carries a trash can in case he throws up from overeating Oct. 11, 2024, outside the Fine Arts Building in Bloomington. He tossed the trash can behind him, seeming proud, shortly after he finished his second chicken finger.
+                        </figcaption>
+                    </figure>
+
+                <p>The average man should consume about 3.7 liters of water per day, according to the <a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256#:~:text=So%20how%20much%20fluid%20does,fluids%20a%20day%20for%20women">U.S. National
+                    Academies of Sciences, Engineering, and Medicine</a>. Water-only fasting helps aid eating challenges by
+                    stretching and relaxing the stomach before massive calorie intake, according to <a href="https://www.cbsnews.com/sacramento/news/how-competitive-eaters-consume-so-much-little-time/#:~:text=Their%20preparations%20begin%20with%20water,more%20food%20to%20go%20down.">CBS News</a>.</p>
+
+                <p>Lowney, Krell and the &ldquo;Not Too Late&rdquo; crew arrived to the Fine Arts Plaza early, setting
+                    up a table and chair for Lowney in front of the Fine Arts Building around 3:37 p.m. Friday. This
+                    included multiple crew members with video cameras to allow for crowd interviews and footage. Atop
+                    Lowney&rsquo;s table sat two Powerade bottles filled with water, the platter of 25 chicken fingers,
+                    the sauces, paper towels, a small trash can and a gold paper crown.</p>
+                <p>Gradually, the crowd they had hoped for arrived. At least 60 spectators gathered around the table one
+                    minute before the advertised start time, and by the time Lowney took his first bite, around 80
+                    people were there to watch.</p>
+                <p>Among them were three of Lowney&rsquo;s friends &mdash; all with an order from Chick-fil-A. Senior
+                    Krissy Brzycki, one of those friends, said they would have been there even if they didn&rsquo;t know
+                    Lowney. Her Chick-fil-A order was just a tea.</p>
+                <p>&ldquo;I think I&rsquo;m going to be sick of the sight of chicken by the end of this, for him, in
+                    empathy,&rdquo; Brzycki said.</p>
+
+                    <figure class="wide-left">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/7c27d8f8-7b9c-428d-aa05-9aabf374ee88.original.jpg"
+                            alt="alt">
+                        <figcaption>
+                            <p class="credit">Giselle Marsteller | <b>IDS</b></p>
+                            A crowd watches IU student Mark Lowney attempt to eat 25 chicken tenders Oct. 11, 2024, in front of the Fine Arts Building in Bloomington. About 70 people gathered on the first day of Fall Break to witness this feat.
+                        </figcaption>
+                    </figure>
+
+                <p>Around 4 p.m., Krell, acting as the emcee for the event, introduced Lowney with a dramatic speech,
+                    characterizing the challenge as &ldquo;something never before seen, nor imagined.&rdquo; Krell said
+                    later it was inspired by the similar theatrical introductions by <a href="https://www.sportingnews.com/us/tsn/news/george-shea-nathans-hot-dog-contest-announcer-introductions/c803109e15af455142dbc055">Nathan&rsquo;s Hot Dog Eating
+                        Contest emcee George Shea</a>. The crowd chanted, &ldquo;Mark, Mark, Mark!&rdquo; as they waited for him
+                    to come out.</p>
+
+                <p>Two &ldquo;Not Too Late&rdquo; staffers opened the doors of the Fine Arts Building, and the chicken
+                    man of the hour, sporting a red headband, trotted out.</p>
+                <p>And he was off. The crowd cheered him on as he scarfed down his first finger, then the next. Two
+                    minutes in, he chucked the throw-up trash bin behind him. The &ldquo;Not Too Late&rdquo; crew played
+                    music from a speaker; among the songs was &ldquo;Gonna Fly Now,&rdquo; the theme song from the
+                    boxing movie, &ldquo;Rocky.&rdquo;</p>
+                <p>Freshman Mara Vecera and her partner, Pepe Avila, said they decided to bet on whether Lowney would
+                    reach 25 fingers. Vecera said he couldn&rsquo;t, while Avila had more faith in him. The loser would
+                    have to buy dinner &mdash; and Raising Cane&rsquo;s was one of the options.</p>
+                <p>In the first 15 minutes, Lowney put down 15 chicken fingers. One person in the crowd said he&rsquo;d
+                    run out of sauce before chicken.</p>
+                <p>&ldquo;He&rsquo;s not going to run out of steam, I&rsquo;ll tell you that,&rdquo; another responded.
+                </p>
+
+                <figure class="lg-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/eb9c637d-d7da-4830-b98f-4610f0ab01f6.original.jpg"
+                        alt="alt">
+                    <figcaption>
+                        <p class="credit">Lainey Beech | <b>IDS</b></p>
+                        IU senior Mark Lowney eats a chicken finger from Raising Cane's on Oct. 11, 2024, outside the Fine Arts Building in Bloomington. The crowd cheered him on for much of his attempt.
+                    </figcaption>
+                </figure>
+
+                <p>Lowney leaned into working the crowd. He dedicated one chicken finger to &ldquo;environmental
+                    sustainability.&rdquo; Another went to &ldquo;feminism.&rdquo; He called out X users who claimed 25
+                    chicken fingers would be easy to eat.</p>
+
+                <p>But his pace was beginning to slow noticeably. Around 4:28 p.m., he sat with his head down. His
+                    eating decreased from tender-by-tender to bite-by-bite. He stood up and paced around the grass
+                    behind the table. The song, &ldquo;This Is Indiana,&rdquo; played from the speaker as Lowney&rsquo;s
+                    spirits appeared low.</p>
+                <p>Around 4:38 p.m., Lowney finished what would be his last piece of chicken: No. 19.</p>
+                <p>He sat, with the small trash can now back in his lap, and puked &mdash; a little over 35 minutes after he began eating. The crowd thinned as he vomited, and IUSTV co-entertainment director Logan Vaught
+                    thanked the spectators for coming. It was over.</p>
+
+                    <figure class="lg-image"></figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/201ee101-9ed1-474b-be76-21cbd9c2202f.original.jpg"
+                            alt="alt">
+                        <figcaption>
+                            <p class="credit">Giselle Marsteller | <b>IDS</b></p>
+                            IU senior Mark Lowney holds a chicken finger Oct. 11, 2024, in front of the Fine Arts Building in Bloomington. Lowney ate 19 fingers, six shy of his goal of 25.
+                        </figcaption>
+                    </figure>
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-0' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="pull-quote-center">
+                    <p class="quote">&ldquo;Whatever way that might mean&rdquo;</p>
+                    <p class="attribute">&mdash; Mark Lowney</p>
+                </div>
+
+                <p>The day before the event, Lowney and &ldquo;Not Too Late&rdquo; filmed multiple endings, including
+                    one for if he didn&rsquo;t finish. The episode, which will air Thursday, will go with that one.
+                    Regardless, Krell saw it as a success. He said the attendance exceeded their expectations, and he
+                    hoped it would drum up support for the show.</p>
+                <p>&ldquo;There&rsquo;s been nothing quite like this, and maybe there won&rsquo;t, maybe there
+                    will,&rdquo; Krell said. &ldquo;I think now the possibility&rsquo;s out there that really, if you
+                    want to, you can have a really stupid idea and do it here, and I think that&rsquo;s amazing that
+                    there will be a team of people who are willing to collaborate on something like this. While
+                    initially sort of a throwaway, I think maybe we have changed some sort of the culture here.&rdquo;
+                </p>
+                <p>Cynthia Munro, the mother of an IU sophomore from the Baltimore area, had a different perspective.
+                    She said she attended after hearing about it from her son, in part because it reminded her of something she&rsquo;d seen at Ohio State University in the late 1980s</p>
+                <p>&ldquo;I was just intrigued because being in a college campus, and the kind of excitement of people
+                    doing things that make no sense really once you&rsquo;re out of college,&rdquo; she said.</p>
+                <p>She said eating contests like this one, though, fell in line with the &ldquo;ridiculousness&rdquo; of
+                    Gen-Z humor, which she called both universally appealing and unappealing.</p>
+                <p>When the crowd had all left, and only the &ldquo;Not Too Late&rdquo; crew remained, Mark Lowney
+                    stayed in his seat. Some of his colleagues put the paper crown on his head. He said he will never do
+                    another eating challenge and probably never have Raising Cane&rsquo;s again. He said he didn&rsquo;t
+                    want to let the attendees down and hoped they had a good time, even if they privately judged him for
+                    falling short.</p>
+                <p>But minutes after throwing up in front of the crowd and cameras, he recognized the impact he&rsquo;d
+                    had &mdash; even if he couldn&rsquo;t say what that was.</p>
+                <p>&ldquo;I don&rsquo;t think this campus will ever be the same, in whatever way that might mean,&rdquo;
+                    Lowney joked.</p>
+                <p>The episode will premiere at 11 p.m. Thursday on the <a href="https://www.youtube.com/@iustv">IUSTV YouTube channel</a> and <a href="https://www.instagram.com/iustventertainment/">IUSTV Entertainment
+                    Instagram page</a>, Krell said.</p>
+
+
+                    <div class="ad-block">
+                        <div class="ad-code" algin="center">
+                            <br>
+                            <div id='div-gpt-ad-1512489859064-1' align="center">
+                                <script>
+                                    googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
