@@ -58,9 +58,10 @@ footer {
 
 #quiz-content1, #quiz-content2 {
     transition: all .5s;
-    h2 {
-        margin-left: 0px;
-    }
+}
+
+#quiz-content1 h2, #quiz-content2 h2{
+    margin-left: 0px;
 }
 
 
