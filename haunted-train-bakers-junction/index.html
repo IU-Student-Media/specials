@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- @TODO SOCIAL CARDS — make sure to update these. -->
+    <meta property="og:url" content="http://specials.idsnews.com/haunted-train-bakers-junction" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="A Night at Bakers Junction Haunted Train" />
+    <meta property="og:description" content="The haunted train has been operating since 1993. " />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/13f1ea1c-6529-4641-b89e-a7fe20be0598.original.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="A Night at Bakers Junction Haunted Train">
+    <meta name="twitter:description" content="The haunted train has been operating since 1993. ">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/13f1ea1c-6529-4641-b89e-a7fe20be0598.original.jpg">
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+
+            <div class="headline-container">
+                <div class="shaded">
+                    <h1>PHOTOS</h1>
+                    <h2>A Night at Bakers Junction Haunted Train</h2>
+                    <div class="bylines">
+                        <div id="bylines">
+                        </div>
+                        <p id="pubdate"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scrolly">
+                <div class="sticky-image">
+
+                    <!-- 
+                        Each of these <figure>s contains one of the images
+                        Each image has an &ldquo;object-position" style set
+                            This determines the focal point of the image. So if you make the screen smaller,
+                            that certain point of the photo will remain in the frame. Make sure to check how
+                            each photo looks in a mobile view, and update those styles accordingly to avoid
+                            cutting off important parts of the image, like the top of someone's head
+                        Each image also has alt text, which will appear if the photo doesn't load, such as if 
+                            the viewer has slow internet, and is important for people who use screen readers
+                            so they know what's going on. 
+                    -->
+                    <figure class="grid-image-1">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/13f1ea1c-6529-4641-b89e-a7fe20be0598.original.jpg"
+                            alt="A blue paintbrush applies black and white facepaint to a small child.">
+                    </figure>
+                    <figure class="grid-image-2">
+                        <img style="object-position: center 45%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/53fad9ef-cb83-4d77-be04-c66f4da800f0.original.jpg"
+                            alt="A faded sign reads 'Hauted Train' Baker's Junction RxR Museum'">
+                    </figure>
+                    <figure class="grid-image-3">
+                        <img style="object-position: center 30%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/ad7034a4-609b-4168-a412-c24135fc79da.original.jpg"
+                            alt="A girl in a pink shirt stands behind a boy in a beige jacket, as they look fearfully towards the camera.">
+                    </figure>
+                    <figure class="grid-image-4">
+                        <img style="object-position: 57% 35%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/4a311bf2-e6b4-4aaa-9be2-ef9a97e09828.original.jpg"
+                            alt="An old man with white facial hair gets green facepaint applied by someone else's hand.">
+                    </figure>
+                    <figure class="grid-image-5">
+                        <img style="object-position: 55% 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/1daf474d-db15-4545-916b-18c5a4587306.original.jpg"
+                            alt="Two people come through a doorway, screaming in some combination of horror and glee.">
+                    </figure>
+                    <figure class="grid-image-6" >
+                        <img style="object-position: 10% 10%;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/efc9da66-7652-4ef8-b942-332c2d58b3ea.original.jpg"
+                            alt="A man wearing a skeleton shirt and black and white face paint uses a screwdriver to make repairs.">
+                    </figure>
+                    <figure class="grid-image-7">
+                        <img style="object-position: 60% 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/a25af87d-10b1-4e7b-91b9-9990f2393142.original.jpg"
+                            alt="A figure in a striped black and white scary clown costume walks towards the camera.">
+                    </figure>
+                    <figure class="grid-image-8">
+                        <img style="object-position: 35% 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/8e859abe-29ba-420c-a43e-493f1ca7df0a.original.jpg"
+                            alt="A woman with pigtails in a yellow horror mask holds out her phone to take a selfie.">
+                    </figure>
+                    <figure class="grid-image-9">
+                        <img style="object-position: 48% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d6a4e4b8-7722-4ad5-9d3c-8d2b885b4851.original.jpg"
+                            alt="An actor wearing a blue hoodie over a scary mask signs a piece of paper with a black pen.">
+                    </figure>
+                    <figure class="grid-image-10" >
+                        <img style="object-position: left bottom;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/f5ad738a-268e-4705-8c4b-65dc4490cf55.original.jpg"
+                            alt="The head of a doll with the forhead missing lies on the ground amidst leaves and gravel.">
+                    </figure>
+                    <figure class="grid-image-11">
+                        <img style="object-position: center 45%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/5e032ce2-2257-488b-b7ce-985019a4fdbc.original.jpg"
+                            alt="Two teenagers stand facing away from the camera behind a steel counter. They are opening small plastic containers.">
+                    </figure>
+                    <figure class="grid-image-12">
+                        <img style="object-position: center 45%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/edb9512a-0cdc-4a73-8edf-45b4b56ace36.original.jpg"
+                            alt="A man wearing a black and white face paint looks to the left by a white sign in the shape of a ghost that reads 'Chili tonight made by Stan'">
+                    </figure>
+                    <!-- <figure class="grid-image-12"> -->
+                    <!-- <img src="" -->
+                    <!-- alt=""> -->
+                    <!-- </figure> -->
+                </div>
+
+                <!-- 
+                    Each of these captions appears on top of one of the photos above. 
+                    If there are multiple photographers, include a credit on each caption. 
+                    If there is only one photographer, remove the credits because they will have
+                    their own byline at the top of the story.
+                 -->
+                <div class="steps">
+
+                    <div class="step">
+                        <p class="caption">Six-year-old Ellie Utterback's face is painted Oct. 11, 2024, before the Bakers Junction Haunted Train in Bloomington opened for the evening. Ellie's face was painted by her dad, Nick Utterback, who had painted his own face in a similar way.</p>
+                    </div>
+                    <div class="step" data-step="1">
+                        <p class="caption">A sign pointing to the haunted train is seen Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. Bakers Junction Haunted Train announced that this year the train would be open every Friday and Saturday in October.</p>
+                    </div>
+                    <div class="step" data-step="2">
+                        <p class="caption">People walk through Bakers Junction Haunted Train on Oct. 11, 2024, in Bloomington. The train allowed customers to go through the train as many times as they like with the purchase of one ticket.</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <p class="caption">
+                            Bakers Junction Haunted Train owner John Baker's face is painted just before opening for the evening Oct. 11, 2024, in Bloomington. Baker opened the haunted train in 1993 after running a railroad museum in the same space for 17 years prior and being forced to close it. "I was in court three years," Baker said. "After we sold everything in the railroad museum we started the haunted train."
+                        </p>
+                    </div>
+                    <div class="step" data-step="4">
+                        <p class="caption">Visitors walk through the haunted train Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. They had just entered the "maze of doors."</p>
+                    </div>
+                    <div class="step" data-step="5">
+                        <p class="caption">Nick Utterback fixes a sign before the haunted train opened Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. Utterback and his family began acting in the haunted train three years ago, but his wife has known John Baker's youngest daughter since kindergarten.</p>
+                    </div>
+                    <div class="step" data-step="6">
+                        <p class="caption">Jason Chambers walks behind people as they go through the haunted train Oct. 11, 2024, at Bakers Haunted Train in Bloomington. Chambers, whose grandfather owns the haunted train, said he has been helping out with the train for as long as he can remember. "I like to help," Chambers said.</p>
+                    </div>
+                    <div class="step" data-step="7">
+                        <p class="caption">Lydia Scales takes a selfie in her costume while her friend and co-worker Bryana Walls looks at her Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. Scales and Walls said their favorite part of working at the train is scaring people. "I love scaring college guys and their girlfriends when they act all big and tough," Walls said. "'Like oh don't worry babe,' then you scare him before you scare her."</p>
+                    </div>
+                    <div class="step" data-step="8">
+                        <p class="caption">Hanna Smith, an actor in the haunted train, signs out after the train closed for the evening Oct. 11, 2024, in Bloomington. The actors were mostly John Baker's family or friends of his family.</p>
+                    </div>
+                    <div class="step" data-step="9">
+                        <p class="caption">A doll head is seen Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. Broken pieces of dolls were all around the area.</p>
+                    </div>
+                    <div class="step" data-step="10">
+                        <p class="caption">
+                            Whitley Laffin and Audrey Chambers prepare food for the concession stand before the haunted train opened Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. Audrey's grandfather, John Baker, created and owns the haunted train. Audrey said she couldn't really remember when she started helping out with the haunted train.
+                        </p>
+                    </div>
+                    <div class="step" data-step="11">
+                        <p class="caption">
+                            Nick Utterback stands in line for food after the haunted train closed for the night Oct. 11, 2024, at Bakers Junction Haunted Train in Bloomington. The train closed at 10 p.m, as normal, that night, but sometimes they stay open later if new customers are still arriving.
+                        </p>
+                    </div>
+                    <div class="step" data-step="12" style=" background-color: transparent; margin-bottom:0;">
+                    </div>
+                </div>
+
+            </div>
+            <div class="story">
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+        <div id="smoke-container" aria-hidden="true">
+
+        </div>
+        <img src="https://s3.amazonaws.com/snwceomedia/ids/6c9557fa-ae1b-4373-84a7-14af50029024.original.png" aria-hidden="true" id="train">
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews/docs/binder1_357aeeb2b95e46" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="https://unpkg.com/scrollama@2.0.1/build/scrollama.js"></script>
+    <script src="js/scrolly.js"></script>
+    <script src="js/train.js"></script>
+</body>
+
+</html>
