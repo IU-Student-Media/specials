@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/cafe-pizzaria-closed" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Loyal customers say goodbye to Cafe Pizzaria" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Cafe Pizzaria was a staple restaurant on Kirkwood for over 70 years." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/6f1f7451-6086-438f-a5ee-47ec1c16de29.original.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Loyal customers say goodbye to Cafe Pizzaria"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Cafe Pizzaria was a staple restaurant on Kirkwood for over 70 years.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/6f1f7451-6086-438f-a5ee-47ec1c16de29.original.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">&ldquo;You can always count on it.&rdquo;</h1>
+            <h2 data-scroll-speed="3">Loyal customers say goodbye to Cafe Pizzaria</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Cafe Pizzaria is pictured in 1967. The restaurant officially became Cafe
+            Pizzaria in 1952, and it's looked nearly the same ever since.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+
+
+                <p>Two days after <a href="https://www.idsnews.com/article/2024/08/cafe-pizzaria-closes">announcing
+                        their restaurant&rsquo;s closure</a> on August 28, Cafe Pizzaria&rsquo;s owners
+                    invited some of their regular customers to enjoy their favorite pizzas one last time.</p>
+                <p>Co-owner David Webb chose not to work on Cafe Pizzaria&rsquo;s final night. Instead, he sat in a
+                    booth and spent his time talking with his long-time regulars. He recalls hearing people discuss
+                    eating their first ever pizza there, going on first dates &mdash; some awkward, and some leading to
+                    lifelong marriages &mdash; all in the booths where he currently sat.</p>
+                <p>Webb said that they were not able to contact every regular, as they only had a limited number of
+                    customers' phone numbers. But everyone that ownership reached out to showed up that night to share
+                    memories and gratitude for the restaurant. One frequent customer walked in with a box of tissues.
+                </p>
+                <p>&ldquo;There were hugs and there were tears and there were so many people coming and reminiscing
+                    about growing up there and growing up when they were little,&rdquo; Webb said. &ldquo;It was tough,
+                    man.&rdquo;</p>
+
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/44065dec-6c71-4c0d-a9f1-5a9ae2043ed4.original.jpg"
+                        alt="3 men stand side by side smiling at the camera in black and white">
+                    <figcaption>
+                        The three co-owners of Cafe Pizzaria, David, Larry and Crosby Webb, are now able to spend time
+                        together as a family since the restaurant's closure. The Webb family held ownership of Cafe
+                        Pizzaria from 1986 until its close in Aug. 2024.
+                    </figcaption>
+                </figure>
+
+                <p>The restaurant looked on its last night as it did decades prior, with a hot air balloon mural
+                    splashed against the wall in the dining room and the big letters of Cafe Pizzaria highlighting the
+                    front of the restaurant. The red and white sign spanning the front of the restaurant helped Cafe
+                    Pizzaria stick out amongst the other establishments on Kirkwood. Crosby Webb, son of David Webb,
+                    described the restaurant as a &ldquo;time capsule&rdquo; of how Bloomington used to be.</p>
+                <p>&ldquo;Pizzaria is one of those things that we were stubbornly not going to change anything, if we
+                    could not change it,&rdquo; Crosby said.</p>
+                <p>The initial plan for the restaurant's closure was to officially close Aug. 31 following the IU
+                    football home opener against Florida International University, and they were going to announce this
+                    Aug 28. However, some of their employees could no longer work that weekend and they knew they would
+                    have a large demand from the Bloomington community.</p>
+                <p>The workers were given two to three weeks' notice prior to the closure and the opportunity to leave
+                    in order to find another job. All the employees chose to stay.</p>
+                <p>On Aug. 28, David posted the Facebook closure announcement to alert IU students and alumni,
+                    Bloomington families and all the people who shared pizza and memories at Cafe Pizzaria.</p>
+
+
+                <div class="ad-block">
+                    <div class="ad-code" algin="center">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-2' align="center">
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="section-break"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg></p>
+
+                <p>For the Webbs, Cafe Pizzaria was all about family.</p>
+                <p>In 1962, Larry Webb began working at Cafe Pizzaria for its original owner, Dick Barnes, as a delivery
+                    driver. Over time, he was promoted to assistant manager and then worked as general manager until
+                    Larry and his wife, Sharon, bought the restaurant in 1986.</p>
+                <p>Larry&rsquo;s son, David Webb, grew up at Cafe Pizzaria and began working full time in 1977.</p>
+
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/030f18c8-3cac-452c-a5b8-f80962696c06.original.jpg"
+                        alt="A jukebox stands to the right with some chairs and some booths in the background of the restaurant.">
+                    <figcaption>
+                        The interior of Cafe Pizzaria is shown in 1967. Ownership made it a point to preserve every
+                        detail they could from its inception to its final day.
+                    </figcaption>
+                </figure>
+
+                <p>&ldquo;I just wanted to help my dad, and that&rsquo;s exactly why my son started working there,
+                    too,&rdquo; David said.</p>
+                <p>David&rsquo;s son, Crosby Webb, started at Cafe Pizzaria in 2006 when he was 15 years old. Not long
+                    after Crosby began working there, he became a manager alongside his dad. The three generations of
+                    men were co-owners of the restaurant up until its closure.</p>
+                <p>David&rsquo;s wife, Andrea, is a graphic designer and designed the restaurant&rsquo;s pizza boxes,
+                    shirts and menus. Crosby&rsquo;s fiancée, Katie, was a waitress there. Many other members of their
+                    extended family worked on and off at the restaurant.</p>
+                <p>&ldquo;We might not be the greatest businesspeople in the world, but we try to treat everyone like
+                    family, and I think that&rsquo;s the biggest thing about Cafe Pizzaria that kept people coming
+                    back,&rdquo; David said. &ldquo;And the food.&rdquo;</p>
+
+                <p class="section-break"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg></p>
+
+                <p>With the same spirit that left the restaurant&rsquo;s interior unchanged, Cafe Pizzaria also made an
+                    effort to preserve its flavor. Karen Beam, an IU alumna, said the food tastes exactly the same as
+                    when she had her first stromboli on her first date with Dale Beam &mdash; who would later become her
+                    husband &mdash; in 1969.</p>
+                <p>When Dale, an IU junior at the time, learned that Karen, a freshman, had never tried a stromboli, he
+                    felt obligated to introduce her to what he believed were the best ones around. They ordered
+                    strombolis and extra pickles on their first date and every date following that.</p>
+                <p>When they got married and had kids, Karen and Dale introduced them to Cafe Pizzaria by making a
+                    tradition of going every July 3 to celebrate their wedding anniversary with strombolis and extra
+                    pickles.</p>
+                <p>&ldquo;It feels like without them going on their first date there, it's possible that none of us
+                    would be here,&rdquo; Kelsey Rizzi, one of Karen and Dale&rsquo;s children, said. &ldquo;It's where
+                    we started.&rdquo;</p>
+                <p>&ldquo;It&rsquo;s the root of our family,&rdquo; Koren Bousley, another of their daughters, added.
+                </p>
+                <p>12 years ago, Dale suffered from a stroke. For the last three years, his health wouldn&rsquo;t allow
+                    him to make the hour-long drive to Cafe Pizzaria for their anniversary. To keep the tradition alive,
+                    various family members drove the one hour to Cafe Pizzaria to get Take and Bake strombolis with
+                    extra pickles and then drove the one hour back to heat them up and serve at home.</p>
+                <p>They did this for a few years to keep the tradition afloat, and despite the changes in their lives,
+                    they could always count on the Bloomington restaurant to provide them with the same strombolis.</p>
+                <p>&ldquo;It was a cornerstone, it was always there, it was always the same, it hadn't changed,&rdquo;
+                    Bousley said. &ldquo;You can always count on it.&rdquo;</p>
+                <p>Last January, Dale passed away due to complications from the strokes he endured. The last time they
+                    had Take and Bakes with their dad was in July of 2023.</p>
+                <p>When Bousley called her mom to tell her the news of Cafe Pizzaria closing, Karen cried on the other
+                    end.</p>
+                <p>&ldquo;It&rsquo;s like we're floating adrift now because dad&rsquo;s gone, and Cafe Pizzaria is
+                    gone,&rdquo; Bousley said.</p>
+
+
+                <div class="ad-block">
+                    <div class="ad-code" algin="center">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-3' align="center">
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="section-break"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg></p>
+
+
+                <p>Like Karen, who had her first stromboli at Cafe Pizzaria, the restaurant was the first place many had
+                    their first pizzas. This is true for IU alumnus Rex Horsewood, who had his first pizza at Cafe
+                    Pizzaria in 1967.</p>
+                <p>Horsewood had just been dropped off by his parents at his freshman year dorm, and despite his
+                    newfound independence, he and his roommate quickly realized they needed to figure out what to eat.
+                    The dining halls were closed on Sundays, so they left the Men&rsquo;s Residence Center, now Collins
+                    Living-Learning Center, and headed to Kirkwood.</p>
+                <p>Many of the restaurants on Kirkwood were bars at the time, and Horsewood recalls feeling there were
+                    limited options for freshmen. Despite Horsewood&rsquo;s only previous time having pizza being Chef
+                    Boyardee pizza kits, they ventured into Cafe Pizzaria.</p>
+                <p>Horsewood said the few times he returned over his four years at IU were always nostalgic of his first
+                    pizza &mdash; and his first meal as a Hoosier.</p>
+
+                <p class="section-break"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+                    </svg></p>
+
+                <p>Students, employees and customers alike said the family atmosphere of Cafe Pizzaria was a reason why
+                    they kept coming back. Two regulars, Ed and Bridget Dolan, kept going back every Friday for this
+                    very reason.</p>
+                <p>On March 13, 2009, Ed and Bridget Dolan walked out from the Buskirk-Chumley Theater underneath the
+                    bright lights of the theater&rsquo;s marquee on their first date. After the Joan Baez concert, the
+                    pair needed to find a food option that allowed them not to eat meat, since it was a Friday, to
+                    coordinate with their Catholic religious beliefs. They made their way down Kirkwood and entered
+                    underneath the big letters of Cafe Pizzaria.</p>
+
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f598390e-1140-4317-8ab7-7658e557f1b8.original.jpg"
+                        alt="An older man and woman stand side by side with a grassy valley behind them.">
+                    <figcaption>
+                        Ed and Bridget Dolan eat a final slice from Cafe Pizzaria in the Badlands of South Dakota on Aug.
+                        31. The couple spent part of their first date at the restaurant and made a tradition of
+                        returning every Friday.
+                    </figcaption>
+                </figure>
+
+                <p>While they can&rsquo;t say for sure, the couple is fairly confident they sat down and ordered what
+                    became their &ldquo;usual&rdquo; for the first time that night: a small pizza with half banana
+                    peppers and green peppers for Ed and half tomatoes and pineapple for Bridget.</p>
+                <p>After their first date, the couple quickly made it a tradition to go there every Friday night.</p>
+                <p>Four years and many pizzas later, Ed and Bridget were married. They wanted to do something small for
+                    their wedding, so they had the reception at Cascades Park, and since it was a Friday, they celebrated
+                    with family and friends at Cafe Pizzaria.</p>
+                <p>The Friday before Cafe Pizzaria permanently closed, the Dolans went to get their usual pizza before
+                    they left for vacation. After lightheartedly explaining to their waitress that they are loyal
+                    customers and they would be leaving for vacation the following day, she came back from the kitchen
+                    to break the news. Bridget recalls being &ldquo;heartbroken,&rdquo; both then and now.</p>
+                <p>The Dolans ordered their usual pizza, and before they left, the kitchen gave them an additional large
+                    pizza &mdash; how they like it, on-the-house. The Dolans decided to freeze the pizza and bring it
+                    with them on their trip. On Aug. 31, at the edge of the Badlands in South Dakota, Ed and Bridget ate
+                    their last slices of their usual Cafe Pizzaria order to celebrate their 11th anniversary of their
+                    wedding.</p>
+                <p>&ldquo;I&rsquo;m already thinking &lsquo;where are we going to go to get our pizza?&rsquo; It became
+                    such a family situation,&rdquo; Bridget said. &ldquo;We went in, they knew who you were, and it
+                    wasn&rsquo;t just us &mdash; there are many other people. They walked in, and they knew them by
+                    name.&rdquo;</p>
+
+
+
+                <div class="side-by-side">
+                    <figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/0bb71b42-ef52-4426-8b12-4dfde3505d2f.original.jpg"
+                            alt="7 people sit at a diner table smiling at the camera.">
+                        <figcaption>
+                            Bridget and Ed Dolan's siblings and in-laws are seen having pizza and drinks to celebrate their marriage Aug. 21, 2013, at Cafe Pizzaria in Bloomington. 11 years later Bridget and Ed
+                            celebrated their anniversary with their usual Cafe Pizzaria pizza.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/58d23dfa-5045-4f52-b1f3-2d53cf302661.original.jpg"
+                            alt="3 people sit next to each other in a diner booth smiling at the camera.">
+                        <figcaption>
+                            Bridget Dolan’s sisters, Ann Hauser, Jane Marazzo and Molly Cox, celebrate alongside Bridget
+                            at her wedding reception on Aug. 31, 2013. After their wedding ceremony at Cascades Park,
+                            Bridget and Ed enjoyed the company of their loved ones while at their favorite Bloomington
+                            pizza place.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p>Like Ed and Bridget, many regulars of Cafe Pizzaria felt comfortable knowing they would go out to eat
+                    but felt like they were at home. Crosby described the regulars as the most important aspect of the
+                    restaurant.</p>
+                <p>&ldquo;Students come and go, and the townies kind of stay forever,&rdquo; Crosby said. &ldquo;So,
+                    those are the people you make friends with. And they&rsquo;re long-lasting friends because you see
+                    them year after year after year.&rdquo;</p>
+
+                <div class="ad-block">
+                    <div class="ad-code" algin="center">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0' align="center">
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="section-break"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></p>
+
+
+                <p>For David, building relationships with customers was one of the best parts of his job. But at the end
+                    of the day, David said Cafe Pizzaria had to close because they wanted to be able to spend time with
+                    family outside of the restaurant.</p>
+                <p>While working as a family had many perks, David recalls only taking Crosby on two family vacations
+                    his whole life because it was difficult to leave the restaurant for any more time than that.</p>
+                <p>For the last year Cafe Pizzaria was in business, Crosby was the only co-owner that was also an active
+                    general manager. Since the closure, Crosby has been on his first break since he went on vacation
+                    when he was 18-years-old. He&rsquo;s now 33.</p>
+                <p>In addition to Crosby being the only general manager, they also struggled to find staff since the
+                    pandemic. They went from 25 employees before the pandemic to 11 employees up until close.</p>
+                <p>&ldquo;My employees that were there for the last couple years were amazing,&rdquo; David said.
+                    &ldquo;They were just like our own family, they treated us like family, we treated them like family,
+                    and we all worked together. They were just amazing.&rdquo;</p>
+                <p>David said they considered passing down the restaurant to new ownership, but it would need to be the
+                    right person.</p>
+                <p>After the Facebook announcement was posted, more than 500 Bloomington residents, former employees,
+                    Hoosiers and IU alumni commented on the post. While grateful for the four walls that harnessed
+                    family dinners, first dates and first college meals, customers agree that Kirkwood will not be the
+                    same without the open doors of Cafe Pizzaria.</p>
+                <p>&ldquo;Bloomington being a wonderful, weird place, it was just perfect for a place like Pizzaria to
+                    exist for so long,&rdquo; Crosby said. &ldquo;I mean a wonderful, weird place in the best way
+                    possible, of course.&rdquo;</p>
+
+
+                <div class="ad-block">
+                    <div class="ad-code" algin="center">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-1' align="center">
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
