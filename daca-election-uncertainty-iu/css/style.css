@@ -1,0 +1,241 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url("https://s3.amazonaws.com/snwceomedia/ids/2f3a4901-db1c-4045-a58c-cfdced9ef4fc.original.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+  
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 32px;
+   
+   
+   
+
+}
+
+h2 {
+  /* second headline */
+  
+  font-size: 40px;
+ 
+  
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+ 
+
+  
+}
+
+.headline-container {
+ top: auto;
+  bottom: 15vh;
+  padding-bottom: 255px;
+}
+
+h3 {
+  /* section header */
+
+}
+
+p.credit {
+  color: var(--gray70);
+}
+
+.dropcap:first-letter {
+  /* drop cap */
+  font-weight: 700;
+  float: left;
+  font-size: 4.0em;
+  line-height: 0.65;
+  padding: 12px 6px 12px;
+  margin: 0.04em 0.1em 0 0;
+  color: var(--darkgray);
+  font-family: 'Libre Bodoni', serif;
+}
+
+/* pulled quotes */
+
+.pull-quote-center {
+  max-width: var(--width-lg);
+  padding: var(--lg) var(--sm) var(--md);
+  margin: 0 auto;
+  
+}
+
+.quote {
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: var(--sm);
+  text-align: center;
+  font-style: italic;
+  font-weight: 5;
+}
+
+.attribute {
+  font-size: 18px;
+  color: var(--gray40);
+  margin-top: 0;
+  text-align: center;
+}
+
+
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+  .wide-left {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-right: 25px;
+      margin-left: -15%;
+      margin-bottom: 0;
+      margin-top: 0;
+      float: left;
+      width: 60%;
+      text-align: left;
+  }
+
+  .wide-right {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      padding-left: 25px;
+      margin-left: 10px;
+      margin-right: -15%;
+      margin-bottom: 0;
+      float: right;
+      width: 60%;
+  }
+
+  .side-by-side {
+    max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
+
+.author-bios {
+  margin-top: var(--xl);
+  margin-bottom: var(--lg);
+}

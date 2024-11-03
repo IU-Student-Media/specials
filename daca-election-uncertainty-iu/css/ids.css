@@ -1,0 +1,905 @@
+/*
+    IDS CSS STYLES
+    These are the default styles for an IDS buildout.
+    It includes navigation, typography, spacing, colors, photo placement, etc.
+    Any css styles specific to your story's layout should be changed in the style.css file!
+    ********** DON'T CHANGE STYLES HERE — CHANGE STYLE.CSS FILE **********
+*/
+
+/* import IDS fonts from Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,900;1,200;1,400;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* COLORS */
+/* Use color variables so it's easier to change colors later */
+/* Will create a warning in the W3C CSS validator */
+/* Ignore that - CSS variables are fine to use */
+:root {
+    --footer: #EDEBEB;
+
+    /* breakpoints */
+    --small: 480px;
+    --medium: 768px;
+    --large: 1024px;
+
+    /* nav height */
+    --nav-height: 57.422px;
+
+    /* colors */
+    --idsred: #990000;
+    --offblack: rgb(24, 24, 24);
+    --gray05: rgb(242, 242, 242);
+    --gray10: rgb(230, 230, 230);
+    --gray15: rgb(218, 218, 218);
+    --gray20: rgb(204, 204, 204);
+    --gray30: rgb(179, 179, 179);
+    --gray40: rgb(153, 153, 153);
+    --gray50: rgb(128, 128, 128);
+    --gray60: rgb(102, 102, 102);
+    --gray70: rgb(77, 77, 77);
+    --gray80: rgb(51, 51, 51);
+    --gray90: rgb(26, 26, 26);
+
+    /* widths */
+    --width-xxl: 1600px;
+    --width-xl: 1280px;
+    --width-lg: 992px;
+    --width-md: 672px;
+    --width-sm: 336px;
+    --width-xs: 192px;
+
+    /* padding/margin variables */
+    --xxs: 4px;
+    --xs: 8px;
+    --sm: 16px;
+    --md: 24px;
+    --lg: 32px;
+    --xl: 48px;
+    --xxl: 64px;
+}
+
+/*
+    TYPOGRAPHY
+*/
+
+/* fonts */
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+h4,
+.ad,
+.ad-caption,
+.bylines p,
+footer p,
+#methodology p,
+.related span,
+.attribute,
+.bio p,
+.dropcap:first-letter,
+li.logo,
+.logo,
+footer a.subscribe,
+.donate,
+figcaption,
+p.caption,
+p.credit,
+span.caption,
+p.copyright {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'PT Serif', sans-serif;
+}
+
+.quote {
+    font-family: 'Libre Bodoni', serif;
+}
+
+/* color */
+body {
+    color: var(--gray80);
+}
+
+#methodology p {
+    font-size: 14px;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    color: white;
+    font-weight: 800;
+}
+
+h1 {
+    /* first headline */
+    padding: var(--xxs) 0 0.75em;
+    font-size: 32px;
+}
+
+h2 {
+    /* second headline */
+    font-size: 40px;
+}
+
+h3 {
+    /* section header */
+    font-size: 36px;
+    line-height: 42px;
+    margin: 1.4em 0 0.55em;
+    font-weight: 600;
+}
+
+h4 {
+    /* video headline/methodology subheadline */
+    font-weight: 600;
+    font-size: 18px;
+}
+
+p {
+    /* body copy */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: var(--md);
+}
+
+figcaption,
+p.caption,
+p.credit {
+    color: var(--gray70);
+}
+
+.bylines p {
+    /* bylines */
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0.2em;
+    color: var(--gray70);
+}
+
+.related {
+    padding: var(--md) 0;
+    margin-top: 0;
+    /* font-size: 0.95em; */
+}
+
+.related span {
+    font-weight: bold;
+}
+
+.dropcap:first-letter {
+    /* drop cap */
+    font-weight: 700;
+    float: left;
+    font-size: 4.0em;
+    line-height: 0.65;
+    margin: 0.04em 0.1em 0 0;
+    color: var(--darkgray);
+}
+
+.section-break {
+    /* ••• */
+    color: var(--gray70);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 25px;
+    text-align: center;
+}
+
+/* 
+    HEADER
+*/
+header {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.headline-container {
+    top: 45%;
+    position: absolute;
+}
+
+.header-caption {
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+}
+
+
+/* navbar */
+nav {
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+
+nav li {
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+nav li a {
+    margin: 0 0.5em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 15px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* styles for li items makes the spacing/alignment work on the menu */
+/* also allows the responsive menu toggler behavior */
+li.logo {
+    margin-right: auto;
+    /* put the logo on the left */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+li.logo svg {
+    width: 70px;
+    height: 28px;
+    padding-right: 5px;
+}
+
+li.logo span {
+    display: none;
+    -webkit-transition: 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: 1s;
+}
+
+li.item {
+    font-size: 18px;
+    text-align: right;
+}
+
+li.item a {
+    margin-top: 0.8em;
+}
+
+li.toggle {
+    /* show menu bar (toggle class) */
+    display: block;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+nav a {
+    /* so the ENTIRE item is clickable */
+    display: block;
+
+    /* design choices */
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+/* hide all list items **that aren't logo or toggle** */
+nav ul li:not(.logo):not(.toggle) {
+    display: none;
+}
+
+nav ul div {
+    display: none;
+}
+
+/* reveal hidden items (on toggle) */
+/* force this display to take precedence and be more "!important" */
+/* to display properly, also set the width to 100% */
+.show {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+/* 
+    ARTICLE ALIGNMENT (flexbox added in larger view widths)
+*/
+article {
+    padding-top: var(--xl);
+}
+
+section p:first-child {
+    margin-top: 0;
+}
+
+.bylines {
+    padding-top: 6.5px;
+    max-width: var(--medium);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+}
+
+#pubdate {
+    font-size: 0.85em;
+    margin-bottom: var(--md);
+    margin-top: var(--xs);
+}
+
+.line-after:after {
+    /* add horizontal lines btwn byline divs */
+    content: "";
+    border: 1px solid var(--gray);
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.0em 0;
+}
+
+.story {
+    max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+    PHOTOS
+*/
+img {
+    display: block;
+    width: 100%;
+}
+
+figcaption,
+p.caption {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.25em;
+    margin-bottom: 0;
+    padding-top: 4px;
+    /* padding-right: var(--md);
+    padding-left: var(--md); */
+}
+
+span.credit,
+p.credit {
+    text-transform: uppercase;
+    font-size: .9em;
+    text-align: right;
+    margin-bottom: 3px;
+    margin-top: 0;
+    line-height: 1.2em;
+    padding-top: var(--xxs);
+}
+
+figure {
+    margin: var(--xl) auto var(--lg);
+}
+
+.sm-image {
+    max-width: var(--width-sm);
+}
+
+.inline-image {
+    max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+}
+
+.lg-image {
+    max-width: var(--width-lg);
+}
+
+@media screen and (max-width: 992px) {
+    .lg-image figcaption {
+        padding-left: var(--sm);
+        padding-right: var(--sm);
+    }
+}
+
+.xl-image {
+    max-width: var(--width-xl);
+}
+
+@media screen and (max-width: 1280px) {
+    .xl-image figcaption {
+        padding-left: var(--sm);
+        padding-right: var(--sm);
+    }
+}
+
+.xxl-image {
+    max-width: var(--width-xxl);
+}
+
+@media screen and (max-width: 1600px) {
+    .xxl-image figcaption {
+        padding-left: var(--sm);
+        padding-right: var(--sm);
+    }
+}
+
+.imagegrid {
+    max-width: var(--width-xl);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 15px;
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+    margin: var(--xxl) auto var(--xl);
+}
+
+.imagegrid figure {
+    margin: 0;
+}
+
+.grid-image-1 {
+    grid-area: 1/1/1/8;
+}
+
+.grid-image-2 {
+    grid-area: 1/8/1/13;
+    align-self: end;
+}
+
+.grid-image-3 {
+    grid-area: 2/1/2/6;
+}
+
+.grid-image-4 {
+    grid-area: 2/6/2/13;
+}
+
+.imagegrid .caption {
+    grid-column: 1/13;
+    max-width: var(--medium);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--sm);
+    padding-right: var(--sm);
+}
+
+.big-graphic {
+    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+.big-image>.embed-container {
+    margin: 0 15px;
+}
+
+h4 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.side-by-side {
+    max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+}
+
+.side-by-side figure {
+    margin: 0;
+}
+
+/* youtube embed styles */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* pulled quotes */
+.pull-quote-center {
+    max-width: var(--width-lg);
+    padding: var(--lg) var(--sm) var(--md);
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: var(--sm);
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.attribute {
+    font-size: 18px;
+    color: var(--gray40);
+    margin-top: 0;
+    text-align: center;
+}
+
+/*
+    LINKS
+*/
+/* default link styles */
+a:link,
+a:visited {
+    color: var(--gray90);
+    text-decoration: none;
+    border-bottom: 0.125em solid var(--gray90);
+}
+
+a:hover,
+a:active {
+    color: var(--gray90);
+    border-bottom: none;
+}
+
+/* navbar social icons */
+nav li a:link,
+nav li a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+nav li a:hover,
+nav li a:active {
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* byline links */
+.bylines a:link,
+.bylines a:visited {
+    color: var(--gray80);
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+.bylines a:hover,
+.bylines a:active {
+    color: var(--gray80);
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+/* 
+    MUGS & DONATE
+*/
+
+.author-bios {
+    margin-top: var(--xl);
+    margin-bottom: var(--lg);
+}
+
+.bio>div {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.bio::before,
+.bio:last-child::after {
+    content: "";
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 0;
+    display: block;
+    margin: 1.5em 0 0.5em;
+}
+
+.bio img {
+    max-width: 75px;
+    max-height: 75px;
+    min-width: 75px;
+    min-height: 75px;
+    border-radius: 50%;
+    margin-right: 15px;
+
+    object-fit: cover;
+}
+
+.bio p {
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: var(--xs);
+}
+
+.bio p:nth-child(2) {
+    font-size: 0.95em;
+}
+
+.donate,
+.donate a {
+    color: var(--gray70);
+    border-bottom-color: var(--gray70);
+}
+
+#methodology {
+    background-color: var(--gray05);
+    padding: var(--xxs) var(--md);
+    margin-top: var(--lg);
+    padding-bottom: var(--sm);
+    border-radius: 4px;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--gray20);
+    padding: var(--xxs) var(--xs);
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/*
+    FOOTER
+*/
+footer {
+    margin-top: 3.0em;
+    color: rgb(80, 80, 80);
+    background-color: #f5f5f5;
+}
+
+footer .copyright {
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 7px 0 10px;
+    color: rgb(135, 135, 135);
+    text-align: center;
+}
+
+footer p.copyright {
+    padding: var(--xxs);
+    padding-bottom: var(--xs);
+    font-size: 18px;
+}
+
+footer .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: var(--sm);
+}
+
+.footer-row {
+    padding: var(--lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer svg {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo a {
+    display: flex;
+    border-bottom: none;
+}
+
+footer .logo span {
+    color: var(--darkgray);
+}
+
+footer a.subscribe {
+    /* subscribe button */
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    padding: 5px 15px;
+    background-color: #990000;
+    color: #f5f5f5;
+    border-radius: 3px;
+}
+
+footer a.subscribe:link,
+footer a.subscribe:visited {
+    border-bottom: none;
+    box-shadow: 1px 1px 5px rgb(157, 157, 157);
+    transform: scale(1);
+    transition: box-shadow .2s, transform .2s;
+}
+
+footer a.subscribe:hover,
+footer a.subscribe:active {
+    box-shadow: 2px 2px 10px rgb(157, 157, 157);
+    transform: scale(1.02);
+    transition: box-shadow .2s, transform .2s;
+}
+
+footer .socials a {
+    border-bottom: none;
+    color: #990000;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.links p {
+    font-size: 13px;
+    margin: 0 8px;
+}
+
+.links p,
+.links a {
+    color: gray;
+    border-bottom-color: gray;
+}
+
+/* 
+    ADVERTISEMENTS
+*/
+.ad {
+    padding-top: var(--xxl);
+    padding-bottom: var(--xxl);
+    text-align: center;
+}
+
+.ad-caption {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.ad-block {
+    margin-top: var(--xl);
+    padding-bottom: 20px;
+    margin-bottom: var(--xl);
+    background: var(--gray05);
+    width: 100%;
+}
+
+.ad-code {
+    padding-bottom: 30px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+.show-desktop {
+    display: none;
+    margin: none;
+    padding: none;
+}
+
+.show-mobile {
+    display: block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .show-desktop {
+        display: block;
+    }
+
+    .show-mobile {
+        display: none;
+        padding: 0 !important;
+    }
+
+    /* Hide menu toggle */
+    li.toggle {
+        /* hide menu bars (the toggle) */
+        display: none;
+    }
+
+    li.item {
+        display: flex !important;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    li.item a {
+        margin-top: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .wide-left {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 25px;
+        margin-left: -15%;
+        margin-bottom: 0;
+        margin-top: 0;
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    .wide-right {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        margin-left: 10px;
+        margin-right: -15%;
+        margin-bottom: 0;
+        float: right;
+        width: 60%;
+    }
+
+
+    .big-image>.embed-container {
+        margin: 0;
+    }
+
+    h4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
