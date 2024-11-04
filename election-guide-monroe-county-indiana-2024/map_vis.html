@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Title (pulls from metadata.json) -->
+  <title> Hello</title>
+
+  <!-- favicon -->
+  <link rel="SHORTCUT ICON"
+    href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+  <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+  <!-- Local stylesheet — put all your design choices here -->
+  <!-- <link rel="stylesheet" href="css/style.css">  -->
+  <link rel="stylesheet" href="css/election.css">
+  <link rel="stylesheet" href="css/map.css">
+  <!-- JS -->
+  <script src="election-components.js"></script>
+
+  <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+  <!-- SOCIAL CARDS — Make sure to update!! -->
+  <meta property="og:url" content="http://specials.idsnews.com/url" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+  <meta property="og:description" content="Abstract" /> <!-- TODO: abstract -->
+  <meta property="og:site_name" content="IDS News">
+  <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@idsnews">
+  <meta name="twitter:creator" content="@idsnews">
+  <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+  <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+  <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+  <!-- START Ad content: this goes in the head content -->
+  <!-- don't mess with this — it will work all on it's own :-) -->
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function () {
+      //all other leaderboards
+      var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+      googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager -->
+  <!-- (also don't have to worry about this at all) -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script src="js/googleTagManager.js"></script>
+
+  <div class="helper"></div>
+
+  <!--Header-->
+  <header>
+    <nav>
+      <ul role="navigation">
+        <li class="logo">
+          <!-- TODO: Sould link seperately to IDS / Elections page? -->
+          <a href="./index.html">
+            <!-- IDS LOGO SVG -->
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/668e47b3-7a19-49d0-8268-01db6dcc0be6.original.svg"
+              height="50">
+          </a>
+          <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+        </li>
+        <li class="toggle">
+          <i class="fas fa-bars fa-lg"></i>
+        </li>
+
+        <!-- TODO: Add header links: Local, State, National, others? -->
+        <li class="item">
+          <a href="./national.html">
+            National
+          </a>
+        </li>
+        <li class="item">
+          <a href="./state.html">
+            State
+          </a>
+        </li>
+        <li class="item">
+          <a href="./local.html">
+            Local
+          </a>
+        </li>
+        <li id="socials" class="item">
+          <!-- links generate automatically from metadata.json -->
+          <!-- TODO: This creates a wonky effect when we click between pages, we might want -->
+          <!-- These to just be static -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main article -->
+  <main>
+    <article>
+      <div class="top flag-bg">
+        <div class="container">
+          <div class="strip title">
+            <h1>Explore Maps</h1>
+            <p>See how Indiana has voted in the past and explore trends in its politics with our interactive graphic.
+            </p>
+          </div>
+          <div class="interact-container">
+            <div class="controls">
+              <div>
+                <label for="analyze-type">What do you want to explore?</label>
+                <select name="analyze-type" id="analyze-type">
+                  <option value="comp">Compare Past Elections</option>
+                  <option value="view">View Past Results</option>
+                </select>
+              </div>
+
+              <div id="view-div">
+                <label for="view-select">Choose Race:</label>
+                <select name="view-select" id="view-select">
+                  <option value="16SEN">2016 Senatorial</option>
+                  <option value="16GOV">2016 Gubernatorial</option>
+                  <option value="16PRES">2016 Presidential</option>
+                  <option value="18SEN">2018 Senatorial</option>
+                  <option value="20GOV">2020 Gubernatorial</option>
+                </select><span> Precinct-level results</span>
+                <p>Vote Margins by Party</p>
+              </div>
+
+              <div id="comp-div">
+                <label for="left">Voting Margin Shift from the</label>
+                <select name="left" id="left">
+                  <option value="16_SEN">2016 Senatorial</option>
+                  <option value="16_GOV">2016 Gubernatorial</option>
+                  <option value="16_PRES">2016 Presidential</option>
+                  <option value="18_SEN">2018 Senatorial</option>
+                  <option value="20_GOV">2020 Gubernatorial</option>
+                </select>
+
+                <label for="right">to</label>
+                <select name="right" id="right">
+                  <option value="16_SEN">2016 Senatorial</option>
+                  <option value="16_GOV">2016 Gubernatorial</option>
+                  <option value="16_PRES">2016 Presidential</option>
+                  <option value="18_SEN">2018 Senatorial</option>
+                  <option value="20_GOV">2020 Gubernatorial</option>
+                  <option value="20_PRES">2020 Presidential</option>
+                </select>
+                <span>elections.</span>
+                <p>Precinct-level shifts in Indiana</p>
+              </div>
+              <div class="map-container hide">
+                <img id="img-l" class="map-img" src="./maps/compare_svg/VoteShift_16_GOV_to_16_PRES.svg">
+                <!-- <img id="img-r" class="map-img" src="./maps/outputs/compare_svg/VoteShift_16_GOV_to_16_PRES.svg"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="story pubdate-donate">
+          <p id="pubdate"></p>
+          <div class="author-bios">
+            <div class="bio">
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsqgjR8em3PZ8FdwMCT7iWkxhl8_QbWNfk3Q&s"
+                  alt="Lydia Norton">
+                <div>
+                  <p>Data Analysis by <a href="https://www.idsnews.com/staff/ronak-monga" target="_blank">Ronak
+                      Monga</a>
+                  </p>
+                  <p>Ronak is a senior studying Data Science. He is a data analyst and puzzle maker for the IDS.<span
+                      style="padding-right: var(--xs); padding-left: var(--xxs);"><a href="mailto:ronmonga@iu.edu"
+                        target="_blank">Email <i class="fa fa-envelope" aria-hidden="true"></i></a></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="bio">
+              <div>
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/13acda73-a88b-4fb5-bb21-8a4342e8a14c.original.jpg"
+                  alt="Calvin Josenhans">
+                <div>
+                  <p>Design and development by <a href="https://idsnews.com/staff/Calvin-Josenhans"
+                      target="_blank">Calvin
+                      Josenhans</a></p>
+                  <p>Calvin is a junior studying computer science and math. He has worked at the IDS since 2024 as a web
+                    developer. <span style="padding-right: var(--xs); padding-left: var(--xxs);"><a
+                        href="mailto:cjosenha@iu.edu" target="_blank">Email <i class="fa fa-envelope"
+                          aria-hidden="true"></i></a></span> <span><a href="https://twitter.com/CalvinJosenhans"
+                        target="_blank">Twitter <i class="fab fa-twitter" aria-hidden="true"></i></a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="donate">
+            <em>Like what you're reading?</em><br>
+            Support independent, award-winning student journalism.
+            <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-row">
+
+      <!-- IDS LOGO SVG -->
+      <div class="logo">
+        <a href="https://idsnews.com">
+          <svg viewBox="0 0 163.17 68.85">
+            <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+            <path style="fill:#990000;"
+              d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+            <path style="fill:#990000;"
+              d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+          </svg>
+          <span class="show-desktop"> | Indiana Daily Student</span>
+        </a>
+      </div>
+      <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+        SUBSCRIBE
+      </a>
+      <div class="socials">
+        <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1" target="_blank"><i
+            class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="links">
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+      <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+      <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+      <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+          target="_blank">Advertising</a></p>
+      <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+    </div>
+    <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+  </footer>
+
+  <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/ids.js"></script>
+  <script src="js/metadata/metadata-quiz.js"></script>
+  <script src="js/map_vis.js"></script>
+</body>
+
+</html>

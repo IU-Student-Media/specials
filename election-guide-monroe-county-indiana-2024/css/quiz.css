@@ -1,0 +1,118 @@
+:root {
+    --quiz-bg: #d8d3a4;
+}
+
+/* Override */
+footer {
+    margin-top: 0px;
+}
+
+
+
+.quiz-container {
+    overflow-x: hidden;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 65vh;
+    margin: auto;
+    padding: 2rem;
+
+    /* Display */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+
+/* Custom Button */
+.quiz-container button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: all 0.25s;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 4px 15px;
+}
+
+.quiz-container button:hover {
+    color: white;
+    background-color: black;
+}
+
+.quiz-container button svg {
+    /* filter: invert(41%) sepia(57%) saturate(3831%) hue-rotate(154deg) brightness(96%) contrast(101%); */
+    transition: all 0.25s;
+}
+
+.quiz-container button:hover svg {
+    filter: invert(100%) ;
+}
+
+#quiz-content1, #quiz-content2 {
+    transition: all .5s;
+}
+
+#quiz-content1 h2, #quiz-content2 h2{
+    margin-left: 0px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.answer {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+/* Custom Radio */
+
+/* Hide it */
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+}
+
+/* Default */
+label {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    min-width: 80px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Selected */
+label:has(> input[type="radio"]:checked) {
+    color: var(--quiz-bg);
+    background-color: black;
+
+}
+
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

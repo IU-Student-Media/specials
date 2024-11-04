@@ -1,0 +1,1244 @@
+/* This is the shared file for elections! */
+:root {
+	--national-colour: #181A83;
+	--state-colour: #511C4D;
+	--local-colour: #991313;
+	--color-dark-grey: #333333;
+	--republican-colour: #C12222;
+	--democratic-colour: #335ECD;
+	--other-party-colour: #DAA520;
+	--national-gradient: linear-gradient(98deg, rgba(24, 26, 131, 0.9) 10.77%, rgba(88, 89, 163, 0.9) 94.55%);
+	--state-gradient: linear-gradient(98deg, rgba(81, 28, 77, 0.9) 10.77%, rgba(122, 87, 133, 0.9) 94.55%);
+	--local-gradient: linear-gradient(98deg, rgba(147, 33, 33, 0.9) 10.77%, rgba(176, 103, 103, 0.9) 94.55%);
+	--nav-col: #EAEEF5;
+	--desktop-radius: 15px;
+	--mobile-radius: 10px;
+	--card-pad: 15px;
+	--mobile-snap: 850px;
+}
+
+/* Weird Overrides */
+.card-link {
+	border: none !important;
+	display: flex;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+article {
+	padding-top: 0px;
+	width: 100%;
+}
+
+nav {
+	background-color: var(--nav-col);
+}
+
+nav a:link:not(.tag),
+  nav a:visited:not(.tag) {
+	border-bottom: none;
+}
+
+nav .item:not(#socials) a:hover {
+	margin-top: 4px;
+	padding-bottom: 2px;
+	border-bottom: solid black 2px;
+}
+
+nav .fa-bars {
+	color: black;
+}
+
+nav .nav-logo {
+	width: 50px;
+}
+
+nav .item {
+	font-family: 'Inter', sans-serif;
+	color: black;
+	font-weight: bold;
+}
+
+nav li a:link,
+  nav li a:visited,
+  nav li a:hover,
+  nav li a:active {
+	color: black;
+}
+
+nav .section-item {
+	width: fit-content;
+}
+
+nav .show {
+	display: flex !important;
+	justify-content: end;
+}
+
+nav .show#socials {
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 850px) {
+	nav ul {
+    /* padding: 15px; */
+		justify-content: end;
+	}
+}
+
+h2 {
+	color: var(--color-dark-grey);
+	text-align: left;
+	margin-left: var(--card-pad);
+	font-family: 'Inter', sans-serif;
+}
+
+header {
+	height: 80px;
+}
+
+@media only screen and (max-width: 850px) {
+	header {
+      /* padding: 15px; */
+		height: 70px;
+	}
+}
+
+.top,
+.strip {
+	padding: var(--xl);
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.top,
+    .strip {
+		padding: var(--md);
+	}
+}
+
+.top .flex-c {
+	justify-content: space-between;
+}
+
+/* Tailwind-esque stuff */
+.no-pad {
+	padding: 0px;
+}
+
+.container {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.flag-bg {
+	background-image: linear-gradient(0deg, #ffffffCD, #ffffffCD), url("https://s3.amazonaws.com/snwceomedia/ids/bb7d54e8-0255-4bc5-b643-9a00c1750d5e.original.jpg");
+	background-size: cover;
+}
+
+.national-to-white {
+	background-image: linear-gradient(180deg, #181A83, #ffffffff);
+}
+
+.state-to-white {
+	background-image: linear-gradient(180deg, #511C4D, #ffffffff);
+}
+
+.local-to-white {
+	background-image: linear-gradient(180deg, #991313, #ffffffff);
+}
+
+.page-head h1 {
+	text-align: left;
+	font: italic 900 48px 'Playfair Display';
+}
+
+.flex-h {
+	display: flex;
+	gap: 10px;
+}
+
+.flex-c {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.grid-2 {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.countdown-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.countdown-grid {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* Mobile Adjustments */
+.tag {
+	font-family: 'Inter', sans-serif;
+	height: 20px;
+	width: fit-content;
+	border-radius: 15px;
+	border: none;
+	text-decoration: none;
+	padding: 1em;
+	font-size: 14px;
+	font-weight: bold;
+	justify-self: right;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.tag-national {
+	background-color: var(--national-colour);
+}
+
+.tag-state {
+	background-color: var(--state-colour);
+}
+
+.tag-local {
+	background-color: var(--local-colour);
+}
+
+.tag-grey {
+	background-color: white;
+	color: var(--color-dark-grey);
+}
+
+/* Stuff for all cards */
+.card {
+	border-radius: var(--desktop-radius);
+	overflow: hidden;
+	background-color: white;
+	margin: 0px var(--card-pad);
+	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+a:link.card,
+a:visited.card {
+	border-bottom: none;
+}
+
+.card-credit {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	justify-content: space-between;
+	margin: 0px var(--card-pad) calc(var(--card-pad)/2) var(--card-pad);
+	font-family: 'Inter', sans-serif;
+}
+
+.card-credit p {
+	margin: 0px;
+	color: #808080;
+}
+
+/* Main Featured Card */
+.card-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: min-content;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.card-main {
+		margin-bottom: 10px;
+	}
+}
+
+.card-main h2 {
+	font-size: 35px;
+	margin-top: var(--card-pad);
+}
+
+.card-main img {
+	object-fit: cover;
+}
+
+/* The larger horizontal cards */
+.card-2 {
+	display: flex;
+  /* height: max-content; */;
+}
+
+.card-2 img {
+	object-fit: cover;
+	max-width: 30%;
+}
+
+.card-2 .flex-c {
+	padding-top: var(--card-pad);
+}
+
+.card-2 .flex-c h2 {
+	margin: 0px calc(var(--card-pad)/2) 0px var(--card-pad);
+	font-size: calc(1vw/.5);
+      /* max-height: 50px; */
+	overflow-y: hidden;
+}
+
+.card-2 .flex-c .card-credit p {
+	font-size: calc(1vw/.8);
+}
+
+.card-2 .flex-c .card-credit .tag {
+	font-size: calc(1vw/.8);
+	padding: 10px;
+}
+
+@media (min-width: 1300px) {
+	.card-2 .flex-c .card-credit p {
+		font-size: 16px;
+	}
+
+	.card-2 .flex-c .card-credit .tag {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.card-2 .flex-c h2 {
+		font-size: 26px;
+	}
+}
+
+.meet-heading {
+	font-size: 64px;
+	font-family: 'Inter', sans-serif;
+	color: black;
+	align-self: center;
+}
+
+.nutrition-cards {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* About the particular candidate */
+.candidate-graph {
+	display: flex;
+	flex-direction: column;
+	margin: var(--card-pad);
+}
+
+.graph-head {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.candidate-graph .pills {
+	justify-content: left;
+}
+
+.graph-head img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 3px solid;
+}
+
+.graph-head h2 {
+	color: black;
+	font-size: 40px;
+	margin: 0px;
+}
+
+.graph-body p {
+	font-size: 20px;
+}
+
+/* Nutrition Cards on Meet the Candidates Page */
+.nutrition-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--card-pad);
+	max-width: 264px;
+}
+
+.nutrition-card img {
+	width: 145px;
+	height: 145px;
+	border: 4px solid;
+	border-radius: 73px;
+}
+
+img.face-r {
+	border-color: var(--republican-colour);
+}
+
+img.face-d {
+	border-color: var(--democratic-colour);
+}
+
+img.face-l {
+	border-color: var(--other-party-colour);
+}
+
+.nutrition-card h2 {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	margin: 0px;
+}
+
+.nutrition-card .party {
+	font-family: 'Inter', sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-bottom: var(--card-pad);
+}
+
+.nutrition-card .party-r {
+	color: var(--republican-colour);
+}
+
+.nutrition-card .party-d {
+	color: var(--democratic-colour);
+}
+
+.nutrition-card .party-l {
+	color: var(--other-party-colour);
+}
+
+.pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	justify-content: center;
+}
+
+.pills p {
+	background-color: #d8d8d8;
+	color: black;
+	font-family: 'Inter', sans-serif;
+	border-radius: 100px;
+	text-align: center;
+	padding: 2px 15px;
+	width: fit-content;
+	margin: 0px;
+	font-size: 12px;
+}
+
+.nutrition-card .current {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: var(--card-pad);
+}
+
+.nutrition-card .current h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	margin: 0px;
+	text-align: center;
+}
+
+.nutrition-card .current p {
+	font-family: 'Inter', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: black;
+	margin: 0px;
+}
+
+.nutrition-card .tag {
+	color: black;
+	font-weight: normal;
+	font-family: 'Inter', sans-serif;
+	border-radius: 100px;
+	text-align: center;
+	padding: 10px 15px;
+	width: fit-content;
+	margin: 0px;
+	border: 1px solid black;
+	margin-top: 20px;
+	font-size: 12px;
+}
+
+img.face {
+	object-fit: cover;
+}
+
+#live-feed h1 {
+	color: black;
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 900;
+	text-align: left;
+	font-size: 3em;
+}
+
+#live-feed h2 {
+	font-size: 20px;
+}
+
+#live-feed .card-credit p {
+	font-size: 16px;
+}
+
+#live-feed a {
+	display: block;
+}
+
+#live-feed #feed-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--card-pad);
+}
+
+#live-feed .update-card {
+  /* display: flex; */;
+}
+
+/* The Cards that fill the whole width */
+.card-wide {
+	display: flex;
+	margin-top: 20px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.card-wide h2 {
+	font-size: 30px;
+	margin-bottom: 0px;
+	color: var(--color-dark-grey);
+}
+
+.card-wide .card-abstract {
+	margin: 0px var(--card-pad);
+}
+
+.card-wide img {
+	width: 300px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--desktop-radius);
+}
+
+.card-wide .flex-c {
+	justify-content: space-between;
+}
+
+.candidates-card {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	padding: var(--card-pad);
+	margin: var(--card-pad);
+}
+
+.candidates-card .candidates-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.candidates-card h3 {
+	font-family: 'Inter', sans-serif;
+	color: black;
+	font-size: 28px;
+	margin: 0px;
+}
+
+.candidates-card .tag p {
+	color: #7a7a7a;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.candidates-card .faces {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+}
+
+.candidates-card .face {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100px;
+}
+
+.candidates-card .face img {
+	width: 90px;
+	height: 90px;
+	border-radius: 45px;
+	object-fit: cover;
+	margin: var(--card-pad);
+}
+
+.strip.meet h1 {
+	color: black;
+}
+
+.strip.meet .strip-content {
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.candidates-card .face p {
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.face-r img {
+	border-radius: 45px;
+	border: 3px solid var(--republican-colour);
+}
+
+.face-d img {
+	border-radius: 45px;
+	border: 3px solid var(--democratic-colour);
+}
+
+.face-l img {
+	border-radius: 45px;
+	border: 3px solid var(--other-party-colour);
+}
+
+a.card,
+a.card-link,
+a.tag {
+	transform: scale(1);
+	transition: transform 0.2s;
+}
+
+a.card:hover,
+a.card:focus,
+a.card:active {
+	transform: scale(calc(1.01));
+}
+
+a.card-link:hover,
+a.card-link:focus,
+a.card-link:active {
+	transform: scale(1.02);
+}
+
+a.tag:hover,
+a.tag:focus,
+a.tag:active {
+	transform: scale(1.03);
+}
+
+/* Vote quiz */
+.vote-quiz-card {
+	background-image: linear-gradient(135deg, #1d1d1d, #878787);
+	border-radius: var(--desktop-radius);
+	margin: var(--card-pad);
+	overflow: hidden;
+	justify-content: space-between;
+	font-family: 'Inter', sans-serif;
+	height: 193px;
+}
+
+.vote-quiz-card .flex-c {
+	gap: 0px;
+	justify-content: space-between;
+	padding: var(--card-pad);
+	padding-left: calc(var(--card-pad) * 1.5);
+}
+
+.vote-quiz-card img {
+	max-width: 30%;
+	object-fit: cover;
+}
+
+.vote-quiz-card h2 {
+	color: white;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.vote-quiz-card p {
+	color: white;
+}
+
+.vote-quiz-card .quiz-tag {
+	color: black;
+}
+
+/* Strips */
+.strip {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-top: 24px;
+}
+
+.strip.national {
+	background: var(--national-gradient);
+}
+
+.strip.national .tag {
+	color: var(--national-colour);
+}
+
+.strip.state {
+	background: var(--state-gradient);
+}
+
+.strip.state .tag {
+	color: var(--state-colour);
+}
+
+.strip.local {
+	background: var(--local-gradient);
+}
+
+.strip.local .tag {
+	color: var(--local-colour);
+}
+
+.strip.more .strip-head h1 {
+	color: black;
+}
+
+.strip.title {
+	align-items: center;
+}
+
+.strip.title h1 {
+	color: black;
+	font: italic 900 48px 'Playfair Display';
+}
+
+.strip .strip-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.strip .strip-head h1 {
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 900;
+	text-align: left;
+	font-size: 3em;
+}
+
+.strip .strip-head .tag {
+	background: white;
+}
+
+.strip .strip-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.strip .strip-card {
+	padding-bottom: var(--card-pad);
+	display: flex;
+	flex-direction: column;
+}
+
+.strip .strip-card img {
+	width: 100%;
+      /* height: 180px !important; */;
+}
+
+.strip .strip-card h2 {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.strip .strip-card .flex-c {
+	height: 100%;
+	justify-content: space-between;
+}
+
+.strip .strip-card .card-credit p {
+	font-size: 12px;
+	justify-self: end;
+      /* font-weight: normal; */;
+}
+
+/* Countdown and Subscribe */
+.countdown-card,
+.subscribe-card {
+	border-radius: var(--desktop-radius);
+	padding: var(--card-pad);
+	color: white;
+	font-family: 'Inter', sans-serif;
+	align-items: center;
+	height: 193px;
+	margin: var(--card-pad);
+	justify-content: space-between;
+	max-width: 600px;
+}
+
+.countdown-card h2,
+  .subscribe-card h2 {
+	color: white;
+	font-size: calc(1vw/.3);
+}
+
+@media (min-width: 1200px) {
+	.countdown-card h2,
+      .subscribe-card h2 {
+		font-size: 30px;
+	}
+}
+
+.bell {
+	display: flex;
+}
+
+/* Countdown Card */
+.countdown-card {
+	background-image: linear-gradient(150deg, #A33131, #83547f);
+	gap: 15px;
+}
+
+.timer-row {
+	margin-right: var(--card-pad);
+}
+
+.timer-row .flex-c {
+	justify-content: start;
+	align-items: center;
+	text-align: center;
+}
+
+.timer-row .flex-c p {
+	margin: 0px;
+}
+
+.countdown-text {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.countdown-label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.countdown-num {
+	width: 3em;
+	gap: 0;
+}
+
+/* Subscribe Card */
+.subscribe-card {
+	background-image: linear-gradient(150deg, #83547F, #46478F);
+}
+
+.subscribe-card .tag {
+	background-color: white;
+	color: #544A8B;
+	white-space: nowrap;
+}
+
+/* In Between */
+@media (max-width: 1200px) {
+	.vote-quiz-card p {
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	.card-wide h2 {
+		font-size: 3vw;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+	.card-wide h2 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card-wide .card-abstract {
+		display: none;
+	}
+
+	.vote-quiz-card img {
+    /* height: 193px; */
+		object-fit: cover;
+	}
+
+	.timer-row .flex-c {
+		gap: 0px;
+	}
+
+	.countdown-grid {
+		display: flex;
+		flex-direction: column;
+	}
+  /* Main Card */
+	.card-main {
+		padding-bottom: 15px;
+	}
+
+	.card-main h2 {
+		font-size: 2.5vw;
+		padding-bottom: var(--card-pad);
+		margin-bottom: 0px;
+	}
+  /* Card 2 */
+	.card-2 h2 {
+		margin-top: 0px;
+		font-size: 2vw;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 712px) {
+	.graph-head h2 {
+		font-size: 30px;
+	}
+
+	.graph-body p {
+		font-size: 15px;
+	}
+
+	.meet-heading {
+		font-size: 30px;
+	}
+
+	.nutrition-card {
+		max-width: 173px;
+		padding: 10px;
+		margin: 0px;
+	}
+
+	.nutrition-card img {
+		width: 80px;
+		height: 80px;
+		border: 2px solid;
+		border-radius: 40px;
+	}
+
+	.pills p {
+		padding: 2px 10px;
+		font-size: 10px;
+	}
+
+	.nutrition-card .current {
+		display: none;
+	}
+
+	.nutrition-card .tag {
+		display: none;
+	}
+
+	.top,
+  .strip {
+		padding: var(--sm);
+	}
+
+	.grid-2 {
+		display: flex;
+		flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+		gap: var(--card-pad);
+	}
+  /* Main Card */
+	.card-main h2 {
+		font-size: 3.5vw;
+		padding-bottom: var(--card-pad);
+		margin-bottom: 0px;
+	}
+  /* Car 2 */
+	.card-2 {
+		height: 116px;
+	}
+
+	.card-2 img {
+		width: 116px;
+		height: 116px;
+	}
+
+	.card-2 .flex-c {
+		padding-top: var(--card-pad);
+	}
+
+	.card-2 .flex-c h2 {
+		margin-top: 0px;
+		font-size: 3.5vw;
+	}
+
+	.card-2 .flex-c .card-credit p {
+		font-size: 10px;
+	}
+
+	.card-2 .flex-c .card-credit .tag {
+		font-size: 10px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 712px) and (min-width: 1300px) {
+	.card-2 .flex-c .card-credit p {
+		font-size: 16px;
+	}
+
+	.card-2 .flex-c .card-credit .tag {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 712px) and (min-width: 1300px) {
+	.card-2 .flex-c h2 {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 712px) {
+	.card .card-credit p {
+		font-size: 3vw;
+	}
+
+	.card .card-credit .tag {
+		font-size: 3vw;
+		height: fit-content;
+		padding: 4% auto;
+	}
+  /* The Cards that fill the whole width */
+	.card-wide {
+		display: flex;
+		margin-top: 20px;
+		height: 116px;
+	}
+
+	.card-wide h2 {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+
+	.card-wide p {
+		font-size: 10px;
+	}
+
+	.card-wide .card-abstract {
+		display: none;
+	}
+
+	.card-wide img {
+		width: 116px;
+		height: 116px;
+		object-fit: cover;
+		border-radius: var(--mobile-radius);
+	}
+
+	.tag {
+		max-height: 10px;
+		padding: 10px;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+  /* Misc. Cards */
+	.vote-quiz-card,
+  .countdown-card,
+  .subscribe-card {
+		height: min-content;
+	}
+
+	.vote-quiz-card h2,
+    .countdown-card h2,
+    .subscribe-card h2 {
+		font-size: calc(1vw/.25);
+		color: white;
+	}
+}
+
+@media screen and (max-width: 712px) and (min-width: 420px) {
+	.vote-quiz-card h2 div,
+      .countdown-card h2 div,
+      .subscribe-card h2 div {
+		font-size: calc(1vw/.4);
+	}
+}
+
+@media (max-width: 712px) {
+	.countdown-text {
+		font-size: calc(1vw/.2);
+		color: white;
+	}
+}
+
+@media screen and (max-width: 712px) and (min-width: 420px) {
+	.countdown-text div {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 712px) {
+	.vote-quiz-card .flex-c {
+		padding: var(--card-pad);
+	}
+
+	.vote-quiz-card .flex-c p {
+		font-size: 10px;
+		margin: 0px;
+	}
+
+	.vote-quiz-card .flex-c p:not(.tag) {
+		margin-bottom: 10px;
+	}
+
+	.vote-quiz-card .flex-c img {
+		width: 136px;
+		height: 130px;
+		object-fit: cover;
+	}
+
+	.subscribe-card svg {
+		transform: scale(66%);
+	}
+
+	.timer-row .flex-c {
+		gap: 0px;
+	}
+
+	.countdown-label {
+		font-size: 10px;
+	}
+
+	.countdown-num {
+		width: 4vw;
+	}
+  /* Strips */
+	.strip-content {
+		flex-direction: column;
+		gap: var(--card-pad);
+	}
+
+	.strip {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-top: 24px;
+    /* The Big First one */;
+	}
+
+	.strip.national {
+		background: var(--national-gradient);
+	}
+
+	.strip.national .tag {
+		color: var(--national-colour);
+	}
+
+	.strip.state {
+		background: var(--state-gradient);
+	}
+
+	.strip.state .tag {
+		color: var(--state-colour);
+	}
+
+	.strip.local {
+		background: var(--local-gradient);
+	}
+
+	.strip.local .tag {
+		color: var(--local-colour);
+	}
+
+	.strip .strip-head {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.strip .strip-head h1 {
+		font-family: "Playfair Display";
+		font-style: italic;
+		font-weight: 900;
+		text-align: left;
+		font-size: 3em;
+	}
+
+	.strip .strip-head .tag {
+		font-size: 10px;
+		background: white;
+	}
+
+	.strip .strip-content {
+		flex-direction: column;
+		gap: var(--card-pad);
+	}
+
+	.strip .strip-card {
+		flex-direction: row;
+		height: 116px;
+		display: flex;
+	}
+
+	.strip .strip-card img {
+		width: 116px;
+		height: 116px;
+	}
+
+	.strip .strip-card h2 {
+		font-size: 15px;
+	}
+
+	.strip .strip-card .flex-c {
+		justify-content: space-between;
+	}
+
+	.strip .strip-card:first-child {
+		flex-direction: column;
+		height: unset;
+		padding-bottom: var(--card-pad);
+	}
+
+	.strip .strip-card:first-child img {
+		width: 100%;
+		height: auto;
+	}
+
+	.strip .strip-card:first-child h2 {
+		font-size: 20px;
+	}
+}
+
+.story {
+	background-color: white;
+}
+
+.pubdate-donate {
+	font-family: 'Inter', sans-serif;
+	margin-top: 40px;
+}

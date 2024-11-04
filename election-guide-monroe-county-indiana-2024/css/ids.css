@@ -65,6 +65,7 @@ html {
     --gray70: rgb(77, 77, 77);
     --gray80: rgb(51, 51, 51);
     --gray90: rgb(26, 26, 26);
+    --darkgray: rgb(80, 80, 80);
 
     /* widths */
     --width-xxl: 1600px;
@@ -119,7 +120,7 @@ p.copyright {
 }
 
 p {
-    font-family: 'PT Serif', sans-serif;
+    /* font-family: 'PT Serif', sans-serif; */
 }
 
 .quote {
@@ -140,7 +141,7 @@ body {
 h1,
 h2 {
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 80%;
     color: white;
     font-weight: 800;
@@ -148,7 +149,7 @@ h2 {
 
 h1 {
     /* first headline */
-    padding: var(--xxs) 0 0.75em;
+    /* padding: var(--xxs) 0 0.75em; */
     font-size: 32px;
 }
 
@@ -233,7 +234,7 @@ header {
 
 .headline-container {
     top: 45%;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .header-caption {
@@ -270,6 +271,10 @@ nav ul {
     flex-flow: row wrap;
     -webkit-align-items: center;
     align-items: center;
+
+    @media only screen and (max-width: 850px) {
+        padding: 10px;
+    }
 }
 
 /* styles for li items makes the spacing/alignment work on the menu */
@@ -284,6 +289,7 @@ li.logo {
 
 li.logo svg {
     width: 70px;
+    height: 28px;
     padding-right: 5px;
 }
 
@@ -426,6 +432,8 @@ figure {
 
 .inline-image {
     max-width: var(--medium);
+    padding-left: var(--sm);
+    padding-right: var(--sm);
 }
 
 .lg-image {
@@ -575,7 +583,10 @@ h4 {
 */
 /* default link styles */
 a:link,
-a:visited {
+a:visited
+/* a:link:not(.tag),
+a:visited:not(.tag)  */
+{
     color: var(--gray90);
     text-decoration: none;
     border-bottom: 0.125em solid var(--gray90);
@@ -590,14 +601,14 @@ a:active {
 /* navbar social icons */
 nav li a:link,
 nav li a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
     border-bottom: none;
 }
 
 nav li a:hover,
 nav li a:active {
-    color: black;
+    color: white;
     text-decoration: none;
     border-bottom: none;
 }
@@ -643,10 +654,14 @@ nav li a:active {
 }
 
 .bio img {
-    width: 75px;
-    height: 75px;
+    max-width: 75px;
+    max-height: 75px;
+    min-width: 75px;
+    min-height: 75px;
     border-radius: 50%;
     margin-right: 15px;
+
+    object-fit: cover;
 }
 
 .bio p {
@@ -732,6 +747,7 @@ footer svg {
 .logo a {
     display: flex;
     border-bottom: none;
+    /* max-width: 80%;` */
 }
 
 footer .logo span {
@@ -847,7 +863,7 @@ No media query for `xs` since this is the default */
     li.item {
         display: flex !important;
         align-items: center;
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     li.item a {

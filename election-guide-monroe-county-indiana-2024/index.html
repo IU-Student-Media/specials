@@ -2,947 +2,576 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Title (pulls from metadata.json) -->
-    <title></title>
+  <!-- Title (pulls from metadata.json) -->
+  <title> Hello</title>
 
-    <!-- favicon -->
-    <link rel="SHORTCUT ICON"
-        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+  <!-- favicon -->
+  <link rel="SHORTCUT ICON"
+    href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
 
-    <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
-    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+  <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+  <!-- Local stylesheet — put all your design choices here -->
+  <!-- <link rel="stylesheet" href="css/style.css">  -->
+  <link rel="stylesheet" href="css/election.css">
+  <link rel="stylesheet" href="css/election-night.css">
+  <!-- JS -->
+  <script src="election-components.js"></script>
 
-    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
-    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
 
-    <!-- SOCIAL CARDS — Make sure to update!! -->
-    <meta property="og:url" content="http://specials.idsnews.com/election-guide-monroe-county-indiana-2024" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Your local guide to the 2024 midterm elections" /> <!-- TODO: headline -->
-    <meta property="og:description" content="All the IDS election coverage you need, in one place" />
-    <!-- TODO: abstract -->
-    <meta property="og:site_name" content="IDS News">
-    <meta property="og:image"
-        content="https://s3.amazonaws.com/snwceomedia/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.original.png" />
-    <!-- TODO: link to dominant image -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@idsnews">
-    <meta name="twitter:creator" content="@idsnews">
-    <meta name="twitter:title" content="Your local guide to the 2024 midterm elections"> <!-- TODO: headline -->
-    <meta name="twitter:description" content="All the IDS election coverage you need, in one place">
-    <!-- TODO: abstract -->
-    <meta name="twitter:image"
-        content="https://s3.amazonaws.com/snwceomedia/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.original.png">
-    <!-- TODO: link to dominant image -->
+  <!-- SOCIAL CARDS — Make sure to update!! -->
+  <meta property="og:url" content="http://specials.idsnews.com/url" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+  <meta property="og:description" content="Abstract" /> <!-- TODO: abstract -->
+  <meta property="og:site_name" content="IDS News">
+  <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@idsnews">
+  <meta name="twitter:creator" content="@idsnews">
+  <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+  <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+  <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
 
-    <!-- START Ad content: this goes in the head content -->
-    <!-- don't mess with this — it will work all on it's own :-) -->
-    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
-    <script>
-        var googletag = googletag || {};
-        googletag.cmd = googletag.cmd || [];
-    </script>
-    <script>
-        googletag.cmd.push(function () {
-            //all other leaderboards
-            var mapping1 = googletag.sizeMapping()
-                .addSize([768, 0], [728, 90]) // Desktops and Tablets
-                .addSize([0, 0], [320, 50]) // Mobile devices
-                .build();
-            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
-            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
-            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
-            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
-            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
-            googletag.pubads().enableSingleRequest();
-            googletag.pubads().collapseEmptyDivs();
-            googletag.enableServices();
-        });
-    </script>
+  <!-- START Ad content: this goes in the head content -->
+  <!-- don't mess with this — it will work all on it's own :-) -->
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function () {
+      //all other leaderboards
+      var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+      googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+    });
+  </script>
 </head>
 
 <body>
-    <!-- Google Tag Manager -->
-    <!-- (also don't have to worry about this at all) -->
-    <noscript>
-        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <script src="js/googleTagManager.js"></script>
+  <!-- Google Tag Manager -->
+  <!-- (also don't have to worry about this at all) -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script src="js/googleTagManager.js"></script>
 
-    <div class="helper"></div>
+  <div class="helper"></div>
 
-    <!--Header-->
-    <header>
-
-        <!-- Transparent navbar -->
-        <nav>
-            <ul>
-                <li class="logo">
-                    <a href="https://www.idsnews.com">
-                        <!-- IDS LOGO SVG -->
-                        <svg viewBox="0 0 163.17 68.85">
-                            <path style="fill:black;" d="M0,67.77V1.08H19.89V67.77Z" />
-                            <path style="fill:black;"
-                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
-                            <path style="fill:black;"
-                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
-                        </svg>
-                    </a>
-                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
-                </li>
-                <li class="toggle">
-                    <i class="fas fa-bars fa-lg"></i>
-                </li>
-                <li id="socials" class="item">
-                    <!-- links generate automatically from metadata.json -->
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Headline, subhed -->
-        <!-- feel free to change this up — you don't need it to have data scroll speed, 
-        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
-
-        <div class="election-container">
-            <div class="headline-container">
-                <img class="nav-icon"
-                    src="https://s3.amazonaws.com/snwceomedia/ids/05e33ba8-6b03-404d-84cb-164ecbef2690.original.png">
-
-                <!-- <h2 data-scroll-speed="3"></h2> -->
-            </div>
-
-            <div class="election-nav">
-                <!-- <a href="" target="_blank">Meet the Candidates</a> -->
-                <a href="" class="bold">ELECTIONS 2024</a>
-                <!-- change local link when published -->
-                <!-- <a href="https://specials.idsnews.com/vote-register-quiz-election-indiana/" target="_blank">How to
-                    Vote</a> -->
-                    <!-- keep this, we will need to pull the github and update copy -->
-                    <a href="meet-candidates-local/index.html">Local Candidates</a>
-                <a href="meet-candidates/index.html">State and Federal Candidates</a>
-                <!-- change local link when published -->
-                <!-- <a href="#Glossary">Glossary</a> -->
-                <!-- <a href="#Opinions">Opinions</a> -->
-                <!-- <a href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0"
-                    target="_blank">Priorities Poll</a> -->
-                <!-- <a href="https://specials.idsnews.com/live-election-update-monroe-county-2024/" target="_blank">Live
-                    Updates</a> -->
-            </div>
-        </div>
-    </header>
-
-    <!-- main article -->
-    <main>
-        <!-- <p class="caption header-caption">Caption</p> -->
-        <article>
-            <div class="title-container">
-                <img
-                    src="https://s3.amazonaws.com/snwceomedia/ids/05e33ba8-6b03-404d-84cb-164ecbef2690.original.png">
-                <h1>Your IDS guide to the 2024 Indiana primaries</h1>
-
-                <!-- <h2 data-scroll-speed="3"></h2> -->
-            </div>
-            <!-- <div class="bylines"> -->
-
-            <!-- update bylines in metadata.json -->
-            <!-- </div> -->
-            <!-- TO DO update pub_date in metadata.json -->
-
-            <!-- </div> -->
-            <!-- makes the width small (story tag) -->
-            <div class="story">
-                <div class="bylines" id="bylines"></div>
-                <p id="pubdate"></p>
-                <!-- <p id="update">Updated Nov. 8, 2024</p> -->
-                <!-- add update date here -->
-
-                <div class="blurb"> <!-- TODO: Update Copy -->
-                    <p>Election season is upon us. Indiana’s Democratic and Republican primaries will occur May 7, selecting each party’s candidates for the November general election.</p>
-                    <p>The IDS has localized our coverage to make sure you’re well-informed whenever and however you decide to vote. Along the top, you’ll find introductions to local and statewide candidates, along with our previous political coverage. Each section will be updated as we write full, detailed stories on candidates and information about each race.</p>
-                    <p>For general information on all local filings, <a href="https://www.idsnews.com/article/2024/02/monroe-county-may-primary-election-bloomington-guide-filings">click here</a>
-                        <br>
-                        For general information on all statewide filings, <a href="https://www.idsnews.com/article/2024/02/indiana-state-may-primary-monroe-county-republican-democrat">click here</a>
-                    </p>
-
-
-                    <!-- If we end up using IUSTV content, uncomment this. -->
-                    <!-- <div class="IUSTV-container">
-                        <div class="IUSTV-content">
-                            <figure class="lg-image">
-                                <h4 class="video">IUSTV livestream</h4>
-                                <div class='embed-container'> -->
-                    <!-- replace src attribute with your youtube embed link -->
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iKr7YWHwdOo"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <figcaption>
-                                    Official livestream of the 2024 IUSTV/WIUX/IDS Midterm Election Special.
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <a class="livestream" target="_blank" href="https://www.youtube.com/watch?v=iKr7YWHwdOo">
-
-                        </a>
-                    </div>
-                </div>
-                <p class="related"><span><b>Related:</b></span>
-                    <a href="https://www.idsnews.com/article/2024/10/letter-editor-ids-wiux-iustv-collab-midterm-elections"
-                        target="_blank" class="story-link">
-                        LETTER FROM THE EDITOR: The IDS, WIUX and IUSTV are collaborating for the midterm elections
-
-                    </a>
-                </p>-->
-
-                    <!-- </div> -->
-                    <!-- <div class="ad-block">
-                        <p class="ad-caption">Advertisement</p>
-                        <div class="ad-code">
-                            <div id='div-gpt-ad-1512489859064-2' align="center">
-                                <script>
-                                    googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-2`); });
-                                </script>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="story"> -->
-
-                    <div class="page-nav">
-                        <p>Jump ahead to...</p>
-                        <ul>
-                            <li>
-                                <a href="#NewStories-container">Local News Coverage</a>
-                            </li>
-
-                            <li>
-                                <a href="#MeetTheCandidatesLocal">Local Candidates</a>
-                            </li>
-
-                            <li>
-                                <a href="#MeetTheCandidates">State and Federal Candidates</a>
-                            </li>
-                            <!-- <li>
-                                <a href="#Opinions">Opinions</a>
-                            </li> -->
-                            <!-- <li>
-                                    <a href="#IUSTV">IUSTV</a>
-                                </li> -->
-                            <!-- <li>
-                                <a href="#Glossary">Glossary</a>
-                            </li> -->
-                            <li>
-                                <a href="#CountDown">Countdown to Election Day</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    
-                <div class="ad-block">
-                
-                    <div class="ad-code" style = 'align-items: center;'>
-                        <br>
-                        <div id='div-gpt-ad-1512489859064-2' align = 'center'>
-                            <script>
-                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
-                            </script>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-
-
-                </div>
-            </div>
-            
-            <div class="NewStories-container" id="NewStories-container">
-                <h3>News Coverage</h3>
-                <div class="NewStories" id="NewStories">
-                    <div class="main-story">
-                        <a href="https://www.idsnews.com/article/2024/03/indiana-s-primary-election-voter-registration-deadline-is-april-8-here-s-how-to-register"
-                            target="_blank">
-                            <div class="news-story-big">
-                                <img src="https://snworksceo.imgix.net/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.sized-1000x1000.png?w=1000"
-                                    alt="IDS News Elections 2024">
-                                <h3>Indiana’s primary election voter registration deadline is April 8. Here’s how to register</h3>
-                                <p class="author">By Mia Hilkowitz
-                                </p>
-                                <p>Indiana residents must register by April 8 to vote in the May primary election. The Indiana Democratic and Republican primaries will take place May 7. During these elections, voters will select each party’s candidates — including candidates for Indiana governor — for the November general election.  </p>
-                            </div>
-                        </a>
-                        <div class="more-stories big">
-                            <a href="https://www.idsnews.com/section/politics">More Stories &rarr;</a>
-                        </div>
-                        <!-- <a href="https://www.idsnews.com/article/2024/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion" target="_blank">
-                                <div class="other-story">
-                                    <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000" alt="">
-                                    
-                                    <p>Indiana Attorney General Rokita talks protecting individual liberties yet is against abortion. </p>
-                                </div>
-                            </a> -->
-                    </div>
-                    <div class="small-container">
-                        <div class="stories-smaller">
-                            <div class="smaller-stories">
-
-                                <a href="https://www.idsnews.com/article/2024/03/what-polling-reveals-about-indiana-politics-going-into-election-season"
-                                    target="_blank">
-                                    <div class="news-story">
-                                        <img src= "https://snworksceo.imgix.net/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.sized-1000x1000.png?w=1000"
-                                            alt="">
-                                        <p>What polling reveals about Indiana’s politics going into election season
-                                            <br>
-                                            <span class="author">By Andrew Miller</span>
-                                        </p>
-                                    </div>
-                                </a>
-
-
-                                <a href="https://www.idsnews.com/article/2024/03/democratic-gubernatorial-candidate-tamie-dixon-tatum-removed-from-ballot-consideration"
-                                    target="_blank">
-                                    <div class="news-story">
-                                        <img src= "https://snworksceo.imgix.net/ids/7aa45db8-67b6-43d9-91f0-4cfad8a1b54e.sized-1000x1000.png?w=1000"
-                                            alt="">
-                                        <p>Democratic gubernatorial candidate Tamie Dixon-Tatum removed from ballot consideration
-                                            <br>
-                                            <span class="author">By Nadia Scharf</span>
-                                        </p>
-                                    </div>
-                                </a>
-
-
-                                <a href="https://www.idsnews.com/article/2024/03/committee-removes-senate-candidate-john-rust-from-ballot-rejects-trump-challenge"
-                                    target="_blank">
-                                    <div class="news-story">
-                                        <img src= "https://snworksceo.imgix.net/ids/342735fa-d2d3-46f4-a60f-648608f06390.sized-1000x1000.jpg?w=1000"
-                                            alt="Domald Trump being escorted by policemen through a doorway">
-                                        <p>Committee removes Senate candidate John Rust from ballot, rejects Trump challenge
-                                            <br>
-                                            <span class="author">By Benjamin LeGrand</span>
-                                        </p>
-                                    </div>
-                                </a>
-
-
-                                <a href="https://www.idsnews.com/article/2024/02/indiana-attorney-general-beth-white-election-2024"
-                                    target="_blank">
-                                    <div class="news-story">
-                                        <img src= "https://snworksceo.imgix.net/ids/26b73cdb-7b6d-4a39-90c5-75cdc65c59ed.sized-1000x1000.jpg?w=1000"
-                                            alt="">
-                                        <p>AG candidate Beth White tackles human trafficking and healthcare protections in campaign
-                                            <br>
-                                            <span class="author">By Mia Hilkowitz</span>
-                                        </p>
-                                    </div>
-                                </a>
-                                
-                            </div>
-                        </div>
-                        <div class="more-stories small">
-                            <a href="https://www.idsnews.com/section/politics">More Stories &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="story">
-                
-                <div class="ad-block">
-                
-                    <div class="ad-code" style = 'align-items: center;'>
-                        <br>
-                        <div id='div-gpt-ad-1512489859064-3' align = 'center'>
-                            <script>
-                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
-                            </script>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
-
-            <div class="MeetTheCandidates" id="MeetTheCandidatesLocal">
-                <h3>Local Candidates</h3>
-                <div class="candidateImages">
-                    <div class="candidateImages2">
-                        <!-- Update with updated illos -->
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/1cf8e7ef-39e2-4159-a7ca-5a273c9082fc.sized-1000x1000.PNG"
-                            alt=""> -->
-                            <!-- Update these blurbs and get them copy edited when possible -->
-                        <h3>Meet the candidates for County Council</h3>
-                        <p>This November, there will be three at-large county council seats up for grabs. The Monroe County Council is responsible for adopting the county’s annual budget and fixing tax rates to raise funds to meet budget requirements. The council also authorizes the county’s expenditures and approves job descriptions and salaries for all Monroe County offices.</p>
-                        <a
-                            href="meet-candidates-local/index.html#county-council"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                    <div class="candidateImages2 candidateBackground">
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/bf954941-ec0e-40b7-b3dd-c487779806f7.sized-1000x1000.PNG"
-                            alt=""> -->
-                        <h3>Meet the candidates for County Commissioner</h3>
-                        <p>Two seats on the Monroe County Board of Commissioners are up for election this fall. The Monroe County Board of Commissioners is responsible for auditing and authorizing claims against the county, maintaining county properties and supervising maintenance of county roads and bridges. The Board of Commissioners can also appoint members to fill positions on various county boards, committees and commissions.
-                        </p>
-                        <a
-                            href="meet-candidates-local/index.html#comissioner"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                    <div class="candidateImages2">
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/6d7afc53-917c-4279-ba62-32cd2bbbc6b4.sized-1000x1000.PNG"
-                            alt=""> -->
-                        <h3>Meet the candidates for Local State House and Senate</h3>
-                        <!-- Fact Check Needed: Is this US or state senate?-->
-                        <p>In preparation for Election Day on Nov. 8, the Indiana Daily Student reached out to
-                            30
-                            candidates running for Bloomington, Monroe County or executive state of Indiana
-                            office to
-                            allow them to introduce themselves to voters.</p>
-                            <a 
-                            href="meet-candidates-local/index.html#house90"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="story">
-                
-                <div class="ad-block">
-                
-                    <div class="ad-code" style = 'align-items: center;'>
-                        <br>
-                        <div id='div-gpt-ad-1512489859064-4' align = 'center'>
-                            <script>
-                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
-                            </script>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
-
-            <div class="MeetTheCandidates" id="MeetTheCandidates">
-                <h3>State and Federal Candidates</h3>
-                <div class="candidateImages">
-                    <div class="candidateImages2 candidateBackground">
-                        <!-- Update with updated illos -->
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/1cf8e7ef-39e2-4159-a7ca-5a273c9082fc.sized-1000x1000.PNG"
-                            alt=""> -->
-                            <!-- Update these blurbs and get them copy edited when possible -->
-                        <h3>Meet the candidates for Governor</h3>
-                        <p>Indiana’s gubernatorial office is being fought for in a fierce Republican contest and less-balmy Democratic and Libertarian primaries. It is the most expensive gubernatorial primary in Indiana’s history.</p>
-                        <a
-                            href="meet-candidates/index.html#gov"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                    <div class="candidateImages2">
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/bf954941-ec0e-40b7-b3dd-c487779806f7.sized-1000x1000.PNG"
-                            alt=""> -->
-                        <h3>Meet the candidates for State Attorney General</h3>
-                        <p>Two Democrats — Destiny Scott Wells and Beth White — are seeking to unseat incumbent Attorney General Republican Todd Rokita, who is also running for reelection.
-                        </p>
-                        <a
-                            href="meet-candidates/index.html#att-gen"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                    <div class="candidateImages2 candidateBackground">
-                        <!-- <img src="https://s3.amazonaws.com/snwceomedia/ids/6d7afc53-917c-4279-ba62-32cd2bbbc6b4.sized-1000x1000.PNG"
-                            alt=""> -->
-                        <h3>Meet the candidates for U.S. Senate</h3>
-                        <!-- Fact Check Needed: Is this US or state senate?-->
-                        <p>Two Republicans and two Democrats are vying to represent the state in the U.S. Senate, filling an empty seat left by now-gubernatorial candidate Mike Braun.</p>
-                            <a
-                            href="meet-candidates/index.html#sen"
-                            class="candidate-button">Read More &rarr;</a>
-                    </div>
-                </div>
-            </div>
-                <!-- Todo: Update opinion links -->
-           <!-- 
-            <div class="opinions-container">
-                <div class="Opinions" id="Opinions">
-                    <h3>Opinions</h3>
-                    <div class="op-st">
-                        <div class="op-st-item op-first">
-                            <a href="https://www.idsnews.com/article/2024/10/democratic-party-faces-a-looming-disaster-in-the-senate"
-                                target="_blank">
-                                <img src="https://snworksceo.imgix.net/ids/5357a37d-b5d8-4ea2-b0d0-79183247688c.sized-1000x1000.png?w=1000"
-                                    alt="">
-                                <div class="sm-txt">
-                                    <p>The Democratic party faces a looming disaster in the Senate</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="op-st-item">
-                            <a href="https://www.idsnews.com/article/2024/10/do-political-scandals-matter-to-voters-anymore"
-                                target="_blank">
-                                <img src="https://snworksceo.imgix.net/ids/273faf65-8764-43a8-abfd-86558d3105ef.sized-1000x1000.png?w=1000"
-                                    alt="">
-                                <div class="sm-txt">
-                                    <p>Do political scandals even matter anymore?</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="op-st-item">
-                            <a href="https://www.idsnews.com/article/2024/10/midterm-polling-accuracy-what-to-expect-in-november"
-                                target="_blank">
-                                <img src="https://snworksceo.imgix.net/ids/e46ae592-b2c7-4cbd-aa64-2272685898ce.sized-1000x1000.png?w=1000"
-                                    alt="">
-                                <div class="sm-txt">
-                                    <p>Is this midterm's polling accurate, and what to expect going into November
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="op-st-item"><a
-                                href="https://www.idsnews.com/article/2024/09/debunking-the-myth-of-the-small-government-republican"
-                                target="_blank">
-                                <img src="https://snworksceo.imgix.net/ids/5a143da4-5210-47f3-93dd-daefba869fb8.sized-1000x1000.png?w=1000"
-                                    alt="">
-                                <div class="sm-txt">
-                                    <p>Debunking the myth of the 'small government' Republican</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="op-st-item">
-                            <a href="https://www.idsnews.com/article/2024/09/indiana-attorney-general-todd-rokita-talks-protecting-civil-liberties-but-is-against-abortion"
-                                target="_blank">
-                                <img src="https://snworksceo.imgix.net/ids/d3224675-71ea-4df5-8a8d-a516b29f34c7.sized-1000x1000.jpg?w=1000"
-                                    alt="">
-                                <div class="sm-txt">
-                                    <p>Indiana Attorney General Rokita talks protecting individual liberties yet is
-                                        against
-                                        abortion</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-
-
-            <!-- <div class="ad-block">
-                    <p class="ad-caption">Advertisement</p>
-                    <div class="ad-code">
-                        <div id='div-gpt-ad-1512489859064-3' align="center">
-                            <script>
-                                googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-3`); });
-                            </script>
-                        </div>
-                    </div>
-                </div> -->
-
-            <!-- <div class="WIUX" id="WIUX">
-                    <h3>WIUX</h3>
-                    <audio src="/music/good_enough.mp3" controls>	
-                        <embed 
-                            src="/music/good_enough.mp3"
-                            width="300"
-                            height="90"
-                            loop="false"
-                            autostart="false">
-                    </audio>
-                </div> -->
-                <!-- If using IUSTV content, uncomment and update -->
-            <!-- <div class="IUSTV" id="IUSTV"> -->
-            <!-- <h3>IUSTV</h3> -->
-            <!-- <div>
-                        <img class="IUSTV-img"
-                            src="https://www.iustv.com/wp-content/uploads/2021/09/IUSTV-Logo-Square-White-768x768.png">
-                    </div>
-                    <div class="IUSTV-container">
-                        <div class="IUSTV-content">
-                            <figure class="lg-image">
-                                <h4 class="video">Overview of most competitive national midterm races</h4>
-                                <div class='embed-container'> -->
-            <!-- replace src attribute with your youtube embed link -->
-            <!-- <iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/S4vrIBD5bgU?start=270"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <figcaption>
-                                    Ashton Hackman breaks down the most competitive Senate and Governor races in
-                                    this year's
-                                    midterm elections.
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="IUSTV-content">
-                            <figure class="lg-image">
-                                <h4 class="video">Bloomington City Councilman proposes an all-student district in
-                                    new map
-                                </h4>
-                                <div class='embed-container'> -->
-            <!-- replace src attribute with your youtube embed link -->
-            <!-- <iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/62IB5T6GcB0?start=90"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <figcaption>
-                                    Ashton Hackman reports on Bloomington City Councilman Stephen Volan being
-                                    willing to
-                                    give up his seat in order to have an all-student district in the new, redrawn
-                                    district
-                                    map, but not everyone agrees that a student district should be created.
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <p class="related"><span><b>Related:</b></span>
-                        <a href="https://www.idsnews.com/article/2024/10/letter-editor-ids-wiux-iustv-collab-midterm-elections"
-                            target="_blank" class="story-link">
-                            LETTER FROM THE EDITOR: The IDS, WIUX and IUSTV are collaborating for the midterm
-                            elections
-
-                        </a>
-                    </p>
-                </div> -->
-
-            <!-- <div class="ad-block">
-                    <p class="ad-caption">Advertisement</p>
-                    <div class="ad-code">
-                        <div id='div-gpt-ad-1512489859064-4' align="center">
-                            <script>
-                                googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-4`); });
-                            </script>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </article>
-        <!-- closes article so that the black background can be full-page -->
-        <!--
-        <div class="Glossary" id="Glossary">
-            <h3>Terms to know</h3>
-            <div class="acc-menu">
-                <button class="accordion">Affidavit</button>
-                <div class="panel">
-                    <p>A written statement under oath that can be shown in court as a piece of evidence.
-                        Must be
-                        signed, witnessed and notarized to remain valid. Under <a
-                            href="http://iga.in.gov/legislative/2024ss1/bills/senate/1">Senate Bill 1</a>,
-                        pregnant
-                        women seeking abortions must give their physician a signed affidavit confirming rape
-                        or
-                        incest - two of the permittable conditions for an abortion procedure. </p>
-                </div>
-                <button class="accordion">American exceptionalism</button>
-                <div class="panel">
-                    <p>A theory based on the idea of the U.S. being different than other countries and
-                        perhaps even
-                        the outlier of different conflicts, trends and resolutions. The theory implies the
-                        U.S. is
-                        superior in values, political system and history due to core principles. </p>
-                </div>
-                <button class="accordion">Assessed property value</button>
-                <div class="panel">
-                    <p>Not to be confused with the market value, given that different counties use different
-                        calculations to determine the value of one's property. By voting for the MCCSC
-                        referendum,
-                        the average Monroe County household would pay an additional $125 per year in
-                        property taxes.
-                        By month, this is approximately $10.40 of expenditure. This is because the
-                        referendum will
-                        allocate 18.5 cents for every 100 dollars to MCCSC schools. </p>
-                </div>
-                <button class="accordion">COVID-19 Learning Loss</button>
-                <div class="panel">
-                    <p>This disparity is based on student performance as the result of school closures and
-                        adjustments to virtual, hybrid and in-person learning during the COVID-19 pandemic.
-                        An
-                        increase in cases, for example, means less in-person options. This can create a more
-                        difficult transition for students and teachers. R-BB Richland District candidate <a
-                            href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2024/">Karl
-                            Boehm</a> said this topic was one of his biggest priorities if chosen to be on
-                        the
-                        school board. </p>
-                </div>
-                <button class="accordion">Electing Constitutionalist Judges</button>
-                <div class="panel">
-                    <p>This is one of Incumbent Republican U.S. Senator <a
-                            href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2024/">Todd
-                            Young's</a> priorities. A constitutionalist judge is one who interprets the U.S.
-                        Constitution with strict adherence to the written word. According to the <a
-                            href="https://plato.stanford.edu/entries/constitutionalism/">Stanford
-                            Encyclopedia of
-                            Philosophy</a>, with constitutionalism comes a certain degree of predictability
-                        and
-                        consistency. </p>
-                </div>
-                <button class="accordion">High Ability programs</button>
-                <div class="panel">
-                    <p>According to the <a href="https://www.in.gov/doe/students/high-ability-education/">Indiana
-                            Department of Education</a>, such programs provide high ability students with
-                        greater
-                        access to educational resources and infrastructure. MCCSC Monroe County District 3
-                        candidate
-                        <a href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2024/">Daniel
-                            O'Neil</a> said this was one of his priorities.
-                    </p>
-                </div>
-                <button class="accordion">Individualized Education Plan (IEP)</button>
-                <div class="panel">
-                    <p>The IEP is an institutionalized program meant to guarantee children with identified
-                        learning
-                        disabilities receive catered instruction and services while in elementary or
-                        secondary
-                        school. MCCSC District 3 candidate <a
-                            href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2024/">Ashley
-                            Pirani</a> spoke about prioritizing this issue. </p>
-                </div>
-                <button class="accordion">Inflation</button>
-                <div class="panel">
-                    <p>Inflation is an issue impacting all levels of the economy today. It refers to price
-                        increases
-                        across the market which decrease one's ability to purchase the same amount of goods.
-                        <a href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2024/">Thomas
-                            McDermott</a>, the current mayor of Hammond, Indiana, and a democratic nominee
-                        for U.S.
-                        Senator, expressed his concerns for <a
-                            href="https://www.idsnews.com/article/2024/09/democratic-senate-candidate-thomas-mcdermott-abortion-election">inflation</a>.
-                        Incumbent Republican U.S. Senator <a
-                            href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2024/">Todd
-                            Young</a> and Libertarian U.S. Senate candidate <a
-                            href="https://specials.idsnews.com/primary-monroe-county-indiana-senate-house-2024/">James
-                            Sceniak</a> spoke of inflation being one of their priorities.
-                    </p>
-                </div>
-
-                <button class="accordion">Policing</button>
-                <div class="panel">
-                    <p>Actions or activities executed by law enforcement as a means of preserving law and
-                        order.
-                        Policing is an issue this <a
-                            href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_3szNkZFZdvrDrD0">poll
-                            quiz</a> asks readers to rank in terms of political issue priorities. </p>
-                </div>
-
-                <button class="accordion">Referendum</button>
-                <div class="panel">
-                    <p>A referendum is a direct vote on a proposal, law or political issue done by citizens
-                        instead
-                        of an elected representative. The popular vote determines the outcome of the policy.
-                        How
-                        does this apply to the 2024 local elections? On Nov. 8, Monroe County residents will
-                        vote on
-                        whether they want to raise property taxes to help fund MCCSC funding. To read about
-                        the
-                        MCCSC property tax, click <a
-                            href="https://www.idsnews.com/article/2024/09/monroe-county-2024-mccsc-referendum-property-tax">here</a>.
-                    </p>
-                </div>
-
-                <button class="accordion">School Resource Officers (SROs)</button>
-                <div class="panel">
-                    <p>A group of active law-enforcement officers with the ability to arrest while in
-                        part-time or
-                        full-time positions at various schools. In May 2021, the MCCSC voted that SROs
-                        cannot be
-                        armed, but given recent cases of weapons being brought in MCCSC schools, the policy
-                        and
-                        ability to change it resurfaced. To learn which school board candidates express
-                        concern or
-                        support of arming SROs, click <a
-                            href="https://www.idsnews.com/article/2024/09/mccsc-school-board-candidates-safety-book-banning-equity-forum-election">here</a>.
-                    </p>
-                </div>
-
-                <button class="accordion">Transgender extremism</button>
-                <div class="panel">
-                    <p>Indiana Attorney General Todd Rokita spoke at the IMU on Sept. 23. During this time,
-                        he spoke
-                        out against transgender advocacy in sports and social acceptance, and he classified
-                        it as
-                        “extremism.” However, he also said he feared getting canceled for not supporting
-                        transgender
-                        rights. According to <a
-                            href="https://apnews.com/article/sports-indiana-legislature-congress-ed1a6def471929e4bc4e33473c807c49?">AP
-                            News</a>, earlier in March, the governor faced backlash when he suggested
-                        banning
-                        transgender girls from competing in girls' school sports teams. </p>
-                </div>
-                <button class="accordion">Whole Child Approach</button>
-                <div class="panel">
-                    <p>Based on a system that ensures child development and learning happens on different
-                        levels —
-                        socioemotional, cognitive, literacy, scientific and comprehension, among other
-                        levels. This
-                        is one of MCCSC District 1 candidate <a
-                            href="http://specials.idsnews.com/school-board-election-mccsc-rbb-indiana-2024/">Erin
-                            Wyatt's</a> priorities. </p>
-                </div>
-            </div>
-        </div> -->
-
-
-
-        <article>
-            <div class="story">
-                <!-- Reopens both article and story -->
-                <!-- <div class="ad-block">
-                    <p class="ad-caption">Advertisement</p>
-                    <div class="ad-code">
-                        <div id='div-gpt-ad-1512489859064-0' align="center">
-                            <script>
-                                googletag.cmd.push(function () { googletag.display(`div-gpt-ad-1512489859064-0`); });
-                            </script>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                <div class="countdown-container" id="CountDown">
-                    <h3>Countdown to the primaries</h3>
-                    <div id="countdown" class="countdown">
-                        <ul>
-                            <li class="count"><span id="days">0</span>days</li>
-                            <li><span>:</span> &nbsp;</li>
-                            <li class="count"><span id="hours">0</span>Hours</li>
-                            <li><span>:</span> &nbsp;</li>
-                            <li class="count"><span id="minutes">0</span>Minutes</li>
-                            <li id="dissapear"><span>:</span> &nbsp;</li>
-                            <li class="count" id="dissapear seconds"><span id="seconds">0</span>Seconds</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p class="donate">
-                    <em>Like what you're reading?</em><br>
-                    Support independent, award-winning student journalism.
-                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
-                </p>
-
-                
-                <div class="ad-block">
-                
-                    <div class="ad-code" style = 'align-items: center;'>
-                        <br>
-                        <div id='div-gpt-ad-1512489859064-0' align = 'center'>
-                            <script>
-                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
-                            </script>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-
-            </div>
-        </article>
-
-        <!-- small bios -->
-        <!-- <div class="author-bios"> -->
-        <!-- update bios in metadata.json -->
-        <!-- delete this div if you don't want them to show up -->
-        <!-- </div> -->
-
-    </main>
-
-    <footer>
-
-        <div class="footer-row">
+  <!--Header-->
+  <header>
+    <nav>
+      <ul role="navigation">
+        <li class="logo">
+          <!-- TODO: Sould link seperately to IDS / Elections page? -->
+          <a href="./index.html">
             <!-- IDS LOGO SVG -->
-            <div class="logo">
-                <a href="https://idsnews.com">
-                    <svg viewBox="0 0 163.17 68.85">
-                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
-                        <path style="fill:#990000;"
-                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
-                        <path style="fill:#990000;"
-                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/668e47b3-7a19-49d0-8268-01db6dcc0be6.original.svg"
+              height="50">
+          </a>
+          <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+        </li>
+        <li class="toggle">
+          <i class="fas fa-bars fa-lg"></i>
+        </li>
+
+        <!-- TODO: Add header links: Local, State, National, others? -->
+        <li class="item">
+          <a href="./national.html" class="section-item">
+            National
+          </a>
+        </li>
+        <li class="item">
+          <a href="./state.html" class="section-item">
+            State
+          </a>
+        </li>
+        <li class="item">
+          <a href="./local.html" class="section-item">
+            Local
+          </a>
+        </li>
+        <li id="socials" class="item">
+          <!-- links generate automatically from metadata.json -->
+          <!-- TODO: This creates a wonky effect when we click between pages, we might want -->
+          <!-- These to just be static -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main article -->
+  <main>
+    <article>
+      <div class="top flag-bg">
+        <div class="container">
+          <h1 class="sr-only">Election Night Coverage</h1>
+          <div class="flex-h night-of-flex">
+            <div class="top-container live-results">
+              <h2>2020 Presidential Results</h2>
+              <div class="results">
+                <div class="map">
+                  <img src="https://s3.amazonaws.com/snwceomedia/ids/3971a49d-82f0-4238-ac49-109ea1af3b47.original.png" alt="">
+                </div>
+                <div class="percentages-container">
+                  <poll-percent id="dem-percent" party="dem" value="41" label="Biden"></poll-percent>
+                  <poll-percent id="rep-percent" party="rep" value="57" label="Trump"></poll-percent>
+                  <poll-percent id="other-percent" party="other" value="2" label="Other"></poll-percent>
+                  <!-- <poll-percent id="reported-percent" party="count-report" value="47" label="Reported"></poll-percent> -->
+                </div>
+              </div>
+              <div class="compare-container">
+                <p>See how results compare with <a class="pill" href="./map_vis.html">Previous Elections
+                    <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m13.148 6.161-6.161 6.161-1.3-1.301 1.977-1.977a11.965 11.965 0 0 1 .359-.344 15.999 15.999 0 0 1 .41-.364q.435-.373.905-.742a88.924 88.924 0 0 1 .46-.358 75.536 75.536 0 0 1 .437-.337 47.985 47.985 0 0 1 .304-.23q.241-.18.439-.323l-.159.404a179.603 179.603 0 0 1-.35.07q-.185.036-.39.077a309.414 309.414 0 0 1-.059.011 12.657 12.657 0 0 1-.923.145 8.146 8.146 0 0 1-.542.048 6.54 6.54 0 0 1-.346.009H0V5.221h8.209a6.84 6.84 0 0 1 .526.021 8.513 8.513 0 0 1 .362.036q.474.057.923.14.418.078.752.153a15.786 15.786 0 0 1 .047.01l.159.404a97.702 97.702 0 0 1-.337-.251q-.302-.228-.679-.513a36.41 36.41 0 0 1-1.178-.935 39.397 39.397 0 0 1-.039-.032 20.224 20.224 0 0 1-.578-.497 14.933 14.933 0 0 1-.503-.47L5.678 1.301 6.987 0l6.161 6.161Z"
+                        vector-effect="non-scaling-stroke" stroke-linecap="round" fill-rule="evenodd" font-size="12"
+                        stroke="#000" stroke-width="mm" style="stroke:#000;stroke-width:mm;fill:#000" />
                     </svg>
-                    <span class="show-desktop" style="font-family:Inter,sans-serif;"> | Indiana Daily Student</span>
-                </a>
+                  </a></p>
+              </div>
             </div>
-            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
-                SUBSCRIBE
+            <!-- TODO: This is temporary, change this to the live updates on election night! -->
+            <div class="top-container flex-c" style="background-color: transparent;
+            padding: 0px;
+            height: 100%;
+            justify-content: space-between;
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.0);">
+              <a class="card-link" target="_blank"
+                href="https://www.idsnews.com/article/2024/11/mark-cuban-trump-tariff-iu-america">
+                <div class="card card-2">
+                  <img
+                    src="https://snworksceo.imgix.net/ids/7734a78d-bae9-4a2a-bcf0-87ee65c952b7.sized-1000x1000.jpg?w=1000">
+                  <div class="flex-c">
+                    <h2>Mark Cuban, IU professor weigh in on how Trump&rsquo;s tariff plan could affect America
+                    </h2>
+                    <div class="card-credit">
+                      <p class="author-time">Adelyn Rabbitt • Nov 1</p>
+                      <div>
+                        <div class="tag tag-national">National</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card-link" target="_blank"
+                href="https://www.idsnews.com/article/2024/10/what-do-bloomington-voters-think-indiana-presidential-election">
+                <div class="card card-2">
+                  <img
+                    src="https://snworksceo.imgix.net/ids/7e088768-ca54-4724-a1d4-7278542b5306.sized-1000x1000.png?w=1000">
+                  <div class="flex-c">
+                    <h2>What do voters in Bloomington think about the upcoming presidential election?</h2>
+                    <div class="card-credit">
+                      <p class="author-time">Natalia Nelson • Oct 30</p>
+                      <div>
+                        <div class="tag tag-local">Local</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card-link" target="_blank"
+                href="https://www.idsnews.com/article/2024/10/monroe-county-indiana-treasurer-election-2024">
+                <div class="card card-2">
+                  <img
+                    src="https://snworksceo.imgix.net/ids/7e088768-ca54-4724-a1d4-7278542b5306.sized-1000x1000.png?w=1000">
+                  <div class="flex-c">
+                    <div class="flex-c">
+                      <h2>Who is the Monroe County treasurer, and what does she do?
+                      </h2>
+                      <div class="card-credit">
+                        <p class="author-time">Theo Hawkins • Oct 30</p>
+                        <div>
+                          <div class="tag tag-local">Local</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="card-link" target="_blank"
+                href="https://www.idsnews.com/article/2024/10/josh-montagne-campaigner-profile">
+                <div class="card card-2">
+                  <img
+                    src="https://snworksceo.imgix.net/ids/d0e109f1-0b16-4480-8c1d-ec50801aa280.sized-1000x1000.jpg?w=1000">
+                  <div class="flex-c">
+                    <h2>Democrats lost the district by 74 votes in 2022. Meet the 20-year-old hoping to change that</h2>
+                    <div class="card-credit">
+                      <p class="author-time">Andrew Miller • Oct 30</p>
+                      <div>
+                        <div class="tag tag-local">Local</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-h">
+            <div class="flex-h countdown-card">
+              <h2>Polls Close</h2>
+              <div class="flex-h timer-row">
+                <div class="flex-c countdown-num">
+                  <p class="countdown-text" id="countdown-days">36</p>
+                  <p class="countdown-label">Days</p>
+                </div>
+                <div class="flex-c">
+                  <p class="countdown-text">:</p>
+                </div>
+                <div class="flex-c countdown-num">
+                  <p class="countdown-text" id="countdown-hrs">09</p>
+                  <p class="countdown-label">Hrs</p>
+                </div>
+                <div class="flex-c">
+                  <p class="countdown-text">:</p>
+                </div>
+                <div class="flex-c countdown-num">
+                  <p class="countdown-text" id="countdown-mins">38</p>
+                  <p class="countdown-label">Min</p>
+                </div>
+                <div class="flex-c">
+                  <p class="countdown-text">:</p>
+                </div>
+                <div class="flex-c countdown-num">
+                  <p class="countdown-text" id="countdown-secs">38</p>
+                  <p class="countdown-label">Secs</p>
+                </div>
+              </div>
+            </div>
+            <!-- TODO: I know this shouldn't be in the middle of the file -->
+            <script src="countdown.js"></script>
+
+            <a class="flex-h subscribe-card card" target="_blank" rel="noopener"
+              href="https://iustudioscrm-fireform.eas.iu.edu/online/embed/index/idsnewsletter">
+
+              <h2>Stay in the Loop</h2>
+              <p class="subtitle">Receive the latest from IDS</p>
+              <div class="tag">Subscribe Now
+                <svg width="10" height="9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path
+                    d="M8.766 4.248 4.518 8.496l-.967-.961 1.365-1.359a5.434 5.434 0 0 1 .23-.222q.116-.106.25-.218a8.899 8.899 0 0 1 .039-.032 30.337 30.337 0 0 1 .624-.501 36.426 36.426 0 0 1 .313-.242 29.826 29.826 0 0 1 .296-.224 139.56 139.56 0 0 1 .203-.151q.079-.059.15-.111a67.372 67.372 0 0 1 .133-.098l-.07.311q-.229.046-.557.111a9.84 9.84 0 0 1-.635.103 10.748 10.748 0 0 1-.044.005 6.025 6.025 0 0 1-.337.033 4.529 4.529 0 0 1-.308.011H0v-1.4h5.203a4.529 4.529 0 0 1 .308.011 6.025 6.025 0 0 1 .337.033q.351.044.679.105a19.281 19.281 0 0 1 .232.045q.091.018.172.036a9.624 9.624 0 0 1 .153.033l.07.311a53.49 53.49 0 0 1-.141-.104q-.224-.166-.53-.394a29.034 29.034 0 0 1-.723-.56 31.867 31.867 0 0 1-.106-.085 10.685 10.685 0 0 1-.395-.334 8.021 8.021 0 0 1-.343-.322L3.545.961 4.512 0l4.254 4.248Z"
+                    vector-effect="non-scaling-stroke" stroke-linecap="round" fill-rule="evenodd" font-size="12"
+                    stroke="#463877" stroke-width=".25mm" fill="#463877"
+                    style="stroke:#463877;stroke-width:.25mm;fill:#463877" />
+                </svg>
+              </div>
             </a>
-            <div class="socials">
-                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
-                    target="_blank"><i class="fab fa-spotify"></i></a>
+
+            <div class="flex-h subscribe-card ids-free-card card">
+
+              <h2>Keep IDS Free</h2>
+              <p class="subtitle">Independent Journalism since 1867</p>
+              <div class="flex-h">
+                <a class="tag" target="_blank" rel="noopener"
+                  href="https://www.idsnews.com/article/2024/10/letter-editor-newsrooms-vanish-gutted-student-media">Why?
+                  <svg width="10" height="9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      d="M8.766 4.248 4.518 8.496l-.967-.961 1.365-1.359a5.434 5.434 0 0 1 .23-.222q.116-.106.25-.218a8.899 8.899 0 0 1 .039-.032 30.337 30.337 0 0 1 .624-.501 36.426 36.426 0 0 1 .313-.242 29.826 29.826 0 0 1 .296-.224 139.56 139.56 0 0 1 .203-.151q.079-.059.15-.111a67.372 67.372 0 0 1 .133-.098l-.07.311q-.229.046-.557.111a9.84 9.84 0 0 1-.635.103 10.748 10.748 0 0 1-.044.005 6.025 6.025 0 0 1-.337.033 4.529 4.529 0 0 1-.308.011H0v-1.4h5.203a4.529 4.529 0 0 1 .308.011 6.025 6.025 0 0 1 .337.033q.351.044.679.105a19.281 19.281 0 0 1 .232.045q.091.018.172.036a9.624 9.624 0 0 1 .153.033l.07.311a53.49 53.49 0 0 1-.141-.104q-.224-.166-.53-.394a29.034 29.034 0 0 1-.723-.56 31.867 31.867 0 0 1-.106-.085 10.685 10.685 0 0 1-.395-.334 8.021 8.021 0 0 1-.343-.322L3.545.961 4.512 0l4.254 4.248Z"
+                      vector-effect="non-scaling-stroke" stroke-linecap="round" fill-rule="evenodd" font-size="12"
+                      stroke="#463877" stroke-width=".25mm" fill="#000000"
+                      style="stroke:#000000;stroke-width:.25mm;fill:#000000" />
+                  </svg>
+                </a>
+
+                <a class="tag" target="_blank" rel="noopener" href="https://www.idsnews.com/page/donate">Support IDS
+                  <svg width="10" height="9" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      d="M8.766 4.248 4.518 8.496l-.967-.961 1.365-1.359a5.434 5.434 0 0 1 .23-.222q.116-.106.25-.218a8.899 8.899 0 0 1 .039-.032 30.337 30.337 0 0 1 .624-.501 36.426 36.426 0 0 1 .313-.242 29.826 29.826 0 0 1 .296-.224 139.56 139.56 0 0 1 .203-.151q.079-.059.15-.111a67.372 67.372 0 0 1 .133-.098l-.07.311q-.229.046-.557.111a9.84 9.84 0 0 1-.635.103 10.748 10.748 0 0 1-.044.005 6.025 6.025 0 0 1-.337.033 4.529 4.529 0 0 1-.308.011H0v-1.4h5.203a4.529 4.529 0 0 1 .308.011 6.025 6.025 0 0 1 .337.033q.351.044.679.105a19.281 19.281 0 0 1 .232.045q.091.018.172.036a9.624 9.624 0 0 1 .153.033l.07.311a53.49 53.49 0 0 1-.141-.104q-.224-.166-.53-.394a29.034 29.034 0 0 1-.723-.56 31.867 31.867 0 0 1-.106-.085 10.685 10.685 0 0 1-.395-.334 8.021 8.021 0 0 1-.343-.322L3.545.961 4.512 0l4.254 4.248Z"
+                      vector-effect="non-scaling-stroke" stroke-linecap="round" fill-rule="evenodd" font-size="12"
+                      stroke="#463877" stroke-width=".25mm" fill="#000000"
+                      style="stroke:#000000;stroke-width:.25mm;fill:#000000" />
+                  </svg>
+                </a>
+              </div>
+
             </div>
+          </div>
+
         </div>
-        <div class="links">
-            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
-            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
-            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
-            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
-                    target="_blank">Advertising</a></p>
-            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
-            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+      </div>
+      <!-- TODO: Do we want this above the other stories in mobile? -->
+      <!-- Is there an easy way that doesn't involve changing layout? -->
+
+
+      </div>
+      </div>
+
+      <!-- TODO: Move the tag to the bottom on mobile -->
+      <div class="strip national">
+        <div class="container">
+          <div class="strip-head">
+            <h1>National</h1>
+            <a href="./national.html" class="tag">More National Coverage</a>
+          </div>
+          <div class="strip-content">
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/libertarian-state-candidate-andy-horning">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/5b6a44c7-a437-4295-a3ed-758f7224b54a.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>Meet Libertarian senate candidate Andy Horning</h2>
+                  <div class="card-credit">
+                    <p>Andrew Miller • Oct 23</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/08/rfk-jr-drops-out-presidential-race-endorses-trump">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/a7d424fc-7243-44f0-8d2e-0daa37944c0f.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>RFK Jr. drops out of the presidential race, endorses Trump</h2>
+                  <div class="card-credit">
+                    <p>Andrew Miller • Aug 23</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/08/photos-democratic-national-convention-day-4">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/24995a31-f77e-4293-9bfb-26f24945e8ca.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>PHOTOS: Democratic National Convention day 4</h2>
+                  <div class="card-credit">
+                    <p>Briana Pace • Aug 23</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/08/kamala-harris-accepts-nomination-democratic-indiana-support">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/7b3cca1a-db97-4994-ad1a-5bc0a25af0f7.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>Harris accepts Democratic nomination, Indiana delegates express support</h2>
+                  <div class="card-credit">
+                    <p>Andrew Miller • Sept 12</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
         </div>
-        <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
-    </footer>
+      </div>
 
-    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/ads.js"></script>
-    <script src="js/ids.js"></script>
-    <script src="js/metadata.js"></script>
-    <script>
-        function myAnchor(value) {
-            var top = document.getElementById(value).offsetTop;
-            window.scrollTo(0, top);
-            //document.getElementById(value).scrollIntoView();
-        }
-    </script>
-    <script>
-        (function () {
-            const second = 1000,
-                minute = second * 60,
-                hour = minute * 60,
-                day = hour * 24;
+      <div class="strip state">
+        <div class="container">
+          <div class="strip-head">
+            <h1>State</h1>
+            <a href="./state.html" class="tag">More State Coverage</a>
+          </div>
+          <div class="strip-content">
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/indiana-constitutional-amendment-ballot-election-2024">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.sized-1000x1000.png?w=1000">
+                <div class="flex-c">
+                  <h2>What to know about the constitutional amendment on the Indiana ballot</h2>
+                  <div class="card-credit">
+                    <p class="author-time">Adelyn Rabbit • Oct 29</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/indiana-bloomington-disabled-voters-election-2024-turnout">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/9fccdbfc-1fbc-4b6b-87ac-7cf437bac250.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>&lsquo;Just like everybody else&rsquo;: advocates advance voting accessibility for disabled
+                    Hoosiers</h2>
+                  <div class="card-credit">
+                    <p>Jack Forrest • Oct 28</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/braun-mccormick-rainwater-governor-indiana-election">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.sized-1000x1000.png?w=1000">
+                <div class="flex-c">
+                  <h2>Braun, McCormick, Rainwater square off in final Indiana gubernatorial debate</h2>
+                  <div class="card-credit">
+                    <p class="author-time">Adelyn Rabbit • Oct 25</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/iu-professors-bloomington-state-legislature">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/4684fc8b-244a-4d6e-a44d-a3f6ec27c88c.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <div class="flex-c">
+                    <h2>Meet the IU professors representing Bloomington in the state legislature</h2>
+                    <div class="card-credit">
+                      <p class="author-time">Andrew Miller • Oct 23</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
 
-            //I'm adding this section so I don't have to keep updating this pen every year :-)
-            //remove this if you don't need it
-            let today = new Date(),
-                dd = String(today.getDate()).padStart(2, "0"),
-                mm = String(today.getMonth() + 1).padStart(2, "0"),
-                yyyy = today.getFullYear(),
-                nextYear = 2024,
-                dayMonth = "05/07/",
-                birthday = dayMonth + yyyy;
+      <div class="strip local">
+        <div class="container">
+          <div class="strip-head">
+            <h1>Local</h1>
+            <a href="./local.html" class="tag">More Local Coverage</a>
+          </div>
+          <div class="strip-content">
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/indiana-where-to-find-polls-vote-election-2024-free-ride">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/88cb8c42-dafe-4f90-b07d-abc3f94a72a1.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <h2>Get to the polls: Find your location and get a free ride</h2>
+                  <div class="card-credit">
+                    <p class="author-time">Chloe Oden • Oct 28</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/monroe-county-surveyor-reelection-trohn-enright-randolph">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/8e772bd5-4600-4f82-a931-d56a17c01153.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <div class="flex-c">
+                    <h2>Meet Trohn Enright-Randolph, Monroe County’s surveyor up for re-election</h2>
+                    <div class="card-credit">
+                      <p class="author-time">Andrew Miller • Oct 20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/indiana-house-district-62-candidates-2024">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/66828ceb-ad2b-4b00-8031-fabffc05d9f6.sized-1000x1000.jpg?w=1000">
+                <div class="flex-c">
+                  <div class="flex-c">
+                    <h2>Meet the candidates vying for Indiana House District 62</h2>
+                    <div class="card-credit">
+                      <p class="author-time">Andrew Miller • Oct 18</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="card-link" target="_blank"
+              href="https://www.idsnews.com/article/2024/10/monroe-county-indiana-auditor-election-what-does-an-auditor-do">
+              <div class="card strip-card">
+                <img
+                  src="https://snworksceo.imgix.net/ids/100b7026-1db0-4a71-a649-b68cdc1a7796.sized-1000x1000.png?w=1000">
+                <div class="flex-c">
+                  <h2> Who is the Monroe County auditor and what does she do?</h2>
+                  <div class="card-credit">
+                    <p class="author-time">Molly Gregory • Oct 10</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
 
-            today = mm + "/" + dd + "/" + yyyy;
-            if (today > birthday) {
-                birthday = dayMonth + nextYear;
-            }
-            //end
+      <div class="story pubdate-donate">
+        <p id="pubdate"></p>
+        <p class="donate">
+          <em>Like what you're reading?</em><br>
+          Support independent, award-winning student journalism.
+          <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+        </p>
+      </div>
+    </article>
+  </main>
 
-            const countDown = new Date(birthday).getTime(),
-                x = setInterval(function () {
+  <footer>
 
-                    const now = new Date().getTime(),
-                        distance = countDown - now;
+    <div class="footer-row">
 
-                    document.getElementById("days").innerText = Math.floor(distance / (day)),
-                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)) + 1,
-                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+      <!-- IDS LOGO SVG -->
+      <div class="logo">
+        <a href="https://idsnews.com">
+          <svg viewBox="0 0 163.17 68.85">
+            <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+            <path style="fill:#990000;"
+              d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+            <path style="fill:#990000;"
+              d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+          </svg>
+          <span class="show-desktop"> | Indiana Daily Student</span>
+        </a>
+      </div>
+      <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+        SUBSCRIBE
+      </a>
+      <div class="socials">
+        <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1" target="_blank"><i
+            class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="links">
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+      <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+      <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+      <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+          target="_blank">Advertising</a></p>
+      <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+    </div>
+    <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+  </footer>
 
-                    //do something later when date is reached
-                    if (distance < 0) {
-                        document.getElementById("countdown").style.display = "none";
-                        document.getElementById("content").style.display = "block";
-                        clearInterval(x);
-                    }
-                    //seconds
-                }, 500)
-        }());
-    </script>
+  <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/ids.js"></script>
+  <script src="js/metadata/metadata-index.js"></script>
+  <!-- Live Feed -->
+  <script src="./feed.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,350 @@
+<!-- TODO: Use this as a template if you want, this shouldn't pub -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Title (pulls from metadata.json) -->
+  <title> Hello</title>
+
+  <!-- favicon -->
+  <link rel="SHORTCUT ICON"
+    href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+  <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+  <!-- Local stylesheet — put all your design choices here -->
+  <!-- <link rel="stylesheet" href="css/style.css">  -->
+  <link rel="stylesheet" href="css/election.css">
+  <!-- JS -->
+  <script src="election-components.js"></script>
+
+  <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+  <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+  <!-- SOCIAL CARDS — Make sure to update!! -->
+  <meta property="og:url" content="http://specials.idsnews.com/url" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Headline" /> <!-- TODO: headline -->
+  <meta property="og:description" content="Abstract" /> <!-- TODO: abstract -->
+  <meta property="og:site_name" content="IDS News">
+  <meta property="og:image" content="" /> <!-- TODO: link to dominant image -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@idsnews">
+  <meta name="twitter:creator" content="@idsnews">
+  <meta name="twitter:title" content="Headline"> <!-- TODO: headline -->
+  <meta name="twitter:description" content="Abstract"> <!-- TODO: abstract -->
+  <meta name="twitter:image" content=""> <!-- TODO: link to dominant image -->
+
+  <!-- START Ad content: this goes in the head content -->
+  <!-- don't mess with this — it will work all on it's own :-) -->
+  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+  <script>
+    googletag.cmd.push(function () {
+      //all other leaderboards
+      var mapping1 = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90]) // Desktops and Tablets
+        .addSize([0, 0], [320, 50]) // Mobile devices
+        .build();
+      googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+      googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.pubads().collapseEmptyDivs();
+      googletag.enableServices();
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager -->
+  <!-- (also don't have to worry about this at all) -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script src="js/googleTagManager.js"></script>
+
+  <div class="helper"></div>
+
+  <!--Header-->
+  <header>
+    <nav>
+      <ul role="navigation">
+        <li class="logo">
+          <a href="./index.html">
+            <!-- IDS LOGO SVG -->
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/668e47b3-7a19-49d0-8268-01db6dcc0be6.original.svg" height="50">
+          </a>
+          <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+        </li>
+        <li class="toggle">
+          <i class="fas fa-bars fa-lg"></i>
+        </li>
+
+        <li class="item">
+          <a href="./national.html" class="section-item">
+            National
+          </a>
+        </li>
+        <li class="item">
+          <a href="./state.html" class="section-item">
+            State
+          </a>
+        </li>
+        <li class="item">
+          <a href="./local.html" class="section-item">
+            Local
+          </a>
+        </li>
+        <li id="socials" class="item">
+          <!-- links generate automatically from metadata.json -->
+          <!-- TODO: This creates a wonky effect when we click between pages, we might want -->
+          <!-- These to just be static -->
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main article -->
+  <main>
+    <article>
+      <div class="top flag-bg">
+        <div class="graphs-container">
+          <div class="flex-c">
+            <h1 class="meet-heading">U.S. House • IN-9</h1>
+            
+            <div class="flex-h nutrition-cards">
+              <a href="#c1" class="card nutrition-card">
+                <img class="face face-d" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+                <h2>Erin Houchin</h2>
+                <p class="party party-d">Democrat</p>
+                <div class="pills">
+                  <p>Inflation</p>
+                  <p>Anti-Abortion</p>
+                  <p>Pro-Gun</p>
+                  <p>Pro-Police</p>
+                </div>
+                <div class="current">
+                  <h4>Current Position</h4>
+                  <p>U.S Representative (R-Indiana)</p>
+                </div>
+                <div class="tag">
+                  More about Erin Houchin
+                </div>
+              </a>
+              <a href="#c2" class="card nutrition-card">
+                <img class="face face-r" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+                <h2>Erin Houchin</h2>
+                <p class="party party-r">Republican</p>
+                <div class="pills">
+                  <p>Inflation</p>
+                  <p>Anti-Abortion</p>
+                  <p>Pro-Gun</p>
+                  <p>Pro-Police</p>
+                </div>
+                <div class="current">
+                  <h4>Current Position</h4>
+                  <p>U.S Representative (R-Indiana)</p>
+                </div>
+                <div class="tag">
+                  More about Erin Houchin
+                </div>
+              </a>
+              <a href="#c3" class="card nutrition-card">
+                <img class="face face-l" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+                <h2>Erin Houchin</h2>
+                <p class="party party-l">Libertarian</p>
+                <div class="pills">
+                  <p>Inflation</p>
+                  <p>Anti-Abortion</p>
+                  <p>Pro-Gun</p>
+                  <p>Pro-Police</p>
+                </div>
+                <div class="current">
+                  <h4>Current Position</h4>
+                  <p>U.S Representative (R-Indiana)</p>
+                </div>
+                <div class="tag">
+                  More about Erin Houchin
+                </div>
+              </a>
+            </div>
+
+            <a class="flex-h subscribe-card card" style="margin: var(--card-pad) auto;"
+              href="https://iustudioscrm-fireform.eas.iu.edu/online/embed/index/idsnewsletter">
+              <div>
+                <svg width="60" height="68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 26.833c0-5 1.111-9.583 3.333-13.75C5.556 8.917 8.528 5.444 12.25 2.667l3 4C12.139 9 9.653 11.903 7.792 15.375 5.93 18.847 5 22.667 5 26.833H0Zm55 0c0-4.166-.93-7.986-2.792-11.458-1.86-3.472-4.347-6.375-7.458-8.708l3-4c3.722 2.777 6.694 6.25 8.917 10.416C58.889 17.25 60 21.833 60 26.833h-5Zm-51.667 30.5v-5H10V27c0-4.667 1.375-8.847 4.125-12.542C16.875 10.764 20.5 8.444 25 7.5V5.667c0-1.39.486-2.57 1.458-3.542C27.431 1.153 28.611.667 30 .667c1.389 0 2.57.486 3.542 1.458S35 4.278 35 5.667V7.5c4.5.944 8.125 3.264 10.875 6.958C48.625 18.153 50 22.333 50 27v25.333h6.667v5H3.333Zm26.667 10c-1.833 0-3.403-.653-4.708-1.958-1.306-1.306-1.959-2.875-1.959-4.708h13.334c0 1.833-.653 3.402-1.959 4.708-1.305 1.305-2.875 1.958-4.708 1.958Zm-15-15h30V27c0-4.167-1.458-7.708-4.375-10.625S34.167 12 30 12s-7.708 1.458-10.625 4.375S15 22.833 15 27v25.333Z"
+                    fill="#fff" />
+                </svg>
+              </div>
+
+              <h2>Stay Up-to-Date with Elections</h2>
+              <!-- TODO: Arrow svg -->
+              <div class="tag">Subscribe -></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+
+        <!-- TODO: Map Maybe -->
+
+        <!-- TODO: Candidate Paragraphs -->
+        <div id="c1" class="candidate-graph">
+          <div class="graph-head">
+            <img class="face face-d" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+            <div class="flex-c">
+              <h2>Erin Houchin</h2>
+              <div class="pills">
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+              </div>
+            </div>
+          </div>
+          <div class="graph-body">
+            <p>
+
+            </p> 
+            <p class="related"><span><b>Related:</b></span>
+              <a href=""
+                target="_blank" class="story-link">
+                
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div id="c2" class="candidate-graph">
+          <div class="graph-head">
+            <img class="face face-r" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+            <div class="flex-c">
+              <h2>Erin Houchin</h2>
+              <div class="pills">
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+              </div>
+            </div>
+          </div>
+          <div class="graph-body">
+            <p>
+
+            </p> 
+            <p class="related"><span><b>Related:</b></span>
+              <a href=""
+                target="_blank" class="story-link">
+                
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div id="c3" class="candidate-graph">
+          <div class="graph-head">
+            <img class="face face-l" src="https://s3.amazonaws.com/snwceomedia/ids/b388d732-a376-49e4-8784-9a465f15bfd9.original.jpg">
+            <div class="flex-c">
+              <h2>Erin Houchin</h2>
+              <div class="pills">
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+                <p>Inflation</p>
+              </div>
+            </div>
+          </div>
+          <div class="graph-body">
+            <p>
+
+            </p> 
+            <p class="related"><span><b>Related:</b></span>
+              <a href=""
+                target="_blank" class="story-link">
+                
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="story pubdate-donate">
+        <p id="pubdate"></p>
+        <p class="donate">
+          <em>Like what you're reading?</em><br>
+          Support independent, award-winning student journalism.
+          <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+        </p>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-row">
+
+      <!-- IDS LOGO SVG -->
+      <div class="logo">
+        <a href="https://idsnews.com">
+          <svg viewBox="0 0 163.17 68.85">
+            <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+            <path style="fill:#990000;"
+              d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+            <path style="fill:#990000;"
+              d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+          </svg>
+          <span class="show-desktop"> | Indiana Daily Student</span>
+        </a>
+      </div>
+      <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+        SUBSCRIBE
+      </a>
+      <div class="socials">
+        <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1" target="_blank"><i
+            class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="links">
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+      <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+      <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+      <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+          target="_blank">Advertising</a></p>
+      <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+      <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+    </div>
+    <p class="copyright"><small>All content &copy; 2024 Indiana Daily Student</small></p>
+  </footer>
+
+  <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/ids.js"></script>
+  <script src="js/metadata.js"></script>
+</body>
+
+</html>
