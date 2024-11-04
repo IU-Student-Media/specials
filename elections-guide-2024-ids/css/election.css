@@ -38,7 +38,7 @@ nav {
 }
 
 nav a:link:not(.tag),
-nav a:visited:not(.tag) {
+  nav a:visited:not(.tag) {
 	border-bottom: none;
 }
 
@@ -63,9 +63,9 @@ nav .item {
 }
 
 nav li a:link,
-nav li a:visited,
-nav li a:hover,
-nav li a:active {
+  nav li a:visited,
+  nav li a:hover,
+  nav li a:active {
 	color: black;
 }
 
@@ -102,7 +102,7 @@ header {
 
 @media only screen and (max-width: 850px) {
 	header {
-    /* padding: 15px; */
+      /* padding: 15px; */
 		height: 70px;
 	}
 }
@@ -114,7 +114,7 @@ header {
 
 @media only screen and (max-width: var(--mobile-snap)) {
 	.top,
-  .strip {
+    .strip {
 		padding: var(--md);
 	}
 }
@@ -295,7 +295,7 @@ a:visited.card {
 .card-2 .flex-c h2 {
 	margin: 0px calc(var(--card-pad)/2) 0px var(--card-pad);
 	font-size: calc(1vw/.5);
-  /* max-height: 50px; */
+      /* max-height: 50px; */
 	overflow-y: hidden;
 }
 
@@ -484,6 +484,37 @@ img.face-l {
 
 img.face {
 	object-fit: cover;
+}
+
+#live-feed h1 {
+	color: black;
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 900;
+	text-align: left;
+	font-size: 3em;
+}
+
+#live-feed h2 {
+	font-size: 20px;
+}
+
+#live-feed .card-credit p {
+	font-size: 16px;
+}
+
+#live-feed a {
+	display: block;
+}
+
+#live-feed #feed-container {
+	display: flex;
+	flex-direction: column;
+	gap: var(--card-pad);
+}
+
+#live-feed .update-card {
+  /* display: flex; */;
 }
 
 /* The Cards that fill the whole width */
@@ -737,7 +768,7 @@ a.tag:active {
 
 .strip .strip-card img {
 	width: 100%;
-  /* height: 180px !important; */;
+      /* height: 180px !important; */;
 }
 
 .strip .strip-card h2 {
@@ -753,7 +784,7 @@ a.tag:active {
 .strip .strip-card .card-credit p {
 	font-size: 12px;
 	justify-self: end;
-  /* font-weight: normal; */;
+      /* font-weight: normal; */;
 }
 
 /* Countdown and Subscribe */
@@ -771,14 +802,14 @@ a.tag:active {
 }
 
 .countdown-card h2,
-.subscribe-card h2 {
+  .subscribe-card h2 {
 	color: white;
 	font-size: calc(1vw/.3);
 }
 
 @media (min-width: 1200px) {
 	.countdown-card h2,
-  .subscribe-card h2 {
+      .subscribe-card h2 {
 		font-size: 30px;
 	}
 }
@@ -1041,8 +1072,8 @@ a.tag:active {
 	}
 
 	.vote-quiz-card h2,
-  .countdown-card h2,
-  .subscribe-card h2 {
+    .countdown-card h2,
+    .subscribe-card h2 {
 		font-size: calc(1vw/.25);
 		color: white;
 	}
@@ -1050,8 +1081,8 @@ a.tag:active {
 
 @media screen and (max-width: 712px) and (min-width: 420px) {
 	.vote-quiz-card h2 div,
-  .countdown-card h2 div,
-  .subscribe-card h2 div {
+      .countdown-card h2 div,
+      .subscribe-card h2 div {
 		font-size: calc(1vw/.4);
 	}
 }

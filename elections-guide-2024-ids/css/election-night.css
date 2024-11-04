@@ -1,0 +1,309 @@
+.night-of-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.night-of-flex * {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.top-container {
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+    max-height: 778.057px;
+    margin-bottom: 10px; 
+}
+
+.top-container h2 {
+    align-self: flex-start;
+    margin: 10px 0 20px 0;
+}
+
+.live-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.live-results .results {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.results .percentages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.compare-container {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    color: #757575;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 700;
+}
+
+.compare-container p { 
+    font-size: 15px;
+}
+
+.compare-container .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    color: #000000;
+    font-weight: 700;
+    font-style: normal;
+    padding: 3px 10px;
+    margin-left: 5px;
+}
+
+.perc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    height: 130px;
+}
+
+.perc.dem {
+    background: #335ECD;
+    color: #FFF;
+}
+
+.perc.rep {
+    background: #C12222;
+    color: #FFF;
+}
+
+.perc.other {
+    background: #DAA520;
+    color: #FFF;
+}
+
+.perc.count-report {
+    background: #ffffff;
+    color: #000000;
+}
+
+.perc .value {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.perc .candidate {
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.live-update {
+    overflow: hidden;
+}
+
+
+.live-updates .ticker {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    gap: 15px;
+    height: 670px;
+    overflow-y: scroll;
+}
+
+.ticker article {
+    display: flex;
+    padding: 15px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    border: 1.5px solid #d8d8d8;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.02);
+}
+
+.ticker article h3 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.ticker article .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.head .author {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.head .time {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #949494;
+}
+
+.countdown-card, .subscribe-card {
+    max-width: unset;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+.countdown-card h2, .subscribe-card h2 {
+    font-size: 1.4em;
+}
+
+.subscribe-card {
+    flex-direction: column;
+}
+
+.subscribe-card .subtitle {
+    color: white;
+    font-size: 1em;
+}
+
+.subscribe-card h2, .subscribe-card p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.subscribe-card .tag {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.ids-free-card {
+    background: black;
+}
+
+.ids-free-card .tag {
+    color: black;
+}
+
+@media only screen and (max-width: 1009px) {
+    .night-of-flex {
+        flex-direction: column;
+    }
+    .top-container {
+        width: 100%;
+    }
+    .top-container .results {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-container .ticker {
+        max-height: 60vh;
+    }
+
+    .map {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .map * {
+        max-height: 40vh;
+    }
+
+    .results .percentages-container {
+        flex-direction: row;
+        gap: 5px; 
+        height: min-content;
+        align-items: stretch;
+    }
+
+    .perc {
+        padding: 15px;
+        width: min-content;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .perc .value {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    .perc .candidate {
+        font-size: 1em;
+    }
+
+    .compare-container p {
+        margin: 20px 0 0 0; 
+    }
+
+    .flex-h:has(.countdown-card) {
+        flex-flow: row wrap;
+    }
+
+    
+    .ticker article h3 {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    
+    .ticker article .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    
+    .head .author {
+        font-size: .8em;
+        line-height: .8em;
+    }
+    
+    .head .time {
+        font-size: .8em;
+        line-height: .8em;
+    }
+
+}

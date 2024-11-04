@@ -1,4 +1,3 @@
-<!-- TODO: Use this as a template if you want, this shouldn't pub -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,6 +19,7 @@
   <!-- Local stylesheet — put all your design choices here -->
   <!-- <link rel="stylesheet" href="css/style.css">  -->
   <link rel="stylesheet" href="css/election.css">
+  <link rel="stylesheet" href="css/map.css">
   <!-- JS -->
   <script src="election-components.js"></script>
 
@@ -82,6 +82,7 @@
     <nav>
       <ul role="navigation">
         <li class="logo">
+          <!-- TODO: Sould link seperately to IDS / Elections page? -->
           <a href="./index.html">
             <!-- IDS LOGO SVG -->
             <img src="https://s3.amazonaws.com/snwceomedia/ids/668e47b3-7a19-49d0-8268-01db6dcc0be6.original.svg"
@@ -93,18 +94,19 @@
           <i class="fas fa-bars fa-lg"></i>
         </li>
 
+        <!-- TODO: Add header links: Local, State, National, others? -->
         <li class="item">
-          <a href="./national.html" class="section-item">
+          <a href="./national.html">
             National
           </a>
         </li>
         <li class="item">
-          <a href="./state.html" class="section-item">
+          <a href="./state.html">
             State
           </a>
         </li>
         <li class="item">
-          <a href="./local.html" class="section-item">
+          <a href="./local.html">
             Local
           </a>
         </li>
@@ -121,93 +123,106 @@
   <main>
     <article>
       <div class="top flag-bg">
-        <div class="graphs-container">
-          <div class="flex-c">
-            <h1 class="meet-heading">IN Senate • District 40</h1>
-
-            <div class="flex-h nutrition-cards">
-              <a href="#c1" class="card nutrition-card">
-                <img class="face face-d"
-                  src="https://s3.amazonaws.com/snwceomedia/ids/fc9232e4-0fcd-4fe9-85c0-09c04d22f6fd.original.jpg">
-                <h2>Shelli Yoder</h2>
-                <p class="party party-d">Democrat</p>
-                <div class="pills">
-                  <p>Environmental protections</p>
-                  <p>Pro-abortion</p>
-                  <p>Raise teacher salaries</p>
-                </div>
-                <div class="current">
-                  <h4>Current Position</h4>
-                  <p>Indiana State Senator</p>
-                </div>
-                <div class="tag">
-                  More about Shelli Yoder
-                </div>
-              </a>
-            </div>
-
-            <a class="flex-h subscribe-card card" style="margin: var(--card-pad) auto;"
-              href="https://iustudioscrm-fireform.eas.iu.edu/online/embed/index/idsnewsletter">
+        <div class="container">
+          <div class="strip title">
+            <h1>Explore Maps</h1>
+            <p>See how Indiana has voted in the past and explore trends in its politics with our interactive graphic.
+            </p>
+          </div>
+          <div class="interact-container">
+            <div class="controls">
               <div>
-                <svg width="60" height="68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 26.833c0-5 1.111-9.583 3.333-13.75C5.556 8.917 8.528 5.444 12.25 2.667l3 4C12.139 9 9.653 11.903 7.792 15.375 5.93 18.847 5 22.667 5 26.833H0Zm55 0c0-4.166-.93-7.986-2.792-11.458-1.86-3.472-4.347-6.375-7.458-8.708l3-4c3.722 2.777 6.694 6.25 8.917 10.416C58.889 17.25 60 21.833 60 26.833h-5Zm-51.667 30.5v-5H10V27c0-4.667 1.375-8.847 4.125-12.542C16.875 10.764 20.5 8.444 25 7.5V5.667c0-1.39.486-2.57 1.458-3.542C27.431 1.153 28.611.667 30 .667c1.389 0 2.57.486 3.542 1.458S35 4.278 35 5.667V7.5c4.5.944 8.125 3.264 10.875 6.958C48.625 18.153 50 22.333 50 27v25.333h6.667v5H3.333Zm26.667 10c-1.833 0-3.403-.653-4.708-1.958-1.306-1.306-1.959-2.875-1.959-4.708h13.334c0 1.833-.653 3.402-1.959 4.708-1.305 1.305-2.875 1.958-4.708 1.958Zm-15-15h30V27c0-4.167-1.458-7.708-4.375-10.625S34.167 12 30 12s-7.708 1.458-10.625 4.375S15 22.833 15 27v25.333Z"
-                    fill="#fff" />
-                </svg>
+                <label for="analyze-type">What do you want to explore?</label>
+                <select name="analyze-type" id="analyze-type">
+                  <option value="comp">Compare Past Elections</option>
+                  <option value="view">View Past Results</option>
+                </select>
               </div>
 
-              <h2>Stay Up-to-Date with Elections</h2>
-              <!-- TODO: Arrow svg -->
-              <div class="tag">Subscribe -></div>
-            </a>
-          </div>
-        </div>
-      </div>
+              <div id="view-div">
+                <label for="view-select">Choose Race:</label>
+                <select name="view-select" id="view-select">
+                  <option value="16SEN">2016 Senatorial</option>
+                  <option value="16GOV">2016 Gubernatorial</option>
+                  <option value="16PRES">2016 Presidential</option>
+                  <option value="18SEN">2018 Senatorial</option>
+                  <option value="20GOV">2020 Gubernatorial</option>
+                </select><span> Precinct-level results</span>
+                <p>Vote Margins by Party</p>
+              </div>
 
-      <div class="container">
+              <div id="comp-div">
+                <label for="left">Voting Margin Shift from the</label>
+                <select name="left" id="left">
+                  <option value="16_SEN">2016 Senatorial</option>
+                  <option value="16_GOV">2016 Gubernatorial</option>
+                  <option value="16_PRES">2016 Presidential</option>
+                  <option value="18_SEN">2018 Senatorial</option>
+                  <option value="20_GOV">2020 Gubernatorial</option>
+                </select>
 
-
-        <!-- TODO: Map Maybe -->
-
-        <!-- TODO: Candidate Paragraphs -->
-        <div id="c1" class="candidate-graph">
-          <div class="graph-head">
-            <img class="face face-d"
-              src="https://s3.amazonaws.com/snwceomedia/ids/fc9232e4-0fcd-4fe9-85c0-09c04d22f6fd.original.jpg">
-            <div class="flex-c">
-              <h2>Shelli Yoder</h2>
-              <div class="pills">
-                <p>Environmental protections</p>
-                <p>Pro-abortion</p>
-                <p>Raise teacher salaries</p>
+                <label for="right">to</label>
+                <select name="right" id="right">
+                  <option value="16_SEN">2016 Senatorial</option>
+                  <option value="16_GOV">2016 Gubernatorial</option>
+                  <option value="16_PRES">2016 Presidential</option>
+                  <option value="18_SEN">2018 Senatorial</option>
+                  <option value="20_GOV">2020 Gubernatorial</option>
+                  <option value="20_PRES">2020 Presidential</option>
+                </select>
+                <span>elections.</span>
+                <p>Precinct-level shifts in Indiana</p>
+              </div>
+              <div class="map-container hide">
+                <img id="img-l" class="map-img" src="./maps/compare_svg/VoteShift_16_GOV_to_16_PRES.svg">
+                <!-- <img id="img-r" class="map-img" src="./maps/outputs/compare_svg/VoteShift_16_GOV_to_16_PRES.svg"> -->
               </div>
             </div>
           </div>
-          <div class="graph-body">
-            <p>
-              Shelli Yoder is running for Indiana&rsquo;s 40th State Senate District, where she&rsquo;s been since 2020. She lives
-              in Bloomington and earned two master's degrees in counseling and human services and divinity from IU South
-              Bend and Vanderbilt University respectively. She&rsquo;s a senior lecturer at the Kelley School of Business.
-            </p>
-            <p class="related"><span><b>Related:</b></span>
-              <a href="https://www.idsnews.com/article/2024/10/iu-professors-bloomington-state-legislature"
-                target="_blank" class="story-link">
-                Meet the IU professors representing Bloomington in the state legislature
-              </a>
-            </p>
-          </div>
         </div>
       </div>
 
-      <div class="story pubdate-donate">
-        <p id="pubdate"></p>
-        <p class="donate">
-          <em>Like what you're reading?</em><br>
-          Support independent, award-winning student journalism.
-          <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
-        </p>
+        <div class="story pubdate-donate">
+          <p id="pubdate"></p>
+          <div class="author-bios">
+            <div class="bio">
+              <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsqgjR8em3PZ8FdwMCT7iWkxhl8_QbWNfk3Q&s"
+                  alt="Lydia Norton">
+                <div>
+                  <p>Data Analysis by <a href="https://www.idsnews.com/staff/ronak-monga" target="_blank">Ronak
+                      Monga</a>
+                  </p>
+                  <p>Ronak is a senior studying Data Science. He is a data analyst and puzzle maker for the IDS.<span
+                      style="padding-right: var(--xs); padding-left: var(--xxs);"><a href="mailto:ronmonga@iu.edu"
+                        target="_blank">Email <i class="fa fa-envelope" aria-hidden="true"></i></a></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="bio">
+              <div>
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/13acda73-a88b-4fb5-bb21-8a4342e8a14c.original.jpg"
+                  alt="Calvin Josenhans">
+                <div>
+                  <p>Design and development by <a href="https://idsnews.com/staff/Calvin-Josenhans"
+                      target="_blank">Calvin
+                      Josenhans</a></p>
+                  <p>Calvin is a junior studying computer science and math. He has worked at the IDS since 2024 as a web
+                    developer. <span style="padding-right: var(--xs); padding-left: var(--xxs);"><a
+                        href="mailto:cjosenha@iu.edu" target="_blank">Email <i class="fa fa-envelope"
+                          aria-hidden="true"></i></a></span> <span><a href="https://twitter.com/CalvinJosenhans"
+                        target="_blank">Twitter <i class="fab fa-twitter" aria-hidden="true"></i></a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="donate">
+            <em>Like what you're reading?</em><br>
+            Support independent, award-winning student journalism.
+            <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+          </p>
+        </div>
       </div>
-
     </article>
 
   </main>
@@ -256,7 +271,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/ads.js"></script>
   <script src="js/ids.js"></script>
-  <script src="js/metadata.js"></script>
+  <script src="js/metadata/metadata-quiz.js"></script>
+  <script src="js/map_vis.js"></script>
 </body>
 
 </html>
