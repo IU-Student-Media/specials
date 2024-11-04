@@ -1,5 +1,5 @@
-<h1>:computer: Buildout template</h1>
-This is the template for the IDS buildouts. Please let the digi desk know if you notice any issues/missing styles that should be added.
+<h1>Election Landing Page</h1>
+
 
 <h2>Instructions:</h2>
 <ul>
@@ -11,3 +11,15 @@ This is the template for the IDS buildouts. Please let the digi desk know if you
 <h2>About this project</h2>
 <p>Add any useful info about your code here!</p>
 
+
+<h2>Pub Checklist</h2>
+<ul>
+  <li>Update copy<li>
+  <li>Update illos<li>
+  <li>Adjust meet the candidates section (in main landing page) where needed<li>
+  <li>Update meet the candidates page copy<li>
+  <li>Update how to vote copy<li>
+  <li>update links once uploaded<li>
+  <li>Update stories as needed<li>
+  <li><li>
+<ul>
