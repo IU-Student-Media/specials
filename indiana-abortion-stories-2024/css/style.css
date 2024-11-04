@@ -40,8 +40,17 @@ h1 {
 
 h2 {
   /* second headline */
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 800;
+}
+
+@media (max-width: 728px){
+  h1 {
+    font-size: 35px;
+  }
+    h2 {
+    font-size: 25px;
+  }
 }
 
 h1,
@@ -70,6 +79,11 @@ h3 {
 .dropcap:first-letter {
   /* change the font/style of the dropcap if you wish to use them */
 
+}
+
+p.correction {
+  font-style: italic;
+  /* font-family: "source-serif-pro", "Times", serif; */
 }
 
 /* 
