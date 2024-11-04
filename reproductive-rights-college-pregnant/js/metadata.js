@@ -10,7 +10,7 @@ const data = {
             "email": "rmcronin@iu.edu",
             "twitter": "RuthCronin6",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/5dfd8193-ae04-4490-96e8-026ba1e7418b.original.jpg",
-            "bio": "Ruth worked at the IDS for one year as a reporter."
+            "bio": "Ruth worked at the IDS for three years as a reporter."
         },
         "Photos by": {
             "name": "Alayna Wilkening",
