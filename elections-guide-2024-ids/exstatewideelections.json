@@ -1,0 +1,205 @@
+{
+    "Root": {
+        "WriteTime": "2024-11-02T21:10:43.843",
+        "JurisdictionsReporting": {
+            "TOTAL_ALLPRECINCTS": "5073"
+        },
+        "List": [
+            {
+                "Heading": "Federal",
+                "Items": {
+                    "Item": [
+                        {
+                            "OFFICECATEGORYID": "1019",
+                            "OFFICE_CATEGORY_NAME": "Presidential Electors for US President & VP",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The President is Chief Executive of the United States and Commander-in-Chief of the Armed Forces. The President of the United States is authorized under the Constitution to sign bills passed by Congress into law or to veto bills and return them to Congress for any further action. The President is responsible for preserving, protecting, and defending the Constitution, and is charged with executing the laws of the United States, nominating officers to the executive departments, federal agencies, and the federal courts. The President of the United States also ratifies treaties after the United States Senate consents to the treaty by a two-thirds vote.   \r\nThe Vice President serves as President of the United States Senate and is the presiding officer of that body. The Vice President succeeds to the Presidency when the President is incapacitated, dies, or is otherwise removed from office. The Vice President also executes other duties assigned to that office by federal law and the President of the United States.",
+                            "BALLOT_ORDER": "20",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1006",
+                            "OFFICE_CATEGORY_NAME": "US Senator",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The US Senate consists of 100 members; Indiana, like the other 49 states, is represented by two senators.   \r\nThe two major political parties nominate their party's candidate in the primary election. The US Senate race is decided in November's general election by the popular vote of the state as a whole. US senators serve staggered, six-year terms. As a result, except where a special election occurs to fill a vacancy, both US Senators will not be up for re-election at the same time and there will be one federal election cycle in three where US Senate will not be on the ballot. US Senators serve as the upper chamber of the Legislative Branch. The US Senate debates and votes on bills along with the US House of Representatives before they are presented to the President of the United States to be signed into law. The US Senate also has the power to approve nominations made by the President to executive departments, federal agencies, and the federal courts. The US Senate must also consent by a two-thirds vote before a treaty can be ratified. The Senate presides over all impeachment hearings.",
+                            "BALLOT_ORDER": "30",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1005",
+                            "OFFICE_CATEGORY_NAME": "US Representative",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The US House of Representatives consists of 435 members who serve two-year terms. Each state is entitled to send a certain number of representatives to the US House. Currently, Indiana is represented by nine members in the US House, each of whom represents a different geographical district within Indiana. The US House of Representatives is the lower chamber of the Legislative Branch. The House debates and votes on bills along with the US Senate before they are presented to the President of the United States to be signed into law. The two major political parties nominate their party’s district candidates,  and the voters of each district decide the race in the November election.",
+                            "BALLOT_ORDER": "100",
+                            "ALLREPORTED": "0",
+                            "MAPCODE": "mapDataIndianaUsHouse2022"
+                        }
+                    ]
+                }
+            },
+            {
+                "Heading": "State",
+                "Items": {
+                    "Item": [
+                        {
+                            "OFFICECATEGORYID": "1007",
+                            "OFFICE_CATEGORY_NAME": "Governor & Lt. Governor",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The governor is the chief executive of the state.  The governor performs the duties and exercises powers granted directly by the Constitution and by statute. The governor is authorized under the Indiana Constitution to sign bills passed by the state legislature into law or to veto bills and return them to the legislature for any further action. The Governor is responsible for faithfully executing all state laws. The two major political parties nominate their party’s candidate for governor in a primary election. The governor’s race is decided in November’s general election by popular vote of the state as a whole.   \r\nThe lieutenant governor serves the same four-year term as the governor. Major party candidates for the office are nominated at party conventions. A party's nominees for governor and lieutenant governor run as a team, ensuring that those elected will be of the same political party. The lieutenant governor must meet the same eligibility requirements as the governor. The lieutenant governor is the President of the Indiana Senate and is the presiding office of that body. The lieutenant governor also has duties and oversees state agencies assigned by state law. If the governor dies, resigns, or is otherwise unable to hold office, then the lieutenant governor becomes governor.",
+                            "BALLOT_ORDER": "40",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1022",
+                            "OFFICE_CATEGORY_NAME": "Attorney General",
+                            "OFFICE_CATEGORY_DESCRIPTION": "Indiana’s attorney general represents Indiana in every lawsuit in which the state has an interest, unless there is a conflict or legal obstacle to handling the case. In the criminal context, the attorney general handles all appeals from criminal convictions, as well as participates in post-conviction relief petitions on death penalty cases at the trial court level. The office provides unofficial advisory opinions to the governor; state elected officers and members of the General Assembly. Official opinions are generated to interpret statutes and apply Indiana law to specific questions that may arise.",
+                            "BALLOT_ORDER": "80",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1018",
+                            "OFFICE_CATEGORY_NAME": "State Senator",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The Indiana Senate is the upper house of the Indiana General Assembly, and is composed of 50 members representing an equal number of residents statewide. The Indiana Senate along with the Indiana House of Representatives is responsible for passing legislation that amends state law and for passing a two-year budget every odd numbered year. Indiana Senators serve four-year terms without term limits. Similar to US Senators, state senate seats are staggered, meaning only 25 of the 50 seats are on the ballot every two years.",
+                            "BALLOT_ORDER": "110",
+                            "ALLREPORTED": "0",
+                            "MAPCODE": "mapDataIndianaStateSenate2022"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1039",
+                            "OFFICE_CATEGORY_NAME": "State Representative",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The Indiana House of Representatives is part of the Indiana General Assembly, and is composed of 100 members representing an equal number of residents statewide. The Indiana House of Representatives along with the Indiana Senate is responsible for passing legislation that amends state law and for passing a two-year budget every odd numbered year. Members are elected to two-year terms without term limits. Unlike the Indiana Senate, all 100 seats in the Indiana House are on the ballot every two years.",
+                            "BALLOT_ORDER": "120",
+                            "ALLREPORTED": "0",
+                            "MAPCODE": "mapDataIndianaStateHouse2022"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1020",
+                            "OFFICE_CATEGORY_NAME": "Judge, Circuit Court",
+                            "OFFICE_CATEGORY_DESCRIPTION": "One of the trial courts in Indiana's judicial system. Each county has one or more Circuit Court Judges. They have authority to hear any type of case. Courts in each county maintain separate dockets for cases that feature simplified procedures for faster and less expensive litigation of disputes like small claims and traffic. Circuit Court Judges are selected in different ways throughout the state, but serve six-year terms without term limits.",
+                            "BALLOT_ORDER": "130",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1028",
+                            "OFFICE_CATEGORY_NAME": "Judge, Superior Court",
+                            "OFFICE_CATEGORY_DESCRIPTION": "One of the trial courts in Indiana's judicial system. Except in counties where the court system has been reorganized to have multiple circuit court judges, each county has one or more Superior Court Judges. They have the authority to hear any type of case unless otherwise specified by state law. Courts in each county maintain separate dockets for cases that feature simplified procedures for faster and less expensive litigation of disputes like small claims and traffic. Superior Court Judges are selected in different ways throughout the state, but serve six-year terms without term limits.",
+                            "BALLOT_ORDER": "140",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1016",
+                            "OFFICE_CATEGORY_NAME": "Judge, Probate Court",
+                            "OFFICE_CATEGORY_DESCRIPTION": "One of the trial courts in Indiana's judicial system. St. Joseph County has the only separately created Probate Court in the State of Indiana. This court hears juvenile cases, guardianships, trusts and estates.",
+                            "BALLOT_ORDER": "150",
+                            "ALLREPORTED": "0"
+                        }
+                    ]
+                }
+            },
+            {
+                "Heading": "Local",
+                "Items": {
+                    "Item": [
+                        {
+                            "OFFICECATEGORYID": "1041",
+                            "OFFICE_CATEGORY_NAME": "Clerk of the Circuit Court",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The clerk of the circuit court (commonly called the county clerk) is a constitutional officer. Registered voters of the county elect the clerk to a four-year term. The clerk is prohibited from serving more than eight years within a period of 12 years, except for time filling an unexpired term. The clerk serves as the record keeper for county courts; acts as the chief election official for the county, serves as Secretary on the county election board, along with appointed members of the two major political parties; issues marriage licenses; and collects and distributes court fees and fines.",
+                            "BALLOT_ORDER": "180",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1011",
+                            "OFFICE_CATEGORY_NAME": "County Auditor",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The county auditor is a constitutional officer, elected for a four-year term from the county at large but prohibited from serving more than two terms in 12 years, except for time filling an unexpired term. The auditor is the fiscal office of the county and keeps the county’s books and issues warrants for the payment of claims following an audit of expenditure, tracking all county budget expenditures, and preparing the annual of county spending. The auditor serves as secretary of the board of commissioners and county council.",
+                            "BALLOT_ORDER": "190",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1015",
+                            "OFFICE_CATEGORY_NAME": "County Recorder",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The county recorder is a constitutional officer, elected for a term of four years by vote of the county at large, but prohibited from serving more than eight years within a 12-year period, except for time filling an unexpired term.   \r\nThe chief function of the recorder is to preserve public records, including deeds, mortgages, liens, leases, articles of incorporation and amendments, certificates authorizing foreign corporations to do business within the state, army and navy discharges, bankruptcy notices and other documents. The recorder receives a fee for recording instruments and certificates.",
+                            "BALLOT_ORDER": "200",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1025",
+                            "OFFICE_CATEGORY_NAME": "County Treasurer",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The county treasurer is a constitutional officer, elected by vote of the county at large for a term of four years, but prohibited from serving more than two terms within 12 years, except for time filling an unexpired term   \r\nThe county treasurer collects, retains custody of and disburses county funds. The treasurer collects delinquent taxes, and collects local and state general property taxes for all units in the county. The treasurer is required to annually send each person charged with taxes a statement of the amount of property tax owed.",
+                            "BALLOT_ORDER": "210",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1004",
+                            "OFFICE_CATEGORY_NAME": "County Coroner",
+                            "OFFICE_CATEGORY_DESCRIPTION": "Voters of a county elect the county coroner, a constitutional officer, to a four-year term. The coroner is prohibited from serving more than two terms in a period of 12 years, except for time filling an unexpired term. The chief responsibility of the coroner is to determine the manner of death in cases involving violence or casualty, or when someone is found dead in unexplained circumstances.",
+                            "BALLOT_ORDER": "230",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1029",
+                            "OFFICE_CATEGORY_NAME": "County Surveyor",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The county surveyor is a constitutional officer, elected for a four-year term and is not subject to term limits.   \r\nThe primary duties of the surveyor are to survey and keep records of all section corners throughout the county. In counties with populations of 165,000 or more, the surveyor may appoint a registered professional civil engineer as bridge engineer. In all cases, however, the surveyor serves as a member of the county drainage board and as a member of the county planning commission.",
+                            "BALLOT_ORDER": "240",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1024",
+                            "OFFICE_CATEGORY_NAME": "County Commissioner",
+                            "OFFICE_CATEGORY_DESCRIPTION": "A board of commissioners consisting of three elected individuals governs each county (except Marion County). In all counties except Lake and St. Joseph counties, the commissioners are elected from separate districts (in which they must reside). In Lake and St. Joseph counties, the voters in a given district elect only the one commissioner for their district.    \r\nThe terms of office of county commissioners are four years on a staggered basis. In general, the board of commissioners is responsible for the administration of county business and is the county executive. In most counties, the commissioners may enact ordinances to meet local conditions and exercise authority vested in the board by the legislature.",
+                            "BALLOT_ORDER": "260",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1033",
+                            "OFFICE_CATEGORY_NAME": "County Council Member",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The financial powers of a county are placed in the county council, which serves as a check on the board of commissioners and board of finance. For election purposes, most county councils are divided into four districts, with one council member elected from each district. In addition, three council members are elected from the county at large, thus making a total of seven council members.    \r\nLake, Marion and St. Joseph counties are the exceptions to the general rule for county councils. Lake County has a county council of seven members. Each of the seven is elected from a single-member district. Marion County has a combined city-county council of 25 members. On the other hand, St. Joseph County has a county council of nine members. Each of the nine is elected from a single-member district. All council members are elected to staggered, four-year terms. (Marion, Lake and St. Joseph County Councils have both legislative and financial duties for their counties.)",
+                            "BALLOT_ORDER": "270",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1023",
+                            "OFFICE_CATEGORY_NAME": "Township Board Member",
+                            "OFFICE_CATEGORY_DESCRIPTION": "Citizens of each township elect three members to the township board (formerly known as the township advisory board) for four-year terms. (In Marion County, each township has a five-member township board.)   \r\nBoard members must be residents and qualified voters in the township.    \r\nThe township board adopts the annual township budget;    \r\nfixes the tax rate for various funds and imposes property tax levies, subject to review by the county board of tax adjustment and the state board of tax commissioners;   \r\napproves township contracts;   \r\noversees bonds and warrants;   \r\nand fixes the salaries of elected and appointed officers and employees of the townships.",
+                            "BALLOT_ORDER": "300",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1032",
+                            "OFFICE_CATEGORY_NAME": "City-County or City Common Council Member",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The common council (usually referred to as the city council) is the legislative body in a city government.   \r\nMethods of election of members of common councils and the number of members on a council vary among cities of the different classes.",
+                            "BALLOT_ORDER": "360",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1001",
+                            "OFFICE_CATEGORY_NAME": "Town Clerk-Treasurer",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The clerk-treasurer of a town has custody of the records, books and papers of the town council; records the proceedings of the council; has custody of the town seal; issues licenses; and is authorized to administer oaths and take depositions. The clerk-treasurer also handles the funds of the town under direction of the council.",
+                            "BALLOT_ORDER": "370",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1037",
+                            "OFFICE_CATEGORY_NAME": "Town Council Member",
+                            "OFFICE_CATEGORY_DESCRIPTION": "The legislative powers of the town council are identical to those of the city common council. In addition, town councils exercise administrative authority in their municipalities. Council vacancies are filled by a caucus of the precinct committeemen of the same party as the person vacating the office. If the vacated council seat was held by an independent, or if the appropriate political party fails to fill the vacancy within a 30 day period, then the vacancy is filled by a vote of the remaining council members.",
+                            "BALLOT_ORDER": "390",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1017",
+                            "OFFICE_CATEGORY_NAME": "School Board Member",
+                            "OFFICE_CATEGORY_DESCRIPTION": "Indiana's school districts are governed by school boards. Most school board members are elected, although some are appointed. Like Congress, state legislatures, and city or county councils, school boards establish the direction and structure of their school districts by adopting policies through the authority granted by the state legislature. School board policies have the force of law equal to statutes or ordinances. Policies establish directions for the district; they set the goals, assign authority, and establish controls that make school governance and management possible. These policies are one of the means by which educators are accountable to the public.",
+                            "BALLOT_ORDER": "420",
+                            "ALLREPORTED": "0"
+                        },
+                        {
+                            "OFFICECATEGORYID": "1038",
+                            "OFFICE_CATEGORY_NAME": "Other",
+                            "OFFICE_CATEGORY_DESCRIPTION": "defunct",
+                            "BALLOT_ORDER": "9990",
+                            "ALLREPORTED": "0"
+                        }
+                    ]
+                }
+            },
+            {
+                "Heading": "Major Political Party"
+            }
+        ]
+    }
+}

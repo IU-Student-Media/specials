@@ -19,9 +19,10 @@
   <!-- Local stylesheet — put all your design choices here -->
   <!-- <link rel="stylesheet" href="css/style.css">  -->
   <link rel="stylesheet" href="css/election.css">
+  <link rel="stylesheet" href="css/election-night.css">
   <link rel="stylesheet" href="css/map.css">
   <!-- JS -->
-  <script src="election-components.js"></script>
+  <script src="js/election-components.js"></script>
 
   <!-- Font Awesome — for the social media icons and hamburger menu icon -->
   <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
@@ -131,7 +132,7 @@
           </div>
           <div class="interact-container">
             <div class="controls">
-              <div>
+              <div class="type-div">
                 <label for="analyze-type">What do you want to explore?</label>
                 <select name="analyze-type" id="analyze-type">
                   <option value="view">View Past Results</option>
@@ -139,15 +140,15 @@
                 </select>
               </div>
 
-              <div id="view-div">
+              <div class="view-div" id="view-div">
                 <label for="view-select">Choose Race:</label>
                 <select name="view-select" id="view-select">
-                  <option value="16SEN">2016 Senatorial</option>
-                  <option value="16GOV">2016 Gubernatorial</option>
-                  <option value="16PRES">2016 Presidential</option>
-                  <option value="18SEN">2018 Senatorial</option>
-                  <option value="20GOV">2020 Gubernatorial</option>
-                  <option value="20PRES">2020 Presidential</option>
+                  <option value="16_SEN">2016 Senatorial</option>
+                  <option value="16_GOV">2016 Gubernatorial</option>
+                  <option value="16_PRES">2016 Presidential</option>
+                  <option value="18_SEN">2018 Senatorial</option>
+                  <option value="20_GOV">2020 Gubernatorial</option>
+                  <option value="20_PRES">2020 Presidential</option>
                 </select> <span>precinct-level results</span>
                 <p>Vote margins by party</p>
               </div>
@@ -175,9 +176,18 @@
                 <span>elections.</span>
                 <p>Precinct-level shifts in Indiana</p>
               </div>
-              <div class="map-container hide">
-                <img id="img-l" class="map-img" src="./maps/compare_svg/VoteShift_16_GOV_to_16_PRES.svg">
-                <!-- <img id="img-r" class="map-img" src="./maps/outputs/compare_svg/VoteShift_16_GOV_to_16_PRES.svg"> -->
+
+              <div class="results">
+                <div class="map-container hide">
+                  <img id="img-l" class="map-img" src="">
+                  <!-- <img id="img-r" class="map-img" src="./maps/outputs/compare_svg/VoteShift_16_GOV_to_16_PRES.svg"> -->
+                </div>
+                <div class="percentages-container">
+                  <poll-percent id="dem-percent" party="dem" value="41" label="Democratic"></poll-percent>
+                  <poll-percent id="rep-percent" party="rep" value="57" label="Republican"></poll-percent>
+                  <poll-percent id="other-percent" party="other" value="2" label="Other"></poll-percent>
+                  <!-- <poll-percent id="reported-percent" party="count-report" value="47" label="Reported"></poll-percent> -->
+                </div>
               </div>
             </div>
           </div>

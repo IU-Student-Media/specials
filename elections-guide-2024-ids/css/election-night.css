@@ -26,7 +26,40 @@
 .top-container h2 {
     align-self: flex-start;
     margin: 10px 0 20px 0;
+    font-size: 2em;
 }
+
+@keyframes in-and-out {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#live-polling::after {
+    content: 'Updating...';
+    display: block;
+    font-size: .4em;
+    color: #DAA520;
+}
+
+#live-polling.live::after {
+    content: '• Live Updates';
+    display: block;
+    font-size: .4em;
+    color: rgb(209, 9, 9);
+    animation: in-and-out 5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
 
 .live-results {
     display: flex;
@@ -38,6 +71,7 @@
 .live-results .results {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
     justify-content: space-around;
     align-items: flex-start;
     align-self: stretch;
@@ -60,29 +94,41 @@
 
 .compare-container {
     display: flex;
-    margin-left: auto;
+    /* flex-direction: column; */
+    /* margin-left: auto; */
     justify-content: center;
     color: #757575;
     text-align: center;
     font-style: oblique;
     font-weight: 700;
+    gap: 15px;
 }
 
 .compare-container p { 
-    font-size: 15px;
+    font-size: .85em;
+}
+
+.compare-container p:nth-of-type(2) { 
+    border-left: none;
 }
 
 .compare-container .pill {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     border-radius: 100px;
     border: 2px solid #000;
     color: #000000;
     font-weight: 700;
     font-style: normal;
     padding: 3px 10px;
-    margin-left: 5px;
+    font-size: .85em;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.compare-container .pill a {
+    border-bottom: none;   
 }
 
 .perc {
@@ -117,7 +163,7 @@
 
 .perc .value {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0;
 }
@@ -252,6 +298,10 @@
         margin-bottom: 0;
     }
 
+    .live-updates h2 {
+        margin-bottom: 15px;
+    }
+
     .map {
         margin-top: 10px;
         display: flex;
@@ -281,13 +331,17 @@
     }
 
     .perc .value {
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 700;
         margin: 0;
     }
     
     .perc .candidate {
-        font-size: 1em;
+        font-size: .8em;
+    }
+
+    .perc.count-report {
+        padding: 15px 8px;
     }
 
     .compare-container p {
@@ -321,4 +375,23 @@
         line-height: .8em;
     }
 
+    .compare-container p:nth-of-type(2) { 
+        border-left: none;
+    }
 }
+
+@media only screen and (max-width: 576px) {
+    .compare-container p:nth-of-type(2) { 
+        border-left: 1.5px rgb(184, 184, 184) solid;
+    }
+}
+
+.map {
+    margin: -15px 0 0 5px;;
+}
+
+.st0, .map-region {
+    fill: #fff;
+    stroke: #323232;
+    stroke-miterlimit: 10;
+  }

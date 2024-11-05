@@ -1,0 +1,172 @@
+{
+  "president": [
+      {
+          "CandidateName": "Harris, Kamala Kamala",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Trump, Donald Donald",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      },
+      {
+          "CandidateName": "Other",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#999999",
+          "PARTY": "O"
+      }
+  ],
+  "senate": [
+      {
+          "CandidateName": "McCray, Valerie Valerie",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Banks, James James",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      },
+      {
+          "CandidateName": "Horning, Andrew Andrew",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#008000",
+          "PARTY": "L"
+      },
+      {
+          "CandidateName": "Other",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#999999",
+          "PARTY": "O"
+      }
+  ],
+  "attorney_general": [
+      {
+          "CandidateName": "Wells, Destiny Destiny",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Rokita, Todd Todd",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      }
+  ],
+  "governor": [
+      {
+          "CandidateName": "McCormick, Jennifer Jennifer",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Braun, Mike Mike",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      },
+      {
+          "CandidateName": "Rainwater, Donald Donald",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#008000",
+          "PARTY": "L"
+      },
+      {
+          "CandidateName": "Other",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#999999",
+          "PARTY": "O"
+      }
+  ],
+  "us_district_9": [
+      {
+          "CandidateName": "Peck, Timothy Timothy",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Houchin, Erin Erin",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      },
+      {
+          "CandidateName": "Brooksbank, Russell Russell",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#008000",
+          "PARTY": "L"
+      }
+  ],
+  "in_district_62": [
+      {
+          "CandidateName": "Horrocks, Thomas Thomas",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Hall, David David",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      }
+  ],
+  "in_district_46": [
+      {
+          "CandidateName": "Cummings, Kurtis Kurtis",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "Heaton, Robert Robert",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      }
+  ],
+  "monroe_commissioner_3": [
+      {
+          "CandidateName": "MADEIRA, JODY JODY",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#007ECD",
+          "PARTY": "D"
+      },
+      {
+          "CandidateName": "VANDEVENTER, JOSEPH JOSEPH",
+          "isWinner": "F",
+          "TOTAL": 10000,
+          "DISPLAY_COLOR": "#F63D3D",
+          "PARTY": "R"
+      }
+  ]
+}

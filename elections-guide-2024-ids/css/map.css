@@ -4,8 +4,8 @@
 }
 
 .map-img {
-  width: var(--map-w);
-  height: var(--map-ht);
+  max-width: var(--map-w);
+  max-height: var(--map-ht);
   object-fit: cover;
 }
 
@@ -34,7 +34,7 @@ div.top.flag-bg {
   font-size: 16px;
 }
 
-.interact-container p {
+.interact-container .view-div p, .interact-container .type-div p{
   font-size: 16px;
     color: #292929;  
     margin: 0px;
@@ -51,8 +51,8 @@ div.top.flag-bg {
   content: "";
   color: black;
   position: absolute;
-  width: var(--map-w);
-  height: var(--map-ht);
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   /* left: -460px; */
@@ -75,6 +75,20 @@ div.top.flag-bg {
   display: none;
 }
 
+
+.results{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 30px;
+}
+
+
+@media (max-width: 1009px){
+  .results{
+    flex-direction: column; 
+    align-items: center;
+  }
+}
 
 @media (max-width: 500px) {
   .map-img {
