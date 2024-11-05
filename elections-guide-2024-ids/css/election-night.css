@@ -38,9 +38,17 @@
 .live-results .results {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
     align-self: stretch;
+}
+
+.live-results .results .map {
+    display: block;
+} 
+
+.live-results .results .map * {
+    max-height: 400px;
 }
 
 .results .percentages-container {
@@ -240,14 +248,21 @@
         max-height: 60vh;
     }
 
+    .top-container h2{
+        margin-bottom: 0;
+    }
+
     .map {
+        margin-top: 10px;
         display: flex;
         align-items: center;
         justify-content: center; 
     }
 
     .map * {
-        max-height: 40vh;
+        max-width: 200px;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .results .percentages-container {

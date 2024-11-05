@@ -1,6 +1,6 @@
 :root {
   --map-ht: 600px;
-  --map-w: 460px;
+  --map-w: 600px;
 }
 
 .map-img {
@@ -79,8 +79,8 @@ div.top.flag-bg {
 @media (max-width: 500px) {
   .map-img {
     object-fit: cover;
-    width: calc(300 / 420 * 460px);
-    height: calc(300 / 420 * 600px);
+    width: calc(250 / 420 * 600px);
+    height: calc(250 / 420 * 600px);
   }
 
   /* .map-container { */

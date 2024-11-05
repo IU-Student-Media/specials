@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Title (pulls from metadata.json) -->
-  <title> Hello</title>
+  <title>Explore Maps | Indiana Daily Student</title>
 
   <!-- favicon -->
   <link rel="SHORTCUT ICON"
@@ -134,8 +134,8 @@
               <div>
                 <label for="analyze-type">What do you want to explore?</label>
                 <select name="analyze-type" id="analyze-type">
-                  <option value="comp">Compare Past Elections</option>
                   <option value="view">View Past Results</option>
+                  <option value="comp">Compare Past Elections</option>
                 </select>
               </div>
 
@@ -147,8 +147,9 @@
                   <option value="16PRES">2016 Presidential</option>
                   <option value="18SEN">2018 Senatorial</option>
                   <option value="20GOV">2020 Gubernatorial</option>
-                </select><span> Precinct-level results</span>
-                <p>Vote Margins by Party</p>
+                  <option value="20PRES">2020 Presidential</option>
+                </select> <span>precinct-level results</span>
+                <p>Vote margins by party</p>
               </div>
 
               <div id="comp-div">
@@ -159,6 +160,7 @@
                   <option value="16_PRES">2016 Presidential</option>
                   <option value="18_SEN">2018 Senatorial</option>
                   <option value="20_GOV">2020 Gubernatorial</option>
+                  <option value="20_PRES">2020 Presidential</option>
                 </select>
 
                 <label for="right">to</label>
@@ -183,7 +185,7 @@
       </div>
 
         <div class="story pubdate-donate">
-          <p id="pubdate"></p>
+          <p id="pubdate" style="display: none;"></p>
           <div class="author-bios">
             <div class="bio">
               <div>
@@ -271,7 +273,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/ads.js"></script>
   <script src="js/ids.js"></script>
-  <script src="js/metadata/metadata-quiz.js"></script>
+  <!-- <script src="js/metadata/metadata-quiz.js"></script> -->
   <script src="js/map_vis.js"></script>
 </body>
 
