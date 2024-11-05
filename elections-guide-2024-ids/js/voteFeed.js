@@ -139,7 +139,8 @@ hwbToRgb = function (hwb) {
     return [r * 255, g * 255, b * 255];
 };
 
-var resultsRequest = new Request('http://silo.soic.indiana.edu:56988/presidential', {method: 'GET'});
+// var resultsRequest = new Request('http://silo.soic.indiana.edu:56988/presidential', {method: 'GET'});
+var resultsRequest = new Request('https://electionmiddle.onrender.com/presidential', {method: 'GET'});
 
 let autoUpdate;
 

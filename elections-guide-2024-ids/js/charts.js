@@ -42,7 +42,9 @@ let all_charts = {
   "monroe_commissioner_3": null
 }
 
-const req_url = 'http://silo.soic.indiana.edu:56988/state-races'
+// const req_url = 'http://silo.soic.indiana.edu:56988/state-races'
+const req_url = 'https://electionmiddle.onrender.com/state-races'
+// const req_url = 'http://localhost:56988/state-races'
 
 var reportingRequest = new Request(req_url, {method: 'GET'});
 
