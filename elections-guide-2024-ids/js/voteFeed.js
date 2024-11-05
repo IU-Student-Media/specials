@@ -183,7 +183,9 @@ function doFetch() {
             
             idsUpdates.sort((a, b) => new Date(a.time) - new Date(b.time))
             idsUpdates.forEach(a => {
-                let d = new Date(a.time + " GMT-0000");
+                // let d = new Date(a.time + " GMT-0000");
+                var arr = a.time.split(/[- :]/);
+                let d = new Date(Date.UTC(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]))
                 var liveupdate = document.createElement("live-update");
                 liveupdate.setAttribute("time", d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true }));
                 liveupdate.setAttribute("author", a.author);
