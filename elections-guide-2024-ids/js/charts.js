@@ -18,6 +18,8 @@ nameToDisplay.set("Horrocks, Thomas Thomas", "Thomas Horrocks")
 nameToDisplay.set("Hall, David David", "Dave Hall*")
 nameToDisplay.set("Cummings, Kurtis Kurtis", "Kurtis Cummings")
 nameToDisplay.set("Heaton, Robert Robert", "Bob Heaton*")
+nameToDisplay.set("Todd Rokita", "Todd Rokita*")
+nameToDisplay.set("Erin Houchin", "Erin Houchin*")
 
 const expected_totals = {
   "president": 3033118, // 2020 Election
@@ -108,8 +110,12 @@ var getChartWidth = function (context) {
   return width
 }
 
+var called = new Set(["president", "governor", "senate", "attorney_general", "us_district_9", "monroe_commissioner_3"])
+
 var drawChart = function (chartData, district, raceFinished, type) {
-  if (raceFinished == 'TRUE') partyColor = { 'R': 'rgba(193, 34, 34,.5)', 'D': 'rgba(25, 74, 200,.5)', 'I': 'rgba(218, 165, 32,.5)', 'O': 'rgba(98, 165, 32,.5)', 'L': 'rgba(218, 165, 32,.5)' }
+
+  raceFinished = called.has(district) ? 'TRUE' : 'FALSE'
+  if (called.has(district)) partyColor = { 'R': 'rgba(193, 34, 34,.5)', 'D': 'rgba(25, 74, 200,.5)', 'I': 'rgba(218, 165, 32,.5)', 'O': 'rgba(98, 165, 32,.5)', 'L': 'rgba(218, 165, 32,.5)' }
   else partyColor = { 'R': 'rgba(193, 34, 34,1)', 'D': 'rgba(25, 74, 200,1)', 'I': 'rgba(218, 165, 32,1)', 'O': 'rgba(98, 165, 32,1)', 'L': 'rgba(218, 165, 32,1)' }
 
   // Sort bars based on vote count

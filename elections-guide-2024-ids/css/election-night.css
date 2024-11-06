@@ -237,6 +237,10 @@
     color: #949494;
 }
 
+.countdown-card{
+    display: none;
+}
+
 .countdown-card, .subscribe-card {
     max-width: unset;
     width: 100%;
