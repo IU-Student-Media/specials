@@ -14,18 +14,12 @@ const data = {
         },
         "Filmed and edited by": [{
             "name": "Jiya Shah",
-            "email": "vivrao@iu.edu",
-            "twitter": "vivrao"
         },
         {
             "name": "Kylie Heppner",
-            "email": "vivrao@iu.edu",
-            "twitter": "vivrao"
         },
         {
             "name": "Vivi O'Leary",
-            "email": "vivrao@iu.edu",
-            "twitter": "vivrao"
         }]
     }
 }
@@ -49,11 +43,11 @@ for (let type of byline_types) {
     if (data.bylines[type]) {
 
         if (!data.bylines[type].length) {
-            bylines_html += `<p>${type} <a href="https://idsnews.com/staff/${data.bylines[type].name.split(' ').join('-')}">${data.bylines[type].name}</a></p>`;
+            bylines_html += `<p>${type} <a href="https://idsnews.com/staff/${data.bylines[type].name.split(' ').join('-').split('\'').join('')}">${data.bylines[type].name}</a></p>`;
         } else {
             bylines_html += '<p>' + type;
             for (let index in data.bylines[type]) {
-                bylines_html += ` <a href="https://idsnews.com/staff/${data.bylines[type][index].name.split(' ').join('-')}">${data.bylines[type][index].name}</a>`;
+                bylines_html += ` <a href="https://idsnews.com/staff/${data.bylines[type][index].name.split(' ').join('-').split('\'').join('')}">${data.bylines[type][index].name}</a>`;
                 if (index != data.bylines[type].length - 2 && index != data.bylines[type].length - 1) {
                     bylines_html += ',';
                 } else if (index == data.bylines[type].length - 2) {
@@ -85,7 +79,7 @@ function setAuthorBio(type, author) {
 }
 
 document.querySelector('#bylines').innerHTML = bylines_html;
-document.querySelector('.author-bios').innerHTML = bios_html;
+// document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
 document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;

@@ -78,7 +78,8 @@ p.credit{
 /* Club Styling */
 .club {
   display: flex;
-  gap: 15px;
+  gap: 50px;
+  margin: 75px 0px;
 }
 
 
