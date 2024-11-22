@@ -20,6 +20,12 @@ const data = {
         },
         {
             "name": "Vivi O'Leary",
+        },
+        {
+            "name": "Sadhika Allampally",
+        },
+        {
+            "name": "Zach Casanova",
         }]
     }
 }

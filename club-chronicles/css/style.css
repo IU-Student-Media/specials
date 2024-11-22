@@ -131,6 +131,10 @@ media queries helper
   .club {
     flex-direction: column;
   }
+
+  .club.odd {
+    flex-direction: column-reverse;
+  }
   .club iframe {
     border-radius: 10px;
     overflow: hidden;
