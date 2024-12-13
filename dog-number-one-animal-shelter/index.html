@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/dog-number-one-animal-shelter" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dog number one" /> <!-- TODO: headline -->
+    <meta property="og:description"
+        content="Morty came to the Bloomington Animal Shelter with 67 other dogs from a seizure in 2023. Now, he's the last one waiting on adoption." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/9baea1d3-382d-46d7-bf62-4e4270fd17d4.original.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Dog number one"> <!-- TODO: headline -->
+    <meta name="twitter:description"
+        content="Morty came to the Bloomington Animal Shelter with 67 other dogs from a seizure in 2023. Now, he's the last one waiting on adoption.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/9baea1d3-382d-46d7-bf62-4e4270fd17d4.original.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <div class="headline-container">
+            <h1 data-scroll-speed="3">Dog Number One</h1>
+            <h2 data-scroll-speed="3">Morty came to the Bloomington Animal Shelter with 67 other dogs from a seizure in
+                2023. Now, he's the last one waiting on adoption.</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+
+        <figcaption class="caption header-caption">
+            <p class="credit">Courtesy</p>
+            Mortimer Octavius looks outside from the doorway of Casey Green's bedroom Oct. 5, 2024, in Bloomington.
+            Morty spent the majority of the afternoon peeking out the back door, only coming outside a few times to walk
+            along the back of the house and then go back inside.
+        </figcaption>
+
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+
+            <div class="story">
+
+                <p>The first thing Michael Clarke noticed as he stood in front of the Bloomington home was the smell of
+                    skin infection.</p>
+                <p>With his first steps inside, the animal control officer also quickly picked up the smell of feces. Of
+                    urine. Of ammonia. His eyes watered as he moved further into the home.</p>
+                <p>Stepping over the straw and excrement covering the floors, Clarke looked at the chaotic scene in
+                    front of him &mdash; and dozens of dogs stared right back at him.</p>
+                <p>Some of the dogs, mostly Carolina dogs, sat in wired cages. Others strode throughout the two-bedroom
+                    house, their eyes tracking the officers as they walked across the room.</p>
+
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/15a44b04-fc3c-4695-b822-54e4db83ebbe.original.jpg"
+                        alt="A white one story house.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        The 627-sqaure-foot house where Morty and the other 67 Carolina dogs were found is seen Oct. 6,
+                        2024, at North Adams Street in Bloomington. Each dog had approximately 9 square feet or three
+                        feet by three feet, about the size of a kitchen cabinet door.
+
+                        The dogs, ranging in age from adults to puppies, were seized by local law enforcement on March
+                        16, 2023 and brought to the Bloomington Animal Shelter, which was overwhelmed with the amount of
+                        dogs.
+                    </figcaption>
+                </figure>
+
+                <p>In the kitchen, a large male Carolina dog with pointed ears paced back and forth. His black fur coat
+                    was marked by light brown on his paws, chest and face &mdash; two small patches above his eyes
+                    almost resembled eyebrows. Though his path was somewhat obstructed by a wire cage, he walked,
+                    panicked, close to where another dog lay under the sink with her litter of puppies.</p>
+                <p>Clarke put a pile of nylon rope leashes down on a kitchen counter. He&rsquo;d start by trying to take
+                    this dog out of the house first. But as he slipped the leash over the dog&rsquo;s neck, the Carolina
+                    dog dropped to the ground. He started alligator rolling and pushed away.</p>
+                <p>&ldquo;He will be difficult and may bite, none of them have ever been on leashes,&rdquo; the
+                    homeowner told officers.</p>
+                <p>It took several officers to carry the dog, flailing, out of the house and into a plastic carrier
+                    waiting to transport him to the Bloomington Animal Shelter. Though the homeowner had given officers
+                    names for some of the dogs as they brought each one out; others didn&rsquo;t have names yet and the
+                    animal shelter would rename many of them.</p>
+                <p>As officers coaxed the dog into a carrier to transport him back to the shelter, there were 67 dogs
+                    waiting back in the house &mdash; assigning each dog a number would have to suffice for a short
+                    while. The officers made a note and headed back into the house.</p>
+                <p>Dog number one was accounted for. Now just 67 more.</p>
+                <p class='section-break'>•••</p>
+            </div>
+
+            <figure class="xl-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/6450b03d-1a9c-4e46-b9ca-52f5f243e3b0.original.jpg"
+                    alt="Morty watches on as the dogs play without him.">
+                <figcaption>
+                    <p class="credit">Briana Pace | <b>IDS</b></p>
+                    Mortimer Ocatvius, or "Morty," looks at his dog friends playing outside while he stands just outside
+                    the doorway of his foster mom, Casey Green's, house Oct. 5, 2024, in Bloomington. Casey said Morty
+                    is her longest-term foster, but she can't keep him because of her job and the possibility of moving.
+                    "I want to keep him so desperately," Casey said. "But, I can’t guarantee the stability long-term
+                    right now.”
+                </figcaption>
+            </figure>
+
+            <div class="story">
+
+                <p>Every day, animal shelter and control representatives in Bloomington and across the country see the
+                    harm humans can inflict on animals.</p>
+                <p>Maybe a resident, struggling with mental health, accumulates more animals than they can feasibly take
+                    care of, crowding dozens of pets into a single room. Sometimes a family decides their lifestyle is
+                    incompatible with a young, energetic puppy and turns it into an overflowing shelter. In some cases,
+                    animal control finds an animal already deceased, physically abused by a previous owner.</p>
+                <p>The Bloomington Animal Shelter was already nearing capacity when animal control and local police
+                    seized 68 dogs, mostly Carolina dogs, in March 2023 from what people familiar with the case
+                    described as the largest animal hoarding complaint ever received in Monroe County.</p>
+                <p>In every case, the shelter tries to heal some of this harm. But these 68 dogs tested this ability.
+                    Perhaps no dog tested this more than this first dog, who now goes by a different name: Mortimer (but
+                    many call him &ldquo;Morty&rdquo;).</p>
+                <p>Almost two years after the initial seizure, the rest of the Carolina dogs have slowly disappeared
+                    from the shelter&rsquo;s list of adoptable animals &mdash; a sign of success. But though he was the
+                    first one taken out of the house by animal control, Morty&rsquo;s page remains, the last of the dogs
+                    from the seizure waiting on adoption. It&rsquo;s left
+                    those close to him wondering: can they help him find a home?</p>
+                <p class='section-break'>•••</p>
+
+                <figure class="wide-right">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/17b9e035-b8fe-407c-bab6-18e250a79ed3.original.jpg">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Morty cowers in the doorway of his foster mom's house Oct. 5, 2024, in Bloomington. Morty stood
+                        in the doorway majority of the time his dog friends were outside, only briefly coming outside a
+                        couple times and then running back to the kitchen.
+                    </figcaption>
+                </figure>
+
+                <p>Clarke had started his job at Bloomington Animal Control a month and a half before a woman called his
+                    department to deliver a complaint that, at first, didn&rsquo;t seem like anything out of the
+                    ordinary.</p>
+                <p>She had purchased a dog from Robert Pryor, who was living in a two-bedroom home on North Adams
+                    Street. She told animal control she could smell feces and urine from the home&rsquo;s front yard.
+                </p>
+                <p>Animal control and the Bloomington Animal Shelter had heard of Pryor before. In years past, he had
+                    lived just outside of Monroe County. From 2018 to 2023, the shelter received at least 10 dogs
+                    associated with him. But because he lived outside of Bloomington municipal limits, there
+                    wasn&rsquo;t much they could do.</p>
+                <p>The shelter also wasn&rsquo;t a stranger to animal hoarding and neglect situations. Even in
+                    Bloomington, which had an ordinance banning the retail sale of cats and dogs until the state
+                    legislature voided it this year, animal neglect is prominent. A shelter representative said animal
+                    control officers respond to several thousand calls &mdash; ranging from reports of neglect, to stray
+                    animals to animal infestations &mdash; each year.</p>
+                <p>After receiving the complaint March 8, 2023, Officer Clarke and another animal control officer
+                    approached the home, unsure of exactly what they would find. Immediately he noticed dirt buildup on
+                    the home&rsquo;s windows, trash bags of dog food in the yard and insects flying around the property.
+                </p>
+                <p>After a few knocks, Pryor opened the front door.</p>
+                <p>Clarke told Pryor he would need to fill out the proper litter and boarding application to keep the
+                    animals in his home &mdash; and that he would need to schedule a required home inspection. They
+                    wanted to give him a chance to keep his breeding business. Pryor, who officers and shelter
+                    representatives
+                    described as very cooperative and helpful, agreed. Pryor also told officers he planned to bring some
+                    of the dogs to a Carolina dog rescue in South Carolina that month.</p>
+                <p>The animal control officers didn&rsquo;t enter the home their first visit. But before Pryor closed
+                    the door, Clarke noticed three Carolina dogs peering out at him.</p>
+                <p>Carolina dogs are a relatively rare breed that are usually found living near the Georgia-South
+                    Carolina border, according to the American Kennel Club, a not-for-profit dog breed registry. The
+                    dogs are hesitant with strangers but adopt a pack mentality.</p>
+                <p>Over the next few days, officers communicated with Pryor over the phone and email. In an email, Pryor
+                    gave officers a list of seven adult dogs and 12 puppies that he planned to register. Then, officers
+                    scheduled an animal permit home inspection for March 16, 2023.</p>
+                <p>By the day of the scheduled home inspection, animal control and the shelter suspected the number of
+                    animals at 227 N. Adams St. was much higher than the list Pryor gave them &mdash; especially when a
+                    man arrived to the shelter the day of the inspection with a U-Haul carrying 10 dogs in wire cages,
+                    most with skin infections and urine scalding. Pryor had asked him to hide the dogs until officers
+                    finished the home visit, the man told animal control.</p>
+                <p>The first day officers entered the home for the inspection, they tallied 50 dogs and puppies &mdash;
+                    but the number rose to 68 when officers returned the next day to officially remove the animals.</p>
+                <p>During the initial inspection, officers took photo evidence of the home and wrote affidavit
+                    statements to obtain a seizure warrant, which judge Mary Ellen Diekhoff signed. However, when
+                    officers reached out to Pryor, he said he would rather freely sign over all the Carolina dogs to the
+                    shelter.</p>
+                <p class='section-break'>•••</p>
+
+
+            </div>
+
+            <div class="story">
+                <p>When Morty and the other dogs arrived at the shelter on March 17, 2023, it was staggering.</p>
+                <p>In addition to arriving with skin infections and urine scalding, one of the dogs from the seizure, a
+                    dachshund, was in poor health and the veterinarian recommended euthanasia. Emily Herr, an outreach
+                    coordinator who has worked at the shelter for 17 years, said she has seen seizures where the dogs
+                    were in much worse physical condition. But Morty and the other dogs posed what she believes is a
+                    bigger challenge for a local shelter: behavioral issues.</p>
+                <p>Many of the dogs&rsquo; behavioral issues manifested as soon as officers entered the home for the
+                    seizure. Some of the dogs seemed uncertain or scared to see a human being, Clarke said. Others, like
+                    Morty, were terrified of leashes.</p>
+                <p>For a small shelter with only 20 people on staff, these challenges could be much more time-intensive
+                    and tougher to address than infection.</p>
+                <figure class="wide-right">
+                    <iframe src='https://flo.uri.sh/visualisation/19823875/embed' title='Interactive or visual content'
+                        class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+                        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                    <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                            class='flourish-credit'
+                            href='https://public.flourish.studio/visualisation/19823875/?utm_source=embed&utm_campaign=visualisation/19823875'
+                            target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                        </a></div>
+
+                    <iframe src='https://flo.uri.sh/visualisation/19823910/embed' title='Interactive or visual content'
+                        class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+                        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+                    <div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a
+                            class='flourish-credit'
+                            href='https://public.flourish.studio/visualisation/19823910/?utm_source=embed&utm_campaign=visualisation/19823910'
+                            target='_top' style='text-decoration:none!important'><img alt='Made with Flourish'
+                                src='https://public.flourish.studio/resources/made_with_flourish.svg'
+                                style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+                        </a></div>
+                    <figcaption>
+
+                    </figcaption>
+                </figure>
+
+                <p>After they placed as many dogs as possible in foster care, shelter staff identified eight dogs who
+                    were &ldquo;struggling behaviorally the most.&rdquo; Morty was at the top of this list. Herr said he
+                    could not even lift his head to look at the staff and volunteers who tried to meet him.</p>
+                <p>Morty, like all the at-risk dogs at the shelter, received a team of four people. Their objective? To
+                    help Morty
+                    reach small goals &mdash; goals that might appear natural to other canines. One of Morty&rsquo;s
+                    goals was simple: to wear a collar.</p>
+                <p>Their strategy all depended on Morty&rsquo;s love for cheese whiz. First, a staff member would put a
+                    collar on Morty. Then, before he could think about his new accessory, they would give him some
+                    cheese wiz to eat, drawing his attention away. Then, they would take the collar off. And repeat.</p>
+                <p>&ldquo;He had very small goals in the beginning,&rdquo; Herr said. &ldquo;But piece by piece, they
+                    all fill in and make almost a real dog.&rdquo;</p>
+                <p>Slowly, Morty came to accept the collar and would take on a new goal. But while Morty made progress,
+                    some other dogs regressed. Herr said the shelter was forced to euthanize three Carolina dogs who
+                    became &ldquo;offensively aggressive,&rdquo; trying to bite people with the intention to harm
+                    &mdash; something that can be dangerous for shelter staff and potential foster and adoptive
+                    families.</p>
+                <p>The Bloomington Animal Shelter never turns away an animal and will hold an animal for at least five
+                    days. After that, the shelter gives animals a behavior and health evaluation. Many of the animals
+                    can be adopted or fostered, but if an animal is too sick, injured, aggressive or &ldquo;behaviorally
+                    unsound&rdquo; the shelter considers euthanasia, stating it &ldquo;believes that euthanasia is the
+                    most humane alternative to an existence of suffering and pain or being limited to life in a
+                    cage.&rdquo;</p>
+                <p>&ldquo;Those were really, really hard decisions because obviously we want to take animals from a
+                    situation like that and give them a better outcome and regardless, I still do think we did,&rdquo;
+                    she said. &ldquo;We could at least provide them with a clean space to rest and food and water and
+                    fresh air. And though they didn&rsquo;t want our love, we still love them.&rdquo;</p>
+                <p class='section-break'>•••</p>
+                <figure class="xl-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/05db7da0-a31f-4bf3-af02-0a5ca87ae640.original.jpg"
+                        alt="Morty in the kitchen nervously peaking around the corner.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Morty hides around the corner of a wall in Green's house on Oct. 5, 2024, in Bloomington. When
+                        he and the other dogs were rescued, they were taken to the Bloomington Animal Shelter. Now,
+                        three-year-old Morty lives with his foster mom Casey Green and her dog Eleanor. Morty did not
+                        step outside until four months after he had been living with Green. While he still struggles,
+                        Morty has come a long way. He plays with his dog friends, snuggles with Green and runs around in
+                        her backyard, but only when strangers aren't around.
+                    </figcaption>
+                </figure>
+
+                <p>In March 2024, Indiana Gov. Eric Holcomb signed House Enrolled Act 1412. The law voided local
+                    municipal ordinances that banned retail dog sales in Indiana &mdash; including Bloomington&rsquo;s
+                    own ban on the retail sale of dogs. Critics argued the legislation protects inhumane puppy mills and
+                    commercial breeders.</p>
+                <p>The law will also make commercial dog breeders subject to random Indiana Board of Animal Health
+                    inspections starting July 1, 2025. If breeders do not register with the Board of Animal Health, they
+                    can face a Class A misdemeanor charge.</p>
+                <p>However, Herr said many hoarding and breeding situations are not always straightforward.</p>
+                <p>&ldquo;I think the biggest misconception is that these people are monsters, and that&rsquo;s just not
+                    the case,&rdquo; Herr said. &ldquo;When we look at people who end up in hoarding situations,
+                    it&rsquo;s oftentimes a symptom of a much bigger problem that they&rsquo;re having. You know,
+                    there&rsquo;s a lot of mental health issues that they&rsquo;re struggling with, there&rsquo;s a lot
+                    of financial issues that they&rsquo;re struggling with.&rdquo;</p>
+                <p>Herr said she felt Pryor was unfairly targeted after the seizure, including when a broadcast news
+                    team started taking video of Pryor&rsquo;s home.</p>
+                <p>&ldquo;I do think there were some ethical issues happening, but he was very cooperative, he was very
+                    kind,&rdquo; Herr said. &ldquo;And he became a target in Bloomington. Even though the things he did
+                    were not great, people did not treat him with any kind of respect at all.&rdquo;</p>
+                <p>Both Clarke and Herr said they believed Pryor did care for the dogs &mdash; that he thought he was
+                    helping protect the Carolina breed. Clarke said when one of the Carolina dogs escaped from his
+                    original foster home, Pryor had called the foster offering to help find the dog. He offered to send
+                    the foster parent a voice recording of himself talking to get the dog to come back.</p>
+                <p>“What kind of &lsquo;monster&rsquo; would reach back out like that and offer help?” Clarke said.
+                    “That&rsquo;s not a
+                    bad person, that&rsquo;s a person with a great heart who still cares, you know, and just wants to do
+                    right. He wanted to make sure that those animals succeeded, and he thought he was doing that. He
+                    thought he was saving the breed.”</p>
+
+                <p>After the seizure, Pryor faced two different legal cases. In the first, he faced a civil charge for
+                    violating Bloomington&rsquo;s local animal care ordinance, but this charge was dismissed. He was
+                    later convicted of a Class A criminal misdemeanor for cruelty to an animal. He was sentenced to 180
+                    days in the Monroe County Jail &mdash; but this term was suspended &mdash; and 180 days of
+                    unsupervised probation.</p>
+                <p>Pryor could not be reached for comment through a phone number associated with him.</p>
+                <p class='section-break'>•••</p>
+
+                <p>Although he came to her with the name &ldquo;Mortimer,&rdquo; Casey Green, Morty&rsquo;s foster mom,
+                    thinks his middle name, Octavius, is more fitting for the canine. Green assigned him the name, which
+                    he shares with a Roman emperor, when he started to come out of his shell this past year.</p>
+                <p>&ldquo;He&rsquo;s an Octavius,&rdquo; Green said. &ldquo;He&rsquo;s regal, you know. That just
+                    stuck.&rdquo;</p>
+                <p>And one day in mid-September, Morty was living up to his courageous name: by leaving his bed in the
+                    kitchen to catch a glimpse of the stranger standing in his living room.</p>
+                <p>He started by peeking his head around the kitchen doorframe. Only for a second, though &mdash; he
+                    didn&rsquo;t want the stranger to see him. And he succeeded: by the time his visitor looked in his
+                    direction, Morty was already gone.</p>
+                <p>But it wasn&rsquo;t good enough. His foster sister, Eleanor, was barking &mdash; what if she needed
+                    his help? He obviously needed another quick peek around the doorframe. This time he waited for a few
+                    seconds longer before bolting away.</p>
+                <p>Still, he wanted to know more. So, Morty continued his game of cat-and-mouse for the next 30 minutes,
+                    stuck between his curiosity and trepidation, before finally retiring back to his bed. Maybe
+                    he&rsquo;d try again later.</p>
+                <p>For another dog, the task might be easy and an opportunity to snag a few treats and pets. But for
+                    Morty to even look at the newcomer from a distance, Green said, was &ldquo;brave.&rdquo;</p>
+                <p>Before coming to Green, Morty was in one other foster home for a few weeks. While he made significant
+                    progress in the shelter setting, Herr said they didn&rsquo;t want to keep him there for long.</p>
+                <p>That&rsquo;s when the shelter asked Green if she would be interested in taking him in. Green was
+                    known among the shelter as one of the best animal foster parents in Bloomington. She&rsquo;s
+                    fostered around 130 dogs &mdash; mostly puppies &mdash; since she was in college.</p>
+                <p>She&rsquo;s fostered lots of dogs with complicated histories. Sometimes she takes in puppies whose
+                    &ldquo;mama dog&rdquo; has tried to attack her litter. She&rsquo;s fostered Pitbulls, mutts and
+                    designer breeds she thinks &ldquo;shouldn&rsquo;t exist&rdquo; due to their conflicting health and
+                    behavior qualities &mdash;
+                    like &ldquo;mastodor&rdquo; named Mabel, whose family surrendered her to the shelter after refusing
+                    to bring her into their RV on a camping trip.</p>
+
+
+                <figure class="wide-left">
+                    <img
+                        src="https://s3.amazonaws.com/snwceomedia/ids/6dc8a8a1-65fc-491d-a9e3-4c2e9f650fef.original.jpg">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Casey gives treats to Bronson and Eleanor on Oct. 5, 2024, in her backyard in Bloomington. The
+                        animal shelter nicknamed Casey "the treat fairy."
+                    </figcaption>
+                </figure>
+                <p>Before welcoming Morty, she fostered two other Carolina dogs from the seizure: Eleven and Kaia.
+                    Eleven&rsquo;s adoptive parents Karen and Mike Kelley, call Green the &ldquo;kibble fairy,&rdquo;
+                    because she hand-feeds all her animals.</p>
+
+                <p>The Bloomington Animal Shelter brought Morty to Green&rsquo;s house in December 2023. Usually, Green
+                    would pick the animal up at the shelter, but she didn&rsquo;t have a car at the time and Morty was
+                    too large for her to transport by herself. When Morty got there, he was covered in feces (a
+                    &ldquo;panic poop,&rdquo; as Green described it). It was obvious he was scared. That was nothing new
+                    for her.</p>
+                <p>She sat on her kitchen floor with Morty, as he avoided her gaze and tried to push himself against the
+                    walls of her kitchen. He didn&rsquo;t know Green and likely didn&rsquo;t know why he was in this
+                    unknown house. The presence of another animal, a curious hound-mix named Eleanor, who was separated
+                    from him by a baby gate, probably wasn&rsquo;t clearing up the situation.</p>
+                <p>It took a few days after this first introduction, but he eventually started to explore his new home.
+                    He sniffed the kitchen floor thoroughly and started to look through a glass panel on the kitchen
+                    door that led to Green&rsquo;s backyard. Slowly, he started to venture out more &mdash; into the
+                    living room, into Green&rsquo;s bedroom. Eventually, the baby gate blocking him from Eleanor came
+                    down.</p>
+                <p>A few weeks later, Morty decided to try something he&rsquo;d seen Eleanor doing: playing with a toy.
+                    While Green was at work, he experimented with a dinosaur squeaky toy. He wasn&rsquo;t exactly sure
+                    what to do as he approached the toy lying on the kitchen floor. He picked it up and started swinging
+                    his head, before accidentally letting go and launching the toy into the kitchen sink and hitting
+                    some dishes &mdash; a fun surprise for Green when she got home that night.</p>
+                <p>His confidence grew even more when he met one of his first friends: a Pitbull named Bronson. Green
+                    was watching Bronson, one of her former fosters, for a few weeks when the two first met, as Bronson
+                    pummeled into the kitchen and took a &ldquo;play bow&rdquo; stance. Unsure of what to do, Morty
+                    imitated him, awkwardly trying out the stance himself. Luckily, Bronson didn&rsquo;t care about
+                    Morty&rsquo;s hesitancy and started playing with him anyways.</p>
+                <p>Bronson was the one who got Morty to go outside for the first time in May 2024. Bronson was playing
+                    with Eleanor and Morty, and he ran outside into the backyard. Swept up in Bronson&rsquo;s energy,
+                    Morty followed, stepping outside into the backyard full of scattered tennis balls, water guns and
+                    lawn chairs.</p>
+                <p>While he&rsquo;s started to feel more confident going outside in the months since, sometimes he still
+                    needs an extra push. And one day in October, Green and four other canine companions &mdash; Bronson,
+                    Penelope, Sierra and Eleanor &mdash; were giving him that push.</p>
+                <p>Morty was presented with a new challenge: go outside with five people (three of whom were strangers)
+                    to play with his closest friends. At first, Morty considered it too much to overcome &mdash; he
+                    would just stay in the kitchen. But as he looked out through a window at the game of fetch going on
+                    outside, he decided to give it a shot.</p>
+            </div>
+
+            <figure class="xl-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/3ad7ff5d-bd23-49f6-8fc0-07306abc1e91.original.jpg"
+                    alt="Morty standing in the doorway as he watches the other dogs play.">
+                <figcaption>
+                    <p class="credit">Briana Pace | <b>IDS</b></p>
+                    Morty stands in the doorway of his foster mom's house, watching as his dog friends run around the
+                    backyard Oct. 5, 2024, in Bloomington. Morty never came outside to play with his dog friends.
+                </figcaption>
+            </figure>
+
+            <div class="story">
+                <p>First, in his usual manner, he started with a quick look outside the door to assess the situation. It
+                    seemed like the other dogs didn&rsquo;t mind the new people, but he couldn&rsquo;t be too sure.
+                    He&rsquo;d watch for a little while longer.</p>
+                <p>The dogs ran back and forth from the kitchen to backyard, as if begging him to come outside. Then,
+                    Morty, suddenly caught up in the energy, ran outside, jumping over Green&rsquo;s welcome mat reading
+                    &ldquo;Wipe Your Paws.&rdquo;</p>
+                <p>Morty seemed just as shocked as Green that he was outside. Morty looked at her, then the strangers,
+                    then the dogs around him. He paced back and forth on the concrete porch, trying to decide his next
+                    move.</p>
+                <p>In the end, he didn&rsquo;t join the dogs in their game of keep away in the yard or approach the
+                    strangers for the kibble treats they held in their hands. Instead, he chose to sit in the doorway,
+                    watching.</p>
+                <p class='section-break'>•••</p>
+
+
+                <p>Green&rsquo;s only ever failed at saying goodbye to a foster once: when she adopted Eleanor, her
+                    &ldquo;foster failure.&rdquo; Still, Morty is her longest-term foster ever. When she took him in
+                    December 2023, she thought she would foster him for a month. Then, she extended the foster by two
+                    months. Eventually, both Green and the shelter stopped assuming she would bring him back.</p>
+            </div>
+
+            <figure class="xl-image">
+                <img src="https://s3.amazonaws.com/snwceomedia/ids/d0947374-d723-4565-93f2-c3e87f80eaf8.original.jpg"
+                    alt="Casey Green consoling Elenor.">
+                <figcaption>
+                    <p class="credit">Briana Pace | <b>IDS</b></p>
+                    Casey gives Elenor a kiss Sept. 12, 2024, in her home in Bloomington. Elenor was three weeks old
+                    when she first came to Casey's home. Casey fostered Elenor's littermates and her mom for two weeks.
+                </figcaption>
+            </figure>
+            <div class="story">
+                <p>&ldquo;(It&rsquo;s) hard, because I want to keep him so desperately. But I just don&rsquo;t... I
+                    can&rsquo;t provide stability. I can&rsquo;t guarantee the stability long term right now,&rdquo; she
+                    said, noting she might move for work or adopt a &ldquo;van life&rdquo; in the future.</p>
+                <div class="pull-quote-center">
+                    <p class="quote">“(It&rsquo;s) hard, because I want to keep him so desperately. I can&rsquo;t
+                        guarantee [him] stability long term right now."
+                    <p class="attribute">— Casey Green, Morty's foster parent</p>
+                </div>
+
+                <p>Morty&rsquo;s last potential adopter called in March.</p>
+                <p>Everyone who knows the Carolina dog has said he&rsquo;s come a long way since his rescue &mdash; much
+                    of this progress due to his time with Green.</p>
+                <p>&ldquo;That foster mom taught him that being a dog can be a lot of fun,&rdquo; the Bloomington Animal
+                    Shelter wrote on his adoptable pet profile page. &ldquo;She showed him how to have best dog friends,
+                    how to get pets, how to be potty trained and how to love.&rdquo;</p>
+                <p>Green thinks each day Morty will grow braver and experience more of the world he didn&rsquo;t see on
+                    North Adams Street. So much has already changed since he left the seizure. He rings a bell to go
+                    outside. He loves getting treats, specifically zucchini, frozen berries and pumpkin. Each night, he
+                    sits on the couch and snuggles with Green and Eleanor.</p>
+                <p>He still has a way to go; Green and the shelter know that. But they hope that one day, someone will
+                    give him a chance. That someone will look at him and think he&rsquo;s just a &ldquo;normal
+                    dog.&rdquo;</p>
+
+
+
+                    <div class="yt">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yzoo3MKp82A?si=baksi5Ab0gTM28d6"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
