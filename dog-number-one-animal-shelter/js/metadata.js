@@ -3,7 +3,7 @@ const data = {
     "slug": "Dog number one",
     "headline": "Dog number one",
     "title": "Dog number one",
-    "pub_date": "{insert your date in metadata.json}",
+    "pub_date": "Dec. 13, 2024",
     "bylines": {
         "By": {
             "name": "Mia Hilkowitz",
