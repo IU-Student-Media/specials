@@ -1,0 +1,57 @@
+:root{
+    --max-opacity: .6;
+}
+
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: var(--max-opacity);
+    }
+    75% {
+        opacity: var(--max-opacity);
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 50px;
+    }
+    50% {
+        margin-left: -50px;
+    }
+    75% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+    transition: opacity 500ms;
+
+    pointer-events: none;
+}
+
+.snow {
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+    color: skyblue;
+    position: absolute;
+}
