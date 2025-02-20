@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/indiana-football-cignetti-lecture-historic-season" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="Indiana football head coach Curt Cignetti reflects on historic season at student-only lecture" />
+    <!-- TODO: headline -->
+    <meta property="og:description" content="Cignetti spoke Tuesday at the IU Auditorium in Bloomington. " />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/e5eb0bdb-d62c-492f-a5d7-d537d1d710d1.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title"
+        content="Indiana football head coach Curt Cignetti reflects on historic season at student-only lecture">
+    <!-- TODO: headline -->
+    <meta name="twitter:description" content="Cignetti spoke Tuesday at the IU Auditorium in Bloomington. ">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/e5eb0bdb-d62c-492f-a5d7-d537d1d710d1.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">&lsquo;You build it, and they will come&rsquo;</h1>
+            <h2 data-scroll-speed="3">Indiana football head coach Curt Cignetti reflects on historic season at
+                student-only lecture</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p id="header-credit" class="credit">Lauren McKinney | <b>IDS</b></p>
+        <p class="caption header-caption">Indiana head coach Curt Cignetti speaks during "A Conversation with Coach Cignetti" on Feb. 18, 2025, at the IU Auditorium in Blooomington. Cignetti became the first Indiana Athletics head coach since former men's basketball coach Bob Knight to hold a student-only lecture.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+
+                <p>Curt Cignetti arrived in Bloomington on Dec. 1, 2023. He immediately noticed many people didn&rsquo;t
+                    think Indiana football could win.</p>
+                <p>Historically, it&rsquo;s a program that has always found a way to lose. Any glimmer of hope was
+                    typically shot down by a heartbreaking loss. But athletic director Scott Dolson thought it was a
+                    &ldquo;sleeping giant.&rdquo;</p>
+                <p>Cignetti awoke it.</p>
+                <p>The first-year Hoosiers head coach proved that Indiana football winning &mdash; and winning big &mdash; is possible. He led his squad
+                    to an 11-2 overall record, including their first-ever College Football Playoff appearance.</p>
+                <p>On Tuesday, Cignetti became the first Indiana Athletics head coach since former men&rsquo;s
+                    basketball coach Bob Knight to speak at a student-only lecture as the Union Board hosted &ldquo;A
+                    Conversation with Coach Cignetti&rdquo; at the IU Auditorium in Bloomington. IU junior Joe Cronin
+                    and IU sophomore Reid Sprenkle moderated the event.</p>
+                <p>From the Hoosiers&rsquo; Week 1
+                    <a href="https://www.idsnews.com/article/2024/08/iu-football-wins-curt-cignetti-florida-international"
+                        target="_blank">
+                        victory over Florida International University
+                    </a>
+                    to their
+                    <a href="https://www.idsnews.com/article/2024/12/indiana-football-notre-dame-cfp-cignetti-freeman-big-ten-iu-bloomington"
+                        target="_blank">
+                        season-ending
+                        loss to the University of Notre Dame</a>, Cignetti discussed numerous topics at the event.
+                </p>
+
+                <h3>Game 1 vs. FIU and Game 2 vs. Western Illinois</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e931269f-5453-4389-bb79-eacec0be66d3.original.jpg"
+                        alt="A football coach in a white polo shirt stands akimbo with his players at the entrance to a football field.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Indiana head coach Curt Cignetti stands in front of the tunnel before a game against Florida International University on Aug. 31, 2024, at Memorial Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <p>The Hoosiers took to the field inside Memorial Stadium to open the Cignetti-era. They eventually
+                    cruised to a
+                    <a href="https://www.idsnews.com/article/2024/08/iu-football-wins-curt-cignetti-florida-international"
+                        target="_blank">
+                        dominant victory</a>; however, two things stood out to Cignetti when recalling the win.
+                </p>
+                <p>&ldquo;What I remember about the first game was number one, it was really hot,&rdquo; Cignetti said.
+                    &ldquo;But number two, when we came out for the second half, like half the people had already left.
+                    And I couldn&rsquo;t just quit dwelling on how many people had left in my mind.&rdquo;</p>
+                <p>Cignetti
+                    <a href="https://www.idsnews.com/article/2024/09/iu-football-curt-cignetti-fans" target="_blank">
+                        addressed the fans&rsquo; exodus
+                    </a> in his post-game press conference. He said he knew about
+                    the tradition of fans leaving early.
+                </p>
+                <p>&ldquo;I knew that was something that had to change, but it was only going to change if we
+                    won,&rdquo; Cignetti said. &ldquo;You build it, and they will come.&rdquo;</p>
+                <p>The next week, the Hoosiers
+                    <a href="https://www.idsnews.com/article/2024/09/iu-football-dominates-wiu-curt-cignetti"
+                        target="_blank">
+                        defeated Western Illinois University</a>
+                    by 74 points.
+                </p>
+                <h3>Indiana&rsquo;s trip to the Rose Bowl Stadium</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a7541c1a-7b61-47a1-a360-ff83b58290e8.original.jpg"
+                        alt="3 IU football players run together.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Sophomore defensive back Amare Ferrell celebrates an interception during a game against UCLA on Sept. 14, 2024, at the Rose Bowl Stadium in Pasadena, Calfornia.
+                    </figcaption>
+                </figure>
+                <p>The Hoosiers made their first appearance inside the historic Rose Bowl Stadium since 1968 when they
+                    faced off against UCLA on Sept. 14. There was sentimental fanfare heading into the matchup. Not for
+                    Cignetti.</p>
+                <p>&ldquo;I&rsquo;m like, &lsquo;We&rsquo;re going out there, this is a business trip. We&rsquo;re going
+                    out there to kick some ass,&rsquo;&rdquo; Cignetti said. &ldquo;You know what I mean? And
+                    that&rsquo;s what we did. I mean, we dominated their ass.&rdquo;</p>
+                <p>The
+                    <a href="https://www.idsnews.com/article/2024/09/iu-football-win-ucla-curt-cignetti-kurtis-rourke"
+                        target="_blank">
+                        29-point drubbing</a>
+                    instilled and increased the level of belief and confidence in the Hoosiers,
+                    Cignetti said.
+                </p>
+                <p>&ldquo;We had everybody&rsquo;s attention after that,&rdquo; Cignetti said.</p>
+                <h3>Game 4 vs. Charlotte</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/eb352b8e-c87e-4d82-93ee-fd8e94af1bf4.original.jpg"
+                        alt="A football player in a red IU jersey stands happily with the ball in front of some opposing players.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Fifth-year senior wide receiver Ke'Shawn Williams celebrates a touchdown during a game against the University of North Carolina at Charlotte on Sept. 21, 2024, at Memorial Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <p>The Hoosiers cruised to a
+                    <a href="https://www.idsnews.com/article/2024/09/iu-football-charlotte-win-curt-cignetti-hoosiers"
+                        target="_blank">
+                        38-point victory</a> over the University of North Carolina at Charlotte, but
+                    they began the game flat, Cignetti said.
+                </p>
+                <p>&ldquo;Eventually, we exerted our will and dominated them and won decisively, which is what good
+                    teams do,&rdquo; he said. &ldquo;You have to be able to get the job done when you don&rsquo;t have
+                    your &lsquo;A&rsquo; game.&rdquo;</p>
+                <h3>Game 5 vs. Maryland</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/69f86a7b-caa6-4c8e-806d-3ce55b0ee586.original.jpg"
+                        alt="An indiana football player runs with the ball past a defender.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Redshirt senior running back Ty Son Lawton runs with the ball during the game agaisnt Maryland on Sept. 28, 2024, at Memorial Stadium in Bloomington. Lawton transfered from James Madison this year.
+                    </figcaption>
+                </figure>
+                <p>Prior to Cignetti arriving in Bloomington, Indiana faced off with Maryland on Sept. 30, 2023. The
+                    Hoosiers
+                    <a href="https://www.idsnews.com/article/2023/10/indiana-football-loss-maryland-hoosiers-defense"
+                        target="_blank">
+                        lost by 27 points
+                    </a>
+                    after trailing 27-3 at halftime.
+                </p>
+                <p>So, when the Terrapins traveled to Bloomington on Sept. 28, 2024, Cignetti had the blowout loss in
+                    mind. His
+                    <a href="https://www.idsnews.com/article/2024/09/iu-football-maryland-curt-cignetti-undefeated-defeat-bloomington"
+                        target="_blank">
+                        squad won by 14 points</a> to improve to 5-0.
+                </p>
+                <p>&ldquo;That was a game I had circled all year long,&rdquo; he said. &ldquo;To get that one done I
+                    thought was really important.&rdquo;</p>
+                <h3>Game 6 at Northwestern</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/eb3526be-bb8b-45e4-9f70-a8e4c59be598.original.jpg"
+                        alt="Cignetti wears a red jacket and holds up a raised fist as he smiles at the crowd.">
+                    <figcaption>
+                        <p class="credit">Jimmy Rush | <b>IDS</b></p>
+                        Indiana head coach Curt Cignetti leads fans in a chant after defeating Northwestern on Oct. 5, 2024, at Northwestern Medicine Field at Martin Stadium in Evanston, Illinois.
+                    </figcaption>
+                </figure>
+                <p>Indiana hit the road to take on Northwestern at its temporary lakefront stadium Oct. 5, 2024.
+                    Although the Hoosiers didn&rsquo;t play their best, they pulled away in the fourth quarter to
+                    improve to 6-0 with their
+                    <a href="https://www.idsnews.com/article/2024/10/indiana-football-curt-cignetti-iu-bloomington-big-ten"
+                        target="_blank">
+                        17-point victory</a>.
+                </p>
+                <p>&ldquo;Surprisingly, we had not beaten Northwestern at Northwestern in 32 years,&rdquo; Cignetti
+                    said. &ldquo;Can you believe that? 32 years since we beat Northwestern at Northwestern.&rdquo;</p>
+                <p>As Cignetti walked off the field toward the Hoosiers&rsquo; locker room, he noticed the sea of
+                    Hoosier fans in the north endzone bleachers. Their excitement, he said, was way over the top, and he
+                    felt it.</p>
+                <p>&ldquo;So I felt like I&rsquo;d join them and show the appreciation and make them part of the team
+                    even more,&rdquo; he said. &ldquo;And we did our little &lsquo;Go IU&rsquo; chant, which I guess is
+                    new around here. I don&rsquo;t know. I mean we got IU on our helmets so &lsquo;Go IU&rsquo; kind of
+                    makes sense. I like to keep it simple you know.&rdquo;</p>
+
+                    <div class="ad-block">
+                        <div class="ad-code">
+                          <br>
+                          <div id='div-gpt-ad-1512489859064-2'>
+                            <script>
+                              googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                            </script>
+                          </div>
+                        </div>
+                      </div>
+                <h3>Indiana&rsquo;s home-field advantage in wins over Nebraska and Washington</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e4208de4-f32d-41dc-9aa9-774265d96f19.original.jpg"
+                        alt="A packed crowd in a football stadium wearing red and white.">
+                    <figcaption>
+                        <p class="credit">Ben Fitzsimons | <b>IDS</b></p>
+                        Fans cheer on undefeated Indiana Football and Memorial Stadium Oct. 19, 2024.
+                    </figcaption>
+                </figure>
+
+                <p>When Indiana returned home to face off against Nebraska on Oct. 19, 2024, Fox&rsquo;s Big Noon
+                    Kickoff was in town. Memorial Stadium was sold out as the
+                    <a href="https://www.idsnews.com/article/2024/10/indiana-football-beats-nebraska-cignetti-big-ten-bloomington-iu"
+                        target="_blank">
+                        Hoosiers cruised to a 56-7 victory</a> over
+                    the Cornhuskers.
+                </p>
+                <p>&ldquo;That&rsquo;s such a winning edge,&rdquo; Cignetti said about the sold-out crowd. &ldquo;I
+                    can&rsquo;t tell you how it touches me to see people so excited about what our players and our staff
+                    are doing. Those guys really deserve all the credit.&rdquo;</p>
+                <p>A week later, ESPN&rsquo;s College GameDay came to Bloomington for the Hoosiers&rsquo; matchup
+                    against Washington. That contest was also sold out.</p>
+                <p>&ldquo;It&rsquo;s at least 10, 14, 17 points,&rdquo; Cignetti said about the home-field advantage.
+                    &ldquo;When we play at home and that place is packed and people are going crazy, it's two scores or
+                    more difference.&rdquo;</p>
+                <p>It very well may have been the difference against the Huskies as the Hoosiers trotted backup
+                    quarterback Tayven Jackson onto the field in place of the injured Kurtis Rourke.
+                    <a href="https://www.idsnews.com/article/2024/10/indiana-football-washington-college-gameday-cignettti-big-ten-bloomington-iu"
+                        target="_blank">
+                        Indiana still won
+                        by 14</a>.
+                </p>
+                <h3>Game 9 vs. Michigan State</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c71cdce6-3138-4a31-bebb-99263bf302a7.original.jpg"
+                        alt="A football player in a white jersey runs with the ball.">
+                    <figcaption>
+                        <p class="credit">Lauren McKinney | <b>IDS</b></p>
+                        Fifth-year senior running back Justice Ellison runs the ball during a game against Michigan State on Nov. 2, 2024, at Spartan Stadium in East Lansing, Michigan.
+                    </figcaption>
+                </figure>
+                <p>Indiana trailed for the first time all season when it allowed Michigan State to score the first 10
+                    points of the Nov. 2, 2024, contest.</p>
+                <p>The Hoosiers responded with
+                    <a href="https://www.idsnews.com/article/2024/11/indiana-football-win-michigan-state-curt-cignetti-big-ten-iu-bloomington"
+                        target="_blank">
+                        47 unanswered points to reclaim the Old Brass Spittoon</a> for the first time
+                    since 2022. They also notched their 10th victory of the season to mark the first-ever double digit
+                    win season in program history.
+                </p>
+                <p>Rourke returned from his thumb injury and picked apart the Spartans&rsquo; defense, going 19-for-29
+                    with 263 yards passing and four touchdowns.</p>
+                <h3>Game 10 vs. Michigan</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/ebe71643-3b08-4611-8fa0-14948c913725.original.jpg"
+                        alt="An indiana football player looks at the crowd and points celebratorily to the sky.">
+                    <figcaption>
+                        <p class="credit">Ben Fitzsimons | <b>IDS</b></p>
+                        Junior wide reciever Elijah Sarratt celebrates a touchdown against Michigan Nov. 9, 2024. IU improved to 10-0 on the season.
+                    </figcaption>
+                </figure>
+                <p>The Hoosiers got out to a quick start against the Wolverines, leading 17-3 at halftime. However,
+                    Indiana could have led by even more if it would not have been flagged for a &ldquo;bullshit&rdquo;
+                    pass interference, Cignetti said.</p>
+                <p>Although Michigan outscored Indiana 12-3 in the second half, the
+                    <a href="https://www.idsnews.com/article/2024/11/indiana-football-win-michigan-curt-cignetti-big-ten-iu-bloomington"
+                        target="_blank">
+                        Hoosiers still held on to secure a
+                        20-15 victory</a>.
+                </p>
+                <p>&ldquo;That&rsquo;s the mark of a good team, when your back is against the wall you persevere and
+                    you&rsquo;re resilient, which means being able to overcome the unexpected and find a way to get it
+                    done,&rdquo; Cignetti said. &ldquo;And we did, which put us at 10-0.&rdquo;</p>
+                <h3>Game 11 at Ohio State</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/da31a974-b4c8-40ad-a7d7-f9b8cead1d12.original.jpg"
+                        alt="Cignetti wearing a headset during a football game.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Indiana head coach Curt Cignetti walks along the sideline against Ohio State on Nov. 23, 2024, at Ohio Stadium in Columbus, Ohio.
+                    </figcaption>
+                </figure>
+                <p>Indiana traveled to Ohio Stadium for a bout with then-No. 2 Ohio State. Despite scoring first and
+                    leading midway through the second quarter, the Hoosiers allowed the Buckeyes to score 31 unanswered
+                    points en route to handing the visitors their
+                    <a href="https://www.idsnews.com/article/2024/11/indiana-football-loss-ohio-state-cignetti-big-ten-iu-bloomington"
+                        target="_blank">
+                        first loss of the season
+                    </a>.
+                </p>
+                <p>&ldquo;We made some uncharacteristic mistakes in that game, but we also played a great football team
+                    and sometimes you make those mistakes when you play against great competition,&rdquo; Cignetti said.
+                    &ldquo;Any time you have a setback &mdash; not a defeat, a setback &mdash; you got to learn the
+                    lessons and
+                    come back stronger.&rdquo;</p>
+                <p>The Hoosiers &ldquo;filed away&rdquo; the lessons, Cignetti said, ahead of their final regular season
+                    game against their in-state rival.</p>
+                <h3>Game 12 vs. Purdue</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/6aef8c6b-a8b1-48d0-84c4-4812f9835b58.original.jpg"
+                        alt="Two football players hold a small wooden barrel between.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Redshirt senior defensive lineman CJ West (left) and sixth-year senior center Mike Katic (right) hold the Old Oaken Bucket after defeating Purdue on Nov. 30, 2024, at Memorial Stadium in Bloomington.
+                    </figcaption>
+                </figure>
+                <p>Indiana returned to Memorial Stadium to play its final home game of the season Nov. 30, 2024, against
+                    Purdue. The Old Oaken Bucket, which the Hoosiers had not won since 2019, was at stake.</p>
+                <p>&ldquo;It was cold, it was snowy, we had a Canadian quarterback; he plays good in cold
+                    weather,&rdquo; Cignetti said. &ldquo;We jumped up on them, stayed on them and it was a dominant,
+                    decisive win.&rdquo;</p>
+                <p>The Hoosiers cruised to a <a
+                        href="https://www.idsnews.com/article/2024/12/indiana-football-cfp-win-purdue-bucket-cignetti-big-ten-iu-bloomington">66-0
+                        victory</a> over the Boilermakers, who fired their head coach Ryan Walters the following day.
+
+                </p>
+                <p>Before the season, Cignetti overheard what he described as a long-time starter saying, &ldquo;As long
+                    as we beat Purdue.&rdquo;</p>
+                <p>The first-year Hoosiers head coach was confused that Purdue was the standard for some of his players,
+                    so he delivered a message at halftime of the Indiana men&rsquo;s basketball game Dec. 1, 2023, just
+                    hours after his introductory press conference.</p>
+                <p>&ldquo;I&rsquo;m super fired up about this opportunity,&rdquo; Cignetti yelled. &ldquo;I've never
+                    taken a backseat to anybody and don't plan on starting now. Purdue sucks, but so does Michigan and
+                    Ohio State.&rdquo;</p>
+                <p>When asked if that long-time starter was offensive lineman Mike Katic, Cignetti didn&rsquo;t say yes
+                    or no.</p>
+                <p>&ldquo;I know nothing,&rdquo; he said, which was met with laughter from those in attendance.</p>
+
+
+
+                <h3>College Football Playoff First Round at Notre Dame</h3>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5c513ae8-91d2-4f0b-b078-c365c457f540.original.jpg"
+                        alt="A football team huddles in front of a full crowd.">
+                    <figcaption>
+                        <p class="credit">Briana Pace | <b>IDS</b></p>
+                        Indiana football huddles during the College Football Playoff First Round game against the University of Notre Dame on Dec. 20, 2024, at Notre Dame Stadium in South Bend, Indiana.
+                    </figcaption>
+                </figure>
+                <p>After becoming a feel-good story in which fans across the country were rooting for Indiana because of
+                    their historical lack of success, some fans in the south weren&rsquo;t supportive of the Hoosiers
+                    making the CFP.</p>
+                <p>Cignetti felt he had to politic for his team to make the playoff, which goes against what he preaches
+                    to his team about being humble, hungry, preparing and living in the moment.</p>
+                <p>The Hoosiers traveled to take on the University of Notre Dame at Notre Dame Stadium in South Bend.
+                    <a href="https://www.idsnews.com/article/2024/12/indiana-football-notre-dame-cfp-cignetti-freeman-big-ten-iu-bloomington"
+                        target="_blank">
+                        The Hoosiers fell 27-17
+                    </a>
+                    to end their season.
+                </p>
+                <p>&ldquo;I felt really confident going up there into that game,&rdquo; Cignetti said. &ldquo;We didn't
+                    play as well as we wanted to play, and I take responsibility for that. I thought we matched up well
+                    against Notre Dame, and we just didn&rsquo;t make it happen, so it was disappointing.&rdquo;</p>
+                <h3>Staying in Bloomington</h3>
+                
+                <p>With Indiana&rsquo;s historic season, rumors floated of Cignetti leaving the Hoosiers for a different
+                    head coaching job.</p>
+                <p>Instead, he
+                    <a href="https://www.idsnews.com/article/2024/11/indiana-football-curt-cignetti-contract-extension-big-ten-iu-bloomington"
+                        target="_blank">
+                        signed a new contract Nov. 16, 2024</a>, during Indiana&rsquo;s second bye week of the regular
+                    season.
+                </p>
+                <p>&ldquo;There wasn't any job in America that could&rsquo;ve opened once we were 10-0 that I&rsquo;d
+                    have considered worth taking,&rdquo; he said. &ldquo;My wife and I, we went through that what-if
+                    game. I&rsquo;ve been in this business a long time &mdash; 43 years &mdash; you know there&rsquo;s
+                    things out
+                    there.&rdquo;</p>
+                <p>But being at the helm of Indiana football is where Cignetti wants to be long-term.</p>
+                <p>&ldquo;There&rsquo;s nothing that could&rsquo;ve taken me from Indiana because I just felt a special
+                    bond; I felt like it was something that we had started and created, and it was ours and
+                    yours,&rdquo; Cignetti said toward the students in attendance. &ldquo;You can&rsquo;t put a value on
+                    that. So, I&rsquo;m excited about the future and where we can take this program.&rdquo;</p>
+
+
+                    <div class="ad-block">
+                        <div class="ad-code">
+                          <br>
+                          <div id='div-gpt-ad-1512489859064-0'>
+                            <script>
+                              googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                          </div>
+                        </div>
+                      </div>
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+                        class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
