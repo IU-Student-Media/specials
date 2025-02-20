@@ -1,0 +1,245 @@
+/*
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+.record {
+  background-size: contain;
+  filter: contrast(1.5) brightness(.65);
+  /* filter: brightness(.7); */
+
+
+  aspect-ratio: 1;
+
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#record1 {
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/941c656d-6e91-4f55-8ae4-a818046033a6.sized-1000x1000.png");
+}
+
+#record2 {
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/8be46dfd-c6d0-456f-95a8-673e4a506e5e.sized-1000x1000.png");
+}
+
+#record3 {
+  background-image: url("https://s3.amazonaws.com/snwceomedia/ids/e93441a3-acfc-49e7-8064-65040205c974.sized-1000x1000.png");
+}
+
+@media (max-width: 512px) {
+  #record2 {
+    display: none;
+  }
+}
+
+/*
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/*
+TYPOGRAPHY
+*/
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Limelight", serif;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  border-radius: 5px;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.headline-container {
+  top: auto;
+  bottom: 35vh;
+}
+
+h3 {
+  /* section header */
+}
+
+.side-by-side {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side figure img {
+  height: 250px;
+  object-fit: cover ;
+
+}
+
+
+.side-by-side-by-side {
+  max-width: var(--width-lg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: var(--xl) auto var(--lg);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side-by-side figure {
+  margin: 0;
+}
+
+.side-by-side-by-side figure img {
+  height: 190px;
+  object-fit: cover ;
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+}
+
+/*
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .side-by-side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+    padding-left: var(--sm);
+    padding-right: var(-
+    
+    -sm); */
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.4em;
+  }
+
+  .side-by-side-by-side figure {
+    width: 40vw;
+  }
+
+  .headline-container {
+    top: 20vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
