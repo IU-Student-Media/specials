@@ -1,0 +1,224 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* @font-face {
+  font-family: 'Mandingo';
+  src: url('../fonts/MANDINGO.TTF');
+}
+
+@font-face {
+  font-family: 'NewBaskerville';
+  src: url('../fonts/NewBaskerville\ Regular.ttf');
+} */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/152babe3-e01f-402c-809e-466c24395db0.original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: 75% center;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+.bg-icecream {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.075;
+}
+
+.page-break {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.page-break img {
+  display: inline;
+  width: 50px;
+}
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+
+}
+
+h2 {
+  /* second headline */
+
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container-container {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+
+  left: 8vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline-container {
+  background-color: #e9d6cc;
+
+  /* background-color: rgb(255, 242, 143);; */
+
+  padding: 2em !important;
+  border: 6px solid #1d1f22;
+  border-radius: 2px;
+  margin-right: 8vh;
+  padding: 0;
+  max-width: 600px;
+}
+
+.headline-bar {
+  width: 30px;
+  height: 12vw;
+  background-color: #1d1f22;
+
+
+  margin-right: 8vh;
+}
+
+
+h3 {
+  /* section header */
+
+}
+
+
+
+h1 {
+  /* font-family: 'NewBaskerville', serif; */
+  /* text-align: left; */
+  color: #1d1f22;
+  text-shadow: none;
+}
+
+h2 {
+  /* font-family: 'Mandingo', sans-serif; */
+  /* text-align: left; */
+  color: #1d1f22;
+  text-shadow: none;
+  font-size: 32px;
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 28px;
+
+  }
+
+  h2{
+    font-size: 28px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+
+  }
+
+  h2{
+    font-size: 24px;
+  }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
