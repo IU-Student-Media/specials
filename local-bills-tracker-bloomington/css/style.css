@@ -1,0 +1,898 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+
+  --nav-height: 70px;
+}
+
+#statistics {
+  display: none;
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  height: var(--nav-height);
+  width: 100vw;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+nav li a:link,
+li.toggle {
+  color: black;
+}
+
+#additional-resources-container {
+  justify-content: center;
+  max-width: var(--width-xl);
+}
+
+main {
+  margin-top: var(--nav-height);
+  padding-top: var(--sm);
+}
+
+
+nav {
+  top: 0;
+  height: var(--nav-height);
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #aaa;
+  /* width: 90%; */
+  max-width: var(--width-xl);
+  position: static;
+  /* z-index: -1;  */
+}
+
+li.logo span {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: black;
+  align-self: end;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+
+
+/* General Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: flex-start;
+  gap: 20px;
+  /* width: 1000px; */
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  max-width: var(--large  );
+  margin: 0 auto;
+}
+
+/* Container for Card List + Pagination */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  /* Stacks #card-container and .pagination */
+  align-items: center;
+  /* Centers content */
+  width: 100%;
+  max-width: 800px;
+  /* Matches #card-container width */
+}
+
+
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Pagination Container */
+
+
+/* Ensures pagination appears centered below the cards */
+.pagination {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Pagination Buttons */
+.pagination button {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active {
+  background-color: #a52a2a;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.page-title-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  width: 90%;
+  margin-left: 0;
+  color: black;
+}
+
+/* Legislation Section */
+.legislation-container {
+  max-width: var(--large);
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin-left: 0;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  max-width: 60%;
+}
+
+/* Filter Buttons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #a52a2a;
+  color: white;
+}
+
+.filter-btn:hover {
+  background-color: #c54444;
+  color: white;
+}
+
+.bills-display {
+  width: 100%;
+}
+
+/* Card Container */
+#card-container {
+  flex: 2;
+  /* Takes 2/3 of space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+
+}
+
+.no-bill-msg {
+  width: 712px;
+}
+/* Card */
+.card, .no-bill-msg {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* width: 100%;
+  max-width: 50rem;
+  min-width: 50rem; */
+  padding: 16px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  cursor: pointer;
+}
+
+/* Icon */
+.icon {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  min-height: 100%;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #dda4a4;
+  padding: 1.5rem;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+/* Title and Status Side by Side */
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bill-number {
+  /* margin-top: 40px; */
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  line-height: normal;
+}
+
+/* Status Badge */
+.card-status {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #555;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+}
+
+/* Description */
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0;
+  word-wrap: break-word;
+  white-space: normal;
+
+}
+
+/* Read More Section */
+.read-more {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.read-more a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #b30000;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 0px;
+}
+
+.read-more a:hover {
+  text-decoration: underline;
+}
+
+.selected-card {
+  border: 1px solid #b30000 !important;
+  transition: border 0.3s ease-in-out;
+}
+
+
+
+
+/* ------------------------------------------ */
+/* Timeline Container */
+
+
+
+.timeline-container {
+  flex: 1;
+  /* Takes remaining space */
+  /* max-width: 280px; */
+  background: white;
+  padding: 20px;
+  /* border-radius: 15px; */
+  z-index: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 260px;
+}
+
+.timeline-container h2 {
+  color: #333;
+  text-align: start;
+}
+
+/* Process Title */
+.process-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.process-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 25px;
+}
+
+
+/* Dotted Vertical Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  /* Adjust based on icon alignment */
+  top: 0;
+  width: 3px;
+  /* Thicker for visibility */
+  height: 100%;
+  background: linear-gradient(to bottom, #48b918 var(--completed-height, 0%), #ddd var(--completed-height, 0%));
+  transition: background 0.3s ease-in-out;
+}
+
+
+/* Timeline Items */
+.timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+
+/* Status Icons */
+.timeline .icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.timeline li div p {
+  margin: 0;
+}
+
+
+.status-completed {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Pending Status */
+.pending {
+  color: #aaa;
+}
+
+
+
+/* Fade-out effect before updating */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Fade-in effect for new timeline */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+/* Staggered fade-in for individual timeline items */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease-in forwards;
+}
+
+/* Smooth progress bar update */
+.timeline {
+  --completed-height: 0%;
+  /* Default */
+  transition: var(--completed-height) 0.5s ease-in-out;
+}
+
+/* Keyframes for timeline item animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ------------------------------------------ */
+/* Additinonal resources */
+
+
+
+/* General styles */
+
+/* Container */
+.resources-container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.resources-container h2 {
+  color: #222;
+  margin-bottom: 2rem;
+  /* display: flex;
+  align-items: start; */
+}
+
+/* Scrollable container */
+.scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows cards to wrap into multiple rows */
+  justify-content: flex-start;
+  /* Center cards */
+  /* Space between cards */
+  gap: 15px;
+  /* padding: 10px; */
+}
+
+/* Card styling */
+.resource {
+  width: 304px;
+  /* Set a fixed width */
+  background: white;
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+
+  overflow: hidden;
+  border: 1px solid #eee;
+  /*Light border */
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* Title */
+.resource h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 8px;
+  white-space: normal;
+  /* Allows natural word wrapping */
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+/* Description */
+.resource p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Read more link */
+.resource a {
+  font-size: 14px;
+  color: #b30000;
+  /* Red color */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px solid #aaa;
+  gap: 5px;
+}
+
+.resource a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Fix for Smaller Screens */
+@media (max-width: 768px) {
+  #conference-note {
+    position: sticky;
+    width: 100%;;
+    left: 0px;
+    text-wrap: wrap;
+    /* width: 260px; */
+  }
+
+  .main-container {
+    flex-direction: column;
+    /* Stack content */
+    align-items: center;
+  }
+
+  .pagination {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .timeline-container {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  /* } */
+  /* Responsive adjustments */
+  /* @media (max-width: 768px) { */
+  .scroll-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource {
+    width: 90%;
+  }
+
+  .card {
+    min-width: 0;
+  }
+
+  .bills-display {
+    order: 1
+  }
+
+  .bill-number {
+    margin: 0;
+  }
+
+  /* } */
+
+
+
+  /* ------------------------------------------ */
+  /* Responsive Fix for Small Screens */
+  /* @media screen and (max-width: 768px) { */
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    /* padding: 0px 10vw; */
+  }
+
+  .page-title,
+  #card-container {
+    width: 100%;
+  }
+
+  .legislation-container,
+  .main-container {
+    max-width: 90vw;;
+    margin: auto;
+  }
+
+  .filters {
+    justify-content: left;
+  }
+
+  .filter-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .icon span {
+    font-size: 2rem;
+  }
+
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    align-self: flex-start;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .title-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .read-more {
+    text-align: left;
+  }
+
+  .section-description {
+    max-width: 90%;
+    text-align: left;
+  }
+
+
+  .additional-resources {
+    flex-wrap: nowrap;
+    /* Ensures horizontal scrolling */
+    overflow-x: auto;
+  }
+
+  .resource {
+    flex: 0 0 80%;
+    /* Wider cards for better readability */
+    min-width: 280px;
+    max-width: 320px;
+  }
+
+  .card {
+    min-width: 0;
+  }
+
+
+  /* Make Timeline Horizontal for Small Screens */
+  .timeline-container {
+    width: 100%;
+    overflow-x: auto;
+    /* Enables scrolling */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    padding-bottom: 0px;
+    /* Space for progress bar */
+
+    flex-direction: column;
+    position: relative;
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+  }
+
+  /* Make the entire timeline scrollable */
+  .timeline-wrapper {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    /* Ensures items don't squeeze */
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-left: 0;
+    padding-bottom: 30px;
+    width: max-content;
+    /* Ensures timeline items don't get squeezed */
+    position: relative;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    /* Horizontal progress bar */
+    background: linear-gradient(to right, #48b918 var(--completed-height, 0%), #ddd var(--completed-height, 0%));
+    transition: background 0.3s ease-in-out;
+  }
+
+  .timeline ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  .timeline li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+    width: 120px;
+    padding: 10px;
+  }
+
+  p.process-title {
+    margin-top: 0;
+  }
+
+  .timeline .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-bottom: 8px;
+  }
+
+  .timeline li div {
+    text-align: center;
+  }
+
+  .status-completed {
+    color: #333;
+    font-weight: bold;
+  }
+
+  .pending {
+    color: #aaa;
+  }
+
+  /* Scrollbar styling for entire container */
+  .timeline-container::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .timeline-container::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 10px;
+  }
+
+  .timeline-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .timeline-item p {
+    font-size: 14px;
+  }
+
+  .timeline-list {
+    align-items: start;
+  }
+
+  li.logo svg {
+    width: 55px;
+  }
+
+  li.logo span {
+    /* display: block; */
+    /* font-family: 'Inter' sans-serif; */
+    font-size: 20px;
+    font-weight: 800;
+    /* color: black; */
+    /* align-self: end; */
+    /* max-width: 50vw; */
+    text-wrap: wrap;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+  }
+
+  li.logo {
+    margin-right: 0px;
+  }
+
+
+}
+
+
+
+
+
+footer {
+  width: 100vw;
+}
+
+body {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
