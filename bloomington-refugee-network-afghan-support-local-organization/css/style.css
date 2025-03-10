@@ -1,0 +1,389 @@
+/*
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+nav {
+  position: fixed;
+}
+
+#arts.wide-left {
+  width: 40%;
+  /* width: 80%; */
+  /* height: 100%; */
+}
+
+header {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 10%;
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/7d5f2019-e88f-4ef5-9828-f0d5d3a2fbae.original.jpg');
+  /* backdrop-filter: grayscale(20%) contrast(120%) brightness(80%); */
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.4) inset;
+  transition: filter 0.5s ease, box-shadow 0.5s ease;
+}
+
+.ad-code {
+  text-align: center;
+}
+
+.pull-quote-border {
+  /* position: absolute; */
+  width: 80%;
+  height: 2px;
+  background-color: var(--idsred);
+  margin: auto;;
+}
+
+.pull-quote-center {
+  padding: 0;
+}
+
+.pull-quote-center p  {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+header.no-filter {
+  /* filter: grayscale(0%) contrast(100%) brightness(100%) saturate(130%); */
+  /* box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.4) inset; */
+}
+
+.large-heart {
+  position: absolute;
+  color: white;
+  font-size: 4.5rem;
+  pointer-events: none;
+  animation: floatUpLarge 3s linear forwards;
+}
+
+@keyframes floatUpLarge {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx, 0px), -300px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.support-btn {
+  background-color: var(--idsred);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.support-btn {
+  position: relative;
+  overflow: visible;
+  animation: breathing 3s ease-in-out infinite;
+}
+
+.support-btn:hover {
+  background-color: #890808;
+}
+
+.support-btn:active {
+  background-color: #770707;
+}
+
+.heart {
+  position: absolute;
+  color: #890808;
+  font-size: 2rem; /* increased size */
+  pointer-events: none;
+  animation: floatUp 2s linear forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx, 0px), -100px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.support-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.header-container {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+.spiral-container {
+  position: absolute;
+  width: 100vh;
+  height: auto;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cls-1 {
+  width: 1000px;
+  height: 1000px;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 2s ease;
+  fill: #763c11;
+  opacity: 0.1;
+}
+/*
+TYPOGRAPHY
+*/
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1;
+  font-family: 'Big Shoulders Stencil', serif;
+  margin-bottom: -3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  border-radius: 5px;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.headline-container {
+  top: 30vh;
+  /* bottom: 35vh; */
+}
+
+h3 {
+  /* section header */
+}
+
+.side-by-side {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side figure img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.side-by-side-by-side {
+  max-width: var(--width-lg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: var(--xl) auto var(--lg);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side-by-side figure {
+  margin: 0;
+}
+
+.side-by-side-by-side figure img {
+  height: 190px;
+  object-fit: cover;
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+}
+
+/*
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+@media (max-width: 768px) {
+
+  #arts.wide-left {
+    width: 60%;
+    /* width: 80%; */
+    /* height: 100%; */
+  }
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+
+  .headline-container {
+    top: 20vh;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .side-by-side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+    padding-left: var(--sm);
+    padding-right: var(-
+
+    -sm); */
+  }
+
+
+  .support-btn-container {
+    margin-top: 10px;
+  }
+
+  .side-by-side-by-side figure {
+    width: 40vw;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.4em;
+  }
+
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
