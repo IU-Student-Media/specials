@@ -1,0 +1,445 @@
+/*
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  /* background: radial-gradient(circle at center, #ffbb66, #ea8434); */
+  background-repeat: no-repeat;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center 60%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/26b5e93a-4979-4b68-a38d-e4fd0db3ae75.original.jpg');
+  position: relative;
+  /* overflow: hidden; */
+  background-size: cover;
+}
+
+/*
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+
+.cls-1 {
+  width: 1000px;
+  height: 1000px;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 2s ease;
+  fill: #763c11;
+  opacity: 0.1;
+}
+
+/*
+TYPOGRAPHY
+*/
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: -2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  border-radius: 5px;
+}
+
+figcaption {
+  font-size: 0.75rem;
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  /* text-shadow: 0px 0px 10px rgb(0, 0, 0); */
+  font-family: 'Inter', Arial, Arial, Helvetica, sans-serif;
+}
+
+.headline-container {
+  top: 20vh;
+  /* bottom: 35vh; */
+}
+
+h3 {
+  /* section header */
+}
+
+.side-by-side {
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side figure img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.side-by-side-by-side {
+  max-width: var(--width-lg);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: var(--xl) auto var(--lg);
+  padding-left: var(--sm);
+  padding-right: var(--sm);
+}
+
+.side-by-side-by-side figure {
+  margin: 0;
+}
+
+.side-by-side-by-side figure img {
+  height: 190px;
+  object-fit: cover;
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+}
+
+/*
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.indiana {
+  /* position: absolute; */
+  width: 50px;
+  /* right: 15.2vh; */
+  /* top: 24vh; */
+  /* animation: bob 3s ease-in-out infinite; */
+}
+
+.bottle {
+  right: 4vw;
+  bottom: 4vh;
+  z-index: 10;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #262626;
+  border-radius: 50%;
+  /* top: 10vh; */
+  background: linear-gradient(rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.1));
+  box-shadow: 0 0 0 6px #fff, 0 20px 35px rgba(0, 0, 0, 0.5) 1;
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.5vh);
+  }
+}
+
+.bottle:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  /* SIZE */
+  height: 30px;
+  /* SIZE */
+  border: 10px solid #262626;
+  /* SIZE */
+  top: -30px;
+  /* SIZE */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #ffcca3;
+}
+
+.bottle:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  border: 10px solid #262626;
+  border-radius: 10px;
+  background-color: #ffcca3;
+}
+
+.bottle:after:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #262626;
+  border-radius: 10px;
+  background-color: #8ffc13;
+}
+
+.syrup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.syrup .wave {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('https://s3.amazonaws.com/snwceomedia/ids/354439b7-148c-46a2-a7c0-3b98ef0483fc.original.png');
+  background-repeat: repeat-x;
+  background-size: 20vw;
+  animation: animate 1s linear infinite;
+  /* animation-direction: alternate; */
+  filter: hue-rotate(160deg) saturate(120%) brightness(70%);
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 20vw;
+  }
+}
+
+@keyframes chug {
+  0% {
+    transform: scale(1) rotate(5deg);
+  }
+
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+.chugging {
+  animation: chug 0.25s ease-in-out infinite;
+  transition: transform 0.3s ease-out;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+  .indiana {
+    /* position: absolute; */
+    width: 40px;
+    /* right: 15.2vh; */
+    /* top: 24vh; */
+    /* animation: bob 3s ease-in-out infinite; */
+  }
+
+  .bottle {
+    right: 4vw;
+    bottom: 4vh;
+    width: 160px;
+    height: 160px;
+    border: 8px solid #262626;
+    /* top: 10vh; */
+  }
+
+
+  .bottle:before {
+    width: 40px;
+    /* SIZE */
+    height: 24px;
+    /* SIZE */
+    border: 8px solid #262626;
+    /* SIZE */
+    top: -24px;
+    /* SIZE */
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .bottle:after {
+    width: 64px;
+    height: 96px;
+    border: 8px solid #262626;
+    border-radius: 8px;
+  }
+
+  .bottle:after:after {
+    width: 40px;
+    height: 40px;
+    border: 8px solid #262626;
+    border-radius: 8px;
+  }
+
+  .syrup .wave {
+    /* animation: animate 1.5s linear infinite; */
+  }
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .side-by-side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* max-width: var(--width-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: var(--xl) auto var(--lg);
+    padding-left: var(--sm);
+    padding-right: var(-
+
+    -sm); */
+  }
+
+  .side-by-side-by-side figure {
+    width: 40vw;
+  }
+
+  .headline-container {
+    top: 20vh;
+  }
+
+
+  .indiana {
+    /* position: absolute; */
+    width: calc(.7 * 40px);
+    /* right: 15.2vh; */
+    /* top: 24vh; */
+    /* animation: bob 3s ease-in-out infinite; */
+  }
+
+  .bottle {
+    right: 20px;
+    bottom: 20px;
+    width: calc(.7 * 160px);
+    height: calc(.7 * 160px);
+    border: calc(.7 * 8px) solid #262626;
+    /* top: 10vh; */
+  }
+
+
+  .bottle:before {
+    width: calc(.7 * 40px);
+    height: calc(.7 * 24px);
+    border: calc(.7 * 8px) solid #262626;
+    top:  calc(.7 *-24px);
+    border-top-right-radius: calc(.7 * 4px);
+    border-top-left-radius: calc(.7 * 4px);
+  }
+
+  .bottle:after {
+    width: calc(.7 * 64px);
+    height: calc(.7 * 96px);
+    border: calc(.7 * 8px) solid #262626;
+    border-radius: calc(.7 * 8px);
+  }
+
+  .bottle:after:after {
+    width: calc(.7 * 40px);
+    height: calc(.7 * 40px);
+    border: calc(.7 * 8px) solid #262626;
+    border-radius: calc(.7 * 8px);
+  }
+
+  .syrup .wave {
+    /* animation: animate 2s linear infinite; */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+}
