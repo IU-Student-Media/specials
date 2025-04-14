@@ -1,0 +1,1109 @@
+/* This is the shared file for elections! */
+:root {
+	--color-dark-grey: #333333;
+	--nav-col: #EAEEF5;
+	--desktop-radius: 15px;
+	--mobile-radius: 10px;
+	--card-pad: 15px;
+	--mobile-snap: 850px;
+}
+
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -200px;
+	visibility: hidden;
+}
+
+.curr {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+}
+
+h2.coach-type-head {
+	/* color: black; */
+	margin-top: 20px;
+	font-size: 40px;
+}
+
+.fancy-card { 
+	position: relative;
+}
+
+.fancy-card img.face {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fancy-card img.team-logo {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.fancy-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	height: 250px;
+	width: 200px;
+}
+
+.fancy-card .title {
+	width: 100%;
+	background: linear-gradient(#00000000, #000d, #000f);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+
+.fancy-card  h2 {
+	text-align: center;
+	justify-self: end;
+	/* position: absolute; */
+	/* bottom: 0px; */
+	font-size: 28px;
+	z-index: 100;
+	color: white;
+	padding-top: 40px;;
+	padding-bottom: 10px;
+	margin: 0px;
+
+}
+
+
+.menu {
+	margin: auto;
+	text-align: center;
+}
+
+/* 
+  <div class="article-card">
+      <img src="https://snworksceo.imgix.net/ids/50752e23-17a5-4b37-81e7-f81e349aa67f.sized-1000x1000.jpg">
+      <div class="card-text">
+      <h3>Player to IU</h3>
+          <p class="credit">By Daniel Flick &bull; Sunday April 6</p>
+          <p class="abstract">Bailey committed to the Hoosiers on Sunday. </p>
+      </div>
+  </div>
+*/
+
+.article-grp a {
+	border: none;
+}
+
+.article-grp {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.article-grp h2 {
+	margin: 0;
+	color: black;
+}
+
+.article-card {
+  display: flex;
+	height: 200px;
+	gap: 15px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.article-card img {
+	object-fit: cover;
+	width: 15vw;
+}
+
+.article-card .card-text {
+	display: flex;
+	flex-direction: column; 
+	/* border: 1px solid black; */
+	/* border-left: none; */
+	/* border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0; */
+	/* padding: 10px; */
+	
+
+}
+
+.card-text h3 {
+	margin-top: 0;
+	line-height: unset;
+	font-size: 20px;
+}
+
+.card-text p.credit {
+	font-size: 12px;
+	text-align: left;
+}
+
+.card-text p.abstract {
+	font-size: 14px;
+	text-align: left;
+}
+
+
+
+
+/* Weird Overrides */
+.card-link {
+	border: none !important;
+	display: flex;
+}
+
+#intro-graph  {
+  /* Undo the background color from story */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+article {
+	padding-top: 0px;
+	width: 100%;
+}
+
+nav {
+	background-color: var(--nav-col);
+}
+
+nav a:link:not(.tag),
+  nav a:visited:not(.tag) {
+	border-bottom: none;
+}
+
+nav .item:not(#socials) a:hover {
+	margin-top: 4px;
+	padding-bottom: 2px;
+	border-bottom: solid black 2px;
+}
+
+nav .item {
+	font-family: 'Inter', sans-serif;
+	/* color: white; */
+	font-weight: bold;
+}
+
+nav .section-item {
+	width: fit-content;
+}
+
+li.logo span {
+ display: block;
+ color: white;
+}
+
+nav {
+  background-color: black;
+}
+
+nav .show {
+	display: flex !important;
+	justify-content: end;
+}
+
+nav .show#socials {
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 850px) {
+	nav ul {
+    /* padding: 15px; */
+		justify-content: end;
+	}
+}
+
+h2 {
+	color: var(--color-dark-grey);
+	text-align: left;
+	margin-left: var(--card-pad);
+	font-family: 'Inter', sans-serif;
+}
+
+header {
+	height: 58px;
+  background-color: black;
+}
+
+
+.top {
+	padding: var(--xl);
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.top {
+		padding: var(--md);
+	}
+}
+
+.top .flex-c {
+	justify-content: space-between;
+}
+
+/* Tailwind-esque stuff */
+.no-pad {
+	padding: 0px;
+}
+
+.container {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.flag-bg {
+	background-image: linear-gradient(0deg, #ffffffCD, #ffffffCD), url("https://s3.amazonaws.com/snwceomedia/ids/192e399d-19ca-44b7-bfc6-2a13d44eec86.original.jpg");
+	background-size: cover;
+  background-position: center center;
+}
+
+.national-to-white {
+	background-image: linear-gradient(180deg, #181A83, #ffffffff);
+}
+
+.state-to-white {
+	background-image: linear-gradient(180deg, #511C4D, #ffffffff);
+}
+
+.local-to-white {
+	background-image: linear-gradient(180deg, #991313, #ffffffff);
+}
+
+.page-head h1 {
+	text-align: left;
+	font: italic 900 48px 'Playfair Display';
+}
+
+.flex-h {
+	display: flex;
+	gap: 10px;
+}
+
+.flex-c {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.grid-2 {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.countdown-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.countdown-grid {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* Mobile Adjustments */
+.tag {
+	font-family: 'Inter', sans-serif;
+	height: 20px;
+	width: fit-content;
+	border-radius: 15px;
+	border: none;
+	text-decoration: none;
+	padding: 1em;
+	font-size: 14px;
+	font-weight: bold;
+	justify-self: right;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+
+.tag-grey {
+	background-color: white;
+	color: var(--color-dark-grey);
+}
+
+/* Stuff for all cards */
+.card {
+	border-radius: var(--desktop-radius);
+	overflow: hidden;
+	background-color: white;
+	margin: 0px var(--card-pad);
+	box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+a:link.card,
+a:visited.card {
+	border-bottom: none;
+}
+
+.card-credit {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	justify-content: space-between;
+	margin: 0px var(--card-pad) calc(var(--card-pad)/2) var(--card-pad);
+	font-family: 'Inter', sans-serif;
+}
+
+.card-credit p {
+	margin: 0px;
+	color: #808080;
+}
+
+/* Main Featured Card */
+.card-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: min-content;
+}
+
+@media only screen and (max-width: var(--mobile-snap)) {
+	.card-main {
+		margin-bottom: 10px;
+	}
+}
+
+.card-main h2 {
+	font-size: 35px;
+	margin-top: var(--card-pad);
+}
+
+.card-main img {
+	object-fit: cover;
+}
+
+/* The larger horizontal cards */
+.card-2 {
+	display: flex;
+  /* height: max-content; */;
+}
+
+.card-2 img {
+	object-fit: cover;
+	max-width: 30%;
+}
+
+.card-2 .flex-c {
+	padding-top: var(--card-pad);
+}
+
+.card-2 .flex-c h2 {
+	margin: 0px calc(var(--card-pad)/2) 0px var(--card-pad);
+	font-size: calc(1vw/.5);
+      /* max-height: 50px; */
+	overflow-y: hidden;
+}
+
+.card-2 .flex-c .card-credit p {
+	font-size: calc(1vw/.8);
+}
+
+.card-2 .flex-c .card-credit .tag {
+	font-size: calc(1vw/.8);
+	padding: 10px;
+}
+
+@media (min-width: 1300px) {
+	.card-2 .flex-c .card-credit p {
+		font-size: 16px;
+	}
+
+	.card-2 .flex-c .card-credit .tag {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 1300px) {
+	.card-2 .flex-c h2 {
+		font-size: 26px;
+	}
+}
+
+.meet-heading {
+	font-size: 48px;
+	font-family: 'Inter', sans-serif;
+	color: black;
+	align-self: center;
+}
+
+.nutrition-cards {
+	flex-wrap: wrap;
+	justify-content: center;
+  /* max-width: var(--width-xl); */
+  margin: 0;
+}
+
+/* About the particular candidate */
+.candidate-graph {
+	display: flex;
+	flex-direction: column;
+	margin: var(--card-pad);
+}
+
+.graph-head {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.candidate-graph .pills {
+	justify-content: left;
+}
+
+.graph-head img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 3px solid;
+}
+
+.graph-head h2 {
+	color: black;
+	font-size: 32px;
+	margin: 0px;
+}
+
+.graph-body p {
+	font-size: 20px;
+}
+
+/* Nutrition Cards and Children */
+.nutrition-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--card-pad);
+	max-width: 264px;
+}
+.nutrition-card .face {
+	border: 4px solid;
+  width: 100px;
+	height: 100px;
+	border-radius: 73px;
+}
+
+.nutrition-card img.team-logo {
+  position: absolute;
+  align-self: end;
+}
+
+img.team-logo {
+  width: 50px;
+  height: auto;
+  border-radius: 0px;
+	filter: drop-shadow(2px 2px 4px #fff);
+}
+
+
+
+
+.nutrition-card h2 {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	margin: 0px;
+}
+
+
+.pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	justify-content: center;
+}
+
+.pills p {
+	background-color: #d8d8d8;
+	color: black;
+	font-family: 'Inter', sans-serif;
+	border-radius: 100px;
+	text-align: center;
+	padding: 2px 15px;
+	width: fit-content;
+	margin: 0px;
+	font-size: 12px;
+}
+
+.nutrition-card .current {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: var(--card-pad);
+}
+
+.nutrition-card .current h4 {
+	font-family: 'Inter', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	margin: 0px;
+	text-align: center;
+}
+
+.nutrition-card .current p {
+	font-family: 'Inter', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: black;
+	margin: 0px;
+}
+
+.nutrition-card .tag {
+	color: black;
+	font-weight: normal;
+	font-family: 'Inter', sans-serif;
+	border-radius: 100px;
+	text-align: center;
+	padding: 10px 15px;
+	width: fit-content;
+	margin: 0px;
+	border: 1px solid black;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+img.face {
+	object-fit: cover;
+}
+
+/* The Cards that fill the whole width */
+.card-wide {
+	display: flex;
+	margin-top: 20px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.card-wide h2 {
+	font-size: 30px;
+	margin-bottom: 0px;
+	color: var(--color-dark-grey);
+}
+
+.card-wide .card-abstract {
+	margin: 0px var(--card-pad);
+}
+
+.card-wide img {
+	width: 300px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--desktop-radius);
+}
+
+.card-wide .flex-c {
+	justify-content: space-between;
+}
+
+.candidates-card {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	padding: var(--card-pad);
+	margin: var(--card-pad);
+}
+
+.candidates-card .candidates-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.candidates-card h3 {
+	font-family: 'Inter', sans-serif;
+	color: black;
+	font-size: 28px;
+	margin: 0px;
+}
+
+.candidates-card .tag p {
+	color: #7a7a7a;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.candidates-card .faces {
+	display: flex;
+	justify-content: center;
+	gap: 4px;
+}
+
+.candidates-card .face {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100px;
+}
+
+.candidates-card .face img {
+	width: 90px;
+	height: 90px;
+	border-radius: 45px;
+	object-fit: cover;
+	margin: var(--card-pad);
+}
+
+
+.candidates-card .face p {
+	text-align: center;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.face-r img {
+	border-radius: 45px;
+	border: 3px solid var(--republican-colour);
+}
+
+.face-d img {
+	border-radius: 45px;
+	border: 3px solid var(--democratic-colour);
+}
+
+.face-l img {
+	border-radius: 45px;
+	border: 3px solid var(--other-party-colour);
+}
+
+a.card,
+a.card-link,
+a.tag {
+	transform: scale(1);
+	transition: transform 0.2s;
+}
+
+a.card:hover,
+a.card:focus,
+a.card:active {
+	transform: scale(calc(1.01));
+}
+
+a.card-link:hover,
+a.card-link:focus,
+a.card-link:active {
+	transform: scale(1.02);
+}
+
+a.tag:hover,
+a.tag:focus,
+a.tag:active {
+	transform: scale(1.03);
+}
+
+/* Vote quiz */
+.vote-quiz-card {
+	background-image: linear-gradient(135deg, #1d1d1d, #878787);
+	border-radius: var(--desktop-radius);
+	margin: var(--card-pad);
+	overflow: hidden;
+	justify-content: space-between;
+	font-family: 'Inter', sans-serif;
+	height: 193px;
+}
+
+.vote-quiz-card .flex-c {
+	gap: 0px;
+	justify-content: space-between;
+	padding: var(--card-pad);
+	padding-left: calc(var(--card-pad) * 1.5);
+}
+
+.vote-quiz-card img {
+	max-width: 30%;
+	object-fit: cover;
+}
+
+.vote-quiz-card h2 {
+	color: white;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.vote-quiz-card p {
+	color: white;
+}
+
+.vote-quiz-card .quiz-tag {
+	color: black;
+}
+
+.candidate-graph h2 {
+  max-width: unset;
+}
+
+.candidate-graph {
+  position: relative;
+}
+
+/* Maybe this */
+.candidate-graph img.team-logo {
+  width: 45px;
+  height: auto;
+  position: absolute;
+  border: 0px;
+  top: 0px;
+  left: -10px;
+}
+
+.curr p {
+  padding: 0;
+  margin: 0;
+}
+
+
+/******************************\
+|*                            *|
+|*  Media Queries and Stuff   *|
+|*                            *|
+\******************************/
+
+
+@media (max-width: 968px) {
+
+
+	.article-grp a {
+		border: none;
+	}
+	
+	.article-grp {
+		margin: 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	.article-grp h2 {
+		margin: 0;
+		color: black;
+	}
+	
+	.article-card {
+		display: flex;
+		height: unset;
+		gap: 20px;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	
+	.article-card img {
+		object-fit: cover;
+		width: 35vw;
+	}
+	
+	.article-card .card-text {
+		display: flex;
+		flex-direction: column; 
+	}
+	
+	.card-text h3 {
+		margin-top: 0;
+		line-height: unset;
+		font-size: 20px;
+	}
+	
+	.card-text p.credit {
+		font-size: 12px;
+		text-align: left;
+	}
+	
+	.card-text p.abstract {
+		font-size: 14px;
+		text-align: left;
+	}
+	
+
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 712px) {
+
+h2.coach-type-head {
+	/* color: black; */
+	margin-top: 10px;
+	font-size: 28px;
+}
+
+.graph-head h2 {
+	font-size: 24px;
+}
+
+.graph-head .curr {
+	font-size: 16px;
+}
+
+
+	.fancy-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		height: 160px;
+		width: 130px;
+	}
+	
+	.fancy-card h2 {
+		font-size: 18px;
+	}
+
+	.graph-body p {
+		/* font-size: 15px; */
+	}
+
+	.meet-heading {
+		font-size: 30px;
+	}
+
+  .fancy-card img.team-logo {
+    width: 35px;
+    height: auto;
+  }
+
+	.top {
+		padding: var(--sm);
+	}
+
+	.grid-2 {
+		display: flex;
+		flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+		gap: var(--card-pad);
+	}
+  /* Main Card */
+	.card-main h2 {
+		font-size: 3.5vw;
+		padding-bottom: var(--card-pad);
+		margin-bottom: 0px;
+	}
+  /* Car 2 */
+	.card-2 {
+		height: 116px;
+	}
+
+	.card-2 img {
+		width: 116px;
+		height: 116px;
+	}
+
+	.card-2 .flex-c {
+		padding-top: var(--card-pad);
+	}
+
+	.card-2 .flex-c h2 {
+		margin-top: 0px;
+		font-size: 3.5vw;
+	}
+
+	.card-2 .flex-c .card-credit p {
+		font-size: 10px;
+	}
+
+	.card-2 .flex-c .card-credit .tag {
+		font-size: 10px;
+		padding: 10px;
+	}
+}
+
+
+@media (max-width: 712px) {
+	.card .card-credit p {
+		font-size: 3vw;
+	}
+
+	.card .card-credit .tag {
+		font-size: 3vw;
+		height: fit-content;
+		padding: 4% auto;
+	}
+  /* The Cards that fill the whole width */
+	.card-wide {
+		display: flex;
+		margin-top: 20px;
+		height: 116px;
+	}
+
+	.card-wide h2 {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+
+	.card-wide p {
+		font-size: 10px;
+	}
+
+	.card-wide .card-abstract {
+		display: none;
+	}
+
+	.card-wide img {
+		width: 116px;
+		height: 116px;
+		object-fit: cover;
+		border-radius: var(--mobile-radius);
+	}
+
+	.tag {
+		max-height: 10px;
+		padding: 10px;
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 712px) and (min-width: 420px) {
+	.vote-quiz-card h2 div,
+      .countdown-card h2 div,
+      .subscribe-card h2 div {
+		font-size: calc(1vw/.4);
+	}
+}
+
+@media (max-width: 712px) {
+	.countdown-text {
+		font-size: calc(1vw/.2);
+		color: white;
+	}
+}
+
+@media screen and (max-width: 712px) and (min-width: 420px) {
+	.countdown-text div {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 712px) {
+	.vote-quiz-card .flex-c {
+		padding: var(--card-pad);
+	}
+
+	.vote-quiz-card .flex-c p {
+		font-size: 10px;
+		margin: 0px;
+	}
+
+	.vote-quiz-card .flex-c p:not(.tag) {
+		margin-bottom: 10px;
+	}
+
+	.vote-quiz-card .flex-c img {
+		width: 136px;
+		height: 130px;
+		object-fit: cover;
+	}
+
+	.subscribe-card svg {
+		transform: scale(66%);
+	}
+
+	.timer-row .flex-c {
+		gap: 0px;
+	}
+
+	.countdown-label {
+		font-size: 10px;
+	}
+
+	.countdown-num {
+		width: 4vw;
+	}
+}
+
+.story {
+	background-color: white;
+}
+
+.pubdate-donate {
+	font-family: 'Inter', sans-serif;
+	margin-top: 40px;
+}
+
+#follow-more {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+
+	.article-grp a {
+		border: none;
+	}
+	
+	.article-grp {
+		margin: 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	.article-grp h2 {
+		margin: 0;
+		color: black;
+	}
+	
+	.article-card {
+		display: flex;
+		flex-direction: column;
+		height: unset;
+		gap: 20px;
+		border-radius: 10px;
+		overflow: hidden;
+		width: 100%;
+		max-width: 400px;
+		margin: auto;
+		/* max-width: 300px; */
+	}
+	
+	.article-card img {
+		object-fit: cover;
+		width: 100%;
+		max-width: 400px;
+		height: unset;
+	}
+	
+	.article-card .card-text {
+		display: flex;
+		flex-direction: column; 
+	}
+	
+	.card-text h3 {
+		margin-top: 0;
+		line-height: unset;
+		font-size: 20px;
+	}
+	
+	.card-text p.credit {
+		font-size: 12px;
+		text-align: left;
+	}
+	
+	.card-text p.abstract {
+		font-size: 14px;
+		text-align: left;
+	}
+}
