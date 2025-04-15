@@ -1,5 +1,5 @@
 const data = {
-    "url": "iu-club-chronicles",
+    "url": "club-chronicles",
     "slug": "IU Club Chronicles",
     "headline": "IU Club Chronicles",
     "title": "IU Club Chronicles",
@@ -26,6 +26,9 @@ const data = {
         },
         {
             "name": "Zach Casanova",
+        },
+        {
+            "name": "Tyler Brose",
         }]
     }
 }
