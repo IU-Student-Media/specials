@@ -16,7 +16,7 @@
 header {
   /* add header image below */
   /* can use a file path before the photo is uploaded to ceo */
-  background-image: linear-gradient(rgb(48, 0, 153), rgba(255, 255,255, 1));
+  background-image: linear-gradient(#900, #F55, rgba(255, 255,255, 1));
   background-repeat: no-repeat;
   background-size: cover;
   /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
@@ -69,6 +69,10 @@ h3 {
 
 .story {
   /* max-width: var(--width-lg); */
+}
+
+p.credit{
+  text-align: left;
 }
 
 /* Club Styling */
@@ -127,6 +131,7 @@ media queries helper
   .club {
     flex-direction: column;
   }
+
   .club.odd {
     flex-direction: column-reverse;
   }
