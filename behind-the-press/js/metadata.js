@@ -1,9 +1,9 @@
 const data = {
-    "url": "club-chronicles",
-    "slug": "IU Club Chronicles",
-    "headline": "IU Club Chronicles",
-    "title": "IU Club Chronicles",
-    "pub_date": "Nov. 1, 2024",
+    "url": "behind-the-press",
+    "slug": "Behind the press",
+    "headline": "Meet some of IU's amazing organizations",
+    "title": "Behind the press",
+    "pub_date": "Nov. 8, 2024",
     "bylines": {
         "Design and development by": {
             "name": "Calvin Josenhans",
@@ -14,21 +14,13 @@ const data = {
         },
         "Filmed and edited by": [{
             "name": "Jiya Shah",
-        },
-        {
-            "name": "Kylie Heppner",
+            "email": "vivrao@iu.edu",
+            "twitter": "vivrao"
         },
         {
             "name": "Vivi O'Leary",
-        },
-        {
-            "name": "Sadhika Allampally",
-        },
-        {
-            "name": "Zach Casanova",
-        },
-        {
-            "name": "Tyler Brose",
+            "email": "vivrao@iu.edu",
+            "twitter": "vivrao"
         }]
     }
 }
@@ -41,7 +33,7 @@ let bios_html = '';
 for (let type of byline_types) {
     if (data.bylines[type]) {
         if (data.bylines[type].length) {
-            data.bylines[type].forEach((author) => setAuthorBio(type, author));
+            data.bylines[type].forEach((author) => setAuthorBio(type, author))
         } else {
             setAuthorBio(type, data.bylines[type]);
         }
