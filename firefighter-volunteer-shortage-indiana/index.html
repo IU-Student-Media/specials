@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title (pulls from metadata.json) -->
+	<title> Hello</title>
+
+	<!-- favicon -->
+	<link rel="SHORTCUT ICON"
+		href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+	<!-- CSS stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+	<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+	<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+	<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+	<!-- SOCIAL CARDS — Make sure to update!! -->
+	<meta property="og:url" content="http://specials.idsnews.com/firefighter-volunteer-shortage-indiana" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="What's at stake amid Indiana volunteer firefighter shortage" />
+	<!-- TODO: headline -->
+	<meta property="og:description"
+		content="Monroe Fire Protection District has seen a trend in volunteers disappearing." /> <!-- TODO: abstract -->
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image"
+		content="https://s3.amazonaws.com/snwceomedia/ids/2caa19df-e868-4038-acb7-01ef8c8e0852.sized-1000x1000.jpg" />
+	<!-- TODO: link to dominant image -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="What's at stake amid Indiana volunteer firefighter shortage">
+	<!-- TODO: headline -->
+	<meta name="twitter:description"
+		content="Monroe Fire Protection District has seen a trend in volunteers disappearing."> <!-- TODO: abstract -->
+	<meta name="twitter:image"
+		content="https://s3.amazonaws.com/snwceomedia/ids/2caa19df-e868-4038-acb7-01ef8c8e0852.sized-1000x1000.jpg">
+	<!-- TODO: link to dominant image -->
+
+	<!-- START Ad content: this goes in the head content -->
+	<!-- don't mess with this — it will work all on it's own :-) -->
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+	<script>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+	<script>
+		googletag.cmd.push(function () {
+			//all other leaderboards
+			var mapping1 = googletag.sizeMapping()
+				.addSize([768, 0], [728, 90]) // Desktops and Tablets
+				.addSize([0, 0], [320, 50]) // Mobile devices
+				.build();
+			googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Google Tag Manager -->
+	<!-- (also don't have to worry about this at all) -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script src="js/googleTagManager.js"></script>
+
+	<div class="helper"></div>
+
+	<!--Header-->
+	<header>
+
+		<!-- Transparent navbar -->
+		<nav>
+			<ul>
+				<li class="logo">
+					<a href="https://www.idsnews.com">
+						<!-- IDS LOGO SVG -->
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:white;"
+								d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:white;"
+								d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+					</a>
+					<span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+				</li>
+				<li class="toggle">
+					<i class="fas fa-bars fa-lg"></i>
+				</li>
+				<li id="socials" class="item">
+					<!-- links generate automatically from metadata.json -->
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Headline, subhed -->
+		<!-- feel free to change this up — you don't need it to have data scroll speed, 
+			 doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+
+		<div class="headline-container" style="overflow: hidden; width: 100vw; padding: 0 5vw; height: auto;">
+			<!-- <h1 data-scroll-speed="2">What’s at stake amid Indiana volunteer firefighter shortage </h1> -->
+			<h1 data-scroll-speed="2">Most fire departments in Indiana are staffed by volunteers.</h1>
+			<h2 data-scroll-speed="-2" id="hed-2" style="margin-top: 5vw;" class="fade-in">They’re running out.</h2>
+
+			<!-- <noscript>
+
+				<h2 data-scroll-speed="-2" style="margin-top: 5vw;">They’re running out.</h2>
+			</noscript> -->
+		</div>
+
+	</header>
+
+	<!-- main article -->
+	<main>
+		<p class="caption header-caption">Battalion Chief Jason Allen looks at the Chiefs Hall of Courage on April 15, 2025,
+			at
+			Station 22 in Bloomington. Allen said new volunteers have to complete their training hours during weekends or
+			days
+			off.</p>
+		<article>
+			<div class="bylines">
+				<div id="bylines">
+					<!-- update bylines in metadata.json -->
+				</div>
+				<!-- TO DO update pub_date in metadata.json -->
+				<p id="pubdate"></p>
+			</div>
+			<div class="story">
+
+				<p>Joe McWhorter Sr., 78, used to burn houses down to pass the time on Saturdays.</p>
+				<p>&ldquo;That&rsquo;s one way we were able to show somebody what fire was actually like,&rdquo; he said.
+					&ldquo;Put
+					them in a house that&rsquo;s actually on fire. You&rsquo;re talking about 800 degrees coming down on
+					your
+					head.&rdquo;</p>
+				<p>McWhorter has been working as a volunteer firefighter with the Monroe Fire Protection District since
+					1969. Simulated
+					fires were one of the protection district&rsquo;s methods of training volunteers 56 years ago.</p>
+
+				<p>Now, amid a nationwide volunteer firefighter shortage, recruiting and training isn&rsquo;t that simple.
+					According to
+					the National Fire Protection Association, the number of volunteer firefighters in the U.S. is the <a
+						href="https://www.nfpa.org/education-and-research/research/nfpa-research/fire-statistical-reports/us-fire-department-profile">lowest
+						it has been</a>
+					since they started collecting data in 1986.</p>
+
+				<p>&ldquo;It&rsquo;s a big commitment to be a volunteer, to go on the training,&rdquo; McWhorter said.
+					&ldquo;I
+					don&rsquo;t think the general public realizes that to be a volunteer firefighter, you have to go through
+					all that
+					same training as well.&rdquo;</p>
+
+				<p>In Indiana, 80% of first responders are volunteers, according to the MFD. The <a
+						href="https://apps.usfa.fema.gov/registry/summary">Federal Emergency
+						Management Agency</a>
+					says more than 70% of fire departments in Indiana are exclusively manned by volunteers.</p>
+
+
+				<p>That means when a shiny, red truck barrels past you, and the doppler effect of the siren shrieks away in
+					your ears,
+					there&rsquo;s a high chance the people running toward the danger are doing it for free.</p>
+				<p>Volunteers don&rsquo;t make a salary. While employed firefighters have health insurance, only
+					government-issued
+					workers&rsquo; compensation covers if a volunteer gets hurt.</p>
+
+				<p>They also get a <a
+						href="https://www.in.gov/sboa/files/Fire-Protection-State-Called-Meetings-2023.pdf">yearly</a>
+					clothes and car allowance from whichever township the department services. That totals a
+					minimum of $200 per department.</p>
+
+
+				<iframe title="Zip codes covered by Monroe Fire Protection District" aria-label="Map"
+					id="datawrapper-chart-XRL4C" src="https://datawrapper.dwcdn.net/XRL4C/1/" scrolling="no" frameborder="0"
+					style="width: 0; min-width: 100% !important; border: none;" height="775" data-external="1"></iframe>
+				<script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();
+
+				</script>
+
+
+				<p>With what little funding the department receives, McWhorter said, training new volunteers is notably
+					expensive.
+					Recruits typically move on after they have enough hours to get a career firefighter position.</p>
+				<p>&ldquo;A lot of the guys are here now for the employment,&rdquo; McWhorter said. &ldquo;You come in as a
+					volunteer,
+					you work your way to employment. If there&rsquo;s an opening, you qualify, you go in.&rdquo;</p>
+				<p>This is especially true amid a perpetual salary war between Bloomington Fire Department, an entirely
+					career
+					department, and the MFD, a combination of volunteer and career firefighters.</p>
+
+
+				<p>Last year, the Bloomington City Council unanimously approved <a
+						href="https://bloomington.in.gov/council/legislation/Ordinance/2024/2024-19">an ordinance</a> that
+					gave BFD firefighters a 35% raise to
+					$78,503 for this year. The city <a
+						href="https://bsquarebulletin.com/salary-notebook-bloomington-police-officers-firefighters-up-for-big-increases-in-2025/#:~:text=For%20their%20base%20salary%2C%20Bloomington,the%202025%20figure%2C%20to%20%2483%2C503.">raised
+						firefighter pay</a> to improve retention and get ahead of the county&rsquo;s pay
+					for career firefighters, which stood at $72,820.</p>
+
+
+				<p>The BFD also reopened its <a
+						href="https://www.idsnews.com/article/2024/10/bloomington-fire-station-reopening-renovation">primary
+						station</a> in October last year after a three-year, $4.5 million renovation.
+					MFD&rsquo;s headquarters, Station 22, in contrast, is an old house that used to belong to school bus
+					drivers on
+					South Kennedy Drive –– that&rsquo;s why McWhorter said there&rsquo;s room for the rigs.</p>
+
+
+
+				<p>McWhorter pointed out the difference in who joined the volunteer force between 1969 and now.</p>
+				<p>&ldquo;It&rsquo;s harder because back when we started, it was mainly taxpayers in the area that wanted to
+					help out
+					the community, whereas now it&rsquo;s young kids looking for a career starting out at $60,000, $70,000
+					at 18,&rdquo;
+					McWhorter said. &ldquo;It&rsquo;s &mdash; it&rsquo;s something else. Makes you want to be a young kid and
+					fight
+					fire.&rdquo;</p>
+				<p>His grandson, Robert McWhorter Jr., is a fire captain at BFD.</p>
+				<p>&ldquo;He&rsquo;s doing good up there,&rdquo; McWhorter Sr. said. &ldquo;I&rsquo;d like to see him down
+					here. Things
+					didn&rsquo;t work out that way, but there&rsquo;s another generation going on up at the city, so.&rdquo;
+				</p>
+				<p>Enrollment in volunteer firefighting programs has plummeted in recent years, according to Jack Kerney,
+					past president
+					of the Indiana Volunteer Firefighter Association.</p>
+				<p>&ldquo;Twenty to 30 years ago, our membership was 18,000 or 19,000, and now it's down to 12 or
+					13,000,&rdquo; Kerney
+					said during an IVFA meeting in February last year. &ldquo;So we've lost about a third, but that's not
+					just Indiana.
+					It's all across the country.&rdquo;</p>
+				<p>A volunteer needs a day job. With no pay, they rely on different ways to support themselves and their
+					families. They
+					put out fires, but they also tend the cornfields that swath over the state or drive 18-wheelers across
+					the country.
+				</p>
+				<p>Career-aged volunteers aren&rsquo;t available during the day, which is why young volunteers are so
+					crucial. But they
+					keep leaving.</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<p class="section-break">
+					<!-- <i class="fa-solid fa-fire"></i> <i class="fa-solid fa-fire"></i> <i class="fa-solid fa-fire"></i> -->
+					<i class="fa-solid fa-fire-extinguisher"></i><i class="fa-solid fa-fire-extinguisher"></i><i
+						class="fa-solid fa-fire-extinguisher"></i>
+				</p>
+
+				<p>Mary Nancy Mwakalindile, an MFD volunteer, is afraid of fire.</p>
+				<p>&ldquo;If somebody was stuck in a fire, I would run screaming all the way in and all the way out,&rdquo;
+					she said.
+					&ldquo;I think there are braver people doing it.&rdquo;</p>
+				<p>Mwakalindile is a certified EMT. She graduated IU in December last year with a master&rsquo;s degree in
+					information
+					systems after getting her bachelor&rsquo;s in cognitive science in 2023.</p>
+				<p>&ldquo;I got my EMT certificate in a gap year after high school,&rdquo; she said. &ldquo;I wanted to use it
+					somehow.&rdquo;
+				</p>
+
+				<figure class="wide-right">
+					<img src="https://snworksceo.imgix.net/ids/6cfe4b01-59f1-406b-9b74-9c7ab8b05473.sized-1000x1000.jpg"
+						alt="Erm what the sigma">
+					<figcaption>
+						The view of South Kennedy Drive from inside Station 22 is pictured April 1, 2025, in Bloomington.
+						Mary Nancy
+						Mwakalindile grew up down the street from the fire station.
+					</figcaption>
+				</figure>
+
+				<p>She grew up down the street from Station 22. On her first day of school, she missed the bus, and the
+					station was her
+					reference point to get back home.</p>
+				<p>Though she&rsquo;s not fighting fire, she&rsquo;s putting her skills to use. She helps the MFD teach fire
+					prevention
+					at schools during events called touch-a-truck. And while most young volunteers are out the door after
+					finding
+					long-term employment, that&rsquo;s not how Mwakalindile thinks about it.</p>
+				<p>&ldquo;As long as I&rsquo;m in Monroe County, I&rsquo;ll be here,&rdquo; she said.</p>
+				<p>Mwakalindile not only volunteers as an EMT, but she also worked as an IT intern at MFD. She redesigned
+					the
+					department&rsquo;s website.</p>
+				<p>The IU graduate said working as a first responder to fires has taught her how to recognize and treat
+					fire-related
+					injuries.</p>
+				<p>&ldquo;There are things they see on fire patients that I would not even consider,&rdquo; Mwakalindile
+					said. &ldquo;So
+					you learn a lot of knowledge from that. I&rsquo;ve learned so much about fire that I didn&rsquo;t think
+					I would need
+					to know. So many ways I&rsquo;ve not burnt down my house.&rdquo;</p>
+				<p>She&rsquo;s now comfortable enough with the fire station to where it&rsquo;s become a second home for
+					her. When she
+					calls her mom before her shift, she tells her she&rsquo;s going to hang out at the fire station.</p>
+				<p>Station 22 is cozy. The garage&rsquo;s gray ceilings are low. Jason Allen, MFD battalion chief,
+					apologizes repeatedly
+					for dirty floors and stray pairs of shoes.</p>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/58e9e1a8-7e21-44bc-a073-40fa0e090eab.sized-1000x1000.jpg"
+						alt="alt text">
+					<figcaption>
+						Firefighters' shoes lay on the floor in front of the engine April 1, 2025, at Station 22 in
+						Bloomington.
+						Jason
+						Allen, Monroe Fire Protection District battalion chief, apologized repeatedly for the &lsquo;dirty&rsquo;
+						floors.
+					</figcaption>
+				</figure>
+
+				<p>A yellowed refrigerator stocks water, Cokes and Gatorade. Monitors hang catty- cornered. Big, clunky
+					boots and fire
+					suits covered in soot line the walls.</p>
+				<p>Through a set of doors is the day room. Rows of recliners lie on the right and a conference table sits to
+					the left.
+					Here is where the firefighters await calls. They lean back at the table, prattling away. One snacks on a
+					bag of
+					chips.</p>
+
+				<div class="imagegrid">
+					<figure class="grid-image-1">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/3c69872a-bd39-4b14-ba74-464e2063b3c8.sized-1000x1000.jpg"
+							alt="alt">
+					</figure>
+					<figure class="grid-image-2">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/cd3d2f29-f808-4639-84c9-e5abe9e5889b.sized-1000x1000.jpg"
+							alt="">
+					</figure>
+					<figure class="grid-image-3">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/dbafee4c-7748-4a10-9dc0-77af6f1518bf.sized-1000x1000.jpg"
+							alt="alt">
+					</figure>
+					<figure class="grid-image-4">
+						<img src="https://snworksceo.imgix.net/ids/cc22670e-3ddd-4133-b200-82342bd21434.sized-1000x1000.jpg" alt="">
+					</figure>
+					<p class="caption"><strong>TOP LEFT</strong> An MFD engine is pictured April 1, 2025, at Station 22 in
+						Bloomington.
+						Allen said MFD services Perry, Clear-Creek, Indian Creek, Salt, Polk, Benton, Van Buren, Washington
+						and
+						Bloomington Townships. <strong>TOP RIGHT</strong> Firefighting gear is seen hanging
+						on a wall April 15, 2025, at Station 22 in Bloomington. Volunteer Joe McWhorter Sr. said the
+						volunteers'
+						clothes
+						and car allowance is not very much. <strong>BOTTOM
+							LEFT</strong> A panel of meters and labels is seen on the side of a fire engine April 1, 2025,
+						at
+						Station 22
+						in Bloomington. Allen said the engine could hold up to 2,000 gallons of water. <strong>BOTTOM
+							RIGHT</strong>
+						Fire suits hang around the perimeter of the garage April 1, 2025, at Station 22 in Bloomington. The
+						MFD said
+						it
+						is comprised of both career and volunteer firefighters.
+					</p>
+				</div>
+
+				<p>Further back is the kitchen: there&rsquo;s a big, cast-iron skillet on the stove and a half-eaten box of
+					cupcakes on
+					the counter. Up some stairs is the training room. There are CPR dummies in the corner. Allen shows off a
+					shrine-like
+					wall covered in framed pictures of former MFD firefighters.</p>
+
+				<figure class="inline-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/2caa19df-e868-4038-acb7-01ef8c8e0852.original.jpg"
+						alt="alt text">
+					<figcaption>
+						Battalion Chief Jason Allen looks at the Chiefs Hall of Courage on April 15, 2025, at Station 22 in
+						Bloomington.
+						Allen said new volunteers have to complete their training hours during weekends or days off.
+					</figcaption>
+				</figure>
+
+
+				<p>There is a sense of pride in this place.</p>
+				<p>For the firefighters to spend hours upon hours at the station, it should feel like a home. And it does.
+				</p>
+				<p>It&rsquo;s certainly a second home for Leigh Dillard. She&rsquo;s a member of the auxiliary, a group of
+					volunteers
+					that don&rsquo;t fight fires or provide first responder services. Her husband is Dustin Dillard, fire
+					chief of MFD.
+				</p>
+				<p>&ldquo;If the guys are on the scene for a long time, we'll bring food or water or drinks,&rdquo; Leigh
+					said.</p>
+				<p>Leigh said MFD&rsquo;s favorite on-scene snack is McDonald&rsquo;s. She has a recurring mass order on the
+					app.</p>
+				<p>&ldquo;It&rsquo;s a lot of sandwiches,&rdquo; she said.</p>
+				<p>Leigh and Dustin have four kids: one son and three daughters. Their second-oldest, Annleigh, wants to be
+					a fire chief
+					like her dad when she grows up.</p>
+				<p>&ldquo;It&rsquo;s a unique family,&rdquo; Leigh said. &ldquo;It&rsquo;s special, something that not a lot
+					of people
+					know until they&rsquo;re in it. I always try to explain it, but you just kind of have to know.&rdquo;
+				</p>
+				<p>Though Leigh isn&rsquo;t trained as a first responder, the services she provides as an auxiliary
+					volunteer help the
+					department stay afloat. She&rsquo;s a licensed teacher in Indiana, so she writes the lesson plans for
+					the fire
+					prevention classes the MFD teaches in schools.</p>
+				<p>&ldquo;You can volunteer in so many ways,&rdquo; Leigh said. &ldquo;You can be a huge help, even if you
+					can&rsquo;t
+					go out and fight the fires or have the training, there&rsquo;s always somewhere, some place for
+					you.&rdquo;</p>
+
+
+				<!-- <p class="section-break">•••</p> -->
+				<p class="section-break">
+					<!-- <i class="fa-solid fa-fire"></i> <i class="fa-solid fa-fire"></i> <i class="fa-solid fa-fire"></i> -->
+					<i class="fa-solid fa-fire-extinguisher"></i><i class="fa-solid fa-fire-extinguisher"></i><i
+						class="fa-solid fa-fire-extinguisher"></i>
+				</p>
+				<p>The volunteer shortage isn&rsquo;t limited to Monroe County. It&rsquo;s statewide, and it hurts rural
+					areas in
+					particular.</p>
+				<p>According to the NFPA, 95% of volunteer firefighters serve departments that protect fewer than 25,000
+					people. Though
+					they provide for less people, they cover the most land.</p>
+				<p>The demand for service is &ldquo;huge,&rdquo; State Fire Marshal Steve Jones said at an Indiana Volunteer
+					Firefighters Association meeting last year, and most of it falls on volunteers because they cover most
+					of Indiana.
+				</p>
+				
+				<p>Allen relayed a similar sentiment at MFD over a year later. He added that many rural communities
+					don&rsquo;t have
+					enough money to fund a career department fully.</p>
+				<p>&ldquo;Most of them find the only feasible way economically is to create their own volunteer fire
+					department,
+					purchase some used equipment, a firehouse and rely on community members to staff those when a call comes
+					out,&rdquo;
+					Allen said.&rdquo;</p>
+				<p>MFD Fire Chief Dillard said that kind of system relied on volunteers&rsquo; daytime employers being
+					flexible with the
+					volunteers&rsquo; hours.</p>
+				<p>&ldquo;Traditionally, in the past, in a lot of rural Indiana, employers would allow people in the
+					community to leave
+					work to respond on calls because that employer also relied on emergency service,&rdquo; Dillard said.
+				</p>
+				<p>Since that social covenant has expired, new volunteers have to complete their training hours during
+					weekends or days
+					off, which Allen said many found unattractive.</p>
+				<p>Allen knows why some people don&rsquo;t want to volunteer. He understands the risk. He knows what
+					it&rsquo;s like to
+					put his health on the line, to spend the majority of his waking hours on call. But it&rsquo;s greater
+					than that.
+					It&rsquo;s bigger than him. It&rsquo;s neighbors helping neighbors.</p>
+				<p>&ldquo;Remember,&rdquo; he said, &ldquo;That&rsquo;s your community.&rdquo;</p>
+				<p class="editors-note">Editor&rsquo;s Note: MFD is seeking auxiliary and administrative volunteers. Learn how
+					you can help <a href="https://www.monroefd.org/">on the department website</a>.
+				</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<!-- small bios -->
+				<div class="author-bios">
+					<!-- update bios in metadata.json -->
+					<!-- delete this div if you don't want them to show up -->
+				</div>
+
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+			</div>
+		</article>
+
+	</main>
+
+	<footer>
+
+		<div class="footer-row">
+			<!-- IDS LOGO SVG -->
+			<div class="logo">
+				<a href="https://idsnews.com">
+					<svg viewBox="0 0 163.17 68.85">
+						<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+						<path style="fill:#990000;"
+							d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+						<path style="fill:#990000;"
+							d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+					</svg>
+					<span class="show-desktop"> | Indiana Daily Student</span>
+				</a>
+			</div>
+			<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+				SUBSCRIBE
+			</a>
+			<div class="socials">
+				<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+						class="fab fa-spotify"></i></a>
+			</div>
+		</div>
+		<div class="links">
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+			<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+			<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+			<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+					target="_blank">Advertising</a></p>
+			<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+		</div>
+		<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+	</footer>
+
+	<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/ads.js"></script>
+	<script src="js/ids.js"></script>
+	<script src="js/metadata.js"></script>
+</body>
+
+</html>
