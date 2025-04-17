@@ -4,6 +4,7 @@ const data = {
     "headline": "Indiana basketball transfer portal updates",
     "title": "Transfer portal updates",
     "pub_date": "April 12, 2025",
+    "update_date": "April 17, 2025",
     "bylines": {
         "By":[ {
             "name": "IDS Staff",
@@ -82,7 +83,7 @@ document.querySelector('#bylines').innerHTML = bylines_html;
 // document.querySelector('.author-bios').innerHTML = bios_html;
 
 // pubdate
-document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date;
+document.querySelector('#pubdate').innerHTML = "Published " + data.pub_date + "<br> Updated " + data.update_date;
 
 // title & slug
 document.querySelector('title').innerHTML = data.title + ' | Indiana Daily Student';
