@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title (pulls from metadata.json) -->
+	<title> Hello</title>
+
+	<!-- favicon -->
+	<link rel="SHORTCUT ICON"
+		href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+	<!-- CSS stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+	<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+	<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+	<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+	<!-- SOCIAL CARDS — Make sure to update!! -->
+	<meta property="og:url" content="http://specials.idsnews.com/little-500-guide-2025/photos.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Little 500 Guide 2025" /> <!-- TODO: headline -->
+	<meta property="og:description" content="Photos from the Little 500." /> <!-- TODO: abstract -->
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="Little 500 Guide 2025"> <!-- TODO: headline -->
+	<meta name="twitter:description" content="Photos from the Little 500."> <!-- TODO: abstract -->
+	<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+	<!-- START Ad content: this goes in the head content -->
+	<!-- don't mess with this — it will work all on it's own :-) -->
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+	<script>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+	<script>
+		googletag.cmd.push(function () {
+			//all other leaderboards
+			var mapping1 = googletag.sizeMapping()
+				.addSize([768, 0], [728, 90]) // Desktops and Tablets
+				.addSize([0, 0], [320, 50]) // Mobile devices
+				.build();
+			googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="statistics" style="display: none"></div>
+	<!-- Google Tag Manager -->
+	<!-- (also don't have to worry about this at all) -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script src="js/googleTagManager.js"></script>
+
+	<div class="helper"></div>
+
+	<!--Header-->
+	<header>
+		<!-- Transparent navbar -->
+		<nav>
+			<div class="nav-left">
+				<p class="logo">
+					<a href="https://www.idsnews.com">
+						<!-- IDS LOGO SVG -->
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+					</a>
+					<a class="slug-link" href="./index.html">
+						<span id="slug"></span>
+					</a>
+				</p>
+			</div>
+
+			<div class="nav-right">
+				<a class="mobile" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+				<div id="link-list" class="hide">
+					<a href="./index.html">Home</a>
+					<a href="./about.html">About the Race</a>
+					<a href="./photos.html">Photos</a>
+					<!-- <a href="./index.html">Team Rosters</a> -->
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="header-image photos">
+			<div class="header-title">
+				<h1>Little 500 photos</h1>
+				<h3>Top shots from the track</h3>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- main article -->
+	<main>
+		<article>
+			<div class="bylines">
+				<div id="bylines">
+					<p>By <a href="https://www.idsnews.com/staff/jimmy-rush">Jimmy Rush</a>, <a
+							href="https://www.idsnews.com/staff/briana-pace">Briana Pace</a> and <a
+							href="https://www.idsnews.com/staff/lauren-mckinney">Lauren McKinney</a></p>
+				</div>
+			</div>
+
+			
+			<div class="story">
+
+				<h3>Qualifications — March 29, 2025</h3>
+
+				
+				<!-- <figure class="inline-image">
+									<img src=""
+										alt="alt text">
+									<figcaption>
+										<p class="credit"> | <b>IDS</b></p>
+									</figcaption>
+								</figure> -->
+
+
+				<figure class="inline-image" id="photo1">
+					<img src="https://snworksceo.imgix.net/ids/6c102c1d-dc40-480b-b7ff-a23c1cd37637.sized-1000x1000.jpg?w=1000"
+						 alt="A biker cycles on a track">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						An Alpha Gamma Delta cyclist races around the track during Little 500 qualifications March 29, 2025, at Bill Armstrong Stadium in Bloomington. The team faulted on their first attempt to qualify.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/af0ea6b3-f27e-4529-888d-2db71e35ae6f.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Biker cycling on a track with a crowd in the stands">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						A Delta Gamma competitor races around the track during Little 500 qualifications on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Delta Gamma placed first in the women's qualifying race with a time of 02:43.166.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/e472e592-f6c7-4564-9f55-b540246bd1e4.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A crowd of people cheering">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Delta Gamma fans cheer on their team as they attempt to qualify for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. The team had the fastest women's time of the day.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image" id="photo3">
+					<img src="https://snworksceo.imgix.net/ids/0857007b-6842-42db-aac9-eb7a00f22c69.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker getting off of their bike while another biker holds it while running">
+					<figcaption>
+						<p class="credit"> Lauren McKinney | <strong>IDS</strong></p>
+						Cali Vanderpaats switches bikes with Ellie Fotz during the qualifications race for the Little 500 on March 29, 2025 at Bill Armstrong Stadium in Bloomington. The sorority team got a time of 3 minutes and 25 seconds after having to race for a second time.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/370a15bf-37d3-4e6f-a62e-fb48929ad15f.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Three bikers hugging">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Kappa Kappa Gamma cyclists celebrate qualifying for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. The team placed eighth for the day.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/0d7c215d-7a80-49bc-8621-5cb68759913f.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker picks up their bike on the ground while another biker runs towards them. A man on the side of the track raises a yellow flag.">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Alpha Gamma Delta teammates fail to complete an exchange during Little 500 qualifications March 29, 2025, at Bill Armstrong Stadium in Bloomington. Each team had three chances to qualify in case they faulted.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/8a3a5bae-f6f6-483f-8401-36838b669da0.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Fans cheering in stands">
+					<figcaption>
+						<p class="credit"> Lauren McKinney | <strong>IDS</strong></p>
+						Sorority members of Zeta Tau Alpha cheer on and push their team to qualify for the Little 500 race during the qualifications March 29, 2025 at Bill Armstrong Stadium in Bloomington. The Zeta Alpha team made a qualifying time of 3 minutes and 9 seconds.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/52a4df38-2ac2-4188-beec-d13f927cab16.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker sits on the ground next to their bike on the track while another biker bikes away.">
+					<figcaption>
+						<p class="credit"> Lauren McKinney | <strong>IDS</strong></p>
+						A biker from Alpha Sigma Phi halts his race after his teammate crashed during their switch off during the Little 500 qualifications race March 29, 2025 at Bill Armstrong Stadium in Bloomington. Alpha Sigma Phi had a qualifying time of 2 minutes and 34 seconds after their second attempt.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/03bf95fe-3c07-4472-8155-c469635669ec.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker stands next to a red sign with team names and race times listed on it.">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						A Beta Sigma Psi racer poses with the qualifications poll for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. At the end of the day, Beta Sigma Psi placed 13th.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/d3029eea-1d49-420b-aa7f-3405e766fa00.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker bikes past a crowd of cheering fans">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Fans cheer on a Kappa Kappa Gamma cyclist during Little 500 qualifications March 29, 2025, at Bill Armstrong Stadium in Bloomington. Fans showed up to support their team all day long, even at 8 a.m when the first qualification attempt began.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/fef85c5f-9a07-4c22-8a31-d461ac9c4b3c.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Two bikers hug">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Novus cycling teammates embrace after qualifying for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Novus placed second with a time of 2:43.778.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/5fa4c8b8-d951-496c-aa88-a633638257f8.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker cycles on a track">
+					<figcaption>
+						<p class="credit"> Lauren McKinney | <strong>IDS</strong></p>
+						A biker for Cinzano Racing races in the Little 500 qualifying race March 29, 2025 at Bill Armstrong Stadium in Bloomington. The Cinzano team got a qualifying time of 2 minutes and 30 seconds.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/86fda976-5c81-42e7-b5dc-bcbdc00e8bdb.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Two bikers hug next to a group of other bikers.">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Delta Gamma teammates celebrate qualifying for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Delta Gamma has won the women's Little 500 race four times.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image" id="photo4">
+					<img src="https://snworksceo.imgix.net/ids/4a15d941-d753-495f-ba61-de6be09f238f.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker runs along side their bike.">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						A 3PH team member prepares to jump on his bike during Little 500 qualifications March 29, 2025, at Bill Armstrong
+						Stadium in Bloomington. 3PH placed third in men's qualifications.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/3f901d67-2824-4a21-8b68-f5e5a6732d4e.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker hands off their bike to another biker on a track.">
+					<figcaption>
+						<p class="credit"> Jimmy Rush | <strong>IDS</strong></p>
+						Bikers for the Christian Student Fellowship exchange a bike during Little 500 qualifications on March 29, 2025, at Bill Armstrong Stadium in Bloomington. The CSF placed 29th.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/a5e86abd-ba9a-4124-9866-424c00429ee8.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker runs along side their bike on a track.">
+					<figcaption>
+						<p class="credit"> Lauren McKinney | <strong>IDS</strong></p>
+						Mezcla racer Sebastion Breña-Ochoa takes off after switching with his teammate during the Little 500 qualifying race March 29, 2025, at Bill Armstrong Stadium in Bloomington. Mezcla had a run of 2 minutes and 45 seconds that allowed them to qualify.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/ba16d6ad-b23a-4131-8412-66782dea80e7.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker sticks out their tounge on their bike">
+					<figcaption>
+						<p class="credit"> Jimmy Rush | <strong>IDS</strong></p>
+						A biker for Theta Chi sticks his tongue out as he finishes his lap during Little 500 qualifications on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Theta Chi placed 29th.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image" id="photo2">
+					<img src="https://snworksceo.imgix.net/ids/e990f9ac-8b88-40ed-82f7-92411592284f.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker pushing their bike while another one jumps in the air with their arms outsretched">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Kappa Kappa Gamma cyclists complete an exchange during Little 500 qualifications March 29, 2025, at Bill Armstrong Stadium in Bloomington. The team has won the women's Little 500 race five times.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/f6088d29-ff88-46f8-a2ec-a45cc90f107e.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker cries while hugging another biker">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						A Novus cycler gets emotional after her team qualifies for Little 500 on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Novus has appeared in the women's Little 500 race twice before this year.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/cccaa501-0130-4dd1-8be3-373780c64071.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="Two bikers push their bikes on a track">
+					<figcaption>
+						<p class="credit"> Briana Pace | <strong>IDS</strong></p>
+						Alpha Gamma Delta cyclists complete an exchange during Little 500 qualifications March 29, 2025, at Bill Armstrong Stadium in Bloomington. The team placed 21st with a time of 3:03.784.
+					</figcaption>
+				</figure>
+
+				<figure class="inline-image">
+					<img src="https://snworksceo.imgix.net/ids/0a507d18-a88e-4d25-b19c-394699887f90.sized-1000x1000.jpg?w=1000&dpr=2"
+						 alt="A biker salutes to fans in the stands who are all wearing a purple shirt">
+					<figcaption>
+						<p class="credit"> Jimmy Rush | <strong>IDS</strong></p>
+						A Phi Gamma Delta racer salutes the crowd after he finishes his lap during Little 500 qualifications on March 29, 2025, at Bill Armstrong Stadium in Bloomington. Phi Gamma Delta finished eigth in the race.
+					</figcaption>
+				</figure>
+				
+				
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+			</div>
+		</article>
+	</main>
+
+	<footer>
+
+		<div class="footer-row">
+			<!-- IDS LOGO SVG -->
+			<div class="logo">
+				<a href="https://idsnews.com">
+					<svg viewBox="0 0 163.17 68.85">
+						<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+						<path style="fill:#990000;"
+							d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+						<path style="fill:#990000;"
+							d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+					</svg>
+					<span class="show-desktop"> | Indiana Daily Student</span>
+				</a>
+			</div>
+			<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+				SUBSCRIBE
+			</a>
+			<div class="socials">
+				<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+						class="fab fa-spotify"></i></a>
+			</div>
+		</div>
+		<div class="links">
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+			<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+			<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+			<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+					target="_blank">Advertising</a></p>
+			<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+		</div>
+		<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+	</footer>
+
+	<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Sheetrock -->
+	<script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+	<!-- custom js -->
+	<script src="js/ads.js"></script>
+	<script src="js/ids.js"></script>
+	<script src="js/metadata.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

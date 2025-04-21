@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Title (pulls from metadata.json) -->
+	<title> Hello</title>
+
+	<!-- favicon -->
+	<link rel="SHORTCUT ICON"
+		href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+	<!-- CSS stylesheets -->
+	<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+	<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+	<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+	<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+	<!-- SOCIAL CARDS — Make sure to update!! -->
+	<meta property="og:url" content="http://specials.idsnews.com/little-500-guide-2025/about.html" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="About the Race" /> <!-- TODO: headline -->
+	<meta property="og:description" content="Everything you need to know about this year's Little 500 race" /> <!-- TODO: abstract -->
+	<meta property="og:site_name" content="IDS News">
+	<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@idsnews">
+	<meta name="twitter:creator" content="@idsnews">
+	<meta name="twitter:title" content="About the Race"> <!-- TODO: headline -->
+	<meta name="twitter:description" content="Everything you need to know about this year's Little 500 race"> <!-- TODO: abstract -->
+	<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/79355006-2a3c-46c5-80a6-d4b0631e16c3.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+	<!-- START Ad content: this goes in the head content -->
+	<!-- don't mess with this — it will work all on it's own :-) -->
+	<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+	<script>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+	<script>
+		googletag.cmd.push(function () {
+			//all other leaderboards
+			var mapping1 = googletag.sizeMapping()
+				.addSize([768, 0], [728, 90]) // Desktops and Tablets
+				.addSize([0, 0], [320, 50]) // Mobile devices
+				.build();
+			googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+			googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+			googletag.pubads().enableSingleRequest();
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="statistics" style="display: none"></div>
+	<!-- Google Tag Manager -->
+	<!-- (also don't have to worry about this at all) -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script src="js/googleTagManager.js"></script>
+
+	<div class="helper"></div>
+
+	<!--Header-->
+	<header>
+		<!-- Transparent navbar -->
+		<nav>
+			<div class="nav-left">
+				<p class="logo">
+					<a href="https://www.idsnews.com">
+						<!-- IDS LOGO SVG -->
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+					</a>
+					<a class="slug-link" href="./index.html">
+						<span id="slug"></span>
+					</a>
+				</p>
+			</div>
+
+			<div class="nav-right">
+				<a class="mobile" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+				<div id="link-list" class="hide">
+					<a href="./index.html">Home</a>
+					<a href="./about.html">About the Race</a>
+					<a href="./photos.html">Photos</a>
+					<!-- <a href="./index.html">Team Rosters</a> -->
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="header-image about">
+			<div class="header-title">
+				<h1>About the race</h1>
+				<h3>Everything you need to know about this year's Little 500 race</h3>
+			</div>
+		</div>
+
+	</header>
+
+	<!-- main article -->
+	<main>
+		<article>
+
+			<div class="bylines">
+				<div id="bylines">
+					<p>By <a href="https://www.idsnews.com/staff/Noah-Gerkey">Noah Gerkey</a></p>
+				</div>
+			</div>
+			
+			<div class="story">
+			
+			
+			
+				<p>The &ldquo;World&rsquo;s Greatest College Weekend&rdquo; is fast approaching. Fans will soon pack the
+					bleachers of Bill Armstrong Stadium to cheer and watch a storied tradition &mdash; the Little 500 races.</p>
+				<p>The Little 500 consists of the 33 fastest cycling teams in each of the two races, the women&rsquo;s race and
+					men&rsquo;s race. The women&rsquo;s race is 100 laps (25 miles), while the men&rsquo;s race is 200 laps (50
+					miles).</p>
+				<p>There is only one team in each race that will get the honor and privilege of hoisting the Borg-Warner trophy
+					as Little 500 champions.</p>
+				<p>The women&rsquo;s race will take place at 4 p.m. on April 25, and the men&rsquo;s race will begin at 2 p.m.
+					on April 26.</p>
+				<h3>Rules to Know</h3>
+				<p><strong>Pits:</strong> Each team in the race chooses a pit along the track. This position is determined via
+					selection.
+					The
+					selection order is based on the place that each team finished in qualifications. Each pit is 16 feet wide,
+					and no other teams are permitted to exchange in that area. There is a maximum of six people allowed in the
+					pit during the race.</p>
+				<p><strong>Exchanges:</strong> Each team must complete multiple exchanges throughout the race. An exchange is legal
+					when
+					teams switch riders
+					with either one or two bikes.</p>
+				<p>While the exchange is happening, the outgoing rider cannot touch the incoming bike until it crosses the front
+					line of the team&rsquo;s pit area. Every exchange must be completed within a 32-foot area.</p>
+				<p>Throughout the race, the women are required to complete a minimum of five exchanges while the men must
+					complete 10.</p>
+				<p><strong>Penalties:</strong> If a team commits a penalty, they will be penalized for a minimum of two seconds. The
+					team&rsquo;s
+					time must be spent in the designated penalty area, which is located near the starting line. All penalties
+					must be served within 10 laps after the penalty is initially announced.</p>
+				<p><strong>Line-Up:</strong> The lineup is how riders are lined up for the initial pacing lap.</p>
+				<p><strong>Safety zone:</strong> The safety zone is located right before the infield, 10 feet from the inner line of the track.
+					This area may only have authorized people inside it. The safety zone is there to protect non-active riders
+					from the track.</p>
+				<p><strong>Entering the infield:</strong> The cement gutter around the interior of the track surrounds the infield. Riders are
+					not allowed to enter or ride on it unless they are forced by another team onto the gutter or into the
+					infield.</p>
+				<p>If a team attempts to improve its position by riding through the infield, they will be assessed a penalty.
+				</p>
+				<p class='section-break'>•••</p>
+				<h3>Officials</h3>
+				<p>Indiana University Student Foundation Litte 500 race director: Emily Carrico serves as the director of
+					the
+					event, overseeing all cycling activities.</p>
+				<p><strong>Assistant Director:</strong> Peter Schulz joined the IUSF as an assistant director on January 13, 2025.
+					Schulz leads
+					the spring cycling series events and is an adviser in the Rider&rsquo;s Council and Steering Committee.
+				</p>
+				<p><strong>Chief Steward:</strong> The chief steward will decide on all questions that relate to the conduct of the
+					race itself.
+					They have the power to disqualify any team or rider for unsportsmanlike conduct. They also have the
+					power to
+					assess penalties throughout the race if necessary. All decisions made by the chief steward are final and
+					unable to be appealed.</p>
+				<p><strong>Judges:</strong> There are a total of 17 judges who are stationed throughout the track. The job of the
+					judges is to
+					report irregularities to the chief steward for a further decision.</p>
+				<p><strong>Chief observers:</strong> The three chief observers are positioned in observation towers. The main duty
+					of
+					these
+					observers is to aid the chief steward with the enforcement of rules.</p>
+				<p><strong>Starter:</strong> The starter is responsible for giving the flag signals for the riders to follow.</p>
+				<p><strong>Safety Officials:</strong> They are responsible for the safety of the riders during the race.</p>
+				<p class='section-break'>•••</p>
+				<h3>Terms to know</h3>
+				<p><strong>Bike:</strong> The IUSF gives every team two bikes for the Little 500 race. Teams that make illegal
+					changes to the
+					bikes or fail to comply with the rules will receive a penalty. Teams may be issued a third bike,
+					but only if
+					both bikes already given are damaged to the point they cannot be repaired.</p>
+				<p><strong>Flags:</strong> Flags are how the race is controlled; the different color flags have different
+					meanings:</p>
+			
+				<div class="flags">
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/4ccf4a0a-ad6b-4c02-b9b9-c99fe0ca1f76.original.png"
+							alt="green flag" />
+						<figcaption>
+							<strong>GREEN</strong><br />
+							Starting signal, clears course
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/4ee3064b-e7cf-4b51-93c2-872047e48e9c.original.png"
+							alt="blue flag with an orange diagonaly line" />
+						<figcaption>
+							<strong>BLUE AND ORANGE</strong><br />
+							Rider attempting to pass
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/fcb2d89b-b230-4c82-a593-0115afb57652.original.png"
+							alt="black flag" />
+						<figcaption>
+							<strong>BLACK</strong><br />
+							Ride on the outside of the track
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/6cfe33bb-5043-4969-9572-df95e341f84e.original.png"
+							alt="red flag" />
+						<figcaption>
+							<strong>RED</strong><br />
+							Stop; race is halted
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/459a99dc-8245-47fa-bad4-eeb57763d6f2.original.png"
+							alt="yellow flag" />
+						<figcaption>
+							<strong>YELLOW</strong><br />
+							Ride with caution and maintain position
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/e7c1cbba-19d4-42cc-9520-570cd300404a.original.png"
+							alt="white flag" />
+						<figcaption>
+							<strong>WHITE</strong><br />
+							One lap until finish
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/5880f1f5-25ac-497a-9007-2ce2fee68881.original.png"
+							alt="white and black checkered flag" />
+						<figcaption>
+							<strong>CHECKERED</strong><br />
+							Race completed
+						</figcaption>
+					</figure>
+				</div>
+		
+				<p>Any team that does not observe the flags and their meanings will receive penalties.</p>
+				<p><strong>Pole position:</strong> The team that begins in first place is in &ldquo;pole position.&rdquo;</p>
+				<p><strong>Drafting:</strong> When a rider conserves their energy by riding behind another rider, while
+					benefiting from a
+					reduction of wind resistance.</p>
+				<p><strong>Yellow jersey:</strong> The winning team from the previous year for both the men&rsquo;s and
+					women&rsquo;s races has
+					the opportunity to wear the yellow jersey. Kappa Alpha Theta will wear the yellow jersey in the
+					women&rsquo;s race and Black Key Bulls will wear the yellow jersey in the men&rsquo;s race.</p>
+				<p><strong>Green Jersey:</strong> The team that finishes first at qualifications has the opportunity to wear
+					the green jersey.
+					Delta Gamma will wear the green jersey in the women&rsquo;s race and Black Key Bulls would have
+					worn the
+					green jersey in the men&rsquo;s race if not for their victory in 2024.</p>
+				<p><strong>Borg-Warner Trophy:</strong> The name of the Indianapolis 500 replica trophy that is presented to
+					the winners of the
+					Little 500.</p>
+			
+			
+			
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+			</div>
+		</article>
+	</main>
+
+	<footer>
+
+		<div class="footer-row">
+			<!-- IDS LOGO SVG -->
+			<div class="logo">
+				<a href="https://idsnews.com">
+					<svg viewBox="0 0 163.17 68.85">
+						<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+						<path style="fill:#990000;"
+							d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+						<path style="fill:#990000;"
+							d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+					</svg>
+					<span class="show-desktop"> | Indiana Daily Student</span>
+				</a>
+			</div>
+			<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+				SUBSCRIBE
+			</a>
+			<div class="socials">
+				<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+						class="fab fa-spotify"></i></a>
+			</div>
+		</div>
+		<div class="links">
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+			<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+			<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+			<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+					target="_blank">Advertising</a></p>
+			<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+			<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+		</div>
+		<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+	</footer>
+
+	<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Sheetrock -->
+	<script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+	<!-- custom js -->
+	<script src="js/ads.js"></script>
+	<script src="js/ids.js"></script>
+	<script src="js/metadata.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
