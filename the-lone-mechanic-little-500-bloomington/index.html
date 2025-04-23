@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!--fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet"> -->
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+    <link rel="stylesheet" href="css/slideshow.css"> <!-- slideshow stylesheet -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/the-lone-mechanic-little-500-bloomington" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The lone mechanic" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Greg Souder is the sole mechanic for the Little 500." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/3361477f-fcb9-47cb-8703-c561fb92c95f.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="The lone mechanic"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Greg Souder is the sole mechanic for the Little 500.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/3361477f-fcb9-47cb-8703-c561fb92c95f.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will wo rk all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">The Lone Mechanic</h1>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <!-- TODO: Updated caption still needed -->
+        <p class="caption header-caption">Greg Souder, the only mechanic for the Little 500, laughs with a rider as he tightens a bike chain Sept. 20, 2024, at the Wilcox House in Bloomington. Greg joined the Little 500 seven years ago, and has enjoyed getting to know the students behind the race.</p>
+
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <p>Rookies stumble into the bike shop like babies, big white helmets strapped below their chins, cheeks
+                    chapped red from the October cold.</p>
+                <p>Some cling to the edges of the room. Others move around cautiously. They mutter to each other asking
+                    what tire pressure they should fill their wheels to. Their friends respond, heads shaking &mdash;
+                    clueless.</p>
+                <p>But an older rider, the oldest in the room by some 49 years, takes pity on the rookies.</p>
+                <p>In the middle of the Little 500 bike shop, Greg Souder cranes his neck over a road bike, spinning its
+                    front tire to check the derailleur, ensuring the chain shifts gears properly. A chunk of dirt flies
+                    off the spokes.</p>
+
+                <div>
+                    <figure class="center" id="test">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/61902375-9b2d-4a66-b7c1-4e6bcdadd8fb.sized-1000x1000.jpg"
+                            alt="Souder is seen framed by hanging bikes in his shop." width="1000" height="auto">
+
+                        <figcaption>
+                            Greg Souder takes a moment to watch his bikeshop buzz with activity before a race Oct. 15,
+                            2024, at Bill Armstrong Stadium in Bloomington. He and the riders prepared for one of the
+                            biggest races prior to the Little 500 in April, the Bloomington Classic.
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <p>The room smells like spray paint, a few of the riders smell like sweat. More experienced cyclists
+                    grab what they need and wave hello to the man. The newer riders, though, are less certain. Until
+                    recently some didn&rsquo;t even know the bike shop tucked away under the stands of the race track
+                    existed.</p>
+
+                <!-- TODO: Update this caption? -->
+                <figure class="wide-left">
+
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7334594f-4071-4bf9-b31a-c7bd1aed1143.sized-1000x1000.jpg"
+                        alt="Racing bikes hang on the wall of a garage.">
+
+                    <figcaption> Bikes from previous races line the walls of the Little 500 bike shop Sept. 20, 2024, at Bill Armstrong Stadium in Bloomington. Riders exchanged their student IDs for a bike to use for the day. </figcaption>
+
+                </figure>
+
+                <p>&ldquo;Don&rsquo;t be bashful if you need help!&rdquo; Greg yells out.</p>
+                <p>Dozens of student riders whisk in and out in preparation of the day&rsquo;s race: the Bloomington
+                    Classic. And a few dozen times, Greg will show them how to adjust their bike seats, inflate their
+                    tires or tighten their chains.</p>
+                <p>Hundreds of students attempt to compete in the race. About 264 riders on 66 teams race on 185
+                    bicycles. And one lone mechanic is responsible for keeping every wheel turning.</p>
+                <p>Of the thousands of fans who watch from the stands, most won&rsquo;t even see Greg. To those who do,
+                    he is little more than a speck on the sidelines of the Little 500 racetrack.</p>
+                <p>But to the college kids who wheel their bikes into his shop week after week, Greg is the reason the
+                    race goes on.</p>
+
+                <p class='section-break'>•••</p>
+
+
+                <p>Greg didn&rsquo;t expect to get the job.</p>
+                <p>When he came home from work mowing lawns for the city one evening in 2018, his wife Joie greeted him
+                    with a hiring ad she&rsquo;d cut out of The Herald-Times. She said she found him the perfect job.
+                </p>
+                <p>&ldquo;But I didn&rsquo;t think they&rsquo;d hire an old man,&rdquo; he said.</p>
+                <p>The mechanics for previous races were typically in their early 20s, recent IU graduates who tended to
+                    stick around only for a year or two. They weren&rsquo;t like Greg, 69, with a thick gray horseshoe
+                    mustache, doctor-recommended compression socks, vintage cars and grandchildren.</p>
+                <p>This spring will be his seventh year.</p>
+
+            </div>
+            <!-- TODO: Make these bigger -->
+            <figure class="imagegrid xl-image"
+            style="max-width: var(--width-lg)">
+                <figure class="grid-image-1">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/eadefb41-4382-4764-b87c-47915a7391b8.sized-1000x1000.jpg"
+                        alt="A leg wearing a red compression sock next to a red little 500 hat and the pedals of a car.">
+                </figure>
+                <figure class="grid-image-2">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/a8f2d17e-e041-48f2-aca1-a3abd1a3dffc.sized-1000x1000.jpg"
+                        alt="A white rag with a picutre of a gingerbread man hangs off the open trunk of a vintage car.">
+                </figure>
+                <figure class="grid-image-3">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/6e50d321-5f74-4d3f-bc55-cf8258292a4c.sized-1000x1000.jpg"
+                        alt="A man is pictured through the spokes of a bicycle wheel as he looks intently at something.">
+                </figure>
+                <figure class="grid-image-4">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7df4248f-c74e-492b-97de-6a5a4855b387.sized-1000x1000.jpg"
+                        alt="A man bends over the trunk of a car">
+                </figure>
+                <p class="caption">
+                    <strong>TOP LEFT</strong> A red ball cap featuring a Little 500 emblem sits inches away from
+                    Greg Souder’s feet
+                    Sept. 20, 2024, at the Wilcox House in Bloomington. Greg said he’s “mechanically inclined” and
+                    his love for cars started at a young age.
+                    <strong>TOP RIGHT</strong> A rag with a gingerbread man used to wipe
+                    grease from Greg’s hands hangs off the trunk of his 1963 Ford Fairlane on Sept. 20, 2024, at the
+                    Wilcox House in Bloomington. Riders wheeled their bikes up to Greg to ask for help adjusting
+                    their seats or fixing their chains.
+                    <strong>BOTTOM LEFT</strong> Greg concentrates on adjusting a bike chain that
+                    had been making noise when the rider pedaled Sept. 20, 2024, at the Wilcox House in Bloomington.
+                    Greg said he always makes sure to lubricate riders’ bike chains to keep them working
+                    smoothly.
+                    <strong>BOTTOM RIGHT</strong> Greg rummages through tools in the back of his 1963 Ford Fairlane
+                    while
+                    preparing for a Wilcox Ride on Sept. 20, 2024, at the Wilcox House in Bloomington. Little 500
+                    riders biked up to the trunk of his car to make tweaks to their bikes before the ride.
+                </p>
+            </figure>
+            <div class="story">
+                <p>With that time has come wisdom. When the Little 500 arrives, and Greg parks himself along the
+                    track with a storage container aptly labeled &ldquo;GREG&rsquo;S STUFF FOR RACE DAY,&rdquo;
+                    he&rsquo;ll have thought of everything. He brings water bottles and bandaids, extra washers
+                    because sometimes when the kids build their own bikes, they put the wrong kind on. In October,
+                    he packed extra clothes in case anyone got cold.</p>
+                <p>He learned to carry safety pins if riders forgot to attach their race numbers to their jerseys.
+                </p>
+                <p>&ldquo;I was a Boy Scout,&rdquo; he said. &ldquo;And Boy Scouts are supposed to be
+                    prepared.&rdquo;</p>
+                <p>To Greg, working as the Little 500 mechanic is a dream job &mdash; far better than when he worked
+                    on his father&rsquo;s farm, or in his brother&rsquo;s pizza shop, or as a trucker or a factory
+                    worker or a tree stump grinder.</p>
+
+                <iframe title="Steady Increase in Little 500 Qualifying Teams" aria-label="Grouped Columns"
+                    id="datawrapper-chart-FNGEU" src="https://datawrapper.dwcdn.net/FNGEU/1/" scrolling="no"
+                    frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="478"
+                    data-external="1"></iframe>
+                <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();
+                </script>
+
+                <p>He said he&rsquo;s always been &ldquo;mechanically inclined,&rdquo; ever since he was old enough
+                    to reach the pedals on a tractor. When he was 16, he taught himself how to repair cars because
+                    he didn&rsquo;t have the money to pay someone else to, and his penchant for street racing meant
+                    his 1965 Chevelle Super Sport was often in need of TLC.</p>
+                <p>He enjoys pushing the boundaries of his knowledge &mdash; unraveling greasy puzzles made of gears
+                    and wires. He likes the satisfaction, the sense of accomplishment that comes with doing
+                    something yourself.</p>
+                <p>Greg didn&rsquo;t become interested in cycling until he was in his mid-50s, when a doctor told
+                    him it would be better for his knees than running. He even owned a bike shop in Huntington,
+                    Indiana, for a few months in 2012. When he accepted the Little 500 mechanic position, he assumed
+                    he&rsquo;d be working alone on bicycle upkeep.</p>
+
+
+
+
+
+
+                <p>&ldquo;I never dreamed that I would have such one-on-one conversations and things with the
+                    students,&rdquo; Greg said. &ldquo;And there&rsquo;s a teaching aspect to it that I never
+                    dreamed about, because these students are like sponges.&rdquo;</p>
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/af1db0ac-5606-44f7-be7c-666706570b64.sized-1000x1000.jpg"
+                        alt="Souder listens with a hand on his hip while speaking to a student bike rider.">
+
+                    <figcaption>
+                        Greg Souder listens intently as IU student Mau Brito shows Greg his new bike Sept. 20, 2024, at
+                        the Wilcox House in Bloomington. Greg said he enjoys getting to know riders outside of the
+                        Little 500.
+                    </figcaption>
+                </figure>
+                <p>Dorothy Curran-Muñoz joined the Little 500 her sophomore year. She was looking for somewhere that
+                    made the campus of almost 50,000 students feel smaller. She was invited to start the
+                    women&rsquo;s Novus team, but she knew nothing about racing. Dorothy didn&rsquo;t even have her
+                    own bike to practice with outside of Little 500.</p>
+                <p>&ldquo;So my mom found one for me on Facebook Marketplace for like 80 bucks,&rdquo; she said.
+                    &ldquo;And it was totally only worth 80 bucks.&rdquo;</p>
+                <p>When it wouldn&rsquo;t shift gears correctly, the men&rsquo;s Novus captain directed her to the
+                    mechanic. Greg welcomed Dorothy, fixed her bike and showed her what the different parts were. He
+                    opened the bike shop for her one day and spent an hour teaching her.</p>
+                <p>&ldquo;I remember walking away that day feeling such a sense of belonging that I hadn&rsquo;t
+                    before,&rdquo; Dorothy said. &ldquo;I was like, &lsquo;Okay, maybe I can do this.&rsquo;&rdquo;
+                </p>
+                <p>Now, Dorothy is a senior on the Riders Council. She says she often encourages rookies to go to
+                    Greg for help because he never makes them feel out of place. Whenever she sends someone his way,
+                    she makes sure to tell them to say thank you.</p>
+
+                <p>&ldquo;You know when professors, like, you can just tell that they love what they&rsquo;re doing?
+                    They love the content. They love teaching. They want you to understand,&rdquo; she said.
+                    &ldquo;That&rsquo;s how Greg is about bikes.&rdquo;</p>
+                <p>Dorothy said Greg taught her everything she knows about bikes. When she walks into the shop the
+                    day of the Bloomington Classic, he catches up with her and asks if she got a haircut.</p>
+
+
+                <p>Other riders learned what they know from Greg, too. Owen Teed is a senior and President of Riders
+                    Council. The Little 500 is in his blood &mdash; his dad raced for Human Wheels when he went to
+                    IU, and his sister Abby raced for Melanzana.</p>
+
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fdb3aa48-2871-4c7c-ba24-08ea36ca548c.sized-1000x1000.png"
+                        alt="A college student with blonde hair.">
+                    <figcaption>
+                        Owen Teed, President of the IU Student Foundation Riders Council, sits outside the Wilcox House
+                        on Oct. 3, 2024, in Bloomington. Teed said he built his race team’s bicycles after learning
+                        about bike maintenance from Greg.
+                    </figcaption>
+                </figure>
+
+                <p>During Welcome Week his freshman year, Owen&rsquo;s sister introduced him to Greg. The next year
+                    when Owen started his own team &mdash; a revitalized Human Wheels &mdash; he went to Greg again.
+                </p>
+                <p>&ldquo;He remembered my last name and I told him I was, in fact, Abby Teed&rsquo;s
+                    brother,&rdquo; Owen said.</p>
+                <p>The first few times Greg fixed his bike, Owen didn&rsquo;t watch carefully. But soon he realized
+                    just how often they needed repairs.</p>
+                <p>&ldquo;So the next time I took it to him, I paid close attention,&rdquo; he said. &ldquo;And
+                    everything I've had him do on my bike, I've paid close attention, to the point where last year I
+                    built my team's race bikes.&rdquo;</p>
+                <p>Greg says it&rsquo;s harder for boys to ask him for help than girls. He thinks boys don&rsquo;t
+                    want their teammates to think less of them. Owen says Greg told him the men&rsquo;s teams
+                    don&rsquo;t take enough advantage of the skills he has to offer.</p>
+                <figure class="wide-left" style="padding-bottom: 20px;">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/dd964bcb-4623-4b42-abae-25b5d8bdebc8.sized-1000x1000.jpg"
+                        alt="A bike rider in athletic wear looks on as souder fixes a bike.">
+
+                    <figcaption>JT Underhill, a rider for 3PH, watches Greg Souder fix his bike during the men’s
+                        Cyclocross Race on Nov. 11, 2024, at the IU tailgating fields in Bloomington. Greg attended
+                        every race and training event leading up to the Little 500 in April. </figcaption>
+                </figure>
+                <p>But Owen is quick to say he&rsquo;s glad to learn from Greg.</p>
+                <p>&ldquo;You can tell it kind of warms his heart a little bit to see that what he&rsquo;s taught
+                    you has paid off, and you&rsquo;re now able to do it on your own,&rdquo; Owen said.</p>
+                <p>To Greg, that&rsquo;s one of the best parts about the job. He loves watching students grow during
+                    their time at IU &mdash; not just as riders or mechanics, but as adults.</p>
+                <p>Just a few weeks before this year&rsquo;s Little 500, Greg told Owen it seemed like just
+                    yesterday he walked into the bike shop as a freshman.</p>
+                <p>&ldquo;And in four years just, poof,&rdquo; Greg said. &ldquo;Went by already.&rdquo;</p>
+                <p>Before the Bloomington Classic, Greg kneels down on the cement floor marked with tire prints to
+                    show a girl how to pump air into her tire.</p>
+                <p>&ldquo;In a couple of years,&rdquo; he says to the rookie, &ldquo;you&rsquo;ll be captain of the
+                    team.&rdquo;</p>
+                <p class='section-break'>•••</p>
+                <p>When Greg and his wife moved to Bloomington in 2017 from Markle, Indiana, they didn&rsquo;t know
+                    many people in town.</p>
+                <p>Then in December 2021, Greg found out he had a tumor on his kidney.</p>
+                <p>&ldquo;When you go to a doctor and that doctor mentions the C-word &mdash;&rdquo; he says. His
+                    voice trails off. &ldquo;My mind just went fuzzy.&rdquo;</p>
+                <p>He&rsquo;d never received a diagnosis like it. He&rsquo;d never even broken a bone, spare a few
+                    fingers he smashed working in a factory.</p>
+                <p>Cancer changed things for Greg. He could no longer ride his bike for miles every day. He could no
+                    longer move as freely. But more than that, it changed how Greg thought. It lingered in the back
+                    of his mind no matter what he was doing. He had a granddaughter and a grandson on the way. Joie
+                    had health problems too, and he wanted to take care of her.</p>
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/73be3e4f-e5e3-478f-8950-7982901efc26.sized-1000x1000.jpg"
+                        alt="Souder crouches down and ties the shoe of a young girl.">
+                    <figcaption>
+                        Greg Souder takes a moment to tie his granddaughter Norah’s shoe Oct. 24, 2024, at his home in
+                        Bloomington. Norah, 8, carried her favorite stuffed animal, Pete the Cat, while she followed
+                        Greg around his garage.
+                    </figcaption>
+                </figure>
+                <p>&ldquo;I just kept thinking, &lsquo;Man, I want to be here for them,&rdquo; he said.</p>
+                <p>On Valentine&rsquo;s Day 2022, he had his kidney removed, but the cancer had spread to his
+                    bladder. He had to undergo immunotherapy treatments for the next two and a half years. Being
+                    away from home made it more difficult.</p>
+                <p>&ldquo;It&rsquo;s really hard when you move across the state and move away from all your family and
+                    friends, or most of them,&rdquo; Greg said. &ldquo;At my age, it's hard to make close
+                    friends.&rdquo;</p>
+                <p>The support he found at the Little 500, though, from the race director and the students and
+                    office staff, meant everything to him. His bosses let him keep his job and take time off. They
+                    brought in another mechanic to help him. Calls and texts poured in from people wishing him well.
+                </p>
+                <figure class="lg-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/676c4441-e4b3-4f68-80b5-29abf4b00398.sized-1000x1000.jpg"
+                        alt="A hand holds a photograph of a smiling group of bikers.">
+
+                    <figcaption>Greg Souder holds a photo taken in 2019 from a bike ride with Melanzana riders Oct. 24,
+                        2024, at his garage in Bloomington. Before his cancer diagnosis, Souder often joined teams for
+                        bike rides around Bloomington. He now keeps the photo stored away with cards gifted to him from
+                        riders. </figcaption>
+
+
+                </figure>
+                <p>&ldquo;It just made me realize this is where I belonged,&rdquo; he said.</p>
+                <p>That&rsquo;s why he was back working the race that April 1, less than two months after having his
+                    kidney removed. He loves this job, he says.</p>
+                <p>Today, Greg is healthy. But even now, he chooses not to use the word &ldquo;cancer-free.&rdquo;
+                    He says he&rsquo;s lucky he didn&rsquo;t have to go through chemo, lucky that life is good.
+                    Still, when he goes in for scopes and scans, he holds his breath and hopes they don&rsquo;t find
+                    anything.</p>
+                <p>Tucked away on a shelf in his garage at home, wrapped safely in a plastic baggie, he stores the
+                    cards riders wrote to him when he was sick.</p>
+                <p>&ldquo;Kept every one of them,&rdquo; he said.</p>
+                <p class='section-break'>•••</p>
+                <p>As the spring approaches, Greg stays at Bill Armstrong Stadium later and later, often past 9:45
+                    p.m. when the racetrack closes.</p>
+                <p>He can feel the anticipation building. He sees teams glide around the track in packs, day after
+                    day until the end of April. All the riders are nervous, he says, every single one of them.</p>
+                <p>He tells them to have fun. Enjoy the moment.</p>
+                <p>&ldquo;You&rsquo;ll be fine,&rdquo; he says. &ldquo;That&rsquo;s usually the last words &mdash;
+                    &lsquo;You&rsquo;ll be fine.&rsquo;&rdquo;</p>
+                <p>He stands at the track, watching as kids lap him. A rider calls out to him from her bike, and
+                    then she&rsquo;s gone. She zips past before he can recognize who it is.</p>
+                <p>&ldquo;That happens all the time,&rdquo; he says.</p>
+                <p>The anxiety leading up to the race doesn&rsquo;t get to him anymore, not like it did the first
+                    year or two. He doesn&rsquo;t take any stress home from work. Joie said he can fall asleep at
+                    the drop of a hat.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/875cf174-37ac-413d-8d29-72231c9bc57e.sized-1000x1000.jpg"
+                        alt="A white pegboard covered in an assortment of hanging tools.">
+
+                    <figcaption>Greg Souder’s bike garage at his home, separate from his bike shop at Bill Armstrong
+                        Stadium, is pictured Oct. 24, 2024, in Bloomington. Greg kept bits and pieces of memorabilia
+                        from previous races littered throughout the space. </figcaption>
+                </figure>
+                <p>At home Greg&rsquo;s garage is pristine. Every tool is hung just so, his dog Kylo is sprawled in
+                    front of the hood of his prized possession, a sparkly blue 1963 Mercury Meteor. His grandson
+                    Lewis and granddaughter Norah love riding in its rear-facing back seat. Norah is 8 and chatty
+                    and orbits Greg like he&rsquo;s the sun.</p>
+                <p>He could stay at home, relaxed and retired. But he chooses to be the lone mechanic.</p>
+                <p>&ldquo;Before I was trying to make money doing everything, you know? When your kids are young,
+                    that's your focus, especially as a man providing for your family,&rdquo; he says. &ldquo;And I
+                    don't have to do that anymore. So I think that makes it more enjoyable that I don't have to do
+                    this.&rdquo;</p>
+                <p>For now, Greg has no plans to retire. When he does, he thinks they should replace him with
+                    another &ldquo;older gentleman.&rdquo;</p>
+                <p>&ldquo;I know the end will come someday, and I just sincerely hope that the IUSF can find
+                    somebody that loves this job as much as I do,&rdquo; he says.</p>
+                <p>He waits in the bike shop. Even though it&rsquo;s cold he leaves the door propped open for kids
+                    to come in. On the workbench, he&rsquo;s framed a photo of him and some riders, all of whom are
+                    long graduated.</p>
+                <p>Soon, he&rsquo;ll be done too.</p>
+                <p>&ldquo;I&rsquo;m hoping if I make it 10 years,&rdquo; he says, &ldquo;Maybe they&rsquo;ll name
+                    the bike shop after me.&rdquo;</p>
+
+                <figure class="xl-image">
+                    <!-- TODO: Get caption, I added it in -->
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2bc933b4-c2fe-42a0-8ac6-407982530182.sized-1000x1000.jpg"
+                        alt="Souder smiles.">
+                    <figcaption class="ss">Greg Souder smiles during the Bloomington Classic on Oct. 15, 2024, at Bill Armstrong Stadium in Bloomington. Greg said one day he’ll retire from his role as the Little 500 mechanic, but he’s not ready yet. </figcaption>
+                </figure>
+
+            </div>
+
+
+            <div class="story">
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+        <div id="train">
+            <img src="https://s3.amazonaws.com/snwceomedia/ids/c8a6d4f8-5889-4cf9-ae98-98c924eaa22a.original.png"
+                aria-hidden="true" id="train">
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="js/train.js"></script>
+
+</body>
+
+</html>
