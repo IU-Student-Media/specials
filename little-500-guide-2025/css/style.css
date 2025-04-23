@@ -379,6 +379,7 @@ main {
 				align-items: center;
 				border: none;
 				margin: 0;
+				max-width: 600px;
 
 				img {
 					border-radius: 15px;
@@ -643,6 +644,7 @@ main {
 			.stories-container {
 				gap: 20px;
 				justify-content: space-around;
+				/* justify-content: left; */
 
 				.story {
 					flex-direction: column;

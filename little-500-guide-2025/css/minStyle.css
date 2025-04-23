@@ -336,6 +336,7 @@ main .updates .stories-container .story {
 	align-items: center;
 	border: none;
 	margin: 0;
+	max-width: 600px;
 }
 
 main .updates .stories-container .story img {
@@ -519,7 +520,7 @@ main .flags figure figcaption {
 	}
 
 	header .header-content div.live-updates section svg.arrow,
-    header .header-content div.live-updates section a.link-btn {
+  header .header-content div.live-updates section a.link-btn {
 		display: none;
 	}
 
@@ -550,6 +551,7 @@ main .flags figure figcaption {
 	main .updates .stories-container {
 		gap: 20px;
 		justify-content: space-around;
+      /* justify-content: left; */;
 	}
 
 	main .updates .stories-container .story {
