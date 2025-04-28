@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/survivor-at-iu" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="    IU Survivor: Campus club brings hit reality TV show to Bloomington " /> <!-- TODO: headline -->
+    <meta property="og:description" content=" How an IU club is bringing the hit reality TV show to Bloomington." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/8b3dcc69-67f3-4f57-ad0d-095b97202807.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="    IU Survivor: Campus club brings hit reality TV show to Bloomington "> <!-- TODO: headline -->
+    <meta name="twitter:description" content=" How an IU club is bringing the hit reality TV show to Bloomington."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/8b3dcc69-67f3-4f57-ad0d-095b97202807.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">    IU Survivor </h1>
+            <h2 data-scroll-speed="3"> Campus club brings hit reality TV show to Bloomington</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Finalists face the jury during the final stage of Survivor at Indiana on April 11, 2025, at the Conrad Prebys Amphitheater in Bloomington. The final jury was modeled to be the same as the reality show, &ldquo;Survivor.&rdquo;</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>IU sophomore Zander Lacer stands in the middle of the amphitheater, presiding over a semicircle of players gathered on the massive limestone steps. It&rsquo;s the first merged Tribal Council of the season, and one by one, the players are called forward to vote for who they think should be eliminated from the game.</p>
+                
+                <!-- <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f8e64a67-b6f3-4655-a2ce-2c534ae47e65.sized-1000x1000.jpg"
+                         alt="Someone in a red shirt speaks to three people seated on the stone steps of an ampitheater.">
+
+                         <figcaption>
+                            Finalists face the jury during the final stage of Survivor at Indiana on April 11, 2025, at the Conrad Prebys Amphitheater in Bloomington. Jury members questioned the remaining contestants before casting their final votes.
+                                                 </figcaption>
+                </figure> -->
+
+                <p>It&rsquo;s a windy Friday afternoon at the Conrad-Prebys Amphitheater. While many students will spend the night at bars, meeting up with friends or gearing up for the weekend, these students are all gathered for one purpose: season four of Survivor at Indiana.</p>
+                <p>The players each walk through a copse of trees to a rickety plastic table. Two members of the production team are stationed there, armed with their phones as camera equipment and a determination to keep the wind from blowing their props away. The players grab a ridiculously large, tiki-themed pen and write in their vote. Almost all of the players vote for the same person.</p>
+                <p>&ldquo;Crazy fucking play dude,&rdquo; whispers one of the production team members after the contestant walks away.</p>
+                
+                <div class="side-by-side">
+                    <figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/f4521c94-3c47-49c8-82f9-8ebb0f914efd.original.png"
+                        alt="An illustration of an island.">
+                    </figure>
+                    <figure>
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/0df1ef00-5ff0-4508-9fc4-39139805ad37.original.png"
+                        alt="An illustration of a compass.">
+                    </figure>
+                    
+                </div>
+                <h3 class="section-head">Adapting the game for college students</h3>
+                <p>With suspenseful Tribal Councils, exciting challenges and revealing confessionals, Survivor at Indiana models itself on CBS&rsquo; &ldquo;Survivor&rdquo; &mdash; with some adjustments, of course.</p>
+                <p>&ldquo;There&rsquo;s a few differences, because, you know, we&rsquo;re not on an island for 39 days, we&rsquo;re college students who meet up twice a week,&rdquo; Lacer, the president and host, said.</p>
+                <p>They don&rsquo;t have the big CBS budget, so they make do with what they have. A ping pong ball represents an immunity idol; a folding table and tiny wicker treasure chest trinket stand in for the voting booth. And this isn&rsquo;t a high-tech endeavor &mdash; the production team consists of students, and episodes are filmed entirely on the production team&rsquo;s phones.</p>
+                <p>But the main elements remain. For the uninitiated,
+                    <a target="_blank" src="https://www.britannica.com/topic/Survivor-American-television-show">
+                        this is how &ldquo;Survivor&rdquo; works
+                    </a>
+                    . In the TV show, players are stranded on a remote island and divided into tribes. They work together in tribes to survive and compete in challenges to win advantages. The losing tribe goes to Tribal Council and votes out a player.</p>
+                <figure class="sm-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/bdadf673-8561-4268-9105-0e039bd99fc4.original.png"
+                    alt="An illustration of an amulet">
+                </figure>
+                <p>About halfway through the season, the tribes merge and the game becomes every man for himself. Hidden immunity idols and player alliances add drama and intrigue.</p>
+                <p>In Survivor at Indiana, the game lasts almost the full semester, with challenges and Tribal Councils taking place on Fridays and Sundays. Between each meeting, there are real items hidden on campus that players can try to find to gain certain advantages.</p>
+                <p>Players are also responsible for filming their own &ldquo;confessionals,&rdquo; where they talk straight to the camera about their thoughts on the game so far.</p>
+                <!-- <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/86f61fb4-6c84-47f8-8c6c-7bac1937f47e.original.jpg"
+                    alt="Two rows of people sit on the steps of the ampitheater. Some have their head in their hands.">
+                    <figcaption>
+                        Jury members listen to finalists during the final tribal council of Survivor at Indiana on April 11, 2025, at the Conrad Prebys Amphitheater in Bloomington. Zander Lacer, president of the club, said Survivor at Indiana brought him a new group of friends.
+                    </figcaption>
+                </figure> -->
+                <p>Just like in the real game, there is a strategic aspect as players make alliances and scheme to make it through Tribal Council without being voted out.</p>
+
+                <p>&ldquo;Alliances are a pretty big, important part of the game because whenever you go to a Tribal Council, that&rsquo;s how you survive, by making sure you&rsquo;re on the right side of a vote,&rdquo; Lacer explained.</p>
+                <p>Survivor at Indiana is not the only &ldquo;Survivor&rdquo;-style show on campus. Live Reality Games @ IU, founded by a Survivor at Indiana alum, hosts its own version of the show. Unlike Survivor at Indiana, LRG&rsquo;s version takes place over one or two days and includes non-college students.</p>
+                <div class="ad-block">
+                    <div class="ad-code">
+                      <br>
+                      <div id='div-gpt-ad-1512489859064-1'>
+                        <script>
+                          googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                
+                <h3 class="section-head">The challenge</h3>
+                <p>With Tribal Council complete, it&rsquo;s time for the next challenge.</p>
+                <p>Members of production pass out purple plastic solo cups to each player, placing them three across at their feet.</p>
+                <p>The players fill out a Google Form with &ldquo;most likely to&rdquo; questions: most likely to win &ldquo;Survivor,&rdquo; most likely to have never played a sport. For each question, Lacer explains, the goal is to guess who most other people voted for. If a player gets it right, they get to take a life from another player of their choice, signified by crushing a cup sitting in front of them.</p>
+                <p>As the players fill out the Google Form on their phones (a scene you would certainly never see on the TV show), the production team are rehashing memories of past seasons in the back.</p>
+                <p>Purple cups skitter away across the stone, pushed by the wind, and players scramble after them.</p>
+                <p>&ldquo;Let&rsquo;s get cameras going,&rdquo; Lacer interrupts the chatter.</p>
+                <p>Three people get in position, filming from multiple vantage points.</p>
+                <figure class="wide-left">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/86f61fb4-6c84-47f8-8c6c-7bac1937f47e.original.jpg"
+                    alt="Two rows of people sit on the steps of the ampitheater. Some have their head in their hands.">
+                    <figcaption>
+                        Jury members listen to finalists during the final tribal council of Survivor at Indiana on April 11, 2025, at the Conrad Prebys Amphitheater in Bloomington. Zander Lacer, president of the club, said Survivor at Indiana brought him a new group of friends.
+                    </figcaption>
+                </figure>
+                <p>Freshman Ethan Wagreich, eliminated from the challenge after a few rounds, sits on one of the rocks behind the cameras. And he does not like one of the questions &mdash; or rather, the other players&rsquo; response to it.</p>
+               
+                <p>&ldquo;Who is most likely not to win Survivor at Indiana?&rdquo; Lacer asks. Everyone guesses the player with the most votes was Wagreich.</p>
+                
+                <p>&ldquo;All across the board, unanimously, &lsquo;Ethan can&rsquo;t win&rsquo;&rdquo; Wagreich cries. &ldquo;That&rsquo;s crazy!&rdquo;</p>
+                <p>Wagreich is unique among the players; he&rsquo;s more outspoken than the rest and honest about what brought him to the game in the first place.</p>
+                <p>&ldquo;So originally, I thought there was a $500 prize, I&rsquo;m not gonna lie,&rdquo; he laughs. &ldquo;And I&rsquo;m still here because it&rsquo;s kinda fun.&rdquo;</p>
+                <p>There is no prize.</p>
+                <!-- <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/4a0f6cf9-9021-4c89-8011-e2182747e599.original.jpg"
+                    alt="3 people sit on the ampitheater steps with somber expressions.">
+                    <figcaption>
+                        Finalists await the jury’s decision during the final stage of Survivor at Indiana on April 11, 2025, at the Conrad Prebys Amphitheater in Bloomington. The competition challenged participants through strategy, endurance and social gameplay.​
+                    </figcaption>
+                </figure> -->
+
+               
+                <h3 class="section-head">Community is the key</h3>
+                <p>Survivor at Indiana has become more than just a goofy game for many of the players. It&rsquo;s a community that offers a cross-section of people found throughout IU.</p>
+                <p>&ldquo;It brought me a great group of friends,&rdquo; Lacer said. &ldquo;I didn&rsquo;t really expect when I first joined that I was gonna find myself, like, actually enjoying talking to the people I played with.&rdquo;</p>
+                <p>Current players agreed. They cited the show&rsquo;s ability to bring together students from a variety of majors, years and personalities as one of its best qualities.</p>
+                <p>&ldquo;I feel like being able to have such a diverse group and then being able to, like, learn about them and have a social game along with the competitive game is really fun,&rdquo; senior informatics major Drew Duncan, said.</p>
+                <p>Outside of the game, Survivor at Indiana holds social events, from board game nights to &ldquo;Survivor&rdquo; watch parties to fielding an intramural volleyball team.</p>
+                <p>A testament to the community formed: most of the production team are previous players who enjoyed the experience so much they wanted to stick around.</p>
+                <figure  class="super-wide wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c79e161e-8dbf-4330-acc2-80012199730c.original.png"
+                    alt="An illustration of a torch.">
+
+                </figure>
+                <p>Lacer, in fact, was the winner of season one. After playing, he joined the production team and ultimately took the job of host. He was a crucial part of securing school funding for the team and making Survivor at Indiana an official club.</p>
+                <p>Fellow season one contestant Holden Carroll also joined production after his time on the show was up. A sophomore computer science student by day, he&rsquo;s in charge of the game advantages for Survivor at Indiana. Like Lacer, he&rsquo;s seen the club grow over time.</p>
+                <p>&ldquo;There&rsquo;s definitely more of a community building up since we have four seasons now,&rdquo; he said.</p>
+                <p>Survivor at Indiana is always looking for new players to bring in; each season begins with 15 to 18 players. Lacer and his team emphasized that the show is not geared only toward &ldquo;Survivor&rdquo; addicts.</p>
+                <p>&ldquo;The biggest factor is that we find people who are excited to play, we want someone who&rsquo;s gonna be involved in the game,&rdquo; Lacer said. &ldquo;Someone who is going to give a lot of effort, that&rsquo;s what we really want.&rdquo;</p>
+                <p>What makes Survivor at Indiana unique is its focus on long-term community within IU, Lacer explained.</p>
+                <p>&ldquo;With a semester-long game, you really get the opportunity to be able to meet these people, you get to know them very well,&rdquo; he said. &ldquo;So, I want to encourage people, if you&rsquo;re looking for a group, if you&rsquo;re looking for new friends, this is a perfect opportunity.&rdquo;</p>
+                <p>Survivor at Indiana is currently accepting 
+                    <a target="_blank" href="https://docs.google.com/forms/d/1KufovMaL2Zjftji9Rkk-gU_HK9r-zVlRhNKbuHsAR80/viewform?fbclid=PAZXh0bgNhZW0CMTEAAadS8T_UMHBgHYc65HPPCCe8Lc3k1VWZxaaE8GnYktNcAtNcYembrV27veOajA_aem_CDfFV9yoqBOTPzLDpTlBQA&edit_requested=true">
+                    interest forms for Season 5
+                </a>, which will take place in the fall 2025 semester. To keep up with the club and watch the newest season, follow their Instagram account 
+                <a href="https://www.instagram.com/survivoratindiana/"
+                target="_blank">
+                @survivoratindiana</a>.</p>
+                
+                
+                <div class="ad-block">
+                    <div class="ad-code">
+                      <br>
+                      <div id='div-gpt-ad-1512489859064-0'>
+                        <script>
+                          googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
