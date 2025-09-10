@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/cody-trammell-racing-bloomington-speedway" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="Bloomington&rsquo;s Cody Trammell backed by generations of racing at hometown track" />
+    <!-- TODO: headline -->
+    <meta property="og:description" content="The sprint car driver races in Bloomington nearly every weekend." />
+    <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/45cdd7a5-e3b9-47b8-bde3-13e8700c741e.original.jpg" />
+    <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title"
+        content="Bloomington&rsquo;s Cody Trammell backed by generations of racing at hometown track">
+    <!-- TODO: headline -->
+    <meta name="twitter:description" content="The sprint car driver races in Bloomington nearly every weekend.">
+    <!-- TODO: abstract -->
+    <meta name="twitter:image"
+        content="https://s3.amazonaws.com/snwceomedia/ids/45cdd7a5-e3b9-47b8-bde3-13e8700c741e.original.jpg">
+    <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it&rsquo;s own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <!-- <h1>&lsquo;Endlessly fascinating&rsquo;</h1> -->
+            <h2>Bloomington&rsquo;s Cody Trammell backed by generations of racing at hometown track</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <!-- TODO: -->
+        <p class="caption header-caption">
+            The pit lane is seen Sept. 5, 2025, at the Bloomington Speedway. It was the season finale for the Ford
+            Performance Racing School 410 non-winged sprint cars, Huntley’s Hoosier winged 305 sprint cars and the
+            Tex-a-Con Cut Stone Super Stocks.
+        </p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>As Cody Trammell, 30, shimmies into the driver&rsquo;s seat of his sprint car, he feels a tug on his
+                    racing
+                    suit. It&rsquo;s his 6-year-old son wishing him good luck.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/615dfc16-817b-48fc-87ab-3fb6d18acfd8.original.jpg"
+                        alt="A man in front of a red workbench lined with tools for car maintenance">
+                    <figcaption>
+                        Cody Trammell grabs tools from his trailer Sept. 5, 2025, at the Bloomington Speedway. Drivers
+                        tow their cars in trailers specially designed to fit tools, wheels and extra parts.
+                    </figcaption>
+                </figure>
+                <p>His uncle hands him his gloves while his mentor offers final words of encouragement. Another uncle
+                    waits on a
+                    four-wheeler behind him, ready to push the car to the starting grid. The pits are hectic on race day
+                    &mdash;
+                    especially for Cody, who often has a small crowd ready to help at a moment&rsquo;s notice.</p>
+                <p>Cody grew up at the Bloomington Speedway. As he continues to push his racing career to new levels, he
+                    does so
+                    with family by his side.</p>
+
+
+                <p>It&rsquo;s hard for him to find a moment of peace on the weekends, which are filled with long nights
+                    of
+                    putting cars together, listening to advice &mdash; sometimes unsolicited &mdash; from caring
+                    supporters and
+                    feeling the pressure of satisfying sponsors and the need to be on top. It all bubbles to the surface
+                    when he
+                    pulls his car onto the red clay that the Bloomington Speedway has built its legacy on.</p>
+                <div style="display: flex; flex-wrap: wrap;">
+
+
+                    <figure class="sm-image">
+                        <img style="object-position: 70% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/4b4e22fa-aacb-4ada-8be0-7ef491f8dfd8.original.jpg"
+                            alt=" A kid in a red T-Shirt talks to an adult">
+                        <figcaption>
+                            Trammell talks to his son, Kayden, in the pits Sept. 5, 2025, at the Bloomington Speedway.
+                            Kayden climbed into the car and pretended to drive while Trammell and his team made
+                            last-minute
+                            adjustments before the hot lap.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="sm-image">
+                        <img style="object-position: 45% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/b28ca826-f359-45a8-8ca5-774d16cd2e33.original.jpg"
+                            alt="Two kids talk to a man in a racecar">
+                        <figcaption>Carter and Kayden Trammell talk to their dad as he prepares to race the No. 36
+                            sprint car Sept. 5, 2025, at the Bloomington Speedway. They wished him good luck before he
+                            left the pits.</figcaption>
+                    </figure>
+                </div>
+                <p>Race day is anything but silent &mdash; until the lights turn green. Then, there&rsquo;s nothing but
+                    the
+                    wheel in his grip and a car to his right as he passes on an inside corner. He's calm behind the
+                    wheel. His
+                    thoughts are clear. While other drivers talk to themselves as they race, Cody is silent, focusing
+                    only on the
+                    car ahead of him.</p>
+                <p>&ldquo;It looks a lot faster when you're out there on the track,&rdquo; Cody said. &ldquo;But when
+                    you're in
+                    the car, it's just slow. Everything slows down.&rdquo;</p>
+
+
+                <figure class="md-image">
+                    <img style="object-position: 80% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/fcf3a488-3e06-477c-9eb0-98e13823c7a7.original.jpg"
+                        alt="A black and green racecar is pushed by an ATV.">
+                    <figcaption>Cody Trammell’s uncle, Gary Trammell, pushes Cody to the staging lane Sept. 5, 2025, at
+                        the Bloomington Speedway. Sprint cars can’t start on their own, so they must be pushed onto the
+                        track to start the engine.</figcaption>
+                </figure>
+
+                <p class='section-break'>•••</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+							</script>
+						</div>
+					</div>
+				</div>
+				
+                <p>Cody is the third generation of dirt track drivers in his family. He remembers coming to the
+                    Bloomington
+                    Speedway frequently when he was younger to watch his dad and uncle race.</p>
+                <p>He started racing go-karts when he was around 13 and soon upgraded to a mini sprint car handed down
+                    from his
+                    uncle, Gary Trammell. He competed in mini sprint for about 10 years before he got the opportunity to
+                    try his
+                    luck at a full-size sprint car.</p>
+                <p>&ldquo;That was the ticket,&rdquo; Cody said. &ldquo;That's where I wanted to go to my whole career.
+                    That's
+                    where I wanted to race.&rdquo;</p>
+                <figure class="inline-image">
+                    <img style="object-position: center center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/fd631f8e-8f33-4836-95f0-5d52b8b41cd4.original.jpg"
+                        alt="A long wooden shelf lined with large trophies">
+                    <figcaption>Trammell’s garage is filled with trophies and banners Sept. 5, 2025, at his home in
+                        Smithville, Indiana. This is just a small percentage of the trophies he has collected.
+                    </figcaption>
+                </figure>
+                <p>The transition from mini sprint cars to bigger, heavier cars was not easy, and Cody struggled his
+                    first few
+                    times out on track. Cars and teams switch hands frequently in the racing industry, and when the
+                    owner of the
+                    car Cody drove decided to stop racing, he returned to mini sprints. Later, he found another
+                    opportunity to hop
+                    in the driver&rsquo;s seat of a full-size sprint car and worked to refine his skills behind the
+                    wheel. Kevin
+                    Huntley, the namesake for Huntley&rsquo;s Hoosier Winged Sprint Series, helped convert Cody&rsquo;s
+                    fumbles to
+                    wins.</p>
+                <p>A year later, entering a new season in a winged sprint car, he found his footing within a few laps.
+                    His first
+                    full season in 2022 saw four wins and 14 top five finishes out of 29 races.</p>
+                <p>Now, Cody owns his own racing operation with a 410 non-winged sprint car and custom &ldquo;Cody
+                    Trammell
+                    Racing&rdquo; livery. Nearly all the space on his car&rsquo;s exterior is filled with sponsor logos
+                    and
+                    slogans, a testament to Cody&rsquo;s loyalty to the brands and people that have helped him along the
+                    way.
+                    Being born and raised in Bloomington has had its perks, and many of the sponsors backing Cody have
+                    been with
+                    him since he was 16 years old in a hand-me-down mini sprint car.</p>
+
+                <div style="display:flex; flex-wrap: wrap;">
+
+                    <figure class="sm-image">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d1bc62d3-3a65-47f9-a36b-3a7fe7cde44e.original.jpg"
+                            alt="A man in a racecar listens to someone talking to him">
+                        <figcaption>Trammell consults with car owner Barry Miller Sept. 5, 2025, in pit lane at the
+                            Bloomington Speedway. Miller qualified 21st out of 37 cars.</figcaption>
+                    </figure>
+
+
+                    <figure class="sm-image">
+                        <img style="object-position: 40% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/3e4c291e-d64d-4d5f-9954-424f348e6694.original.jpg"
+                            alt="Two people work on the underside of a black racecar.">
+                        <figcaption>Trammell and crew member Jeff McCloud changes the gear ratio on the car before the
+                            heat race Sept. 5, 2025, at the Bloomington Speedway. McCloud has been working with Trammell
+                            for years.</figcaption>
+                    </figure>
+                </div>
+                <p>&ldquo;There's a lot of people in this town that know me,&rdquo; Cody said. &ldquo;So a lot of my
+                    sponsors
+                    are from here.&rdquo;</p>
+                <p>He also knows almost everyone on the track. He grew up racing most of the people he sees in the
+                    paddock now,
+                    including the people who own the Bloomington Speedway. His insurance agent races, too. It&rsquo;s
+                    nearly
+                    impossible for Cody to walk anywhere in the pits without getting stopped along the way. If
+                    they&rsquo;re not
+                    striking up a conversation with him, they&rsquo;re offering a wave or friendly middle finger in
+                    passing.</p>
+                <figure class="lg-image">
+                    <img style="object-position: center center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/daa9451b-4e3e-4271-b05e-6ed4e49b0a3a.original.jpg"
+                        alt="A man in a car being pushed by a man in a blue shirt.">
+                    <figcaption>Cody Trammell gets pushed by his uncle Sept. 5, 2025, at the Bloomington Speedway. His
+                        family often helps on race day.</figcaption>
+                </figure>
+
+                <p class='section-break'>•••</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-2'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+							</script>
+						</div>
+					</div>
+				</div>
+				
+                <p>Today, Sept. 5, Cody isn&rsquo;t racing his own car. He&rsquo;s driving one of Barry Miller&rsquo;s,
+                    a former
+                    off-road driver who recently started racing 305 winged RaceSaver sprint cars. Cody races his own 410
+                    non-winged car in the regular season but occasionally races for other people.</p>
+                <p>The general components of both types of sprint cars are the same, but the 410s have a larger engine
+                    and no
+                    wing. The 305s have a smaller engine but make up for the lack of power with a large wing that
+                    generates
+                    downforce and stabilizes the car. The cars compete in separate races.</p>
+                <figure class="wide-right">
+                    <img style="object-position: 30% center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/69f76187-bdfe-441d-abb1-a7c139ce70fe.original.jpg"
+                        alt="A man in a grey racing suit sits in bleachers with two boys and a woman.">
+                    <figcaption>Trammell and his family watches Barry Miller race Sept. 5, 2025, at the Bloomington
+                        Speedway. When not on track or preparing for their next race, drivers often watched other heats
+                        in the grandstands.</figcaption>
+                </figure>
+                <p>Barry brought two almost identical winged cars to the track &mdash; one for him and one for Cody, who
+                    would
+                    be racing his car for the third time. Barry knows he&rsquo;s not the fastest driver out there, and
+                    it made
+                    sense to team up with someone more competitive in hopes of placing higher and earning a bigger
+                    payout. Sprint
+                    car racing is an individual sport, but many car owners run multiple cars with several drivers
+                    because they can
+                    earn more money if multiple racers place high enough.</p>
+                <p>&ldquo;He&rsquo;s been successful with winged cars in the past,&rdquo; Barry said. &ldquo;Having this
+                    extra
+                    car, it made sense to have Cody behind the wheel.&rdquo;</p>
+                <p>Sprint races are divided into three sections. Cars start out with a hot lap to warm up, then compete
+                    in a
+                    qualifying session to set their place in the heat race, where they&rsquo;ll race against a smaller
+                    number of
+                    cars to determine their place in the feature. The feature is the final race that sets placements and
+                    payouts.
+                </p>
+                <p>Every driver that qualifies to race in a feature and completes one lap earns some amount of money,
+                    although
+                    the payouts differ depending on where a driver places. Tonight, in the season finale for the
+                    Huntley&rsquo;s
+                    Hoosier Winged Sprint Series, $10,000 is on the line for the winning driver.</p>
+                <figure class="wide-left">
+                    <img style="object-position: center center;"
+                        src="https://s3.amazonaws.com/snwceomedia/ids/28f3547c-70be-4c8e-9180-a9564782a17a.original.jpg"
+                        alt="A racecar driver in a grey tracksuit talks energetically to a group of people">
+                    <figcaption>Trammell discusses potential changes to the car with his team Sept. 5, 2025, before the
+                        feature race at the Bloomington Speedway. The feature race was the final race of the night, and
+                        it was what mattered in terms of rankings and prize money.</figcaption>
+                </figure>
+                <p>Cody placed well in the qualifying race, and he finished eighth out of 37 cars in his class. When he
+                    got back
+                    to the pits, he started making adjustments based on how it felt on the track. His main concern was
+                    that the
+                    car needed a different gear ratio &mdash; a change that many drivers make between races to pull more
+                    power
+                    from the motor.</p>
+                <p>As the crew works, Cody&rsquo;s sons crowd around them to watch. Carter, 6, and Kayden, 4, share a
+                    lot of
+                    traits with their dad. They love being a part of the action.</p>
+                <p>They&rsquo;re comfortable here. The boys dart between trailers, saying hello to neighboring drivers
+                    and
+                    showing them the toy cars they brought to play with. Just like Cody was as a child, they are
+                    familiar with the
+                    drivers and the track.</p>
+                <p>Cody&rsquo;s Uncle Gary remembers his nephew parading through the same pits as a child. He knew then
+                    he would
+                    likely see Cody on the track when he got older, and he&rsquo;s optimistic that at least one of his
+                    great
+                    nephews will follow in Cody&rsquo;s footsteps.</p>
+                <p>When Cody isn&rsquo;t watching the kids, his girlfriend, Payton Rollins, 22, usually is. She walks
+                    them to
+                    and from the grandstands to watch their dad race and keeps careful track of Cody&rsquo;s times and
+                    placements
+                    in the qualifying and heat races. Off the track, she helps design Cody&rsquo;s racing suit, car
+                    livery and
+                    merchandise.</p>
+                    <div style="display:flex; flex-wrap: wrap;">
+
+                     <figure class="sm-image">
+                        <img style="object-position: left center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/e0fabed5-dacc-4a98-9cdc-80a4d63f7a3c.original.jpg"
+                            alt="A boy in a red shirt plays with toy racecars">
+                            <figcaption>Kayden Trammell lines up toy cars on a mat inside the trailer Sept. 5, 2025, at the Bloomington Speedway. Fellow drivers and members of Trammell’s team commented on the similarities between Kayden and his father.</figcaption>
+                    </figure>
+
+                    <figure class="sm-image">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/48503830-f001-400a-8312-1aa27f07aac3.original.jpg"
+                            alt="A woman in a black sweatshirt with the number 34 on it walks towards a car.">
+                    <figcaption>Payton Rollins walks back to the pits with Trammell’s sons after watching his qualifying laps Sept. 5, 2025, at the Bloomington Speedway. Rollins has been coming to sprint car races for about five years.</figcaption>
+                        </figure>
+                </div>
+                <p>Payton has also found family among other members of the pit lane. She strikes up conversations with
+                    the rest
+                    of Cody&rsquo;s pit crew as they wander in and out of the trailer looking for supplies. Her brother
+                    raced dirt
+                    bikes, so she&rsquo;s no stranger to the chaos that comes with a day at the track.</p>
+                <p>It&rsquo;s this support system that makes these long days work. Cody is surrounded by family and his
+                    closest
+                    friends nearly every weekend. No matter the outcome, he knows he can count on them to be there for
+                    the next
+                    one, although he does his best to make it worthwhile.</p>
+				
+                <p class='section-break'>•••</p>
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                      <br>
+                      <div id='div-gpt-ad-1512489859064-3'>
+                        <script>
+                          googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+
+                    <figure class="wide-right">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/662ccbe4-4667-49a1-9019-160499da7daf.original.jpg"
+                            alt="Three men in the glow of a flashlight working on something">
+                  <figcaption>Trammell and his team work to fix a brake issue Sept. 5, 2025, at the Bloomington Speedway. The brakes were red-hot the last time Trammell drove it, and the heat warped the calipers.</figcaption>
+                        </figure>
+                <p>Less than an hour before he&rsquo;s slated to hit the track for the feature race, Cody&rsquo;s car is
+                    in
+                    pieces. A previous race caused brake problems that were proving to be an issue on the track. The
+                    crew holds
+                    flashlights in the dark as they place a makeshift shim between the components that they hoped would
+                    last the
+                    duration of the race. It had been drizzling intermittently that evening, but now the sun had set,
+                    and the rain
+                    made everything cold and wet.</p>
+                <p>Still, there&rsquo;s a race to finish. The team puts the car back together with time to spare and
+                    even has a
+                    chance to change the gear ratio one more time before Cody squeezes back in the driver&rsquo;s seat.
+                </p>
+                <p>Gary pushes Cody to the starting position as his crew walks to the grandstand to watch.</p>
+                <p>&ldquo;C&rsquo;mon dad, please win,&rdquo; Carter says from the bleachers as he watches each car
+                    begin the
+                    formation lap.</p>
+                <p>Cody starts on the inside of the seventh row. He is sitting mid-pack at the start of the race, but
+                    hoped to
+                    pass most, if not all, of the people in front of him.</p>
+                <p>Lately, he&rsquo;s been telling himself to &ldquo;keep passing cars until you can&rsquo;t pass no
+                    more or
+                    bring it back on a wrecker.&rdquo; It&rsquo;s a motto that works.</p>
+                <p>It is almost time to hit the throttle, and everything starts to slow down again. He waits for the
+                    stoplight
+                    to turn green, signaling the start of the race. He would need to be quick on the throttle to get in
+                    a good
+                    position for the first turn.</p>
+
+                       <figure class="lg-image">
+                        <img style="object-position: 35% center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/f58cb8f5-890f-44b3-b39c-ef69f1eac70f.original.jpg"
+                            alt="A black and green and white and pink car race around a corner on a dirt track.">
+                  <figcaption>Cody Trammell attempts to pass a car in the feature race Sept. 5, 2025, at the Bloomington Speedway. Trammell moved up two rows in the first few laps of the race.</figcaption>
+                        </figure>
+    
+                <p>Cody gains two spots in the first few laps of the 30-lap race.</p>
+                <p>&ldquo;We&rsquo;re moving up,&rdquo; his uncle says.</p>
+                <p>&ldquo;He just looks real squirrelly,&rdquo; Payton replies.</p>
+                <p>She&rsquo;s right. Minutes later, his family watches Cody crest the edge of the track, retire early
+                    and
+                    approach the pits. His crew jumps up and hustles to meet him there. It had been going so well, but
+                    an early
+                    exit means Cody would finish at the back of the pack.</p>
+                <p>A flooded motor and punctured tire left him with little to fight for on the track. He suspected
+                    something had
+                    gone wrong with the rocker, but he wouldn&rsquo;t know until he went back to the shop and dissected
+                    it.
+                    He&rsquo;s set to race the same car the next day at Paragon Speedway in Morgan County, but that
+                    means he has a
+                    long night of troubleshooting ahead of him.</p>
+                <p>It&rsquo;s a disappointing end to the day, but not uncommon &mdash; even for regular winners like
+                    Cody.
+                    Though he had hoped to finish the race, he is optimistic that the repairs will get done in time.</p>
+                <p>&ldquo;That's the whole thing with racing,&rdquo; Cody said. &ldquo;You never know what's going to
+                    happen. It
+                    takes one little thing, and then you're out of contention for everything.&rdquo;</p>
+                <p>His crew begins to pack up as the race winner is announced over loudspeakers. The crowd roars as the
+                    driver
+                    receives a giant check for $10,000. Cody, on the other hand, walks away with $700.</p>
+                 <div style="display:flex; flex-wrap: wrap;">
+
+
+                    <figure class="sm-image">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/e384af45-6ad5-40a6-a7d7-27d41543aefc.original.jpg"
+                            alt="A flat tire on a car">
+                            <figcaption>A punctured tire on the car is seen Sept. 5, 2025, at the Bloomington Speedway. This was the third tire in two weeks that had been damaged at the track.</figcaption>
+                    </figure>
+    
+
+    
+
+                    <figure class="sm-image">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/46a5e6b0-5a8c-4e0a-85da-36cd640d495b.original.jpg"
+                            alt="A man in a baseball cap works on an apparatus.">
+                            <figcaption>Trammell lowers the wing on the sprint car before towing it into the trailer Sept. 5, 2025, at the Bloomington Speedway. There was just enough clearance to get the car back into the trailer without hitting the wing.</figcaption>
+                    </figure>
+                </div>
+                    <p>The championship is over but tomorrow brings a new chance to chase those few moments where time
+                    stands still
+                    for Cody. His crew has no doubt he&rsquo;ll be on the podium again very soon.</p>
+                <p>Cody hugs his boys goodbye as they leave with Payton, and he parts ways with the rest of his crew,
+                    including
+                    crew member Jeff McCloud, Barry and Gary. Most of them will see each other the next day to help Cody
+                    try to
+                    secure another win.</p>
+                <p>&ldquo;See you tomorrow?&rdquo; Jeff asks.</p>
+                <p>&ldquo;See you tomorrow,&rdquo; Cody says.</p>
+
+
+
+                <div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don&rsquo;t want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+                        class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
