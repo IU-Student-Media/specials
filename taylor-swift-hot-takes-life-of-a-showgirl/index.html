@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/taylor-swift-hot-takes-life-of-a-showgirl" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="OPINION: Hot takes on Taylor Swift's latest album, 'The Life of a Showgirl'" /> <!-- TODO: headline -->
+    <meta property="og:description" content="IDS staffers sound off on Swift's lyricism, fan backlash and more." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/ecfd418a-bf59-4fb5-8d1f-664e99ac0aac.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="OPINION: Hot takes on Taylor Swift's latest album, 'The Life of a Showgirl'"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="IDS staffers sound off on Swift's lyricism, fan backlash and more."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/ecfd418a-bf59-4fb5-8d1f-664e99ac0aac.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav style="background-color: black;">
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug" style="display: block"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item socials">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+      <div class="headline-container">
+                <div class="">
+                    <h1 class="shaded opinion-h">OPINION</h1>
+                    <h2>Hot takes on Taylor Swift&rsquo;s latest album, &lsquo;The Life of a Showgirl&rsquo;</h2>
+                    <div class="bylines" style="justify-content: space-between;">
+                        <div>
+
+                        <div id="bylines">
+                        </div>
+                        <p id="pubdate"></p>
+                        </div>
+
+
+             <img 
+                id = "drink-img"
+                src="https://s3.amazonaws.com/snwceomedia/ids/33926901-84cb-46b5-ae05-c413b598c932.original.jpg">
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+       
+        <article>
+
+        
+
+          
+
+            <!-- Image1 to the right of these -->
+
+			<div class="story">
+			
+				<em>Editor’s Note: This story includes mention of sexual content.</em>
+			
+				<!-- TODO: Add illos - some fun interaction for rating how hot the take is -->
+			
+				<section class="take">
+					<h2 class="opiner">Ursula Stickelmaier, IDS arts editor:</h2>
+					<p>My favorite thing about Taylor Swift has always been her lyricism. The metaphors and beautiful prose she
+						weaves into her songs is not only my favorite thing about her music, but it&rsquo;s become a large part of
+						the standard I set for other people&rsquo;s music, as well. So, when I heard that she had a new album coming
+						out, my initial reaction was excitement. The news that this album would be produced by Max Martin and
+						Shellback, who both previously worked on Swift&rsquo;s hit pop album &ldquo;1989,&rdquo; only added to the
+						feeling. My expectation was that the album would be a mix of the poetic lyrics of songs from her more recent
+						albums like &ldquo;The Tortured Poets Department,&rdquo; &ldquo;Folklore&rdquo; and &ldquo;Evermore,&rdquo;
+						with a more pop music beat.</p>
+					<p>Instead, what I got was just over 40 minutes of cringe-worthy music that strayed so far from her songs I know
+						and love that I was unsure if she played a hand at writing it at all. It felt like she had been aiming for a
+						Sabrina Carpenter-style album and woefully overestimated her ability to make double entendres catchy and
+						fun. Even when Carpenter sings alongside Swift on &ldquo;The Life of a Showgirl,&rdquo; the closing track of
+						the album, the song felt more natural and sounded better during Carpenter&rsquo;s parts.</p>
+					<p>Two weeks ago, I would have said that any new music from Swift would have been a good thing. Now I&rsquo;m
+						not so sure. For an artist that has defined most of my life, I do not say this lightly: &ldquo;The Life of a
+						Showgirl&rdquo; is not for me.</p>
+				</section>
+			
+			
+				<figure class="wide-right sm-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/198a0746-29d8-480b-951c-45da131784c8.original.jpg" alt="">
+				</figure>
+				<section class="take">
+					<h2 class="opiner">Abby Whited, Jacobs beat reporter:</h2>
+					<p>I came away from this album thinking, &ldquo;Wow, Travis Kelce is a horrible muse.&rdquo; Not that Swift
+						needs to be in a place of heartbreak to write good music; in fact, she&rsquo;s shown before that it&rsquo;s
+						possible for her to be happy and in love and still write complex, nuanced music (see &ldquo;invisible
+						string,&rdquo; &ldquo;Enchanted,&rdquo; &ldquo;Delicate,&rdquo; etc.). This album unfortunately wasn&rsquo;t
+						that.</p>
+					<p>As someone who grew up with her music, I know what she&rsquo;s capable of creatively. She&rsquo;s an amazing
+						songwriter and considered to be one of her generation&rsquo;s best lyricists, but this album doesn&rsquo;t
+						align with that artistry. There are glimmers of it, but they are overshadowed by the record&rsquo;s cringey,
+						poorly-written moments.</p>
+					<p>Besides the abysmal lyrical moments on this album, one of the most disappointing aspects of it is the
+						disconnect between how it was marketed and what the music turned out to be. She described it in her
+						announcement as a solid collection of &ldquo;pop bangers,&rdquo; and promoted her return to working with Max
+						Martin. She mentioned how she and Martin had spent a few years apart, honing their craft, and that they came
+						together for this record aiming to create great, concise pop music.</p>
+					<p>Martin and Swift have a history of making bulletproof pop music together, so I was excited to hear they were
+						collaborating again after so long; hence my confusion once the album actually came out. The quality baffles
+						me. The Martin production isn't enough to save the songwriting from its fate of being cheap, uninspired and
+						embarrassing.</p>
+				</section>
+			
+			
+				<figure class="wide-right">
+					<img id="star" style="width: 15em;"
+						src="https://s3.amazonaws.com/snwceomedia/ids/d65b6263-23a3-416f-9fe6-8b8b8dc59320.original.jpg" alt="">
+			
+				</figure>
+				<section class="take">
+					<h2 class="opiner">Molly Gregory, news editor:</h2>
+					<p>Guess who&rsquo;s jealous of Sabrina Carpenter? (Insert Wendy Williams-esque dramatic pause) Taylor Swift!
+						When I first listened to &ldquo;Wood&rdquo; by our beloved blonde woman, I felt like I was having a stroke.
+						Where the tongue-in-cheek innuendos should have felt coy or shocking to the listener, they instead felt
+						forced and uncomfortable. Swift&rsquo;s strengths lie in her lyrical symbolism, her storytelling. Imagine my
+						surprise when I heard the lyric &ldquo;Redwood tree, it ain&rsquo;t hard to see // His love was the key that
+						opened my thighs.&rdquo; Hello? Not once in my life have I found myself wondering about Travis Kelce&rsquo;s
+						&ldquo;New Heights of manhood.&rdquo;</p>
+					<p>Along with the <a href="https://www.wired.com/story/taylor-swift-swifties-against-ai-viral/"
+							target="_blank">AI slop</a> Swift&rsquo;s team has been using to promote this profound miss of an album,
+						this swiftie is feeling betrayed.</p>
+				</section>
+			
+				<section class="take">
+					<h2 class="opiner">Andrew Miller, co-editor-in-chief:</h2>
+					<p>I should preface this by saying I don&rsquo;t usually care for most pop music. That said, I gave this album a
+						listen with an open mind because I know just how much Taylor Swift means to millions of women and people in
+						general around the world.</p>
+					<p>First: she should fire all of her producers. Gunna has better beat selection. Second: nearly every song
+						sounds uninspired, lyrically and musically. The standouts for me were &ldquo;Wi$h Li$t,&rdquo; the single
+						interesting vocal performance, and &ldquo;Opalite.&rdquo; Make your own sunshine :D.</p>
+				</section>
+			
+				<section class="take">
+					<h2 class="opiner">Briana Pace, visuals editor:</h2>
+					<p>The album does not deserve all this hate. Are its lyrics as powerful as they are in past albums? No, but that
+						doesn&rsquo;t mean it&rsquo;s not good.</p>
+					<p>Why is this album treated differently than any other fun girly pop music? Yes, there are some lyrics that are
+						cringey, but that&rsquo;s nothing new for Swift.</p>
+			
+					<figure class="wide-left sm-image">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/4c02f72e-d7a8-4347-9f9d-9f98e520defe.original.jpg"
+							alt="">
+					</figure>
+					<p>I&rsquo;m sick of seeing everyone act like they&rsquo;ve been a Swiftie for years. When
+						&ldquo;Reputation&rdquo; was released, it was too different than anything she&rsquo;d done before.
+						&ldquo;folklore&rdquo; and &ldquo;evermore&rdquo; were too slow and too pretentious and &ldquo;The Tortured
+						Poets Department&rdquo; was too wordy, but now everyone wishes &ldquo;The Life of a Showgirl&rdquo; sounded
+						like those albums.</p>
+					<p>People wish Swift dove into the dark side of fame in the album. She did that on her last album and people
+						started posting pictures of her childhood home and asking, &ldquo;This is the asylum where you were
+						raised?&rdquo;</p>
+					<p>Saying &ldquo;Wi$h Li$t&rdquo; is a dog whistle for eugenics because of the lyrics &ldquo;Have a couple kids,
+						got the whole block lookin&rsquo; like you,&rdquo; is crazy. If you cannot understand that just means she
+						wants to have a lot of kids with her fiancé, please seek help.</p>
+					<p>&ldquo;Actually Romantic&rdquo; is not making fun of drug addicts. Charli XCX has made cocaine part of her
+						brand. I mean, she released a coke inspired vinyl of &ldquo;Brat.&rdquo; Even if Swift was making fun of XCX
+						for doing coke, which she did not, I think it&rsquo;s fair game.</p>
+					<p>If you ask me my thoughts about the album and I tell you I don&rsquo;t hate it, but you do, keep it to
+						yourself. Don&rsquo;t start dogging on the album. As my mom told me growing up, &ldquo;Don&rsquo;t yuck
+						someone else&rsquo;s yum.&rdquo;</p>
+				</section>
+			
+			
+				<figure class="wide-right sm-image">
+					<img src=" https://s3.amazonaws.com/snwceomedia/ids/8433fde2-7ab8-458f-af66-8aef1450fa68.original.jpg" alt="">
+				</figure>
+				<section class="take">
+					<h2 class="opiner">Lily Saylor, arts editor:</h2>
+					<p>To preface, I am by no means a Swiftie, but I did have high hopes for her new album. From the way she
+						marketed it, I was expecting a theatrical, jazzy and vintage-esque album that explores the highs and lows of
+						fame, but that was not the case.</p>
+					<p>&ldquo;The Life of a Showgirl&rdquo; started out strong with &ldquo;The Fate of Ophelia,&rdquo; a light and
+						bouncy track that I can&rsquo;t get out of my head. However, the album quickly went downhill with sloppy,
+						millennial lyricism and a boring pop sound that has been done a million times over. I have no issue with
+						women expressing their sexuality in their music, but &ldquo;Wood&rdquo; was honestly just too cringey to
+						enjoy and was obviously a cheap rip-off of Sabrina Carpenter&rsquo;s flirty and playful lyrics.</p>
+					<p>To me, Swift&rsquo;s new album is lazy and insulting to her very loyal fan base. She has proven in her
+						previous albums, like &ldquo;folklore&rdquo; and &ldquo;evermore,&rdquo; that she is more than capable of
+						intelligent, meaningful lyricism and of producing songs with depth. &ldquo;The Life of a Showgirl&rdquo; has
+						anything but.</p>
+				</section>
+			
+			
+				<!-- Ratings summary area -->
+				<!-- TODO: Rework how this looks, what the text is -->
+				<!-- TODO: I think only show this if they've rated -->
+				<div id="ratings-summary" class="ratings-summary" aria-live="polite" style="margin-top:1.5rem; display: none">
+					<h3>Your top rated take</h3>
+					<p id="summary-text">No ratings yet. Rate the takes above to see which one readers thought was the hottest.</p>
+			
+					<!-- TODO: Share your own hottest take with the IDS on social media (links) -->
+					<div class="share2">
+			
+						<h4 style="margin-left: 0px; margin-bottom: 0px; display: inline">Share your own hot takes with the IDS on
+							social media</h4>
+			
+						<span style="display: inline-block" class="socials"></span>
+					</div>
+				</div>
+			
+			
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+			</div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <style>
+    /* Small styles for the fire rating UI */
+    .fire-rating { display:inline-flex; gap:6px; align-items:center; margin:0.5rem 0 1rem; }
+    .fire-btn { background:none; border:0; cursor:pointer; font-size:1.25rem; line-height:1; padding:4px; opacity:0.6; }
+    .fire-btn.selected { opacity:1; transform:translateY(-2px); }
+    /* .fire-btn:focus { outline:2px solid #f66; border-radius:4px; } */
+    #show-summary { margin-top:0.5rem; padding:0.4rem 0.6rem; }
+
+    
+
+
+
+    </style>
+
+    <script>
+    // Inject a 1-5 fire rating UI after each h2.opiner and compute the hottest take
+    (function () {
+        // helper to create a fire button
+        function createFireButton(value, takeIndex) {
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'fire-btn';
+            btn.setAttribute('aria-pressed', 'false');
+            btn.setAttribute('data-value', value);
+            btn.setAttribute('data-take', takeIndex);
+            btn.title = value + ' out of 5 fires';
+            btn.innerText = '🔥';
+            return btn;
+        }
+
+        // Wrap each take (h2.opiner and following nodes until next h2.opiner or .author-bios)
+        var headers = Array.from(document.querySelectorAll('h2.opiner'));
+
+        var sections = Array.from(document.querySelectorAll('.take'));
+        var ratings = Array(headers.length).fill(0);
+
+        sections.forEach(function (section, i) {
+           
+
+            // create rating UI and append to section
+            var wrapper = document.createElement('div');
+            wrapper.className = 'fire-rating';
+            wrapper.setAttribute('aria-label', 'Rate this take from 1 to 5 fires');
+
+             let label = document.createElement('em');
+             label.style.marginBottom = "none"
+             label.style.fontWeight = "bold"
+                    label.innerText = "How hot was this take?"
+                    wrapper.appendChild(label);
+            for (var v = 1; v <= 5; v++) {
+                (function (val, idx) {
+                    var btn = createFireButton(val, idx);
+                    btn.addEventListener('click', function () {
+                        ratings[idx] = val;
+                        // update UI within this section
+                        var siblings = Array.from(wrapper.querySelectorAll('.fire-btn'));
+                        siblings.forEach(function (s) {
+                            var sv = parseInt(s.getAttribute('data-value'), 10);
+                            if (sv <= val) {
+                                s.classList.add('selected');
+                                s.setAttribute('aria-pressed', 'true');
+                            } else {
+                                s.classList.remove('selected');
+                                s.setAttribute('aria-pressed', 'false');
+                            }
+                        });
+                        updateSummaryText();
+                    });
+                   
+                    wrapper.appendChild(btn);
+                })(v, i);
+            }
+
+            section.appendChild(wrapper);
+        });
+
+        function updateSummaryText() {
+            var summary = document.getElementById('summary-text');
+            var container = document.getElementById("ratings-summary")
+            var any = ratings.some(function (r) { return r > 0; });
+            if (!any) {
+                summary.innerText = 'No ratings yet. Rate the takes above to see which one readers thought was the hottest.';
+                container.style.display = "none";
+                return;
+            }
+             container.style.display = "block";
+
+            // compute highest rating; if multiple, list them
+            var max = Math.max.apply(null, ratings);
+            var winners = [];
+            ratings.forEach(function (r, idx) {
+                if (r === max && r > 0) winners.push(idx);
+            });
+            var text;
+            if (winners.length === 0) {
+                text = 'No ratings yet.';
+            } else {
+                // Todo: there could be multiple
+                var titles = winners.map(function (w) {
+                    var el = headers[w];
+                    // take the textContent of the heading and remove trailing colon/author
+                    return el.textContent.replace(/:\s*$/, '');
+                });
+                text = '(' + max + '/5 fires): ' + titles.join(' — ');
+            }
+            summary.innerText = text;
+        }
+
+      
+    })();
+    </script>
+</body>
+
+</html>
