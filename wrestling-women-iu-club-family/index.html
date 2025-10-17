@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/wrestling-women-iu-club-family" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="'You have to love each other to beat the crap out of each other': The found family of the IU women's wrestling club" /> <!-- TODO: headline -->
+    <meta property="og:description" content="In the club, now in its second year, community and competition coexist." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/fc1bd52a-09e1-45b3-adb2-f6a6e327b0a1.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="'You have to love each other to beat the crap out of each other': The found family of the IU women's wrestling club"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="In the club, now in its second year, community and competition coexist."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/fc1bd52a-09e1-45b3-adb2-f6a6e327b0a1.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h2 data-scroll-speed="3">For IU women&lsquo;s wrestling club, fighting is family</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+	<main>
+		<p class="caption header-caption">Women&lsquo;s wrestling club members are instructed by coach Erwin Salazar during a team
+			workout Oct. 7, 2025, at Bloomington High School North. Club members began preparing for the upcoming wrestling
+			season.</p>
+		<article>
+			<div class="bylines">
+				<div id="bylines">
+					<!-- update bylines in metadata.json -->
+				</div>
+				<!-- TO DO update pub_date in metadata.json -->
+				<p id="pubdate"></p>
+			</div>
+			<div class="story">
+	
+	
+	
+	
+	
+				<p>There&rsquo;s a certain music to the IU women&rsquo;s wrestling club&rsquo;s practice: the shuffle of
+					shoes against vinyl, the beat of panting breaths, the syncopation of grunts and lunges, the hum of a fan
+					whirring in vain against Bloomington&rsquo;s late-summer heat.</p>
+				<!-- TODO: Image here -->
+	
+				<p>Music, indeed. Circulating around the room, coach Erwin Salazar calls, &ldquo;Be purposeful, almost
+					dance-like.&rdquo;</p>
+				<p>Today&rsquo;s mid-September practice, the first of the season, began with the team gathered in a circle.
+					The athletes stretched on the red-and-yellow flooring of Bloomington High School North&rsquo;s gym while
+					discussing what they learned in classes and debating their controversial pop culture takes.</p>
+				<p>Club members arrived to a chorus of greetings and celebrations, whether the athlete had been attending
+					practice for a year or was new to the mat.</p>
+				<p>Now, it&rsquo;s time to warm up. The athletes laugh and continue catching up as they jog easily around
+					the perimeter of the room, then slowly traverse the floor, lunging to simulate a match, then resume
+					jogging.</p>
+				<p>It&rsquo;s not just the first practice of the year; it&rsquo;s a family reunion.</p>
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-0'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+				<figure class="md-image person-quote">
+					<div class="pull-quote-center">
+						<p class="quote"> &ldquo;We both chose to pursue education at a higher level but wanted to continue
+							wrestling.&rdquo;</p>
+						<p class="attribute">— Maggie Boncosky</p>
+					</div>
+	
+					<div>
+						<img style="display: inline;"
+							src="https://s3.amazonaws.com/snwceomedia/ids/f7b336e1-64a2-41de-9789-80f4fb6130bc.sized-1000x1000.jpg"
+							alt="Two women smile in front of a maroon and yellow pads">
+	
+						<figcaption>
+							Manroop Turna (left) and Maggie Boncosky pose for a photo before practice Oct. 7, 2025, at
+							Bloomington High School North in Bloomington. Turna and Boncosky founded the club at the
+							beginning of the 2024-25 academic year.
+						</figcaption>
+					</div>
+	
+				</figure>
+				<p>Juniors Maggie Boncosky and Manroop Turna founded the club at the beginning of the 2024-25 academic year.
+					Both wrestlers in high school, Boncosky and Turna found limited options for continuing their careers in
+					college.</p>
+	
+				<p>&ldquo;Right now, as a woman, you have to choose between going to a big, academically rigorous
+					university, or a much smaller, probably less prestigious school to wrestle,&rdquo; Boncosky said.
+					&ldquo;We both chose to pursue education at a higher level but wanted to continue wrestling.&rdquo;</p>
+				<p>The popularity of women&rsquo;s wrestling is skyrocketing. In 2023 alone, the number of girls wrestling
+					in high school rose by
+					<a href="https://apnews.com/article/wrestling-girls-high-school-c1e18531cf36831e158282ea08ca9775"
+						target="_blank">
+						nearly 60%</a>
+					from the previous year, after growing by five times over the previous decade. The Indiana High School
+					Athletic Association sanctioned girls&rsquo; wrestling in
+					<a href="https://www.themat.com/news/2024/april/29/indiana-becomes-46th-state-with-official-girls-state-championships-ihsaa-board-approves-full-recognition"
+						target="_blank">April 2024</a>,
+					the number of athletes dedicated to the sport having grown to the thousands. This past July,
+					women&rsquo;s wrestling became an
+					<a href="https://www.ncaa.com/news/wrestling-women/article/2025-01-17/ncaa-adds-womens-wrestling-91st-championship"
+						target="_blank">
+						NCAA championship sport</a>.
+				</p>
+				<figure class="wide-left">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/5de51534-038c-4377-a424-aa61ebcae2f2.sized-1000x1000.jpg"
+						alt="A coach explains something to two attentive students">
+					<figcaption>
+						Women's wrestling club members are instructed by coach Erwin Salazar during a team workout Oct. 7,
+						2025, at Bloomington High School North. Club members began preparing for the upcoming wrestling
+						season.
+					</figcaption>
+				</figure>
+				<p>Still, prejudices that wrestling is incompatible with conventional femininity or that women lack the
+					temperament for the sport are prevalent. As a result, women&rsquo;s wrestling remains something of a
+					fledgling sport,
+					in terms of formal recognition. There are
+					<a href="https://www.americanwomenswrestling.com/news-2/all-womens-college-wrestling-programs-mwsbn"
+						target="_blank">
+						only four</a> NCAA Division I varsity women&rsquo;s wrestling teams, in contrast to the
+					<a href="https://www.ncsasports.org/mens-wrestling/division-1-colleges" target="_blank">
+						78 Division I</a> varsity men&rsquo;s wrestling teams nationwide.
+				</p>
+				<p>Although IU&rsquo;s club is a dedicated space for female students to grow as wrestlers, it isn&rsquo;t
+					open only to women. Around four men, a combination of IU students seeking to dip their toes into the
+					sport for the first time and local high schoolers, participate in practice, too.</p>
+				<p>&ldquo;There are a lot of unique challenges that come with being in this sport,&rdquo; Boncosky said.
+					&ldquo;Everybody knows that being on a toxic team or being in a bad environment isn&rsquo;t an added
+					challenge we need to deal with.&rdquo;</p>
+				<p>Boncosky came to the sport almost by chance. Bored after one of her high school volleyball seasons, she
+					decided to sit in on a wrestling practice. She said the kindness of the community immediately grabbed
+					her. This early exposure to a positive team environment remains central to Boncosky&rsquo;s continued
+					career, as Salazar was her high school coach.</p>
+				<p>Helping lead IU&rsquo;s club, Boncosky said, has been an opportunity to give back to the sport she loves.
+				</p>
+				<p>&ldquo;Wrestling gets under your skin; it gets in your blood,&rdquo; Boncosky said. &ldquo;I don&rsquo;t
+					know that anyone who&rsquo;s done this sport, competed in it and found family in it could go back to a
+					life without it.&rdquo;</p>
+	
+				<figure class="md-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/69199efe-fc4a-4e9d-9a37-e9f166eb295c.sized-1000x1000.jpg"
+						alt="Two wrestlers lock heads">
+					<figcaption>
+						Wrestler Manroop Turna prepares to spar with a teammate, huddling together before executing a move
+						Oct. 7, 2025, at Bloomington High School North. Turna founded the club with fellow junior Maggie
+						Boncosky last year.
+					</figcaption>
+				</figure>
+
+				<p class='section-break'>•••</p>
+
+				
+				<p>A core principle of wrestling, a sport demanding aggression, is that what happens on the mat stays there.
+					At the second of this week&rsquo;s practices, this agreement is on full display.</p>
+				<p>This second practice is decidedly technical: club members learn about the minutiae of point scoring, the
+					particulars of different moves, the principles of compromising an opponent. The team divides itself up
+					to work on different maneuvers in pairs. Partners agree on whether they will assume an offensive or
+					defensive position, then take to the mat.</p>
+				<p>Learning moves must, at least initially, be approached academically. Partners talk through steps with
+					each other, lunging, grabbing and turning slowly, methodically. When a step is forgotten, misplaced or
+					approached improperly, they rewind to the last move that was made with certainty. Questions are a
+					necessary part of the process.
+					&ldquo;From this angle? With this arm? In this order?&rdquo;</p>
+				<figure class="wide-right">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/4b3496bb-a385-4a9e-89ce-9ed0a87c2a63.sized-1000x1000.jpg"
+						alt="Two wrestlers practicing a move.">
+					<figcaption>
+						Two wrestlers collide during a practice Oct. 7, 2025, at Bloomington High School North in
+						Bloomington. Women's wrestling became an NCAA championship sport in July.
+					</figcaption>
+				</figure>
+				<p>And, once on the mat, again and again: &ldquo;Are you okay? Do you need help?&rdquo;</p>
+				<p>While practice is preparation for competition, teammates can never, ultimately, be adversaries. This is
+					combat free from malice, learning free from judgment. Successful moves are met with smiles and claps on
+					shoulders. Challenges are taken with resolve to be conquered collaboratively.</p>
+				<p>After some time to practice independently, first-year member Eden Knight comes forward to demonstrate a
+					newly-learned skill. Knight seizes her partner&rsquo;s legs, finds leverage under her ankles and begins
+					to push. The gym erupts into cheers as Knight masters the freestyle wrestling leg lace in real time,
+					turning her partner over a triumphant one, two, three, four times. When the maneuver is complete,
+					Knight, panting, beams with pride.</p>
+				<p>The only smile bigger than Knight&rsquo;s? Her partner&rsquo;s.</p>
+				<p>Even as practice intensifies, the sport remains a family affair. But there&rsquo;s no lack of drive on
+					the team, whose roster boasts state champion wrestlers and athletes who turned down Division II and III
+					varsity offers.</p>
+				<p>&ldquo;Every athlete has that desire to compete,&rdquo; Turna, club co-founder and co-president, said.
+					&ldquo;You go at it and just keep showing up, consistently.&rdquo;</p>
+				<p>For a break from partner work, the whole team gathers inside a circle drawn around the center of the gym
+					floor to play a game. Because wrestling matches take place within defined boundaries, forcing a partner
+					beyond those lines is a critical method of scoring. The game&rsquo;s objective, then, is to be the last
+					club member inside the circle.</p>
+				<p>A frenzy of movement starts as soon as the game begins. Teammates lunge at one another, grappling until a
+					betraying heel stumbles just outside of the circle&rsquo;s boundary, or taking opponents down and
+					forcing them into compromised positions to force their concession. The last woman standing basks in a
+					round of applause. Then, everyone returns to the circle for another round. It&rsquo;s anyone&rsquo;s
+					game.</p>
+				<figure class="md-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/cdb4f382-ea28-4d8f-ade0-cbdc3e7c7e83.sized-1000x1000.jpg"
+						alt="Two wrestlers grapple standing up">
+					<figcaption>
+						Wrestlers practice during a team workout Oct. 7, 2025, at Bloomington High School North in
+						Bloomington. In 2023, the number of girls wrestling in high school rose by nearly 60% from the
+						previous year.
+					</figcaption>
+				</figure>
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-1'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+				
+				<p class='section-break'>•••</p>
+				<figure class="md-image person-quote">
+					<div class="pull-quote-center">
+						<p class="quote">&ldquo;I thought, &lsquo;why can&rsquo;t I do this?&rsquo;&rdquo;</p>
+						<p class="attribute">— Sophia Lancin</p>
+					</div>
+	
+					<div>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/c061d93e-c7b7-48d6-8748-b818ae7db5e1.sized-1000x1000.jpg"
+							alt="A female wrestler with her arms crossed">
+						<figcaption>Sophia Lancin poses for a photo before a practice Oct. 7, 2025, at Bloomington High
+							School North in Bloomington. Lancin was a nationally ranked Tae Kwon Do athlete for 10 years.
+						</figcaption>
+					</div>
+				</figure>
+				<p>Sophia Lancin has never been a stranger to competition. She was a
+					<a href="https://www.usatkd.org/2023-events-junior-sparring-medalists" target="_blank">
+						nationally ranked</a> Tae Kwon Do athlete for 10 years and a competitive cheerleader. So when she
+					watched her brother start wrestling, she was immediately drawn to a new athletic outlet.
+				</p>
+	
+				<p>&ldquo;I thought, &lsquo;why can&rsquo;t I do this?&rsquo;&rdquo; Lancin said.</p>
+				<p>Lancin, a Connecticut native, went on to become one of the
+					<a href="https://citylifestyle.com/articles/take-it-to-the-mat" target="_blank">
+						most decorated</a> wrestlers in Weston High School&rsquo;s history, winning three All-State titles
+					and two New England titles. Despite her success, Lancin said she faced condescension and judgment as the
+					only girl on her team.
+				</p>
+				<p>Still, she remained convinced that a feminine wrestler was not an oxymoron. Now, at IU, Lancin feels
+					she&rsquo;s finally been proven right.</p>
+				<p>&ldquo;When me and the girls on the team step off the mat, we go out, do our makeup, do stereotypically
+					feminine things,&rdquo; Lancin said. &ldquo;Just because we&rsquo;re in there working as hard as the
+					guys doesn&rsquo;t make us any less of a woman.&rdquo;</p>
+				<p>A far cry from her high school experience, the IU club&rsquo;s tightly-knit female community makes
+					collegiate competition all the more invigorating for Lancin.</p>
+				<p>&ldquo;When I came here, I was honestly scared: I&rsquo;d never really had a girls&rsquo; community to
+					call my own,&rdquo; Lancin said. &ldquo;But this is a sisterhood. These are the best people I&rsquo;ve
+					ever met in my life &mdash; I want to come to practice. I want to perform at game time.&rdquo;</p>
+				<figure class="md-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/ddf0f39d-aa14-4963-8030-03c24588fae5.sized-1000x1000.jpg"
+						alt="Two wrestlers on the ground, one with their hand on the other's chest.">
+					<figcaption>
+						A wrestler successfully takes down his opponent Oct. 7, 2025, at Bloomington High School North.
+						Around four men have participated in practice.
+					</figcaption>
+				</figure>
+				
+				<p class='section-break'>•••</p>
+				<p>For all the empowerment and community, wrestling remains a high-risk activity. According to the National
+					Library of Medicine, wrestling is considered one of the world&rsquo;s most physically-taxing sports,
+					with an
+					<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7972392/#b1-wjem-22-410" target="_blank">
+						injury rate</a> second only to football. Instances of girls and women reporting serious
+					wrestling-related injuries
+					<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7972392/#b1-wjem-22-410" target="_blank">have
+						grown</a> in recent years, corresponding to women&rsquo;s wrestling&rsquo;s surge in popularity.
+				</p>
+				<p>The prevalence of weight-cutting in wrestling amplifies the risks. Rapid weight cutting, undertaken to
+					compete in lower weight classes, is associated with a
+					<a href="https://www.med.wisc.edu/news/college-wrestling-injury-study/" target="_blank">
+						higher likelihood of injury</a>. Extreme measures to cut weight can also make athletes vulnerable to
+					<a href="https://www.eatingdisorderhope.com/risk-groups/eating-disorder-athletes/wrestling-cutting-weight-bulimia"
+						target="_blank">
+						eating disorders</a>, which women already tend to be
+					<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2696560/#R1" target="_blank">
+						more susceptible
+					</a>
+					to than men.
+				</p>
+				<p>Turna said the club&rsquo;s efforts to provide high-quality coaching help protect against these risks.
+				</p>
+				<p>&ldquo;The moves are high-risk, but they&rsquo;ll only injure you if you do them wrong or if you push too
+					hard,&rdquo; Turna said. &ldquo;As teammates, you shouldn&rsquo;t be pushing to that point.&rdquo;</p>
+				<p>Risk awareness is becoming more important in the broader wrestling community. Boncosky said responsible
+					weight cutting was a main topic of a conference for Indiana high school wrestling coaches she attended
+					in August. While extreme weight-cutting practices were once ubiquitous to the sport, the focus is
+					shifting toward athlete safety, which sometimes means discouraging cutting weight altogether.</p>
+				<p>&ldquo;If it&rsquo;s a brand-new wrestler, we tell her to wrestle the way she is, to not even try
+					it,&rdquo; Boncosky said. &ldquo;If it&rsquo;s an experienced wrestler, we trust that she knows what
+					she&rsquo;s doing.&rdquo;</p>
+				<p>The club&rsquo;s strong sense of community acts as a safety rail and support system away from
+					wrestling&rsquo;s dangerous extremes. Here, the emphasis is on finding love of the sport and of the
+					teammates by their side.</p>
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-2'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+				
+				<p class='section-break'>•••</p>
+				<figure class="md-image person-quote">
+					<div class="pull-quote-center">
+						<p class="quote">&ldquo;It healed a part of me &mdash; this team provides a home away from
+							home.&rdquo;</p>
+						<p class="attribute">— Monica McMahon</p>
+					</div>
+					<div>
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/685597d2-7b37-465e-875c-5d40354fe7f0.sized-1000x1000.jpg"
+							alt="A woman in black athletic gear flexes in front of wall pads">
+						<figcaption>IU women's wrestling club member Monica McMahon poses for a photo before a practice Oct.
+							7, 2025, at Bloomington High School North in Bloomington. The second practice of the season was
+							focused on learning different moves.</figcaption>
+					</div>
+				</figure>
+				<p>The club&rsquo;s family environment is literal for freshmen Monica and Grace McMahon. Formally, the twins
+					have been competing alongside each other since their sophomore year of high school, where they started
+					the girls&rsquo; wrestling team at Columbus East High School. But coming from a family of nine siblings,
+					the real training started sooner.</p>
+	
+				<p>&ldquo;We got a trampoline when we were little, and that&rsquo;s really where the first wrestling matches
+					happened,&rdquo; Grace said.</p>
+				<p>The McMahons were inspired to wrestle by their brothers taking up the sport and by a drive to hold their
+					own in a competitive family. It was first at home, where showing up for their brothers&rsquo;
+					tournaments was a priority, that Grace and Monica learned competition and support are not mutually
+					exclusive.</p>
+				<p>For Monica, relearning this lesson as an IU club member has proven to be an antidote to early college
+					homesickness.</p>
+				<p>&ldquo;I had a rough start with conditioning, which is my worst nightmare,&rdquo; Monica said. &ldquo;But
+					as we were going through the hardest part of it, the girls around me were so supportive. It healed a
+					part of me &mdash; this team provides a home away from home.&rdquo;</p>
+				<p>A nurturing team is all the more important in light of the psychological and athletic demands of
+					wrestling. With those encouraging teammates, the McMahons said they have found empowerment in the sport.
+				</p>
+				<p>&ldquo;In this environment, it can really be, how can I, as an athlete &mdash; not based on my gender
+					&mdash; push myself to the furthest?&rdquo; Monica said.</p>
+				<p>For Grace, growth has meant learning when to stop pushing.</p>
+				<p>&ldquo;I&rsquo;m competitive to the point where it&rsquo;s kind of unhealthy, so I&rsquo;ve set the
+					boundary for myself that I&rsquo;m not going to compete in college,&rdquo; Grace said. &ldquo;I&rsquo;m
+					here for pure love of the sport.&rdquo;</p>
+				<p>This passion, and the family ties it engenders, are at the heart of wrestling.</p>
+				<p>&ldquo;You have to love each other to beat the crap out of each other,&rdquo; Monica said.</p>
+				<figure class="lg-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/9838037e-f071-4dc0-b4d6-2a61054fb03a.sized-1000x1000.jpg"
+						alt="A wrestler with a blonde ponytail is brought down to the mat">
+					<figcaption>
+						A wrestler demonstrates a move during a team workout Oct. 7, 2025, at Bloomington High School North
+						in Bloomington. The team's first practice of the season was in mid-September.
+					</figcaption>
+				</figure>
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-3'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+				
+				<p class='section-break'>•••</p>
+				<p>By the end of practice, conversation fades. Movement looks slower, more laborious, after an hour and a
+					half of scrimmaging and troubleshooting maneuvers. The evening practice, capping off a week of classes,
+					has tapped into the end of teammates&rsquo; energy reserves.</p>
+				<p>Cheeks are flushed, panting has crescendoed and the evening has grown tired. As the big blinking digital
+					clock on the gym&rsquo;s right wall inches past 7:30 p.m., teammates start to trudge off the mat. They
+					dab at the sweat condensing around their faces as they break for the mound of backpacks, water bottles
+					and street shoes piled at the side of the gym.</p>
+				<p>But even after 90 minutes of exertion and grappling, club members wear smiles. Conversation picks up
+					again and the intense focus of competition and training relaxes back into camaraderie.</p>
+				<p>Today&rsquo;s work is done. Now, it&rsquo;s time for a weekly team dinner. Everyone is invited.</p>
+				<p>For the women&rsquo;s wrestling club, the family formed on the mat won&rsquo;t get left behind.</p>
+	
+				<figure class="md-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/a0c72e0f-9178-498b-9e84-222b0d29971e.sized-1000x1000.jpg"
+						alt="Two people are seen practicing wrestling over the shoulder of an onlooker.">
+					<figcaption>
+						IU women’s wrestling club co-founder Manroop Turna looks on as club wrestlers demonstrate a
+						technique Oct. 7, 2025, at Bloomington High School North. Club wrestlers tested and practiced techniques new and old
+						on each other during practice, preparing to compete at a higher level.
+					</figcaption>
+				</figure>
+
+
+				<div class="ad-block">
+                    <div class="ad-code">
+                        <br>
+                        <div id='div-gpt-ad-1512489859064-4'>
+                            <script>
+                                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+	
+				<!-- small bios -->
+				<div class="author-bios">
+					<!-- update bios in metadata.json -->
+					<!-- delete this div if you don't want them to show up -->
+				</div>
+	
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+			</div>
+		</article>
+	
+	</main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
