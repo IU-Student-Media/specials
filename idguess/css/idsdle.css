@@ -1,0 +1,505 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --grey: #787c7e;
+    --gold: #DDAF08;
+    --red: #900;
+    --light-grey: #d3d6da;
+    --dark-grey: #4b4d4f;
+    --text-present: white;
+    --text-absent: black;
+}
+
+.btn-primary {
+    --bs-btn-color: white;
+    --bs-btn-bg: #900;
+    --bs-btn-border-color: #900;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #77120a;
+    --bs-btn-hover-border-color: #77120a;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: #590b06;
+    --bs-btn-active-border-color: #590b06;
+
+    font-weight: 600;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+	opacity: 1;
+    transform: translateY(0);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+    font-family: 'Libre Franklin', Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto 100px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-weight: 600;
+	color: black;
+	font-size: 40px;
+}
+
+.green {
+    color: var(--red);
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.hard-info {
+    margin-left: 3px;
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.tooltip-inner  {
+    text-align: left;
+    font-size: 12px;
+    padding: 12px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+      TILES
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.tiles {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+[class*='row'] {
+    display: flex;
+    justify-content: center;
+}
+
+.tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid var(--light-grey);
+    padding: 1px;
+    font-size: 32px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10000px;
+}
+
+.active {
+    border: 3px solid black;
+    padding: 0;
+}
+
+.color-absent {
+    background-color: var(--grey);
+    border: 2px solid var(--grey);
+    color: var(--text-present);
+}
+
+.color-present {
+    background-color: var(--gold);
+    border: 2px solid var(--gold);
+    color: var(--text-present);
+}
+
+.color-correct {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    color: var(--text-present);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+      KEYS
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.key {
+    height: 58px;
+    min-width: 43px;
+    border: solid 2px var(--light-grey);
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	transition: background-color 0.1s;
+	
+    span {
+        pointer-events: none;
+    }
+}
+
+.enter {
+    font-size: 12px;
+    padding: 0 4px;
+}
+
+.key:hover {
+    cursor: pointer;
+	background-color: var(--light-grey);
+}
+
+.key-absent {
+	border-color: var(--grey);
+    background-color: var(--grey);
+    color: white;
+}
+
+.key-present {
+	border-color: var(--gold);
+    background-color: var(--gold);
+    color: white;
+}
+
+.key-correct {
+	border-color: var(--red);
+    background-color: var(--red);
+    color: white;
+}
+
+
+/**
+  Wobbling
+  */
+
+
+/* Wobble Horizontal */
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hvr-wobble-horizontal {
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-horizontal.active-effect {
+    animation: hvr-wobble-horizontal 0.5s infinite;
+}
+
+/**
+dancing
+*/
+
+@keyframes hvr-wobble-vertical {
+    16.65% {
+        transform: translateY(-8px);
+    }
+
+    33.3% {
+        transform: translateY(6px);
+    }
+
+    49.95% {
+        transform: translateY(-4px);
+    }
+
+    66.6% {
+        transform: translateY(2px);
+    }
+
+    83.25% {
+        transform: translateY(-1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.active-dancing {
+    animation: hvr-wobble-vertical 1s ease-in-out;
+}
+
+/**
+flipping
+*/
+
+@keyframes flip-card {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.tile {
+    transition: transform 0.15s;
+}
+
+.tile.new-letter {
+    transform: scale(1.2);
+}
+
+.tile.active-effect {
+    animation: flip-card 500ms ease forwards;
+}
+
+/**
+Notify
+*/
+
+.notify-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+
+	z-index: 10000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    pointer-events: none;
+
+    transition: opacity 250ms;
+
+    .notification {
+        margin: 5px;
+
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 5px;
+        padding: 13px 18px;
+
+        font-size: 16px;
+
+        transition: opacity 250ms;
+        opacity: 0;
+    }
+
+    .notification.open {
+        opacity: 1;
+    }
+
+    .notification:first-child {
+        margin-top: 30px;
+    }
+}
+
+/*
+Modal
+*/
+
+.modal {
+
+	font-family: 'Inter', sans-serif;
+	
+    .modal-dialog {
+        margin-top: 180px;
+
+        .modal-header,
+        .modal-footer,
+        .modal-body {
+            border: none;
+        }
+
+        .modal-body {
+
+            padding-top: 5px;
+
+            p {
+                margin: 0;
+                font-size: 18px;
+				font-family: 'Inter', sans-serif;
+            }
+
+            .modal-title {
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 24px;
+				text-align: center;
+				font-family: 'Inter', sans-serif;
+            }
+
+            #modal-end-message {
+                margin-bottom: 5px;
+            }
+
+            #modal-end-word {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#how-to-play {
+	.modal-dialog {
+
+		.modal-header {
+			padding-bottom: 0;
+		}
+		
+		.modal-body {
+			padding: 10px 20px;
+			
+			text-align: left;
+
+			.modal-title {
+				margin-bottom: 10px;
+				font-size: 25px;
+			}
+			
+			p, li {
+				font-size: 15px;
+			}
+
+			.examples-subtitle {
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+
+			.example-row {
+				display: flex;
+				gap: 5px;
+				width: fit-content;
+
+				.letter {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					width: 35px;
+					height: 35px;
+					
+					border: solid black 2px;
+					border-radius: 10000px;
+
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+
+			.example-row + p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+#play-again {
+	#share-button {
+		i {
+			margin-left: 3px;
+		}
+	}
+}
+
+.modal-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-footer.button-and-date {	
+	button {
+		font-size: 18px;
+		margin: 0 auto;
+	}
+
+	p {
+		font-family: 'Inter', sans-serif;
+		font-size: 14px;
+		color: black;
+	}
+	
+	.date {
+		margin: 20px 0 0;
+	}
+
+	.idguess-number {
+		margin: 0 0 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.key {
+		font-size: 15px;
+		height: 50px;
+		min-width: 33px;
+		margin: 2px;
+	}
+	.enter {
+		font-size: 12px;
+		padding: 0 4px;
+	}
+
+	.tile {
+		width: 52px;
+		height: 52px;
+		font-size: 25px;
+	}
+
+	.notify-container {
+		top: 20px;
+	}
+
+}
