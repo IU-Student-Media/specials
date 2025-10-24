@@ -1,0 +1,732 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+
+  --crossword: #0FA5F1;
+  --idguess: #f2aa0e; 
+  --idguess-unlimited: #BA44B6;
+
+  /* #2B9239 */
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/2117955e-1b4c-4014-8535-e35429063a48.sized-1000x1000.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+	color: black;
+}
+
+h2 {
+  /* second headline */
+	color: black;
+}
+
+
+.headline-container {
+  /* top: auto;
+  bottom: 15vh; */
+}
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+.index {
+	background: url('https://s3.amazonaws.com/snwceomedia/ids/2d1d8e80-926d-4a2a-b84c-0ad6a6e813d9.original.png');
+	background-size: 120%;
+	background-position: center;
+}
+
+.logo>* {
+	opacity: 0.9;
+	transition: opacity 0.2s;
+}
+
+.logo>*:hover {
+	opacity: 1;
+}
+
+#slug {
+	font-family: 'Bevan', serif;
+	font-size: 25px;
+
+	margin: 0;
+	margin-top: 2px;
+	padding-left: 10px;
+	border-left: solid white 1px;
+}
+
+.index {
+	.intro {
+		margin: 80px auto 100px;
+		max-width: 1200px;
+		display: flex;
+		gap: 75px;
+
+		section {
+			margin: auto;
+
+			h1 {
+				padding: 0;
+				font-size: 40px;
+				font-family: 'Bevan', serif;
+			}
+			p {
+				font-family: 'Inter', sans-serif;
+			}
+		}
+	}
+
+	.callout {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		background-color: #3cc45c;
+		max-width: 700px;
+
+		padding: 20px 40px;
+		border-radius: 20px;
+
+		img {
+			max-width: 125px;
+			max-height: 125px;
+		}
+
+		figcaption {
+			h3, p {
+				color: black;
+			}
+			
+			h3 {
+				font-family: 'Bevan', serif;
+				font-size: 25px;
+				font-weight: 100;
+
+				margin: 0 0 10px;
+			}
+
+			p {
+				font-family: 'Inter', sans-serif;
+				font-size: 15px;
+
+				margin: 0 0 10px;
+			}
+		}
+	}
+}
+
+
+.games {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 50px;
+
+	padding: 40px;
+	
+	.game {
+		position: relative;
+
+		box-sizing: content-box;
+		width: 300px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		
+		padding: 40px;
+		border-radius: 20px;
+
+		transition: transform 0.2s;
+
+		h2 {
+			font-family: 'Bevan', serif;
+			font-weight: 100;
+			color: black;
+			font-size: 35px;
+			height: 92px;
+
+		}
+
+		a.button {
+			all: unset;
+
+			text-align: center;
+
+			width: 100%;
+			border: solid black 3px;
+			border-radius: 4px;
+			padding: 8px 0px;
+
+			color: black;
+			background-color: transparent;
+			
+			font-family: 'Inter', sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+
+			z-index: 1;
+
+			transition: color 0.2s, background-color 0.2s;
+		}
+
+		a.button:hover {
+			background-color: black;
+			color: white;
+		}
+
+		a.page-link {
+			all: unset;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.game:hover {
+		cursor: pointer;
+		transform: rotateZ(2deg) scale(1.05);
+	}
+
+	.idguess, .idguess-unlimited {
+		.past {
+			visibility: hidden !important;
+		}
+	}
+	
+	.crossword {
+		background-color: var(--crossword);
+	}
+
+	.idguess {
+		background-color: var(--idguess);
+	}
+	
+	.idguess-unlimited {
+		background-color: var(--idguess-unlimited);
+	}
+}
+
+.game-page {
+
+	.game-desc {
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding: 40px 0 80px;
+
+		img {
+			max-width: 400px;
+		}
+
+		h1 {
+			font-family: 'Bevan', serif;
+			font-weight: 100;
+			font-size: 50px;
+
+			max-width: 600px;
+			
+			margin: 20px 0;
+			padding: 0;
+		}
+
+		p {
+			max-width: 500px;
+			font-family: 'Inter', sans-serif;
+			text-align: center;
+
+			color: black;
+			
+			margin: 0 0 30px;
+		}
+
+		.link {
+			font-family: 'Inter', sans-serif !important;
+		}
+		
+		a.button {
+			all: unset;
+
+			width: 300px;
+			
+			text-align: center;
+
+			border: solid black 3px;
+			border-radius: 4px;
+			padding: 8px 0px;
+			margin: 10px 0;
+
+			color: black;
+			background-color: transparent;
+			
+			font-family: 'Inter', sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+
+			z-index: 1;
+
+			transition: color 0.2s, background-color 0.2s;
+		}
+
+		a.button:hover {
+			background-color: black;
+			color: white;
+			cursor: pointer;
+		}
+
+		a.link {
+			all: unset;
+			color: black;
+			margin-top: 40px;
+		}
+
+		a.link:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+	}
+
+	.game-desc.crossword {
+		background-color: var(--crossword);
+	}
+	
+	.game-desc.idguess {
+		background-color: var(--idguess);
+	}
+
+	.game-desc.idguess-unlimited {
+		background-color: var(--idguess-unlimited);
+	}
+}
+
+.archive-page {
+
+	.intro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		figure {
+			box-sizing: border-box;
+			max-width: 200px;
+			background-color: var(--crossword);
+			padding: 15px;
+			border-radius: 20px;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0;
+
+			font-size: 50px;
+			font-weight: 100;
+			font-family: 'Bevan', serif;
+		}
+
+		p {
+			font-family: 'Inter', sans-serif;
+			font-size: 20px;
+			max-width: 500px;
+			text-align: center;
+		}
+	}
+
+	
+	.archive {
+		margin-top: 25px;
+		
+		.games {
+			margin: 0 auto;
+
+			max-width: 900px;
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.game {
+				all: unset;
+				
+				display: flex;
+				align-items: center;
+
+				gap: 25px;
+				
+				padding: 20px 40px;
+				border-radius: 20px;
+
+				background-color: #fff;
+				
+				filter: drop-shadow(4px 4px 4px #444);
+
+				transition: transform 0.2s;
+				
+				figure {
+					box-sizing: border-box;
+
+					padding: 10px;
+					border-radius: 10px;
+					
+					background-color: var(--crossword);
+					
+					margin: 0;
+					max-width: 125px;
+				}
+
+				figcaption {
+
+					width: 400px;
+					
+					h3, p {
+						color: black;
+						margin: 0;
+					}
+
+					h3 {
+						font-family: 'Bevan', serif;
+						font-weight: 100;
+						font-size: 25px;
+					}
+
+					p {
+						font-family: 'Inter', sans-serif;
+					}
+
+					.pubdate {
+						color: #555;
+						margin-top: 10px;
+						font-size: 13px;
+					}
+
+					.byline {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+
+		.game:hover {
+			cursor: pointer;
+
+			transform: scale(1.02);
+		}
+	}
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+@media (max-width: 1000px) {
+	.index {
+		article {
+			padding: 0 20px;
+		}
+		
+		.intro {
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 20px;
+			gap: 10px;
+			margin-bottom: 0;
+			
+			section {
+				margin: auto;
+
+				h1 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 15px;
+				}
+			}
+
+			.credit {
+				font-size: 11px;
+			}
+		}
+
+		.callout {
+			align-items: center;
+			gap: 20px;
+
+			border-radius: 15px;
+			
+			max-width: 500px;
+			padding: 10px 30px;
+
+			img {
+				display: none;
+			}
+
+			figcaption {
+				h3, p {
+					color: black;
+				}
+				
+				h3 {
+					font-size: 20px;
+
+					margin: 0 0 5px;
+				}
+
+				p {
+					font-family: 'Inter', sans-serif;
+					font-size: 14px;
+
+					margin: 0 0 5px;
+				}
+			}
+		}
+	}
+
+	.games {
+		.game {
+			width: 250px;
+			gap: 5px;			
+			padding: 20px;
+			border-radius: 15px;
+
+			img {
+				width: 150px;
+			}
+			
+			h2 {
+				font-size: 25px;
+				height: unset;
+				margin-bottom: 30px;
+			}
+
+			a.button {
+				border: solid black 2px;
+				font-size: 15px;
+			}
+		}
+
+		.idguess, .idguess-unlimited {
+			.past {
+				display: none !important;
+			}
+		}
+
+	}
+
+	.game-page {
+		.game-desc {
+			padding: 20px 0 80px;
+
+			img {
+				max-width: 150px;
+			}
+
+			h1 {
+				font-size: 35px;
+			}
+
+			p {
+				max-width: 300px;
+				font-size: 15px;
+				margin: 0 0 10px;
+			}
+			
+			a.button {
+				width: 200px;
+
+				margin: 0 0 10px;
+				
+				text-align: center;
+
+				border: solid black 2px;
+				font-size: 15px;
+			}
+
+			a.button:hover {
+				background-color: black;
+				color: white;
+				cursor: pointer;
+			}
+
+			a.link {
+				all: unset;
+				color: black;
+				margin-top: 40px;
+			}
+
+			a.link:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+
+		}
+
+		.game-desc.crossword {
+			background-color: var(--crossword);
+		}
+
+		.game-desc.idguess-unlimited {
+			background-color: var(--idguess-unlimited);
+		}
+	}
+
+	.archive-page {
+		.intro {
+			figure {
+				max-width: 100px;
+				padding: 15px;
+				border-radius: 15px;
+			}
+
+			h1 {
+				font-size: 35px;
+			}
+
+			p {
+				font-size: 15px;
+				max-width: 300px;
+			}
+		}
+
+		
+		.archive {
+			margin-top: 0;
+			
+			.games {
+				padding: 0;
+				
+				max-width: 400px;
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.game {
+					gap: 25px;
+					padding: 10px 20px;
+					border-radius: 20px;
+
+					figure {
+						padding: 10px;
+						border-radius: 10px;
+						margin: 0;
+						max-width: 125px;
+
+						img {
+							max-width: 50px;
+						}
+					}
+
+					figcaption {
+
+						width: 200px;
+						
+						h3, p {
+							color: black;
+							margin: 0;
+						}
+
+						h3 {
+							font-size: 20px;
+							line-height: 25px;
+						}
+
+						.pubdate {
+							color: #555;
+							margin-top: 10px;
+							font-size: 10px;
+						}
+
+						.byline {
+							font-size: 13px;
+						}
+					}
+				}
+			}
+
+			.game:hover {
+				cursor: pointer;
+
+				transform: scale(1.02);
+			}
+		}
+	}
+}
+
+
+@media (orientation: portrait) {
+	.index {
+		background: url('https://s3.amazonaws.com/snwceomedia/ids/b032cd48-2de2-4726-a832-b289f268c9cc.original.png');
+		background-size: 120%;
+		background-position: center;
+	}
+}

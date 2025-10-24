@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Games | Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+	
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/ids-games" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IDS Games" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Extra! Extra! There's a way to get the Indiana Daily Student that's hot off the press. Play IDS Games today."/> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/bb92dc7d-45ca-46c2-a76a-258df3c5bd5a.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="IDS Games"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Extra! Extra! There's a way to get the Indiana Daily Student that's hot off the press. Play IDS Games today."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/bb92dc7d-45ca-46c2-a76a-258df3c5bd5a.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+	<div id="statistics" style="display: none"></div>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <a href="." id="slug"></a> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main article -->
+    <main class="index">
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+            </div>
+
+			<div class="intro">
+				<div>
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/06054b1e-d94d-4b74-924c-39be289f8e07.original.jpg"/>
+					<p class="credit">Illustration by Natalie Cartmel</p>
+				</div>
+
+
+				<section>
+					<h1>IDS Games</h1>
+					<p>Extra! Extra! There&rsquo;s a way to get the Indiana Daily Student that&rsquo;s hot off the press. Play IDS Games today:</p>
+				</section>
+				
+			</div>
+
+			<div class="games">
+				<div class="game crossword">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/ba0c2c31-f348-43ef-a277-3df260e76a0c.original.png" />
+					<h2>Crossword</h2>
+					<a href="" class="play button">Play</a>
+					<a href="./archive/crossword.html" class="past button">Past Puzzles</a>
+
+					<a href="./games/crossword.html" class="page-link"></a>
+				</div>
+				<div class="game idguess">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/0a70c8f8-d546-48b5-b746-77439da71d82.original.png" />
+					<h2>IDGuess</h2>
+					<a href="http://specials.idsnews.com/idguess/index.html" class="play button">Play</a>
+					<a href="" class="past button">Past Puzzles</a>
+
+					<a href="./games/idguess.html" class="page-link"></a>
+				</div>
+				<div class="game idguess-unlimited">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/b5a66763-29a8-4ac7-885b-15f3758169b1.original.png" />
+					<h2>IDGuess Unlimited</h2>
+					<a href="http://specials.idsnews.com/idguess-unlimited/index.html" class="play button">Play</a>
+					<a href="" class="past button">Past Puzzles</a>
+
+					<a href="./games/idguess-unlimited.html" class="page-link"></a>
+				</div>
+			</div>
+
+
+			<figure class="callout">
+				<img alt="blue puzzle piece" src="https://s3.amazonaws.com/snwceomedia/ids/cbea0aef-0873-487d-95a0-5a964eacc914.original.png" />
+				<figcaption>
+					<h3>Calling all game lovers!</h3>
+					<p>Do you have your own fun idea for a game? Feel free to share it with us. We would love to host your ideas.</p>
+					<p>Please send your submissions to <a href="mailto:digital@idsnews.com">digital@idsnews.com</a> and we'll review them.</p>
+				</figcaption>
+			</figure>
+			
+            <div class="story">
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're playing?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Sheetrock -->
+	<script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+	<!-- Custom js -->
+	<script src="js/ads.js"></script>
+	<script src="js/sheet.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+	<script>
+		waitForValue(() => JSON.parse(getWithExpiry('crossword')), (crosswords) => {
+			const latest = crosswords[0];
+			document.querySelector('.game.crossword .button.play').href = latest.link
+		})
+	</script>
+</body>
+
+</html>
