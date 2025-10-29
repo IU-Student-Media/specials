@@ -1,0 +1,407 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/liam-collins-ironman" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="He ran, swam and biked 140.6 miles. He had six months to train." /> <!-- TODO: headline -->
+    <meta property="og:description" content="Liam Collins wanted to challenge himself." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/54aac9bc-d622-43b7-89cb-3c3366382ea4.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="He ran, swam and biked 140.6 miles. He had six months to train."> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Liam Collins wanted to challenge himself."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/54aac9bc-d622-43b7-89cb-3c3366382ea4.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">He ran, swam and biked 140.6 miles.</h1>
+            <h2 data-scroll-speed="3">He had six months to train.</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Liam Collins runs the marathon portion of the Ironman on Sept. 28, 2025, in Chattanooga, Tennessee. He finished the run in four hours and 12 minutes.</p>
+		<article>
+			<div class="bylines">
+				<div id="bylines">
+					<!-- update bylines in metadata.json -->
+				</div>
+				<!-- TO DO update pub_date in metadata.json -->
+				<p id="pubdate"></p>
+			</div>
+			<div class="story">
+				
+				<p>Four bicycles whizzed around the track at Bill Armstrong Stadium. The stands were nearly empty, but around
+					100 onlookers hooted and clapped as they leaned against the gray chain link fence to watch.</p>
+				<p>Riders in multicolored kits warmed up on rollers that kept their bikes suspended in place as they pumped
+					their legs.</p>
+				<p>&ldquo;Bib 21, you have been eliminated,&rdquo; a voice called over the loudspeaker. &ldquo;Please exit the
+					track at turn 3 and de-chip.&rdquo;</p>
+				<p>Heat 14 of Miss N Out on Oct. 7 had started with around 10 riders, but numbers dwindled as the last person to
+					cross the finish line each lap was eliminated. The final three raced for first place.</p>
+				<p>Only a week and a half ago, senior Liam Collins biked 112 miles in five-and-a-half hours in the searing
+					Chattanooga, Tennessee, sun. Now, bent over his bike in a plum Alpha Kappa Lambda kit, Liam sped into the
+					last lap of the race.</p>
+
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+				
+
+				<p>Liam loves to suffer. He embraces it.</p>
+				<p>When he&rsquo;s doing something difficult, he said his brain goes silent and into autopilot. He lets his body
+					take over.</p>
+				<p>After he ran a marathon the summer after his freshman year in 2023, he knew he would race an Ironman. The
+					event takes contestants through 2.4 miles of swimming, 112 miles of biking and a marathon, totaling 140.6
+					miles.</p>
+				<p>He wanted to challenge himself, to test his limits, but it didn&rsquo;t cross his mind to do one so soon
+					until he realized that it would be difficult to train for later in life with a full-time job and a family.
+				</p>
+				<p>Liam&rsquo;s dad, Darren Collins, said his son called him in March and told him he wanted to sign up for an
+					Ironman in July.</p>
+				<p>&ldquo;This is a pretty big deal,&rdquo; Darren remembered telling him. &ldquo;You&rsquo;re gonna need some
+					time to train.&rdquo;</p>
+				<p>Darren told Liam he would cover the fees for an Ironman in Chattanooga. In March, while simultaneously
+					training to compete for Alpha Kappa Lambda in the 2025 Little 500, Liam signed up for a full Ironman. Two
+					days after the race, Liam started training for the Ironman.</p>
+				<p>Its sign-up fees reached $950.</p>
+				<p>&ldquo;These are wealthy people who do these things,&rdquo; Darren said. &ldquo;They have $20,000 bikes, they
+					have trainers, they have tri suits, fancy shoes, fancy gear.&rdquo;</p>
+				<p>Liam used his $3,000 bike that he bought in his senior year of high school. He didn&rsquo;t have a coach and
+					built his own training plan. His girlfriend of two years, IU senior Tori Donato, said he found all his
+					training online.</p>
+
+				<figure class="wide-right">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/56ad45ad-1a9b-4182-8158-b2851a62cbae.original.jpg"
+						alt="A man bikes down a road in the forest.">
+					<figcaption>
+						Liam Collins rides his bike in mid-August in Bloomington. Grilriend Tori Donato, who trained with him, snapped the photo.
+					</figcaption>
+				</figure>
+				
+				<p>&ldquo;He watched a bunch of videos,&rdquo; Donato said. &ldquo;He made all of his own plans, all of his
+					nutrition plans. He had no coaching besides his own knowledge.&rdquo;</p>
+				<p>Over 40% of athletes in full and half Ironmans hire a coach or use a training plan, according to the Ironman
+					website. The sweet spot for training is around nine months, but varies depending on experience.</p>
+				<p>Liam trained for six months. He did so while interning in Atlanta over the summer, working 40 hours a week at
+					SK Commercial Realty &mdash; a commercial real estate company.</p>
+				<p>&ldquo;I&rsquo;d be up at the ass-crack of dawn, early, get one workout and go to work,&rdquo; Liam said.
+					&ldquo;Come back at four and then get another workout in.&rdquo;</p>
+				<p>He&rsquo;d run Mondays, Wednesdays and Fridays in the morning before the summer heat set in. He would swim
+					Tuesday and Thursday mornings and bike in the afternoons, plus lift weights twice a week. On Saturdays, he
+					woke up around 6 a.m. for more than 80 miles of biking. He exercised for around three hours, six days a
+					week.</p>
+				<p>Liam and his dad spent the summer in Atlanta together &mdash; just the two of them. Darren cooked for Liam,
+					catering to his dietary needs for carb and protein-heavy meals to support his training.</p>
+				<p>Donato said watching Liam prepare to compete motivated her, making her eventually want to do an Ironman
+					herself. She&rsquo;s also a Little 500 rider, so they would sometimes train together on the bike.</p>
+				<p>&ldquo;If he was having a bad day, I&rsquo;d like, try to play a playlist on a ride, or make a joke,&rdquo;
+					Donato said. &ldquo;It was certainly inspiring to watch someone deal with so many things, new priorities,
+					and just get work done every day.&rdquo;</p>
+				<p>The first five or six weeks of training, Liam said, were the most difficult. His body wasn&rsquo;t accustomed
+					to the training and stress because he had never pushed it so hard and long before. After around two months,
+					he got into a rhythm and everything clicked.</p>
+				<p>Since he swam in high school and for the IU club swimming team during his freshman and sophomore years
+					&mdash; and trained for the Little 500 &mdash; Liam&rsquo;s goal for the Ironman was to finish in under 11
+					hours. The average Ironman finish time for Liam&rsquo;s age group is around 12 and a half hours.</p>
+				<p>Donato joined Liam and his parents in Chattanooga to support him during the race. The day before the race,
+					Donato and Liam went to Rembrandt&rsquo;s Coffee House. Liam ordered a hot cappuccino and a chocolate
+					croissant. Donato chose an iced vanilla latte and an almond cookie. Going to coffee shops is what they do
+					when they&rsquo;re stressed, Donato said. Liam said it keeps him level-headed and gives him a sense of
+					normalcy.</p>
+				<p>The couple walked part of the course and the transition areas. Donato made sure he had food every second of
+					the day to carb load. She hung balloons in Liam&rsquo;s room with pictures she took of him biking, running
+					or photos she thought were silly. They were little snapshots that Donato used to try and remind Liam of all
+					the progress that he had made. She wrote him a letter about how proud she was of him.</p>
+				<p>&ldquo;It was like, &lsquo;This is how I see you training,&rsquo;&rdquo; Donato said. &ldquo;&rsquo;You work
+					so hard and you don&rsquo;t see yourself this way. But I want you to see yourself this way.&rsquo;&rdquo;
+				</p>
+
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+
+				<p>On the morning of Sept. 28, Liam and his family woke up at 4:30 a.m. He ate four eggs, two pieces of toast
+					and drank a black cold brew coffee. Darren played Eminem&rsquo;s &ldquo;Without Me&rdquo; on the car ride to
+					the race.</p>
+				<p>Liam got to the transition point &mdash; a parking lot corralled into three different sections &mdash; to
+					check in his bike. He then took a shuttle two and a half miles up the Tennessee River. He put his
+					gray-and-red Indiana hoodie, shoes and socks in a bag, which was returned to the central common area for his
+					next transition.</p>
+				<p>There was a tracker around his ankle that connected to a mobile app Liam&rsquo;s family could use to see
+					where he was on the track. Liam&rsquo;s 85-year-old grandmother, whom he calls &ldquo;Nana,&rdquo;
+					downloaded the app on her iPad. His family was watching his progress from all over the country. His brother
+					and brother&rsquo;s girlfriend watched from New York City, his cousin in Texas and his uncle in Kansas.</p>
+				<p>Liam used an elastic band to stretch before the race and stay loose. Donato said she stepped back before the
+					race to let Darren give him a pep talk.</p>
+				<p>&ldquo;It was kind of like, &lsquo;You got this, let&rsquo;s fucking go!&rsquo;&rdquo; Liam recalled Darren
+					saying.</p>
+				<p>Liam said Darren helped him the most out of anyone to prepare for the Ironman.</p>
+				<p>&ldquo;I just know there was a little moment there, because they had a hug,&rdquo; Donato said. &ldquo;And
+					they don&rsquo;t hug a lot.&rdquo;</p>
+				<p>Then, it was just Liam, his pink swim cap and his goggles against 2.4 miles of open water. He was at the
+					front of the start line, barefoot on a wobbly dock. Every three seconds, four people on the dock jumped into
+					the water. Liam felt the dock shake every time. &ldquo;The water was the perfect temperature, Liam said: 76 degrees.&rdquo;</p>
+
+				<figure class="wide-left">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/ecf8afbe-868f-4621-9dbb-b32aa5609264.original.jpg"
+						alt="A young man stands on a small concrete pier looking out at a lake.">
+					<figcaption>
+						Liam Collins looks out over the swim exit Sept. 26, 2025, in Chattanooga, Tennessee. Collins finished the swim in 46 minutes and 58 seconds.
+					</figcaption>
+				</figure>
+				
+				<p>The beep sounded, and Liam jumped in. He said he blacked out and his body took over as he was just trying to
+					get through each segment of the race. He could look up and see the bridges overhead and the required turns.
+				</p>
+				<p>He transitioned from the swim to the bike in six minutes. Liam raced loops on US-27. He counted the laps he
+					had left on the bike. The bike course consisted of over 4,000 feet of elevation gain.</p>
+				<p>After a 46-minute swim and a five-and-a-half-hour bike ride, only a marathon separated Liam from the finish
+					line.</p>
+				<p>Darren was concerned about Liam finishing, but he saw him during the transition.</p>
+				<p>&ldquo;We saw him on the bike, &lsquo;Dude, he's ripping it up on the road,&rsquo;&rdquo; Darren said.
+					&ldquo;And then was like, &lsquo;Can he do the run?&rsquo;&rdquo;</p>
+				<p>For Liam, the run was the most daunting part. It&rsquo;s what the race would come down to.</p>
+				<p>Liam's skin was blistered and reddened from the unrelenting sun. Salt, leftover from dried sweat, crusted the
+					underarms of his black and gray tri-suit. He didn&rsquo;t carry headphones, his phone or a water bottle.</p>
+				<p>Liam dismounted his bike &mdash; a road bike with aero handlebars that he uses to train for the Little 500
+					&mdash; and traded it for his run bag. He changed into his Nike Alpha Fly 3 running shoes, switched out his
+					socks and grabbed his navy hat. The front of it, printed proudly in white-and-red lettering, read
+					&ldquo;Ironman.&rdquo;</p>
+				<p>He still had 26.2 miles to run.</p>
+
+
+				<p class='section-break'>•••</p>
+
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-2'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<p>Aid stations were scattered about every mile and a half along the course. Liam got his energy from gels,
+					electrolytes, protein drinks and four granola bars. He put ice from the aid stations in his hat to stay
+					cool.</p>
+				<p>The last few miles were brutal in the 85-degree heat. Darren said some marathoners called the marathon a
+					20-mile warmup and a six-mile race.</p>
+
+				<figure class="wide-right">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/a407474a-b697-47e8-8332-4bfc205d9afa.original.jpg"
+						alt="A young man sat in the grass with very apparent sunburn tan lines on his arms and legs.">
+					<figcaption>
+						Collins shows off his sunburn after running an Ironman on Sept. 28, 2025, in Chattanooga, Tennessee. He said it was around 85 degrees during the race.
+					</figcaption>
+				</figure>
+				
+				<p>Liam knew on the bike that he would reach his goal of finishing in under 11 hours if he didn&rsquo;t lag
+					behind during the marathon. By the first loop Liam ran, Darren was sure his son would finish. The tracker
+					told the story.</p>
+				<p>&ldquo;I was like, &lsquo;Look, he&rsquo;s got this thing,&rsquo;&rdquo; Darren said. &ldquo;&lsquo;I think
+					this is pretty much in the bag.&rsquo;&rdquo;</p>
+				<p>At 10 hours, 40 minutes and six seconds, Liam crossed the finish line fourth of 48 in the 18-24 age group and
+					162nd overall out of over 1500 competitors.</p>
+				<p>&ldquo;The first thing I asked, like &lsquo;Where can I sit?&rsquo;&rdquo; he said. &ldquo;Then I walked out,
+					and then laid on the grass, and you could see the sweat and shit all over me. Kind of gross.&rdquo;</p>
+				<p>He stayed on the ground for around five minutes. When he finally got up, his mom was worried about him
+					collapsing. She held onto him to make sure he didn&rsquo;t fall.</p>
+				<p>Darren said despite Liam being unable to walk, he looked happy. He hobbled back to the car.</p>
+				<p>Liam got a greasy burger with bacon, tomato and pickles after the race with his family and Donato at the
+					Tremont Tavern in Chattanooga. He slept for eight hours, but sunburn made it difficult for him to sleep. He
+					had to stay in one position. In the days after, his legs were so sore he had to skateboard and take the bus
+					to class.</p>
+				<p>&ldquo;I knew I would finish,&rdquo; Liam said. &ldquo;No doubt.&rdquo;</p>
+		
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-3'>
+							<script>
+								googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+							</script>
+						</div>
+					</div>
+				</div>
+		
+				<!-- small bios -->
+				<div class="author-bios">
+					<!-- update bios in metadata.json -->
+					<!-- delete this div if you don't want them to show up -->
+				</div>
+		
+				<p class="donate">
+					<em>Like what you're reading?</em><br>
+					Support independent, award-winning student journalism.
+					<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+				</p>
+
+			</div>
+		</article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
