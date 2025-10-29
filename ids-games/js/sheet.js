@@ -50,15 +50,15 @@ function handleCrossword(err, opt, res) {
 	for (let i = 1; i < rows.length; ++i) {
 		const pubdate = rows[i]['cellsArray'][0]
 		if ((new Date() - new Date(pubdate)) > 1 * 60 * 60 * 1000) { // pubs at 1 am
-			data[i - 1] = {
+			data.push({
 				pubdate: pubdate,
 				byline: rows[i]['cellsArray'][1],
 				link: rows[i]['cellsArray'][2],
 				title: rows[i]['cellsArray'][3],
-			}
+			})
 		}
 	}
-	
+
 	setWithExpiry('crossword', JSON.stringify(data), 1 * 60 * 60 * 1000) // 1 hour
 }
 

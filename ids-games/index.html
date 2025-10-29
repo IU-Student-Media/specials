@@ -232,10 +232,10 @@
     <script src="js/ids.js"></script>
     <script src="js/metadata.js"></script>
 	<script>
-		waitForValue(() => JSON.parse(getWithExpiry('crossword')), (crosswords) => {
-			const latest = crosswords[0];
-			document.querySelector('.game.crossword .button.play').href = latest.link
-		})
+	 waitForValue(() => JSON.parse(getWithExpiry('crossword')), (crosswords) => {
+		 const latest = crosswords[0];
+		 document.querySelector('.game.crossword .button.play').href = latest.link
+	 })
 	</script>
 </body>
 
