@@ -81,7 +81,7 @@ function handle(err, opt, res) {
     // liveUpdate.setAttribute("twitter", rows[i]['cellsArray'][3])
     liveUpdate.setAttribute("para", rows[i]['cellsArray'][3])
     liveUpdate.setAttribute("image", rows[i]['cellsArray'][4])
-    liveUpdate.setAttribute("link", rows[i]['cellsArray'][6])
+    liveUpdate.setAttribute("link", rows[i]['cellsArray'][5])
     // liveUpdate.setAttribute("credit", rows[i]['cellsArray'][7])
 
     cont.prepend(liveUpdate)

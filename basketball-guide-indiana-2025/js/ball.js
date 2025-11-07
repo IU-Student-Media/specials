@@ -134,14 +134,16 @@ let lastTouchX = 0;
 let lastTouchY = 0;
 
 window.addEventListener("touchstart", (e) => {
-  e.preventDefault()
+  // e.preventDefault()
   lastTouchX = e.changedTouches[0].clientX
   lastTouchY = e.changedTouches[0].clientY
   handleStart(e.changedTouches[0])
 });
 window.addEventListener("touchend", (e) => {
   // console.log("touchend")
-  e.preventDefault()
+  if (held) {
+    e.preventDefault()
+  }
   handleEnd(e)
 });
 window.addEventListener("touchmove", (e) => {
