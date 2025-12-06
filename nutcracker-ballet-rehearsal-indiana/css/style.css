@@ -1,0 +1,339 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+:root {
+  --wid: calc(1624 / 3000 * 100vh);
+
+}
+
+.header-caption {
+  margin-left: calc(var(--wid)/2);
+}
+
+/* TODO: Make this not fixed on mobile */
+.left-img {
+  position: fixed;
+  background-image: url('https://s3.amazonaws.com/snwceomedia/ids/d999deb2-82a6-4898-b468-a4830cf37cf7.original.png');
+  top: 40px;
+  /* left: -1500px; */
+  height: 100vh;
+  /* width: 100vw; */
+  width: var(--wid);
+  left: calc(var(--wid) / -2.5);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+article {
+  position: relative
+}
+
+.background-img {
+  filter: opacity(0.5);
+  z-index: -1;
+  position: absolute;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .side-by-side figure {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#side1 {
+  align-items: end;
+} */
+
+.side-by-side.one img {
+  height: 40vw;
+  width: auto;
+  margin: auto;
+  /* height: 90%; */
+}
+
+.side-by-side.two img{
+  /* height: 23vw; */
+  /* width: auto; */
+  /* margin: auto; */
+
+  /* max-width: calc(var(--medium) / 2.6); */
+  /* height: 90%; */
+}
+
+.background-img:nth-child(1) {
+  left: 10vw;
+  top: 10%;
+  width: 20vw;
+  filter: opacity(0.25);
+}
+
+/* Soldier */
+.background-img:nth-child(2) {
+  right: 0vw;
+  top: 30%;
+  width: 20vw;
+}
+
+/* Ballerina */
+.background-img:nth-child(3) {
+  left: 10vw;
+  bottom: 40%;
+  width: 24vw;
+  filter: opacity(0.25);
+}
+
+.background-img:nth-child(4) {
+  right: 0vw;
+  bottom: 10%;
+  width: 20vw;
+}
+
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url('https://s3.amazonaws.com/snwceomedia/ids/983ce801-e16a-4c3c-ba27-644a3a57283b.sized-1000x1000.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+  background-position: 30% center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+
+}
+
+h2 {
+  /* second headline */
+
+}
+
+h1,
+h2 {
+  /* alignment */
+  text-align: center;
+  /* width of text */
+  max-width: var(--width-lg);
+  /* text color */
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.headline-container {
+  top: auto;
+  bottom: 15vh;
+}
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .side-by-side {
+    flex-direction: column;
+    ;
+  }
+
+
+
+
+  .side-by-side.two img,
+  .side-by-side.one img {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    max-width: unset;
+
+    /* max-width: calc(var(--medium) / 2.6); */
+    /* height: 90%; */
+  }
+
+
+  .headline-container {
+    top: auto;
+    bottom: 2vh;
+    right: 1vw;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  header {
+    /* adjust header image positioning for larger devices if needed */
+    /* you can also change the header image for mobile here */
+    /* background-position: 50% 50%; */
+  }
+
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+
+  .header-caption {
+	  margin-left: 100px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .left-img {
+    position: absolute;
+  }
+
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+
+
+  .background-img:nth-child(1) {
+    width: 30vw;
+    left: 0;
+  }
+
+  /* Soldier */
+  .background-img:nth-child(2) {
+    width: 28vw;
+  }
+
+  /* Ballerina */
+  .background-img:nth-child(3) {
+    width: 34vw;
+    left: 0;
+  }
+
+  .background-img:nth-child(4) {
+    width: 30vw;
+  }
+
+
+  .headline-container {
+    right: 2vw;
+  }
+
+  .headline-container h1 {
+    margin-left: calc(var(--wid) / 2.3);
+    font-size: 32px;
+
+  }
+
+  .headline-container h2 {
+    margin-left: calc(var(--wid) / 3);
+    font-size: 36px;
+  }
+}
+
+/* Extra large devices (large desktops, 1300px and up) */
+@media (max-width: 1200px) {
+  .left-img {
+    left: calc(var(--wid) / -2);
+
+  }
+
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  .headline-container {
+    right: 2vw;
+  }
+
+  .headline-container h1 {
+    margin-left: calc(var(--wid) / 2.3);
+
+  }
+
+  .headline-container h2 {
+    margin-left: calc(var(--wid) / 3);
+  }
+
+}
