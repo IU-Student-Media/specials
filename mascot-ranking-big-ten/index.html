@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/mascot-ranking-big-ten" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="COLUMN: The objectively correct ranking of every mascot in the Big Ten" /> <!-- TODO: headline -->
+    <meta property="og:description" content="The word mascot comes from the French word “mascotte.”" /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/74b9f655-ba78-4336-a3d9-41b4e22a6fdf.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="COLUMN: The objectively correct ranking of every mascot in the Big Ten"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="The word mascot comes from the French word “mascotte.”"> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/74b9f655-ba78-4336-a3d9-41b4e22a6fdf.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">COLUMN</h1>
+            <h2 data-scroll-speed="3">The objectively correct ranking of every mascot in the Big Ten</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Indiana University's mascot Hoosier the Bison attempts to motivate the crowd while on a motorcycle during a football game against Old Dominion University on Aug. 30, 2025, at Memorial Stadium in Bloomington. Hoosier rode on the motorcycle throwing T-shirts toward fans.
+            <span class="credit">Jimmy Rush | <strong>IDS</strong></span>
+        </p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>The word mascot comes from the French word &ldquo;mascotte,&rdquo; which translates roughly to
+                    &ldquo;lucky charm.&rdquo; In America, the term has become synonymous with people dressing up in
+                    cartoonish costumes and strutting about a large green field. It&rsquo;s a ritual I know all too
+                    well.</p>
+                <p>Two summers ago, I worked for a collegiate league baseball team &mdash; the Minot Hot Tots &mdash; in
+                    the middle of nowhere, North Dakota. Unbeknownst to me when I applied, one of my responsibilities
+                    would be attending events as the team&rsquo;s mascot. And so, to my dismay, I dressed up as
+                    everyone&rsquo;s favorite flaming tater tot &mdash; Tate R. Tot.</p>
+                <p>While the experience zapped away every ounce of my dignity, it also made me a mascot connoisseur.
+                    Therefore, no one is more qualified than me to accurately rank each Big Ten mascot.</p>
+                <p>In order to protect myself from any distasteful comments stemming from such a polarizing topic, I
+                    will &mdash; just this once &mdash; set my journalistic integrity aside. This article is completely
+                    biased and wholeheartedly partial.</p>
+                <p>With that being said, here is the definitive ranking of every mascot in the Big Ten Conference:</p>
+
+                <h3>No mascots</h3>
+                <p>The only schools in the conference without official mascots are Michigan and Illinois. In 1927, the
+                    Wolverines experimented with, well, wolverines. Fielding H. Yost, the university&rsquo;s athletic
+                    director at the time,
+                    <a href="https://alumni.umich.edu/michigan-alum/history-lessons-u-ms-trouble-with-mascots/"
+                        target="_blank">
+
+
+                        struck a deal</a> with the Detroit Zoo to acquire a pair. Their names were Biff
+                    and Bennie, and &mdash; after behavioral issues &mdash; they were promptly removed from the
+                    sidelines.
+                </p>
+                <p>For 81 years, Illinois&rsquo; mascot was Chief Illiniwek. After controversy regarding the depiction
+                    of a Native American character as a form of cultural appropriation, the school
+                    <a href="https://news.illinois.edu/board-takes-final-vote-retires-chief-illiniwek/" target="_blank">
+                        retired the mascot</a> in
+                    2007 and hasn't adopted another one since.
+                </p>
+                <p>Both mascot-less programs will understandably be left out of my rankings.</p>
+
+                <section class="take">
+                    <h3>16. Nittany Lion (Penn State)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/8fa4f62c-28e1-4cf1-88ed-1d5753f48df4.original.jpg"
+                            alt="A person in a bear garment in front of a crowd">
+                            <p class="credit">Penn State Intercollegiate Athletics</p>
+                            <figcaption>The Nittany Lion leads the Beaver Stadium crowd in a cheer with a cowbell during a football game in 2016. The Nittany Lion mascot dates back to 1904.</figcaption>
+                    </figure>
+                    <p>I mean, just look at this villain. The Nittany Lion looks like a third grader&rsquo;s drawing
+                        come to
+                        life. Since when did Dollar General sell costumes? I find it hard to believe that Penn State
+                        fans
+                        genuinely enjoy this mascot; it&rsquo;s not intimidating, not funny and, honestly, makes me a
+                        wee
+                        bit sad. Who thought it would be a good idea to dress him in just a scarf? No jersey, no pants,
+                        nothing but a striped scarf.</p>
+                </section>
+                <section class="take">
+                    <h3>15. Purdue Pete (Purdue)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/c01600f0-49f4-410e-90d4-1630a56d70cb.original.jpg"
+                            alt="A person wearing a helmet and holding a hammer">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>Purdue Pete poses Aug. 15, 2022, along the sidelines at a football game. The mascot was first seen in 1940.</figcaption>
+                    </figure>
+                    <p>Yes, I attend Indiana University. No, that did not factor into this ranking. Human mascots,
+                        generally
+                        speaking, look silly. Purdue Pete is no different. I&rsquo;ll give him credit: the name&rsquo;s
+                        catchy, and the hammer he carries is a nice touch. However, that face is nightmare fuel. His
+                        lack of
+                        expression gives him an eerie presence resembling that of a serial killer. I think if I stared
+                        into
+                        his eyes long enough, I would be forced to live the rest of my days shrouded in a cloud of
+                        despair.
+                        Before any Purdue alums try to nitpick, yes, I do know that the Boilermaker Special, a train, is
+                        technically the school&rsquo;s official mascot. As much as I enjoy the occasional locomotive, I
+                        refuse to rank an inanimate object alongside other mascots.</p>
+                </section>
+                <section class="take">
+                    <h3>14. Willie the Wildcat (Northwestern)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/ade7b7ba-789f-467d-b166-a5b2f6978cbb.original.jpg"
+                            alt="A person in a grey cat mascot suit and a purple football jersey">
+                            <p class="credit">Mary Grace Grabill | <strong>Northwestern Athletics</strong></p>
+                            <figcaption>Willie the Wildcat is pictured during a game between Northwestern Women’s Basketball and Loyola Chicago on Nov. 29, 2023, at Welsh-Ryan Arena in Evanston, Illinois. In 1933, the university's athletic department released the first image of the mascot.</figcaption>
+                    </figure>
+                    <p>Unlike the last two, Willie&rsquo;s appearance doesn&rsquo;t make me want to avert my eyes in
+                        disgust. That&rsquo;s a good start. However, he&rsquo;s kind of bland and has hair that
+                        resembles
+                        former U.S. President Martin Van Buren&rsquo;s. Additionally, he&rsquo;s not even the only
+                        Wildcat
+                        named Willie. Northwestern failed to copyright its initial Willie the Wildcat logo after its
+                        inception in the 1940s and &mdash; as a result &mdash; Kansas State University adapted it and
+                        made
+                        the same mascot. They&rsquo;re both ugly.</p>
+                </section>
+                <section class="take">
+                    <h3>13. Joe and Josephine Bruin (UCLA)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/e6b3d66c-3074-4346-8d3e-62f60bd484c0.original.jpg"
+                            alt="A pair of bear mascots flexing.">
+                            <p class="credit">UCLA Newsroom</p>
+                            <figcaption>Josephine Bruin (left) and Joe Bruin (right) are pictured. UCLA had live bear mascots, two of whom were named Joe and Josephine.</figcaption>
+                    </figure>
+                    <p>This is the first of four schools with multiple mascots. For the purposes of my rankings, they
+                        will
+                        be ranked together, a decision that takes chemistry into account.  Firstly, I&rsquo;m shocked
+                        that
+                        Joe Bruin was the best name the school could come up with. I understand these two are beloved on
+                        the
+                        UCLA campus but, to be honest, they aren&rsquo;t anything special. They&rsquo;re two bears
+                        wearing
+                        shirts. I will say, Joe and Josephine&rsquo;s romantic relationship offers a unique dynamic
+                        compared
+                        to other mascots on this list, but their compelling love story is not enough to move the needle
+                        in
+                        my rankings.</p>
+                </section>
+                <section class="take">
+                    <h3>12. Herbie Husker and Lil&rsquo; Red (Nebraska)</h3>
+                    <figure class="mascot-img wide">
+                        <div class="joint-img">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/c9b67730-15b4-4853-8505-48b83932d958.original.jpg"
+                                alt="A person wearing a cowboy hat">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/28f1fd29-b0fb-44ae-8a71-763a4a7ec5c3.original.jpg"
+                                alt="A pig mascot in red overalls and a hat">
+                        </div>
+                        <p class="credit">Tribune News Service</p>
+                        <figcaption>
+                            <strong>LEFT</strong> Herbie Husker is seen at a sporting event. Herbie's most recent makeover was in 2023.
+                            <strong>RIGHT</strong>Lil' Red is pictured. Lil' Red won the NCAA National Mascot Competition in 1999.
+                        </figcaption>
+                    </figure>
+                    <p>I&rsquo;m not ashamed to say it, Lil&rsquo; Red has a special place in my heart. His jolliness is
+                        only rivaled by the mascot of casual dining tycoon Big Boy. Still, these two are incredibly
+                        strange.
+                        Herbie&rsquo;s mug is upsetting to say the least. His dimples are somehow inverted?
+                        Additionally,
+                        there&rsquo;s no world in which these two should be allowed in the same room. Unfortunately for
+                        Nebraska, that&rsquo;s often the case. You may be noticing a trend at this point; human mascots
+                        aren&rsquo;t easy to pull off.</p>
+                </section>
+                <section class="take">
+                    <h3>11. Sir Henry the Scarlet Knight (Rutgers)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/4bb00225-1811-4675-8512-284d280a9498.original.jpg"
+                            alt="A person in a knight mascot outfit.">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>Sir Henry, the Scarlet Knight, is pictured. Rutgers picked the knight to become the university's mascot in 1955.</figcaption>
+                    </figure>
+                    <p>Who would&rsquo;ve guessed? Another human mascot. Sir Henry isn&rsquo;t bad, but he isn&rsquo;t
+                        great. I think Rutgers does a good job with accessories. He&rsquo;ll sometimes wield a sword, an
+                        axe, a shield and even the occasional eye black for certain sporting events. However, the crux
+                        of
+                        human mascots is their expression. Sir Henry&rsquo;s grin looks forced. It&rsquo;s also
+                        unsettling
+                        when he&rsquo;s smiling while the Scarlet Knights lose 56-10 to Oregon. I didn&rsquo;t have to
+                        go
+                        there, but I did. I&rsquo;m sorry Sir Henry, please don&rsquo;t come after me.</p>
+
+                </section>
+                <section class="take">
+                    <h3>10. Harry the Husky and Dubs (Washington)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/74055498-852d-47fb-9200-aed442c0b7f0.original.jpg"
+                            alt="A dog and a mascot posing for a picture.">
+                            <p class="credit">Cecile Miller | <strong>Wikimedia Commons</strong></p>
+                            <figcaption>Harry the Husky is pictured March 28, 2024. Harry the Husky debuted in 1995.</figcaption>
+                    </figure>
+                    <p>I&rsquo;ll admit it, I&rsquo;ve let my emotions get the best of me. I&rsquo;m not a fan of Harry
+                        the
+                        Husky. The costume is bushy, the proportions look slightly off and he weirdly seems shy.
+                        However,
+                        Dubs &mdash; that&rsquo;s the real dog &mdash; is quite possibly the bestest boy in the world.
+                        I&rsquo;m a dog person, ok, I&rsquo;m going to like the dog. Therefore, I will give
+                        Washington&rsquo;s furry friend duo a higher ranking than they probably deserve. Fire me.</p>
+                </section>
+                <section class="take">
+                    <h3>9. Buckingham U. &ldquo;Bucky&rdquo; Badger (Wisconsin)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/bb9f2ef5-67c6-497e-8e4b-22460512416e.original.jpg"
+                            alt="A badger mascot in a red-and-white striped uniform">
+                            <p class="credit">Focal Flame Photography/TNS</p>
+                            <figcaption>Bucky Badger runs onto the field at Camp Randall for a UW-Madison football game. Illustrator Art Evans drew the first version of Bucky in 1940.</figcaption>
+                    </figure>
+                    <p>When I first started this list, I really thought Bucky would be much higher. I&rsquo;ve always
+                        loved
+                        Wisconsin&rsquo;s alternate logo of the iconic badger puffing out his chest in a pinstriped
+                        turtleneck. Unfortunately, when I began looking closer at his costume, I was rather
+                        disappointed. My
+                        biggest qualm is his proportions, which make him look awkward and wobbly. I&rsquo;ll hazard a
+                        guess
+                        that a strong gust of wind could push Bucky over. Don&rsquo;t get me wrong, I still like the
+                        fella.
+                        I&rsquo;m a huge proponent of mascots with unique shirts that aren&rsquo;t simply jerseys
+                        slapped on
+                        their chest. The turtleneck is a nice touch, and the badger is an awesome concept.</p>
+                </section>
+                <section class="take">
+                    <h3>8. Hoosier the Bison (Indiana)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/405a4f7b-23c3-446b-a95f-e012a1295926.original.jpg"
+                            alt="A bison mascot in a red uniform flexing on a motorcycle">
+                            <p class="credit">Trinity Mackenzie | <strong>IDS</strong></p>
+                            <figcaption>Indiana mascot Hoosier the Bison fist bumps a security guard during a women's basketball game against Butler on Nov. 19, 2025, inside Simon Skjodt Assembly Hall in Bloomington. Hoosier made his public debut at Indiana football's season opener against Old Dominion University on Aug. 30.</figcaption>
+                    </figure>
+                    <p>It&rsquo;s an impressive debut for the Big Ten&rsquo;s newest mascot. Hoosier, the result of a
+                        movement to
+                        <a href="https://www.idsnews.com/article/2025/05/hoosier-bison-back-indiana-mascot-may-football"
+                            target="_blank">
+                            &ldquo;bring back the bison,&rdquo;
+                        </a>
+                        has been a success so far. Ever since he parachuted
+                        from the sky before Indiana football&rsquo;s season opener, the bison has been a welcome
+                        addition to
+                        the team's gameday festivities. He&rsquo;s athletically built, the costume looks well-made and
+                        it's
+                        unique. With time, I could see Hoosier rising in the ranks, but for now, he sits in the middle
+                        of
+                        the pack &mdash; or herd, I guess.
+                    </p>
+                </section>
+                <section class="take">
+                    <h3>7. Testudo the Diamondback Terrapin (Maryland)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/53a43297-ea97-44a8-9dc0-317f81a8bbd7.original.jpg"
+                            alt="A person in a turtle costume waving a large flag on a basketball court">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>Testudo waves a flag at the start of the game between the University of Maryland and University of Maryland Eastern Shore men’s basketball Dec. 28, 2024. Former football coach H. Curley Byrd recommended the school make the Diamondback terrapin the mascot in 1932.</figcaption>
+                    </figure>
+                    <p>This is possibly my most controversial opinion on this list. Testudo has stolen my heart.
+                        He&rsquo;s
+                        one of the goofiest looking mascots I&rsquo;ve ever had the pleasure of seeing and yet, I love
+                        him.
+                        The beak, the shell, his oversized feet, it&rsquo;s a majestic symphony that pulls off an
+                        impossible
+                        task &mdash; making a costumed mascot of a turtle. He may not be as popular as some of the
+                        mascots
+                        ahead of him, but I&rsquo;m a fan for life.</p>
+                </section>
+                <section class="take">
+                    <h3>6. Herky the Hawk (Iowa)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/80985c42-87d7-4609-b9be-3db0a4925349.original.jpg"
+                            alt="A black and yellow hawk mascot poses in front of a campus building">
+                            <p class="credit">Justin A. Torner | <strong>The University of Iowa</strong></p>
+                            <figcaption>Herky posing on the Pentacrest in front of Old Capitol. Herky became the school's mascot in 1948.</figcaption>
+                    </figure>
+                    <p>Herky has no shortage of personality. In 1997, the mean-mugging mascot threw a cup of water in
+                        the
+                        face of a Minnesota marching band drummer.
+                        <a href="https://www.latimes.com/archives/la-xpm-1997-dec-16-sp-64650-story.html"
+                            target="_blank">
+                            The incident
+                        </a>
+                        quickly escalated into a brawl, one that
+                        resulted in a broken hawkeye headpiece. While I don&rsquo;t condone Herky&rsquo;s violence, I do
+                        respect it. The school&rsquo;s mascot brings a needed intensity to a fanbase known for its
+                        kindness.
+                    </p>
+                </section>
+                <section class="take">
+                    <h3>5. Traveler and Tommy Trojan (USC)</h3>
+                    <figure class="mascot-img wide">
+                        <div class="joint-img">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/a80edb17-e752-4706-a618-e63b11f0d2d9.original.jpg"
+                                alt="A person on a horse with a sword in front of a crowd">
+                            <img src="https://s3.amazonaws.com/snwceomedia/ids/ca29cd62-706e-4960-84cd-11e3495e8145.original.jpg"
+                                alt="A trojan mascot with a read plume.">
+                        </div>
+                        <p class="credit">Courtesy of Brett Padelford (left) and USC Trojan Marching Band (right)</p>
+                        <figcaption>
+                            <strong>LEFT</strong> Traveler the horse is pictured Nov. 18, 2023. Traveler made its first appearance in 1961.
+                            <strong>RIGHT</strong> Tommy Trojan is seen. Tommy was unveiled in 1930.
+                        </figcaption>
+                    </figure>
+                    <p>There&rsquo;s something special about live mascots. Traveler was introduced as USC&rsquo;s
+                        official
+                        mascot in 1961 and since then, 10 different horses have filled the role. A live horse on a
+                        football
+                        field? It&rsquo;s the type of pompous showmanship that harkens back to the Colosseum of ancient
+                        Rome
+                        &mdash; fitting for a team that plays in the Los Angeles Memorial Coliseum. I also don&rsquo;t
+                        mind
+                        Tommy Trojan, the alternate mascot used in place of Traveler at indoor events. He&rsquo;s
+                        nowhere
+                        near as interesting as an actual horse, but he&rsquo;s a mascot suitable for a gameday photo.
+                    </p>
+                </section>
+                <section class="take">
+                    <h3>4. Goldy Gopher (Minnesota)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/ac024a30-07e4-4522-9db1-b365f7d4d4c6.original.jpg"
+                            alt="A person in a gopher mascot garment and maroon uniform holding a giant oar.">
+                            <p class="credit">John Autey | <strong>Pioneer Press</strong></p>
+                            <figcaption>Goldie Gopher rows the boat at the start of the third quarter against Penn State in a NCAA Football game Nov. 9, 2019 at TCF Bank Stadium in Minneapolis. Goldie Gopher started making appearances in 1952.</figcaption>
+                    </figure>
+                    <p>I know, I know, I&rsquo;ve been very transparent with my hatred toward jerseys on mascots.
+                        It&rsquo;s
+                        a lazy workaround for creating a unique costume. I&rsquo;m happy to say that&rsquo;s my only
+                        complaint with Goldy Gopher. His design is amazing. Maybe it's because of my affection for the
+                        Disney characters Chip and Dale &mdash; who share a striking resemblance to Goldy &mdash; but
+                        I&rsquo;m confident Goldy is among the conference&rsquo;s best. His oversized head, his
+                        buckteeth,
+                        his ears, his tail, they all work. There&rsquo;s a reason Goldy has won the mascot category at
+                        the
+                        College Cheerleading and Dance Team National Championship four times.</p>
+                </section>
+                <section class="take">
+                    <h3>3. The Oregon Duck (Oregon)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/f1ee89f9-d995-4fe2-9220-46891d6d7869.original.jpg"
+                            alt="A white duck mascot in a green sailor outfit shakes hands with the crowd.">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>The Duck mascot high-fives Oregon fans after the No. 6 Ducks defeat the Washington Huskies, 26-14, in a college football game Nov. 29, 2025, at Husky Stadium in Seattle. Oregon had a live mascot, a duck named Pudles, in the 1920s.</figcaption>
+                    </figure>
+                    <p>Before I explain my reasoning, I need to clarify. The top three mascots in this list are not only
+                        the
+                        best in the Big Ten, but among the best of all mascot-kind. The Oregon Duck is an icon. His
+                        playful
+                        demeanor and immature antics have cemented him into the fabric of college football&rsquo;s
+                        identity.
+                        Even so, I have a few complaints. For one, he&rsquo;s just a copy of Donald Duck. If you
+                        don&rsquo;t
+                        believe me, look it up. In 1973, Oregon reached a
+                        <a href="https://www.registerguard.com/story/sports/college/2024/08/08/oregon-ducks-mascot-puddles-webfoot-disney/74699860007/?gnt-cfr=1&gca-cat=p&gca-uir=true&gca-epti=z113401d00----v113401b0034xxd003465&gca-ft=201&gca-ds=sophi"
+                            target="_blank">
+                            formal agreement with Disney</a> to use the
+                        character&rsquo;s likeness as its mascot. Secondly, he doesn&rsquo;t have a real name. While
+                        &ldquo;Puddles&rdquo; is a nickname regularly attributed to the Oregon Duck, the school has
+                        refuted
+                        it as an official title on multiple occasions. Again, I appreciate the contributions this
+                        web-footed
+                        mascot has made for the world of costumed creatures, but the competition is elite at the top of
+                        my
+                        rankings.
+                    </p>
+                </section>
+                <section class="take">
+                    <h3>2. Brutus the Buckeye (Ohio State)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/8dc1b6f2-4331-4846-b9f5-5b9785361d04.original.jpg"
+                            alt="Someone in a scarlet and grey mascot outfit with a giant nut as the head.">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>Brutus tosses T-shirts into the stands April 16, 2022, at the Horseshoe in Columbus. The mascot made an unofficial debut in 1965.</figcaption>
+                    </figure>
+                    <p>I was raised a Buckeye. There, I said it. My parents met in the Ohio State marching band, and a
+                        family friend was Brutus for a short time period. I can give you my word: those facts
+                        didn&rsquo;t
+                        factor into this decision. Brutus is one of a kind. How on earth did a school whose team name is
+                        a
+                        tree nut manage to create one of the most personable and renowned mascots in the world? It seems
+                        impossible, but that&rsquo;s exactly what Ohio State did. His scarlet and gray striped shirt is
+                        perfect, the towel is a subtle but recognizable ode to the program&rsquo;s football prowess and
+                        the
+                        &ldquo;block O&rdquo; hat literally tops it all off. Thanks to Lee Corso and ESPN&rsquo;s
+                        College
+                        GameDay, Brutus is a college football legend. Still, I think there&rsquo;s one mascot in the Big
+                        Ten
+                        who&rsquo;s got him beat.</p>
+
+                </section>
+                <section class="take">
+                    <h3>1. Sparty (Michigan State)</h3>
+                    <figure class="mascot-img">
+                        <img src="https://s3.amazonaws.com/snwceomedia/ids/b21b494d-d357-414f-97e4-40c27bc76d25.original.jpg"
+                            alt="A mascot in a green helmet and armor holding a green flag.">
+                            <p class="credit">Tribune News Service</p>
+                            <figcaption>Michigan State University mascot Sparty hypes the crowd up as MSU hosted Washington Sept. 16, 2023, at Spartan Stadium in East Lansing, Michigan. MSU's first mascot appeared in 1955.</figcaption>
+                    </figure>
+                    <p>The first college football video game I owned was &ldquo;NCAA Football 09&rdquo; on the Nintendo
+                        Wii.
+                        To promote the series&rsquo; first release on the console, Electronic Arts &mdash; the
+                        game&rsquo;s
+                        developer &mdash; held a competition that allowed fans to vote which mascot would be featured on
+                        the
+                        cover. Sparty won. Every time I reached into the drawer to pull out the game, he was there,
+                        looking
+                        right back at me. Maybe that&rsquo;s it, maybe that&rsquo;s why I made this list in the first
+                        place,
+                        maybe that&rsquo;s the reason I&rsquo;ve always been fascinated by mascots. Honestly, I
+                        don&rsquo;t
+                        know. What I do know is that Sparty is the best mascot in the Big Ten. He&rsquo;s everything you
+                        could possibly want. He&rsquo;s larger than life, intimidating and has a great head-to-toe
+                        costume.
+                        When you think of Michigan State, you think of Sparty. Although others often say it, or I
+                        suppose
+                        act it out, only Sparty can live up to every mascot&rsquo;s favorite hand gesture &mdash; he's
+                        number one.</p>
+                </section>
+
+                <div id="ratings-summary" class="ratings-summary" aria-live="polite"
+                    style="margin-top:1.5rem; display: none">
+                    <h3>Your favorite mascots</h3>
+                    <p id="summary-text">No ratings yet. Rate the takes above to see which one readers thought was the
+                        hottest.</p>
+                </div>
+
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+                        class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+
+    <style>
+        /* Small styles for the fire rating UI */
+        .fire-rating {
+            display: inline-flex;
+            gap: 2px;
+            align-items: center;
+            margin: 0.5rem 0 1rem;
+            flex-wrap: wrap;
+        }
+
+        .fire-btn {
+            background: none;
+            border: 0;
+            cursor: pointer;
+            font-size: 2rem;
+            line-height: 1;
+            /* padding: 4px 6px; */
+            color: #d0d0d0;
+            /* empty star color */
+            position: relative;
+        }
+
+        /* full selected star */
+        .fire-btn.selected {
+            color: #f6b03a;
+            /* gold */
+            opacity: 1;
+            /* transform: translateY(-2px); */
+        }
+
+        /* half star using background-clip text trick */
+        .fire-btn.half {
+            color: transparent;
+            background: linear-gradient(90deg, #f6b03a 50%, #d0d0d0 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            opacity: 1;
+            /* transform: translateY(-2px); */
+        }
+
+        /* .fire-btn:focus { outline:2px solid #f66; border-radius:4px; } */
+        #show-summary {
+            margin-top: 0.5rem;
+            padding: 0.4rem 0.6rem;
+        }
+    </style>
+
+    <script>
+        // Inject a 1-5 fire rating UI after each h2.opiner and compute the hottest take
+        (function () {
+            // helper to create a fire button (represents one whole star)
+            function createFireButton(value, takeIndex) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'fire-btn';
+                btn.setAttribute('aria-pressed', 'false');
+                btn.setAttribute('data-value', value); // integer 1..5
+                btn.setAttribute('data-take', takeIndex);
+                btn.title = value + ' out of 5 fires';
+                btn.innerText = '★';
+                return btn;
+            }
+
+            var headers = Array.from(document.querySelectorAll('.take h3'));
+
+            var sections = Array.from(document.querySelectorAll('.take'));
+            var ratings = Array(headers.length).fill(0);
+
+            var images = sections.map(s => s.querySelector('img').cloneNode(true))
+
+            sections.forEach(function (section, i) {
+
+
+                // create rating UI and append to section
+                var wrapper = document.createElement('div');
+                wrapper.className = 'fire-rating';
+                wrapper.setAttribute('aria-label', 'How do you rate this mascot from one to five stars?');
+
+                let label = document.createElement('em');
+                label.style.marginBottom = "none"
+                label.style.fontWeight = "bold"
+                label.innerText = "How do you rate this mascot?"
+
+                let para = document.createElement('p')
+                para.className = "rate-q"
+                para.appendChild(label)
+
+                wrapper.appendChild(para);
+                for (var v = 1; v <= 5; v++) {
+                    (function (val, idx) {
+                        var btn = createFireButton(val, idx);
+                        // clicking left half -> half-star (val - 0.5), right half -> full (val)
+                        btn.addEventListener('click', function (ev) {
+                            // If
+                            let selectedVal = val;
+                            if (ratings[idx] == val) {
+                                selectedVal -= 0.5;
+                            }
+
+                            // var rect = btn.getBoundingClientRect();
+                            // var clickX = ev.clientX - rect.left;
+                            // var isHalf = clickX < rect.width / 2;
+                            // var selectedVal = isHalf ? (val - 0.5) : val;
+                            ratings[idx] = selectedVal;
+
+                            // update UI within this section: clear states then set selected/half
+                            var siblings = Array.from(wrapper.querySelectorAll('.fire-btn'));
+                            siblings.forEach(function (s) {
+                                s.classList.remove('selected', 'half');
+                                s.setAttribute('aria-pressed', 'false');
+                            });
+
+                            var full = Math.floor(selectedVal);
+                            var hasHalf = (selectedVal % 1) === 0.5;
+                            siblings.forEach(function (s) {
+                                var sv = parseInt(s.getAttribute('data-value'), 10);
+                                if (sv <= full) {
+                                    s.classList.add('selected');
+                                    s.setAttribute('aria-pressed', 'true');
+                                } else if (hasHalf && sv === full + 1) {
+                                    s.classList.add('half');
+                                    s.setAttribute('aria-pressed', 'true');
+                                }
+                            });
+
+                            updateSummaryText();
+                        });
+
+                        // also support keyboard (space/enter will toggle full star, shift+space toggles half)
+                        btn.addEventListener('keydown', function (ev) {
+                            if (ev.key === ' ' || ev.key === 'Enter') {
+                                ev.preventDefault();
+                                var isHalfKey = ev.shiftKey;
+                                var sel = isHalfKey ? (val - 0.5) : val;
+                                // emulate click at left/right depending on shift
+                                var fakeEv = { clientX: isHalfKey ? (btn.getBoundingClientRect().left + 1) : (btn.getBoundingClientRect().right - 1) };
+                                btn.dispatchEvent(new MouseEvent('click', { clientX: fakeEv.clientX }));
+                            }
+                        });
+
+                        wrapper.appendChild(btn);
+                    })(v, i);
+                }
+
+                section.appendChild(wrapper);
+            });
+
+            function updateSummaryText() {
+                var summary = document.getElementById('summary-text');
+                var container = document.getElementById("ratings-summary")
+                var any = ratings.some(function (r) { return r > 0; });
+                if (!any) {
+                    summary.innerText = 'No ratings yet. Rate the takes above to see which mascot was your favorite.';
+                    container.style.display = "none";
+                    return;
+                }
+                container.style.display = "block";
+
+                // compute highest rating; if multiple, list them
+                // TODO: Take the image from the favorite
+                var max = Math.max.apply(null, ratings);
+                var winners = [];
+                ratings.forEach(function (r, idx) {
+                    if (r === max && r > 0) winners.push(idx);
+                });
+                var text;
+                if (winners.length === 0) {
+                    text = 'No ratings yet.';
+                } else {
+                    // Todo: there could be multiple
+                    var titles = winners.map(function (w) {
+                        var el = headers[w];
+                        // take the textContent of the heading and remove trailing colon/author
+                        return el.textContent.replace(/:\s*$/, '');
+                    });
+                    text = '(' + max + '/5): ' + titles.join(' — ');
+                }
+                summary.innerText = text;
+                    summary.appendChild(images[winners[0]])
+
+            }
+
+
+        })();
+    </script>
+</body>
+
+</html>
