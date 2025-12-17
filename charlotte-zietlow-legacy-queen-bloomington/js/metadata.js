@@ -12,7 +12,7 @@ const data = {
             "bio": "Jack Forrest is a junior studying journalism at Indiana University. He serves as managing editor at the IDS."
         },
         "Graphics by": {
-            "name": "Evelynn Strauss",
+            "name": "Evelyn Strauss",
         },
         "Design and development by": {
             "name": "Matei Cloteaux",
