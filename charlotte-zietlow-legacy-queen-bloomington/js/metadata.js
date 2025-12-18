@@ -1,3 +1,5 @@
+// comment
+
 const data = {
     "url": "charlotte-zietlow-legacy-queen-bloomington",
     "slug": "Charlotte Zietlow",
