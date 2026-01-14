@@ -3,7 +3,7 @@ const data = {
     "slug": "IU Burmese Language",
     "headline": "IU Burmese Language",
     "title": "IU Burmese Language",
-    "pub_date": "Jan. 13, 2026",
+    "pub_date": "Jan. 14, 2026",
     "bylines": {
         "By": {
             "name": "Nadia Suben",
@@ -11,6 +11,9 @@ const data = {
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/41dcff70-32bf-47d2-b45d-18e3d2ec955e.original.jpg",
             "bio": "Nadia has worked at the IDS since 2024. She is an enterprise reporter and opinion editor."
         },
+		"Photos by" : {
+			"name" : "Annabel Prokopy"
+		},
         "Design and development by": {
             "name": "Matei Cloteaux",
             "email": "mcloteau@iu.edu",
