@@ -1,19 +1,15 @@
 const data = {
     "url": "podcast-autism-voice-indiana",
-    "slug": "Autism Podcast",
+    "slug": "Autisim Rocks and Rolls",
     "headline": "He felt he had no voice. Now, thousands have listened to his podcast on autism",
-    "title": "Autism Podcast",
+    "title": "Autisim Rocks and Rolls",
     "pub_date": "Jan. 17, 2026",
     "bylines": {
-        "By": {
+        "Story and Photos By": {
             "name": "Natalia Nelson",
             "email": "nelsonnb@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/62461a4c-7e6f-4ec8-8d2f-65011ee5c6c0.original.jpg",
             "bio": "Natalia has worked at the IDS since 2024 and is an enterprise editor."
-        },
-        "Photos by": {
-            "name": "Natalia Nelson",
-            "email": "nelsonnb@iu.edu",
         },
         "Design and development by": {
             "name": "Calvin Josenhans",
@@ -27,7 +23,7 @@ const data = {
 }
 
 // bylines
-const byline_types = ["By", "Photos by", "Design and development by", "Graphics by"]
+const byline_types = ["Story and Photos By", "By", "Photos by", "Design and development by", "Graphics by"]
 let bylines_html = '';
 let bios_html = '';
 
