@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Title (pulls from metadata.json) -->
+		<title> Hello</title>
+
+		<!-- favicon -->
+		<link rel="SHORTCUT ICON"
+			  href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+		<!-- CSS stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+		<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+		<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+		<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+		<!-- SOCIAL CARDS — Make sure to update!! -->
+		<meta property="og:url" content="http://specials.idsnews.com/podcast-autism-voice-indiana" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="He felt he had no voice. Now, thousands have listened to his podcast on autism" /> <!-- TODO: headline -->
+		<meta property="og:description" content="Sam Mitchell started his podcast, \"Autism Rocks and Rolls,\" in high school." /> <!-- TODO: abstract -->
+		<meta property="og:site_name" content="IDS News">
+		<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/cccbd9c4-3fef-4c52-80b7-a647a801ff2a.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@idsnews">
+		<meta name="twitter:creator" content="@idsnews">
+		<meta name="twitter:title" content="He felt he had no voice. Now, thousands have listened to his podcast on autism"> <!-- TODO: headline -->
+		<meta name="twitter:description" content="Sam Mitchell started his podcast, \"Autism Rocks and Rolls,\" in high school."> <!-- TODO: abstract -->
+		<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/cccbd9c4-3fef-4c52-80b7-a647a801ff2a.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+		<!-- START Ad content: this goes in the head content -->
+		<!-- don't mess with this — it will work all on it's own :-) -->
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+		<script>
+         var googletag = googletag || {};
+         googletag.cmd = googletag.cmd || [];
+		</script>
+		<script>
+         googletag.cmd.push(function () {
+             //all other leaderboards
+             var mapping1 = googletag.sizeMapping()
+									 .addSize([768, 0], [728, 90]) // Desktops and Tablets
+									 .addSize([0, 0], [320, 50]) // Mobile devices
+									 .build();
+             googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+             googletag.pubads().enableSingleRequest();
+             googletag.pubads().collapseEmptyDivs();
+             googletag.enableServices();
+         });
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager -->
+		<!-- (also don't have to worry about this at all) -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+					style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script src="js/googleTagManager.js"></script>
+
+		<div class="helper"></div>
+
+		<!--Header-->
+		<header>
+
+			<!-- Transparent navbar -->
+			<nav>
+				<ul>
+					<li class="logo">
+						<a href="https://www.idsnews.com">
+							<!-- IDS LOGO SVG -->
+							<svg viewBox="0 0 163.17 68.85">
+								<path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+								<path style="fill:white;"
+									  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+								<path style="fill:white;"
+									  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+							</svg>
+						</a>
+						<span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+					</li>
+					<li class="toggle">
+						<i class="fas fa-bars fa-lg"></i>
+					</li>
+					<li id="socials" class="item">
+						<!-- links generate automatically from metadata.json -->
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Headline, subhed -->
+			<!-- feel free to change this up — you don't need it to have data scroll speed, 
+				 doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+			<div class="headline-container">
+				<h1 data-scroll-speed="2">He felt he had no voice.</h1>
+				<h2 data-scroll-speed="3">Now, thousands have listened to his podcast on autism</h2>
+			</div>
+
+		</header>
+
+		<!-- main article -->
+		<main>
+			<p class="caption header-caption">Sam Mitchell leans over his desk as he interviews Leila Farshchian, a behavior analyst, over Zoom Nov. 19, 2025, at his home in Owensburg, Indiana. He released the podcast episode Nov. 29.</p>
+			<article>
+				<div class="bylines">
+					<div id="bylines">
+						<!-- update bylines in metadata.json -->
+					</div>
+					<!-- TO DO update pub_date in metadata.json -->
+					<p id="pubdate"></p>
+				</div>
+				<div class="story">
+
+					
+
+
+					<p>Sam is open about his struggles on his podcast.</p>
+					<p>In the very first episode, he outlines the &ldquo;negative&rdquo; aspects of his personality: bluntness, obsessiveness, loudness. That&rsquo;s what makes the episodes real and raw.</p>
+					<p>When listening to the podcast, the volume has to be turned down. Sam almost shouts into the microphone; his nose brushes against its pop filter.</p>
+					<p>In the fourth episode, he discusses how difficult it can be for those with autism to find love. In the past, Sam said, girls have even run away from him.</p>
+					<p>&ldquo;Everybody wants love,&rdquo; he says. &ldquo;Even me. I want love. Now, ladies, I am single, so hit me up if you wish.&rdquo;</p>
+					<p>Across the 238 podcast episodes of &ldquo;Autism Rocks and Rolls&rdquo; released since 2019, he&rsquo;s talked to professional wrestlers, "America&rsquo;s Got Talent" contestants, comedians and actresses. But his mom, Gina Mitchell, likes the episodes where he talks to someone on the autism spectrum the most.</p>
+					<p>&ldquo;Those are the most powerful,&rdquo; she said.</p>
+
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-0'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<p class='section-break'>•••</p>
+
+
+
+					<p>Sam is 23 now, but he was diagnosed with autism when he was 4. At 2 or 3, his dad Doug Mitchell said he would line things up in a specific order and rearrange them if they were moved out of place. He didn&rsquo;t like the way certain items felt, like clothing tags, and he never looked at the camera for a photo.</p>
+					<p>He and his family live in Owensburg, a small community in southwest Indiana, and he was diagnosed through his school in Greene County. Gina, a teacher at Eastern Greene Middle School, said she had some students with autism, so it wasn&rsquo;t a complete shock to her. Still, she wasn&rsquo;t trained in working with children who had autism.</p>
+					<p>&ldquo;You have, kind of, a vision of what your children are going to be and what they&rsquo;re going to do,&rdquo; Gina said. &ldquo;We learned about [autism] quickly, and because we knew we had to.&rdquo;</p>
+					<p>Sam&rsquo;s parents read books and spoke to his pediatrician, but Doug said it was hard to find help and people to talk to about their experiences. That&rsquo;s why Sam&rsquo;s parents think his podcast is so important &mdash; it offers an avenue for an understanding of autism Doug and Gina didn&rsquo;t have.</p>
+					<p>Connecting with others wasn&rsquo;t always easy for Sam as he grew up. So, when he joined Eastern Greene High School&rsquo;s media club at 16, Gina said she was excited for him to find friends with common interests.</p>
+					<p>In the club, he recorded episodes of "Thundercast," a school-sponsored podcast where the hosts interviewed teachers, students, bus drivers and cafeteria staff. Sam loved it so much that he thought he&rsquo;d make his own show.</p>
+					<p>&ldquo;When he came home and said, &lsquo;Hey, I&rsquo;m going to start a podcast&rsquo;, we didn&rsquo;t know what that was,&rdquo; Gina said. "We just got him, you know, what he needed.&rdquo;</p>
+					<p>For Sam&rsquo;s 16th birthday, his parents gifted him a microphone and soundboard &mdash; equipment he still uses to record his podcast today. The show was initially intended to be a travel podcast. Sam figured it would be great for about 10 episodes, but he wouldn&rsquo;t have enough material for anything more.</p>
+					<p>&ldquo;So I thought, &lsquo;let&rsquo;s think of a topic that&rsquo;s gonna stick around,&rsquo;&rdquo; Sam said. &ldquo;I have autism. I think that could &mdash; that talk could &mdash; stick around for a long while.&rdquo;</p>
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-1'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<p class='section-break'>•••</p>
+
+
+
+
+					<p>One November evening, Sam interviews Leila Farshchian, a behavior analyst, over Zoom. He&rsquo;s lucky his microphone doesn&rsquo;t pick up the chirping fire alarm and blaring television in the next room.</p>
+					<p>He leans over a wooden table in his living room to record the podcast, his knees bumping up against its surface. Sam has to sit on a chair that&rsquo;s too tall for the table, or else the camera will only pick up his forehead.</p>
+					<p>The setup is nestled between a pinball machine and a loveseat draped with a rainbow puzzle-piece quilt.</p>
+
+
+
+					<!-- Quilt image -->
+					<figure class="wide-right">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/a3221c2f-98b4-450b-a4a8-c6256e64cd6a.original.jpg" alt="A colorful puzzle piece quilt with words including 'blunt', 'cool', and 'unique'">
+						<figcaption>A patterned "Autism Rocks and Rolls" puzzle piece blanket is draped across a chair Nov. 19, 2025, in Mitchell's Owensburg, Indiana, home. The podcast evolved into a nonprofit as it grew.</figcaption>
+					</figure>
+
+
+
+
+					<p>The walls are decorated with pictures of him and his dad as they proudly display glistening fish and the occasional framed newspaper clipping. On the table in front of him are pages of typed scripts and questions. He asks variations of the same five questions to each person he interviews.</p>
+					<p>&ldquo;How do you think a brain with autism operates?&rdquo; Sam asks the dark-haired woman on the other side of the Zoom call. Farshchian&rsquo;s not autistic, but she frequently works with those with autism and special needs.</p>
+					<p>&ldquo;It&rsquo;s really hard for me to box it in,&rdquo; Farshchian responds. &ldquo;One brain, one individual with autism is going to be just one brain, and there&rsquo;s millions of different variations.&rdquo;</p>
+
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-2'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p class='section-break'>•••</p>
+
+
+
+
+					<p>The name of the podcast stemmed from his autism and his love of rock and roll bands like AC/DC, Mötley Crüe and Nickelback. He said he loves rock because it helps him express and cope with anger in a healthy way &mdash; something he used to struggle with when he was younger.</p>
+					<p>His favorite song is Hinder&rsquo;s cover of Steppenwolf&rsquo;s &ldquo;Born to be Wild.&rdquo; He said he connects with the song because it&rsquo;s about living a free-spirited life and not caring about what others think of him.</p>
+					<p>On Oct. 27, 2019, he published a 37-minute-long first episode, titled &ldquo;101: Sam&rsquo;s Stories.&rdquo; Sam spoke about his hobbies, what he liked and didn&rsquo;t like. He talked about how he struggled to socialize with others growing up, and how the kids in eighth grade only interacted with him because his mom taught the grade.</p>
+					<p>&ldquo;From K through seventh grade, I could not fit in,&rdquo; Sam said in the podcast. &ldquo;People thought I was socially awkward; they didn&rsquo;t know how to take me well, they just pushed me, and I felt excluded. Majorly.&rdquo;</p>
+					<p>Before seventh grade was a difficult time for Sam, he said.</p>
+					<p>&ldquo;I felt like people didn&rsquo;t care,&rdquo; He said. &ldquo;... back then, if I had a funeral, probably no one would be there but my family.&rdquo;</p>
+					<p>Sam said freshman year was &ldquo;the worst year of them all&rdquo; because he felt like everyone &mdash; his peers, teachers &mdash; didn&rsquo;t understand him. He felt depressed.</p>
+					<p>&ldquo;I thought no one cared. I thought I was like an insect,&rdquo; Sam said.</p>
+					<p>Like when Thanos choked Spider-Man in "Avengers: Infinity War" and called him an insect, &ldquo;That&rsquo;s how I felt,&rdquo; Sam said.</p>
+					<p>He talked about how the summer after freshman year, he did some self-reflection, trying to think about how social lives worked. He said he tried to shift from being a people-pleaser to not caring what others thought of him anymore.</p>
+					<p>&ldquo;If you hate me, hate me,&rdquo; he said. &ldquo;I don&rsquo;t care about it anymore.&rdquo;</p>
+					<p>The podcast climbed from a couple of downloads to a few hundred. Now, just the first episode has been downloaded 746 times on Podbean, a podcasting platform. He&rsquo;s now also on Spotify and Apple Podcasts.</p>
+					<p>The podcast garnered hundreds and then thousands of downloads. Sam kept recording episodes, discussing everything from making friends and getting the girl of your dreams to advice for parents on how to handle a meltdown. He interviewed his parents and then eventually others &mdash; the first openly autistic NASCAR driver, autism advocates, television stars.</p>
+
+
+
+					<!-- Voiceover -->
+					<figure class="wide-left">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/c0708ba5-576b-48d0-b9e0-77e5fb8118d6.original.jpg" alt="Someone sitting at a desk recording audio. Audio waveforms are visible on the screen in front of him.">
+						<figcaption>Sam Mitchell records the voiceover intro to his podcast Nov. 19, 2025, at his Owensburg, Indiana, home. He received podcast equipment for his 16th birthday.</figcaption>
+					</figure>
+
+
+
+
+					<p>His &ldquo;biggest guest of them all&rdquo; was autism and livestock advocate Temple Grandin. She&rsquo;s written a slew of books about autism and animal behavior and even had a <a href="https://www.imdb.com/title/tt1278469/">biopic</a> made about her life in 2010. She joined him on his 23rd episode, which was released almost a year after his first recording.</p>
+					<p>They talked about their mutual struggles with algebra, hating itchy clothes and learning how to take turns.</p>
+					<p>&ldquo;I had to learn that I couldn&rsquo;t just keep talking on and on and on about carnival rides when I was in high school, because that bored other kids,&rdquo; Grandin said.</p>
+					<p>&ldquo;It&rsquo;s really hard,&rdquo; Sam said. &ldquo;If it was up to me, I could talk about WWE and professional wrestling.&rdquo;</p>
+					<p>In Sam&rsquo;s eyes, doctors can give facts about autism, but they can&rsquo;t speak to why someone is having a meltdown. That&rsquo;s what makes "Autism Rocks and Rolls" unique.</p>
+					<p>&ldquo;im so proud of you. U r amazing,&rdquo; the comments on the site read.</p>
+					<p>&ldquo;You&rsquo;re awesome, Sam! Glad to hear you&rsquo;re doing so well!&rdquo; another commenter said,</p>
+					<p>&ldquo;Autism Rocks and Rolls" was born.</p>
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-3'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<p class='section-break'>•••</p>
+
+
+
+
+					<p>As "Autism Rocks and Rolls&rdquo; grew, it evolved into a nonprofit in 2020, complete with a six-member board that oversees the organization&rsquo;s finances and an annual gala. The nonprofit pays Sam $1,000 monthly to record the podcast, which releases a new episode every 16 days.</p>
+					<p>The nonprofit has begun providing training for first responders and human resources. Gina said they realized people in the emergency field didn&rsquo;t receive much training on how to interact with those with autism.</p>
+					<p>&ldquo;We recognized that as a problem,&rdquo; Gina said. &ldquo;And thought, 'this is something, like this is a direction that we can go into.'&rdquo;</p>
+					<p>Sam and Gina go in and directly speak with officers, but they also have a manual. They most recently trained the police department, fire department, emergency workers and dispatchers in Bicknell, Indiana.</p>
+					<p>The board also pays for Sam to attend two speaking events annually. He&rsquo;s traveled to Canada, Washington D.C., Florida and, most recently, a special education conference in Wisconsin.</p>
+					<p>Samuel Hutchins met Gina and Sam on Facebook. Hutchins has a podcast of his own, "Xavier's Journey,&rdquo; about his own son, who had autism and passed away due to an injury sustained from a seizure. There, Hutchins talks about autism education and awareness.</p>
+					<p>&ldquo;[Sam] still is knocking it out of the park,&rdquo; Hutchins said. &ldquo;Because he&rsquo;s knocking down those barriers, and it&rsquo;s inspiring people like me and other people around to take a different look at what autism is.&rdquo;</p>
+
+
+					<!-- Shirts nad articles diptyvh -->
+					<div class="diptych">
+						<figure class="sm-image">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/35d0e36f-5be9-4b1d-833f-3e0a137c59d2.original.jpg" alt="Graphic T-shirts in a plastic tub">
+							<figcaption>"Autism Rocks and Rolls" T-shirts sit in a plastic tube in the basement of Mitchell's home Nov. 19, 2025, in Owensburg, Indiana. The infinity symbol represents the limitless possibilities that exist for those with autism.</figcaption>
+						</figure>
+						<figure class="sm-image">
+							<img src="https://s3.amazonaws.com/snwceomedia/ids/3d7c91f5-fad3-4c90-905d-be5029a211cf.original.jpg" alt="Newspaper clippings in a black photo frame">
+							<figcaption>A clipping from a newspaper article about Sam Mitchell is framed on his wall Nov. 19, 2025, in his Owensburg, Indiana, home. He was interviewed for the story while in high school.</figcaption>
+						</figure>
+					</div>
+
+
+					<p class='section-break'>•••</p>
+
+
+
+
+					<p>Sam graduated from Vincennes University in May with his associate&rsquo;s degree in broadcasting. He continued to produce the podcast during high school and college, despite being a full-time student.</p>
+					<p>He&rsquo;s now working part-time as a board operator in Bloomington for IU men&rsquo;s and women&rsquo;s basketball and is thinking about moving out of his parents&rsquo; house.</p>
+					<p>&ldquo;We&rsquo;re so proud of him,&rdquo; Gina said. &ldquo;You just sit back and think, &lsquo;wow, like he did it, like we did it&rsquo;, you know, it took a village, but we are very proud of him.&rdquo;</p>
+					<p>Sam said he would be open to pursuing the podcast full-time, but he&rsquo;s just continuing to produce new episodes for now. The podcast reached 23,800 downloads on Podbean as of Jan. 13.</p>
+					<p>&ldquo;There were many times, I know, as he grew up, he didn&rsquo;t feel like he had a voice,&rdquo; Gina said. &ldquo;And so I always say, &lsquo;well, they&rsquo;re listening now.&rsquo;&rdquo;</p>
+					<p>In the fourth episode of his podcast, Sam offers his strategies to get the &ldquo;girl of your dreams.&rdquo; Women love muscles, he says. Women love men who play guitar. Women love men who have good manners and can cook.</p>
+					<p>&ldquo;Another idea you could do is save up money, because women love men who are rich and have that cha-ching cha-ching,&rdquo; Sam said. &ldquo;Make sure you also have a good personality, too.&rdquo;</p>
+					<p>Sam said his strategy to find love was to have a sense of humor.</p>
+					<p>&ldquo;I&rsquo;m a pretty funny guy.&rdquo; he said</p>
+					<p>He said he wants to fall in love and get married eventually, though he gets nervous around women he finds beautiful.</p>
+					<p>&ldquo;It would be nice,&rdquo; he said. &ldquo;To have companionship.&rdquo;</p>
+					<p>In today&rsquo;s political climate, he said, there's a lot of misinformation about what autism is. In September, the Trump administration suggested a link between Tylenol taken by pregnant women and autism, which was <a href="https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy">criticized by experts</a> for its questionable scientific backing.</p>
+
+
+
+					<figure class="wide-right">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/65ff34e2-ae9b-4a29-b7e0-58e6e040e0a9.original.jpg" alt="A person up close speaking into a microphone with a pop filter">
+						<figcaption>Sam Mitchell edits his voice track for his podcast Nov. 19, 2025, at his home in Owensburg, Indiana. He started &ldquo;Autism Rocks and Rolls&rdquo; in high school.</figcaption>
+					</figure>   
+
+
+
+
+					<p>Only autistic people know what it&rsquo;s really like to have autism, Sam said.</p>
+					<p>&ldquo;They know because they live it,&rdquo; he said.</p>
+					<p>It took him a while to realize who he was, as Sam sums it up in his podcast.</p>
+					<p>&ldquo;I now know who I am. I am one friendly human being. I am one that fights for my rights. I am one annoying turd sometimes; I am a guy who likes music; I am a guy who likes to play pinball.&rdquo;</p>
+					<p>There&rsquo;s a few seconds of pause in the audio, like he&rsquo;s trying to find the right words.</p>
+					<p>&ldquo;And I am Sam Mitchell.&rdquo;</p>
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-4'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<!-- small bios -->
+					<div class="author-bios">
+						<!-- update bios in metadata.json -->
+						<!-- delete this div if you don't want them to show up -->
+					</div>
+
+					<p class="donate">
+						<em>Like what you're reading?</em><br>
+						Support independent, award-winning student journalism.
+						<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+					</p>
+				</div>
+			</article>
+
+		</main>
+
+		<footer>
+
+			<div class="footer-row">
+				<!-- IDS LOGO SVG -->
+				<div class="logo">
+					<a href="https://idsnews.com">
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+						<span class="show-desktop"> | Indiana Daily Student</span>
+					</a>
+				</div>
+				<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+					SUBSCRIBE
+				</a>
+				<div class="socials">
+					<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                       target="_blank"><i class="fab fa-spotify"></i></a>
+				</div>
+			</div>
+			<div class="links">
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+				<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+				<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+				<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                      target="_blank">Advertising</a></p>
+				<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+			</div>
+			<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+		</footer>
+
+		<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/ads.js"></script>
+		<script src="js/ids.js"></script>
+		<script src="js/metadata.js"></script>
+	</body>
+
+</html>
