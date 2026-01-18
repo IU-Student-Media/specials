@@ -1,8 +1,8 @@
 const data = {
     "url": "podcast-autism-voice-indiana",
-    "slug": "Autisim Rocks and Rolls",
+    "slug": "Autism Rocks and Rolls",
     "headline": "He felt he had no voice. Now, thousands have listened to his podcast on autism",
-    "title": "Autisim Rocks and Rolls",
+    "title": "Autism Rocks and Rolls",
     "pub_date": "Jan. 17, 2026",
     "bylines": {
         "Story and photos by": {
