@@ -5,7 +5,7 @@ const data = {
     "title": "Autisim Rocks and Rolls",
     "pub_date": "Jan. 17, 2026",
     "bylines": {
-        "Story and Photos By": {
+        "Story and photos by": {
             "name": "Natalia Nelson",
             "email": "nelsonnb@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/62461a4c-7e6f-4ec8-8d2f-65011ee5c6c0.original.jpg",
@@ -23,7 +23,7 @@ const data = {
 }
 
 // bylines
-const byline_types = ["Story and Photos By", "By", "Photos by", "Design and development by", "Graphics by"]
+const byline_types = ["Story and photos by", "By", "Photos by", "Design and development by", "Graphics by"]
 let bylines_html = '';
 let bios_html = '';
 
