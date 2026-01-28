@@ -3,7 +3,7 @@ const data = {
     "slug": "Diving",
     "headline": "Carson Tyler and the craft of falling gracefully",
     "title": "Carson Tyler Profile",
-    "pub_date": "Jan. 28, 2026",
+    "pub_date": "Jan. 27, 2026",
     "bylines": {
         "By": {
             "name": "Mateo Fuentes-Rohwer",
