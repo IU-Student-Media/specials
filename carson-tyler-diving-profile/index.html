@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Title (pulls from metadata.json) -->
+		<title> Hello</title>
+
+		<!-- favicon -->
+		<link rel="SHORTCUT ICON"
+			  href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+		<!-- CSS stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+		<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+		<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+		<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+		<!-- SOCIAL CARDS — Make sure to update!! -->
+		<meta property="og:url" content="http://specials.idsnews.com/carson-tyler-diving-profile" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Carson Tyler and the craft of falling gracefully" /> <!-- TODO: headline -->
+		<meta property="og:description" content="Tyler won five NCAA titles with Indiana and competed at the 2024 Paris Olympics." /> <!-- TODO: abstract -->
+		<meta property="og:site_name" content="IDS News">
+		<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/cfb03862-34a0-436a-b641-e50e1a10a7c1.sized-1000x1000.jpg" /> <!-- TODO: link to dominant image -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@idsnews">
+		<meta name="twitter:creator" content="@idsnews">
+		<meta name="twitter:title" content="Carson Tyler and the craft of falling gracefully"> <!-- TODO: headline -->
+		<meta name="twitter:description" content="Tyler won five NCAA titles with Indiana and competed at the 2024 Paris Olympics."> <!-- TODO: abstract -->
+		<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/cfb03862-34a0-436a-b641-e50e1a10a7c1.sized-1000x1000.jpg"> <!-- TODO: link to dominant image -->
+
+		<!-- START Ad content: this goes in the head content -->
+		<!-- don't mess with this — it will work all on it's own :-) -->
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+		<script>
+         var googletag = googletag || {};
+         googletag.cmd = googletag.cmd || [];
+		</script>
+		<script>
+         googletag.cmd.push(function () {
+             //all other leaderboards
+             var mapping1 = googletag.sizeMapping()
+									 .addSize([768, 0], [728, 90]) // Desktops and Tablets
+									 .addSize([0, 0], [320, 50]) // Mobile devices
+									 .build();
+             googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+             googletag.pubads().enableSingleRequest();
+             googletag.pubads().collapseEmptyDivs();
+             googletag.enableServices();
+         });
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager -->
+		<!-- (also don't have to worry about this at all) -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+					style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script src="js/googleTagManager.js"></script>
+
+		<div class="helper"></div>
+
+		<!--Header-->
+		<header>
+
+			<!-- Transparent navbar -->
+			<nav>
+				<ul>
+					<li class="logo">
+						<a href="https://www.idsnews.com">
+							<!-- IDS LOGO SVG -->
+							<svg viewBox="0 0 163.17 68.85">
+								<path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+								<path style="fill:white;"
+									  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+								<path style="fill:white;"
+									  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+							</svg>
+						</a>
+						<span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+					</li>
+					<li class="toggle">
+						<i class="fas fa-bars fa-lg"></i>
+					</li>
+					<li id="socials" class="item">
+						<!-- links generate automatically from metadata.json -->
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Headline, subhed -->
+			<!-- feel free to change this up — you don't need it to have data scroll speed, 
+				 doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+			<div class="headline-container">
+				<h1 data-scroll-speed="2">&lsquo;Pursuit of perfection&rsquo;</h1>
+				<h2 data-scroll-speed="3">Carson Tyler and the craft of falling gracefully</h2>
+			</div>
+
+		</header>
+
+		<!-- main article -->
+		<main>
+			<p class="caption header-caption">Carson Tyler exhales before attempting a dive during practice Jan. 16, 2026, at Counsilman-Billingsley Aquatics Center. His last competition with IU was in spring 2025 but still practices under IU head diving coach Drew Johansen.</p>
+			<article>
+				<div class="bylines">
+					<div id="bylines">
+						<!-- update bylines in metadata.json -->
+					</div>
+					<!-- TO DO update pub_date in metadata.json -->
+					<p id="pubdate"></p>
+				</div>
+				<div class="story">
+					<p>Carson Tyler climbs the stairs to the highest platform, 10 meters above the blue shimmering water. Just about 32 feet. Three stories.</p>
+					<p>He takes five deep breaths. He visualizes the motions of the dive. Then, he walks toward the edge.</p>
+					<p>Legends surround him on the walls of the Counsilman-Billingsley Aquatic Center. Giant 16-feet tall posters showcase IU aquatic athletes through the years. Nine-time Olympic Gold medalist swimmer Mark Spitz smiles. Two-time Olympic silver medalist diver Michael Hixon stands tall in preparation. Mark Lenzi raises his hand in celebration of his Olympic diving bronze medal.</p>
+					<figure class="wide-right">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/d88e4b25-38b3-4f41-a912-189292fcbab6.sized-1000x1000.jpg" alt="A diver falls towards the water">
+						<figcaption>Other divers watch as Carson Tyler attempts to perfect a dive during the team’s practice Jan. 16, 2026, inside the Counsilman-Billingsley Aquatics Center. Tyler spent hours as a child watching videos of divers and studying their techniques.</figcaption>
+					</figure>
+					<p>When he first arrived at IU, Carson looked up at Hixon and Lenzi daily. It was never a sense of pressure that accompanied those looks &mdash; simply motivation, knowing the two Olympians once represented the same historic program.</p>
+
+					<p>Carson turns his back to the water and crouches. His toes are glued to the platform while his heels dangle over the edge. Balance is everything. One slip would send him tumbling 32 feet.</p>
+
+					<p>The name of the dive Carson is working on today is a mouthful &mdash; armstand back double two and a half twists. He&rsquo;s practiced it since 2023, and it was one of the six dives he used on the platform event for the 2024 Paris Olympics. It&rsquo;s likely to be included again if he qualifies for the 2028 Los Angeles Olympics. It&rsquo;s the second highest degree of difficulty on his list of dives.</p>
+					<p>Carson places his hands onto the rough-tex, a black and grippy material on each platform, and lifts his legs slowly until he&rsquo;s upside down in a handstand. His toes point to the ceiling after eight seconds, stretching every last bit of his frame.</p>
+					<p>One, two, three.</p>
+					<p>He tucks his head, pushes off and falls toward the deep blue water.</p>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-0'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<p class='section-break'>•••</p>
+
+					
+					<p>Diving is falling gracefully. It&rsquo;s a sport of elegance and precision, with no room for error.</p>
+					<p>In the time a diver takes off from the 10-meter platform, only two seconds pass before they hit the water. All the divers accomplish &mdash; their backflips, frontflips, somersaults, twists &mdash; occur in those two seconds. Each dive is a piece of art, a feat of impossibility that begins and ends in the blink of an eye. It&rsquo;s a pact with gravity that allows room for defiance.</p>
+					<p>Few people dare to dream of pursuing this profession.</p>
+					<p>Carson has.</p>
+					<p>He&rsquo;s a five-time NCAA Diving Champion. He&rsquo;s only the third American to qualify for both the 3-meter springboard and 10-meter platform events at the Olympics.</p>
+					<p>And he fails. Over and over.</p>
+					<p>It&rsquo;s all part of what Carson deems his &ldquo;pursuit of perfection.&rdquo; He believes perfection is impossible in diving, although judges have awarded him a perfect 10 dive once before, but it&rsquo;s still what he&rsquo;s after.</p>
+					<p>&ldquo;I think the process of trying to get there is really what the sport is about,&rdquo; Carson said. &ldquo;Just the journey rather than the destination.&rdquo;</p>
+					<p>Carson is an extraordinary diver, and his coaches, past and present, are quick to share that. Former Moss Farms Flying Tigers, Carson&rsquo;s club diving team growing up, and current University of Auburn head coach John Fox thinks there&rsquo;s no ceiling for Carson. Indiana and Team USA head diving coach Drew Johansen believes Carson is capable of beating any diver in the world.</p>
+					<p>&ldquo;What I&rsquo;ve learned is I can&rsquo;t ever underestimate him,&rdquo; Johansen said. &ldquo;And if he believes he can do it, I have to believe he can do it because he&rsquo;s done things that I didn&rsquo;t think could be done.&rdquo;</p>
+					<p>Carson began to dream of falling gracefully when he was 5 years old in Moultrie, Georgia. That summer, he spent a few weeks taking tennis lessons, but the diving well next to the tennis courts interested him far more. He told his parents, Laura and Charlton, tennis wasn&rsquo;t his sport. Instead, he was infatuated with the divers.</p>
+					<p>While his sisters continued their tennis lessons, Carson watched the divers intently. This was his sport.</p>
+					<p>&ldquo;He was usually a rambunctious child that ran around and could not contain his energy,&rdquo; Laura said, &ldquo;but he sat there on those bleachers and watched with awe at those kids doing their diving.&rdquo;</p>
+					<p>Carson started diving lessons later that summer in August. He spent hours in front of the TV watching videos of divers, learning their names and studying their techniques. He became invested in backyard trampoline tricks and flips, starting an Instagram account to make edits of them.</p>
+					<p>Coaches began approaching Laura when Carson was 11 and 12. They claimed he had a real future in the sport.</p>
+					<p>The 2015 junior national diving competition was where Carson first entered John Fox&rsquo;s radar. Fox was in Orlando for the first part of his interview for the head coaching position of Moss Farms Diving.</p>
+					<p>He immediately zeroed in on Carson.</p>
+					<p>&ldquo;I remember thinking two things: &lsquo;Man, this kid is really talented, and he has no idea,&rsquo;&rdquo; Fox said.</p>
+					<p>It was the quickness, speed and air awareness that stood out to Fox. But it was also the intellect, which was on full display once Fox realized Carson was joking around. It still makes Fox laugh, remembering 11-year-old Carson acting &ldquo;bored&rdquo; and &ldquo;getting into mischief&rdquo; at a national competition.</p>
+					<p>Carson finished ninth in the one-meter competition, sixth in the three-meter and 12th on the 10-meter platform. But his future coach had seen all he needed to.</p>
+					<p>Fox soon took on the assistant coach role and eventually became the head coach of Moss Farms in 2018. From early on in their relationship, Fox made it clear he believed Carson had potential to be one of the best in the world, even if Carson himself didn&rsquo;t necessarily see it.</p>
+					<p>Fox would say, &ldquo;I think that you could beat the Chinese,&rdquo; <a href="https://www.forbes.com/sites/caseymurphy/2024/08/12/why-china-dominates-diving-unpacking-their-olympic-track-record/" target="_blank">perennially</a> the best divers in the world.</p>
+					<p>It wasn&rsquo;t clear whether the tactic worked for Carson. But Fox cared about instilling self-belief into his diver.</p>
+					<p>Even still, the duo experienced plenty of turbulence. Before his first year at IU, 16-year-old Carson competed at the 2021 U.S. Olympic Diving Trials, one of the last times Fox coached him. Carson was scheduled for three events: the men&rsquo;s three-meter synchronized, three-meter individual and 10-meter individual.</p>
+					<p>Fox entered the competition believing it would be necessary exposure on the national stage for the teen, experiences that would help him at the 2024 Olympic trials. But once the two walked into the pool, they realized Carson was the best three-meter individual diver at the event.</p>
+					<p>It had not dawned on Fox that Carson could reach the 2021 Tokyo Olympics. Yet they stuck to the schedule, keeping him in all three events.</p>
+					<p>By the time the three-meter individual event took place, Carson was tired. He didn&rsquo;t make the semifinals.</p>
+					<p>&ldquo;I remember for three years, I thought I made the wrong choice in diving him in so many events,&rdquo; Fox said. &ldquo;But again, he learned from his failure.&rdquo;</p>
+					<p>Carson doesn&rsquo;t regret the decision at all. And his success at the 2024 Olympic Trials marked the first time since 2000 that Team USA sent a diver for both the three-meter and platform competitions.</p>
+					<p>The national stage was no match for him &mdash; and neither was exhaustion.</p>
+					<figure class="lg-image">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/9c2fe31d-c71c-4f81-9021-54142d6393a5.sized-1000x1000.jpg" alt="A diver emerges from the water and shakes water out of his hair.">
+						<figcaption>Carson Tyler whips his head after surfacing from a dive during a practice Jan. 22, 2026, inside the Counsilman-Billingsley Aquatics Center's diving pool. Tyler was only the third American to qualify for both the 3-meter springboard and 10-meter platform events at the Olympics.</figcaption>
+					</figure>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-1'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p class='section-break'>•••</p>
+
+					
+					<p>On this Monday in November, like he does every day, Carson starts on the lower platforms. He begins one meter above the water. He&rsquo;s obstructed from the photos of Lenzi and Hixon, but they look over him all the same.</p>
+					<p>He crouches and pushes into the handstand. His legs stick straight into the air, his toes pointing to the ceiling, and he pushes off his hands, falling into the water.</p>
+					<p>Carson rarely starts his practice on the top platform. He works his way up from the bottom and progressively completes his dive. Each platform includes a different task for a different part of the dive, whether it be the kip, his twists or his somersaults and landing.</p>
+					<p>He moves to the third platform, five meters above the pool, after his one-meter dive. His beginning setup is all the same, but this time he works in the somersaults once he leaves the platform. His focus is on generating enough power on the initial kip, which is the aspect of the armstand back double two and a half twists that Carson&rsquo;s working on improving the most.</p>
+					<p>The motions aren&rsquo;t perfect, but Carson doesn&rsquo;t expect them to be. Johansen gives some instructions, centering the corrections on his hands and keeping firm.</p>
+					<p>Next is the fourth platform at 7.5 meters. Now come the twists. It&rsquo;s still not the full dive since he lands on his feet instead of hands-first, but his process is longer. It takes Carson 10 seconds from when his feet leave the platform to engage the handstand to when he pushes off. He quickly twists, which is his primary focus at this level &mdash; making sure his twist is fast enough to give him time to look at the water.</p>
+					<p>Carson&rsquo;s entry into the water brings a big splash. He consults the tablet behind the diving tower, checking over his form.</p>
+
+					<p>It&rsquo;s one of the hardest dives on his list. Getting comfortable with two and a half twists instead of one and a half was the main issue, so Carson used a belt rig system to become used to the motions. He would start in the handstand position on the trampoline next to the diving well, pushing off just as he would on the platform. Johansen stood next to him, holding a handle connected to a rope linking to Carson&rsquo;s belt rig.</p>
+					<p>After the initial push off, Johansen jumped, using his body weight to pull the handle down and give Carson a long enough time to go through the twisting motions of the dive.</p>
+					<p>Carson believes he&rsquo;s made significant strides with the dive since the 2024 Paris Olympics. His mindset used to be centered on his legs to get to the somersault, but now he focuses more on his hands. Strength training in his gym workouts has helped with the adjustment, giving him enough time in the air to make the necessary twists and flips.</p>
+					<p>But the dive is still a process.</p>
+					<p>He almost always views a replay of his dive on the TV screens or tablet behind the pool. It&rsquo;s all part of his approach to diving, one centered on constantly learning.</p>
+					<p>&ldquo;I like to investigate and know why we should be doing things a certain way,&rdquo; Carson said. &ldquo;And I don&rsquo;t really like just agreeing with something and moving on, I really wanna know, like, how is this gonna help me? Why?&rdquo;</p>
+					<p>The tablet gives each diver a rating for their dives. It&rsquo;s a golf score &mdash; eagle, birdie, par, bogey &mdash; that the coaches award and a manager inputs. Divers view the dive with a rating awarded to each one, which gives a form of live feedback beyond the couple seconds of instruction they get when they land.</p>
+					<p>As he climbs the stairs to the 10-meter platform, Carson processes the feedback he received and the replay on the tablet. His ascent is methodical &mdash; not too fast and not too slow.</p>
+					<p>For Carson, it&rsquo;s always measured.</p>
+					<figure class="lg-image">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/d2c85c1c-6602-478c-95bd-2d34ad0c1db2.sized-1000x1000.jpg" alt="A diver looks intently">
+						<figcaption>Carson Tyler wipes his hands with a towel while watching another diver execute the dive during a practice Jan. 22, 2026, in the Counsilman-Billingsley Aquatics Center. Tyler has competed at national and world events, as well as the 2024 Paris Olympics.</figcaption>
+					</figure>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-2'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p class='section-break'>•••</p>
+
+
+					<p>Carson had never been to the Middle East, but only weeks into the second semester of his junior season, he was representing Team USA in Doha, Qatar.</p>
+					<p>It was a qualifying meet for the 2024 Paris Olympics. Carson and his synchronized diving partner, Josh Hedberg, were competing in the 10-meter synchro event, aiming to finish in the top eight so the U.S. could take part in the event in Paris.</p>
+					<p>The pressure was not something Carson had experienced before. He was fighting for everyone hoping to represent the U.S. in the event, not just himself. Yet he wasn&rsquo;t nervous come time for the diving. He just felt flat.</p>
+					<p>It showed.</p>
+					<p>Carson sailed on his first dive, landing on his back, and he never recovered. He and Hedberg finished 14th.</p>
+					<p>But there was no time for complacency. Returning to the United States brought Big Ten Championships, then NCAA Championships, then Olympic Trials, then the Olympics. The failure in Doha motivated Carson, who won the three-meter and platform events at both the Big Ten and NCAA Championships, along with a third-place finish in the one-meter at the NCAAs.</p>
+					<p>His success continued to the Olympic trials, where he made history. Yet as the days went by, the nerves started creeping in, and after a team camp in Berlin, it was time for Paris.</p>
+					<p>The diving events came in the final days of the games. Carson reached the finals of the three-meter, but the difficulty of his dives was not nearly as high as his competitors.</p>
+					<p>He finished fourth, one spot off a medal, but he was happy with the performance overall.</p>
+					<p>That night, riding the emotions of his first Olympic final, Carson struggled to sleep on his &ldquo;effectively&rdquo; cardboard bed in the Olympic Village ahead of the 10-meter event. It wasn&rsquo;t his first sleepless night before a major competition, but his breathing techniques weren&rsquo;t working.</p>
+					<p>&ldquo;I probably should have just resulted to melatonin or something,&rdquo; Carson said. &ldquo;Probably would have been better.&rdquo;</p>
+					<p>Carson finished 19th in the preliminary stage. He needed to be 18th or better to move to the semifinals. Just three points separated him from the threshold.</p>
+					<p>His quest for an Olympic medal was over.</p>
+					<p>There wasn&rsquo;t one moment or one dive that made the performance bad, Carson said. It was just &ldquo;mediocre.&rdquo; He believed that had he made the semifinals, there was a real chance of medaling.</p>
+					<p>Instead, Carson spent the final day with his family in Paris, touring the city and getting breakfast and lunch together. He needed time outside of the Village to get his mind off the disappointment, and finding support from his family helped.</p>
+					<p>But Carson also wanted to redirect the failure into motivation for his next goal &mdash; sweeping the NCAA Championships in his senior season.</p>
+					<p>The feat had never been done since the platform event became an official competition in 1990. Yet after winning two of the three championships in 2024, plus a third-place finish, Carson believed he was capable of achieving the goal.</p>
+					<p>The sweep defined all of his training up until nationals. The expectations of others weighed on him, but no more so than his own.</p>
+					<p>&ldquo;I can&rsquo;t say I did that well, staying grounded, you know?&rdquo; Carson chuckled.</p>
+					<p>Carson finished 10th in the prelims of the one-meter at nationals. He was &ldquo;completely devastated.&rdquo; It was just like the Olympics all over again.</p>
+					<p>Laura, watching from the sidelines, texted Carson a message &mdash; &ldquo;Get out of your head right this minute.&rdquo; She knew the dives she was watching weren&rsquo;t &ldquo;Carson dives.&rdquo;</p>
+					<p>Carson won the B final the next day, securing his ninth-place finish, but it didn&rsquo;t help with the harsh reality.</p>
+					<p>&ldquo;I think that was one of my biggest letdowns in a while,&rdquo; Carson said, &ldquo;even more so than the Olympics.&rdquo;</p>
+					<p>This time, however, Carson watched as his teammate Quinn Henninger took home first place. It was a consolation the Olympics didn&rsquo;t bring him.</p>
+					<p>Johansen thinks the disappointment got Carson&rsquo;s mind right for the next two days of competing, forcing him to redirect the failure into motivation. In turn, he made NCAA diving history.</p>
+					<p>Carson repeated as champion in the three-meter and platform events. He became the first diver to win three-straight platform NCAA Championships. His five total NCAA Championships ranked second in men&rsquo;s diving history.</p>
+					<p>It was just another example &mdash; Carson is driven by failure.</p>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-3'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+					<p class='section-break'>•••</p>
+
+
+					<p>Carson is back at the edge of the platform, holding his handstand, toes pointing to the ceiling.</p>
+					<p>One, two, three.</p>
+					<p>He launches himself up and out over the shining water.</p>
+					<figure class="lg-image">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/7c575b10-b35f-4b02-ae30-8bc2b96effc3.sized-1000x1000.jpg" alt="A diver jumping off a platform and beginning to twist in the air">
+						<figcaption>Carson Tyler starts to jump off a platform during the diving team’s practice Jan. 16, 2026, inside the Counsilman-Billingsley Aquatics Center. Tyler competed at the U.S. Olympic Diving Trials in 2021 when he was 16.</figcaption>
+					</figure>
+					<p>The twists come first, the somersaults second. He lands in the water on his hands, two seconds after taking off from 10 meters above.</p>
+					<p>A small splash accompanies Carson&rsquo;s entry. Hixon and Lenzi watch on.</p>
+					<p>Carson hasn&rsquo;t reached their stature yet as an Olympic medalist. But he&rsquo;s close, and each dive &mdash; each armstand back double two and a half twists &mdash; gets him closer to that end goal.</p>
+					<p>He emerges from the water and studies the tablet. He&rsquo;s always learning, especially as his training ramps up at the end of the year. Every dive can be improved, and that&rsquo;s what Carson intends to do.</p>
+					<p>He returns to the stairs and starts his ascent again.</p>
+
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-4'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<!-- small bios -->
+					<div class="author-bios">
+						<!-- update bios in metadata.json -->
+						<!-- delete this div if you don't want them to show up -->
+					</div>
+
+					<p class="donate">
+						<em>Like what you're reading?</em><br>
+						Support independent, award-winning student journalism.
+						<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+					</p>
+				</div>
+			</article>
+
+		</main>
+
+		<footer>
+
+			<div class="footer-row">
+				<!-- IDS LOGO SVG -->
+				<div class="logo">
+					<a href="https://idsnews.com">
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+						<span class="show-desktop"> | Indiana Daily Student</span>
+					</a>
+				</div>
+				<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+					SUBSCRIBE
+				</a>
+				<div class="socials">
+					<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                       target="_blank"><i class="fab fa-spotify"></i></a>
+				</div>
+			</div>
+			<div class="links">
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+				<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+				<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+				<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                      target="_blank">Advertising</a></p>
+				<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+			</div>
+			<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+		</footer>
+
+		<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/ads.js"></script>
+		<script src="js/ids.js"></script>
+		<script src="js/metadata.js"></script>
+	</body>
+
+</html>
