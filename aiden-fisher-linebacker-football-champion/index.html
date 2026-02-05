@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/aiden-fisher-linebacker-football-champion" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Aiden Fisher’s journey from zero-star recruit to national champion" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Fisher took on a leadership role as a linebacker for the Hoosiers over the last two seasons." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/ce0feeba-53cb-4b5e-9ca6-0977f79ef5c1.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Aiden Fisher’s journey from zero-star recruit to national champion"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Fisher took on a leadership role as a linebacker for the Hoosiers over the last two seasons."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/ce0feeba-53cb-4b5e-9ca6-0977f79ef5c1.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">‘If you believe enough’</h1>
+            <h2 data-scroll-speed="3">Aiden Fisher’s journey from zero-star recruit to national champion</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">
+			Senior linebacker Aiden Fisher holds the College Football Playoff National Championship trophy Jan. 19, 2026, at Hard Rock Stadium in Miami Gardens, Florida. Fisher led the Hoosiers to their first-ever national championship in his final season at Indiana.
+			<span class="credit" style="padding-right: 16px; display: block;">Briana Pace | <b>IDS</b></span>
+		</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+				<p>Aiden Fisher was a zero-star recruit out of Riverbend High School in Fredericksburg, Virginia, when he sat in Curt Cignetti&rsquo;s office at James Madison University in 2021.</p>
+				<p>Cignetti offered Fisher a scholarship. He sought an immediate commitment.</p>
+				<p>&ldquo;Do you want to do anything with it?&rdquo; Cignetti asked.</p>
+				<p>Fisher did.</p>
+
+				<figure class="wide-right">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/c5c3851d-ba14-41d4-b700-b52eedcdfa06.original.jpg" alt="A man smiles while talking into a microphone.">
+					<figcaption>
+						<p class="credit">Briana Pace | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher speaks with reporters Jan. 17, 2026, at the College Football Playoff Media Day presented by Great Clips inside the Miami Beach Convention Center in Miami Beach, Florida. The Hoosiers won 27 games throughout Fisher’s two seasons in Bloomington.
+					</figcaption>
+				</figure>
+				
+				<p>His belief in Cignetti led to 19 wins and just four losses over Fisher&rsquo;s two seasons at JMU. When Cignetti saw Fisher in the transfer portal, he wanted him to become a Hoosier. Once again, Cignetti offered him.</p>
+				<p>Fisher believed Cignetti, who talked a big game in his first days on the job, could turn around college football&rsquo;s losingest program.</p>
+				<p>&ldquo;To be successful you have to be a little delusional,&rdquo; Fisher said.</p>
+				<p>Over two years after Fisher trusted Cignetti a second time, he ended his college career with a national championship T-shirt draped on his left shoulder and a national championship hat on his head.</p>
+				<p>As Fisher left the field for the final time, Indiana football fans waved their white rally towels and cheered.</p>
+				<p>Fisher raised his right arm and waved, showing his gratitude for the Hoosier faithful over 1,100 miles from Bloomington at Hard Rock Stadium in Miami.</p>
+				<p>&ldquo;You have to buy into some things that maybe don&rsquo;t seem will come true,&rdquo; Fisher said. &ldquo;But if you believe enough, they will.&rdquo;</p>
+
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<p class='section-break'>•••</p>
+
+				<p>When Indiana hired Cignetti after the 2023 season, he had his work cut out for him. Almost every offensive starter and half the defensive starters sat in the transfer portal. The Hoosiers were coming off a 9-27 three-season stretch under former head coach Tom Allen.</p>
+				<p>Cignetti saw a handful of JMU players entering the portal. He wanted to make them Hoosiers.</p>
+				<p>Nine former Dukes pledged to the Hoosiers by Dec. 24, including Fisher. He came off a season in which he logged 108 total tackles, six tackles for loss and 1.5 sacks in 2023. When the Dukes lost their starting linebackers to injury that September 2023, Fisher stepped in.</p>
+				<p>He&rsquo;s been the de facto quarterback of defensive coordinator Bryant Haines&rsquo; unit ever since.</p>
+				<p>When Fisher arrived at Indiana, he had a &ldquo;weird&rdquo; feeling. He was unsure whether holdovers from the Allen era would have &ldquo;hard feelings&rdquo; toward Cignetti bringing JMU players to Indiana.</p>
+				<p>&ldquo;So, when we got here, the first thing I wanted to do was get away from football,&rdquo; Fisher said Nov. 11, 2025, inside the Don Croftcheck Team Room in Memorial Stadium. &ldquo;Get with people outside of the facility to let them know you&rsquo;re trying to build new relationships.&rdquo;</p>
+				<p>Fisher didn&rsquo;t want his peers to think he came to Bloomington to compete with them and just be &ldquo;work buddies.&rdquo; He wanted real relationships, which, he said, required all the former Dukes to check their ego.</p>
+
+				<figure class="wide-left">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/bc9ed527-23e9-41fa-89f5-223adcd90d87.original.jpg" alt="A footballers holds a defensive stance while looking at another footballer.">
+					<figcaption>
+						<p class="credit">Lauren McKinney | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher lines up with an Iowa player in a game Sept. 27, 2025, at Kinnick Stadium in Iowa City, Iowa. Fisher had nine tackles in the Hoosiers’ victory over the Hawkeyes.
+					</figcaption>
+				</figure>
+				
+				<p>&ldquo;I think the best thing we did was just getting together outside of football, building relationships, friendships that I think, at this point, will last forever,&rdquo; Fisher said. &ldquo;But instead of just being teammates, we took it off the field.&rdquo;</p>
+				<p>The 10 former Dukes didn&rsquo;t want it to appear as if they were trying to show the Hoosiers how to do things their way; they wanted it to be everyone&rsquo;s way throughout the spring.</p>
+				<p>With fresh faces in the facility and an almost all-new coaching staff, building unity was rough at first.</p>
+				<p>Fisher said he didn&rsquo;t feel like the Hoosiers&rsquo; leader until halfway through spring practice in 2024. Players were looking for someone who would take the lead, he said.</p>
+				<p>So that&rsquo;s what he did.</p>
+				<p>&ldquo;We were able to kind of find common things together, see things the same way,&rdquo; Fisher said. &ldquo;I think that&rsquo;s when we took a big step. So, pretty much halfway through spring, I think everybody kind of gravitated towards each other a little bit, and it was kind of smooth sailing since then.&rdquo;</p>
+				<p>The Hoosiers concluded spring practice in mid-April with their spring game. The 2024 season opener against Florida International University, which marked the beginning of the Cignetti era, was 135 days away.</p>
+
+
+				<p class='section-break'>•••</p>
+
+
+				<p>With uncertainty in what the Hoosiers had in the 2024 roster, Cignetti knew at least one thing for certain: Haines &ldquo;sleeps a lot better&rdquo; knowing he has Fisher on his unit.</p>
+				<p>And Fisher proved it in his first season in Bloomington. He made 118 total tackles, the 18th best nationally, 5.5 tackles for loss and 1.5 sacks.</p>
+				<p>Fisher earned first-team All-American honors from the Football Writers Association of America and was named to first-team All-Big Ten. Haines said ahead of the 2024 College Football Playoff that Fisher is his &ldquo;mouthpiece&rdquo; to the rest of the unit on the field and couldn&rsquo;t say enough about his positive traits.</p>
+
+				<figure class="wide-right">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/133446af-46ce-4d2c-8f11-8336e9830411.original.jpg" alt="A footballer stands back as two other footballers push each other in front of him..">
+					<figcaption>
+						<p class="credit">Lauren McKinney | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher eyes Michigan State’s offense Oct. 18, 2025, at Memorial Stadium in Bloomington. Fisher made nine tackles in the Hoosiers’ victory over the Spartans.
+					</figcaption>
+				</figure>
+
+				<p>&ldquo;He's the unquestioned leader,&rdquo; Haines said. &ldquo;He knows what I want, and he's able to get it done and gets his 10 teammates to play the right call.&rdquo;</p>
+				<p>Although Indiana football went 11-1 in the 2024 regular season, the Hoosiers&rsquo; final game left a bitter feeling.</p>
+				<p>The Cream and Crimson reached the CFP for the first time in program history, but they lost to the University of Notre Dame by 10 points and were largely uncompetitive. Fisher totaled 10 tackles and 1.5 sacks in the loss.</p>
+				<p>Fisher helped guide the program to a 180-degree turnaround. Indiana was no longer the laughingstock of the Big Ten or the Power Four. Fisher recognized the &ldquo;great&rdquo; experience that first season, but the Hoosiers &ldquo;didn&rsquo;t finish the job.&rdquo;</p>
+				<p>&ldquo;I think we've laid a foundation of what Indiana football can be and what it is now,&rdquo; Fisher said after the CFP loss. &ldquo;And I expect to be right back here next year.&rdquo;</p>
+				<p>Fisher took the playoff stickers off his helmet and water bottles shortly after the season ended. He didn&rsquo;t want to be reminded of the past.</p>
+
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+							</script>
+						</div>
+					</div>
+				</div>
+				
+				<p class='section-break'>•••</p>
+
+
+				<p>Through Indiana&rsquo;s first seven games in 2025, Fisher totaled 48 tackles and 6.5 tackles for loss.</p>
+				<p>The Cream and Crimson announced their true arrival as a title contender with victories against Iowa and then-No. 3 Oregon. They showed they could not only compete with the sport&rsquo;s best but beat them in hostile environments. After retaining the Old Brass Spittoon against Michigan State, Fisher and the Hoosiers eyed a victory over UCLA on Oct. 25.</p>
+
+				<figure class="wide-left">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/c461e3c9-a73f-4c57-95a5-b400b4fdeef8.original.jpg" alt="Three footballers running on a field.">
+					<figcaption>
+						<p class="credit">Briana Pace | <b>IDS</b></p>
+						Senior defensive back Shawn Asbury II (left), junior linebacker Aiden Fisher (middle) and sophomore cornerback D'Angelo Ponds (right) run down the field during a game against UCLA on Sept. 14, 2024, at the Rose Bowl Stadium in Pasadena, California. Fisher made 118 tackles across his first season at Indiana in 2024.
+					</figcaption>
+				</figure>
+				
+				<p>On the Bruins&rsquo; second play from scrimmage, Fisher intercepted a pass and returned it for a touchdown, sending the Hoosier faithful inside Memorial Stadium into a frenzy.</p>
+				<p>However, on UCLA&rsquo;s ensuing possession, Fisher said he was folded up on. He remained on the field for the rest of the drive and played the next with a black brace on his left knee, as he had a &ldquo;minor tweak of something.&rdquo; He didn&rsquo;t play for the rest of the game following that drive.</p>
+				<p>&ldquo;When I first got hurt, the biggest thing that went through my mind was, &lsquo;I could either be a really bad teammate by woe is me, and I'm going to be hurt, I'm going to put my head down and look for pity,&rsquo;&rdquo; Fisher said Nov. 11.</p>
+				<p>Such behavior would&rsquo;ve been a &ldquo;terrible representation&rdquo; of Fisher and his leadership, he said. Instead, he opted to be as positive as possible.</p>
+				<p>Fisher helped his linebacker counterparts as they were thrown into different spots due to his absence. He wore an earpiece on the sideline to listen in on Haines&rsquo; play calls to redshirt junior linebacker Isaiah Jones, who took on the defense&rsquo;s green dot responsibilities.</p>
+				<p>Fisher wanted to help build the linebackers&rsquo; confidence, letting them know he was there every step of the way. &ldquo;But I mean, I can&rsquo;t say enough about just how much those guys just carried themselves with such pride when they were out there,&rdquo; Fisher said. &ldquo;And they played so well.&rdquo;</p>
+				<p>The four primary linebackers against Maryland on Nov. 1 accumulated 11 total tackles and an interception in a 45-point drubbing of the Terrapins, as Fisher missed the game.</p>
+				<p>&ldquo;So, maybe they didn't need me as much,&rdquo; Fisher laughed. &ldquo;But they did a great job.&rdquo;</p>
+				<p>Fisher returned Nov. 8 against Penn State and made his presence known. He recorded nine total tackles, one interception and a fumble recovery in the Hoosiers&rsquo; comeback victory over the Nittany Lions.</p>
+				<p>&ldquo;You just talk about resiliency, always coming up in the clutch and refusing to lose,&rdquo; Fisher said. &ldquo;When it comes down, game on the line, it&rsquo;s time to make money; this team refusing to lose. I think that&rsquo;s the best quality you can have as a team.&rdquo;</p>
+				<p>The Hoosiers then returned for Senior Day inside Memorial Stadium. Their victory over Wisconsin marked Fisher&rsquo;s final time on the field in Bloomington. The stadium was sold out &mdash; a far cry from the environment before Fisher.</p>
+
+				<figure class="wide-right">
+					<img src=" https://s3.amazonaws.com/snwceomedia/ids/641476a2-e7d9-430c-a080-e4cab6e2982c.original.jpg" alt="Three footballers running on a field.">
+					<figcaption>
+						<p class="credit">Lauren McKinney | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher walks off the field after Indiana football's Senior Day contest against Wisconsin on Nov. 15, 2025, at Memorial Stadium in Bloomington. Fisher never lost a game at Memorial Stadium.
+					</figcaption>
+				</figure>
+				
+				
+				<p>When he first got to Indiana, he met with athletes from different sports, curious as to why football wasn&rsquo;t talked about. Football was &ldquo;everything&rdquo; at JMU. But not at Indiana.</p>
+				<p>Those he spoke with said they hadn&rsquo;t been to an Indiana football game for several years. Fisher thought it was weird. JMU sold out its contests every weekend.</p>
+				<p>By the 2025 season, Fisher&rsquo;s family struggled to find tickets. It&rsquo;s a good problem to have, he said, because it&rsquo;s a &ldquo;complete turnaround.&rdquo;</p>
+				<p>Indiana dominated its final two regular-season contests over Wisconsin and Purdue, securing the program&rsquo;s first berth in the Big Ten Championship game. After falling to Ohio State in the 2024 regular season, the Hoosiers had an opportunity to exact revenge in Indianapolis.</p>
+				<p>Fisher notched five tackles in the 13-10 victory. Singing the school&rsquo;s fight song standing in the locker room was a tradition. Fisher led the Hoosier faithful through a rendition on the victory stage inside Lucas Oil Stadium.</p>
+				<p>But as has become the norm under Cignetti, Indiana was already focused on its next task: the College Football Playoff.</p>
+
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-2'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+							</script>
+						</div>
+					</div>
+				</div>
+				
+				<p class='section-break'>•••</p>
+
+
+				<p>Although the Hoosiers were making their first appearance in the Rose Bowl since 1968, Fisher said three days before facing the University of Alabama it felt like &ldquo;any other game.&rdquo;</p>
+				<p>However, Fisher acknowledged that when he arrived at Indiana, he heard about the program&rsquo;s ambitions of reaching the Granddaddy of Them All.</p>
+				<p>&ldquo;So, I'm glad we were able to do it,&rdquo; Fisher said Dec. 29. &ldquo;But job&rsquo;s not finished for us. Getting here is one thing, but winning is another. That's the goal, and nothing else matters if you don't win that game.&rdquo;</p>
+				<p>The Hoosiers didn&rsquo;t just win. They throttled the Crimson Tide by 35 points Jan. 1 in Pasadena, California. Again, Fisher led the overpowering pro-Indiana crowd through the school&rsquo;s fight song after securing a berth in the Peach Bowl.</p>
+				<p>When Fisher and three other Hoosiers sat just beyond the north end zone inside Mercedes-Benz Stadium two days before facing Oregon, all attention was on the Ducks.</p>
+				<p>Fisher even said, tongue in cheek, that the Hoosiers didn&rsquo;t know the location of the National Championship game.</p>
+				<p>After the Cream and Crimson dismantled Oregon to secure the program&rsquo;s first opportunity at a national championship, they earned a date with the No. 10 University of Miami inside Hard Rock Stadium in Miami Gardens, Florida.</p>
+				<p>When Fisher stood inside the Don Croftcheck Team Room at Memorial Stadium on Jan. 13, he addressed reporters for the final time inside the Hoosiers&rsquo; facility. With just one game left in his collegiate career, he&rsquo;d already helped break records and change how others think about Indiana football.</p>
+				<p>But even with 26 victories and just two losses behind him, he rendered the past nearly unimportant. Only the future mattered to the senior linebacker.</p>
+				<p>&ldquo;It won't mean really anything unless we walk away with a win in this game,&rdquo; he said.</p>
+
+
+				<figure class="inline-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/9f698d6d-a91f-44aa-b329-255de2a561e7.original.jpg" alt="Footballer with black paint on his face smiles while holding a trophy with a rose in his mouth.">
+					<figcaption>
+						<p class="credit">Lauren McKinney | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher smiles Jan. 1, 2026, after defeating the University of Alabama at the Rose Bowl Stadium in Pasadena, California. Fisher helped the Hoosiers to their first Rose Bowl victory.
+					</figcaption>
+				</figure>
+				
+				<p class='section-break'>•••</p>
+
+
+				<p>Cignetti rid the Hoosiers of complacency from his first day in Bloomington. That no-nonsense mindset trickled down to the veteran leaders, Fisher especially.</p>
+				<p>When Fisher was on a phone call with his mom, Leslie, he noticed a Cignetti-ism in his words.</p>
+				<p>&ldquo;I was just like, &lsquo;Yeah, I hope somebody doesn't get complacent,&rsquo;&rdquo; he said Jan. 13. &ldquo;And I was like, &lsquo;Wow, I have been with Cig way too long.&rsquo;&rdquo;</p>
+				<p>Fisher spent the entirety of the week ahead of the title game against the Hurricanes delivering a simple message: for one week, he needed each Hoosier to give him their all.</p>
+				<p>Several players, such as quarterback Fernando Mendoza and receiver Elijah Sarratt, emphasized deleting social media apps from their phones to block any potential distraction.</p>
+				<p>However, Fisher wanted every Hoosier to place their full attention on the national championship.</p>
+				<p>&ldquo;Just give me a week of your everything and we'll reap the benefits after,&rdquo; Fisher said. &ldquo;But just eliminate distractions, be in the moment. This is a once-in-a-lifetime opportunity that you have to take advantage of.&rdquo;</p>
+
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-3'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<p class='section-break'>•••</p>
+
+
+				<p>Donning a sleeveless white hoodie emblazoned with the Indiana trident and a lone &ldquo;4&rdquo; over his heart, Fisher walked into the field inside Hard Rock Stadium for his final collegiate game.</p>
+				<p>With his space gray Apple AirPods Max over his head, Fisher prepared for a moment he&rsquo;s worked his whole career for: the opportunity to be atop college football.</p>
+				<p>When the Hoosiers entered the same tunnel at halftime three and a half hours later, they led the Hurricanes by 10 points. With the Cream and Crimson holding much of the momentum after halting Miami&rsquo;s offense, 30 minutes stood between Indiana and immortality.</p>
+				<p>The Hurricanes scored touchdowns on three of their first five possessions in the second half, flipping the script from the opening half. Miami regained possession and faced a six-point deficit with less than two minutes left.</p>
+				<p>&ldquo;We told ourselves on the sideline, &lsquo;We're going to have a chance to go win this thing,&rsquo; and I feel like that was kind of fitting for our team,&rdquo; Fisher said postgame. &ldquo;Put it on us one more time and kind of let the chips fall.&rdquo;</p>
+				<p>Indiana&rsquo;s defense had one final opportunity.</p>
+				<p>One final opportunity to cement itself as one of the nation&rsquo;s best units. One final opportunity to save the Hoosiers&rsquo; dream season. One final opportunity to accomplish perfection.</p>
+				<p>With the Hurricanes marching into the Hoosiers&rsquo; territory, Indiana seized its chance.</p>
+				<p>Redshirt junior defensive back Jamari Sharpe hauled in the game-sealing interception. The Indiana-branded chips fell. Cream and Crimson confetti followed, raining down on the field once the clock struck zero.</p>
+				<p>After 28 games as a Hoosier across two seasons in Bloomington, Fisher ended his collegiate career with a national championship. No longer did he have to buy into delusion.</p>
+				<p>Fisher&rsquo;s belief is now rooted in substance.</p>
+				<p>&ldquo;It's just been such a special journey for me, starting at James Madison and coming here, really betting on myself to be able to transform my game from the Group of Five level to here,&rdquo; Fisher said.</p>
+				<p>Cignetti changed Fisher&rsquo;s life, he said.</p>
+				<p>&ldquo;I owe a lot to him,&rdquo; Fisher said. &ldquo;He's an unbelievable coach, but he's an unbelievable person. Yeah, it's been special. I'm glad I made both decisions the right way.&rdquo;</p>
+				<p>While Fisher finished his career with glamorous statistics, he won&rsquo;t remember just the tackles, the sacks or the interceptions.</p>
+				<p>It&rsquo;ll be the mid-January Monday night in Miami, where the Hoosiers stamped their name in history: the first 16-0 season in the modern era. And the night where Fisher had both a national championship-branded hat on his head and a T-shirt draped over his left shoulder.</p>
+				<p>&ldquo;It's something that I'll carry with me for the rest of my life. Just doing it with my guys, I'll carry that with me forever.&rdquo;</p>
+				<p>Fisher walked back through the same tunnel he previously exited over six hours earlier.</p>
+				<p>This time, a national champion.</p>
+
+				<figure class="inline-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/85bf86be-1588-401e-8aee-9dc4621281d8.original.jpg" alt="A footballer celebrates on a field.">
+					<figcaption>
+						<p class="credit">Jimmy Rush | <b>IDS</b></p>
+						Senior linebacker Aiden Fisher celebrates during the College Football Playoff National Championship game against University of Miami on Jan. 19, 2026, at Hard Rock Stadium in Miami Gardens, Florida. Fisher had one sack in the game.
+					</figcaption>
+				</figure>
+				
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-4'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
