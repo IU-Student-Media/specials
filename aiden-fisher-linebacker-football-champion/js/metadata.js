@@ -3,7 +3,7 @@ const data = {
     "slug": "Aiden Fisher",
     "headline": "Aiden Fisher's journey from zero-star recruit to national champion",
     "title": "Aiden Fisher",
-    "pub_date": "Feb. 5, 2026",
+    "pub_date": "Feb. 6, 2026",
     "bylines": {
         "By": {
             "name": "Dalton James",
