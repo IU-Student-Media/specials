@@ -3,7 +3,7 @@ const data = {
     "slug": "Peace Activism Stories",
     "headline": "Standing for peace: The quiet persistence of Bloomington's locals",
     "title": "Peace Activism Stories",
-    "pub_date": "Jan. 16, 2024",
+    "pub_date": "Jan. 16, 2025",
     "bylines": {
         "By": {
             "name": "Mackenzie Lionberger",
