@@ -1,0 +1,440 @@
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: rgb(80, 80, 80);
+  --gray: #8C8C8C;
+  --lt-gray: #D9D9D9;
+  --yellow: #FADC46;
+  --green: #1C7D24;
+}
+
+header {
+  /* add header image below */
+  /* can use a file path before the photo is uploaded to ceo */
+	background-color: var(--idsred);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* adjusts image placement, can also be set as percentages (ex. 50% 50%) */
+	background-position: center center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  /* top headline */
+
+}
+
+h2 {
+  /* second headline */
+
+}
+
+
+.headline-container {
+	position: unset;
+	top: unset;
+	
+	text-align: center;
+
+	margin: auto;
+	padding-bottom: 50px;
+
+	max-width: 700px;
+
+	h1, h2, h3, h4, p {
+		font-family: 'Anton', sans-serif;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	p {
+		position: absolute;
+		font-size: 18px;
+		letter-spacing: 6px;
+	}
+
+	p:first-of-type {
+		top: 10%;
+		left: 10%;
+	}
+
+	p:last-of-type {
+		bottom: 10%;
+		right: 10%;
+	}
+
+	h4 {
+		color: var(--yellow);
+		font-size: 24px;
+		letter-spacing: 4px;
+	}
+
+	h1 {
+		font-size: 128px;
+		filter: drop-shadow(2px 7px 1px #00000040);
+		padding: 0;
+		margin-bottom: 50px;
+		letter-spacing: 2px;
+	}
+
+	h3 {
+		font-size: 30px;
+		letter-spacing: 5px;
+	}
+}
+
+
+.games {
+	--game-gap: 30px;
+	
+	padding: 30px;
+	padding-bottom: 0;
+	max-width: 1600px;
+	margin: 0 auto;
+
+	.game {
+		.meta {
+			display: flex;
+			justify-content: space-between;
+			padding: 40px 60px;
+			background-color: black;
+
+			margin-bottom: var(--game-gap);
+
+			p {
+				margin: 0;
+				color: white;
+				font-family: 'Anton', sans-serif;
+				letter-spacing: 6px;
+				font-size: 21px;
+				text-transform: uppercase;
+			}
+
+			p:last-of-type {
+				text-align: right;
+			}
+		}
+
+		.score {
+			display: flex;
+			justify-content: center;
+			padding: 80px 60px 60px;
+			background-color: var(--idsred);
+			gap: 10%;
+
+			margin-bottom: var(--game-gap);
+
+			p {
+				letter-spacing: 14px;
+				color: white;
+				font-family: 'Anton', sans-serif;
+				font-size: 96px;
+				margin: 0;
+
+				display: flex;
+				align-items: center;
+				
+				width: 100%;
+			}
+
+			.team.long {
+				font-size: 60px;
+				letter-spacing: 12px;
+			}
+			
+			.team:first-of-type {
+				text-align: right;
+				justify-content: end;
+			}
+
+			.team:last-of-type {
+				text-align: left;
+				justify-content: start;
+			}
+
+			.final-score {
+				display: flex;
+				align-items: center;
+				justify-content: ;
+				
+				p {
+					color: var(--yellow);
+					position: relative;
+					text-align: center;
+					text-wrap: nowrap;
+
+					&:before {
+						position: absolute;
+						top: -30px;
+						left: 50%;
+						translate: -50%;
+						letter-spacing: 5px;
+						
+						content: "Final";
+						color: white;
+						font-size: 24px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+
+		.data {
+			display: flex;
+			justify-content: space-between;
+
+			gap: 2%;
+			
+			margin-bottom: var(--game-gap);
+
+			p {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+				color: black;
+				font-size: 21px;
+				letter-spacing: 2px;
+				font-family: 'Anton', sans-serif;
+				background: var(--lt-gray);
+
+				text-align: center;
+				
+				padding: 30px 50px;
+				width: 30%;
+
+				margin: 0;
+			}
+		}
+
+		.photos {
+			--gap: 5%;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			gap: var(--gap);
+
+			margin: 50px 0 0;
+			
+			figure {
+				max-width: calc((100% - var(--gap)) / 2);
+				margin: 0 0 50px;
+			}
+
+			figure.large {
+				max-width: 100%;
+			}
+		}
+		
+	}
+}
+
+
+h3 {
+  /* section header */
+
+}
+
+.dropcap:first-letter {
+  /* change the font/style of the dropcap if you wish to use them */
+
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+
+@media screen and (max-width: 1300px) {
+	.headline-container {
+		padding-bottom: 50px;
+		max-width: 400px;
+
+		h4 {
+			font-size: 18px;
+		}
+
+		h1 {
+			font-size: 80px;
+			margin-bottom: 25px;
+		}
+
+		h3 {
+			font-size: 20px;
+			letter-spacing: 3px;
+		}
+
+		p:last-of-type {
+			bottom: 5%;
+		}
+
+		p {
+			font-size: 15px;
+			letter-spacing: 5px;
+		}
+	}
+
+	.games {
+		--game-gap: 15px;
+		
+		padding: 15px;
+
+		.game {
+			.meta {
+				padding: 20px;
+
+				p {
+					letter-spacing: 4px;
+					font-size: 16px;
+				}
+			}
+
+			.score {
+				padding: 45px 0 25px;
+				gap: 3%;
+
+				p {
+					font-size: 55px;
+					width: 100%;
+				}
+
+				.team.long {
+					font-size: 35px;
+				}
+
+				.final-score {
+					p {
+						&:before {
+							top: -20px;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+
+			.data {
+				gap: 2%;
+				
+				p {					
+					font-size: 16px;					
+					padding: 10px;
+				}
+			}
+
+			.photos {
+				margin: 30px 0;
+				figure {
+					margin: 0 0 30px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.games {
+		--game-gap: 15px;
+		
+		padding: 15px;
+
+		.game {
+			.meta {
+				padding: 20px;
+
+				p {
+					letter-spacing: 3px;
+					font-size: 14px;
+				}
+			}
+
+			.score {
+				padding: 35px 0 20px;
+				gap: 3%;
+
+				p {
+					font-size: 30px;
+					letter-spacing: 6px;
+					width: 100%;
+				}
+
+				.team.long {
+					font-size: 20px;
+					letter-spacing: 3px;
+				}
+
+				.final-score {
+					p {
+						&:before {
+							top: -20px;
+							font-size: 14px;
+							letter-spacing: 3px;
+						}
+					}
+				}
+			}
+
+			.data {
+				gap: 2%;
+				
+				p {					
+					font-size: 14px;
+					letter-spacing: 1px;
+					padding: 10px;
+				}
+			}
+
+			.photos {
+				margin: 30px 0;
+				figure {
+					max-width: 100%;
+					margin: 0 0 30px;
+				}	
+			}			
+		}
+	}
+}
