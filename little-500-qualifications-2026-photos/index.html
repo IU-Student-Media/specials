@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title></title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+    <!-- @TODO SOCIAL CARDS — make sure to update these. -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Headline" />
+    <meta property="og:description" content="Abstract" />
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Headline">
+    <meta name="twitter:description" content="Abstract">
+    <meta name="twitter:image" content="">
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+
+            <div class="headline-container">
+                <h1>PHOTOS</h1>
+                <h2>Little 500 Qualifications</h2>
+                <div class="bylines">
+                    <div id="bylines">
+                    </div>
+                    <p id="pubdate"></p>
+                </div>
+            </div>
+
+            <div class="scrolly">
+                <div class="sticky-image" style="background-color: black;">
+
+                    <!-- 
+                        Each of these <figure>s contains one of the images
+                        Each image has an "object-position" style set
+                            This determines the focal point of the image. So if you make the screen smaller,
+                            that certain point of the photo will remain in the frame. Make sure to check how
+                            each photo looks in a mobile view, and update those styles accordingly to avoid
+                            cutting off important parts of the image, like the top of someone's head
+                        Each image also has alt text, which will appear if the photo doesn't load, such as if 
+                            the viewer has slow internet, and is important for people who use screen readers
+                            so they know what's going on. 
+                    -->
+                    
+                    <figure class="grid-image-1">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/f5473f8f-1da5-43ae-bc45-7fbeaa102b39.original.jpg"
+                            alt="A biker jumps on their bike while another runs ahead">
+                    </figure>
+    
+
+                    <figure class="grid-image-2">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/9f4be049-ffc7-4623-aea4-49b3624e1f4b.original.jpg"
+                            alt="biker smiles while passing in front of cheering fans">
+                    </figure>
+    
+
+                    <figure class="grid-image-3">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/767227fa-c417-44c3-b25a-dd7b94a6a4d8.original.jpg"
+                            alt="biker starts peddaling on a track">
+                    </figure>
+    
+
+                    <figure class="grid-image-4">
+                        <img style="object-position: center 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/cbe9d473-104e-4be8-a309-298690e864e7.original.jpg"
+                            alt="a biker falls off of their bike infront of a another biker">
+                    </figure>
+    
+
+                    <figure class="grid-image-5">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/cdbb1828-d565-4387-89d4-4cb1203d1cf3.original.jpg"
+                            alt="three bikers smile while looking at each other">
+                    </figure>
+    
+
+                    <figure class="grid-image-6">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/49bd2519-83aa-4d51-a6cd-04034880d158.original.jpg"
+                            alt="two bikers hug">
+                    </figure>
+    
+
+                    <figure class="grid-image-7">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/4ace593a-d93c-4ae2-a75e-a4ff81a27902.original.jpg"
+                            alt="two bikers handoff their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-8">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/6bd00b3d-7981-42d0-8d1c-916e24e9731b.original.jpg"
+                            alt="A biker perpares to pedal while another celebrates behind them">
+                    </figure>
+    
+
+                    <figure class="grid-image-9">
+                        <img style="object-position: center -10%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/dce85f73-0a15-4540-82c4-8121dd6a128b.original.jpg"
+                            alt="A biker jumps onto their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-10">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/568574c9-ffda-4e2e-9fd4-7bedce1af1cc.original.jpg"
+                            alt="two disappointed bikers are next to a fallen bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-11">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/72e234a0-022c-488a-bd73-c13d3d7e0755.original.jpg"
+                            alt="fans cheer in the stands">
+                    </figure>
+    
+
+                    <figure class="grid-image-12">
+                        <img style="object-position: center -20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/5f9693bf-c2b1-4905-bb14-3b89bfd530ec.original.jpg"
+                            alt="A biker screams">
+                    </figure>
+    
+
+                    <figure class="grid-image-13">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/9c9da5cb-0ff7-4638-89c3-50106ad4be5d.original.jpg"
+                            alt="two bikers handoff their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-14">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d954d1e5-1657-4c45-a1cb-264ab759ad20.original.jpg"
+                            alt="A biker cheers infront of a leaderboard">
+                    </figure>
+    
+
+                    <figure class="grid-image-15">
+                        <img style="object-position: center 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/4c5ce10c-906b-4f35-b9ea-f77bd8486e7f.original.jpg"
+                            alt="A biker pedals on their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-16">
+                        <img style="object-position: center center;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/0820ae8d-2fb8-4a95-ac17-d08d3196f3a6.original.jpg"
+                            alt="Fans cheer with their hands in the air">
+                    </figure>
+    
+
+                    <figure class="grid-image-17">
+                        <img style="object-position: center center; object-fit: contain"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/d4a5fa10-f8e4-4ad4-aa0a-2a660bf2e43e.original.jpg"
+                            alt="Two bikers hug">
+                    </figure>
+    
+
+                    <figure class="grid-image-18">
+                        <img style="object-position: center 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/2d67b83d-a4c9-40ec-9160-ba26e42976be.original.jpg"
+                            alt="A biker sits on their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-19">
+                        <img style="object-position: center 20%;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/7a97893e-ce8d-4fd7-b03a-278d7572b123.original.jpg"
+                            alt="A biker pedals their bike">
+                    </figure>
+    
+
+                    <figure class="grid-image-20">
+                        <img style="object-position: center top;"
+                            src="https://s3.amazonaws.com/snwceomedia/ids/91077d6c-4780-4fb5-8f71-e26e1a63cfb8.original.jpg"
+                            alt="Two bikers hug">
+                    </figure>
+    
+                </div>
+
+                <!-- 
+                    Each of these captions appears on top of one of the photos above. 
+                    If there are multiple photographers, include a credit on each caption. 
+                    If there is only one photographer, remove the credits because they will have
+                    their own byline at the top of the story.
+                 -->
+                <div class="steps">
+                    
+                    <div class="step" >
+                        <p class="caption">
+                            Phi Gamma Delta cyclists switch out riders during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Phi Gamma Delta placed third in the qualifying race.
+                        </p>
+                        <p class="credit">Sophia Kaplan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="1">
+                        <p class="caption">
+                            Fans cheer on an Acacia cylist during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Acacia finished 30th in the qualifying race.
+                        </p>
+                        <p class="credit">Jimmy Rush | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="2">
+                        <p class="caption">
+                            Cyclists for Salt Company trade a bike during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Salt finished 11th in the qualifying race.
+                        </p>
+                        <p class="credit">Jimmy Rush | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="3">
+                        <p class="caption">
+                            Cyclists for Christian Student Fellowship crash during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. The CSF women's team finished 19th in the 2025 Little 500.
+                        </p>
+                        <p class="credit">Jimmy Rush | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="4">
+                        <p class="caption">
+                            From left to right, MaryClaire Swanson, Libby Lewis and Ellie Marsela celebrate after Alpha Chi Omega finishes in the Little 500 qualifications March 28, 2026, at Bill Armstrong Stadium in Bloomington. Alpha Chi Omega finished third in the qualifying race.
+                        </p>
+                        <p class="credit">Jack Jernigan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="5">
+                        <p class="caption">
+                            Members of Alpha Epsilon Phi celebrate March 28, 2026, at Bill Armstrong Stadium in Bloomington. The team qualified for the Little 500 race with a time of 03.07.675.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="6">
+                        <p class="caption">
+                            Forest Cycling cyclist Griffin Murphy hands off a bicycle to Joseph Grimes in the Little 500 qualifications March 28, 2026, at Bill Armstrong Stadium in Bloomington. Forest finished 12th in the qualifying race.
+                        </p>
+                        <p class="credit">Jack Jernigan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="7">
+                        <p class="caption">
+                            Walker Kight (left) hands off a bicycle to Trevor Lichtenstein (right) for Phi Gamma Delta during the Little 500 qualifications March 28, 2026, at Bill Armstrong Stadium in Bloomington. Phi Gamma Delta finished third in the qualifying race.
+                        </p>
+                        <p class="credit">Jack Jernigan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="8">
+                        <p class="caption">
+                            A member of Army Cycling completes an exchange March 28, 2026, at Bill Armstrong Stadium in Bloomington. The team qualified for the Little 500 race with a time of 02.42.857, the slowest of the 33 teams.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="9">
+                        <p class="caption">
+                            Alpha Kappa Lambda faults March 28, 2026, at Bill Armstrong Stadium in Bloomington. On their second attempt, the team qualified for the Little 500 race with a time of 02.40.640.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="10">
+                        <p class="caption">
+                            A fan cheers on her team March 28, 2026, at Bill Armstrong Stadium in Bloomington. 36 women’s teams competed to fill the 33 open slots to race in Little 500.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="11">
+                        <p class="caption">
+                            A member of Mother Bears Cycling cheers for his teammate March 28, 2026, at Bill Armstrong Stadium in Bloomington. It was the final lap of the team’s qualification.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="12">
+                        <p class="caption">
+                            Members of Bears Cycling complete an exchange March 28, 2026, at Bill Armstrong Stadium in Bloomington. The team qualified for the Little 500 race with a time of 02.30.652.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="13">
+                        <p class="caption">
+                            A Beta Sigma Psi rider celebrates March 28, 2026, at Bill Armstrong Stadium in Bloomington. The team qualified for the Little 500 race with a time of 02.29.454.
+                        </p>
+                        <p class="credit">Briana Pace | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="14">
+                        <p class="caption">
+                            A rider for team Theta Phi Alpha takes off during qualifications for the Little 500 March 28, 2026, at Bill Armstrong Stadium in Bloomington. Theta Phi Alpha did not place in the 2025 Little 500 race.
+                        </p>
+                        <p class="credit">Kaitlyn Stacy | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="15">
+                        <p class="caption">
+                            Supporters for the Kappa Alpha Theta team cheer during qualifications on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Kappa Alpha Theta placed first the last two years in the Little 500 women's race.
+                        </p>
+                        <p class="credit">Kaitlyn Stacy | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="16">
+                        <p class="caption">
+                            Delta Gamma cyclists share a hug after completing their qualifying race for Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Delta Gamma finished fourth in the qualifying race.
+                        </p>
+                        <p class="credit">Sophia Kaplan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="17">
+                        <p class="caption">
+                            A cyclist for Delta Zeta races during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Delta Zeta finished 19th in the qualifying race.
+                        </p>
+                        <p class="credit">Sophia Kaplan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="18">
+                        <p class="caption">
+                            A cyclist for Rideon Cycling races during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. Rideon finished 8th in the qualifying race.
+                        </p>
+                        <p class="credit">Sophia Kaplan | <strong>IDS</strong></p>
+                    </div>   
+    
+
+                    <div class="step" data-step="19">
+                        <p class="caption">
+                            Cyclists for Christian Student Fellowship hug during qualifications for the Little 500 on March 28, 2026, at Bill Armstrong Stadium in Bloomington. The CSF women's team finished 6th in the qualifying race.
+                        </p>
+                        <p class="credit">Jimmy Rush | <strong>IDS</strong></p>
+                    </div>   
+    
+<div class="step" data-step="20" style=" background-color: transparent; margin-bottom:0;"></div>
+                </div>
+
+            </div>
+            <div class="story">
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews/docs/binder1_357aeeb2b95e46" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2026 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="https://unpkg.com/scrollama@2.0.1/build/scrollama.js"></script>
+    <script src="js/scrolly.js"></script>
+</body>
+
+</html>
+
