@@ -1,0 +1,452 @@
+@charset "UTF-8";
+
+/* 
+    SET YOUR STYLES IN THIS FILE
+    For help, see the style.css documentation: https://www.notion.so/style-css-cac459cc9c384da08f561394bcee4cbf
+*/
+* {
+	scroll-behavior: smooth;
+}
+
+/* FONTS */
+/* add any @import statements for novelty fonts you want to use here ↓ */
+/* COLORS */
+:root {
+  /* --mycolor: #your color here; */
+  --idsred: #990000;
+  --darkgray: #505050;
+  --link-color: #C14764;
+  --navy: #282437;
+}
+
+#statistics {
+  display: none;
+}
+
+.place {
+  color: var(--link-color);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+
+a:link.article-link.link,
+a:visited.article-link.link {
+  text-decoration: none;
+}
+
+a:link.article-link.link:hover h3,
+a:visited.article-link.link:hover h3 {
+  text-decoration: underline;
+}
+
+#articles,
+#articles-extra {
+  margin: 1em 0 4em;
+}
+
+#articles img,
+#articles-extra img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+#articles .featured-story h3,
+#articles-extra .featured-story h3 {
+  font-size: 28px;
+}
+
+#articles h3,
+#articles-extra h3 {
+  margin: 0;
+}
+
+#articles p.credit,
+#articles-extra p.credit {
+  text-align: left;
+  text-transform: none;
+}
+
+.article-list .article p {
+  margin: 0;
+}
+
+.article-list .article img {
+  max-width: 33%;
+}
+
+.article-list .article h3 {
+  line-height: 1.5;
+}
+
+#articles-extra .article {
+  justify-content: space-between;
+}
+
+header {
+  padding-top: calc(var(--nav-height) + 40px);
+}
+
+/* 
+  GENERICS
+*/
+.col-2-resp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-h {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-c {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+}
+
+.pill {
+  height: 30px;
+  border: 2px solid #CFCFCF !important;
+  border-radius: 15px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.pill:hover {
+	background-color: #DFDFDF;
+	border: 2px solid #ABABAB !important;
+}
+
+a:link.link.pill,
+a:visited.link.pill  {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  color: black;
+}
+
+
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.section-header a::after {
+  content: "  →";
+}
+
+.arrow-link::after {
+  content: "  →";
+}
+
+.race-details .flex-h {
+  flex-wrap: wrap;
+}
+
+.candidate {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.candidate .incumbent {
+  border-color: var(--link-color);
+  background-color: #C1476466;
+  width: fit-content;
+  margin-bottom: 1em;
+  align-self: first baseline;
+}
+
+.candidate .incumbent p {
+  font-family: 'Inter', sans-serif;
+  color: var(--link-color);
+  margin: 0;
+  font-size: 10px;
+}
+
+.candidate img {
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  object-fit: cover;
+}
+
+.candidate .party {
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+.candidate .party.dem {
+  color: #0D1BB3;
+}
+
+.candidate .party.rep {
+  color: #D81811;
+}
+
+.next-step {
+  border-left: 4px solid var(--link-color);
+  padding-left: 0.5em;
+}
+
+/* JUMPING NONSENSE */
+.section-anchor {
+  position: relative;
+  top: calc(-1 * var(--nav-height));
+}
+
+#contents-links {
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+#countdown-sec {
+  background: linear-gradient(135deg, #C44365, #505697);
+}
+
+#countdown-sec h2,
+#countdown-sec h3,
+#countdown-sec h4,
+#countdown-sec p,
+#countdown-sec a:link.link,
+#countdown-sec a:visited.link {
+  color: white;
+}
+
+#countdown-sec .flex-c {
+  align-items: center;
+}
+
+#countdown-sec .countdown-num {
+  width: 7em;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #ffffff44;
+}
+
+#countdown-sec .countdown-num .countdown-text {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 3em;
+  font-weight: 800;
+  margin: 0;
+}
+
+#countdown-sec .countdown-num .countdown-label {
+  margin-top: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+#countdown-sec .donate {
+  text-align: center;
+}
+
+/* 
+  SET ANY MORE STYLES YOU WANT BELOW
+  Be sure to delete empty declarations
+*/
+/* 
+TYPOGRAPHY
+*/
+h1 {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  color: black;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h4 {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.headshot {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #D9D9D9;
+  object-fit: cover;
+  border-color: red;
+}
+
+/* Specific Stuff */
+#table-of-contents .pill {
+  font-size: 10px;
+}
+
+header#local-candidates-sec {
+  padding-bottom: 40px;
+}
+
+#local-candidates-sec {
+  background-color: #282437;
+}
+
+#local-candidates-sec .section-header {
+  border-color: white;
+}
+
+#local-candidates-sec h1,
+#local-candidates-sec h2,
+#local-candidates-sec h3,
+#local-candidates-sec h4,
+#local-candidates-sec p,
+#local-candidates-sec a:link.link,
+#local-candidates-sec a:visited.link {
+  color: white;
+}
+
+.section {
+	margin: 30px 0;
+	padding: 1.5em 0;
+}
+
+.candidate-row {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.candidate-row .headshots {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  margin-top: 1.3em;
+}
+
+.candidate-row .headshots div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.candidate-row h4 {
+  font-weight: 400;
+  text-align: center;
+}
+
+/* 
+media queries helper
+*/
+.helper {
+  /* comment out next line to get visual help with media queries while you code */
+  display: none !important;
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helper::after {
+  content: 'XS';
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* use these for responsive design — you can set different styles based on how wide the screen is */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+@media (max-width: 576px) {
+  .col-2-resp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    justify-content: space-between;
+  }
+
+  .race-details .flex-h {
+    justify-content: center;
+  }
+
+  .candidate-row {
+    flex-direction: column;
+  }
+
+  .candidate-row .headshots {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .candidate img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #countdown-sec .timer-row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #countdown-sec .countdown-num {
+    /* width: em; */
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #ffffff44;
+  }
+
+  #countdown-sec .countdown-num .countdown-text {
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  #countdown-sec .countdown-num .countdown-label {
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  #countdown-sec .donate {
+    text-align: center;
+  }
+}
+
+/* 768, 992, 1200 */
+
+a:link.link,
+a:visited.link {
+  color: var(--link-color);
+  text-decoration: underline;
+  border: none;
+}
