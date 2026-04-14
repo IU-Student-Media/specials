@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Title (pulls from metadata.json) -->
+		<title></title>
+
+		<!-- favicon -->
+		<link rel="SHORTCUT ICON"
+			  href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+		<!-- CSS stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+		<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+		<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+		<script src="https://kit.fontawesome.com/ea52966d59.js" crossorigin="anonymous"></script>
+
+		<!-- SOCIAL CARDS — will pull data from metadata.json to automatically update. -->
+		<meta property="og:url" content="https://specials.idsnews.com/boxing-club-iu-photos" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Step into the ring with IU’s Boxing Club" />
+		<meta property="og:description" content="The club was created in 2024 by Auguste Fried." />
+		<meta property="og:site_name" content="IDS News">
+		<meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/88e1e71e-bd4a-483d-ac53-c5e633dc00f2.original.jpg" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@idsnews">
+		<meta name="twitter:creator" content="@idsnews">
+		<meta name="twitter:title" content="Step into the ring with IU’s Boxing Club">
+		<meta name="twitter:description" content="The club was created in 2024 by Auguste Fried.">
+		<meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/88e1e71e-bd4a-483d-ac53-c5e633dc00f2.original.jpg">
+
+		<!-- START Ad content: this goes in the head content -->
+		<!-- don't mess with this — it will work all on it's own :-) -->
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+		<script>
+         var googletag = googletag || {};
+         googletag.cmd = googletag.cmd || [];
+		</script>
+		<script>
+         googletag.cmd.push(function () {
+             //all other leaderboards
+             var mapping1 = googletag.sizeMapping()
+									 .addSize([768, 0], [728, 90]) // Desktops and Tablets
+									 .addSize([0, 0], [320, 50]) // Mobile devices
+									 .build();
+             googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+             googletag.pubads().enableSingleRequest();
+             googletag.pubads().collapseEmptyDivs();
+             googletag.enableServices();
+         });
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager -->
+		<!-- (also don't have to worry about this at all) -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+					style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script src="js/googleTagManager.js"></script>
+
+		<div class="helper"></div>
+
+		<!--Header-->
+		<header>
+
+			<!-- Transparent navbar -->
+			<nav>
+				<ul>
+					<li class="logo">
+						<a href="https://www.idsnews.com">
+							<!-- IDS LOGO SVG -->
+							<svg viewBox="0 0 163.17 68.85">
+								<path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+								<path style="fill:white;"
+									  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+								<path style="fill:white;"
+									  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+							</svg>
+						</a>
+						<span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+					</li>
+					<li class="toggle">
+						<i class="fas fa-bars fa-lg"></i>
+					</li>
+					<li id="socials" class="item">
+						<!-- links generate automatically from metadata.json -->
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Headline, subhed -->
+			<!-- feel free to change this up — you don't need it to have data scroll speed, 
+				 doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+			<div class="headline-container">
+				<!-- <h1 data-scroll-speed="2">‘They don’t want to not work’</h1> -->
+				<h2 data-scroll-speed="3">Step into the ring with IU&rsquo;s Boxing Club</h2>
+			</div>
+
+		</header>
+
+		<!-- main article -->
+		<main>
+			<p class="caption header-caption">Sophomore boxer Emmanuel Wire touches gloves with his opponent before his fight Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Wire also joined Brazilian Jiu Jitsu Club at IU in 2024.
+</p>
+			<article>
+				<div class="bylines">
+					<div id="bylines">
+						<!-- update bylines in metadata.json -->
+					</div>
+					<!-- TO DO update pub_date in metadata.json -->
+					<p id="pubdate"></p>
+				</div>
+				<!-- <div class="story"> -->
+
+				<div class="story">
+					<i>Editor’s Note: This gallery includes photos containing blood and injury.</i>
+				</div>
+				
+				
+				<div class="imagegrid">
+					<figure class="grid-image-1">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/38d2f9b9-9d7a-446d-aabb-5b975c2cdb15.original.jpg"
+							 alt="">
+						<figcaption>
+							Boxing Club at IU members warm up for practice Feb. 26, 2026, at Satori Integrated Martial Arts in Bloomington. It was two days before the first-ever collegiate boxing tournament in the state of Indiana. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-2">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/89880b16-e86b-44e8-add2-e150e357f2f7.original.jpg"
+							 alt="">
+						<figcaption>
+							Freshman boxer Carter Eloms rests between rounds during his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Eloms was selected to be president of the Boxing Club at IU for the 2026-27 season.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-3">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/4cbfc923-bede-43a4-b6cd-d4290d2c2a80.original.jpg"
+							 alt="">
+						<figcaption>
+							Freshman boxer Carter Eloms is announced as the winner of his bout by unanimous decision Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Eloms said he plans to compete at United States Intercollegiate Boxing Association Nationals next season.  
+						</figcaption>
+					</figure>
+					<figure class="grid-image-4">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/78fa1648-a89b-4617-bfb3-61057b33985a.original.jpg"
+							 alt="">
+						<figcaption>
+							Senior boxer Auguste Fried feints a punch from his opponent during his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Fried has been boxing for five years. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-5">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/84d12920-d8eb-4832-8bd7-cc78f8d11af7.original.jpg"
+							 alt="">
+						<figcaption>
+							Senior boxer Auguste Fried misses an uppercut against his opponent during his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Fried started Boxing Club at IU in 2024. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-6">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/50852619-da02-41ed-a6d7-da1c6b1a8939.original.jpg"
+							 alt="">
+						<figcaption>
+							Senior boxer Auguste Fried feints a jab from his opponent during his match Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Fried went on to win by unanimous decision.
+						</figcaption>
+					</figure>
+					<!-- <figure class="grid-image-7">
+						 <img src="https://s3.amazonaws.com/snwceomedia/ids/88e1e71e-bd4a-483d-ac53-c5e633dc00f2.original.jpg"
+						 alt="">
+						 <figcaption>
+						 Sophomore boxer Emmanuel Wire touches gloves with his opponent before his fight Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Wire also joined Brazilian Jiu Jitsu Club at IU in 2024.
+						 </figcaption>
+						 </figure> -->
+					<figure class="grid-image-8">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/5902f975-37f9-4383-8e3d-6a61aa6c32d7.original.jpg"
+							 alt="">
+						<figcaption>
+							Coach Suzana Rodriguez Griffin convenes with junior Emmanuel Wire between rounds during his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Griffin’s promotion company put together the first collegiate boxing tournament in the state of Indiana.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-9">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/55a36932-33de-42d9-adf9-e9b9e50c0e71.original.jpg"
+							 alt="">
+						<figcaption>
+							Junior Aaron Tran measures his distance against his opponent during his match Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Tran was one of eight fighters from the Boxing Club at IU that fought in the tournament. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-10">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/b97ef302-7428-45f2-a1a6-35a8acceb8d9.original.jpg"
+							 alt="">
+						<figcaption>
+							Junior Aaron Tran heads back to his corner after getting bloodied in the previous round of his match Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Tran lost the match by split decision.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-11">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/d9bb4747-1993-4dd1-83d9-76b3d75ea5b0.original.jpg"
+							 alt="">
+						<figcaption>
+							Junior Aaron Tran uses a spit bucket in between rounds during his fight Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Tran’s nose started bleeding after receiving a flurry of punches in the second round.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-12">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/85451bef-c5f6-4bb8-9bac-d67d5714654e.original.jpg"
+							 alt="">
+						<figcaption>
+							Junior boxer Victor Villasana knocks his opponent down during his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Villasana was named the co-president of the Boxing Club at IU in 2024. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-13">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/e5a8cb51-9673-4b50-8ac7-ac81ae7a5a17.original.jpg"
+							 alt="">
+						<figcaption>
+							Freshman Madi Bakytkerey steps into the ring before his fight Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Bakytkerey won the fight of the night for having the most competitive fight in the tournament.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-14">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/d1020113-42fb-434d-a907-97508fbdfd80.original.jpg"
+							 alt="">
+						<figcaption>
+							Senior boxer Auguste Fried holds his belt after being announced as fighter of the night Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Fried said he plans to step into an adviser role for the Boxing Club at IU after this semester.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-15">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/7c67d0f6-2775-447d-856c-6a8e1f8d078a.original.jpg"
+							 alt="">
+						<figcaption>
+							Members of the Boxing Club at IU take a team photo following the tournament Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. The Boxing Club at IU collaborated with La Jefa Promotions to host the event.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-16">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/47aa0554-8c02-4097-a3a3-427be52cf870.original.jpg"
+							 alt="">
+						<figcaption>The Boxing Club at IU coach Suzana Rodriguez Griffin gives a pep talk between rounds Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Senior boxer Auguste Fried said Griffin took the position of team coach and cutwoman at the beginning of this season. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-17">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/b3924c1d-2a4d-43e7-8215-cf263a7b10bf.original.jpg"
+							 alt="">
+						<figcaption>
+							A club member sprawls out on gym mats during a conditioning period of the club’s practice Feb. 26, 2026, at Satori Integrated Martial Arts in Bloomington. The Boxing Club at IU sent eight fighters to the first collegiate tournament in Indiana held Feb. 28. 
+						</figcaption>
+					</figure>
+					<figure class="grid-image-18">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/74de82ef-6cd5-4785-af0c-1d51cb7b6ee1.original.jpg"
+							 alt="">
+						<figcaption>
+							Senior boxer Auguste Fried gets his hands taped prior to his bout Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Fried promoted the Boxing Club at IU on Indianapolis news station FOX59 earlier in February.
+						</figcaption>
+					</figure>
+					<figure class="grid-image-19">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/c8316d1f-a9cc-4bdb-9639-5252aefdb4c6.original.jpg"
+							 alt="">
+						<figcaption>
+							Freshman boxer Calvin Quinto rests before his match Feb. 28, 2026, at XFIT Boxing Studio in Newburgh, Indiana. Quinto won his match by split decision.
+						</figcaption>
+					</figure>
+
+					
+				</div>
+				<div class="story">
+
+					<!-- small bios -->
+					<div class="author-bios">
+						<!-- update bios in metadata.json -->
+						<!-- delete this div if you don't want them to show up -->
+					</div>
+
+					<p class="donate">
+						<em>Like what you're reading?</em><br>
+						Support independent, award-winning student journalism.
+						<a href="" target="_blank">Donate.</a>
+					</p>
+				</div>
+			</article>
+
+		</main>
+
+		<footer>
+
+			<div class="footer-row">
+				<!-- IDS LOGO SVG -->
+				<div class="logo">
+					<a href="https://idsnews.com">
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+						<span class="show-desktop"> | Indiana Daily Student</span>
+					</a>
+				</div>
+				<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+					SUBSCRIBE
+				</a>
+				<div class="socials">
+					<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://open.spotify.com/show/2XFEmhbtKuLVV6tAJl7Lx3?si=h1A1_1ETSL-GVcjgRqynqw&nd=1"
+                       target="_blank"><i class="fab fa-spotify"></i></a>
+				</div>
+			</div>
+			<div class="links">
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+				<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+				<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+				<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                      target="_blank">Advertising</a></p>
+				<p><a href="https://issuu.com/idsnews/docs/binder1_357aeeb2b95e46" target="_blank">Print edition</a></p>
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+			</div>
+			<p class="copyright"><small>All content &copy; 2022 Indiana Daily Student</small></p>
+		</footer>
+
+		<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/ads.js"></script>
+		<script src="js/ids.js"></script>
+		<script src="js/metadata.js"></script>
+	</body>
+
+</html>
