@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!-- Title (pulls from metadata.json) -->
+		<title> Hello</title>
+
+		<!-- favicon -->
+		<link rel="SHORTCUT ICON"
+			  href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+		<!-- CSS stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+		<link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+		<!-- Font Awesome — for the social media icons and hamburger menu icon -->
+		<script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+		<!-- SOCIAL CARDS — Make sure to update!! -->
+		<meta property="og:url" content="https://specials.idsnews.com/data-center-morgan-county-indiana-billion-dollar" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="The billion-dollar neighbor coming to Morgan County" /> <!-- TODO: headline -->
+		<meta property="og:description"
+			  content="When the earth movers work near her property, Sue Dill says her house shakes." />
+		<!-- TODO: abstract -->
+		<meta property="og:site_name" content="IDS News">
+		<meta property="og:image"
+			  content="https://s3.amazonaws.com/snwceomedia/ids/84ef2e3c-2136-4a8a-b4e0-66d3dfde47e3.sized-1000x1000.jpg" />
+		<!-- TODO: link to dominant image -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@idsnews">
+		<meta name="twitter:creator" content="@idsnews">
+		<meta name="twitter:title" content="The billion-dollar neighbor coming to Morgan County"> <!-- TODO: headline -->
+		<meta name="twitter:description"
+			  content="When the earth movers work near her property, Sue Dill says her house shakes."> <!-- TODO: abstract -->
+		<meta name="twitter:image"
+			  content="https://s3.amazonaws.com/snwceomedia/ids/84ef2e3c-2136-4a8a-b4e0-66d3dfde47e3.sized-1000x1000.jpg">
+		<!-- TODO: link to dominant image -->
+
+		<!-- START Ad content: this goes in the head content -->
+		<!-- don't mess with this — it will work all on it's own :-) -->
+		<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+		<script>
+         var googletag = googletag || {};
+         googletag.cmd = googletag.cmd || [];
+		</script>
+		<script>
+         googletag.cmd.push(function () {
+             //all other leaderboards
+             var mapping1 = googletag.sizeMapping()
+									 .addSize([768, 0], [728, 90]) // Desktops and Tablets
+									 .addSize([0, 0], [320, 50]) // Mobile devices
+									 .build();
+             googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+             googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+             googletag.pubads().enableSingleRequest();
+             googletag.pubads().collapseEmptyDivs();
+             googletag.enableServices();
+         });
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager -->
+		<!-- (also don't have to worry about this at all) -->
+		<noscript>
+			<iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+					style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<script src="js/googleTagManager.js"></script>
+
+		<div class="helper"></div>
+
+		<!--Header-->
+		<header>
+
+			<!-- Transparent navbar -->
+			<nav>
+				<ul>
+					<li class="logo">
+						<a href="https://www.idsnews.com">
+							<!-- IDS LOGO SVG -->
+							<svg viewBox="0 0 163.17 68.85">
+								<path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+								<path style="fill:white;"
+									  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+								<path style="fill:white;"
+									  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+							</svg>
+						</a>
+						<span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+					</li>
+					<li class="toggle">
+						<i class="fas fa-bars fa-lg"></i>
+					</li>
+					<li id="socials" class="item">
+						<!-- links generate automatically from metadata.json -->
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Headline, subhed -->
+			<!-- feel free to change this up — you don't need it to have data scroll speed, 
+				 doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+			<div class="story headline-container">
+				<!-- <h1 data-scroll-speed="2">‘They don’t want to not work’</h1> -->
+				<h2>The billion-dollar neighbor coming to Morgan County</h2>
+			</div>
+
+		</header>
+
+		<!-- main article -->
+		<main>
+			<p class="caption header-caption" ><span class="credit" style="display: block">Emerson Elledge | <b>IDS</b></span>The data center campus is seen through a fence April 23, 2026, in Morgan County. On approximately 550 acres once occupied by farmland, houses, wetlands, streams and woodlots, Google plans to construct six buildings and a substation.</p>
+			<article>
+				<div class="bylines">
+					<div id="bylines">
+						<!-- update bylines in metadata.json -->
+					</div>
+					<!-- TO DO update pub_date in metadata.json -->
+					<p id="pubdate"></p>
+				</div>
+				<div class="story">
+					<p>When the construction vehicles shift dirt in the fields near her property, Sue Dill says she can feel
+						her house shake.</p>
+					<!-- TODO: Wide-right sue dill photo -->
+					<p>The fields used to be farmland.</p>
+					<p>But in February and October of last year, an anonymous company convinced local officials to rezone
+						the land for research and manufacturing. Dill's neighbors moved out one by one. Construction crews
+						rolled in.</p>
+					<p>Past Dill's house &mdash; past her barn, past the acres of woods where her sons used to play, past
+						the trails she and her husband used to walk together &mdash; sat several hundred acres of farmland.
+					</p>
+					<p>Now, many of those fields are flat and gray. The earth is churned up in mounds. Wire fences line the
+						roads.</p>
+					<p>A data center is coming to town.</p>
+
+
+					<div class="section-break">&bull; &bull; &bull;</div>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-0'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p>Last year, Morgan County officials approved two separate petitions to rezone land for the
+						construction of &ldquo;Project Louie,&rdquo; a billion-dollar data center 45 minutes north of
+						Bloomington.</p>
+					<p>On <a href="https://www.wthr.com/article/news/local/google-announces-new-550-acre-data-center-campus-in-morgan-county-mooresville-indiana/531-0157e288-481d-41b1-8ead-36202861a993">approximately 550 acres</a> once occupied by farmland, houses, <a href="https://www.in.gov/idem/files/notice_20260223_401_wqc001428.pdf">wetlands, streams and woodlots,</a> Google
+						plans to construct six buildings and a <a href="https://indianaeconomicdigest.net/MobileContent/Default/Top-Story/Article/AES-Indiana-plans-1-200-megawatt-substation-for-Morgan-County-data-center/-3/5309/120223">substation</a>.</p>
+
+					<figure class="wide-right">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/bc3ce0b9-8cdf-43b0-9a1f-fae690e4ae19.sized-1000x1000.jpg"
+							 alt="A woman sits in a green reclining chair in a blue shirt.">
+						<figcaption><p class="credit">Emerson Elledge | <b>IDS</b></p>Sue Dill poses for a portrait April 23, 2026, in her Morgan County home. The Dill
+							family's 14 acres sit just south of Morgan County’s West Keller Hill Road, in a gap nestled
+							right at the top of a data center campus.</figcaption>
+					</figure>
+
+					<p>If it ran at 90% capacity for a full year, <a href="https://morgancountycorrespondent.com/2025/10/23/data-center-could-use-up-to-9-5-million-megawatts-of-power/">the Morgan County Correspondent reported,</a> the substation
+						planned for Project Louie could use 9.46 million megawatts of power a year &mdash; nearly double the
+						2024 energy use of all AES Indiana&rsquo;s residential customers combined.</p>
+					<p>At max capacity, each data center building could use roughly 4 million gallons of water a day, <a href="https://morgancountycorrespondent.com/2025/10/23/data-center-could-use-up-to-9-5-million-megawatts-of-power/">the
+						Morgan County Correspondent reported</a> &mdash; equivalent to the <a href="https://morgancountycorrespondent.com/2025/10/23/data-center-could-use-up-to-9-5-million-megawatts-of-power/">average daily at-home water usage</a> of
+						over 48,000 Americans.</p>
+					<p>The developer, Google, used shell companies to keep its involvement a secret until <a href="https://indianaeconomicdigest.net/Content/Default/Also-In-The-News/Article/Google-reveals-itself-as-developer-behind-500-acre-Morgan-County-data-center-campus/-3/5307/120277#:~:text=Morgan%20County%20Commissioners%20initially%20voted,taxes%20for%20data%20center%20buildings.">eight months</a> after
+						the first rezone. Local officials, including every county commissioner, signed non-disclosure
+						agreements committing not to share Google&rsquo;s name or any information Google considered
+						proprietary.</p>
+					<p>At county hearings, residents turned out in droves. Petitions gathered thousands of signatures and
+						protest groups held meetings. At public meetings and online, locals accused county officials of
+						greed, corruption and keeping secrets.</p>
+					<p>The commissioners who voted for the project said it would bring revenue that could help the county.
+						But the scale and impact of the project meant for many residents, the character of their countryside
+						was on the line.</p>
+					<p>"This is not gonna be a peaceful little country town anymore,&rdquo; Dill said.</p>
+					<p>As demand for artificial intelligence grows, technology companies are responding with <a href="https://www.consumerreports.org/data-centers/ai-data-centers-impact-on-electric-bills-water-and-more-a1040338678/">a national rush</a>
+						to build new and bigger data centers. Most of these data centers are planned for <a href="https://www.pewresearch.org/short-reads/2026/04/13/most-new-data-centers-in-the-us-are-coming-to-rural-areas/">rural areas,</a> and
+						their impact is the most acute at the local level.</p>
+					<p>For local officials, those data centers often carry promises of economic growth. They also use huge
+						amounts of energy and water, and research indicates large data centers could heat up surrounding
+						areas by up to <a href="https://www.cnn.com/2026/03/30/climate/data-centers-are-having-an-underrported">16 degrees</a>, with temperature changes reaching more than 6 miles away. In some cases,
+						nearby residents say the centers have caused their wells to run dry, disrupted daily life with
+						<a href="https://www.wusa9.com/article/news/verify/verify-whats-all-the-data-center-noise-about/65-0a695ecf-9eac-44bc-93f8-9fd7f4bbfd88">constant noise</a> or emitted airborne pollutants <a href="https://theweek.com/tech/memphis-black-community-against-supercomputer-elon-musk-xai">harmful to human health.</a></p>
+					<p>In Morgan County, signs sprang up along yards, roadsides and the fields where the data center would
+						be built. &ldquo;KEEP MONROVIA RURAL,&rdquo; the signs read. &ldquo;NO DATA CENTER.&rdquo;</p>
+
+					
+					<div class="section-break">&bull; &bull; &bull;</div>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-1'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<figure class="lg-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/b714b8e6-b566-41a7-ae9b-f21cfe56f7b9.sized-1000x1000.jpg"
+						 alt="A white home surrounded by trees and bushes.">
+					<figcaption><p class="credit">Ella Curlin | <b>IDS</b></p>Sue Dill’s house is pictured from her backyard April 14, 2026, in Morgan County. Dill moved
+						to her home 39 years ago from the west side of Indianapolis.</figcaption>
+				</figure>
+				<div class="story">
+					<p>Before Dill&rsquo;s husband died, the two of them made the land up in a trust for their son Josh to
+						inherit.</p>
+					<p>Much of the trust&rsquo;s 14 acres are woodland. Dill's white-and-brick home sits on the grassy edge
+						of a two-lane road, peeking over a hill toward passing cars.</p>
+					<p>They moved there 39 years ago from the west side of Indianapolis. Their new home had woods, a
+						pasture, a barn and a well so deep that local stories said even in drought, it always had water.</p>
+					<p>Her youngest, Gabriel, was 11 or 12 when they moved in, Dill said. His brother Josh was 15. Gabriel
+						would forage for morel mushrooms around the pasture, and her husband Ronnie built a tree stand in
+						the woods. She and Ronnie took long walks through the tree-covered paths. They loved that land, she
+						said.</p>
+					<p>"We just absolutely thought we'd died and gone to heaven," Dill said.</p>
+					<p>Ronnie died in that house in 2024, Dill said. Now she keeps his ashes in a wooden box in the living
+						room. She sits out back in the evenings and sketches the treeline. A couple months ago she dreamed
+						Ronnie walked into the woods, and as she called out to him, he was unable to hear.</p>
+					<p>The Dill family's 14 acres sit just south of Morgan County&rsquo;s West Keller Hill Road, in a gap
+						nestled right at the top of the data center campus.</p>
+					<p>By April this year, that campus was hemmed in by barbed wire.</p>
+					<div class="section-break">&bull; &bull; &bull;</div>
+					<p>At the start of a <a href="https://www.youtube.com/watch?v=Svu09h29GIw">Morgan County Commissioners meeting</a> in February last year, Commissioner Kenny Hale
+						reminded attendees he would have them removed by a police deputy if they refused to be courteous.
+					</p>
+					<p>Then he apologized.</p>
+					<p>&ldquo;We can&rsquo;t make everybody happy, and I&rsquo;m sorry about that,&rdquo; Hale said.
+						&ldquo;But we&rsquo;re going to try to do the best we can.&rdquo;</p>
+					<p>The commission was voting that day on whether to approve a planned unit development, or PUD, that
+						would alter zoning rules for the area to allow developers to construct a data center on 390.74 acres
+						along Antioch Road.</p>
+
+					<figure class="wide-left">
+						<img src="https://s3.amazonaws.com/snwceomedia/ids/597b3a65-35c2-45c7-8ef9-d6e1adb9920d.sized-1000x1000.jpg"
+							 alt="Two pigs in a pasture in front of a white farm building.">
+						<figcaption><p class="credit">Ella Curlin | <b>IDS</b></p>Two pigs look through the fence in a pasture on Terri Moore’s farm Nov. 18, 2025, in
+							Morgan County. Moore first moved onto the farm 41 years ago with her late husband Terry.
+						</figcaption>
+					</figure>
+					<p>The <a href="https://morgancounty.in.gov/egov/documents/1746471010_90727.pdf">rezoning</a> would change the purpose of the land. Previously, developers had to construct buildings
+						within restrictions, such as height limits, for agricultural or residential buildings. In the
+						proposed requirements, Project Louie's primary buildings could be up to 75 feet tall, and up to
+						three-quarters of the lots could be covered with hard surfaces. They can emit a maximum of 65
+						decibels at the property line &mdash; the equivalent of <a href="https://ehs.yale.edu/sites/default/files/files/decibel-level-chart.pdf">a business office.</a></p>
+					<p><a href="https://morgancounty.in.gov/egov/apps/document/center.egov?view=browse&eGov_searchTitle=&eGov_searchType=12&eGov_searchDepartment=23&eGov_searchCategory=&eGov_searchTopic=&eGov_searchYear=2025&did=%7B%22userAgent%22%3A%22Mozilla%2F5.0%2B%28Macintosh%3B%2BIntel%2BMac%2BOS%2BX%2B10_15_7%29%2BAppleWebKit%2F537.36%2B%28KHTML%2C%2Blike%2BGecko%29%2BChrome%2F147.0.0.0%2BSafari%2F537.36%22%2C%22hardwareConcurrency%22%3A8%2C%22platform%22%3A%22MacIntel%22%2C%22language%22%3A%22en-US%22%2C%22screenWidth%22%3A1512%2C%22screenHeight%22%3A982%2C%22plugins%22%3A5%2C%22canvas%22%3A%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAF90lEQVR4AezU0VLkOAwF0LD%2F%2F88sL00txYZ24tiW5EMNNTN0YkvnUvefwxcBAgSSCCisJEEZkwCB41BYfgsIEEgjoLDSRNU%2FqBMIZBdQWNkTND%2BBjQQU1kZhW5VAdgGFlT1B8xP4P4GiP1NYRYO1FoGKAgqrYqp2IlBUQGEVDdZaBCoKNBfW53F8VvhuCtFDBAiEFGgurJDTG4oAga0EFNZWcVuWQG4BhZU7P9N3Czggk4DCypSWWQlsLqCwNv8FsD6BTAIKK1NaZiWwuUBnYW2uZ30CBKYKKKyp3C4jQKBHQGH16HmXAIGpAgprKnfqywxPYLmAwloegQEIEGgVUFitUp4jQGC5gMJaHoEBCMQTiDqRwoqajLkIEPgloLB%2BkfgBAQJRBRRW1GTMRYDALwGF9Yuk%2FwdOIEBgjIDCGuPqVAIEBggorAGojiRAYIyAwhrj6tRdBOw5VUBhTeV2GQECPQIKq0fPuwQITBVQWFO5XUaAQI%2FA2sLqmdy7BAhsJ6CwtovcwgTyCiisvNmZnMB2Agpru8hXLexeAv0CCqvf0AkECEwSUFiToF1DgEC%2FgMLqN3QCAQI%2FBYb9T2ENo3UwAQJPCyisp0WdR4DAMAGFNYzWwQQIPC2gsJ4W7T%2FPCQQInAgorBMYPyZAIJ6AwoqXiYkIEDgRUFgnMH5MYIaAO64JKKxrXp4mQGChgMJaiO9qAgSuCSisa16eJkBgoUDqwlro5moCBBYIKKwF6K4kQOCegMK65%2BYtAgQWCCisBeiuvCHgFQJfAgrrC8EfAgRyCCisHDmZkgCBLwGF9YXgDwECkQTOZ1FY5zY%2BIUAgmIDCChaIcQgQOBdoLqyP4%2Fio8H34IkAgrUBzYaXdcLvBLUygroDCqputzQiUE1BY5SK1EIG6AgqrbrY2qy%2Bw3YYKa7vILUwgr4DCypudyQlsJ6CwtovcwgTyCuxcWHlTMzmBTQUU1qbBW5tARgGFdZra5%2BdxVPg%2BXdAHBNIJKKx0kRn4joB3aggorBo52oLAFgIKa4uYLUmghoDCqpGjLQhsIdBUWFtIWJIAgfACCit8RAYkQOAloLBeEv4mQCC8gMIKH9HkAV1HILCAwgocjtEIEPgpoLB%2BevgfAQKBBRRW4HCMRmCsQL7TFVa%2BzExMYFsBhbVt9BYnkE9AYeXLzMQEthVQWLej9yIBArMFFNZscfcRIHBbQGHdpvMiAQKzBRTWbHH3ZRQwcxABhRUkCGMQIPBeQGG9N%2FIEAQJBBBRWkCCMQYDAe4EZhfV%2BCk8QIECgQUBhNSB5hACBGAIKK0YOpiBAoEFAYTUgeaRdwJMERgoorJG6ziZA4FEBhfUop8MIEBgpoLBG6jqbQGWBBbsprAXoriRA4J6Awrrn5i0CBBYIKKwF6K4kQOCegMK659b%2FlhMIELgsoLAuk3mBAIFVAgprlbx7CRC4LKCwLpN5gcBVAc8%2FJaCwnpJ0DgECwwUU1nBiFxAg8JSAwnpK0jkECAwXSFBYww1cQIBAEgGFlSQoYxIgcBwKy28BAQJpBBRWmqi2GNSSBP4UUFh%2F8viQAIFIAgorUhpmIUDgTwGF9SePDwkQGCVw51yFdUfNOwQILBFQWEvYXUqAwB0BhXVHzTsECCwRUFhL2PsvdQKBHQUU1mnqHx%2FHUeH78EWgjIDCKhOlRQjUF1BY9TO2YXYB838LKKxvCv8gQCC6gMKKnpD5CBD4FlBY3xT%2BQYBAdIH6hRU9AfMRINAsoLCaqTxIgMBqAYW1OgH3EyDQLKCwmqk8GF%2FAhNUFFFb1hO1HoJCAwioUplUIVBdQWNUTth%2BBQgL%2FKaxCW1mFAIGSAgqrZKyWIlBTQGHVzNVWBEoKKKySsb5dygMEUgoorJSxGZrAngIKa8%2FcbU0gpYDCShmboQm0C1R6UmFVStMuBIoLKKziAVuPQCUBhVUpTbsQKC6gsN4E7GMCBOIIKKw4WZiEAIE3AgrrDZCPCRCII6Cw4mRhktUC7g8voLDCR2RAAgReAgrrJeFvAgTCCyis8BEZkACBl8C%2FAAAA%2F%2F%2BKP5hdAAAABklEQVQDADyvyS2BXAZYAAAAAElFTkSuQmCC%22%7D&app=4&sect=content&path=&act=&id=&page=4_1&order=#docaccess-1bb7f15058e8b2dc394ee0e9bc4cb032">Thirteen people</a> spoke to the commissioners in opposition to the plan. They worried about the lights,
+						the water, the energy use, the construction, the noise. Two were concerned the development would
+						disturb eagles. Several others questioned who stood to benefit from the tax revenue.</p>
+					<p>Many brought up concerns about transparency.</p>
+					<p>Economic Development Corporation Executive Director Mike Dellinger later told the <a href="https://morgancountycorrespondent.com/2025/10/30/dellinger-details-new-data-center-updates/">Morgan County
+						Correspondent</a> he&rsquo;d been approached about the project in the first quarter of 2024. Google had
+						operated through a series of limited liability companies, primarily a shell company first made in
+						Delaware named Woodland Caribou LLC.</p>
+					<p>The manager listed on the registration statement for the Indiana branch of Woodland Caribou LLC, Michael Montfort, shares an <a href="https://www.in.gov/idem/files/notice_20260223_401_wqc001428.pdf">address</a> with major technology law firm Wilson Sonsini, where a <a href="https://www.wsgr.com/en/people/michael-j-montfort.html">senior counsel</a> with the same name works in employee benefits and compensation. Montfort is also linked to data center projects in northern Virginia, <a href="https://www.datacenterdynamics.com/en/news/google-behind-1bn-data-center-in-little-rock-arkansas-report/">Little Rock</a> and Conway in Arkansas and withdrawn projects in <a href="https://www.stlpr.org/economy-business/2025-09-08/documents-link-secretive-st-charles-data-center-google">St. Charles</a>, Missouri and <a href="https://www.arkansasonline.com/news/2025/jul/19/details-sparse-on-data-center-projects-in/">Franklin Township</a>, Indiana. 
+					</p>
+					<p>By the end of August 2024, landowners had started <a href="https://www.doxpop.com/prod/in/recorder/FindRecordedDocuments?action=GET-FIND-RECORDED-DOCUMENTS&regionId=39&fullName=woodland%20caribou&isDocumentSuperSearch=true">signing agreements</a> with Woodland Caribou LLC. Local
+						leaders, including every member of the county commission, signed NDAs with other shell companies in
+						October and December 2024.</p>
+					<p>Public notice went up in the <a href="https://morgancountycorrespondent.com/2025/01/23/public-notices-1-23-2025/">Correspondent</a> on Jan. 23, 2025.</p>
+					<p>"We have no time to even think about it,&rdquo; Sean Walker, who lives across from Project
+						Louie&rsquo;s campus, said during public comment. &ldquo;You guys will make decisions that's going
+						to last forever. My kids will be out of high school by the time this is done being built."</p>
+					<p>Forty minutes later, the commissioners voted 3-0 to approve the rezone.</p>
+					<p>The audience broke into uproar. Several people began shouting. Some yelled curses.</p>
+					<p>&ldquo;How much are they paying you?&rdquo; one person called up to the commissioners, repeatedly.
+						&ldquo;How much are they paying you?&rdquo;</p>
+
+					
+					<div class="section-break">&bull; &bull; &bull;</div>
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-2'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p>In March 2025, Terri Moore and another property owner, both of whom own land near the data center,
+						filed a lawsuit requesting review of the decision to approve the rezone for the first 390.74 acres
+						of Project Louie.</p>
+					<p>Their lawsuit points out that Google&rsquo;s name was concealed from the public and withheld from
+						officials who didn&rsquo;t sign an NDA. The lawsuit also alleges the construction will harm the
+						enjoyment and value of the plaintiffs&rsquo; properties while worsening Morgan County&rsquo;s
+						&ldquo;rural character.&rdquo;</p>
+					<p>Moore first moved into Morgan County 41 years ago with her late husband Terry. The farm was his idea,
+						she said. He grew up spending summers at his uncle&rsquo;s house in the Illinois countryside, and
+						his dream was to own five acres and a pond.</p>
+					<p>&ldquo;This was his life dream,&rdquo; Moore said. &ldquo;Then it became mine.&rdquo;</p>
+					<p>On their farm, they grew a strawberry patch, an orchard with apple and peach trees and English walnut
+						trees along the driveway. For livestock, she and Terry started small with chickens, then an Angus
+						black cow. They got their first pigs when Moore stopped another farmer from killing the runts of a
+						litter. They raised alpacas, too, until Terry became too sick to take care of them.</p>
+					<p>In a display cabinet in the living room, a small box shows a man sitting astride a horse before an
+						orange sunset. Terry&rsquo;s ashes sit inside. After he died, Moore thought about planting a tree on
+						the property and having both of their ashes buried underneath.</p>
+					<p>Nowadays, she said, she doesn't know what she&rsquo;ll do. For a long time, the thought of a big
+						industrial building by the place she&rsquo;d made her life with Terry made her depressed and sick
+						with grief.</p>
+					<p>Moore&rsquo;s white farmhouse sits at the end of a gravel driveway, past a pond and a barn her nephew
+						is renovating. The view from her porch where she sits to watch the sunset shows the pigsties full of
+						grunting hogs, the pasture where she raised alpacas and the long stretch of asphalt that is State
+						Road 42.</p>
+					<p>Across that road sits Project Louie.</p>
+					<div class="section-break">&bull; &bull; &bull;</div>
+				</div>
+				<figure class="lg-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/a84cdc83-4ffa-41c0-9c35-336adac4438f.sized-1000x1000.jpg"
+						 alt="A large tract of land that is being prepared for construction.">
+					<figcaption><p class="credit">Ella Curlin | <b>IDS</b></p>A section of Project Louie is seen from Sue Dill’s west property line April 14, 2026, in
+						Morgan County. The county commission approved two rezones for the project in 2025.</figcaption>
+				</figure>
+				<div class="story">
+					<p>In <a href="https://www.wrtv.com/news/local-news/morgan-county/morgan-county-commissioners-approve-rezoning-more-farmland-for-data-center-project">October 2025</a>, the Morgan County Commissioners approved a second rezoning request that expanded the
+						Project Louie campus by 158 acres, bringing the total land to approximately 550 acres.</p>
+					<p>Dill, along with several other people who owned property near the site, filed a lawsuit. In January
+						this year, that was consolidated with the lawsuit including Terri Moore. The litigation is ongoing.
+					</p>
+					<p>In 2025, as <a href="https://www.wthr.com/article/news/local/indiana-growing-data-center-industry-sparks-concerns-over-environmental-and-economic-impact/531-b8d36bba-91f7-446d-af05-ed79fee1dad8">data center growth</a> accelerated across Indiana, Hoosiers saw a 17% increase in the average
+						energy bill &mdash; the highest year-over-year increase since 2005, <a href="https://www.indystar.com/story/news/local/2026/03/24/electric-bills-rise-indiana-regulators-search-for-solutions/89284241007/">IndyStar reported.</a></p>
+					<p><a href="https://www.indystar.com/story/opinion/readers/2025/09/22/aes-indiana-data-centers-electric-rates/86229260007/">Utility companies</a> have said the price of improved infrastructure and power generation isn&rsquo;t
+						passed to customers. Consumer advocacy groups like <a href="https://www.citact.org/ai-data-centers">the Citizens Action Coalition</a> have called that
+						into question.</p>
+					<p>The Morgan County Economic Development Corporation says <a href="https://www.morgancountydatacenter.com/">Google will pay</a> for Project Louie&rsquo;s
+						electricity and infrastructure costs. AES Indiana, which has predicted powering the project will
+						cost $737.3 million, has said <a href="https://www.aesindiana.com/data-centers">the same.</a></p>
+					<p>Meanwhile, Dill said she can&rsquo;t afford her power bills.</p>
+					<p>Her average bill used to land around $150, she said. But recently, those costs have jumped. In
+						December, she was due for $176.67. In January, that rose to $423.26, then $462.35 in March, then
+						$261.59 due this April.</p>
+					<p>When Ronnie had cancer, she said, she used to run the furnace and all the heaters in the house to
+						keep him warm. Even then, she said, her bills never reached $200.</p>
+					<p>Dill said she&rsquo;s between a rock and a hard place. She plans to live at her house on Keller Hill
+						until she dies there, but she can&rsquo;t afford to stay in her house if she has to pay $400 bills
+						each month.</p>
+					<p>&ldquo;I don't know, I don't know what to do,&rdquo; Dill said. &ldquo;I guess I got to write a check
+						again and send it to them because I can't have my power go out.&rdquo;</p>
+
+					
+					<div class="section-break">&bull; &bull; &bull;</div>
+
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-3'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<p>Morgan County officials have said they see the project&rsquo;s potential to boost the community and
+						bring economic growth.</p>
+					<p>In October 2025, Dellinger of the Economic Development Corporation told <a href="https://morgancountycorrespondent.com/2025/10/30/dellinger-details-new-data-center-updates/">the Morgan County
+						Correspondent</a> the income from the project would bring the area &ldquo;stability.&rdquo; That same
+						month, the county commission passed a <a href="https://morgancounty.in.gov/egov/documents/1773425220_74375.pdf">resolution</a> supporting data center development.</p>
+					<p>&ldquo;Data centers provide high-paying jobs, increase local tax revenues, and support technological
+						advancement across industries,&rdquo; the resolution read.</p>
+					<p>Project Louie is a $1 billion investment, according to documents submitted during Terri Moore&rsquo;s
+						litigation. The company&rsquo;s promised investments include 100 full-time jobs with wages of either
+						$100,000 a year or 125% of Morgan County&rsquo;s average annual wage, whichever is greater. The tax
+						payments should meet a minimum of $500,000 per year, with no less than $300,000 per data center
+						building.</p>
+					<p>In May 2025, the county granted Woodland Caribou LLC <a href="https://morgancounty.in.gov/egov/apps/document/center.egov?view=browse&eGov_searchTitle=2025-5&eGov_searchType=&eGov_searchDepartment=23&eGov_searchCategory=&eGov_searchTopic=&eGov_searchYear=&eGov_searchSubmit=Search&did=%7B%22userAgent%22%3A%22Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F147.0.0.0+Safari%2F537.36%22%2C%22hardwareConcurrency%22%3A8%2C%22platform%22%3A%22MacIntel%22%2C%22language%22%3A%22en-US%22%2C%22screenWidth%22%3A1512%2C%22screenHeight%22%3A982%2C%22plugins%22%3A5%2C%22canvas%22%3A%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAF90lEQVR4AezU0VLkOAwF0LD%2F%2F88sL00txYZ24tiW5EMNNTN0YkvnUvefwxcBAgSSCCisJEEZkwCB41BYfgsIEEgjoLDSRNU%2FqBMIZBdQWNkTND%2BBjQQU1kZhW5VAdgGFlT1B8xP4P4GiP1NYRYO1FoGKAgqrYqp2IlBUQGEVDdZaBCoKNBfW53F8VvhuCtFDBAiEFGgurJDTG4oAga0EFNZWcVuWQG4BhZU7P9N3Czggk4DCypSWWQlsLqCwNv8FsD6BTAIKK1NaZiWwuUBnYW2uZ30CBKYKKKyp3C4jQKBHQGH16HmXAIGpAgprKnfqywxPYLmAwloegQEIEGgVUFitUp4jQGC5gMJaHoEBCMQTiDqRwoqajLkIEPgloLB%2BkfgBAQJRBRRW1GTMRYDALwGF9Yuk%2FwdOIEBgjIDCGuPqVAIEBggorAGojiRAYIyAwhrj6tRdBOw5VUBhTeV2GQECPQIKq0fPuwQITBVQWFO5XUaAQI%2FA2sLqmdy7BAhsJ6CwtovcwgTyCiisvNmZnMB2Agpru8hXLexeAv0CCqvf0AkECEwSUFiToF1DgEC%2FgMLqN3QCAQI%2FBYb9T2ENo3UwAQJPCyisp0WdR4DAMAGFNYzWwQQIPC2gsJ4W7T%2FPCQQInAgorBMYPyZAIJ6AwoqXiYkIEDgRUFgnMH5MYIaAO64JKKxrXp4mQGChgMJaiO9qAgSuCSisa16eJkBgoUDqwlro5moCBBYIKKwF6K4kQOCegMK65%2BYtAgQWCCisBeiuvCHgFQJfAgrrC8EfAgRyCCisHDmZkgCBLwGF9YXgDwECkQTOZ1FY5zY%2BIUAgmIDCChaIcQgQOBdoLqyP4%2Fio8H34IkAgrUBzYaXdcLvBLUygroDCqputzQiUE1BY5SK1EIG6AgqrbrY2qy%2Bw3YYKa7vILUwgr4DCypudyQlsJ6CwtovcwgTyCuxcWHlTMzmBTQUU1qbBW5tARgGFdZra5%2BdxVPg%2BXdAHBNIJKKx0kRn4joB3aggorBo52oLAFgIKa4uYLUmghoDCqpGjLQhsIdBUWFtIWJIAgfACCit8RAYkQOAloLBeEv4mQCC8gMIKH9HkAV1HILCAwgocjtEIEPgpoLB%2BevgfAQKBBRRW4HCMRmCsQL7TFVa%2BzExMYFsBhbVt9BYnkE9AYeXLzMQEthVQWLej9yIBArMFFNZscfcRIHBbQGHdpvMiAQKzBRTWbHH3ZRQwcxABhRUkCGMQIPBeQGG9N%2FIEAQJBBBRWkCCMQYDAe4EZhfV%2BCk8QIECgQUBhNSB5hACBGAIKK0YOpiBAoEFAYTUgeaRdwJMERgoorJG6ziZA4FEBhfUop8MIEBgpoLBG6jqbQGWBBbsprAXoriRA4J6Awrrn5i0CBBYIKKwF6K4kQOCegMK659b%2FlhMIELgsoLAuk3mBAIFVAgprlbx7CRC4LKCwLpN5gcBVAc8%2FJaCwnpJ0DgECwwUU1nBiFxAg8JSAwnpK0jkECAwXSFBYww1cQIBAEgGFlSQoYxIgcBwKy28BAQJpBBRWmqi2GNSSBP4UUFh%2F8viQAIFIAgorUhpmIUDgTwGF9SePDwkQGCVw51yFdUfNOwQILBFQWEvYXUqAwB0BhXVHzTsECCwRUFhL2PsvdQKBHQUU1mnqHx%2FHUeH78EWgjIDCKhOlRQjUF1BY9TO2YXYB838LKKxvCv8gQCC6gMKKnpD5CBD4FlBY3xT%2BQYBAdIH6hRU9AfMRINAsoLCaqTxIgMBqAYW1OgH3EyDQLKCwmqk8GF%2FAhNUFFFb1hO1HoJCAwioUplUIVBdQWNUTth%2BBQgL%2FKaxCW1mFAIGSAgqrZKyWIlBTQGHVzNVWBEoKKKySsb5dygMEUgoorJSxGZrAngIKa8%2FcbU0gpYDCShmboQm0C1R6UmFVStMuBIoLKKziAVuPQCUBhVUpTbsQKC6gsN4E7GMCBOIIKKw4WZiEAIE3AgrrDZCPCRCII6Cw4mRhktUC7g8voLDCR2RAAgReAgrrJeFvAgTCCyis8BEZkACBl8C%2FAAAA%2F%2F%2BKP5hdAAAABklEQVQDADyvyS2BXAZYAAAAAElFTkSuQmCC%22%7D#docaccess-14cfef6d403eef38c85340a32ccc842e">tax breaks</a> of up to 50% for 10 years.</p>
+					<p>In a written statement to the Indiana Daily Student, Commissioner Don Adams said that to research
+						Project Louie, he first called the Chamber of Commerce in Cedar Rapids, Iowa, where <a href="https://datacenters.google/locations/iowa/">Google has data
+						centers</a>, and was told the company&rsquo;s &ldquo;benefit to the community was over the top.&rdquo;
+					</p>
+					<p>Adams described Google as &ldquo;good neighbors,&rdquo; writing the company had given local schools
+						large sums of money while granting $200,000 to the Monrovia Future Farmers of America and $1 million
+						to a combination of local nonprofits.</p>
+					<p>Adams, who is 83, said he voted yes on the rezone for his grandchildren.</p>
+					<p>&ldquo;I am very confident their opportunity to thrive in the future Morgan County increased more
+						than would have happened with the 580 acres of corn,&rdquo; Adams wrote.</p>
+					<p>AES Indiana, Bryan Collier and Mike Dellinger did not offer comment. Kenny Hale, who has since
+						stepped down as commissioner, directed the IDS to the other commission members.</p>
+					<div class="section-break">&bull; &bull; &bull;</div>
+
+				</div>
+				<figure class="lg-image">
+					<img src="https://s3.amazonaws.com/snwceomedia/ids/c8528183-c5a0-41e9-9985-8cdd3c869c14.original.jpg"
+						 alt="Five people sit around a table with a black and white tablecloth.">
+					<figcaption><p class="credit">Ella Curlin | <b>IDS</b></p>From left to right, Bill Williams, Susan Boulianne, Terri Moore, Sue Dill and Chris Green
+						discuss Google’s planned data center in Boulianne’s barn Nov. 18, 2025, in Morgan County. Williams,
+						Boulianne, Moore and Dill filed lawsuits last year over the data center rezonings.</figcaption>
+				</figure>
+				<div class="story">
+					<p>Google estimated constructing the initial buildings for the data center could take <a href="https://www.wthr.com/article/news/local/google-announces-new-550-acre-data-center-campus-in-morgan-county-mooresville-indiana/531-0157e288-481d-41b1-8ead-36202861a993">two years.</a></p>
+					<p>Wire fences line the Project Louie campus. In some stretches, the fields are flattened and gray; in
+						others the dirt piles up in steep embankments. Construction vehicles crowd one corner of the
+						property. Signs around the property warn: &ldquo;No Trespassing.&rdquo;</p>
+					<p>"Everybody gets so depressed when they drive down our road, and they see what that is,&rdquo; Dill
+						said. &ldquo;Now, it's overtaken us, this small country little town."</p>
+					<p>Dill&rsquo;s neighbors were bought out nearly all at once. Woodland Caribou LLC bought the lots to
+						her west and south Sept. 10, 2025. It bought the parcel east of her 65 days later. Overall, for the
+						sales of 15 properties between Sept. 10 and Nov. 14, 2025, Woodland Caribou LLC spent nearly $78
+						million.</p>
+					<p>Across the road from Moore&rsquo;s farm, empty residential homes sit behind barbed wire fences, cars
+						parked in their driveways.</p>
+					<p>Dill doesn&rsquo;t know what Ronnie would do, she said. Maybe he&rsquo;d move back to Indianapolis,
+						she thinks. He was always sick of mowing the grass.</p>
+					<p>She&rsquo;s made up her mind, though. She couldn&rsquo;t sell the house now if she tried, she said.
+						She&rsquo;s staying, anyway.</p>
+					<p>Dill said she&rsquo;s heard a lot of rumors about the data center, and she doesn&rsquo;t know what to
+						believe. Her worries, like the rumors, are piling up. She worries the data center will emit fumes
+						that damage her trees or trigger her asthma. She worries about the electricity use. She worries
+						about the noise from the data center&rsquo;s operation.</p>
+					<p>Around the end of February, earthmovers started shifting dirt in the fields by her house, Dill said.
+						The machines vibrate the earth to make it easier to move. When they vibrate, Dill said, her house
+						shakes with them.</p>
+					<p>Meanwhile, <a href="https://www.facebook.com/photo?fbid=122160617816845222&set=pb.61575356668256.-2207520000">trucks</a> have been moving up and down the two-lane road beside the data center campus. They
+						make a ruckus, Dill said, but she&rsquo;s starting to learn to sleep through the noise.</p>
+					<p>&ldquo;My bedroom's on the outside wall,&rdquo; she said. &ldquo;I hear it all. They start
+						early.&rdquo;</p>
+					<p>In the woods behind her house, purple wildflowers line the paths where she and Ronnie used to walk.
+						Her husband's old tree stand is starting to fall apart. Planks and boards are missing from the
+						walls, the nails exposed to air. Parts of the floorboards are starting to crumble.</p>
+					<p>Two blue plastic chairs sit at the top. One has fallen on its side. The other faces north, into the
+						trees. Through the canopy, past the fence outlining Project Louie, churned-up dirt piles up in the
+						fields.</p>
+					<p>Past that, trailers and excavators are crowded up in rows.</p>
+				</div>
+
+
+                <!-- TODO: TY Chat GPT -->
+                <!-- TODO: Make Style more interesting / ids customized / computer-y?  -->
+
+                <div class="timeline-wrapper">
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">Jan–Apr 2024</div>
+                            <div class="timeline-content">
+                                Google and AES Indiana approach EDC Executive Director Mike Dellinger about a potential
+                                data center after prior discussions.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">June 2024</div>
+                            <div class="timeline-content">
+                                Woodland Caribou LLC is formed in Delaware.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">August 2024</div>
+                            <div class="timeline-content">
+                                Two landowners sign agreements restricting sale to Woodland Caribou LLC.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">October 2024</div>
+                            <div class="timeline-content">
+                                Plan Director Laura Parker signs NDA with Anchor Designs LLC.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">November 2024</div>
+                            <div class="timeline-content">
+                                Engineering firm begins surveying 475 acres for water permit preparation.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">December 2024</div>
+                            <div class="timeline-content">
+                                County commissioners sign NDAs with Anchor Designs.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">January 2025</div>
+                            <div class="timeline-content">
+                                Rezoning petition filed for 390 acres; newspaper issues public notice Jan. 23.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">February 2025</div>
+                            <div class="timeline-content">
+                                Public hearing held; rezoning approved. Woodland Caribou registers Indiana branch.
+                                Developer remains anonymous.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">March 2025</div>
+                            <div class="timeline-content">
+                                Lawsuit filed alleging rezoning approval was unlawful.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">May 2025</div>
+                            <div class="timeline-content">
+                                County approves 10-year 50% property tax deduction for Google.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">September 2025</div>
+                            <div class="timeline-content">
+                                $72M in land purchases; expansion of 158 acres recommended.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">October 2025</div>
+                            <div class="timeline-content">
+                                Additional rezoning approved; substation proposal revealed. Google confirmed as
+                                developer.
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">November 2025</div>
+                            <div class="timeline-content">
+                                Second lawsuit filed; litigation ongoing.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <style>
+                 .timeline-wrapper {
+                     overflow-x: auto;
+                     /* overflow-y: visible; */
+                     padding: 40px 20px;
+                     margin: auto 15vw;
+                 }
+
+                 .timeline {
+                     display: flex;
+                     /* gap: 40px; */
+                     position: relative;
+                     scroll-snap-type: both mandatory;
+                     overflow-x: auto;
+                     overflow-y: hidden;
+                     padding-top: 8px;
+                 }
+
+
+                 .timeline-item {
+                     min-width: 250px;
+                     max-width: 250px;
+                     scroll-snap-align: start;
+                     position: relative;
+                     border-top: 8px solid #ddd;
+                     overflow: visible;
+                     padding-right: 40px;
+                 }
+
+                 .timeline-item::before {
+                     content: "";
+                     position: absolute;
+                     top: -12px;
+                     left: 0;
+                     width: 16px;
+                     height: 16px;
+                     background: #0073e6;
+                     border-radius: 50%;
+                     z-index: 101;
+                 }
+
+                 .timeline-date {
+                     font-weight: bold;
+                     margin-bottom: 10px;
+                     margin-top: 20px;
+                 }
+
+                 .timeline-content {
+                     background: #f7f7f7;
+                     padding: 15px;
+                     border-radius: 10px;
+                     line-height: 1.4;
+                 }
+
+                 .timeline-wrapper {
+                     position: relative;
+                 }
+
+                 /* .timeline-wrapper::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: calc(250px * 13 + 40px * 12);
+                    top: 80px;
+                    height: 4px;
+                    background: #ddd;
+                    z-index: 100;
+                    } */
+
+				 @media (max-width: 576px) {
+					 .helper {
+						 background-color: orange;
+					 }
+
+					 .helper::after {
+						 content: 'S';
+					 }
+
+					 .timeline-wrapper {
+						 margin: auto auto;
+					 }
+				 }
+                </style>
+
+				<div class="story">
+
+					<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-4'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+								</script>
+							</div>
+						</div>
+					</div>
+					
+					<!-- small bios -->
+					<div class="author-bios">
+						<!-- update bios in metadata.json -->
+						<!-- delete this div if you don't want them to show up -->
+					</div>
+
+					<p class="donate">
+						<em>Like what you're reading?</em><br>
+						Support independent, award-winning student journalism.
+						<a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+					</p>
+				</div>
+			</article>
+
+		</main>
+
+		<footer>
+
+			<div class="footer-row">
+				<!-- IDS LOGO SVG -->
+				<div class="logo">
+					<a href="https://idsnews.com">
+						<svg viewBox="0 0 163.17 68.85">
+							<path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+							<path style="fill:#990000;"
+								  d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+							<path style="fill:#990000;"
+								  d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+						</svg>
+						<span class="show-desktop"> | Indiana Daily Student</span>
+					</a>
+				</div>
+				<a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+					SUBSCRIBE
+				</a>
+				<div class="socials">
+					<a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+					<a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+																									   class="fab fa-spotify"></i></a>
+				</div>
+			</div>
+			<div class="links">
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+				<p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+				<p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+				<p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                      target="_blank">Advertising</a></p>
+				<p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+				<p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+			</div>
+			<p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+		</footer>
+
+		<!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/ads.js"></script>
+		<script src="js/ids.js"></script>
+		<script src="js/metadata.js"></script>
+	</body>
+
+</html>
