@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="https://specials.idsnews.com/dawn-caraveo-death-morgantown" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Her mom died 36 years ago. She’s still searching for answers." /> <!-- TODO: headline -->
+    <meta property="og:description" content="Jennifer Gatz’s mother died in Morgantown, Indiana, in 1990." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/63d09672-8682-4f3f-821a-581d2a3dc33e.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Her mom died 36 years ago. She’s still searching for answers."> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Jennifer Gatz’s mother died in Morgantown, Indiana, in 1990."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/63d09672-8682-4f3f-821a-581d2a3dc33e.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Her mom died 36 years ago</h1>
+            <h2 data-scroll-speed="3">She&rsquo;s still searching for answers</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption"><span class="credit" style="display:block">Courtesy Photo</span> Dawn Caraveo is pictured. She died Jan. 29, 1990, in Morgantown, Indiana.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+				<p>As her husband scrubs the shampoo into her scalp, Jennifer Gatz thinks about her mom.</p>
+				<p>As he leans her head back to rinse the suds from her long, light brown hair, Jennifer thinks of how lucky she is to have someone who is a good husband and father.</p>
+				<p>As he scratches her head, she thinks of how her mom never had someone who would buy her flowers when she had a bad day or massage her back.</p>
+				<p>In gentle moments like these, Jennifer thinks of all the kindnesses her mother didn&rsquo;t have.</p>
+				<p>Dawn Caraveo died over 36 years ago in Morgantown, Indiana, just 30 miles northeast of Bloomington. Jennifer was 3 years old.</p>
+				<p>The autopsy report documented Dawn&rsquo;s death as a suicide from a self-inflicted gunshot wound to her stomach. But certain details in the case make Jennifer question what really happened.</p>
+				<p>Thoughts of her mom have consumed her daily life for the past few years. She&rsquo;s filed public records requests, sent emails, made calls, viewed crime scene photos and found the autopsy report from that day.</p>
+				<p>For Jennifer, now 39, there&rsquo;s no way her mother committed suicide. She wants to know the truth.</p>
+
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+				<p>Though she was young when her mom died, Jennifer remembers following her three older siblings to her mother&rsquo;s bedroom after waking up to the sound of a gunshot. It&rsquo;s her very first memory.</p>
+				<p>It was the early morning of Jan. 29, 1990, and she remembers running with her siblings to a neighbor&rsquo;s house for help.</p>
+				<p>Her legs were so short she couldn&rsquo;t keep up with the others. Her oldest sister dragged her along by the wrist as they dashed through the Morgantown snow.</p>
+
+				<figure class="wide-right">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/86697ec0-877c-448b-83eb-376e062054e0.original.jpg"/>
+					<figcaption>
+						<p class="credit">Courtesy Photo</p>
+						Jennifer Gatz takes a photo in front of the Morgan County Sheriff's Office in March 2025 in Martinsville, Indiana. Gatz emailed the department about her mom in 2024.
+					</figcaption>
+				</figure>
+
+				<p>The memory from the rest of that day was foggy, but Jennifer said she was put in her uncle&rsquo;s truck. She and her siblings had different fathers, so they were separated.</p>
+				<p>Her dad, Oscar Young, took her in. He remembered how Jennifer used to cry every night, wanting her mom. Jennifer didn&rsquo;t have much of a relationship with Young, and he didn&rsquo;t know how to handle it, so he talked to Dawn&rsquo;s sister about it, and she asked to raise Jennifer.</p>
+				<p>&ldquo;That little girl lying there crying, and what? No mom,&rdquo; Young said. &ldquo;I didn&rsquo;t want to tell her.&rdquo;</p>
+				<p>She stayed with her father for about a month after Dawn's death, but then he dropped her off at her maternal aunt and uncle&rsquo;s house in Walton, Indiana.</p>
+				<p>When she was 12, Child and Protective Services placed her in a foster care facility in Wabash, Indiana, after she said she experienced abuse at her aunt&rsquo;s house. She ran away frequently to be with her sister, Lynn, who was 9 years older. Lynn would take care of her for a couple of months at a time, before Jennifer would go back into the foster care system.</p>
+				<p>Jennifer was taken out of state care at 15 when her older sister, Samantha Caraveo, got guardianship of her in Texas. Samantha was 22 at the time.</p>
+				<p>&ldquo;I grew up different than everybody else,&rdquo; Jennifer said, &ldquo;It&rsquo;s not having a mom and dad under the roof, and everybody else seems to have parents.&rdquo;</p>
+				<p>As a kid, Jennifer would pretend her mom was there, telling Dawn she missed her.</p>
+				<p>When she ran away, she would go to the cemetery where Dawn was buried and lie there.</p>
+				<p>She kept a journal as a kid, where she&rsquo;d wonder about how much she looked like her mom. She tried to imagine Dawn. She wrote about how jealous she was of other children who had moms and dads they grew up with.</p>
+				<p>&ldquo;And I wanted that so bad,&rdquo; Jennifer said.</p>
+
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-1'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+				
+				<p>A pathologist ruled Dawn&rsquo;s death a suicide within three hours.</p>
+				<p>Thirty-six years later, no one has been able to find an official police report for Dawn&rsquo;s case from that day.</p>
+				<p>Without a police report, there&rsquo;s no way to know if her hands and feet were ever tested for gunshot residue or if fingerprints were lifted from the 12-gauge shotgun, a weapon Jennifer said belonged to her mother&rsquo;s boyfriend at the time and said her mother had no access to. Dawn&rsquo;s black eye in the crime scene photos wasn&rsquo;t documented in the autopsy report.</p>
+				<p>In 2002, Jennifer&rsquo;s sister Samantha, then a college student living in Texas, tried to get the case reopened. There was too much she felt needed another look.</p>
+				<p>Dawn never kept guns in the house, and Samantha always wondered how her mom got the gun; she said Dawn&rsquo;s then-boyfriend always kept one in his truck.</p>
+				<p>Samantha had a connection to the county coroner at the time, Dan Downing, who she said told her there were discrepancies in the crime scene photos. She reached out to the Morgan County Sheriff&rsquo;s Office to ask about the case.</p>
+				<p>Scott Hamilton, then a detective sergeant, started looking into her mom.</p>
+				<p>Hamilton emailed back and forth with Samantha for a while, telling her he didn&rsquo;t locate any reports but found the dispatch log and was trying to locate a report from the fire department and ambulance.</p>
+				<p>Hamilton did not respond to the Indiana Daily Student&rsquo;s request for an interview.</p>
+
+				<figure class="wide-left">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/f95d9d2f-06d1-4a5b-ba06-8318c8210782.original.jpg"/>
+					<figcaption>
+						<p class="credit">Courtesy Photo</p>
+						A young Jennifer Gatz is shown. Gatz was 3 when her mother died in 1990 in Morgantown, Indiana.
+					</figcaption>
+				</figure>
+
+				<p>Samantha told him she suspected Dawn&rsquo;s boyfriend at the time murdered her mom, and Hamilton said he was trying to find him. Samantha said she remembers him severely abusing her mother, things she said were truly beyond &ldquo;normal physical abuse.&rdquo; She described him as &ldquo;psychotic.&rdquo;</p>
+				<p>Logs from Middle Way House, a domestic abuse treatment center in Bloomington, show Dawn named him as her abuser and described her previous history with him.</p>
+				<p>&ldquo;She has been put in the hospital from the abuse about 2mos. ago,&rdquo; the log, dated December 1989, read.</p>
+				<p>Her exit form &mdash; signed just a few weeks before her death &mdash; detailed Dawn&rsquo;s intent to leave Morgantown and move back to Kokomo.</p>
+				<p>Downing mailed Samantha the autopsy report, the field coroner report and the toxicology report.</p>
+				<p>Then, Samantha's communication with both Hamilton and Downing became sparse. Hamilton wrote to Samantha in March 2003, saying he met with the coroner, who confirmed there were &ldquo;no indications of foreign footprints in the snow that would have led them to believe that any other party was involved.&rdquo;</p>
+				<p>Samantha replied to him in May 2003, frustrated with the lack of response.</p>
+				<p>&ldquo;Frankly, I&rsquo;m tired of being lied to,&rdquo; Samantha wrote. &ldquo;But I&rsquo;m pursuing this to the fullest.&rdquo;</p>
+				<p>She made an &ldquo;obscene&rdquo; amount of calls to Downing, Samantha recalled, but never heard anything back. Finally, it took too much of a mental toll.</p>
+				<p>Twenty-one years went by with no response.</p>
+
+
+				<p class='section-break'>•••</p>
+
+				<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-2'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+				<p>Jennifer didn&rsquo;t talk about her first memory she had until December 2024, during a phone call with Samantha. Jennifer had started therapy, knowing she had a lot to work through because of the trauma associated with her mom&rsquo;s death.</p>
+				<p>That&rsquo;s when Samantha shared everything she tried to do in 2002 to find out what happened to their mom.</p>
+				<p>So, Jennifer decided to email the sheriff&rsquo;s office, questioning what happened back then.  Downing, now the captain of the Morgan County Sheriff&rsquo;s Office, responded five hours later.</p>
+				<p>&ldquo;All of the investigators stated that they had no question that this case was a suicide,&rdquo; Downing said in the Dec. 17, 2024, email to Jennifer. &ldquo;With that Detective Hamilton did not open a new investigation.&rdquo;</p>
+				<p>But he said he acknowledged there could be &ldquo;discrepancies&rdquo; within the case that should be followed up on and assigned a detective to follow up on the case.</p>
+				<p>When Jennifer got the crime scene photos back from a public records request in December 2024, it sealed her belief that someone else shot her mom.</p>
+				<p>In the photos, there&rsquo;s blood on the door handle and doorstep but not in the bedroom where her mom died.</p>
+				<p>The photos also included the gun that Dawn allegedly used to shoot herself. It was a 12-gauge shotgun, and Dawn was barely over 5 feet. Without a police report detailing exactly how long the barrel was, Jennifer questioned how it would have been physically possible for Dawn to pull the trigger.</p>
+				<p>Beyond that, the gunshot wound was to Dawn&rsquo;s stomach &mdash; <a href="https://www.sciencedirect.com/science/article/abs/pii/0379073894904103?via%3Dihub">a rarity in suicide cases</a>.</p>
+				<p>Former Morgan County pathologist Allen Griggs, who performed the official autopsy, said he doesn&rsquo;t see many suicide cases with gunshot wounds to the stomach. After reviewing the autopsy and crime scene photos years later, he said it would have been possible for Dawn&rsquo;s wound to be self-inflicted.</p>
+
+				<figure class="wide-right">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/7793f162-4c41-4bcb-8931-479aea63e995.original.jpg"/>
+					<figcaption>
+						<p class="credit">Courtesy Photo</p>
+						Dawn Caraveo's grave is seen at Crown Point Cemetery in Kokomo, Indiana. Gatz left her blue necklace there when she was 11.
+					</figcaption>
+				</figure>
+
+				<p>He said to determine the manner of death, he would have taken in the circumstantial evidence provided by the coroners and police and put it together with the external and internal examination of the body. But he doesn&rsquo;t remember much of Dawn&rsquo;s case.</p>
+				<p>Still, Jennifer believes it wasn&rsquo;t suicide. It&rsquo;s partly because her sister Lynn remembered hearing a truck driving away.</p>
+				<p>Jennifer remembers seeing tire tracks in the snow, though she assumes they disappeared before police got to the scene over an hour later. The field report claims Dawn&rsquo;s boyfriend left the night before and that Dawn was on drugs, though her toxicology report came up clear.</p>
+				<p>Samantha says she remembers the responding officer, who was town marshal at the time but is now deceased, coming to their house several times, not in a law enforcement capacity. She alleges he even saw Dawn&rsquo;s boyfriend beating Dawn one time in the street, but the town marshal let him go.</p>
+				<p>None of her family members were interviewed after Dawn&rsquo;s death, Jennifer said. She doesn&rsquo;t know if Dawn&rsquo;s boyfriend was interviewed, since there is no surviving police report associated with the case.</p>
+				<p>&ldquo;I questioned it my whole life,&rdquo; Jennifer said. &ldquo;I believed he shot her.&rdquo;</p>
+				<p>She filed a request for a new investigation in 2025 under <a href="https://iga.in.gov/laws/2021/ic/titles/35/#35-40-15">Senate Enrolled Act 177</a>, a law that allows an immediate family member to request an investigation into an uncharged death.</p>
+				<p>The Indiana State Police put together a presentation for review by the ISP Review Board. Still, on June 30, 2025, a special investigations sergeant emailed Jennifer to tell her that the board had denied opening a new investigation.</p>
+				<p>The main suspect, Dawn&rsquo;s boyfriend, was dead, and so was the investigating officer. There was no original police report, the sergeant said. Most parties involved in the investigation are deceased, and all evidence in the case was already released or destroyed.</p>
+				<p>There was nothing more the ISP could do.</p>
+
+
+				<p class='section-break'>•••</p>
+
+
+				<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-3'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+								</script>
+							</div>
+						</div>
+					</div>
+				
+				<p>Jennifer has since started a <a href="https://www.facebook.com/profile.php?id=61579087703912">Facebook page</a> called &ldquo;Fight for Dawn&rsquo;s Truth&rdquo; &mdash; she said she needed support from people outside of her immediate family. She&rsquo;s determined not to let her mom&rsquo;s story be swept under the rug.</p>
+				<p>&ldquo;The goal would be to clear my mom&rsquo;s name,&rdquo; Jennifer said. &ldquo;Even if they were just to say, &lsquo;This case was grossly mishandled, and we&rsquo;re sorry.&rsquo;&rdquo;</p>
+				<p>Morgantown Town Marshal Ryan Swank told the IDS the department had gone through to find evidence from Dawn&rsquo;s case and came up dry.</p>
+				<p>Downing said he would make no further comment on the case, and it was forwarded to the Indiana State Police for review and any necessary follow-up investigation.</p>
+				<p>Jennifer refuses to let her mom be forgotten. On her Facebook page, she details every discrepancy in the case. She questions everything.</p>
+
+				<figure class="wide-left">
+					<img alt="" src="https://s3.amazonaws.com/snwceomedia/ids/1338f923-972c-440b-b672-12f2387d3d28.original.jpg"/>
+					<figcaption>
+						<p class="credit">Courtesy Photo</p>
+						Jennifer Gatz (left) and Samantha Caraveo (right) smile for a photo next to their mother's grave in March 2025 in Kokomo, Indiana. They decorated the grave with bluish-purple and white flowers.
+					</figcaption>
+				</figure>
+
+				<p>Samantha remembers her mom being a good cook and loving Christmas. Even though their family didn&rsquo;t have a lot, her mom would always make sure they had a good Christmas.</p>
+				<p>Dawn made sure Samantha had a basketball and basketball rim to play. On the morning of her mom&rsquo;s death, Samantha remembered she was excited for a game.</p>
+				<p>Jennifer only remembers the day her mom died, but her dad tells her about what her mom was like &mdash; that she was feisty, she liked to fight and could stand her ground.</p>
+				<p>Young never believed Dawn&rsquo;s death was a suicide. She liked life too much, Young said. He remembers going camping and fishing with her when they were younger &mdash; their parents were friends.</p>
+				<p>Dawn&rsquo;s daughters meant everything in the world to her, Young said. She would never leave them.</p>
+				<p>&ldquo;She would have never committed suicide,&rdquo; Young said. &ldquo;Oh, they&rsquo;ll never convince me of that.&rdquo;</p>
+				<p>Jennifer now lives in Georgia with seven children. Her experience in the foster care system led to a career as a social worker, helping families and children for 12 years before she transitioned to hospice care. Her kids have never asked about their grandmother, but her oldest just recently learned about how she died.</p>
+				<p>It&rsquo;s hard for Jennifer to think about her mom. It can consume her, she says, if she doesn&rsquo;t pace herself. It comes in waves.</p>
+				<p>She recalls one time she was in a home that had a shotgun that looked identical to the one in her mom&rsquo;s case.</p>
+				<p>&ldquo;I can&rsquo;t stop thinking about it and trying to, like, brainstorm different things I can do,&rdquo; Jennifer said.</p>
+				<p>Dawn&rsquo;s grave is at Crown Point Cemetery in Kokomo. At one point, Jennifer&rsquo;s blue necklace was there, draped across the base of Dawn&rsquo;s headstone, left by the 11-year-old who just wanted her mom.</p>
+				<p>The necklace was cleared out when Lynn&rsquo;s ashes were added to Dawn&rsquo;s headstone and the grave was cleaned. But Jennifer and her sister Samantha went back to visit in March 2025.</p>
+				<p>They decorated it with bluish-purple and white flowers. They knelt beside her grave, resting a hand on the top. Jennifer and Samantha smiled for a photo. A storm was rolling in, its fat gray clouds brushing the tops of the graveyard&rsquo;s spindly black trees.</p>
+				<p>They didn&rsquo;t stay for long.</p>
+
+
+				<div class="ad-block">
+						<div class="ad-code">
+							<br>
+							<div id='div-gpt-ad-1512489859064-4'>
+								<script>
+								 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-4'); });
+								</script>
+							</div>
+						</div>
+					</div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
