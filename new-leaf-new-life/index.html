@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="‘We are more than what we have done’: How one Bloomington woman overcame addiction" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Jenny got in a car crash in 2013." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/45eac81c-7872-4ff8-822c-5051d53eed30.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="‘We are more than what we have done’: How one Bloomington woman overcame addiction"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Jenny got in a car crash in 2013."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/45eac81c-7872-4ff8-822c-5051d53eed30.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">&lsquo;We are more than what we have done&rsquo;</h1>
+            <h2 data-scroll-speed="3">How one Bloomington woman overcame addiction</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">A blanket sewn from art created by incarcerated people hangs May 5, 2026,
+            inside the New Leaf, New Life building in Bloomington. Jenny was introduced to NLNL while she was in the
+            Monroe County Jail for 77 days.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+                <p>The grass was speckled with dew the morning Jenny Rogers swerved off the side of Truesdel Road and
+                    lost control of her car.</p>
+                <p>The slippery conditions caused her car to slide, and as she tried to regain control, she saw another
+                    driver hurtling down the Owen County street. She remembered seeing a child sitting in the passenger
+                    seat.</p>
+                <p>Instead of hitting the other car, the 27-year-old veered off the road and struck a tree head-on at 60
+                    to 70 miles per hour. The impact of the crash fractured her spine and ruptured her spleen.</p>
+                <p>A helicopter airlifted her to a hospital in Indianapolis, where she spent weeks recovering. Doctors
+                    prescribed opiates to help Jenny manage her pain, which she took for 19 months starting in 2013.</p>
+                <p>But what started as pain management spiraled out of control.</p>
+                <p>After stopping the medication cold turkey, Jenny became addicted to IV heroin, another opioid. She
+                    spent years in and out of jail in Owen and Monroe counties: 11 months, 13 months, nine months.</p>
+                <p>She lost her house and her kids. She moved in with her grandfather, and then with a man she met in a
+                    recovery program. They both relapsed and ended up living out of her Dodge Avenger. It was a vicious
+                    cycle she spun through, one living situation to the next, then to jail.</p>
+                <p>Addiction ate her alive. Her blonde hair thinned, she lost weight and her skin became riddled with
+                    staph infections and abrasions. Jenny wore makeup to cover her changing appearance.</p>
+                <p>Finally, she hit rock bottom. And she knew she had to dig herself out.</p>
+                <p class='section-break'>•••</p>
+                <p>Jenny is one of millions in the country who have struggled with opioid addiction and one of thousands
+                    who has walked through the doors of <a href="https://newleafnewlife.org/">New Leaf, New Life</a>, a
+                    nonprofit that works to support people who
+                    are or were incarcerated to transition out of jail, oftentimes those who also are recovering from
+                    addiction.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/950c3797-bf70-4f24-9575-774c8f76d954.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        The New Leaf, New Life building is pictured May 5, 2026, in Bloomington. NLNL has helped people
+                        get identification, bus tickets, nonslip shoes for jobs, referrals to treatment centers and
+                        sober living.
+                    </figcaption>
+                </figure>
+                <p>The <a href="https://drugabusestatistics.org/">rate of opioid prescription</a> in the United States
+                    peaked in 2012, with medical professionals
+                    writing more than 255 million prescriptions. <a
+                        href="https://www.nature.com/articles/d41586-019-02686-2">During the first phase</a> of the
+                    opioid epidemic in the
+                    mid-1990s, prescription-opioid deaths steadily increased.</p>
+                <p>Opioid <a href="https://www.nature.com/articles/d41586-019-02687-1">users were able</a> to collect
+                    many prescriptions and sell excess pills due to patient-privacy
+                    laws and poor coordination between states. But in 2016, state and federal agencies began to restrict
+                    the drugs&rsquo; availability.</p>
+                <p>At the same time, the amount of heroin in the country increased and its price declined rapidly.</p>
+                <p>In 2023, <a
+                        href="https://www.cdc.gov/overdose-prevention/about/understanding-the-opioid-overdose-epidemic.html">opioid
+                        overdose deaths</a> were nearly 10 times as high as in 1999. But from 2022 to 2023, the
+                    rate dropped by 4%. Local communities, including in southern Indiana, pushed back against the
+                    epidemic and shifted to peer support-based programs &mdash; meaning people who have successfully
+                    recovered from addiction work to help those still working through recovery.</p>
+                <p>For Jenny her mentors&rsquo; lived experience made her recovery pathway stick.</p>
+                <p class='section-break'>•••</p>
+                <p>Jenny knew the dangers of addiction. She was raised on it. Her father and stepmother were in active
+                    addiction her whole life. Her father began with alcoholism, then opiates and now is addicted to
+                    amphetamines, Jenny said.</p>
+                <p>&ldquo;My grandmother always was very mindful in telling me, &lsquo;Jenny, listen, you know,
+                    it&rsquo;s in your genes, it runs in your family, like don&rsquo;t do drugs, don&rsquo;t
+                    drink,&rdquo; Jenny said. &ldquo;Because there&rsquo;s a good chance you&rsquo;re going to end up
+                    like this.&rsquo;&rdquo;</p>
+                <p>And for many years she didn&rsquo;t. She knew what addiction did.</p>
+                <p>But after 19 months of using opiates to manage her pain following the accident, Jenny&rsquo;s doctor
+                    told her she didn&rsquo;t meet the criteria for the prescription anymore and cut her off, she said.
+                    In the days that followed, she became sick and couldn&rsquo;t get out of bed. It felt like the worst
+                    flu she had ever had.</p>
+                <p>She told one of her family members how she felt, and they offered her Roxicodone, another opioid. It
+                    made Jenny feel better. It made the pain subside. She continued getting pills from a family member
+                    in the months that followed.</p>
+                <p>&ldquo;I couldn&rsquo;t function in life without them,&rdquo; Jenny said.</p>
+                <p>Eventually, Jenny came across someone who offered her something cheaper, something that solved her
+                    problems, that filled a void in her life: heroin.</p>
+                <p>She had never been so hopeless and desperate in her entire life. The beginning of addiction can feel
+                    like the best feeling in the world, she said. But once she became dependent on heroin, that feeling
+                    shifted.</p>
+                <p>&ldquo;You&rsquo;re like in that state of wanting to die, like wishing you would die, especially when
+                    you had it,&rdquo; Jenny said, &ldquo;I don&rsquo;t even know a word for the mental state that
+                    I&rsquo;m in.&rdquo;</p>
+                <p>So she hid. She isolated herself, out of shame and guilt. She didn&rsquo;t trust anyone.</p>
+                <p>She didn&rsquo;t want to ever be seen.</p>
+                <p class='section-break'>•••</p>
+                <p>Jenny was arrested for the last time in January 2024 on child neglect, burglary and drug charges. In
+                    the years before, she found herself with a list of other charges, including possession, theft, check
+                    fraud, burglary, child support warrants and driving on a suspended license.</p>
+                <p>Right before she found herself in handcuffs, she crossed a boundary she promised herself she never
+                    would: She used while taking care of her children.</p>
+                <p>The day of her arrest, she dropped her daughter off at school and was waiting at her home until it
+                    was time to take her son. Then, she overdosed.</p>
+                <p>Her son, 11 at the time, called the police.</p>
+                <p>&ldquo;I had no self-worth, no self-value, no self-love, no self-respect, all the things that had
+                    gone out the windows, morals, values, ethics, principles, everything I lost,&rdquo; Jenny said.
+                    &ldquo;And I was just at my bottom.&rdquo;</p>
+                <p>Jenny was in the Monroe County Jail for 77 days. That&rsquo;s where she met Claire Steffey. At the
+                    time, Claire was an intern with NLNL.</p>
+                <p>&ldquo;She was like the freaking sunshine,&rdquo; Jenny said. &ldquo;I mean, jail&rsquo;s not a great
+                    place to be. But like when she came in there, it was amazing.&rdquo;</p>
+                <p>Each week, Claire brought the women coloring pages, crosswords, books and informational packets for
+                    different treatment options. Claire once brought Jenny a pair of red glasses with square frames.
+                    Jenny still wears them.</p>
+                <p>&ldquo;I&rsquo;d had my contacts in forever, because I just didn&rsquo;t care about myself,&rdquo;
+                    Jenny said.</p>
+                <p>Claire and Jenny formed a relationship, one strong enough to carry over once Jenny was released March
+                    17, 2024. Claire brought Jenny an application for sober living at Amethyst House, a nonprofit
+                    residential and outpatient agency for people with drug or alcohol addictions.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/30d95911-3f91-4992-aced-d5846d079223.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Clothing sits on racks May 5, 2026, inside the New Leaf, New Life building in Bloomington. The
+                        organization was created to be zero-barrier, zero-cost.
+                    </figcaption>
+                </figure>
+                <p>Heather Bland, NLNL executive director, said it&rsquo;s important for the group to engage with people
+                    before they leave jail so they can get excited about a different life.</p>
+                <p>After being released, NLNL helps people get identification, bus tickets, nonslip shoes for jobs,
+                    referrals to treatment centers and sober living, hygiene packs, jobs, rent support and connection.
+                    The organization is zero-barrier, zero-cost and served nearly 3,500 people in 2025.</p>
+                <p>&ldquo;We want to encourage people to have the control of their own life,&rdquo; Heather said.
+                    &ldquo;We&rsquo;re not giving something to someone to allow them to stay in the same place. We are
+                    giving and creating opportunities for them to take steps forward.&rdquo;</p>
+                <p class='section-break'>•••</p>
+                <p>About a month and a half later, halfway through Jenny&rsquo;s 90-day sober living program, one of her
+                    drug screens came back positive at Amethyst House. She hadn&rsquo;t been sentenced yet and was
+                    facing 15 years in prison for her original charges: neglect of a dependent, possession of a narcotic
+                    drug, possession of a controlled substance, possession of paraphernalia and a level four felony
+                    burglary charge.</p>
+                <p>She almost ran, standing outside with scissors in her hand, about to cut off her house arrest
+                    bracelet.</p>
+                <p>Jenny said she hadn&rsquo;t used and that the test was a false positive. It was terrible being
+                    accused of something she didn&rsquo;t do, of using when she was trying so hard to recover.</p>
+                <p>Her case manager and therapist were there with her, trying to coach her through the situation. They
+                    told her to call her probation officer.</p>
+                <p>She felt discouraged, terrified that they wouldn&rsquo;t believe her. She struggled to trust that it
+                    was going to be okay. Ultimately, she made the hard decision, calling her probation officer and
+                    telling him the truth: her drug test came back positive.</p>
+                <p>&ldquo;I really think it was God telling me, &lsquo;Listen Jenny, you&rsquo;re going to have to learn
+                    to trust that you don&rsquo;t have to control the outcome of things,&rsquo;&rdquo; she said.</p>
+                <p>Instead of 15 years in prison, she ended up in a seven-day intervention program at Amethyst House.
+                </p>
+                <p class='section-break'>•••</p>
+                <p>Jenny made it through sober living but decided not to move on to independent living yet. It was the
+                    first time she made a decision for her recovery rather than for herself.</p>
+                <p>Instead of moving right to independent living, Misty James, assistant director at NLNL and
+                    Jenny&rsquo;s case manager, referred Jenny to <a
+                        href="https://www.couragetochangehouse.org/">Courage to Change</a>, a 12-step program and living
+                    environment designed for residents trying to establish or maintain sobriety.</p>
+                <figure class="lg-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/0cfd7c14-952d-4568-8cf4-4802c072a1a9.original.jpg"
+                        alt="alt text">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        A square reading &ldquo;Break the Cycle&rdquo; is sewn into a blanket full of quilt squares
+                        created by
+                        incarcerated artists May 5, 2026, at New Leaf, New Life in Bloomington. After a year in
+                        recovery, Jenny moved into independent living but sees herself continuing with the community in
+                        NLNL forever.
+                    </figcaption>
+                </figure>
+                <p>&ldquo;It&rsquo;s really hard to be in recovery,&rdquo; Jenny said. &ldquo;Anybody who recovers, to
+                    me, is a miracle, but it takes a different type of willingness and determination to get clean in the
+                    town that you got high in.&rdquo;</p>
+                <p>Misty helped guide Jenny from the start of her recovery. She showed her how to live, Jenny said. Even
+                    now, she and Misty talk on a daily basis.</p>
+                <p>In Courage to Change, Jenny saved money and built her confidence. Jenny opened herself up to people.
+                    She was honest with herself. She began to trust them in a way that wasn&rsquo;t possible before.</p>
+                <p>She tried recovering before. But she didn&rsquo;t understand how important it was to let herself be
+                    vulnerable.</p>
+                <p>&ldquo;I was always just like nine toes in, or I would come in and was still wearing this
+                    mask,&rdquo; Jenny said. &ldquo;I would gain a little bit of clean time and gain things like the
+                    job, the car, the independent living, and then it would fall all the way apart.&rdquo;</p>
+                <p>Recovering requires you to make connections with other people; you can&rsquo;t do it alone, Jenny
+                    said.</p>
+                <p>With Claire and Misty, Jenny made a plan to stop her from going back to old ways.</p>
+                <p>NLNL doesn&rsquo;t tell people what they need to do, Heather said. The organization works with them,
+                    asks them what they want to do, and figures out how best to support them in reaching those goals.
+                </p>
+                <p>After a year in recovery, Jenny moved into her own apartment and now pays rent without assistance.
+                    But she still sees herself continuing with the community in NLNL forever. The people she&rsquo;s met
+                    and formed close relationships with keep her accountable. They know her personality and notice when
+                    she&rsquo;s isolating herself. They&rsquo;ll come knocking on her door if something is awry.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/4a485e98-f978-4ed9-afb2-6b29fb4d1b30.original.jpg"
+                        alt="alt text">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Jenny Rogers (left) and Misty James (right), assistant director at New Leaf, New Life and
+                        Jenny&lsquo;s case manager, chat May 5, 2026, at the NLNL building in Bloomington. Misty had
+                        experience with incarceration and addiction, like most of the NLNL staff.
+                    </figcaption>
+                </figure>
+                <p>&ldquo;I think, when you come to the realization that you don&rsquo;t know how to live and your way
+                    of living keeps getting you high and incarcerated, you&rsquo;re willing,&rdquo; Jenny said.
+                    &ldquo;All these people that have stayed clean that I know in this program have done it because
+                    they&rsquo;ve been held accountable to somebody.&rdquo;</p>
+                <p>Lived experience significantly impacts how NLNL operates &mdash; through empowerment and encouraging
+                    people to control their lives, Heather said. People going through recovery can see how people have
+                    overcome barriers, she said.</p>
+                <p>People are misinformed about incarcerated people, and label them as &ldquo;terrible people who are
+                    going to do terrible things,&rdquo; Misty said.</p>
+                <p>&ldquo;We are more than what we have done,&rdquo; Heather said. &ldquo;If you look at some of us on
+                    paper, it&rsquo;s very different than who we are in person. And if we are held to what a rap sheet
+                    says about us, we&rsquo;re never going to make it.&rdquo;</p>
+                <p>When she looks at people who have succeeded, who have gotten clean, who have what she wants, Jenny
+                    notices a sense of peace about them. They&rsquo;re genuinely happy, she sees them laughing and
+                    joyful.</p>
+                <p>That&rsquo;s her goal. To feel peace and serenity.</p>
+                <p class='section-break'>•••</p>
+                <p>Before her addiction, she was a hairstylist. Jenny, now 40, sometimes does hair for people who are in
+                    the first 28 days of recovery at <a
+                        href="https://bocarecoverycenter.com/location/bloomington-drug-rehab/">Boca Recovery Center</a>.
+                    She also works as a café manager at Rockets
+                    Convenience Plus in Bloomington. People come in all the time and ask how she got clean.</p>
+                <p>&ldquo;And I&rsquo;m like, listen, &lsquo;You too can have recovery and work at a gas
+                    station,&rsquo;&rdquo; she said.</p>
+                <p>It&rsquo;s been humbling, Jenny said, to know she could make decent money as a full-time hairstylist.
+                    But she said she needs to experience humility, she said.</p>
+                <p>&ldquo;If that&rsquo;s the difference between me staying clean and not, fine,&rdquo; she said.
+                    &ldquo;That&rsquo;s okay. I&rsquo;ll work at the gas station the rest of my life.&rdquo;</p>
+                <p>She still stops by NLNL and on Sept. 2, 2026, Jenny is expected to graduate from <a
+                        href="https://www.in.gov/courts/iocs/pscourts/about/">problem solving
+                        court</a>, which is focused on a specific offense or struggle, positive outcomes and <a
+                        href="https://nij.ojp.gov/topics/articles/problem-solving-courts">criminal
+                        reoffending reduction</a>. After, all her charges will be expunged from her record.</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/18160c46-7f79-4a62-9944-bd22497bd59b.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Jenny Rogers smiles for a portrait May 5, 2026, at the New Leaf, New Life building in
+                        Bloomington. Before her addiction, Jenny was a hairstylist.
+                    </figcaption>
+                </figure>
+                <p>Although they were put in the care of their father, Jenny&rsquo;s relationships with her son and
+                    daughter, now 14 and 18, have grown over the years. In her two years of sobriety, she&rsquo;s been a
+                    consistent presence in their lives. After years of false hope and promises, they&rsquo;ve opened up
+                    to her.</p>
+                <p>&ldquo;They see the difference in me, that they haven&rsquo;t seen before in recovery,&rdquo; Jenny
+                    said.</p>
+                <p>She doesn&rsquo;t see them as often as she&rsquo;d like to, but they FaceTime. She watches her son
+                    play football and enjoys helping her daughter plan her baby shower. She&rsquo;s excited to show up
+                    as a grandparent after missing time with her kids.</p>
+                <p>Jenny goes shopping with her daughter at T.J. Maxx and the mall and thrifts with her son. They love
+                    to shoe shop.</p>
+                <p>She feels peace when she&rsquo;s shopping, when she knows her finances are in order. She feels peace
+                    when she&rsquo;s alone, because she can be now. She feels peace when her relationships are healthy,
+                    when she&rsquo;s showing up as the friend she wants people to be for her.</p>
+                <p>Recovery is worth it, Jenny said. It&rsquo;s worth it to be in the room with people recovering. To
+                    feel the connection, the love, the things you don&rsquo;t have in active addiction.</p>
+                <p>&ldquo;Give it one year. If your life doesn&rsquo;t significantly get better in that one year, then
+                    go back out and use, that&rsquo;s what I was told,&rdquo; Jenny said. &ldquo;And I was like,
+                    &lsquo;Okay, fine. I&rsquo;ll give it one year.&rsquo; and my life has completely changed. You
+                    don&rsquo;t have to live like that.&rdquo;</p>
+                <p>Jenny feels her emotions again. She wants to go on vacation. She wants to make a difference in
+                    someone&rsquo;s life. She has a plan. She has goals.</p>
+                <p>She&rsquo;s starting to reach them.</p>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j" target="_blank"><i
+                        class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
