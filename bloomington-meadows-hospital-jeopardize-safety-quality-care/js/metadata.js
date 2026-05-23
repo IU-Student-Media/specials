@@ -1,4 +1,4 @@
-data.pub_date = "25 May, 2026"
+data.pub_date = "May 25, 2026"
 data.bylines = {
                 "By": {
                     "name": "IDS Staff",
