@@ -7,7 +7,7 @@ const data = {
     "bylines": {
         "By": {
             "name": "Sean McAvoy",
-            "email": "@iu.edu",
+            "email": "semcavoy@iu.edu",
             "twitter": "sean_mc07",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/08cc1e2b-fdc7-457d-8b18-e1ce6368d5f4.original.jpg",
             "bio": "Sean has worked at the IDS since 2025 and is a sports editor."
