@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="2026 Midterm Elections" /> <!-- TODO: headline -->
+    <meta property="og:description" content="The IDS has you covered on state and local races." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/499b27d2-7dae-4a2e-973f-40d99925df06.original.png" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="2026 Midterm Elections"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="The IDS has you covered on state and local races."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/499b27d2-7dae-4a2e-973f-40d99925df06.original.png"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <nav>
+        <ul>
+            <li class="logo">
+                <a href="https://www.idsnews.com">
+                    <!-- IDS LOGO SVG -->
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:white;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:white;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                </a>
+                <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+            </li>
+            <li class="toggle">
+                <i class="fas fa-bars fa-lg"></i>
+            </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+        </ul>
+    </nav>
+
+    <!--Header-->
+    <header>
+    </header>
+
+    <!-- main article -->
+    <main>
+        <article>
+            <div class="header-container">
+                <img class="header-image" src="https://s3.amazonaws.com/snwceomedia/ids/f061eafb-bbd2-41d7-ace9-9da38970e72d.original.png" alt="">
+                <h1>Your IDS Guide to the 2026 Midterm Elections</h1>
+            </div>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>The 2026 midterm election is here. The IDS has you covered on the <a href="#local">local</a> and <a href="#state">state</a> level candidates you’ll see on the ballot. Follow along for the latest developments in <a href="#races">this year’s races</a>.</p>
+                <table id="tmp1" style="display: none;"></table><div></div>
+                <table id="tmp2" style="display: none;"></table><div></div>
+
+                <h3 id="state">State Coverage</h3>
+                <div class="stories state">
+                    <!-- <div class="coverage">
+                        <a class="story-headline" href="https://www.idsnews.com/article/2026/10/indiana-secretary-of-state-candidates-election-day">Indiana secretary of state candidates ramp up campaigns before Election Day</a>
+                        <p class="story-author"><a href="https://idsnews.com/staff/Benjamin-LeGrand">Benjamin LeGrand</a></p>
+                    </div> -->
+                    <!-- <div class="story"><h4 class="story-headline">Headline</h4></div>
+                    <div class="story"><h4 class="story-headline">Headline</h4></div> -->
+                </div>
+                <h3 id="local">Monroe County Coverage</h3>
+                <div class="stories local">
+                </div>
+
+                <h3 id="races">Contested Races</h3>
+                <div class="races">
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-house-district-46-election-james-pittsford-bob-heaton" target="_blank">House District 46</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/803b2020-f5e4-4c21-8ef8-ac7f3ccdb957.original.jpg" alt="GOP Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Bob Heaton (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fbf7a006-2b5d-4898-867d-52ac80137c57.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">James Pittford III</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-house-district-60-election-mayfield-syczylo" target="_blank">House District 60</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/4c9ee6ae-fb4b-40af-a5dd-e0eeed3944aa.original.png" alt="candidate pfp">
+                                </div>
+                                <h4 class="candidate-name">Peggy Mayfield (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/49554671-b2f1-49f7-a5ea-0ae1f1f956c6.original.jpg" alt="candidate pfp">
+                                </div>
+                                <h4 class="candidate-name">Carrie Syczylo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-house-district-62-candidates-midterm-elections" target="_blank">House District 62</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/1768c72d-f7b9-45c9-ab64-8b86427d6c3b.original.jpg" alt="GOP Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Dave Hall (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/dc2f42fd-5668-4b0b-8f64-58a1489e9120.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Amy Huffman Oliver</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name">Monroe County Clerk</h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/f62114df-2da6-4007-a9b1-447f0b5e4b6a.original.png" alt="Democratic Candidate Headhsot">
+                                </div>
+                                <h4 class="candidate-name">Tree Martin Lucas</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2f6c4a48-b1ae-492b-8e04-4fda2114bbfd.original.jpg" alt="GOP Candidate Headhsot">
+                                </div>
+                                <h4 class="candidate-name">Julie Hays</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/monroe-county-assessor-midterm-elections-taxes-sharp-trimble" target="_blank">Monroe County Assessor</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/a8eba5c9-9e88-4e2d-9ccc-be1d035dc881.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Judith Sharp (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="transform: scale(3); transform-origin: 36% 5%;" src="https://s3.amazonaws.com/snwceomedia/ids/5f2a004a-0aca-44e3-9869-a9b4bbaad8a1.original.jpg" alt="Independent Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Jeneé Trimble</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name">U.S. House District 9</h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img style="transform-origin: 0% 21%; transform: scale(2.5);" src="https://s3.amazonaws.com/snwceomedia/ids/cb678106-28e9-4f6a-aa63-768f84fbbb6c.original.jpg" alt="GOP Candidate Headhsot">
+                                </div>
+                                <h4 class="candidate-name">Erin Houchin (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/8d96f4eb-dab6-46ed-9c12-ea0185395447.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Brad Meyer</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-lp">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/3d794153-e8a7-4d03-b522-449c84f6a537.original.jpg" alt="Libertarian Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Tonya Hudson</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/924673fa-6936-4ebd-bfba-be39e7b29cfa.original.jpg" alt="Independent Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Floyd Michael Taylor</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-secretary-of-state-candidates-election-day" target="_blank">Secretary of State</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b07d2855-6635-4376-9082-ec9634dffdc5.original.png" alt="GOP Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Max Engling</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img style="transform: scale(1.5); transform-origin: 55% center;" src="https://s3.amazonaws.com/snwceomedia/ids/acc9df87-0fed-49ef-ae91-be9c30b23674.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Beau Bayh</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="object-position: right center;" src="https://s3.amazonaws.com/snwceomedia/ids/21908985-821d-4f68-a3bb-2504f798893f.original.jpg" alt="Independent Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Greg Ballard</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-lp">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/e992f995-21d7-438f-95c1-2994eebaf2d4.original.jpg" alt="Libertarian Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Lauri Shillings</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/comptroller-candidates-indiana-elections" target="_blank">Comptroller</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img src="https://s3.amazonaws.com/snwceomedia/ids/cd8dfb94-ac2f-4f19-acf9-bc4dedeb5211.original.jpg" alt="GOP Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Elise Nieshalla (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img style="object-position: 75% top;" src="https://s3.amazonaws.com/snwceomedia/ids/6dfb4a13-0f8c-4120-9839-7fd2cd93fd52.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Jessica Bailey</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-lp">
+                                    <img style="transform: scale(1.4); transform-origin: 65% top;" src="https://s3.amazonaws.com/snwceomedia/ids/9ded4bf2-8366-409d-96d3-090cb9cfacad.original.jpg" alt="Libertarian Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">John Schick</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-treasurer-state-candidates-midterm-elections" target="_blank">Treasurer</a></h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-gop">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/579ec517-f95a-428b-8c38-5dc5d0191937.original.jpg" alt="GOP Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Daniel Elliott (Incumbent)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-dem">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/5aaaec1f-7e77-4b66-a0c3-b4fadff97982.original.jpg" alt="Democratic Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Coumba Kebe</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name"><a href="https://www.idsnews.com/article/2026/10/indiana-general-election-ballot-constitutional-amendments-bail-judges" target="_blank">Ballot Measures</a></h4>
+                        <ul class="candidate-list">
+                            <li><h4>Local Judge Residency</h4></li>
+                            <li><h4>Bail Changes</h4></li>
+                        </ul>
+                    </div>
+                    <div class="race">
+                        <h4 class="race-name">Judge Retention</h4>
+                        <div class="candidates">
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/574e6144-9056-4a9a-8710-80f353c78ea8.original.jpg" alt="Party Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Mary Deboer (Appeals, 4th)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/9a44eca9-62f2-4398-a70d-cc422280b347.original.jpg" alt="Party Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Paul Felix (Appeals, 5th)</h4>
+                            </div>
+                            <div class="candidate">
+                                <div class="candidate-img candidate-ind">
+                                    <img style="object-position: center top;" src="https://s3.amazonaws.com/snwceomedia/ids/a2c3fc55-df08-45b5-be33-07c0c3cf2304.original.jpg" alt="Party Candidate Headshot">
+                                </div>
+                                <h4 class="candidate-name">Justin McAdam (Tax Court)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+    <script src="js/sheet.js"></script>
+</body>
+
+</html>
