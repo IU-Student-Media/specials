@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title>Indiana Daily Student</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Behind the baton: The making of IU’s Feature Twirler" /> <!-- TODO: headline -->
+    <meta property="og:description" content="How Breanna Dickey turned a childhood dream into a reality." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/8f43099c-0351-4980-b316-a90ab4e50a2c.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Behind the baton: The making of IU’s Feature Twirler"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="How Breanna Dickey turned a childhood dream into a reality. "> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/8f43099c-0351-4980-b316-a90ab4e50a2c.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Behind the baton: The making of IU’s Feature Twirler</h1>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="credit header-caption">TRINITY MACKENZIE | IDS</p>
+        <p class="caption header-caption">Indiana University Feature Twirler Breanna Dickey performs during halftime at a game against Ohio State on Oct. 17, 2026, at Memorial Stadium in Bloomington. Dickey has twirled competitively since she was a child.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+
+                <p>Up, down, catch, repeat. </p>
+                <p>Ahead of Indiana football’s biggest game of the season, Indiana University freshman Breanna Dickey rehearsed in the parking lot behind Simon Skjodt Assembly Hall, preparing for one of the largest crowds IU’s Marching Hundred has ever seen.</p>
+                <p>As IU’s only Feature Twirler, Breanna brings the spectacle of baton twirling to the Marching Hundred’s pregame and halftime shows. Her role is to complement the band’s performance with baton tricks and choreographed routines.</p>
+                
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/0a4cde44-133c-4f39-b8dc-2f163b4bb45c.original.jpg" alt="Breanna Dickey rehearsing with the Marching Hundred">
+                    <p class="credit">URSULA STICKELMAIER | IDS</p>
+                    <figcaption>Breanna Dickey rehearses the pregame show with Indiana University's Marching Hundred on Oct. 16, 2026, at the John Mellencamp Pavilion in Bloomington. Less than an hour before rehearsal, Dickey and IU Marching Hundred drum major Audrie Wirthwein got into a minor car crash outside Soma Coffee House And Juice Bar East on Third Street.</figcaption>
+                </figure>
+
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+                <p>As sections of the band practiced around her, Breanna’s eyes stayed firmly on her baton. She listened to the songs, aiming to bring the serious energy of the band’s music into her performance through big movements and high tosses.</p>
+                <p>After spending over a decade twirling a baton, Breanna has learned to let the baton move how it wants to when practicing. If an improvised movement feels right, she adds it to the routine.</p>
+                <p>“It sounds weird, but sometimes your baton just kind of does something and you keep doing it and then you’re like, ‘Yeah, that feels really nice,’” Breanna said.</p>
+                <p>Breanna sometimes drops the baton during this part of rehearsal, though it is unlikely that she’ll draw too much attention to herself if she does. Years of practice have trained her to stay calm and improvise when things go wrong.</p>
+                <p>During The Walk — a time set aside before a game for the Marching Hundred to walk around the stadium and entertain the crowd — ahead of a football game earlier this season, the baton slipped out of Breanna’s hands and almost hit a fellow band member on the head.</p>
+                <p>Although it can be easy to get embarrassed by those mistakes, Breanna knows it’s important not let it to get to you.</p>
+                <p>“All you can do is laugh, cause it’s like that’s so stupid,” Breanna said. “Like, ‘Why did I drop that?’ And then you just reset, forget about it and keep going.”</p>
+                <p>But with the game against Ohio State quickly approaching, Breanna was met with the unexpected when, on the drive to one of her final rehearsals, a car strayed into her lane.</p>
+
+                <p class="section-break">•••</p>
+
+                <p>Breanna first picked up a baton when she was 5 years old.</p>
+                
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/97129ea7-c8ab-404c-a6ea-21b9182f2c39.original.jpg" alt="A young Breanna Dickey holding a baton in a purple twirling outfit">
+                    <p class="credit">COURTESY PHOTO</p>
+                    <figcaption>Breanna Dickey poses for a photo before a baton twirling competition in August 2015. Dickey began twirling when she was 5 years old.</figcaption>
+                </figure>
+
+                <p>Growing up in Bellefonte, Pennsylvania, Breanna remembers going to parades with her family where parade groups would feature baton twirling; it was a fixture of the community.</p>
+                <p>Baton twirling was also big in her family. Her mom, cousin and aunt all shared the same passion for the sport. Though she died in 2016, Breanna’s aunt, Mellissa Moore, had always been a reason why she continued to work so hard.</p>
+                <p>After Breanna expressed an interest in twirling, her parents placed her in lessons with Arimani Davy, a local baton twirling coach.</p>
+                <p>A longtime friend of the Dickeys, Davy watched Breanna grow up. She remembers Breanna as a shy child. That did not change when she started twirling for Davy. Breanna’s parents and Davy often had to bribe Breanna with Mountain Dew to do tricks at practice.</p>
+                <p>While Breanna started out timid, Davy said she quickly grew into a talented twirler, eventually leaving their lessons at age 7 to twirl competitively with The ShowTwirlers, a top-tier baton twirling team based in Altoona, Pennsylvania.</p>
+                <p>There, Breanna harnessed her talent into competitive success.</p>
+                
+                <p>When she was 8, Breanna won the beginner division of Miss Majorette of Pennsylvania, an annual state-level baton twirling championship and pageant. At 10, she went to the U.S. National Baton Twirling National Championships and qualified for the Grand Two-Baton Final. Then, at 13, Breanna qualified for the Nations Cup, hosted by the International Baton Twirling Federation, for the first time. She’ll return for a second time in 2027.</p>
+                <p>The 2023 Nations Cup, hosted in Liverpool, England, was the first time Breanna had experienced baton twirling on the international level.</p>
+                <p>“It's just so awesome to be able to, you know, represent the USA and be able to meet new people and just be able to see how unified the sport is across the world,” Breanna said.</p>
+                <p>Breanna has returned to the world stage for the World Technical Baton Twirling Championship twice since 2023. In the most recent championship she attended in 2025, Breanna placed fourth in the Junior Women 3-Baton Elite division — which requires the performer to juggle three batons at once — making her one of the highest-placing U.S. athletes in the competition that year.</p>
+                <p>Breanna credits much of this success to the support of her family and coaches that have followed her in her journey.</p>
+                <p>For her mom, Autumn, baton twirling has become far more than just a sport her daughter participates in. It is the reason for the fierce dedication to her goals she sees in Breanna, and it has given her daughter opportunities Autumn never thought she’d get.</p>
+                <p>“I mean, who would have ever thought that three metal sticks were going to take us around the world,” Autumn said.</p>
+
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                
+                <p class="section-break">•••</p>
+
+                <p>The night before the biggest game of Indiana football’s regular season, Breanna was supposed to be twirling.</p>
+                <p>While driving with IU Marching Hundred drum major Audrie Wirthwein to the stadium rehearsal, another driver swerved into their lane and scratched the door on the passenger side of Wirthwein’s white SUV. Although no one was injured, the cosmetic damage was enough to force them to wait and file a police report.</p>
+                <p>Stuck by the Soma Coffeehouse and Juice Bar on Third Street, the pair’s first call wasn’t to their parents or to law enforcement. It was to their Marching Hundred director.</p>
+                <p>The pair knew that the start of the rehearsal was fast approaching, but a police report still needed to be filed for insurance purposes, so they wanted to let everyone know not to expect them at rehearsal any time soon.</p>
+                <p>After the two called the police, they waited just under an hour. When the collision initially occurred, Wirthwein had told Breanna that she should go to rehearsal without her, but Breanna decided she would rather wait it out together — even if it meant missing out on time to practice.</p>
+                <p>When the Bloomington Police Department arrived, they learned they couldn’t leave for rehearsal just yet.</p>
+                <p>Since the accident happened on Third Street, along the southern boundary of IU's campus, officers informed them that the Indiana University Police Department would also need to be called to the scene. This delay added nearly 30 minutes to the already dwindling amount of rehearsal time, leaving Breanna with even less time to rehearse the choreography she would be performing in front of thousands of fans the next day.</p>
+                <p>After filing the report with IUPD, Breanna and Wirthwein made it back in time for the last 30 minutes of rehearsal.</p>
+                <p>“It felt good to be there with those people,” Breanna said. “Hypothetically, like, it could have been worse, and I couldn't have been there. So, I was honestly just grateful to be there. And in that moment, it made me realize how happy I am to be here and how much the people here mean to me.”</p>
+                <p>Although she didn’t get to rehearse halftime in the stadium like she would have wanted to, Breanna said missing so much rehearsal time hadn’t shaken her confidence after spending weeks repeatedly practicing the routines.</p>
+                <p>As practice came to a close, Marching Hundred director Tiffany Galus gathered everyone together, climbing the ladder that stood in front of the band for a final reminder.</p>
+                <p>“Tomorrow is the biggest game that has ever happened in Memorial Stadium. It is the game that Hoosiers have been waiting for,” Galus said. “You can be a regular fan for the rest of your life. But your time to get to put on the super suit, to show up and do your job to the highest possible level is finite, so own it. Every single second.”</p>
+
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-2'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                
+                <p class="section-break">•••</p>
+
+                <p>Breanna never thought she’d be a Hoosier. That changed in 2024 when she visited the IU campus.</p>
+                <p>The main goal for many athletes in competitive baton twirling is to perform on the collegiate level, Breanna said. While her education was the primary factor in where she went to college, it was important for her to attend a school with a twirling program. And, luckily enough, the opportunity at IU came up just in time.</p>
+                <p>The Feature Twirler position was absent from the Marching Hundred for nearly 30 years, until IU student Sydney Butz reintroduced the role in 2022.</p>
+                <p>When Butz left the position in January 2026, the opportunity to audition for IU’s Feature Twirler brought Breanna’s goal of twirling in college into reach.</p>
+                <p>The IU Feature Twirler audition this year was broken into three parts — the initial application, followed by video interviews and an in-person audition.</p>
+                <p>Although Breanna had faced pressure before in her baton twirling career, the IU audition brought a new kind of stress.</p>
+                <p>“The only time I've ever seen her actually shaken, like shaken to her core nervous, was when we loaded up the car from our Airbnb and were headed to her IU audition,” Autumn said. “I think she just wanted it so bad.”</p>
+                <p>For the last step of the audition process, Breanna used four new routines she created with her competitive twirling coaches specifically for the auditions, set to IU-related music, such as “Indiana, Our Indiana” and “Indiana Fight.”</p>
+                
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7469c293-c729-4f77-8bd5-a55ad6da60a0.original.jpg" alt="Two baton twirlers performing a routine in a gymnasium">
+                    <p class="credit">COURTESY PHOTO</p>
+                    <figcaption>Breanna Dickey and her pairs partner, Jasmine McCulley, compete at the Pennsylvania State Baton Twirling Championships in 2026. Dickey and McCulley qualified to compete at the International Baton Twirling Federation's 2027 Nations Cup Competition in Liverpool, England, in the Senior A Artistic Pair category.</figcaption>
+                </figure>
+
+                <p>These routines primarily included a combination of movements she had pulled from old performances of hers and tricks she had seen included in routines by former IU Feature Twirlers set to the music's tempo and rhythm. While the routines she choreographed for the auditions were meant to show off her baton twirling ability and performance skills, Breanna said the routines she made then are being used in her pregame performances now.</p>
+                <p>Breanna didn’t have to wait long to hear the results. The news came via email while she was still on the road, driving back to Pennsylvania with her mom after her final audition.</p>
+                <p>“I did cry when I found out because it was just like so much relief and happiness,” Breanna said. “I finally completed what I’d dreamed of and what I wanted to do my entire twirling career.”</p>
+                <p>Within a week of getting the offer, Breanna committed to IU, her top school, with a degree in biology.</p>
+                <p>While she and her family were excited, for Breanna, it was also confirmation of the work and sacrifices she made to get to that point.</p>
+                <p>For many twirlers, the time it takes to compete means losing out on much of the typical teenage experience. But to PJ Burkin, one of Breanna’s coaches for The ShowTwirlers, those sacrifices are exactly what took Breanna from a beginner to IU’s Feature Twirler.</p>
+                <p>“I think in some ways you sacrifice being ordinary to be extraordinary,” Burkin said.</p>
+                <p>She said people who are great have to be willing to commit, and sometimes those ordinary sacrifices don’t surface into extraordinary experiences for quite some time.</p>
+                <p>“But they will,” Burkin said. “And when they do and you stand on that field, you'll think, ‘Whoa, this is what it was all for.’”</p>
+
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-3'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                
+                <p class="section-break">•••</p>
+
+                <p>On the day of the Ohio State game, Breanna’s day started before the sun came up.</p>
+                <p>At 4:15 a.m., her alarm went off. At 5:45 a.m., Wirthwein picked her up in the now-slightly-scuffed SUV. They had to be parked by 6 a.m., and they needed to be in John Mellencamp Pavillion by 6:45 a.m. The Marching Hundred’s pregame preparations began at 7 a.m.</p>
+                <p>Once the rehearsal started, the band had just under two hours to warm up before heading out for The Walk at 9:10 a.m.</p>
+                <p>As she marched around the stadium, Breanna was struck by the turnout of the game — just over <a href="https://www.espn.com/college-football/matchup/_/gameId/401858488" target="_blank" rel="noopener noreferrer">54,500 people</a> in attendance.</p>
+                
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/dca5b9d8-7fb1-4cf7-9e6e-84846580341e.original.jpg" alt="Breanna Dickey standing with members of the IU Marching Hundred">
+                    <p class="credit">TRINITY MACKENZIE | IDS</p>
+                    <figcaption>Indiana University Feature Twirler Breanna Dickey smiles during The Walk before a game against Ohio State on Oct. 17, 2026, at Memorial Stadium in Bloomington. Dickey is IU's only Feature Twirler.</figcaption>
+                </figure>
+
+                <p>The excitement continued as the Marching Hundred wrapped up their loop around Memorial Stadium.</p>
+                <p>While most of the Marching Hundred runs onto the field from the Southeast and Northeast entrances, Breanna, along with Wirthwein, the drumline and the sousaphones, march onto the field from the 50-yard line, walking out onto the turf and getting into position before everyone else.</p>
+                <p>As she stepped foot on the turf, Breanna had never heard the crowd so loud. While she knew everyone was there for the football game, in that moment, she was grateful to hear them cheering for the Marching Hundred.</p>
+                <p>With everyone in place, the opening notes of “IU Fanfare” played, and Breanna leapt into the air.</p>
+        
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-4'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
