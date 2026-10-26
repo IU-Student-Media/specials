@@ -9,7 +9,8 @@ const data = {
             "name": "Ursula Stickelmaier",
             "email": "ustickel@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/825f1e89-602c-4db3-b910-f682299c50d5.original.jpg",
-            "bio": "Ursula has worked at the IDS since 2024 for the arts desk."
+            "bio": "Ursula has worked at the IDS since 2024 for the arts desk.",
+            "twitter": "urose_18"
         },
         
         "Photos by": [
