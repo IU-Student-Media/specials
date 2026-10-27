@@ -3,7 +3,7 @@ const data = {
     "slug": "IU’s Feature Twirler",
     "headline": "Behind the baton: The making of IU’s Feature Twirler",
     "title": "IU's Feature Twirler",
-    "pub_date": "TBD",
+    "pub_date": "October 26, 2026",
     "bylines": {
         "By": {
             "name": "Ursula Stickelmaier",
