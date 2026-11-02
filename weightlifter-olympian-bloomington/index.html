@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/weightlifter-olympian-bloomington" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="‘Mary can’: How a track and field athlete became an Olympic weightlifter" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Mary Theisen-Lappen has been weightlifting since 2018." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/970361cc-89c8-4803-a273-650c8fb1c02c.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="‘Mary can’: How a track and field athlete became an Olympic weightlifter"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Mary Theisen-Lappen has been weightlifting since 2018."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/970361cc-89c8-4803-a273-650c8fb1c02c.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">‘Mary can’</h1>
+            <h2 data-scroll-speed="2">How a track and field athlete became an Olympic weightlifter</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Weightlifter Mary Theisen-Lappen prepares to lift Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen's husband, Casey Lappen, helped her switch weights between sets.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p class="dropcap">She dusts her hands of the excess powdery white lifting chalk. Her sparkly red lifting belt is secure. She looks down at the loaded bar: 341.7 pounds.</p>
+                <p></p>
+                <p>Mary Theisen-Lappen attempts to lift the barbell with an overhand grip but fails and drops the weight immediately.</p>
+                <p></p>
+                <p>“Backup Plan” by Bailey Zimmerman and Luke Combs blares over the sound of barbells slamming repeatedly against wooden platforms.</p>
+                <p></p>
+                <p>Mary sits down and mouths the lyrics to herself.</p>
+                <p></p>
+                <p>“Gettin’ back up, that’s the only backup plan you need.”</p>
+                <p></p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <figure class="wide-right">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/2df14760-de4c-4469-b866-b4e74d88522a.original.jpg" alt="alt text">
+                    <figcaption>
+                    <p class="credit">Katherine Maners | <b>IDS</b></p>
+                    Weightlifter Mary Theisen-Lappen lifts a barbell Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen trains four times a week.
+                    </figcaption>
+                </figure>
+                <p>At 35, Mary already has one Olympic Game under her bedazzled lifting belt.</p>
+                <p></p>
+                <p>She trains four times a week at 1Kilo, a training facility located on the south side of Bloomington. In the corner of the gym, a wooden platform reads “dedicated to Olympian Mary Theisen-Lappen.” This is the backdrop of most of her Instagram Reels, where she posts her lifts for over 70,000 followers.</p>
+                <p></p>
+                <p>Mary has always been competitive and played several sports growing up, including soccer, softball and volleyball, starting when she was 5.</p>
+                <p></p>
+                <p>“It’s something that I’ve learned to love, or maybe didn’t even learn to love, maybe I just loved it because,” she said. “I guess I just can’t really see myself any other way now.”</p>
+                <p></p>
+                <p>Mary arrives earlier than the other “kids” so she can warm up. Mary is 10 years older than most of the Team USA athletes, and 20 years older than some of the “kid” athletes at 1Kilo.</p>
+                <p></p>
+                <p>Before she lifts, she warms up with resistance bands and stretches, rolling her shoulders back. Mary’s right shoulder has given her grief for the past several years, and it’s critical that she doesn’t cause it any more harm.</p>
+                <p></p>
+                <p>Wil Fleming, 44, is the owner and founder of 1Kilo, and he’s coached Mary for six years. He first connected with Mary on Instagram after watching a video of her lifting in the 2019 American Open Finals, where she cleaned and jerked 339.5 pounds.</p>
+                <p></p>
+                <p>A clean and jerk is a two-part weightlifting movement where the athlete lifts the bar from the floor to their shoulders and then presses the bar overhead.</p>
+                <p>Around four months later, Mary asked Wil if he would coach her. On April 18, 2020, Wil wrote in his phone notes, “I’m about to coach someone who will go to the Olympics.”</p>
+                <p></p>
+                <p>Wil’s worked with plenty of athletes — he’s currently coaching around 50. But he said no one has made an impact on him and his family quite like Mary.</p>
+                <p></p>
+                <p>“In our house, my boys grew up with this idea that, you know, the strongest person they’ve ever met is a woman, so why can’t a woman be the strongest person always?” Wil said.</p>
+                <p></p>
+                <p>Wil said his three sons ask him if he’s able to lift a certain amount of weight or if he’s able to pick heavy things up.</p>
+                <p></p>
+                <p>“As soon as I say no, as soon as they come to the thing that I can’t, they’ll be like, ‘Mary can, can’t she?’” Wil said. “And I say, ‘Yeah, Mary can.’”</p>
+                <p class="section-break">•••</p>
+                <p>Mary grips the loaded barbell again. The bar is loaded with eight plates: a red, yellow, blue and green plate on each side.</p>
+                <p></p>
+                <p>Mary controls the music at 1Kilo. She plays house remixes of Dolly Parton and Shania Twain.</p>
+                <p></p>
+                <p>She also loves arts and crafts. She bedazzled her beloved sparkly white and blue lifting shoes herself.</p>
+                <p></p>
+                <p>Once again, Mary attempts to clean the barbell, an explosive movement where she must lift 341.7 pounds from the platform to the front of her shoulders in one swift motion. It’s a weight she has lifted several times before, but it’s not moving smoothly today.</p>
+                <p></p>
+                <p>Mary braces herself for her fifth attempt. She inhales a whiff of smelling salts for an extra boost of adrenaline — something she saves for heavy cleans.</p>
+                <p></p>
+                <p>In one fluid motion, Mary attempts to clean the weight again.</p>
+                <p></p>
+                <p>She immediately drops the bar and is flung backward onto the blue padded mat against the wall of the gym.</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/5053e8cc-d3e1-44f8-9153-bb2d81ecc918.original.jpg" alt="alt text">
+                    <figcaption>
+                    <p class="credit">Katherine Maners | <b>IDS</b></p>
+                    Weightlifter Mary Theisen-Lappen drops a barbell after completing a lift Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen increased the weight as her routine progressed.
+                    </figcaption>
+                </figure>
+                <p class="section-break">•••</p>
+                <p>Mary threw in shotput, discus, hammer and weight throw for Winona State University from 2009 to 2011 and for Indiana State University from 2011 to 2014.  She qualified for seven NCAA championships and was a Division II national champion in the discus in 2011.</p>
+                <p></p>
+                <p>After graduating, she became the primary throws coach at the University of Wisconsin-OshKosh for the 2015-16 athletic season.</p>
+                <p></p>
+                <p>But, in 2018, when Mary was 27 years old, USA Weightlifting recruited Mary because they were looking for a lifter who was also a thrower. While Mary had lifted weights as a track and field athlete, she didn’t train the same way she does now as a competitive lifter.</p>
+                <p></p>
+                <p>In 2022, right before Olympic qualifications began, Mary and her husband, Casey Lappen, moved to Bloomington to make it easier for Mary to train with Wil. It was a quick decision, but they decided to go “all in.”</p>
+                <p></p>
+                <p>“I’ve always been a firm believer in you only live once,” Casey said. “This was a big opportunity for her and for us, and I knew she had a chance to make the Olympics.”</p>
+                <p></p>
+                <p>For the next 18 months, Mary’s life became a whirlwind of qualifier meets around the world. Olympic qualifiers begin roughly two years before the games. Weightlifters had to compete in five qualifying events, but Mary and the other Team USA weightlifters competed in all seven. Ten American women competed in qualifiers, but only three would make it to the Olympics.</p>
+                <p></p>
+                <p>The athlete with the highest total combined weight in the snatch and the clean and jerk would win.</p>
+                <p></p>
+                <p>When Mary began her qualifiers, Sarah Robles was ahead of  her by 5 kilograms. Robles won bronze in the 2016 Olympics, the first U.S. athlete to medal in Olympic weightlifting in 16 years.</p>
+                <p></p>
+                <p>“She’ll go down as one of the best weightlifters we’ve ever had in the United States,” Mary said.</p>
+                <p></p>
+                <p>In December 2023, at the fifth meet in the qualifiers, Mary improved her total over Robles by 1 kilogram. After that, Robles retired from competitive weightlifting.</p>
+                <p></p>
+                <p>Five months later, in Thailand, Mary competed in her last qualifier. Because she was in the heaviest weight class, she was last to compete and saw that no one else could beat her.</p>
+                <p></p>
+                <p>“I basically knew I had made the team before I competed,” she said.</p>
+                <p></p>
+                <p>And then, it was official. Mary was headed to the Olympics.</p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <p>Mary had never been to Paris before. So, when the Olympic Village opened its doors July 18, 2024, she was excited.</p>
+                <p></p>
+                <p>She participated in the opening ceremony — drenched in rain, watched other Olympic Games and dined on the coveted chocolate muffins that took the internet by storm. She even taught Snoop Dogg how to weightlift, which she said was the highlight of her Olympic career.</p>
+                <p></p>
+                <p>“He was legitimately listening to me, and being silly,” Mary said. “If someone’s like, ‘What was he like?,’ I could easily just say, ‘He’s exactly what you thought he would be like.’”</p>
+                <p></p>
+                <p>But by the time Mary actually competed in the Games, she was exhausted — mentally and physically. She competed on the very last day, and after 18 months of tirelessly training nine times a week and spending a month in the Village, Mary was ready to see her family and go home.</p>
+                <p></p>
+                <p>Mary placed fifth in the Women’s 81+ kg Olympics after lifting 262.4 pounds in the snatch, a movement where an athlete lifts the barbell from the floor to an overhead position, and 341.7 pounds in the clean and jerk.</p>
+                <p></p>
+                <p>“It was electric,” Casey said.</p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <p></p>
+                <p>Casey helps Mary in the gym as many times a week as he is able to, especially for her heavier weekend lifts. He reracks her weights for her and massages her shoulders in between lifts.</p>
+            </div>
+            <div class="side-by-side">
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/cf505650-ff34-472e-b8f3-dc4a6b5a431b.original.jpg" alt="alt text">
+                    <figcaption>
+                    <p class="credit">Katherine Maners | <b>IDS</b></p>
+                    Weightlifter Mary Theisen-Lappen writes down her training routine Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen preferred writing on a whiteboard rather than a notebook or tracking app.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/0303068d-2310-453a-b324-00bb4cd8e3ad.original.jpg" alt="alt text">
+                    <figcaption>
+                    <p class="credit">Katherine Maners | <b>IDS</b></p>
+                    Weightlifter Mary Theisen-Lappen records a lift Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen was working up to her personal record.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="story">
+                <p></p>
+                <p>“People don’t realize, like, they see the Instagram stuff, it’s all smiles and traveling and all this stuff, but it’s hard,” Casey said. “It’s very, very hard stuff, especially on her body and her mind.”</p>
+                <p></p>
+                <p>Mary has a large tear in the rotator cuff in her right shoulder. For two years it has caused Mary extreme pain, to the point where she struggles to sleep some nights. She had to take four months off in 2022, right before Olympic qualifications, and she took another two months off after receiving stem cell injections in her shoulder last year.</p>
+                <p></p>
+                <p>Stem cells release biological signals that wake up local cells and recruit the body’s repair teams to the injury site. The procedure entailed drilling two holes in Mary’s hip and taking five test tubes of blood, spinning them and injecting three shots into her shoulder. Even though she was numbed, it was still a painful, all-day procedure.</p>
+                <p></p>
+                <p>“The stem cell injections are kind of like the Wild West right now, like, they don’t really know if they help,” she said. “But because of the pain that I was in, I was willing to try anything.”</p>
+                <p></p>
+                <p>Since she is still competing, Mary doesn’t have the option to get the procedure again because the recovery process is too long. Mary said she will try to fix her shoulder once she retires from competitive weightlifting — which could be sooner than later.</p>
+                <p></p>
+                <p>Mary is leaving Oct. 30 to compete in the World Weightlifting Championships in Ningbo, China, where she will not only be celebrating her and Casey’s 10th wedding anniversary, but also her 36th birthday.</p>
+                <p></p>
+                <p>As her birthday steadily approaches and her body constantly fights against her, Mary must grapple with the question that has weighed on many athletes before her — which competition will end up being her last?</p>
+                <p></p>
+                <p>Mary said while she would love to make the 2028 Olympic team, she is constantly fighting for her body to do what she’s asking it to, but she is taking it day by day.</p>
+                <p></p>
+                <p>“I tell her all the time, I’m like, ‘No matter what you do in your future for lifting, it doesn’t matter, because no one can take away from the fact that you’re an Olympian,’” Casey said. “’You’re always going to be an Olympian.’”</p>
+                <p></p>
+                <p>Mary isn’t confident she will compete in the 2028 Olympics. But Wil disagrees. He says while it is tough competition, Mary has proven that when the pressure is on, she performs.</p>
+                <p></p>
+                <p>“Every day it’s a choice, and she makes that choice consistently,” he said. “I don’t think it’ll be easy, but she’s proven to me time and time again that she does really hard things when everybody else says she can’t.”</p>
+                <p></p>
+                <p>Despite the pain and toll the sport has taken on Mary, she keeps showing up. Through restless nights and aching joints, through the exhaustion and failed lifts.</p>
+                <p></p>
+                <p>Growing up, Mary didn’t feel like she was meant to be in front of people. She didn’t feel like anyone wanted to see her. But lifting and competing changed that for Mary. When she’s on stage, she’s excited to show off all that she’s worked so hard for.</p>
+                <p></p>
+                </div>
+                    <div class="pull-quote-center">
+                        <p class="quote">“I feel like I owe it to myself, to 15-year-old Mary, to do the things I was meant to do, and I do believe I was meant to lift weights, I’m not quite ready to be done. I’m not ready to get rid of it.”</p>
+                        <p class="attribute">— Mary Theisen-Lappen</p>
+                    </div>
+                <div class="story">
+                <p></p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <p>“Backup Plan” comes to a close after Mary’s failed final fifth attempt at the clean.</p>
+                <p></p>
+                <p>She lies still for a moment against the blue mat before Casey extends his hand to help her up.</p>
+                <p></p>
+                <p>Then, she stands up with a smile. It was a weight she had cleaned plenty of times in the past. Today just wasn’t her day.</p>
+                <p></p>
+                <p>But she'll be back tomorrow.</p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b70d66f3-e1d3-4860-8487-a043d3687cb0.original.jpg" alt="alt text">
+                    <figcaption>
+                    <p class="credit">Katherine Maners | <b>IDS</b></p>
+                    Weightlifter Mary Theisen-Lappen rolls out her muscles before training Oct. 2, 2026, at 1Kilo Performance Center in Bloomington. Theisen-Lappen arrived half an hour earlier than the other weightlifters to complete her warmup.
+                    </figcaption>
+                </figure>
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
