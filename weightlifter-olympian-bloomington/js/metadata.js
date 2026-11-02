@@ -15,7 +15,7 @@ const data = {
             "name": "Katherine Maners",
             "email": "katmaner@iu.edu",
             "pfp": "https://s3.amazonaws.com/snwceomedia/ids/e192d842-c762-470e-bdd4-eb963230c3ba.original.jpg",
-            "bio": "Katherine has worked at the IDS since 2024 and is a visuals editor"
+            "bio": "Katherine has worked at the IDS since 2024 and is a visuals editor."
         },
         "Design and development by": {
             "name": "Lillie Donato",
