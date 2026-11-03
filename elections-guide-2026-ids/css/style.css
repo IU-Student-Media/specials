@@ -213,9 +213,22 @@ article {
   scroll-snap-align: start;
 }
 
+.pinned-story > .story-wrapper {
+  max-width: 100%;
+}
+
+.pinned-story {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .story-wrapper {
   max-width: 30%;
+  }
+
+  .pinned-story > .story-wrapper {
+    max-width: 50%;
   }
 }
 
