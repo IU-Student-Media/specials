@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/url" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Academia is divided about AI. IU’s campus is no different." /> <!-- TODO: headline -->
+    <meta property="og:description" content="Responses to generative artificial intelligence have ranged widely across IU’s departments." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/fedef656-8ff0-4477-a4e5-8ce373242c95.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Academia is divided about AI. IU’s campus is no different."> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Responses to generative artificial intelligence have ranged widely across IU’s departments."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/fedef656-8ff0-4477-a4e5-8ce373242c95.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Academia is divided about AI.</h1>
+            <h2 data-scroll-speed="3">IU’s campus is no different</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Members of Indiana University’s Generative AI Club meet Nov. 4, 2026, in the Global and International Studies Building in Bloomington. The meeting began with a presentation on the difference between chatbots and agents.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>In the spring of 2025, Indiana University Bloomington philosophy professor Gary Ebbs faced a problem. He suspected up to half of his students were using artificial intelligence to write their papers.</p>
+                <p></p>
+                <p>While some students were caught red-handed, Ebbs said others never faced accountability for suspected unsanctioned AI use.</p>
+                <p></p>
+                <p>The issue was not only a new, uniquely sophisticated form of cheating, but a threat to the goal of preparing students to embrace and grapple with the world's uncertainties and complexities. Ebbs stood at a crossroads, and he wasn't alone.</p>
+                <p></p>
+                <p>A <a href="https://news.gallup.com/poll/704090/routine-college-students-despite-campus-limits.aspx" target="_blank" class="story-link">majority of</a> college students now regularly use AI to assist their writing &mdash; or to generate it outright. <a href="https://www.insidehighered.com/news/student-success/college-experience/2026/09/22/5-ways-ai-reshaping-student-success" target="_blank" class="story-link">Institutions</a> and <a href="https://www.pbs.org/newshour/show/how-artificial-intelligence-is-reshaping-college-for-students-and-professors" target="_blank" class="story-link">professors</a> across the United States have splintered on how to define acceptable AI use in the classroom.</p>
+                <p></p>
+                <p>IU has <a href="" target="_blank" class="story-link">no specific</a> institution-wide generative AI strategy, instead providing sample syllabus language for AI policies ranging from unrestricted to zero-tolerance. Although recommending <a href="https://uits.iu.edu/ai/index.html" target="_blank" class="story-link">certain generative AI</a> platforms to students and faculty and offering a self-paced online <a href="https://expand.iu.edu/browse/kelley/ksbee/courses/public-genai-101" target="_blank" class="story-link">GenAI 101</a> course appear to sanction academic use of the technology, departments and instructors &mdash;like Ebbs &mdash; have been left to draw their own lines around large-language models.</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/fe47ab33-0b46-4d3b-b9c3-ce684da23f70.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Caio Bonato, a research officer for Indiana University's Generative AI Club, gives a lecture to club members Nov. 4, 2026, in the Global and International Studies Building in Bloomington. IU has no specific institution-wide generative AI strategy, instead providing sample syllabus language for AI policies ranging from unrestricted to zero-tolerance.
+                    </figcaption>
+                </figure>
+                <p class="section-break">•••</p>
+                <p></p>
+                <p>Josh Perry, the executive vice dean of the Kelley School of Business for the IU Bloomington campus, said considerations about how to prepare students for the world beyond IU have guided decision-making around AI policies.</p>
+                <p></p>
+                <p>These considerations helped produce Kelley’s <a href="https://kelley.iu.edu/Kelley_AI_Playbook.pdf" target="_blank" class="story-link">faculty</a> and <a href="https://kelley.iu.edu/studentaiplaybook" target="_blank" class="story-link">student</a> AI playbooks, which outline appropriate generative AI use in teaching and learning. The playbooks first establish that employers now assume AI fluency of people that businesses hire. However, their guidelines emphasize that human understanding and individual thought remain indispensable in the relationship-driven business world.</p>
+                <p></p>
+                <p>“Having a questioning and critical approach to problems, being able to lead with high emotional intelligence, being able to collaborate and communicate — those are the skills that employers are telling us are more important than ever,” Perry said.</p>
+                <p></p>
+                <p>However, excessive AI use <a href="https://www.psychologytoday.com/us/blog/urban-survival/202502/how-ai-could-shape-our-relationships-and-social-interactions" target="_blank" class="story-link">can threaten</a> the development of interpersonal and analytical abilities foundational to the professions students seek to enter.</p>
+                <p></p>
+                <p>In an <a href="https://poetsandquants.com/2026/04/28/will-ai-kill-online-mba-programs/?pq-category=thought-leadership" target="_blank" class="story-link">April 2026 essay</a>, Perry concluded technologies like LLMs should be used to complement students’ own work and thought. Still, the question of how to keep students from becoming over-reliant on the technologies at the expense of their academic and professional development endures.</p>
+                <p></p>
+                <p>“If students are using AI inappropriately, I do have real concerns of it leading to an atrophy when it comes to their intellectual muscles, their analytical skills, their social skills,” Perry said.</p>
+                <p></p>
+                <p>Kelley’s playbooks communicate that critical examination of and engagement with AI-generated content can help students enrich, rather than shortcut, their learning. Compared to graduates who offload complex thought processes to chatbots, students who apply their human judgment against AI could be more desirable hires.</p>
+                <p></p>
+                <p>Aadi Shah, a senior studying finance and business analytics at Kelley, said he has observed a marked shift in IU’s approach to AI in his time on campus. As a freshman, he said, generative AI use was considered cheating and thus strictly prohibited. But now, he said, students can access <a href="https://uits.iu.edu/ai/index.html" target="_blank" class="story-link">ChatGPT Edu subscriptions</a> through IU.</p>
+                <p></p>
+                <p>“IU has sort of done a 180, where they’re open to the idea of integrating (AI),” Shah said. “I think IU is doing a great job…offering platforms where all students can access (AI) and understand the rudiments of leveraging it.”</p>
+                <p></p>
+                <p>As president of IU’s application-only <a href="https://genaiiu.com/" target="_blank" class="story-link">Generative AI Club</a>, Shah works to bolster AI education at IU, and harness AI altruistically off campus. Shah said the club’s hundreds of members study technical and ethical AI use. Then, they apply their knowledge by employing AI to serve the needs of businesses in and beyond Bloomington.</p>
+                <p></p>
+                <p>For instance, in an email to the Indiana Daily Student, Shah detailed the Generative AI Club’s recent presentation to help Upland Brewing Co. use AI to forecast demand for its products. The presentation projected returns of hundreds of thousands from would-be sales losses.</p>
+                <p></p>
+                <p>“Just locally, I’m seeing AI as a means of connecting people together,” Shah said. “I think it streamlines the process of helping people.”</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/c6d31544-c39d-4e34-9447-dbb28f956f5f.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">David Morales | <b>IDS</b></p>
+                        Snigdha Khanna, a graduate student in cognitive science and computational linguistics, points to responses written on a whiteboard during an AI-related event Oct. 30, 2026, at the Asian Culture Center in Bloomington. The prompt read, “The thing I feel most certain about when it comes to AI is ___.”
+                    </figcaption>
+                </figure>
+                <p class="section-break">•••</p>
+                <p></p>
+                <p>Although some disciplines have embraced LLMs, others are reluctant to adopt the technologies. Humanities educators around the country have <a href="https://www.theguardian.com/technology/ng-interactive/2026/mar/10/ai-impact-professors-students-learning" target="_blank" class="story-link">voiced particular concern</a> about AI. After all, humanities skills like writing are not only expressive, but also critical <a href="https://purdueglobalwriting.center/writing-to-think/" target="_blank" class="story-link">processes of reasoning</a> in and of themselves. Where process and product are intertwined, students who use AI to offload <a href="https://our.ric.edu/news-events/news/7-skills-gained-humanities" target="_blank" class="story-link">creative labor</a> may not develop the cognitive skills the humanities aim to foster.</p>
+                <p></p>
+                <p>A recent report by researchers at the Massachusetts Institute of Technology referred to the use of AI to automate thinking as “<a href="https://aiandeducation.mit.edu/report/#f9a8ce9f-b36e-42f5-bf33-6c9f152d2029" target="_blank" class="story-link">cognitive surrender</a>.” Over-reliance on chatbots may prompt retreat from creative problem-solving — that is, from the purpose of humanities education.</p>
+                <p></p>
+                <p>“Since the Enlightenment, the humanities have assumed that a really important ideal of our culture is to strive to achieve independence and autonomy, where we judge for ourselves —based on the information we gather — what to believe, how to act, how to live,” Ebbs, chair of IU’s philosophy department, said.</p>
+                <p></p>
+                <p>To preserve that ideal in his classroom, Ebbs has reformulated his approach to assignments. As of last fall, student papers are now composed entirely in class and by hand, without notes. Ebbs provides his students with prompts to consider prior to completing the papers. While students may, then, still involve AI in their preparatory idea generation, the thoughts they ultimately commit to paper, and the understanding they demonstrate, will be original.</p>
+                <p></p>
+                <p>“To my delight, I didn’t see a fall-off in the quality of the writing,” Ebbs said. “The students took it seriously and came up with some clearly creative work on their own.”</p>
+                <p></p>
+                <p>Creative writing graduate student Kenny Mitchell, an instructor for IU’s introductory Reading, Writing, and Inquiry course, similarly said students’ messy drafts retain “more life and excitement than something that a LLM spits out.”</p>
+                <p></p>
+                <p>However, dissuading students from drawing on a tool that could reduce effort and boost their grades remains a challenge. Mitchell acknowledged the potential “don’t-touch-the-red-button” effect of zero-tolerance AI policies. And if chatbots can produce writing seemingly as humans can, students may not see the continued value of their independent reasoning.</p>
+                <p></p>
+                <p>Mitchell said cognitive surrender to AI could not only be a question of students seeking to avoid “unnecessary” work, but one of student confidence and agency.</p>
+                <p></p>
+                <p>“I think that getting things wrong is really important, and writing is one of the ways that we allow ourselves to get things wrong and then work to hone our ideas,” Mitchell said. “It does require this investment and belief in the human capacity to achieve and to struggle.”</p>
+                <p></p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <p></p>
+                <p>While some humanities professors seek to contain LLMs, others are more focused on inculcating their responsible, critical use.</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/3a3f56ec-46d9-4207-85e2-81a5fd4cdf5a.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Members of Indiana University's Generative AI Club prompt their own AI agents Nov. 4, 2026, in the Global and International Studies Building in Bloomington. The agents ran on Google Gemini.
+                    </figcaption>
+                </figure>
+                <p>Philip Goff, chancellor’s professor of history at IU Indianapolis, said he has started incorporating AI into some of his class assignments. In one such assignment, he asked students to prompt a LLM to write a 1,500-word essay on an original counterfactual question such as: ‘What if the Continental Army had lost the Revolutionary War?’ Students had to read the chatbot’s text, ask the AI to critique itself and use historical sources to reconcile their analyses with those of the AI.</p>
+                <p></p>
+                <p>“As a historian, I’m trying to think of how I can use AI — which is not a human thing — to help my students become more human and relate to the world around them,” Goff said.</p>
+                <p></p>
+                <p>Many academic concerns about LLMs turn on the possibility of students using the technologies to complete class assignments in their entirety. But recent research revealed that many students instead use AI not to automate learning but to augment — <a href="https://vtdigger.org/2026/06/28/research-at-middlebury-college-reveals-nuanced-story-about-artificial-intelligence-use/" target="_blank" class="story-link">or enhance</a> — it.</p>
+                <p></p>
+                <p>The research found that although the academic performance of students automating their work diminished within days, students using chatbots for augmentation tasks like idea generation and <a href="https://www.npr.org/2026/08/19/nx-s1-5936452/college-professor-shares-why-she-believes-ai-can-help-strengthen-thinking" target="_blank" class="story-link">argument criticism</a> outpaced those who <a href="https://learningsuccess.blog/news/education-ai/research-confirms-ai-builds-student-skills-one-way-undermines-them-another/" target="_blank" class="story-link">hadn’t touched</a> AI.</p>
+                <p></p>
+                <p>All academic AI use is not created equally, complicating debate over the role of LLMs in the classroom. And as professors consider the potential advantages of AI integration, the technology’s enduring shortcomings also weigh heavily.</p>
+                <p></p>
+                <p>Chatbots are prone to <a href="https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/" target="_blank" class="story-link">"hallucinations,"</a> in which they generate false content or cite nonexistent sources. Although these hallucinations have become <a href="https://axis-intelligence.com/ai-hallucination-statistics/" target="_blank" class="story-link">less frequent</a> throughout AI’s rapid advancement, they remain a substantial issue, including in high-stakes fields such as <a href="https://ai2.work/blog/sullivan-cromwell-ai-filing-exposes-biglaw-s-hallucination-crisis" target="_blank" class="story-link">elite law</a>.</p>
+                <p></p>
+                <p>Because LLMs are built to respond to user prompts, they prioritize <a href="https://mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias/" target="_blank" class="story-link">confidence and reasonableness</a> over accuracy. And because AI chatbots are designed to write what the user <a href="https://www.cnet.com/tech/services-and-software/ai-wants-to-make-you-happy-even-if-it-has-to-bend-the-truth/" target="_blank" class="story-link">wants to hear</a>, they prioritize pleasing responses over factual ones.</p>
+                <p></p>
+                <p>These challenges may parallel those presented by past technological milestones.</p>
+                <p></p>
+                <p>“Before the internet was really the internet, there were many different voices, many of which were not telling the truth,” Goff said. “I had to think about things in a different way in teaching (students) how to weigh all those things. We have to do the same thing again.”</p>
+                <p></p>
+                <p>Perhaps comparing generative AI to previous innovations that changed the academic landscape, such as <a href="https://technicalinterest.com/how-wikipedia-changed-the-way-we-access-knowledge-a-deep-dive-technicalinterest-com/" target="_blank" class="story-link">Wikipedia</a>, is informing IU’s ever-evolving AI strategy. For instance, BUS-K 201, a signature course at Kelley, was first created as a <a href="https://www.idsnews.com/article/2026/04/iu-kelley-business-school-redesigns-k201-class-to-emphasize-ai-real-world-problem-solving" target="_blank" class="story-link">computers in business</a> course in 1963.</p>
+                <p></p>
+                <p>Throughout the ongoing <a href="https://humanidades.com/en/third-industrial-revolution/" target="_blank" class="story-link">Third Industrial Revolution</a>, the course has been modified to reflect changes in business technology. K-201’s latest AI-centered curricular overhaul, and IU’s broader response to AI, then, may simply be continuing a decades-long pattern.</p>
+                <p></p>
+                <p class="section-break">•••</p>
+                <p></p>
+                <p>Whether AI poses truly novel academic threats remains an open question.</p>
+                <p></p>
+                <p>“Students have always found it attractive to take the easy way out,” Ebbs said. “It used to be that you could pay your roommate to write your paper. Now you don’t have to pay your roommate, you can get ChatGPT to do it.”</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/b564c58c-6c61-4328-b31e-625f931ab30d.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Members of Indiana University's Generative AI Club work on an activity Nov. 4, 2026, in the Global and International Studies Building in Bloomington. The activity required groups to build their own AI agents.
+                    </figcaption>
+                </figure>
+                <p>Cheating has also often been <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11489843/" target="_blank" class="story-link">difficult to prevent</a>. But because AI can often so convincingly imitate human composition, it <a href="https://www.gse.harvard.edu/ideas/usable-knowledge/26/10/ai-cheating-crisis-schools-isnt-only-what-you-think" target="_blank" class="story-link">may have</a> a unique capacity to facilitate academic dishonesty. And Mitchell, who emphasizes students’ unique voices through the drafting process, said he wasn’t interested in being an “enforcer of the law.”</p>
+                <p></p>
+                <p>“I think being the AI police puts me at an adversarial relationship, which is never something I want with my students,” Mitchell said.</p>
+                <p></p>
+                <p>AI’s potential to exacerbate outright cheating remains a significant concern for instructors. However, LLMs present deeper questions about the purpose of higher education, particularly at an institution as large and multidisciplinary as IU.</p>
+                <p></p>
+                <p>IU’s <a href="https://directory.iu.edu/dept/list/BL" target="_blank" class="story-link">many departments</a> serve a wide range of desired outcomes. For some students, education may be a means to build professional skills focused on efficiency and streamlining, or it may help achieve certain professional goals as facilitated by measurable academic accomplishment. In such cases, AI could help save time and energy and improve academic performance. It could also be indispensable to students’ ability to operate in the fields they seek to enter after graduation.</p>
+                <p></p>
+                <p>“All faculty share the goal of producing students who can go out and succeed in the world in which we live today, and AI is in the world today,” Goff said. “Any university that sticks its head in the sand about AI won’t be around in a decade. I think Indiana University is looking at this realistically.”</p>
+                <p></p>
+                <p>Where disciplines are less output-oriented and more focused on developing certain types of thinkers, however, AI integration may yet be distant.</p>
+                <p></p>
+                <p>“Maybe more than ever before, the temptation to take the easy way could undermine this whole ideal of learning to think for oneself, to be comfortable with uncertainty, to work through problems, which is integral to my understanding of a rich and fully developed human life,” Ebbs said.</p>
+                <p></p>
+                <p>Mitchell said IU’s lack of a blanket AI policy allows departments across the university to exercise discretion about if and how LLMs may be appropriately used for the types of learning they promote.</p>
+                <p></p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/8b5378eb-44ed-481d-b43a-b5f2ffa29246.original.jpg"
+                        alt="">
+                    <figcaption>
+                        <p class="credit">Natalia Nelson | <b>IDS</b></p>
+                        Aadi Shah, the president of Indiana University's Generative AI Club, listens to a presentation during the club's meeting Nov. 4, 2026, in the Global and International Studies Building in Bloomington. Shah has worked to bolster AI education through the club.
+                    </figcaption>
+                </figure>
+                <p>While Mitchell acknowledged that IU’s mixed messaging on acceptable AI use could result in confusion about what policies apply where, particularly for students taking classes within a variety of schools, he said it also maintains disciplinary autonomy while the technological and academic landscapes are in flux.</p>
+                <p></p>
+                <p>“Regardless of departmental goals, what all students should be leaving with is the knowledge that AI should not be taking away your human capacity toward thought, expression, communication and community,” Mitchell said.</p>
+                <p></p>
+                <p>Perry, who trained extensively in the humanities before entering the world of business academia, said he didn’t see a distinction between the aims of humanities, arts or business educators.</p>
+                <p></p>
+                <p>Instead, he said, all faculty seek to prepare students for any chosen post-graduate life “to use their imagination, creativity, all that makes us human and all that’s embedded in the relationships that fuel our lives.”</p>
+                <p></p>
+            </div>
+            <div class="pull-quote-center">
+                <p class="quote">“That’s the higher education mission.”</p>
+                <p class="attribute">— Josh Perry</p>
+            </div>
+            <div class="story">
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
