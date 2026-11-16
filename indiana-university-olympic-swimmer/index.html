@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title (pulls from metadata.json) -->
+    <title> Hello</title>
+
+    <!-- favicon -->
+    <link rel="SHORTCUT ICON"
+        href="https://s3.amazonaws.com/snwceomedia/ids/f07d2fab-1ce4-46fd-b3b3-44a57ab9fb95.sized-1000x1000.jpg">
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css"> <!-- normalize — removes default browser styles -->
+    <link rel="stylesheet" href="css/ids.css"> <!-- IDS stylesheet — default IDS styles -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Local stylesheet — put all your design choices here -->
+
+    <!-- Font Awesome — for the social media icons and hamburger menu icon -->
+    <script src="https://kit.fontawesome.com/0218ede635.js" crossorigin="anonymous"></script>
+
+    <!-- SOCIAL CARDS — Make sure to update!! -->
+    <meta property="og:url" content="http://specials.idsnews.com/indiana-university-olympic-swimmer" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Across the world and back: Inside Tomer Frankel’s 6,000-mile journey to swim for Indiana" /> <!-- TODO: headline -->
+    <meta property="og:description" content="Frankel competed for Indiana swimming and diving from 2020-25." /> <!-- TODO: abstract -->
+    <meta property="og:site_name" content="IDS News">
+    <meta property="og:image" content="https://s3.amazonaws.com/snwceomedia/ids/50343797-45c1-4f2d-b8f6-7157986b8305.original.jpg" /> <!-- TODO: link to dominant image -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@idsnews">
+    <meta name="twitter:creator" content="@idsnews">
+    <meta name="twitter:title" content="Across the world and back: Inside Tomer Frankel’s 6,000-mile journey to swim for Indiana"> <!-- TODO: headline -->
+    <meta name="twitter:description" content="Frankel competed for Indiana swimming and diving from 2020-25."> <!-- TODO: abstract -->
+    <meta name="twitter:image" content="https://s3.amazonaws.com/snwceomedia/ids/50343797-45c1-4f2d-b8f6-7157986b8305.original.jpg"> <!-- TODO: link to dominant image -->
+
+    <!-- START Ad content: this goes in the head content -->
+    <!-- don't mess with this — it will work all on it's own :-) -->
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            //all other leaderboards
+            var mapping1 = googletag.sizeMapping()
+                .addSize([768, 0], [728, 90]) // Desktops and Tablets
+                .addSize([0, 0], [320, 50]) // Mobile devices
+                .build();
+            googletag.defineSlot('/32635621/ids_specials1_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-0').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials2_leaderboard_728x90', [[728, 90], [320, 50]], 'div-gpt-ad-1512489859064-1').defineSizeMapping(mapping1).addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials3_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-2').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials4_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-3').addService(googletag.pubads());
+            googletag.defineSlot('/32635621/ids_specials5_rectangle_300x250', [300, 250], 'div-gpt-ad-1512489859064-4').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager -->
+    <!-- (also don't have to worry about this at all) -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NBJX8F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script src="js/googleTagManager.js"></script>
+
+    <div class="helper"></div>
+
+    <!--Header-->
+    <header>
+
+        <!-- Transparent navbar -->
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="https://www.idsnews.com">
+                        <!-- IDS LOGO SVG -->
+                        <svg viewBox="0 0 163.17 68.85">
+                            <path style="fill:white;" d="M0,67.77V1.08H19.89V67.77Z" />
+                            <path style="fill:white;"
+                                d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                            <path style="fill:white;"
+                                d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                        </svg>
+                    </a>
+                    <span id="slug"></span> <!-- slug auto pulls from metadata.json -->
+                </li>
+                <li class="toggle">
+                    <i class="fas fa-bars fa-lg"></i>
+                </li>
+                <li id="socials" class="item">
+                    <!-- links generate automatically from metadata.json -->
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Headline, subhed -->
+        <!-- feel free to change this up — you don't need it to have data scroll speed, 
+        doesn't have to be centered, doesn't have to be 2 lines, etc. (see header options in css directions for more inspo) -->
+        <div class="headline-container">
+            <h1 data-scroll-speed="2">Across the world and back:</h1>
+            <h2 data-scroll-speed="3">Inside Tomer Frankel’s 6,000-mile journey to swim for Indiana</h2>
+        </div>
+
+    </header>
+
+    <!-- main article -->
+    <main>
+        <p class="caption header-caption">Tomer Frankel shakes hands at the 2024 Big Ten Men’s Swimming and Diving Championships in February 2024 at the Bill and Mae McCorkle Aquatic Pavilion in Columbus, Ohio. Frankel was First-Team All-Big Ten, and the Hoosiers won the conference title.</p>
+        <article>
+            <div class="bylines">
+                <div id="bylines">
+                    <!-- update bylines in metadata.json -->
+                </div>
+                <!-- TO DO update pub_date in metadata.json -->
+                <p id="pubdate"></p>
+            </div>
+            <div class="story">
+                <p>Tomer Frankel had no intention of returning to the pool.</p>
+                <p>At 5 years old, he had just learned how to swim, like most other children, and there was no emphasis on speed or distance. It was simply about staying afloat and learning the long strides required for efficient movement.</p>
+                <p>Unlike the other boys at his swim class in Jerusalem, Frankel had long hair that flowed down to his shoulders. The other kids taunted him, saying he looked like a girl.</p>
+                <p>“I was traumatized," Frankel recalled. “So I quit.”</p>
+                <p>For five more years, Frankel was just a kid, not an athlete.</p>
+                <p>His family didn't have a history of athletes, and Frankel didn't seem poised to change that. His brother Roi was the sporty one, competing in basketball and judo.</p>
+                <p>Nonetheless, his parents wanted him to try a sport. So they signed him up for swimming.</p>
+                <p>It was a choice that would one day take Frankel to the Olympics.</p>
+                <p class="section-break">•••</p>
+                <p>In Jerusalem, swimming isn't the most popular sport. Optionality is reserved for sports like basketball and soccer. For young swimmers looking to compete, there was one choice of club: Hapoel Jerusalem.</p>
+                <p>At 10 years old, Frankel began swimming with the club two to three times a week for fun. Eventually, his talent became evident.</p>
+                <p>“I was pretty competitive as time moved on,” Frankel said. “And then slowly, I just got into more training, more swims a week.”</p>
+                <p>Hapoel Jerusalem was led by head coach Leonid Sheikhat, a legendary figure in Israeli swimming.</p>
+                <p>Sheikhat was from the Soviet Union. He immigrated to Israel in the 1990s and became the co-head coach of Israel's national team and head coach of Hapoel Jerusalem not long after arriving. He led the club until his death in September 2026 at 70 years old.</p>
+                <p>Hapoel Jerusalem is a large, age-diverse club. Sheikhat oversaw all groups of swimmers but worked less with the youngest athletes.</p>
+                <p>It took time for Frankel to advance far enough to consistently swim with Sheikhat. Winning medals sped up the process. At age 14, Frankel took silver in the 100-meter butterfly at the European Youth Olympic Festival. A year later, he won bronze in the 800-meter freestyle relay at the European Junior Swimming Championships.</p>
+                <p>All the while, Frankel grew closer to his coach.</p>
+                <p>“Everything I needed to do, he always told me to do it right. It doesn't matter the outcome,” Frankel said of Sheikhat. “I kind of saw him as a mentor from a very young age.”</p>
+                <p>The pair even started a tradition at the end of every race.</p>
+                <p>“If I had a decent race, he'd shake my hand,” Frankel said. “If I had a good race, he'd hug me. And if I had a crazy race, he'd kiss me.”</p>
+                <p>Frankel went on to earn another bronze the following year at the European Junior Swimming Championships and kept picking up medals in international competitions and setting national records.</p>
+                <p>As a youth swimmer, he'd accomplished all he could in Jerusalem. The next level of competition was across the globe.</p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/7089de2f-bda4-4e8c-81ae-e7ca22718858.original.jpg" alt="a swimmer is pictured at the ncaa championships">
+                    <figcaption>
+                    <p class="credit">Courtesy Photo</p>
+                    Tomer Frankel adjusts his cap at the 2024 NCAA Men’s Swimming and Diving Championships in March 2024 at the IU Natatorium in Indianapolis. Frankel finished top five in two butterfly events, setting a program record in the 100-yard race.
+                    </figcaption>
+                </figure>
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-3'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-3'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                <p class="section-break">•••</p>
+                <p>Despite his fear of being alone over 6,000 miles from home, Frankel always knew he wanted to come to the United States for college. At the time, the best Israeli swimmers trained at American universities.</p>
+                <p>Additionally, the NCAA model provided him with an opportunity that Hapoel Jerusalem didn't: combining swimming with education. Frankel said his parents insisted he must not rely entirely on swimming.</p>
+                <p>“So if I do swimming, I need to do school, as well,” Frankel said. “I cannot put all my eggs in one basket.”</p>
+                <p>In March 2020, Frankel was 19 years old and training for the Tokyo Olympics with Team Elite in San Diego under International Swimming Hall of Fame coach David Marsh.</p>
+                <p>Throughout his time with Team USA, Marsh frequently crossed paths with Indiana swimming and diving head coach Ray Looze.</p>
+                <p>While Frankel was training with Marsh, the 15-time Big Ten Champion coach showed up to recruit him and made quite the impression.</p>
+                <p>“He had the magic,” Frankel said.</p>
+                <p>Looze and Frankel clicked immediately. He settled on Indiana "probably 10 minutes after."</p>
+                <p>“I want to train with that guy,” Frankel recalled thinking. “And it was one of the best decisions I've ever made.”</p>
+                <p>Although Looze's pedigree was impressive, it was his energy that stood out to Frankel. Looze had an endless, infectious passion for the sport.</p>
+                <p>With passion comes intensity. The Hoosiers are an all-encompassing swimming powerhouse. They train aerobics, sprints and distance. And they do it fast.</p>
+                <p>“It doesn't matter if it's 6 a.m. or 6 p.m., he's going to be on the pool deck, and he's going to bring his energy to practice,” Frankel said. “He has the energy to drive you and make you pretty fast in training all the time.”</p>
+                <p>That didn't scare Frankel.</p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/24cd3355-6274-4743-b811-22dd289c21bd.original.jpg" alt="a swimmer is pictured talking with his coach at the ncaa championships">
+                    <figcaption>
+                    <p class="credit">Courtesy Photo</p>
+                    Tomer Frankel (left) and Ray Looze (right) talk at the 2023 NCAA Men's Swimming and Diving Championships in March 2023 at the Jean K. Freeman Aquatic Center in Minneapolis. Frankel finished top six in every event he swam and broke the program record for 100-yard butterfly twice.
+                    </figcaption>
+                </figure>
+                <p class="section-break">•••</p>
+                <p>Frankel committed to Indiana in April 2020 and arrived to Bloomington in August as an environmental management major.</p>
+                <p>In addition to the change in the pool, Frankel had to adapt to a change in lifestyle. He was part of the first class of freshmen to enroll during the COVID-19 pandemic.</p>
+                <p>Every freshman on the team lived in Willkie North, but Frankel had to quarantine for two weeks.</p>
+                <p>For his first 14 days in a new country, he couldn't go anywhere. Shortly after the self-quarantine ended, a teammate tested positive for the virus, forcing everyone back into quarantine.</p>
+                <p>Most of his teammates had family nearby and went home, eventually leaving Frankel and his teammate Jassen Yep — a Saratoga, California, native — isolated in Ashton Residence Hall, the quarantine dorm. Frankel said the isolation was tough.</p>
+                <p>He and Yep were allowed half an hour of outside time each day. They'd spend it together.</p>
+                <p>“I had just bought a guitar," Yep said. "And Tomer really liked old, like oldies music, kind of like ‘70s, ‘80s. I played music, we'd sing together, we just chat about, you know, life.”</p>
+                <p>The language barrier was another challenge. Early on, Frankel struggled to understand American phrases and slang, and he had a thick accent.</p>
+                <p>Yep could understand him, but Frankel was constantly pausing, searching for the right words and asking for help describing something in English.</p>
+                <p>Just like with swimming, Frankel progressed quickly.</p>
+                <p>“Two or three months into the semester, he goes, ‘Guys, I had a dream in English last night,’” Yep remembered. “And we're like, ‘Oh my god, he's like an American now.’”</p>
+                <p>What revived his start to college was finally meeting the rest of the team and bonding with his class of swimmers and divers once the quarantine was over. Since seeing anybody else meant risking a positive COVID test, his class did everything together.</p>
+                <p>They trained, ate meals, watched sports and played games.</p>
+                <p>“It sort of felt weird in the moment, but it was sort of a blessing in disguise,” Maxwell Reich, who was in Frankel’s class, said. “All of that first freshman year there was obviously a lot of isolation, but our class really got to interact a lot and got really close.”</p>
+                <p>Food was one of many cultural changes about Frankel's move across the world. He had a much different diet in Israel than in the United States.</p>
+                <p>Yep recalled a time when the whole class went to BuffaLouie’s together. Everybody ordered wings, and then Frankel's name was called.</p>
+                <p>“He goes up, comes back, and he's holding a salad,” Yep said. “And all the freshmen were like, ‘Dude, what are you doing?’ He's like, ‘I can't eat the wings. It's too heavy for me.’”</p>
+                <p>When they weren't eating, they were at practice. And swimming at Indiana was a separate journey.</p>
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-2'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-2'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                <p class="section-break">•••</p>
+                <p>When they were finally able to get in the pool, what stood out to Frankel and his class of freshmen was just how fast everyone was.</p>
+                <p>Most Indiana swimming recruits are used to being the best.</p>
+                <p>“In Hapoel Jerusalem, there is one Tomer,” Rafi, Frankel’s father, said. “Ray (Looze) has a lot of talents like Tomer.”</p>
+                <p>When Frankel arrived, the Hoosiers already boasted a roster full of world-class talent, Big Ten and NCAA champions.</p>
+                <p>“You kind of have to go mentally from ‘These guys are gods’ to ‘They're just humans,’” Reich said. “You can compete with them, you can swim with them.”</p>
+                <p>While most freshmen were developmental swimmers, Frankel entered the NCAA at a different level. He was slightly older than the others, had already qualified for the Olympics and won international competitions.</p>
+                <p>Early on, it was clear Frankel could compete with the best of the team.</p>
+                <p>By the end of his freshman year, he was beating them. And not just the ones at Indiana. Frankel finished his first collegiate season as an All-American in seven different events. He was the Big Ten Champion in the 100-yard butterfly and finished in the top 10 nationally in the event.</p>
+                <p>After a long year of figuring out his new life, he finally felt he belonged — on campus, on the team and, most of all, in the pool.</p>
+                <p>The following summer, Frankel competed for Israel in Tokyo in the delayed 2020 Olympic Games, where he helped set an Israeli record in the 800-meter freestyle relay.</p>
+                <p>Throughout his career as a Hoosier, Frankel was a 19-time All-American, 18-time Big Ten medalist and three-time NCAA medalist. He was also a steady presence for his teammates, especially for his roommates Yep and Reich.</p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/e9bddf86-f3d4-45a7-a2af-24d0726704f4.original.jpg" alt="a swimmer is pictured with his ncaa championship trophy">
+                    <figcaption>
+                    <p class="credit">Courtesy Photo</p>
+                    Tomer Frankel holds his trophy at the 2022 NCAA Men’s Swimming and Diving Championships in March 2022 at the McAuley Aquatic Center in Atlanta. Frankel earned a silver medal in the 400-yard medley relay.
+                    </figcaption>
+                </figure>
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-1'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-1'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                <p>“Tomer was wise beyond his years,” Reich said. “Tomer was kind of like, ‘Hold on, it's important to detach yourself from swimming because you don't want to burn yourself out. You don't want to start to hate the sport.’”</p>
+                <p>As such, their focus at home was on detachment. The trio would cook or watch a show to unwind and take their minds off swimming. It gave them something to look forward to and motivate them to get through each day.</p>
+                <p>Motivation was particularly important when times became tough. For Frankel, that time came during his senior year.</p>
+                <p class="section-break">•••</p>
+                <p>Frankel woke up for morning practice at 6:30 a.m. on Oct. 7, 2023, like any other Saturday.</p>
+                <p>Then he got a voice message.</p>
+                <p>An Israeli friend who swam for the University of Louisville alerted him about what was happening back home.</p>
+                <p>“Then I went on the news and I saw and I was shocked,” Frankel said.</p>
+                <p>Hamas-led attackers had broken through southern Israel's border with the Gaza Strip in an attack that killed over 1,200 people and took 251 more hostage.</p>
+                <p>At first, he didn't think much of the attack. He figured it was “just another war” and part of “the cycle,” and he went to practice.</p>
+                <p>When he came back and saw how many hostages Hamas had taken, that's when he knew this time was different.</p>
+                <p>“I was almost kind of frozen, like I couldn't do anything,” Frankel said. “I remember just sitting on the couch for the rest of the day, not able to function or not able to do my homework.”</p>
+                <p>For the following days and weeks, he attempted to carry on with life as usual. He went back to class, practice and winning in meets. But his mind was elsewhere. Rafi described him as “unstable.”</p>
+                <p>His friends and teammates did their best to support him, but no one really knew how to.</p>
+                <p>“It was a tragedy,” Frankel said. “But the world outside just stayed the same way it is. People keep their lives and move on like nothing happened.”</p>
+                <p>He said he didn't blame the world for continuing. He just couldn't help resenting it. His world was upended, but his surroundings stayed the same.</p>
+                <p>Early on, Frankel felt guilty being away from his friends and family. Since traveling home during wartime was challenging and the season was ongoing, all he could do was call. His family was safe in Jerusalem, but he still felt for his country.</p>
+                <p>“I was frustrated that the world didn't see what happened to us,” Frankel said. “People didn't see us as victims.”</p>
+                <p>As time went by and Frankel tried to return to normalcy, the war continued. He became more closed off. The wounds never truly healed.</p>
+                <p>“It just became an everyday reality,” Yep said.</p>
+                <p class="section-break">•••</p>
+                <p>The following summer, Frankel returned to the Olympics, this time in Paris, without a pandemic limiting the experience.</p>
+                <p>With a full crowd watching — including his family — he only placed in the top 10 in one event, the 4x200-meter freestyle relay.</p>
+                <figure class="inline-image">
+                    <img src="https://s3.amazonaws.com/snwceomedia/ids/9d4631d8-8df8-4e8d-a7bb-f51f10111dc5.original.jpg" alt="a swimmer is pictured diving into the water at the 2024 paris olympics">
+                    <figcaption>
+                    <p class="credit">Courtesy Photo</p>
+                    Tomer Frankel dives into the water to compete for Israel in the 2024 Paris Olympics in July 2024 at Paris La Défense Arena in Paris. Frankel finished top 15 in two freestyle relay events.
+                    </figcaption>
+                </figure>
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-0'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+                <p>“After the Olympics, I just felt very disappointed and very fatigued,” Frankel said.</p>
+                <p>Frankel felt he'd done all he could as a swimmer, and he was burned out. But he had one more season left in Bloomington.</p>
+                <p>At the same time, he began to work toward his second degree.</p>
+                <p>He graduated in 2024 with a bachelor’s degree in public affairs and moved onto a master’s in environmental science ahead of his fifth and final season as a swimmer.</p>
+                <p>Frankel said he felt like he entered a new chapter in his life in terms of academics. Swimming became less of a priority.</p>
+                <p>All the years of dedication weighed on him. So did living away from his family for over half a decade. He felt swimming had taken control of his life, and he needed to find a balance.</p>
+                <p>“It was tough because I was committed to the team,” Frankel said. “I wanted to do my best and every practice I did my best, but I just felt like my heart was not fully in there.”</p>
+                <p>Frankel still finished the year as an All-American in three events. But when it was over, he knew he was done.</p>
+                <p>After five years competing at Indiana, he retired from competitive swimming.</p>
+                <p>“It was not an easy decision,” Frankel said. “I still love being in the water.”</p>
+                <p>He was also ready to go home. After spending two months post-graduation traveling through the United States and Canada, he returned to Jerusalem. For nearly six years, Frankel lived 6,000 miles away from his family. Now, he's back in the same city.</p>
+                <p>Frankel built a life in Bloomington. It's the second one he's left behind.</p>
+                <p>“I kind of feel like half of my heart is in the U.S.,” Frankel said. “It's kind of like having two different worlds.”</p>
+                <p>For now, Frankel works at a thermal imaging optics company. But that’s only temporary.</p>
+                <p>Moving forward, he now has two other goals: improve the world, and travel to see it. For so long, his focus was swimming.</p>
+                <p>Now, Frankel’s free — and ready —  to pursue other dreams.</p>
+                <div class="ad-block">
+					<div class="ad-code">
+						<br>
+						<div id='div-gpt-ad-1512489859064-4'>
+							<script>
+							 googletag.cmd.push(function () { googletag.display('div-gpt-ad-1512489859064-0'); });
+							</script>
+						</div>
+					</div>
+				</div>
+
+
+                <!--
+                    TODO: add story content!
+
+                    For example code of basic elements, visit our documentation on Notion: https://www.notion.so/Buildout-Documentation-4e36a30949d149e5bb074a753a88a910
+                    You can also check out the kitchen sink article on Github, which contains every existing element in the template: https://github.com/ids-digi/kitchen-sink-article
+                -->
+
+                <!-- small bios -->
+                <div class="author-bios">
+                    <!-- update bios in metadata.json -->
+                    <!-- delete this div if you don't want them to show up -->
+                </div>
+
+                <p class="donate">
+                    <em>Like what you're reading?</em><br>
+                    Support independent, award-winning student journalism.
+                    <a href="https://www.idsnews.com/page/donate" target="_blank">Donate.</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-row">
+            <!-- IDS LOGO SVG -->
+            <div class="logo">
+                <a href="https://idsnews.com">
+                    <svg viewBox="0 0 163.17 68.85">
+                        <path style="fill:#990000;" d="M0,67.77V1.08H19.89V67.77Z" />
+                        <path style="fill:#990000;"
+                            d="M32.85,67.77V1.08H58.32c19.44,0,38.34,6.21,38.34,33.3,0,26.64-20.07,33.39-39.6,33.39ZM52.74,50.4h5.85c12.06,0,17.91-4.41,17.91-16s-5.67-15.3-18.81-15.3H52.74Z" />
+                        <path style="fill:#990000;"
+                            d="M98.82,59l9.54-13.59c6.66,4.59,15.93,7,23.31,7,9.45,0,11.7-2.16,11.7-4.86s-2.7-3.78-12.51-4.59c-14.31-1.17-28.26-4.86-28.26-21.15C102.6,5.67,115.83,0,131,0c15.84,0,24.48,4.05,29.16,7.83l-9.9,14.31c-3.78-2.52-12.33-4.77-19-4.77s-8.73,1.08-8.73,3.69c0,3.24,2.79,4.05,12.69,4.86,14.94,1.26,28,4.14,28,20.7,0,13.5-11.52,22.23-30.87,22.23C114.66,68.85,105.84,64.53,98.82,59Z" />
+                    </svg>
+                    <span class="show-desktop"> | Indiana Daily Student</span>
+                </a>
+            </div>
+            <a class="subscribe show-desktop" href="https://www.idsnews.com/page/newsletters" target="_blank">
+                SUBSCRIBE
+            </a>
+            <div class="socials">
+                <a href="https://www.facebook.com/idsnews" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/idsnews" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/idsnews/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/show/4Dq0KFTxDssQSioraHBW0j"
+                    target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+        <div class="links">
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Contact us</a></p>
+            <p><a href="https://www.idsnews.com/page/employment" target="_blank">Employment</a></p>
+            <p><a href="https://www.idsnews.com/page/policies" target="_blank">Policies</a></p>
+            <p><a href="https://s3.amazonaws.com/snwceomedia/ids/45e13f9c-6411-4947-8db6-2bf00b0e8d93.original.pdf"
+                    target="_blank">Advertising</a></p>
+            <p><a href="https://issuu.com/idsnews" target="_blank">Print edition</a></p>
+            <p><a href="https://www.idsnews.com/page/contact" target="_blank">Write to us</a></p>
+        </div>
+        <p class="copyright"><small>All content &copy; 2025 Indiana Daily Student</small></p>
+    </footer>
+
+    <!-- Jquery cdn — used to set data scroll speed (set in ids.js file) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ads.js"></script>
+    <script src="js/ids.js"></script>
+    <script src="js/metadata.js"></script>
+</body>
+
+</html>
